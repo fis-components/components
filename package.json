@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fis-components/components/issues"
   },
-  "homepage": "https://github.com/fis-components/components"
+  "homepage": "https://github.com/fis-components/components",
+  "dependencies": {
+    "github": "^0.2.3"
+  }
 }
