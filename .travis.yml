@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '0.10'
+script:
+- node ./sync.js ${GH_TOKEN}
+# env:
+#  global:
+#  - PATH: node_modules/.bin/:$PATH
+install:
+- npm install
+
+# after_success:
+# - sh build.sh
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - master
