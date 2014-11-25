@@ -3,7 +3,7 @@ node_js:
 - '0.10'
 script:
 - node ./sync.js ${GH_TOKEN}
- env:
+env:
   global:
     - secure: CpnM4KFtv91LYdkztobd1+555L2h8xLRRdw7Gk+PG+q/PxJ94JAr78Z89KfgzjxVID8vUJ+f1/5u8qSf06xXslPzOQ3Eehq1c/6WIogXQuD/2zO5YIvyxCfonnOBqYDtxdLGqGpk7Q07Jvcj26Jnk0/0pzoRa0ON8oZrqnKDsh8=
 #  - PATH: node_modules/.bin/:$PATH
