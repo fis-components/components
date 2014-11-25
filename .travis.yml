@@ -11,6 +11,7 @@ install:
 after_success:
 - git config --global user.email "fansekey@gmail.com"
 - git config --global user.name "xiangshouding"
+- git remote set-url origin https://github.com/fis-components/components.git
 - git config credential.helper "store --file=.git/credential"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credential
 - date "+%Y-%m-%d %H:%M:%S" > time.txt
