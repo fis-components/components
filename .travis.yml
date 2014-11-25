@@ -10,7 +10,10 @@ env:
 install:
 - npm install
 
-# after_success:
+after_success:
+- echo $GH_TOKEN
+- echo $PATH
+
 # - sh build.sh
 cache:
   directories:
