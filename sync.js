@@ -67,7 +67,7 @@ if (ARGV[2] == 'sync') {
     });
 } else if (ARGV[2] == 'create-repos') {
     console.log('=sync.js create repos: https://github.com/fis-components/%s', ARGV[3]);
-    createRepos(ARGV[3], ARGV[4]);
+    createRepos(ARGV[3], ARGV[4], ARGV[5]);
 } else if (ARGV[2] == 'create-component.json') {
     var name = ARGV[3];
     try {
