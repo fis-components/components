@@ -3,7 +3,7 @@
 export ROOT=$(pwd)
 
 git_clone () {
-    git clone "${1}" "${2}" > /dev/null 2>&1
+    git clone "${1}" "${2}" #> /dev/null 2>&1
     if [ "$?" != "0" ]; then
         return 1
     fi
