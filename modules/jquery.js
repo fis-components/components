@@ -5,7 +5,7 @@ module.exports = (function() {
         repos: 'https://github.com/jquery/jquery.git',
         version: '1.9.1',
         build: 'npm install && grunt',
-        maping: [
+        mapping: [
             {
                 reg: /dist\/(.*\.js)/,
                 release: '$1'
@@ -19,7 +19,7 @@ module.exports = (function() {
         repos: 'https://github.com/jquery/jquery.git',
         version: '2.1.0',
         build: 'npm run build',
-        maping: [
+        mapping: [
             {
                 reg: /dist\/(.*\.js)/,
                 release: '$1'
