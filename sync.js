@@ -53,7 +53,7 @@ if (ARGV[2] == 'list') {
     all.forEach(function (name) {
         try {
             var r = require(path.join(ROOT, name));
-            console.log('%s----%s----%s----$s', name.replace('.js', ''), r.repos, r.build, r.version);
+            console.log('%s----%s----%s----%s', name.replace('.js', ''), r.repos, r.build, r.version);
         } catch (e) {}
     });
 
