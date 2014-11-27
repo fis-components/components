@@ -62,9 +62,9 @@ function lastChangFiles(cb) {
     });
 }
 
-function dumpMaping (maping) {
+function dumpMapping (mapping) {
     var string = '[\n';
-    maping.forEach(function (map) {
+    mapping.forEach(function (map) {
         string += '    {\n';
         string += '        reg: ' + map.reg + ',\n';
         string += '        release:' + map.release + '\n';
@@ -123,14 +123,16 @@ if (ARGV[2] == 'sync') {
             }
 
             r.name = name;
-            fs.writeFileSync(
-                path.join(ROOT, '_' + name, '__maping.js'),
-                'module.exports=' + dumpMaping(r.maping)
-            );
-            r.maping = './__maping.js';
+            // fs.writeFileSync(
+            //     path.join(ROOT, '_' + name, '__mapping.js'),
+            //     'module.exports=' + dumpMapping(r.mapping)
+            // );
+            //r.mapping = './__mapping.js';
+            delete r.mapping; //@TODO
+            delete build;
             fs.writeFileSync(
                 path.join(ROOT, '_' + name, 'component.json'),
-                JSON.stringify(r, null,' ')
+                JSON.stringify(r, null,'    ')
             );
             break;
         }
@@ -138,6 +140,33 @@ if (ARGV[2] == 'sync') {
     } catch (e) {
         throw e;
         //process.exit(1);
+    }
+    process.exit(0);
+} else if (ARGV[2] == 'move') {
+    var name = ARGV[3].trim();
+    var version = ARGV[4].trim();
+    var from = ARGV[5].trim();
+    var to = ARGV[6].trim();
+    try {
+        var list = require(path.join(ROOT, 'modules', name + '.js'));
+        for (var i = 0; i < list.length; i++) {
+            var r = list[i];
+            
+            if (r.version != version) {
+                continue;
+            }
+
+            var Scaffold = require('fis-scaffold-kernal');
+            var scaffold = new Scaffold({
+                log: {
+                    //level: 0
+                }
+            });
+            scaffold.deliver(from, to, r.mapping);
+        }
+    } catch (e) {
+        throw e;
+        process.exit(1);
     }
     process.exit(0);
 }

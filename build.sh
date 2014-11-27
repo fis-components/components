@@ -95,14 +95,16 @@ sync () {
             eval $build || '=BUILD fail.' 2>&1
         fi
 
-        if [ -d "$build_dest" ]; then
-            cp -rf "./${build_dest}" "$dest"
-        fi
+        # if [ -d "$build_dest" ]; then
+        #     cp -rf "./${build_dest}" "$dest"
+        # fi
 
-        if [ -d "./dist" ]; then
-            cp -rf "./dist" "$dest"
-        fi
+        # if [ -d "./dist" ]; then
+        #     cp -rf "./dist" "$dest"
+        # fi
 
+        node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest"
+        
         cd "$dest"
 
         git_update_repos $new $version

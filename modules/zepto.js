@@ -6,7 +6,8 @@ module.exports = (function() {
         version: 'v1.1.4',
         description: 'zepto',
         build: 'npm install && npm run-script dist',
-        maping: [
+        main: 'zepto.js',
+        mapping: [
             {
                 reg: /dist\/(.*\.js)/,
                 release: '$1'
