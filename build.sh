@@ -81,9 +81,11 @@ sync () {
 export -f sync
 
 main () {
+    echo '#START build.sh'
     node $ROOT/sync.js 'list' | awk -F---- '{
         system("sync " $1 " " $2 " \""$3"\"  \""$4"\"");
     }'
+    echo '#END build.sh'
 }
 
 main
