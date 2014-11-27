@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/fis-components/components",
   "dependencies": {
+    "async": "^0.9.0",
     "github": "^0.2.3"
   }
 }

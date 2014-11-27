@@ -2,7 +2,9 @@ var ARGV = process.argv;
 var ROOT = __dirname;
 
 var path = require('path');
-
+var fs = require('fs');
+var async = require('async');
+var spawn = require('child_process').spawn;
 
 function createRepos(repos, token, from) {
 
@@ -38,45 +40,74 @@ function createRepos(repos, token, from) {
     delete github;
 }
 
-function listAll() {
-    var fs = require('fs');
-    var files = fs.readdirSync(ROOT);
-    return files.filter(function (name) {
-        return /\.js$/.test(name) && name != 'sync.js';
+function lastChangFiles(cb) {
+    var git_diff = spawn('git', ['diff', '--name-only', 'HEAD^..HEAD']);
+    git_diff.stderr.pipe(process.stderr);
+
+    var o = '';
+    git_diff.stdout.on('data', function (c) {
+        o += c.toString();
+    });
+
+    git_diff.stdout.on('end', function () {
+        var arr = o.split('\n');
+        arr = arr.filter(function (p) {
+            if (p.indexOf('modules') == -1) {
+                return false;
+            }
+            return /\.js$/.test(p);
+        });
+        //cb(['modules/jquery.js']);
+        cb(arr);
     });
 }
 
 
+
 if (ARGV[2] == 'sync') {
-    var all = listAll();
-    all.forEach(function (name) {
-        var r = require(path.join(ROOT, name));
-        var spawn = require('child_process').spawn;
-        var h = spawn('bash', 
-            [
-                path.join(ROOT, 'build.sh'), 
-                name.replace(/\.js/, ''), 
-                r.repos, 
-                r.build, 
-                r.version
-            ], {
-                cwd: __dirname
+    lastChangFiles(function (arr) {
+        arr.forEach(function (name) {
+            var list = require(path.join(ROOT, name));
+            name = name.replace('modules/', '')
+                       .replace(/\.js$/, '');    
+            var queue = [];
+            list.forEach(function (r) {
+                queue.push(function (cb) { 
+                    var h = spawn('bash', [
+                        path.join(ROOT, 'build.sh'), 
+                        name,
+                        r.repos,
+                        r.build,
+                        r.version,
+                        r.build_dest || ''
+                    ], {
+                        cwd: __dirname
+                    });
+                    h.stdout.on('data', function (c) {
+                        console.log(c.toString());
+                    });
+                    h.stdout.on('end', function () {
+                        cb();
+                    });
+                    h.stderr.pipe(process.stderr);
+                });
             });
-        h.stderr.pipe(process.stderr);
-        h.stdout.pipe(process.stdout);
+            async.series(queue, function () {
+                console.log('done');
+            });
+        });
     });
 } else if (ARGV[2] == 'create-repos') {
     console.log('=sync.js create repos: https://github.com/fis-components/%s', ARGV[3]);
     createRepos(ARGV[3], ARGV[4], ARGV[5]);
 } else if (ARGV[2] == 'create-component.json') {
-    var name = ARGV[3];
+    var name = ARGV[3].trim();
     try {
-        var r = require(path.join(ROOT, name + '.js'));
+        var r = require(path.join(ROOT, 'modules', name + '.js'));
         r.name = name;
-        var fs = require('fs');
-        fs.writeFileSync(path.join(ROOT, name, '__maping.js'), 'module.exports=' + JSON.stringify(r.maping, null, ' '));
+        fs.writeFileSync(path.join(ROOT, '_' + name, '__maping.js'), 'module.exports=' + JSON.stringify(r.maping, null, ' '));
         r.maping = './__maping.js';
-        fs.writeFileSync(path.join(ROOT, name, 'component.json'), JSON.stringify(r,null,' '), {
+        fs.writeFileSync(path.join(ROOT, '_' + name, 'component.json'), JSON.stringify(r,null,' '), {
             flag: 'w'
         });
     } catch (e) {

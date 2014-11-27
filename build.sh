@@ -10,87 +10,104 @@ git_clone () {
     return 0
 }
 
-git_push () {
-    cd $1
-    git remote add sync $2
-    git push sync master
-    cd -
+git_update_repos () {
+    repos=$1
+    version=$2
+    node $ROOT/sync.js create-component.json $repos
+
+    #AU
+    git config --global user.email "fansekey@gmail.com"
+    git config --global user.name "xiangshouding"
+    git config credential.helper "store --file=.git/credential"
+    echo "https://${GH_TOKEN}:@github.com" > .git/credential
+    
+    git add -A -f
+    git commit -m 'auto sync' -a
+    
+    git push origin master
+    git tag -a "$version" -m "create tag $version"
+    git push --tags
 }
 
 export -f git_clone
-export -f git_push
+export -f git_update_repos
 
 sync () {
     new=$1
     repos=$2
     build=$3
     version=$4
+    build_dest=$5
+
+    dest="$ROOT/_$new"
 
     echo "=SYNC ${new} from ${repos}, version: ${version}"
 
-    # new repos
-    git_clone "https://github.com/fis-components/${new}"
+    if [ ! -d "_${new}" ]; then
+        rm -rf "_${new}"
+    fi
+    
+    git_clone "https://github.com/fis-components/${new}" "_${new}"
 
     if [ "$?" != "0" ]; then
-        # clone origin
-        git_clone $repos $new
+        # new origin 
+        node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}"
+        if [ "$?" != "0" ]; then
+            exit 1
+        fi
+        git_clone "https://github.com/fis-components/${new}" "_${new}"
+        if [ "$?" != "0" ]; then
+            exit 1    
+        fi
+    fi
+    
+    if [ ! -d $new ]; then
+        rm -rf $new
+    fi
+    
+    git_clone $repos $new
+
+    if [ "$?" = "0" ]; then
         
         cd $new
 
-        node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}"
-    else
-        cd $new
+        git checkout $version
 
-        git pull sync master
-        git commit -m "Build: update to v${4}" -a
-    fi
-    
-    echo $?
-
-    if [ "$?" = "0" ]; then
+        if [ "$?" != "0" ]; then
+            echo "=GIT: git checkout $version fail."
+            exit 1
+        fi
 
         # run build
         if [ "$build" != "" ]; then
             echo  '=BUILD '$new
             $build || echo ''
-            git add dist -f
-            git commit -m 'Build: build to dist' ./dist
         fi
 
-        #AU
-        git config --global user.email "fansekey@gmail.com"
-        git config --global user.name "xiangshouding"
-        git config credential.helper "store --file=.git/credential"
-        echo "https://${GH_TOKEN}:@github.com" > .git/credential
-
-        git remote remove origin
-        git remote add origin "https://github.com/fis-components/${new}"
-        git remote remove sync
-        git remote add sync $repos
-
-        node $ROOT/sync.js create-component.json $new
-        git add component.json -f || echo ''
-        git add __maping.js -f || echo ''
-        git commit -m 'Build: add component.json' ./component.json ./__maping.js 
-
-        git push -u origin master || echo "fail: push to ${new}"
-
-        if [ "$4" != "" ]; then
-            git tag -a "v$4" -m $4
-            git push --tags
+        if [ -d "$build_dest" ]; then
+            cp -rf "./${build_dest}" "$dest"
         fi
+
+        if [ -d "./dist" ]; then
+            cp -rf "./dist" "$dest"
+        fi
+
+        cd "$dest"
+
+        git_update_repos $new $version
+        
+        cd -
+
+        cd $ROOT
     fi
-
-    cd -
-
 }
 
 export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4"
+    sync "$1" "$2" "$3" "$4" "$5"
     echo '#END build.sh'
 }
 
-main "$1" "$2" "$3" "$4"
+main "$1" "$2" "$3" "$4" "$5"
