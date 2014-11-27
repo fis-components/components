@@ -3,6 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/jquery/jquery.git',
+        description: 'jquery',
         version: '1.9.1',
         build: 'npm run build',
         maping: [

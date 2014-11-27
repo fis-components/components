@@ -43,7 +43,7 @@ sync () {
 
     echo "=SYNC ${new} from ${repos}, version: ${version}"
 
-    if [ ! -d "_${new}" ]; then
+    if [ -d "_${new}" ]; then
         rm -rf "_${new}"
     fi
     
@@ -61,7 +61,7 @@ sync () {
         fi
     fi
     
-    if [ ! -d $new ]; then
+    if [ -d $new ]; then
         rm -rf $new
     fi
     

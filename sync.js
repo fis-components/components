@@ -5,6 +5,7 @@ var path = require('path');
 var fs = require('fs');
 var async = require('async');
 var spawn = require('child_process').spawn;
+var util = require('util');
 
 function createRepos(repos, token, from) {
 
@@ -12,7 +13,6 @@ function createRepos(repos, token, from) {
         process.stderr.write('ERROR, must given token of GITHUB!\n');
         process.exit(1);
     }
-
 
     var GithubAPI = require('github');
 
@@ -62,7 +62,17 @@ function lastChangFiles(cb) {
     });
 }
 
-
+function dumpMaping (maping) {
+    var string = '[\n';
+    maping.forEach(function (map) {
+        string += '    {\n';
+        string += '        reg: ' + map.reg + ',\n';
+        string += '        release:' + map.release + '\n';
+        string += '    },\n';
+    });
+    string += '];';
+    return string;
+}
 
 if (ARGV[2] == 'sync') {
     lastChangFiles(function (arr) {
@@ -102,14 +112,29 @@ if (ARGV[2] == 'sync') {
     createRepos(ARGV[3], ARGV[4], ARGV[5]);
 } else if (ARGV[2] == 'create-component.json') {
     var name = ARGV[3].trim();
+    var version = ARGV[4].trim();
     try {
-        var r = require(path.join(ROOT, 'modules', name + '.js'));
-        r.name = name;
-        fs.writeFileSync(path.join(ROOT, '_' + name, '__maping.js'), 'module.exports=' + JSON.stringify(r.maping, null, ' '));
-        r.maping = './__maping.js';
-        fs.writeFileSync(path.join(ROOT, '_' + name, 'component.json'), JSON.stringify(r,null,' '), {
-            flag: 'w'
-        });
+        var list = require(path.join(ROOT, 'modules', name + '.js'));
+        for (var i = 0; i < list.length; i++) {
+            var r = list[i];
+            
+            if (r.version != version) {
+                continue;
+            }
+
+            r.name = name;
+            fs.writeFileSync(
+                path.join(ROOT, '_' + name, '__maping.js'),
+                'module.exports=' + dumpMaping(r.maping)
+            );
+            r.maping = './__maping.js';
+            fs.writeFileSync(
+                path.join(ROOT, '_' + name, 'component.json'),
+                JSON.stringify(r, null,' ')
+            );
+            break;
+        }
+
     } catch (e) {
         throw e;
         //process.exit(1);
