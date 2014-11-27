@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '0.11'
 script:
-- bash ./build.sh
+- node ./sync.js sync
 env:
   global:
   - secure: a9kINH5eZ/xVQe8gQwy4dOGnVTkEBe9Tkzx28/mHrFTFGU5hyzfKrMRmXLPTiyuvSHcNy1t3IOfldhzT0luBb68fZdxUtQ4jR6wFLvpiG20cX8nUV6wX7Zmk8Ozt81ZRvlYESSvWdqM6PYWU+t6TOVtt2cQUUn+6F/JWMTPWAK0=
