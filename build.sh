@@ -31,15 +31,16 @@ sync () {
     # new repos
     git_clone "https://github.com/fis-components/${new}"
 
-    cd $new
-
     if [ "$?" != "0" ]; then
         # clone origin
-        cd ..
         git_clone $repos $new
-        cd -
+        
+        cd $new
+
         node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}"
     else
+        cd $new
+        
         git pull sync master
         git commit -m "Build: update to v${4}" -a
     fi
@@ -82,15 +83,8 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    node $ROOT/sync.js 'list' | awk -F---- '{
-        print $1
-        print $2
-        print $3
-        print $4
-        
-        system("sync " $1 " " $2 " \""$3"\"  \""$4"\"");
-    }'
+    sync "$1" "$2" "$3" "$4"
     echo '#END build.sh'
 }
 
-main
+main "$1" "$2" "$3" "$4"

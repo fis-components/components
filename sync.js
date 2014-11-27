@@ -47,16 +47,24 @@ function listAll() {
 }
 
 
-if (ARGV[2] == 'list') {
+if (ARGV[2] == 'sync') {
     var all = listAll();
-
     all.forEach(function (name) {
-        try {
-            var r = require(path.join(ROOT, name));
-            console.log('%s----%s----%s----%s', name.replace('.js', ''), r.repos, r.build, r.version);
-        } catch (e) {}
+        var r = require(path.join(ROOT, name));
+        var spawn = require('child_process').spawn;
+        var h = spawn('bash', 
+            [
+                path.join(ROOT, 'build.sh'), 
+                name.replace(/\.js/, ''), 
+                r.repos, 
+                r.build, 
+                r.version
+            ], {
+                cwd: __dirname
+            });
+        h.stderr.pipe(process.stderr);
+        h.stdout.pipe(process.stdout);
     });
-
 } else if (ARGV[2] == 'create-repos') {
     console.log('=sync.js create repos: https://github.com/fis-components/%s', ARGV[3]);
     createRepos(ARGV[3], ARGV[4]);
