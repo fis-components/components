@@ -7,7 +7,7 @@ module.exports = (function() {
         build: 'npm run build',
         maping: [
             {
-                reg: /dist\/(.*\.js)'/,
+                reg: /dist\/(.*\.js)/,
                 release: '$1'
             },
             {
@@ -21,7 +21,7 @@ module.exports = (function() {
         build: 'npm run build',
         maping: [
             {
-                reg: /dist\/(.*\.js)'/,
+                reg: /dist\/(.*\.js)/,
                 release: '$1'
             },
             {

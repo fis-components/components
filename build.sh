@@ -59,6 +59,17 @@ sync () {
         if [ "$?" != "0" ]; then
             exit 1    
         fi
+    else
+        cd "_${new}"
+        git pull --all
+        found=$(git tag | grep $version)
+        
+        if [ "$found" != "" ]; then
+            echo "=TAG tag $version exists."
+            exit 1
+        fi
+
+        cd -
     fi
     
     if [ -d $new ]; then
