@@ -15,8 +15,7 @@ function createRepos(repos, token, from) {
     var GithubAPI = require('github');
 
     var github = new GithubAPI({
-        version: '3.0.0',
-        description: 'from ' + from
+        version: '3.0.0'
     });
 
     github.authenticate({
@@ -26,7 +25,8 @@ function createRepos(repos, token, from) {
 
     github.repos.createFromOrg({
         name: repos,
-        org: 'fis-components'
+        org: 'fis-components',
+        description: 'from ' + from
     }, function (err, data) {
         if (err) {
             //throw err;
