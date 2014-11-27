@@ -156,7 +156,7 @@ if (ARGV[2] == 'sync') {
                 continue;
             }
 
-            var Scaffold = require('fis-scaffold-kernal');
+            var Scaffold = require('fis-scaffold-kernel');
             var scaffold = new Scaffold({
                 log: {
                     //level: 0
