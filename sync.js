@@ -129,7 +129,7 @@ if (ARGV[2] == 'sync') {
             // );
             //r.mapping = './__mapping.js';
             delete r.mapping; //@TODO
-            delete build;
+            delete r.build;
             fs.writeFileSync(
                 path.join(ROOT, '_' + name, 'component.json'),
                 JSON.stringify(r, null,'    ')

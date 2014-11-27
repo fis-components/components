@@ -4,7 +4,7 @@ module.exports = (function() {
     return [{
         repos: 'https://github.com/madrobby/zepto.git',
         version: 'v1.1.4',
-        description: 'zepto.js',
+        description: 'zepto',
         build: 'npm install && npm run-script dist',
         main: 'zepto.js',
         mapping: [
