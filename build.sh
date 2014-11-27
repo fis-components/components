@@ -92,7 +92,7 @@ sync () {
         # run build
         if [ "$build" != "" ]; then
             echo  '=BUILD '$new
-            $build || echo ''
+            eval $build || '=BUILD fail.' 2>&1
         fi
 
         if [ -d "$build_dest" ]; then
