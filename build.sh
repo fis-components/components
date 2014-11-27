@@ -13,7 +13,7 @@ git_clone () {
 git_update_repos () {
     repos=$1
     version=$2
-    node $ROOT/sync.js create-component.json $repos
+    node $ROOT/sync.js create-component.json $repos $version
 
     #AU
     git config --global user.email "fansekey@gmail.com"
