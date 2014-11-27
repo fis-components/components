@@ -40,7 +40,7 @@ sync () {
         node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}"
     else
         cd $new
-        
+
         git pull sync master
         git commit -m "Build: update to v${4}" -a
     fi
@@ -56,6 +56,12 @@ sync () {
             git add dist -f
             git commit -m 'Build: build to dist' ./dist
         fi
+
+        #AU
+        git config --global user.email "fansekey@gmail.com"
+        git config --global user.name "xiangshouding"
+        git config credential.helper "store --file=.git/credential"
+        echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
         git remote remove origin
         git remote add origin "https://github.com/fis-components/${new}"
