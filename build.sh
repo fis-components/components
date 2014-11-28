@@ -94,7 +94,7 @@ sync () {
         # run build
         if [ "$build" != "" ]; then
             echo  '=BUILD '$new
-            eval $build || '=BUILD fail.' 2>&1 && exit 1
+            eval $build || ('=BUILD fail.' 2>&1 && exit 1)
         fi
 
         # if [ -d "$build_dest" ]; then
