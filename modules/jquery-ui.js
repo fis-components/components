@@ -13,11 +13,11 @@ module.exports = (function() {
         mapping: [
             {
                 reg: '/ui/**',
-                release: true
+                release: '$&'
             },
             {
                 reg: '/themes/**',
-                release: true
+                release: '$&'
             },
             {
                 reg: /\/dist\/(.*?)$/,
