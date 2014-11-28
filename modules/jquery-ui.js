@@ -22,7 +22,7 @@ module.exports = (function() {
             {
                 reg: /\/dist\/(.*?)$/,
                 release: '$1'
-            }
+            },
             {
                 reg: '*',
                 release: false
