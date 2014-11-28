@@ -28,5 +28,5 @@ module.exports = (function() {
                 release: false
             }
         ]
-    }]
+    }];
 })();
