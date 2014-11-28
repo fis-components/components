@@ -9,7 +9,7 @@ module.exports = (function() {
         main: 'zepto.js',
         mapping: [
             {
-                reg: /dist\/(.*\.js)/,
+                reg: /^\/dist\/(.*\.js)/,
                 release: '$1'
             },
             {

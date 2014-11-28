@@ -45,6 +45,7 @@ sync () {
 
     if [ -d "_${new}" ]; then
         rm -rf "_${new}"
+        echo "=LOCAL rm -rf _${new}"
     fi
     
     git_clone "https://github.com/fis-components/${new}" "_${new}"
@@ -74,6 +75,7 @@ sync () {
     
     if [ -d $new ]; then
         rm -rf $new
+        echo "=LOCAL rm -rf $new"
     fi
     
     git_clone $repos $new
@@ -92,7 +94,7 @@ sync () {
         # run build
         if [ "$build" != "" ]; then
             echo  '=BUILD '$new
-            eval $build || '=BUILD fail.' 2>&1
+            eval $build || '=BUILD fail.' 2>&1 && exit 1
         fi
 
         # if [ -d "$build_dest" ]; then
@@ -104,7 +106,7 @@ sync () {
         # fi
 
         node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest"
-        
+
         cd "$dest"
 
         git_update_repos $new $version
