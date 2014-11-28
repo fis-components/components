@@ -7,7 +7,7 @@ module.exports = (function() {
         main: 'underscore.js',
         mapping: [
             {
-                reg: "underscore.js",
+                reg: /^\/underscore\.js/,
                 release: '$&'
             },
             {

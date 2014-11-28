@@ -87,7 +87,7 @@ if (ARGV[2] == 'sync') {
                         path.join(ROOT, 'build.sh'), 
                         name,
                         r.repos,
-                        r.build,
+                        r.build || '',
                         r.version,
                         r.build_dest || ''
                     ], {
