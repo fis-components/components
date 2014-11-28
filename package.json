@@ -18,7 +18,7 @@
   "homepage": "https://github.com/fis-components/components",
   "dependencies": {
     "async": "0.9.0",
-    "fis-scaffold-kernel": "0.0.4",
+    "fis-scaffold-kernel": "0.0.5",
     "github": "0.2.3"
   }
 }
