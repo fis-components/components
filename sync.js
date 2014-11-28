@@ -162,7 +162,10 @@ if (ARGV[2] == 'sync') {
                     //level: 0
                 }
             });
-            scaffold.deliver(from, to, r.mapping);
+            var ok = scaffold.deliver(from, to, r.mapping);
+            if (ok == 0) {
+                process.exit(1); //fail
+            }
         }
     } catch (e) {
         throw e;
