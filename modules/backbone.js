@@ -16,7 +16,8 @@ module.exports = (function() {
             }
         ],
         dependencies: [
-            "github:fis-components/underscore@1.7.0"
+            "github:fis-components/underscore@1.7.0",
+            "github:fis-components/jquery@1.9.1"
         ]    
     }];
 })();
