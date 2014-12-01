@@ -28,6 +28,10 @@ module.exports = (function() {
                 release: 'all.css'
             },
             {
+                reg: '/dist/i18n/jquery-ui-i18n.js',
+                release: 'i18n/all-i18n.js'
+            },
+            {
                 reg: /^\/dist\/(.*?)$/,
                 release: '$1'
             },
