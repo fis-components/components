@@ -8,7 +8,7 @@ module.exports = (function() {
         },
         repos: 'https://github.com/Igosuki/compass-mixins.git',
         version: '1.0.2',
-        description: 'A collection of compass' stylesheet for bower dependencies and libsass',
+        description: 'A collection of compass\' stylesheet for bower dependencies and libsass',
         mapping: [
             {
                 reg: /^\/lib\/(.*?)$/,
