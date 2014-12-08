@@ -8,7 +8,6 @@ module.exports = (function() {
         },
         repos: 'https://github.com/jquery/jquery-ui.git',
         version: '1.11.2',
-        main: 'all.js',
         description: 'jquery-ui',
         build: 'npm install && npm install grunt-cli && ./node_modules/.bin/grunt concat',
         dependencies: [
