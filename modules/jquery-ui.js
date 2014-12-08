@@ -25,11 +25,11 @@ module.exports = (function() {
             },
             {
                 reg: '/dist/jquery-ui.js',
-                release: 'all.js'
+                release: false
             },
             {
                 reg: '/dist/jquery-ui.css',
-                release: 'all.css'
+                release: false
             },
             {
                 reg: '/dist/i18n/jquery-ui-i18n.js',
