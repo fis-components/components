@@ -22,6 +22,11 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            "jquery.placeholder.js": {
+              "deps": ["jquery"]
+            }
+        }
     }];
 })();
