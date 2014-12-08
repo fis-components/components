@@ -32,7 +32,7 @@ module.exports = (function() {
             },
             {
                 reg: '/dist/i18n/jquery-ui-i18n.js',
-                release: 'i18n/all-i18n.js'
+                release: false
             },
             {
                 reg: /^\/dist\/(.*?)$/,
