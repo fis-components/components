@@ -13,19 +13,19 @@ module.exports = (function() {
         mapping: [
             {
                 reg: /^\/css\/(.*?)$/,
-                release: '$1'
+                release: '$&'
             },
             {
                 reg: /^\/scss\/(.*?)$/,
-                release: '$1'
+                release: '$&'
             },
             {
                 reg: /^\/less\/(.*?)$/,
-                release: '$1'
+                release: '$&'
             },
             {
                 reg: /^\/fonts\/(.*?)$/,
-                release: '$1'
+                release: '$&'
             },
             {
                 reg: '*',
