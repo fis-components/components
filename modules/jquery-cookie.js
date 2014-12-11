@@ -20,7 +20,7 @@ module.exports = (function() {
             },
             {
                 reg: /^\/src\/jquery\.cookie\.js$/,
-                release: '/jquery.cookie.js'
+                release: 'jquery.cookie.js'
             },
             {
                 reg: /^\/README\.md$/,
