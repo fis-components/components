@@ -9,7 +9,6 @@ module.exports = (function() {
         repos: 'https://github.com/jquery/jquery-ui.git',
         version: '1.11.2',
         description: 'jquery-ui',
-        build: 'npm install && npm install grunt-cli && ./node_modules/.bin/grunt concat',
         dependencies: [
             "jquery@>=1.6"
         ],
@@ -21,22 +20,6 @@ module.exports = (function() {
             {
                 reg: '/themes/**',
                 release: '$&'
-            },
-            {
-                reg: '/dist/jquery-ui.js',
-                release: false
-            },
-            {
-                reg: '/dist/jquery-ui.css',
-                release: false
-            },
-            {
-                reg: '/dist/i18n/jquery-ui-i18n.js',
-                release: false
-            },
-            {
-                reg: /^\/dist\/(.*?)$/,
-                release: '$1'
             },
             {
                 reg: '*',

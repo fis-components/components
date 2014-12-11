@@ -7,6 +7,7 @@ module.exports = (function() {
             author: "fis-components"
         },
         name: "webuploader",
+        main: "dist/all.js",
         repos: 'https://github.com/fex-team/webuploader.git',
         version: '0.1.5',
         description: 'It\'s a new file uploader solution! http://fex.baidu.com/webuploader',
