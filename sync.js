@@ -28,7 +28,7 @@ function createRepos(repos, token, from) {
     github.repos.createFromOrg({
         name: repos,
         org: 'fis-components',
-        description: 'from ' + from
+        description: 'Fork from ' + from
     }, function (err, data) {
         if (err) {
             //throw err;
@@ -79,12 +79,12 @@ if (ARGV[2] == 'sync') {
         arr.forEach(function (name) {
             var list = require(path.join(ROOT, name));
             name = name.replace('modules/', '')
-                       .replace(/\.js$/, '');    
+                       .replace(/\.js$/, '');
             var queue = [];
             list.forEach(function (r) {
-                queue.push(function (cb) { 
+                queue.push(function (cb) {
                     var h = spawn('bash', [
-                        path.join(ROOT, 'build.sh'), 
+                        path.join(ROOT, 'build.sh'),
                         name,
                         r.repos,
                         r.build || '',
@@ -117,7 +117,7 @@ if (ARGV[2] == 'sync') {
         var list = require(path.join(ROOT, 'modules', name + '.js'));
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
-            
+
             if (r.version != version) {
                 continue;
             }
@@ -151,7 +151,7 @@ if (ARGV[2] == 'sync') {
         var list = require(path.join(ROOT, 'modules', name + '.js'));
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
-            
+
             if (r.version != version) {
                 continue;
             }

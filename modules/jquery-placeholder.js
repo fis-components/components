@@ -4,7 +4,7 @@ module.exports = (function() {
     return [{
         protocol: "github",
         github: {
-          author: "fis-components"
+            author: "fis-components"
         },
         repos: 'https://github.com/mathiasbynens/jquery-placeholder.git',
         version: '2.0.8',
@@ -24,7 +24,7 @@ module.exports = (function() {
                 release: false
             }
         ],
-        
+
         shim: {
             "jquery.placeholder.js": {
               "deps": ["jquery"]
