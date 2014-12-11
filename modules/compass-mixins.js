@@ -11,6 +11,10 @@ module.exports = (function() {
         description: 'A collection of compass\' stylesheet for bower dependencies and libsass',
         mapping: [
             {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
                 reg: /^\/lib\/(.*?)$/,
                 release: '$1'
             },

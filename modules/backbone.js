@@ -11,6 +11,10 @@ module.exports = (function() {
         main: 'backbone.js',
         mapping: [
             {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
                 reg: /^\/backbone\.js/,
                 release: '$&'
             },

@@ -12,6 +12,10 @@ module.exports = (function() {
         description: 'The iconic font and CSS toolkit http://fontawesome.io',
         mapping: [
             {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
                 reg: /^\/css\/(.*?)$/,
                 release: '$&'
             },

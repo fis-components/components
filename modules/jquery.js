@@ -13,6 +13,10 @@ module.exports = (function() {
         build: 'npm install && npm install grunt-cli && ./node_modules/.bin/grunt',
         mapping: [
             {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
                 reg: /^\/dist\/(.*\.js)/,
                 release: '$1'
             },
@@ -32,6 +36,10 @@ module.exports = (function() {
         main: 'jquery.js',
         name: 'jquery',
         mapping: [
+            {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
             {
                 reg: /^\/dist\/(.*\.js)/,
                 release: '$1'

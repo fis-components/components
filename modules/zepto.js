@@ -13,6 +13,10 @@ module.exports = (function() {
         main: 'zepto.js',
         mapping: [
             {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
                 reg: /^\/dist\/(.*\.js)/,
                 release: '$1'
             },

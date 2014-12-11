@@ -11,6 +11,10 @@ module.exports = (function() {
         main: 'underscore.js',
         mapping: [
             {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
                 reg: /^\/underscore\.js/,
                 release: '$&'
             },

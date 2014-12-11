@@ -14,6 +14,10 @@ module.exports = (function() {
         ],
         mapping: [
             {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
                 reg: /^\/ui\/(.*?)$/,
                 release: '$1'
             },
