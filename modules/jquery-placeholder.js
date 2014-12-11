@@ -8,6 +8,7 @@ module.exports = (function() {
         },
         repos: 'https://github.com/mathiasbynens/jquery-placeholder.git',
         version: 'v2.0.8',
+        name: 'jquery-placeholder',
         main: 'jquery.placeholder.js',
         description: 'A jQuery plugin that enables HTML5 placeholder behavior for browsers that aren’t trying hard enough yet https://mths.be/placeholder',
         dependencies: [
