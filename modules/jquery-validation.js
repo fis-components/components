@@ -10,7 +10,7 @@ module.exports = (function() {
         main: 'jquery.validate',
         repos: 'https://github.com/jzaefferer/jquery-validation.git',
         version: '1.13.1',
-        description: 'jquery-validation',
+        description: 'jquery-validation component',
         build: 'npm install && npm install grunt-cli && ./node_modules/.bin/grunt release',
         dependencies: [
             "jquery@>=1.6"
