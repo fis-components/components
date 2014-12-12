@@ -6,7 +6,7 @@ module.exports = (function() {
         github: {
             author: "fis-components"
         },
-        description: "require css component.",
+        description: "require css component",
         repos: 'https://github.com/guybedford/require-css.git',
         version: '0.1.8',
         name: 'css',
