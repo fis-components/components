@@ -14,13 +14,14 @@ module.exports = (function() {
         dependencies: [
             "jquery@>=1.6"
         ],
+
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
                 release: false
             },
             {
-                reg: 'query.placeholder.js',
+                reg: /^\/query\.placeholder\.js$/,
                 release: '$&'
             },
             {
