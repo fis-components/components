@@ -9,7 +9,7 @@ module.exports = (function() {
         repos: 'https://github.com/defunkt/jquery-pjax.git',
         version: 'v1.9.4',
         name: 'jquery-pjax',
-        main: 'jquery-pjax.js',
+        main: 'jquery.pjax.js',
         dependencies: [
             "jquery@>=1.8"
         ],
