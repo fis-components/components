@@ -6,10 +6,10 @@ module.exports = (function() {
         github: {
             author: "fis-components"
         },
-        repos: 'https://github.com/carhartl/jquery-cookie.git',
-        version: 'v1.4.1',
-        name: 'jquery-cookie',
-        main: 'jquery.cookie.js',
+        repos: 'https://github.com/Krinkle/jquery-json.git',
+        version: 'v2.5.1',
+        name: 'jquery-json',
+        main: 'jquery.json.js',
         dependencies: [
             "jquery@>=1.6"
         ],
@@ -19,7 +19,7 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/src\/jquery\.cookie\.js$/,
+                reg: /^\/src\/jquery\.json\.js$/,
                 release: 'jquery.cookie.js'
             },
             {
