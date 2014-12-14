@@ -30,6 +30,11 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            "jquery.cookie.js": {
+              "deps": ["jquery"]
+            }
+        }
     }]
 })();

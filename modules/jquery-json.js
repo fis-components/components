@@ -21,7 +21,7 @@ module.exports = (function() {
             },
             {
                 reg: /^\/src\/jquery\.json\.js$/,
-                release: 'jquery.cookie.js'
+                release: 'jquery.json.js'
             },
             {
                 reg: /^\/README\.md$/,
@@ -31,6 +31,11 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            "jquery.json.js": {
+              "deps": ["jquery"]
+            }
+        }
     }]
 })();
