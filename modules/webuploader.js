@@ -21,12 +21,20 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/dist\/(.*?)$/,
-                release: '$&'
+                reg: /^\/dist\/Uploader\.swf$/i,
+                release: 'webuploader.swf'
+            },
+            {
+                reg: /^\/css\/webuploader\.css$/i,
+                release: 'webuploader.css'
             },
             {
                 reg: /^\/src\/(.*?)$/,
                 release: '$1'
+            },
+            {
+                reg: /^\/README\.md$/,
+                release: '$&'
             },
             {
                 reg: '*',
