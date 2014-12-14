@@ -13,6 +13,7 @@ module.exports = (function() {
         dependencies: [
             "jquery@>=1.6"
         ],
+
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
