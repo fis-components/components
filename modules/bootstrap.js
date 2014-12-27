@@ -16,6 +16,11 @@ module.exports = (function() {
             },
 
             {
+                reg: /^\/dist\/js\/npm\.js$/,
+                release: false
+            },
+
+            {
                 reg: /^\/dist\/(.*)/,
                 release: '$1'
             },
