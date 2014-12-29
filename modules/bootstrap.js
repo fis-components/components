@@ -21,7 +21,17 @@ module.exports = (function() {
             },
 
             {
-                reg: /^\/dist\/(.*)/,
+                reg: /^\/dist\/js\/(.*\.js)$/,
+                release: '$1'
+            },
+
+            {
+                reg: /^\/dist\/(.*)$/,
+                release: '$1'
+            },
+
+            {
+                reg: /^\/js\/(.*\.js)$/,
                 release: '$1'
             },
 
@@ -39,7 +49,55 @@ module.exports = (function() {
             "jquery@>=1.9.1"
         ],
         shim: {
-            "js/bootstrap.js": {
+            "bootstrap.js": {
+              "deps": ["jquery"]
+            },
+
+            "affix.js": {
+              "deps": ["jquery"]
+            },
+
+            "alert.js": {
+              "deps": ["jquery"]
+            },
+
+            "button.js": {
+              "deps": ["jquery"]
+            },
+
+            "carousel.js": {
+              "deps": ["jquery"]
+            },
+
+            "collapse.js": {
+              "deps": ["jquery"]
+            },
+
+            "dropdown.js": {
+              "deps": ["jquery"]
+            },
+
+            "modal.js": {
+              "deps": ["jquery"]
+            },
+
+            "popover.js": {
+              "deps": ["jquery"]
+            },
+
+            "scrollspy.js": {
+              "deps": ["jquery"]
+            },
+
+            "tab.js": {
+              "deps": ["jquery"]
+            },
+
+            "tooltip.js": {
+              "deps": ["jquery"]
+            },
+
+            "transition.js": {
               "deps": ["jquery"]
             }
         }
