@@ -8,7 +8,7 @@ module.exports = (function() {
         },
         repos: 'https://github.com/twbs/bootstrap.git',
         version: 'v3.3.1',
-        main: 'js/bootstrap.js',
+        main: 'bootstrap.js',
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
@@ -31,7 +31,7 @@ module.exports = (function() {
             },
 
             {
-                reg: /^\/js\/(.*\.js)$/,
+                reg: /^\/js\/([^\/]*\.js)$/,
                 release: '$1'
             },
 
