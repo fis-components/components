@@ -10,9 +10,6 @@ module.exports = (function() {
         version: 'v0.1.6',
         name: 'nprogress',
         main: 'nprogress.js',
-        dependencies: [
-            "jquery"
-        ],
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
