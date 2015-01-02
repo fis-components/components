@@ -19,15 +19,15 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^nprogress\.js$/,
+                reg: /^\/nprogress\.js$/,
                 release: '$&'
             },
             {
-                reg: /^nprogress\.css$/,
+                reg: /^\/nprogress\.css$/,
                 release: '$&'
             },
             {
-                reg: /^\/README\.md$/,
+                reg: /^\/README\.md$/i,
                 release: '$&'
             },
             {
