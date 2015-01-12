@@ -20,5 +20,14 @@
     "async": "0.9.0",
     "fis-scaffold-kernel": "~0.0.18",
     "github": "0.2.3"
+  },
+  "devDependencies": {
+    "escodegen": "^1.5.0",
+    "escope": "^2.0.2",
+    "esformatter": "^0.4.3",
+    "esprima": "^1.2.2",
+    "estraverse": "^1.9.1",
+    "glob": "^4.3.2",
+    "lodash": "^2.4.1"
   }
 }

@@ -20,10 +20,10 @@ git_update_repos () {
     git config --global user.name "xiangshouding"
     git config credential.helper "store --file=.git/credential"
     echo "https://${GH_TOKEN}:@github.com" > .git/credential
-    
+
     git add -A -f
     git commit -m 'auto sync' -a
-    
+
     git push origin master
     git tag -a "$version" -m "create tag $version"
     git push --tags
@@ -47,24 +47,24 @@ sync () {
         rm -rf "_${new}"
         echo "=LOCAL rm -rf _${new}"
     fi
-    
+
     git_clone "https://github.com/fis-components/${new}" "_${new}"
 
     if [ "$?" != "0" ]; then
-        # new origin 
+        # new origin
         node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}"
         if [ "$?" != "0" ]; then
             exit 1
         fi
         git_clone "https://github.com/fis-components/${new}" "_${new}"
         if [ "$?" != "0" ]; then
-            exit 1    
+            exit 1
         fi
     else
         cd "_${new}"
         git pull --all
         found=$(git tag | grep $version)
-        
+
         if [ "$found" != "" ]; then
             echo "=TAG tag $version exists."
             exit 1
@@ -72,16 +72,16 @@ sync () {
 
         cd -
     fi
-    
+
     if [ -d $new ]; then
         rm -rf $new
         echo "=LOCAL rm -rf $new"
     fi
-    
+
     git_clone $repos $new
 
     if [ "$?" = "0" ]; then
-        
+
         cd $new
 
         git checkout $version
@@ -107,6 +107,8 @@ sync () {
 
         node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest"
 
+        node $ROOT/sync.js convert "$new" "$version" "$dest"
+
         if [ "$?" != "0" ]; then
             echo '=ROADMAP move fail'
             exit 1
@@ -115,7 +117,7 @@ sync () {
         cd "$dest"
 
         git_update_repos $new $version
-        
+
         cd -
 
         cd $ROOT

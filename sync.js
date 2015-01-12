@@ -172,5 +172,33 @@ if (ARGV[2] == 'sync') {
         process.exit(1);
     }
     process.exit(0);
+} else if (ARGV[2] == 'convert') {
+    var name = ARGV[3].trim();
+    var version = ARGV[4].trim();
+    var dist = ARGV[5].trim();
+
+    var convert = require('./convert.js');
+    var finder = require('./finder.js');
+
+    var list = require(path.join(ROOT, 'modules', name + '.js'));
+
+    for (var i = 0; i < list.length; i++) {
+        var r = list[i];
+
+        if (r.version != version) {
+            continue;
+        }
+
+        var jses = finder(dist, '**/*.js');
+
+        convert({
+            files: jses,
+            convertAsync: false,
+            config: r,
+            dir: dist
+        }, function() {
+            console.log('convert done')
+        });
+    }
 }
 
