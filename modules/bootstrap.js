@@ -69,7 +69,7 @@ module.exports = (function() {
             },
 
             "alert.js": {
-              "deps": ["jquery", "./transition.js"]
+              "deps": ["jquery", "./transition"]
             },
 
             "button.js": {
@@ -77,11 +77,11 @@ module.exports = (function() {
             },
 
             "carousel.js": {
-              "deps": ["jquery", "./transition.js"]
+              "deps": ["jquery", "./transition"]
             },
 
             "collapse.js": {
-              "deps": ["jquery", "./transition.js"]
+              "deps": ["jquery", "./transition"]
             },
 
             "dropdown.js": {
@@ -89,7 +89,7 @@ module.exports = (function() {
             },
 
             "modal.js": {
-              "deps": ["jquery", "./transition.js"]
+              "deps": ["jquery", "./transition"]
             },
 
             "popover.js": {
@@ -101,11 +101,11 @@ module.exports = (function() {
             },
 
             "tab.js": {
-              "deps": ["jquery", "./transition.js"]
+              "deps": ["jquery", "./transition"]
             },
 
             "tooltip.js": {
-              "deps": ["jquery", "./transition.js"]
+              "deps": ["jquery", "./transition"]
             },
 
             "transition.js": {
