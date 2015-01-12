@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/jashkenas/backbone.git',
         version: '1.1.2',
         main: 'backbone.js',
