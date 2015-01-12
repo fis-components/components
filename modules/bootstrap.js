@@ -46,7 +46,21 @@ module.exports = (function() {
         ],
         shim: {
             "bootstrap.js": {
-              "deps": ["jquery"]
+              "content": [
+                "require('./alert.js');",
+                "require('./button.js');",
+                "require('./carousel.js');",
+                "require('./collapse.js');",
+                "require('./dropdown.js');",
+                "require('./modal.js');",
+                "require('./tooltip.js');",
+                "require('./popover.js');",
+                "require('./scrollspy.js');",
+                "require('./tab.js');",
+                "require('./affix.js');",
+                ].join('\n'),
+              "deps": ["jquery"],
+              "exports": "requie('jquery')"
             },
 
             "affix.js": {
@@ -54,7 +68,7 @@ module.exports = (function() {
             },
 
             "alert.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery", "./transition.js"]
             },
 
             "button.js": {
@@ -62,11 +76,11 @@ module.exports = (function() {
             },
 
             "carousel.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery", "./transition.js"]
             },
 
             "collapse.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery", "./transition.js"]
             },
 
             "dropdown.js": {
@@ -74,7 +88,7 @@ module.exports = (function() {
             },
 
             "modal.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery", "./transition.js"]
             },
 
             "popover.js": {
@@ -86,11 +100,11 @@ module.exports = (function() {
             },
 
             "tab.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery", "./transition.js"]
             },
 
             "tooltip.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery", "./transition.js"]
             },
 
             "transition.js": {
