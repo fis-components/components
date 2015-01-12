@@ -5,6 +5,7 @@ module.exports = (function() {
         repos: 'https://github.com/twbs/bootstrap.git',
         version: 'v3.3.1',
         main: 'bootstrap.js',
+
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
