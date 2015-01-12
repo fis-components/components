@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/Krinkle/jquery-json.git',
         version: 'v2.5.1',
         name: 'jquery-json',

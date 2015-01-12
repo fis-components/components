@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/defunkt/jquery-pjax.git',
         version: 'v1.9.4',
         name: 'jquery-pjax',

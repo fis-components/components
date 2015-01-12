@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/kylefox/jquery-modal.git',
         version: 'v0.5.2',
         name: 'jquery-modal',

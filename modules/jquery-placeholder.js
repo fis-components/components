@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/mathiasbynens/jquery-placeholder.git',
         version: 'v2.0.8',
         name: 'jquery-placeholder',
