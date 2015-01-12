@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         name: 'jquery-validation',
         main: 'jquery.validate',
         repos: 'https://github.com/jzaefferer/jquery-validation.git',

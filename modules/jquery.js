@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/jquery/jquery.git',
         version: '1.9.1',
         name: 'jquery',
@@ -26,10 +22,6 @@ module.exports = (function() {
             }
         ]
     }, {
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/jquery/jquery.git',
         version: '2.1.0',
         build: 'npm run build',

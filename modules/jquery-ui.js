@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/jquery/jquery-ui.git',
         version: '1.11.2',
         description: 'jquery-ui',
