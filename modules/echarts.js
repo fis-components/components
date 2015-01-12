@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/ecomfe/echarts.git',
         version: '2.1.10',
         name: 'echarts',

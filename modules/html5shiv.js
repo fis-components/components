@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/aFarkas/html5shiv.git',
         version: '3.7.2',
         name: 'html5shiv',

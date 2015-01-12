@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/Wolfy87/EventEmitter.git',
         version: 'v4.2.11',
         name: 'event-emitter',

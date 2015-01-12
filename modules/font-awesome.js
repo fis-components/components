@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/FortAwesome/Font-Awesome.git',
         name: "font-awesome",
         version: 'v4.2.0',

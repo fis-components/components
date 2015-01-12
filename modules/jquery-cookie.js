@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/carhartl/jquery-cookie.git',
         version: 'v1.4.1',
         name: 'jquery-cookie',
