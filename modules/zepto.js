@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/madrobby/zepto.git',
         version: 'v1.1.4',
         description: 'zepto',
@@ -19,6 +15,10 @@ module.exports = (function() {
             {
                 reg: /^\/dist\/(.*\.js)/,
                 release: '$1'
+            },
+            {
+                reg: /^\/README\.md$/,
+                release: '$&'
             },
             {
                 reg: '*',

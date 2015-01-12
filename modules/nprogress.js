@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/rstacruz/nprogress.git',
         version: 'v0.1.6',
         name: 'nprogress',

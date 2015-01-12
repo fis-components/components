@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/jashkenas/underscore.git',
         version: '1.7.0',
         main: 'underscore.js',
@@ -16,6 +12,10 @@ module.exports = (function() {
             },
             {
                 reg: /^\/underscore\.js/,
+                release: '$&'
+            },
+            {
+                reg: /^\/README\.md$/,
                 release: '$&'
             },
             {
