@@ -8,6 +8,7 @@ module.exports = (function() {
         dependencies: [
             "jquery@>=1.6"
         ],
+
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
@@ -19,6 +20,10 @@ module.exports = (function() {
             },
             {
                 reg: '/themes/**',
+                release: '$&'
+            },
+            {
+                reg: /^\/README\.md$/,
                 release: '$&'
             },
             {

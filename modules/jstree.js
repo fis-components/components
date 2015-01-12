@@ -2,10 +2,6 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
         repos: 'https://github.com/vakata/jstree.git',
         version: '3.0.8',
         name: 'jjstree',
