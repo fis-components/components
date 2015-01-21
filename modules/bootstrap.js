@@ -61,7 +61,7 @@ module.exports = (function() {
                 "require('./affix.js');",
                 ].join('\n'),
               "deps": ["jquery"],
-              "exports": "requie('jquery')"
+              "exports": "require('jquery')"
             },
 
             "affix.js": {
