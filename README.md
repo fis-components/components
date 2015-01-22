@@ -1,10 +1,10 @@
 FIS 组件生态
 ===========
 
-[Demo](https://github.com/fex-team/fis-components-demo)
-
 ![](./install.png)
 ![](./sample.png)
+
+[Demo](https://github.com/fex-team/fis-components-demo)
 
 ## 背景
 
