@@ -9,5 +9,5 @@ FIS 组件生态
 
 ## 如何使用
 
-1. ![](./install.png)
-2. ![](./sample.png)
+![](./install.png)
+![](./sample.png)
