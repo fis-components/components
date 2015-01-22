@@ -12,7 +12,18 @@ FIS 组件生态
 
 ## 像开发 node.js 一样开发网页应用
 
-fis install 类似与 npm install，把现有的组件安装到当前项目。然后无需任何配置直接就能这样使用。
+fis install 类似与 npm install，把现有的组件安装到当前项目。
+
+```
+$ fis install jquery bootstrap
+
+Installed
+├── github:fis-components/jquery@1.9.1
+└── github:fis-components/bootstrap@v3.3.1
+
+```
+
+无需任何配置直接就能这样使用。
 
 ```javascript
 require('bootstrap/button');
