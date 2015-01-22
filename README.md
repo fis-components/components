@@ -33,8 +33,24 @@ AMD 和 UMD 扩展自 CommonJs 规范，主要为了适用于浏览器。 而在
 
 ## 如何同步现有流行组件？
 
-现状：大量现有第三方组件采用的要不是 AMD，要不就是 UMD，而我们选择的是 CommonJs 规范，我们如何适配？
+现状：大量现有第三方组件采用的要不是 AMD，要不就是 UMD，而我们选择的是 CommonJs 规范，如何去适配现有的这次组件？
 
-我们通过简单的配置，结合 travis CI, 自动把现有 AMD 或者 UMD 的组件，转换成 CommonJs。
+我们通过简单的配置，结合 travis CI, 代码一提交就会自动把现有 AMD 或者 UMD 的组件转换成 CommonJs。
 
 目前此机构下面的组件都来源于[这些配置文件](https://github.com/fis-components/components/tree/master/modules), 欢迎大家提 pull request。
+
+## 像开发 node.js 一样开发网页应用
+
+fis install 类似与 npm install，把现有的组件安装到当前项目。然后无需任何配置直接就能这样使用。
+
+```javascript
+require('bootstrap/button');
+var $ = require('jquery');
+
+
+$('.btn').click(function() {
+    alert('Magic');
+});
+```
+
+还记得 fis 的三种语言能力吗？同样直接可以用这种路径。`{组件名字}/{资源在组件中的路径}`。
