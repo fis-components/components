@@ -15,14 +15,14 @@ FIS 组件生态
 
 个人觉得有以下几个原因，导致 bower 不适合 fis。
 
-1. bower 包没有严格的存放规范，每个包的引用方式的可能不一样，且冗余的文件多，影响编译性能。
-2. 大部分组件采用 amd 规范，在 fis 的 mod.js 中不能直接使用。
+1. bower 包没有严格的存放规范，每个包的引用方式都可能不一样。冗余的文件多，影响编译性能。
+2. 大部分组件采用 amd/umd 规范，在 fis 的 mod.js 中不能直接使用。
 3. 有的组件我们希望是私有的，部门级别的共享，bower做不到。
 
 针对这几个问题，我们的解决方案。
 
 1. 我们制定了更严格的[规范](https://github.com/fis-components/spec), 同时我们把不必要的文件去掉了。
-2. fis 的 mod.js 虽然不支持 amd, 但是支持 commonJS, 现有 amd 组件可以直接转成了 commonJs 规范。
+2. fis 的 mod.js 虽然不支持 amd, 但是支持 commonJS, 现有 amd 组件直接转成了 commonJs 规范。
 3. fis install 默认来源于 [fis-components](https://github.com/fis-components)，同时，我们的组件安装支持3种平台，github, gitlab 或者 lights. 目前 gitlab 和 lights 都是支持私有部署的，所以只要把组件放在这些平台，组件就是私有的。
 
 ## 为什么选择 commonJs 规范？
@@ -35,7 +35,7 @@ AMD 和 UMD 扩展自 CommonJs 规范，主要为了适用于浏览器。 而在
 
 现状：大量现有第三方组件采用的要不是 AMD，要不就是 UMD，而我们选择的是 CommonJs 规范，如何去适配现有的这次组件？
 
-我们通过简单的配置，结合 travis CI, 代码一提交就会自动把现有 AMD 或者 UMD 的组件转换成 CommonJs。
+通过简单的配置，结合 travis CI, 代码一提交就会自动把现有 AMD 或者 UMD 的组件转换成 CommonJs。
 
 目前此机构下面的组件都来源于[这些配置文件](https://github.com/fis-components/components/tree/master/modules), 欢迎大家提 pull request。
 
@@ -54,3 +54,14 @@ $('.btn').click(function() {
 ```
 
 还记得 fis 的三种语言能力吗？同样直接可以用这种路径。`{组件名字}/{资源在组件中的路径}`。
+
+## 支持强大的 [semverion](https://github.com/npm/node-semver)
+
+当我们使用某个第三组件时，我们希望使用的是一个比较稳定的版本，对方大的版本更新不希望更新到，同时如果有什么小瑕疵，希望又能及时更新到。如何设置？
+
+目前第三方库都有这么个约定，小问题修复都是发布新的小版本号，大的改动会发布大的版本号。我们只需要设置大版本号下最新的小版本就能满足这个需求。
+
+比如：
+
+* jquery@~1.9.2 将会安装 >=1.9.2 && <1.10.0 中的最新一个版本。
+* jquery@^1.9.2 将会安装 >=1.9.2 && <2.0.0 中的最新一个版本。
