@@ -8,7 +8,23 @@ FIS 组件生态
 
 ## 背景
 
-目前互联网上已经存在大量的组件，我们为什么不直接在fis中使用呢？
+目前互联网上已经存在大量成型的第三方组件，我们为什么不直接在fis中使用呢？
+
+## 像开发 node.js 一样开发网页应用
+
+fis install 类似与 npm install，把现有的组件安装到当前项目。然后无需任何配置直接就能这样使用。
+
+```javascript
+require('bootstrap/button');
+var $ = require('jquery');
+
+
+$('.btn').click(function() {
+    alert('Magic');
+});
+```
+
+还记得 fis 的三种语言能力吗？同样直接可以用这种路径。`{组件名字}/{资源在组件中的路径}`。
 
 
 ## 为什么不直接使用 bower？
@@ -39,21 +55,6 @@ AMD 和 UMD 扩展自 CommonJs 规范，主要为了适用于浏览器。 而在
 
 目前此机构下面的组件都来源于[这些配置文件](https://github.com/fis-components/components/tree/master/modules), 欢迎大家提 pull request。
 
-## 像开发 node.js 一样开发网页应用
-
-fis install 类似与 npm install，把现有的组件安装到当前项目。然后无需任何配置直接就能这样使用。
-
-```javascript
-require('bootstrap/button');
-var $ = require('jquery');
-
-
-$('.btn').click(function() {
-    alert('Magic');
-});
-```
-
-还记得 fis 的三种语言能力吗？同样直接可以用这种路径。`{组件名字}/{资源在组件中的路径}`。
 
 ## 支持强大的 [semverion](https://github.com/npm/node-semver)
 
