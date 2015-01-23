@@ -16,3 +16,14 @@ FIS 组件使用详情
 
 现在在 fis 中也是一样的模式。
 
+1. 根据组件名安装组件 fis install jquery. 默认被安装到了当前项目的 commonponents/jquery 目录下面
+2. 然后在我们页面里面: script.js 中，可以这样使用。
+
+    ```javascript
+    var $ = require('jquery');
+
+    $('.btn').click(function() {
+        alert('magic');
+    })
+    ```
+
