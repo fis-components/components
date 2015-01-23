@@ -61,7 +61,7 @@ require('bootstrap/button');
 
 ## js 外的其他资源
 
-我们的组件除了是 js 外，还有可能包含 css 和 tpl 已经图片，字体等一系列静态资源。
+我们的组件除了是 js 外，还有可能包含 css 和 tpl 以及 图片、字体等一系列静态资源。
 
 fis 中有[三种语言](http://fis.baidu.com/docs/more/fis-standard.html)能用来，申明资源依赖、引用资源 和 内嵌资源。 当目标资源为组件内部资源时，路径同样可以使用短路径。
 
