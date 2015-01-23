@@ -59,7 +59,7 @@ AMD 和 UMD 扩展自 CommonJs 规范，主要为了适用于浏览器。 而在
 
 通过简单的配置，结合 travis CI, 代码一提交就会自动把现有 AMD 或者 UMD 的组件转换成 CommonJs。
 
-目前此机构下面的组件都来源于[这些配置文件](https://github.com/fis-components/components/tree/master/modules), 欢迎大家提 pull request。
+目前此机构下面的组件都来源于[这些配置文件](https://github.com/fis-components/components/tree/master/modules), 欢迎大家提 pull request 丰富我们的组件平台。
 
 
 ## 支持强大的 [semverion](https://github.com/npm/node-semver)
