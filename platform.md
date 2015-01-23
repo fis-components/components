@@ -70,7 +70,7 @@ module.exports = (function() {
 
 如果发现 [fis-components](https://github.com/fis-components) 没有你想要的组件，欢迎提交pull request，添加相应的配置文件。
 
-## 如何搭建私有平台
+## 如何使用私有平台
 
 相信大家都比较关心私有组件平台如何搭建。
 
