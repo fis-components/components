@@ -42,15 +42,10 @@ $('.btn').click(function() {
 
 个人觉得有以下几个原因，导致 bower 不适合 fis。
 
-1. bower 包没有严格的存放规范，每个包的引用方式都可能不一样。冗余的文件多，影响编译性能。
-2. 大部分组件采用 amd/umd 规范，在 fis 的 mod.js 中不能直接使用。
-3. 有的组件我们希望是私有的，部门级别的共享，bower做不到。
-
-针对这几个问题，我们的解决方案。
-
-1. 我们制定了更严格的[规范](https://github.com/fis-components/spec), 同时我们把不必要的文件去掉了。
-2. fis 的 mod.js 虽然不支持 amd, 但是支持 commonJS, 现有 amd 组件直接转成了 commonJs 规范。
-3. fis install 默认来源于 [fis-components](https://github.com/fis-components)，同时，我们的组件安装支持3种平台，github, gitlab 或者 lights. 目前 gitlab 和 lights 都是支持私有部署的，所以只要把组件放在这些平台，组件就是私有的。
+1. bower 包没有严格的存放规范，每个包的引用方式都可能不一样。冗余的文件多，影响编译性能。于是，我们制定了更严格的[规范](https://github.com/fis-components/spec), 同时我们把不必要的文件去掉了。
+2. 大部分组件采用 amd/umd 规范，在 fis 的 mod.js 中不能直接使用。于是，我们的组件平台集成了转换工具，自动将 amd/umd 转成 commonJS。
+3. 有的组件我们希望是私有的，部门级别的共享，bower做不到。于是，我们的组件安装可以指定多种平台，可以直接安装来自 github、gitlab 或者 lights 上的组件。
+4. fis 开发中还有一些特有的东西，比如可公用的 smarty、velocity 模板，放在共有平台没意义。
 
 ## 为什么选择 commonJs 规范？
 
