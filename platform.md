@@ -79,4 +79,4 @@ module.exports = (function() {
 1. 写全路径，指定私有组件。如： `github:my-space/jquery`
 2. 在项目中 `component.json` 设定默认 `protocol` 为私有平台
 
-目前厂内有内部的 [gitlab](http://gitlab.baidu.com) 平台，供内部使用。
+目前厂内有内部的 [gitlab](http://gitlab.baidu.com/groups/fis-components) 平台，供内部使用, 可以更快的被下载到。
