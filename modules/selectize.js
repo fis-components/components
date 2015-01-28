@@ -10,7 +10,7 @@ module.exports = (function() {
         ],
         mapping: [
             {
-                reg: /^\/dist\/js\/standalone\/selectize\.js$/,
+				reg: /^\/dist\/js\/selectize\.js$/,
                 release: 'selectize.js'
             },
             {
@@ -21,11 +21,6 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ],
-        shim: {
-            "selectize.js": {
-                "deps": ["jquery"]
-            }
-        }
+        ]
     }];
 })();
