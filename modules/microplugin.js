@@ -8,6 +8,7 @@ module.exports = (function() {
         main: 'microplugin.js',
         keywords: ["extensibility","plugins","architecture","require","dependencies"],
         description: "A lightweight plugin / dependency system for javascript libraries.",
+
         mapping: [
             {
                 reg: /^\/microplugin\.js$/,
