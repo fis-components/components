@@ -70,6 +70,55 @@ module.exports = (function() {
 
 如果发现 [fis-components](https://github.com/fis-components) 没有你想要的组件，欢迎提交pull request，添加相应的配置文件。
 
+## 配置说明
+
+### repos
+
+目标组件的地址，只支持 http 地址。
+
+### version
+
+版本号，目标组件必须存在这个 tag.
+
+### name
+
+该组件的名称，可以与原仓库名不一致。
+
+### main
+
+主文件，请查看规范说明。当组件名引用的时候，默认引用的是此文件。可选，默认是 `index.js`
+
+### dependencies
+
+数组格式，指定该组件需要依赖哪些组件，支持 [semverion](https://github.com/npm/node-semver).
+
+注意，如果目标组件没有 require 该依赖，请对应的配置 shim.
+
+### mapping
+
+类似于 fis 里面 sourcemap。配置此属性的目的是要清理掉没用的文件，只留下有用。这样可以加快组件的编译速度，和增加可读性。
+
+### shim
+
+如果目标组件代码内部没有标记依赖，则需要此属性来转换成带带依赖的代码。
+
+比如 bootstrap 他本身是依赖 jquery，但是他的代码里面没用 require 进来。如果不配置此属性，当使用 bootstrap 的时候，不能自动的把  jquery 加载进来。
+
+```javascript
+shim: [
+    "bootstrap.js": {
+      "deps": ["jquery"]
+    }
+]
+```
+
+shim 的 key 为文件的路径。 shim 的 value 中的属性说明
+
+1. `deps` 组件依赖列表
+2. `exports` 设置暴露的内容。 比如：`$`， 当 require('bootstrap') 的时候，返回值就是 jquery
+3. `init` 可选， Function 类型，如果设置了 init 则将 此 function 的返回值作为 exports 的内容
+4. `content` 如果设置了此属性，整个文件的内容都会被替换成所设置的。以上三种配置都无效。
+
 ## 如何使用私有平台
 
 相信大家都比较关心私有组件平台如何搭建。
