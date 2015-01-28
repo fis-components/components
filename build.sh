@@ -38,6 +38,7 @@ sync () {
     build=$3
     version=$4
     build_dest=$5
+    tag=$6
 
     dest="$ROOT/_$new"
 
@@ -84,10 +85,10 @@ sync () {
 
         cd $new
 
-        git checkout $version
+        git checkout $tag
 
         if [ "$?" != "0" ]; then
-            echo "=GIT: git checkout $version fail."
+            echo "=GIT: git checkout $tag fail."
             exit 1
         fi
 
@@ -128,8 +129,8 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4" "$5"
+    sync "$1" "$2" "$3" "$4" "$5" "%6"
     echo '#END build.sh'
 }
 
-main "$1" "$2" "$3" "$4" "$5"
+main "$1" "$2" "$3" "$4" "$5" "$6"
