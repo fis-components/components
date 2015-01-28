@@ -6,7 +6,9 @@ module.exports = (function() {
         version: 'v0.11.2',
         main: 'selectize.js',
         dependencies: [
-            "jquery@>=1.7"
+            "jquery@>=1.7",
+            "sifter@0.3.x",
+            "microplugin@0.0.x"
         ],
         mapping: [
             {
@@ -16,6 +18,10 @@ module.exports = (function() {
             {
                 reg: /^\/dist\/css\/(.+\.css)$/,
                 release: '$1'
+            },
+            {
+                reg: /^\/README\.md$/,
+                release: 'README.md'
             },
             {
                 reg: '*',
