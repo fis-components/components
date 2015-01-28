@@ -10,7 +10,7 @@ module.exports = (function() {
         ],
         mapping: [
             {
-				reg: /^\/dist\/js\/selectize\.js$/,
+                reg: /^\/dist\/js\/selectize\.js$/,
                 release: 'selectize.js'
             },
             {
