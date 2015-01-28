@@ -11,8 +11,8 @@ module.exports = (function() {
 
         mapping: [
             {
-                reg: /^\/microplugin\.js$/,
-                release: '$&'
+                reg: /^\/src\/microplugin\.js$/,
+                release: 'microplugin.js'
             },
             {
                 reg: /^\/README\.md$/i,
