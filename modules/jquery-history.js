@@ -19,7 +19,6 @@ module.exports = (function() {
                 reg: /^\/README\.md$/,
                 release: '$&'
             },
-
             {
                 reg: '*',
                 release: false

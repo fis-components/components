@@ -28,6 +28,7 @@ module.exports = (function() {
                 release: false
             }
         ],
+
         shim: {
             "jquery.ajaxfileupload.js": {
               "deps": ["jquery"]

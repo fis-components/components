@@ -129,7 +129,7 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4" "$5" "%6"
+    sync "$1" "$2" "$3" "$4" "$5" "$6"
     echo '#END build.sh'
 }
 
