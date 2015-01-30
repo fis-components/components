@@ -89,7 +89,8 @@ if (ARGV[2] == 'sync') {
                         r.repos,
                         r.build || '',
                         r.version,
-                        r.build_dest || ''
+                        r.build_dest || '',
+                        r.tag || r.version
                     ], {
                         cwd: __dirname
                     });
