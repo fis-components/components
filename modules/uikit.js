@@ -26,7 +26,6 @@ module.exports = (function() {
                 release: '$&'
             }
         ],
-
         shim: {
             'uikit.js': {
                 "content": [
