@@ -57,6 +57,46 @@ function lastChangFiles(cb) {
             }
             return /\.js$/.test(p);
         });
+
+        // 如果没有 modules 更新。则读取 commint message 指令。
+        if (!arr.length) {
+            var git_log = spawn('git', ['log', '-1', '--pretty=%B']);
+            git_log.stderr.pipe(process.stderr);
+
+            var o = '';
+            git_log.stdout.on('data', function (c) {
+                o += c.toString();
+            });
+
+            git_log.stdout.on('end', function () {
+                var m = /^update\s+(.*)/.exec(o);
+                var finder = require('./finder.js');
+                var files;
+
+                if (m) {
+                    files = m[1].split(/\s+/);
+                }
+
+                if (files && files.length) {
+                    files = finder(__dirname, files)
+                        .map(function(i) {
+                            return i.relative;
+                        })
+                        .filter(function(p) {
+                            if (p.indexOf('modules') == -1) {
+                                return false;
+                            }
+                            return /\.js$/.test(p);
+                        });
+
+                    if (files.length) {
+                        cb(files, true);
+                    }
+                }
+            });
+            return;
+        }
+
         //cb(['modules/jquery.js']);
         cb(arr);
     });
@@ -75,7 +115,7 @@ function dumpMapping (mapping) {
 }
 
 if (ARGV[2] == 'sync') {
-    lastChangFiles(function (arr) {
+    lastChangFiles(function (arr, rebuild) {
         arr.forEach(function (name) {
             var list = require(path.join(ROOT, name));
             name = name.replace('modules/', '')
@@ -90,16 +130,15 @@ if (ARGV[2] == 'sync') {
                         r.build || '',
                         r.version,
                         r.build_dest || '',
-                        r.tag || r.version
+                        r.tag || r.version,
+                        rebuild ? 'true' : 'false'
                     ], {
                         cwd: __dirname
-                    });
-                    h.stdout.on('data', function (c) {
-                        console.log(c.toString());
                     });
                     h.stdout.on('end', function () {
                         cb();
                     });
+                    h.stdout.pipe(process.stdout);
                     h.stderr.pipe(process.stderr);
                 });
             });

@@ -39,6 +39,7 @@ sync () {
     version=$4
     build_dest=$5
     tag=$6
+    rebuild=$7
 
     dest="$ROOT/_$new"
 
@@ -67,8 +68,13 @@ sync () {
         found=$(git tag | grep $version)
 
         if [ "$found" != "" ]; then
-            echo "=TAG tag $version exists."
-            exit 1
+            if [ "$rebuild" == "true" ] then
+                git tag -d "$version"
+                git push origin :refs/tags/"$version"
+            else
+                echo "=TAG tag $version exists."
+                exit 1
+            fi
         fi
 
         cd -
@@ -129,8 +135,8 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4" "$5" "$6"
+    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7"
     echo '#END build.sh'
 }
 
-main "$1" "$2" "$3" "$4" "$5" "$6"
+main "$1" "$2" "$3" "$4" "$5" "$6" "$7"
