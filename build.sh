@@ -68,7 +68,7 @@ sync () {
         found=$(git tag | grep $version)
 
         if [ "$found" != "" ]; then
-            if [ "$rebuild" == "true" ] then
+            if [ "$rebuild" == "true" ]; then
                 git tag -d "$version"
                 git push origin :refs/tags/"$version"
             else

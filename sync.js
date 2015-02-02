@@ -50,6 +50,7 @@ function lastChangFiles(cb) {
     });
 
     git_diff.stdout.on('end', function () {
+
         var arr = o.split('\n');
         arr = arr.filter(function (p) {
             if (p.indexOf('modules') == -1) {
@@ -63,18 +64,20 @@ function lastChangFiles(cb) {
             var git_log = spawn('git', ['log', '-1', '--pretty=%B']);
             git_log.stderr.pipe(process.stderr);
 
-            var o = '';
+            var message = '';
             git_log.stdout.on('data', function (c) {
-                o += c.toString();
+                message += c.toString();
             });
 
             git_log.stdout.on('end', function () {
-                var m = /^update\s+(.*)/.exec(o);
+                var m = /^(update|forceupdate)\s+(.*)/.exec(message);
                 var finder = require('./finder.js');
                 var files;
+                var force = false;
 
                 if (m) {
-                    files = m[1].split(/\s+/);
+                    files = m[2].split(/\s+/);
+                    force = m[1] === "forceupdate";
                 }
 
                 if (files && files.length) {
@@ -90,7 +93,7 @@ function lastChangFiles(cb) {
                         });
 
                     if (files.length) {
-                        cb(files, true);
+                        cb(files, force);
                     }
                 }
             });
