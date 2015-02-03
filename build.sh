@@ -69,6 +69,7 @@ sync () {
 
         if [ "$found" != "" ]; then
             if [ "$rebuild" = "true" ]; then
+                echo "= Tag $version already exists, now deleting..."
                 git tag -d "$version"
                 git push origin :refs/tags/$version
             else
