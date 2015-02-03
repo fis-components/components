@@ -15,7 +15,7 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: 'src/jquery.cookie\js',
+                reg: 'src/jquery.cookie.js',
                 release: 'jquery.cookie.js'
             },
             {
