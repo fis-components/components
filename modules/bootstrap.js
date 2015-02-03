@@ -61,55 +61,68 @@ module.exports = (function() {
                 "require('./affix.js');",
                 ].join('\n'),
               "deps": ["jquery"],
+              "vars": ["jQuery"],
               "exports": "require('jquery')"
             },
 
             "affix.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             },
 
             "alert.js": {
-              "deps": ["jquery", "./transition"]
+              "deps": ["jquery", "./transition"],
+              "vars": ["jQuery"]
             },
 
             "button.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             },
 
             "carousel.js": {
-              "deps": ["jquery", "./transition"]
+              "deps": ["jquery", "./transition"],
+              "vars": ["jQuery"]
             },
 
             "collapse.js": {
-              "deps": ["jquery", "./transition"]
+              "deps": ["jquery", "./transition"],
+              "vars": ["jQuery"]
             },
 
             "dropdown.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             },
 
             "modal.js": {
-              "deps": ["jquery", "./transition"]
+              "deps": ["jquery", "./transition"],
+              "vars": ["jQuery"]
             },
 
             "popover.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             },
 
             "scrollspy.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             },
 
             "tab.js": {
-              "deps": ["jquery", "./transition"]
+              "deps": ["jquery", "./transition"],
+              "vars": ["jQuery"]
             },
 
             "tooltip.js": {
-              "deps": ["jquery", "./transition"]
+              "deps": ["jquery", "./transition"],
+              "vars": ["jQuery"]
             },
 
             "transition.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             }
         }
     }];

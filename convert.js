@@ -44,8 +44,10 @@ module.exports = function(options, callback) {
             var affix = '';
 
             if (obj.deps) {
-                obj.deps.forEach(function(dep) {
-                    prefix += 'require(\'' + dep + '\');\n';
+                var vars = obj.vars || [];
+
+                obj.deps.forEach(function(dep, i) {
+                    prefix += (vars[i] ? ('var ' + vars[i] +' = ') : '') + 'require(\'' + dep + '\');\n';
                 });
             }
 
