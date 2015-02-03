@@ -44,6 +44,7 @@ module.exports = function(options, callback) {
             var affix = '';
 
             if (obj.deps) {
+                // require 同时赋值给某个变量。
                 var vars = obj.vars || [];
 
                 obj.deps.forEach(function(dep, i) {
