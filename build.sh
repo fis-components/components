@@ -70,6 +70,13 @@ sync () {
         if [ "$found" != "" ]; then
             if [ "$rebuild" = "true" ]; then
                 echo "= Tag $version already exists, now deleting..."
+
+                #AU
+                git config --global user.email "fansekey@gmail.com"
+                git config --global user.name "xiangshouding"
+                git config credential.helper "store --file=.git/credential"
+                echo "https://${GH_TOKEN}:@github.com" > .git/credential
+
                 git tag -d "$version"
                 git push origin :refs/tags/$version
             else
