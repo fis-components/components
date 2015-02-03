@@ -29,7 +29,8 @@ module.exports = (function() {
         ],
         shim: {
             "jquery.cookie.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             }
         }
     }]

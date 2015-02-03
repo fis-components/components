@@ -29,7 +29,8 @@ module.exports = (function() {
         ],
         shim: {
             "jquery.pjax.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             }
         }
     }]

@@ -101,7 +101,7 @@ function lastChangFiles(cb) {
         }
 
         //cb(['modules/jquery.js']);
-        cb(arr);
+        cb(arr, true);
     });
 }
 
@@ -206,7 +206,7 @@ if (ARGV[2] == 'sync') {
                     //level: 0
                 }
             });
-            
+
             r.mapping.unshift({
                 reg: /\.git\/.*/i,
                 release: false

@@ -30,11 +30,13 @@ module.exports = (function() {
         ],
         shim: {
             "jquery-ui-sliderAccess.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             },
 
             "jquery-ui-timepicker-addon.js": {
-              "deps": ["jquery", "./jquery-ui-sliderAccess"]
+              "deps": ["jquery", "./jquery-ui-sliderAccess"],
+              "vars": ["jQuery"]
             }
         }
     }]
