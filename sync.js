@@ -206,6 +206,12 @@ if (ARGV[2] == 'sync') {
                     //level: 0
                 }
             });
+            
+            r.mapping.unshift({
+                reg: /\.git\/.*/i,
+                release: false
+            });
+
             var ok = scaffold.deliver(from, to, r.mapping);
             if (ok == 0) {
                 process.exit(1); //fail

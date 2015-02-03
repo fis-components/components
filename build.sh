@@ -68,16 +68,16 @@ sync () {
         found=$(git tag | grep $version)
 
         if [ "$found" != "" ]; then
-            if [ "$rebuild" == "true" ]; then
+            if [ "$rebuild" = "true" ]; then
                 git tag -d "$version"
-                git push origin :refs/tags/"$version"
+                git push origin :refs/tags/$version
             else
                 echo "=TAG tag $version exists."
                 exit 1
             fi
         fi
 
-        cd -
+        cd $ROOT
     fi
 
     if [ -d $new ]; then
@@ -122,10 +122,9 @@ sync () {
         fi
 
         cd "$dest"
+        echo "=CD $dest"
 
         git_update_repos $new $version
-
-        cd -
 
         cd $ROOT
     fi
