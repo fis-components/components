@@ -28,7 +28,8 @@ module.exports = (function() {
 
         shim: {
             "jquery.placeholder.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             }
         }
     }];

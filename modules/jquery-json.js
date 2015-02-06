@@ -30,7 +30,8 @@ module.exports = (function() {
         ],
         shim: {
             "jquery.json.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             }
         }
     }]

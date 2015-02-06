@@ -26,7 +26,8 @@ module.exports = (function() {
         ],
         shim: {
             "jquery.history.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             }
         }
     }]

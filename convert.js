@@ -44,8 +44,11 @@ module.exports = function(options, callback) {
             var affix = '';
 
             if (obj.deps) {
-                obj.deps.forEach(function(dep) {
-                    prefix += 'require(\'' + dep + '\');\n';
+                // require 同时赋值给某个变量。
+                var vars = obj.vars || [];
+
+                obj.deps.forEach(function(dep, i) {
+                    prefix += (vars[i] ? ('var ' + vars[i] +' = ') : '') + 'require(\'' + dep + '\');\n';
                 });
             }
 

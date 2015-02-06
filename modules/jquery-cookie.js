@@ -15,7 +15,7 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/src\/jquery\.cookie\.js$/,
+                reg: /^\/jquery\.cookie\.js$/i,
                 release: 'jquery.cookie.js'
             },
             {
@@ -26,11 +26,6 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ],
-        shim: {
-            "jquery.cookie.js": {
-              "deps": ["jquery"]
-            }
-        }
+        ]
     }]
 })();

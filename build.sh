@@ -39,6 +39,7 @@ sync () {
     version=$4
     build_dest=$5
     tag=$6
+    rebuild=$7
 
     dest="$ROOT/_$new"
 
@@ -67,11 +68,24 @@ sync () {
         found=$(git tag | grep $version)
 
         if [ "$found" != "" ]; then
-            echo "=TAG tag $version exists."
-            exit 1
+            if [ "$rebuild" = "true" ]; then
+                echo "= Tag $version already exists, now deleting..."
+
+                #AU
+                git config --global user.email "fansekey@gmail.com"
+                git config --global user.name "xiangshouding"
+                git config credential.helper "store --file=.git/credential"
+                echo "https://${GH_TOKEN}:@github.com" > .git/credential
+
+                git tag -d "$version"
+                git push origin :refs/tags/$version
+            else
+                echo "=TAG tag $version exists."
+                exit 1
+            fi
         fi
 
-        cd -
+        cd $ROOT
     fi
 
     if [ -d $new ]; then
@@ -116,10 +130,9 @@ sync () {
         fi
 
         cd "$dest"
+        echo "=CD $dest"
 
         git_update_repos $new $version
-
-        cd -
 
         cd $ROOT
     fi
@@ -129,8 +142,8 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4" "$5" "$6"
+    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7"
     echo '#END build.sh'
 }
 
-main "$1" "$2" "$3" "$4" "$5" "$6"
+main "$1" "$2" "$3" "$4" "$5" "$6" "$7"

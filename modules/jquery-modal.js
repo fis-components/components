@@ -41,7 +41,8 @@ module.exports = (function() {
         ],
         shim: {
             "jquery.modal.js": {
-              "deps": ["jquery"]
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
             }
         }
     }]
