@@ -68,7 +68,21 @@ module.exports = function(options, callback) {
                 affix = '\nmodule.exports = ' + obj.exports + ';\n' + affix;
             }
 
-            write(filepath, prefix + (obj.content || read(filepath, 'utf8')) + affix);
+            var contents = prefix + (obj.content || read(filepath, 'utf8')) + affix;
+
+            if (obj['replace']) {
+                var replace = obj['replace'];
+
+                if (!Array.isArray(replace)) {
+                    replace = [replace];
+                }
+
+                replace.forEach(function(item) {
+                    contents = contents.replace(item.from, item.to);
+                });
+            }
+
+            write(filepath, contents);
         });
     }
 

@@ -118,9 +118,31 @@ shim: [
 shim 的 key 为文件的路径。 shim 的 value 中的属性说明
 
 1. `deps` 组件依赖列表
-2. `exports` 设置暴露的内容。 比如：`$`， 当 require('bootstrap') 的时候，返回值就是 jquery
-3. `init` 可选， Function 类型，如果设置了 init 则将 此 function 的返回值作为 exports 的内容
-4. `content` 如果设置了此属性，整个文件的内容都会被替换成所设置的。以上三种配置都无效。
+2. `vars` 默认组件依赖不会赋值给任何局部变量。如果设置了 `var` 属性则会把依赖的结果赋值给局部变量。
+3. `exports` 设置暴露的内容。 比如：`$`， 当 require('bootstrap') 的时候，返回值就是 jquery
+4. `init` 可选， Function 类型，如果设置了 init 则将 此 function 的返回值作为 exports 的内容
+5. `content` 如果设置了此属性，整个文件的内容都会被替换成所设置的。以上三种配置都无效。
+6. `replace` 可以用来简单的内容替换。如：
+
+    ```javascript
+    {
+        shim: [
+            'core/core.js': {
+                "deps": ["jquery"],
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": /window\.jQuery/g,
+                    "to": "jQuery"
+                }
+            },,
+
+            ...
+        ]
+    }
+    ```
+
+    jQuery 2.x 不会暴露 window.jQuery 所以需要修改成使用局部变量。
 
 ## 如何使用私有平台
 
