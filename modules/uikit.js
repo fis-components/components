@@ -49,7 +49,7 @@ module.exports = (function() {
                 ].join("\n"),
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -60,7 +60,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -70,7 +70,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -80,7 +80,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -90,7 +90,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -100,7 +100,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -110,7 +110,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -120,7 +120,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -130,7 +130,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -140,7 +140,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -150,7 +150,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -160,7 +160,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -170,7 +170,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -180,7 +180,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -190,7 +190,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -200,7 +200,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -210,7 +210,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -221,7 +221,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -231,7 +231,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -241,7 +241,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -251,7 +251,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -261,7 +261,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -271,7 +271,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -281,7 +281,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -291,7 +291,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -301,7 +301,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -311,7 +311,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -321,7 +321,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -331,7 +331,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -341,7 +341,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -351,7 +351,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -361,7 +361,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -371,7 +371,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -381,7 +381,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -391,7 +391,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             },
@@ -401,7 +401,7 @@ module.exports = (function() {
                 "vars": ["jQuery"],
 
                 "replace": {
-                    "from": "window.jQuery",
+                    "from": /window\.jQuery/g,
                     "to": "jQuery"
                 }
             }
