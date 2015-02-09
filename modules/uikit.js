@@ -46,184 +46,364 @@ module.exports = (function() {
                     "require('./core/tab');",
                     "require('./core/tooltip');",
                     "module.exprots = window.UIkit;"
-                ].join("\n")
+                ].join("\n"),
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             // core
             'core/alert.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/button.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/core.js': {
                 "deps": ["jquery"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/dropdown.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/grid.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/modal.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/nav.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/offcanvas.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/scrollspy.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/smooth-scroll.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/switcher.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/tab.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/toggle.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/tooltip.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/touch.js': {
                 "deps": ["jquery"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'core/utility.js': {
                 "deps": ["jquery"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             // components
             'components/accordion.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/autocomplete.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/cover.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/datepicker.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/form-password.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/form-select.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/grid.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/htmleditor.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/lightbox.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/nestable.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/notify.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/pagination.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/search.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/slideshow-fx.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/slideshow.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/sortable.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/sticky.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/timepicker.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             },
 
             'components/upload.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"]
+                "vars": ["jQuery"],
+
+                "replace": {
+                    "from": "window.jQuery",
+                    "to": "jQuery"
+                }
             }
         }
     }]
