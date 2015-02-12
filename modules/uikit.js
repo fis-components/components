@@ -29,7 +29,7 @@ module.exports = (function() {
         shim: {
             'uikit.js': {
                 "content": [
-                    "require('./core/core');",
+                    "module.exprots = require('./core/core');",
                     "require('./core/touch');",
                     "require('./core/utility');",
                     "require('./core/smooth-scroll');",
@@ -44,8 +44,7 @@ module.exports = (function() {
                     "require('./core/offcanvas');",
                     "require('./core/switcher');",
                     "require('./core/tab');",
-                    "require('./core/tooltip');",
-                    "module.exprots = window.UIkit;"
+                    "require('./core/tooltip');"
                 ].join("\n"),
 
                 "replace": {
@@ -57,7 +56,7 @@ module.exports = (function() {
             // core
             'core/alert.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -67,7 +66,7 @@ module.exports = (function() {
 
             'core/button.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -87,7 +86,7 @@ module.exports = (function() {
 
             'core/dropdown.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -97,7 +96,7 @@ module.exports = (function() {
 
             'core/grid.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -107,7 +106,7 @@ module.exports = (function() {
 
             'core/modal.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -117,7 +116,7 @@ module.exports = (function() {
 
             'core/nav.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -127,7 +126,7 @@ module.exports = (function() {
 
             'core/offcanvas.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -137,7 +136,7 @@ module.exports = (function() {
 
             'core/scrollspy.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -147,7 +146,7 @@ module.exports = (function() {
 
             'core/smooth-scroll.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -157,7 +156,7 @@ module.exports = (function() {
 
             'core/switcher.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -167,7 +166,7 @@ module.exports = (function() {
 
             'core/tab.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -177,7 +176,7 @@ module.exports = (function() {
 
             'core/toggle.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -187,7 +186,7 @@ module.exports = (function() {
 
             'core/tooltip.js': {
                 "deps": ["jquery", "./core", "./touch", "./utility"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -218,7 +217,7 @@ module.exports = (function() {
             // components
             'components/accordion.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -228,7 +227,7 @@ module.exports = (function() {
 
             'components/autocomplete.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -238,7 +237,7 @@ module.exports = (function() {
 
             'components/cover.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -248,7 +247,7 @@ module.exports = (function() {
 
             'components/datepicker.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -258,7 +257,7 @@ module.exports = (function() {
 
             'components/form-password.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -268,7 +267,7 @@ module.exports = (function() {
 
             'components/form-select.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -278,7 +277,7 @@ module.exports = (function() {
 
             'components/grid.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -288,7 +287,7 @@ module.exports = (function() {
 
             'components/htmleditor.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -298,7 +297,7 @@ module.exports = (function() {
 
             'components/lightbox.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -308,7 +307,7 @@ module.exports = (function() {
 
             'components/nestable.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -318,7 +317,7 @@ module.exports = (function() {
 
             'components/notify.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -328,7 +327,7 @@ module.exports = (function() {
 
             'components/pagination.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -338,7 +337,7 @@ module.exports = (function() {
 
             'components/search.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -348,7 +347,7 @@ module.exports = (function() {
 
             'components/slideshow-fx.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -358,7 +357,7 @@ module.exports = (function() {
 
             'components/slideshow.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -368,7 +367,7 @@ module.exports = (function() {
 
             'components/sortable.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -378,7 +377,7 @@ module.exports = (function() {
 
             'components/sticky.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -388,7 +387,7 @@ module.exports = (function() {
 
             'components/timepicker.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
@@ -398,7 +397,7 @@ module.exports = (function() {
 
             'components/upload.js': {
                 "deps": ["jquery", "../uikit"],
-                "vars": ["jQuery"],
+                "vars": ["jQuery", "UIkit"],
 
                 "replace": {
                     "from": /window\.jQuery/g,
