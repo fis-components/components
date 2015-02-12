@@ -29,7 +29,7 @@ module.exports = (function() {
         shim: {
             'uikit.js': {
                 "content": [
-                    "module.exprots = require('./core/core');",
+                    "module.exports = require('./core/core');",
                     "require('./core/touch');",
                     "require('./core/utility');",
                     "require('./core/smooth-scroll');",
