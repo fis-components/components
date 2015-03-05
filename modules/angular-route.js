@@ -20,6 +20,11 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            "angular-route.js": {
+              "deps": ["angular"]
+            }
+        }
     }]
 })();

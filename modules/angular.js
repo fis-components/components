@@ -20,6 +20,11 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            "angular.js": {
+              "exports ": "window.angular"
+            }
+        }
     }]
 })();
