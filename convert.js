@@ -328,7 +328,7 @@ function transform(data, options) {
                 }
 
                 if (found) {
-                    return found.consequent.body[0];
+                    return found.consequent.type === 'ExpressionStatement' ? found.consequent : found.consequent.body[0];
                     // return createCommonJsCondition(found.consequent);
                 }
             }
