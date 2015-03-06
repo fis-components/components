@@ -77,6 +77,10 @@ sync () {
                 git config credential.helper "store --file=.git/credential"
                 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
+                git ls-files | xargs git rm
+                git commit -am "rm all files"
+                git push
+
                 git tag -d "$version"
                 git push origin :refs/tags/$version
             else
