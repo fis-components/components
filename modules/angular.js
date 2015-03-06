@@ -23,7 +23,7 @@ module.exports = (function() {
         ],
         shim: {
             "angular.js": {
-              "exports ": "window.angular"
+              "exports": "window.angular"
             }
         }
     }]
