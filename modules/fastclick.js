@@ -9,7 +9,7 @@ module.exports = (function() {
         main: 'fastclick.js',
         mapping: [
             {
-                reg: /^\/lib\/fastclick\.js/,
+                reg: /^\/lib\/(fastclick\.js)/,
                 release: '$1'
             },
             {

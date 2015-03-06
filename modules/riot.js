@@ -10,11 +10,11 @@ module.exports = (function() {
         mapping: [
             {
                 reg: /^\/riot\.js$/,
-                release: false
+                release: '$&'
             },
             {
                 reg: /^\/compiler\.js$/,
-                release: false
+                release: '$&'
             },
             {
                 reg: /^\/README\.md$/,
