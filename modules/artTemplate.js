@@ -10,7 +10,7 @@ module.exports = (function() {
         mapping: [
             {
                 reg: /^\/dist\/template-debug\.js$/,
-                release: 'template.js'
+                release: 'artTemplate.js'
             },
             {
                 reg: /^\/README\.md$/,
