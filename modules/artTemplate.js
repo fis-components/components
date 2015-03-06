@@ -7,6 +7,7 @@ module.exports = (function() {
         description: '性能卓越的 js 模板引擎',
         name: 'artTemplate',
         main: 'artTemplate.js',
+
         mapping: [
             {
                 reg: /^\/dist\/template-debug\.js$/,
