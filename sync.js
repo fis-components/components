@@ -152,7 +152,7 @@ if (ARGV[2] == 'sync') {
         });
     };
 
-    if (ARGV.length > 2) {
+    if (ARGV.length > 3) {
         var files = ARGV.slice(3);
         var finder = require('./finder.js');
 
