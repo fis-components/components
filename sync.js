@@ -118,7 +118,8 @@ function dumpMapping (mapping) {
 }
 
 if (ARGV[2] == 'sync') {
-    lastChangFiles(function (arr, rebuild) {
+
+    var sync = function (arr, rebuild) {
         arr.forEach(function (name) {
             var list = require(path.join(ROOT, name));
             name = name.replace('modules/', '')
@@ -149,7 +150,31 @@ if (ARGV[2] == 'sync') {
                 console.log('done');
             });
         });
-    });
+    };
+
+    if (ARGV.length > 2) {
+        var files = ARGV.slice(3);
+        var finder = require('./finder.js');
+
+        files = finder(__dirname, files)
+            .map(function(i) {
+                return i.relative;
+            })
+            .filter(function(p) {
+                if (p.indexOf('modules') == -1) {
+                    return false;
+                }
+                return /\.js$/.test(p);
+            });
+
+        if (files.length) {
+            sync(files, true);
+        }
+
+
+    } else {
+        lastChangFiles(sync);
+    }
 } else if (ARGV[2] == 'create-repos') {
     console.log('=sync.js create repos: https://github.com/fis-components/%s', ARGV[3]);
     createRepos(ARGV[3], ARGV[4], ARGV[5]);
