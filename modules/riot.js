@@ -13,10 +13,6 @@ module.exports = (function() {
                 release: '$&'
             },
             {
-                reg: 'compiler.js',
-                release: '$&'
-            },
-            {
                 reg: /^\/README\.md$/,
                 release: '$&'
             },
