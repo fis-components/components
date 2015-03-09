@@ -13,6 +13,10 @@ module.exports = (function() {
                 release: '$1'
             },
             {
+                reg: /^\/README\.md$/,
+                release: '$&'
+            },
+            {
                 reg: '*',
                 release: false
             }
