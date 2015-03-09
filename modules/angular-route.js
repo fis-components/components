@@ -25,6 +25,9 @@ module.exports = (function() {
             "angular-route.js": {
               "deps": ["angular"]
             }
-        }
+        },
+        dependencies: [
+            "angular@~1.3.14"
+        ]
     }]
 })();
