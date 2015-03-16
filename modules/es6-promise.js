@@ -6,11 +6,11 @@ module.exports = (function() {
         version: 'v2.0.1',
         description: 'An es6-promise JavaScript polyfill.',
         name: 'es6-promise',
-        main: 'promise.js',
+        main: 'es6-promise.js',
         mapping: [
             {
                 reg: /^\/promise\.js$/,
-                release: '$&'
+                release: 'es6-promise.js'
             },
             {
                 reg: /^\/README\.md$/,
