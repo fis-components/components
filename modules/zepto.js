@@ -24,6 +24,11 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            'zepto.js': {
+                "deps": ["Zepto"]
+            }
+        }
     }]
 })();
