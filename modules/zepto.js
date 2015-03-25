@@ -28,7 +28,7 @@ module.exports = (function() {
         shim: {
             'zepto.js': {
 
-                "deps": ["Zepto"]
+                "exports": ["Zepto"]
             }
         }
     }]
