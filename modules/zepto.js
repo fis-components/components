@@ -253,7 +253,6 @@ module.exports = (function() {
                 "vars": ["Zepto"],
                 "exports": ["Zepto"]
             },
-
             'main.js': {
                 "content": [
                     "require('./event.js');",
