@@ -11,7 +11,7 @@ module.exports = (function() {
         ],
         mapping: [
             {
-                reg: /^\/dist\/js\/swiper\.js$/i,
+                reg: /^\/dist\/js\/swiper\.jquery\.js$/i,
                 release: 'swiper.js'
             },
             {
