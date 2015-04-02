@@ -9,7 +9,7 @@ module.exports = (function() {
         main: "src/vue.js",
         mapping: [
             {
-                reg: /^\/src\/(.*)$/,
+                reg: /^\/dist\/(.*\.js)/,
                 release: '$&'
             },
             {
