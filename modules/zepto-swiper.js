@@ -30,7 +30,7 @@ module.exports = (function() {
         shim: {
             'swiper.js': {
                 "replace": {
-                    "from": /var\s$;[\s\S]*?\$\s=\sDom7;[\s\S]*?\}/g,
+                    "from": /var\s\$;[\s\S]*?\$\s=\sDom7;[\s\S]*?\}/g,
                     "to": "var $ = require('zepto');"
                 }
             }
