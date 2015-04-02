@@ -6,11 +6,11 @@ module.exports = (function() {
         version: 'v0.11.5',
         description: 'Simple, Fast & Composable MVVM for building interative interfaces',
         name: "vue",
-        main: "src/vue.js",
+        main: "vue.js",
         mapping: [
             {
                 reg: /^\/dist\/(.*\.js)/,
-                release: '$&'
+                release: '$1'
             },
             {
                 reg: /^\/README\.md$/,
