@@ -7,6 +7,9 @@ module.exports = (function() {
         description: 'Validator component for VueJS',
         name: 'vue-validator',
         main: 'vue-validator.js',
+        dependencies: [
++            "vue@>=0.11.2"
++        ],
         mapping: [
             {
                 reg: /^\/dist\/(vue-validator\.js)/,
