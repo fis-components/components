@@ -12,11 +12,11 @@ module.exports = (function() {
         ],
         mapping: [
             {
-                reg: '/dist/metismenu.js',
+                reg: '/dist/metisMenu.js',
                 release: 'metismenu.js'
             },
             {
-                reg: '/dist/metismenu.css',
+                reg: '/dist/metisMenu.css',
                 release: 'metismenu.css'
             },
             {
