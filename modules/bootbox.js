@@ -7,6 +7,9 @@ module.exports = (function() {
         description: 'Wrappers for JavaScript alert(), confirm() and other flexible dialogs using the Bootstrap framework',
         name: 'bootbox',
         main: 'bootbox.js',
+        dependencies: [
+            "bootstrap@>=3.0.0"
+        ],
         mapping: [
             {
                 reg: /^\/bootbox\.js$/,
