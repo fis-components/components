@@ -3,17 +3,20 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/onokumus/metisMenu',
-        version: 'v1.1.3',
+        version: 'version 1.1.3',
         description: 'A jQuery menu plugin for Bootstrap 3',
         name: 'metisMenu',
         main: 'metisMenu.js',
+        dependencies: [
+            "jquery@>=1.6"
+        ],
         mapping: [
             {
-                reg: /\.min\.(js|css)$/,
-                release: false
+                reg: /^\/dist\/(metisMenu\.js)/i,
+                release: '$1'
             },
             {
-                reg: /^\/dist\/(.*?)$/,
+                reg: /^\/dist\/(metisMenu\.css)/i,
                 release: '$1'
             },
             {
