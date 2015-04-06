@@ -27,6 +27,12 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            'metismenu.js': {
+                deps: ["jquery"],
+                vars: ["jQuery"]
+            }
+        }
     }]
 })();
