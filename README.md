@@ -4,8 +4,6 @@ FIS 组件生态
 ![](./install.png)
 ![](./sample.png)
 
-(忽略图里面的 `fis async` 是我不小心复制过来，那段注释没有什么意义，我的错！)
-
 [Demo](https://github.com/fex-team/fis-components-demo)
 
 ## 背景
