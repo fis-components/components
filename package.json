@@ -22,7 +22,7 @@
     "github": "0.2.3"
   },
   "devDependencies": {
-    "escodegen": "^1.5.0",
+    "escodegen": "^1.6.1",
     "escope": "^2.0.2",
     "esformatter": "0.6.1",
     "esprima": "^1.2.2",

@@ -91,6 +91,9 @@ module.exports = function(options, callback) {
 
 function transform(data, options) {
 
+    // remove  uselessfull data.
+    data = data.replace(/\/\*[\s\*\d]*?\*\//g, '');
+
     var ast = esprima.parse(data, {
         range: true,
         tokens: true,
