@@ -40,6 +40,7 @@ sync () {
     build_dest=$5
     tag=$6
     rebuild=$7
+    testing=$8
 
     dest="$ROOT/_$new"
 
@@ -147,8 +148,8 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7"
+    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
     echo '#END build.sh'
 }
 
-main "$1" "$2" "$3" "$4" "$5" "$6" "$7"
+main "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"

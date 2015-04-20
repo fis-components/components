@@ -144,6 +144,17 @@ shim 的 key 为文件的路径。 shim 的 value 中的属性说明
 
     jQuery 2.x 不会暴露 window.jQuery 所以需要修改成使用局部变量。
 
+## 本地测试
+自己配置了规则，但是不知道是否转换正确，怎么办？
+
+请使用以下命令来验证规则。
+
+```
+node test.js modules/xxx.js
+```
+
+可以支持批量转化，比如: `node test.js modules/jquery-*.js`.
+
 ## 如何使用私有平台
 
 相信大家都比较关心私有组件平台如何搭建。
