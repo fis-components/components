@@ -6,6 +6,7 @@ module.exports = (function() {
         version: 'v2.1.3',
         name: 'normalize-css',
         main: 'normalize.css',
+
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
