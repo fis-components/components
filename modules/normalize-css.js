@@ -5,6 +5,7 @@ module.exports = (function() {
         repos: 'https://github.com/necolas/normalize.css.git',
         version: 'v2.1.3',
         name: 'normalize-css',
+        main: 'normalize.css',
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
