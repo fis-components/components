@@ -55,14 +55,20 @@ sync () {
         # fi
 
         mkdir -p dest
+        node $ROOT/sync.js create-component.json "$new" "$version"
+
         node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest"
 
         node $ROOT/sync.js convert "$new" "$version" "$dest"
+
+
 
         if [ "$?" != "0" ]; then
             echo '=ROADMAP move fail'
             exit 1
         fi
+
+
 
         cd $ROOT
     fi

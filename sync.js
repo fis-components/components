@@ -235,6 +235,9 @@ if (ARGV[2] == 'sync') {
             r.mapping.unshift({
                 reg: /\.git\/.*/i,
                 release: false
+            }, {
+                reg: /^\/component\.json$/i,
+                release: '$0'
             });
 
             var ok = scaffold.deliver(from, to, r.mapping);
