@@ -5,8 +5,8 @@ module.exports = (function() {
         repos: 'https://github.com/ichord/At.js',
         version: 'v1.1.0',
         description: 'Add Github like mentions autocomplete to your application. http://ichord.github.com/At.js',
-        name: 'atwho',
-        main: 'atwho.js',
+        name: 'jquery-atwho',
+        main: 'jquery.atwho.js',
         dependencies: [
             "jquery@>=1.7.0",
             "caret@>=v0.2.2"
@@ -14,11 +14,11 @@ module.exports = (function() {
         mapping: [
             {
                 reg: '/dist/js/jquery.atwho.js',
-                release: 'atwho.js'
+                release: 'jquery.atwho.js'
             },
             {
                 reg: '/dist/css/jquery.atwho.css',
-                release: 'atwho.css'
+                release: 'jquery.atwho.css'
             },
             {
                 reg: /^\/README\.md$/,
