@@ -3,6 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/Lanfei/jQuery-Sina-Emotion',
+        version: '0.2.1',
         version: 'v2.1',
         description: '一个用来方便快速地创建新浪微博表情选择对话框的jQuery插件。',
         name: 'jquery-sina-emotion',
