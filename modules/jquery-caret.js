@@ -25,7 +25,7 @@ module.exports = (function() {
             }
         ],
         shim: {
-            'caret.js': {
+            'jquery.caret.js': {
                 deps: ["jquery"],
                 vars: ["jQuery"]
             }

@@ -30,7 +30,7 @@ module.exports = (function() {
             }
         ],
         shim: {
-            'atwho.js': {
+            'jquery.atwho.js': {
                 deps: ["jquery"],
                 vars: ["jQuery"]
             }
