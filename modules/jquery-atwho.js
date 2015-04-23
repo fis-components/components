@@ -8,8 +8,7 @@ module.exports = (function() {
         name: 'jquery-atwho',
         main: 'jquery.atwho.js',
         dependencies: [
-            "jquery@>=1.7.0",
-            "caret@>=v0.2.2"
+            "jquery@>=1.7.0"
         ],
         mapping: [
             {
@@ -28,12 +27,6 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ],
-        shim: {
-            'jquery.atwho.js': {
-                deps: ["jquery"],
-                vars: ["jQuery"]
-            }
-        }
+        ]
     }]
 })();
