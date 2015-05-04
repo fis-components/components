@@ -2,15 +2,15 @@
 
 module.exports = (function() {
     return [{
-        repos: 'https://github.com/yyx990803/vue',
-        version: '0.11.8',
-        description: 'Simple, Fast & Composable MVVM for building interative interfaces',
-        name: "vue",
-        main: "vue.js",
+        repos: 'https://github.com/Automattic/socket.io-client',
+        version: '1.3.5',
+        description: 'Realtime application framework (client)',
+        name: 'socket.io',
+        main: 'socket.io.js',
         mapping: [
             {
-                reg: /^\/dist\/(vue\.js)/,
-                release: '$1'
+                reg: '/socket.io.js',
+                release: 'socket.io.js'
             },
             {
                 reg: /^\/README\.md$/,
