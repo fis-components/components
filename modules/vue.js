@@ -3,7 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/yyx990803/vue',
-        version: '0.11.8',
+        version: '0.11.10',
         description: 'Simple, Fast & Composable MVVM for building interative interfaces',
         name: "vue",
         main: "vue.js",
