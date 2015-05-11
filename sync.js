@@ -56,7 +56,7 @@ function lastChangFiles(cb) {
             .filter(function (line) {
                 var parts = line.split(/\s+/);
 
-                if (parts[0] === 'D') {
+                if (!line || parts[0] === 'D') {
                     return false;
                 }
 
