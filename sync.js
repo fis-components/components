@@ -41,7 +41,7 @@ function createRepos(repos, token, from) {
 }
 
 function lastChangFiles(cb) {
-    var git_diff = spawn('git', ['diff', '--name-only', 'HEAD^..HEAD']);
+    var git_diff = spawn('git', ['diff', '--name-status', 'HEAD^..HEAD']);
     git_diff.stderr.pipe(process.stderr);
 
     var o = '';
@@ -52,12 +52,22 @@ function lastChangFiles(cb) {
     git_diff.stdout.on('end', function () {
 
         var arr = o.split('\n');
-        arr = arr.filter(function (p) {
-            if (p.indexOf('modules') == -1) {
-                return false;
-            }
-            return /\.js$/.test(p);
-        });
+        arr = arr
+            .filter(function (line) {
+                var parts = line.split(/\s+/);
+
+                if (parts[0] === 'D') {
+                    return false;
+                }
+
+                if (parts[1].indexOf('modules') == -1) {
+                    return false;
+                }
+                return /\.js$/.test(parts[1]);
+            })
+            .map(function(line) {
+                return line.split(/\s+/)[1];
+            });
 
         // 如果没有 modules 更新。则读取 commint message 指令。
         if (!arr.length) {
