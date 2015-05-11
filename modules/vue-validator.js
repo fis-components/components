@@ -3,7 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/vuejs/vue-validator',
-        version: 'v1.0.2',
+        version: 'v1.0.4',
         description: 'Validator component for VueJS',
         name: 'vue-validator',
         main: 'vue-validator.js',
