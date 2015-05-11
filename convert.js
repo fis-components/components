@@ -201,7 +201,6 @@ function transform(data, options) {
                     var ids = dependencies.elements.map(function(el) {
                         return el.value
                     });
-
                     var ast = createProgram([createModuleExport(createReqsCall(ids, obj))]);
                     return transformProgram(ast);
 
@@ -251,6 +250,7 @@ function transform(data, options) {
                     } else {
                         ast = createProgram(factory.body.body);
                     }
+
                     return transformProgram(ast);
                 } else if (
                     node.arguments.length == 3 &&
@@ -487,19 +487,28 @@ function createReqsCall(ids, obj) {
     var reqs = [];
 
     for (var i = 0, len = ids.length; i < len; i++) {
-        reqs.push({
-            type: 'CallExpression',
-            callee: {
+        if (~['require', 'module', 'exports'].indexOf(ids[i])) {
+            reqs.push({
                 type: 'Identifier',
-                name: 'require'
-            },
-            arguments: [
-                {
-                    type: 'Literal',
-                    value: ids[i]
-                }
-            ]
-        });
+                name: ids[i]
+            });
+        } else {
+            reqs.push({
+                type: 'CallExpression',
+                callee: {
+                    type: 'Identifier',
+                    name: 'require'
+                },
+                arguments: [
+                    {
+                        type: 'Literal',
+                        value: ids[i]
+                    }
+                ]
+            });
+        }
+
+
     }
 
     return {
@@ -527,7 +536,23 @@ function createModuleExport(obj) {
                     name: 'exports'
                 }
             },
-            right: obj
+            right: {
+                type: "LogicalExpression",
+                operator: "||",
+                left: obj,
+                right: {
+                    type: "MemberExpression",
+                    computed: false,
+                    object: {
+                        type: "Identifier",
+                        name: "module"
+                    },
+                    property: {
+                        type: "Identifier",
+                        name: "exports"
+                    }
+                }
+            }
         }
     };
 }

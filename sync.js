@@ -209,6 +209,20 @@ if (ARGV[2] == 'sync') {
             delete r.mapping; //@TODO
             delete r.build;
             delete r.shim;
+
+            // normalize dependencies for better compatibility.
+            if (r.dependencies && Array.isArray(r.dependencies)) {
+                var dependencies = {};
+
+                r.dependencies.forEach(function(item) {
+                    var parts = item.split('@');
+
+                    dependencies[parts[0]] = parts[1];
+                });
+
+                r.dependencies = dependencies;
+            }
+
             fs.writeFileSync(
                 path.join(ROOT, '_' + name, 'component.json'),
                 JSON.stringify(r, null,'    ')
