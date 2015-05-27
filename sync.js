@@ -7,6 +7,36 @@ var async = require('async');
 var spawn = require('child_process').spawn;
 var util = require('util');
 
+function mixin(a, b) {
+    if (a && b) {
+        for (var key in b) {
+            a[key] = b[key];
+        }
+    }
+    return a;
+}
+
+function loadConfig(path) {
+    var list = require(path);
+    var map = {};
+
+    list.forEach(function(item) {
+        map[item.version] = item;
+
+        if (item.extend) {
+            if (!map[item.extend]) {
+                throw new Error('Extend `'+item.extend+'` is not defined.');
+            }
+            var copySelf = mixin({}, item)
+            mixin(item, map[item.extend]);
+            mixin(item, copySelf);
+            delete item.extend;
+        }
+    });
+
+    return list;
+}
+
 function createRepos(repos, token, from) {
 
     if (!token) {
@@ -131,7 +161,7 @@ if (ARGV[2] == 'sync') {
 
     var sync = function (arr, rebuild) {
         arr.forEach(function (name) {
-            var list = require(path.join(ROOT, name));
+            var list = loadConfig(path.join(ROOT, name));
             name = name.replace('modules/', '')
                        .replace(/\.js$/, '');
             var queue = [];
@@ -192,7 +222,7 @@ if (ARGV[2] == 'sync') {
     var name = ARGV[3].trim();
     var version = ARGV[4].trim();
     try {
-        var list = require(path.join(ROOT, 'modules', name + '.js'));
+        var list = loadConfig(path.join(ROOT, 'modules', name + '.js'));
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
 
@@ -241,7 +271,7 @@ if (ARGV[2] == 'sync') {
     var from = ARGV[5].trim();
     var to = ARGV[6].trim();
     try {
-        var list = require(path.join(ROOT, 'modules', name + '.js'));
+        var list = loadConfig(path.join(ROOT, 'modules', name + '.js'));
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
 
@@ -282,7 +312,7 @@ if (ARGV[2] == 'sync') {
     var convert = require('./convert.js');
     var finder = require('./finder.js');
 
-    var list = require(path.join(ROOT, 'modules', name + '.js'));
+    var list = loadConfig(path.join(ROOT, 'modules', name + '.js'));
 
     for (var i = 0; i < list.length; i++) {
         var r = list[i];
