@@ -5,7 +5,6 @@ module.exports = (function() {
         repos: 'https://github.com/twbs/bootstrap.git',
         version: 'v3.3.1',
         main: 'bootstrap.js',
-
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
@@ -126,5 +125,11 @@ module.exports = (function() {
               "vars": ["jQuery"]
             }
         }
+    }, {
+      extend: 'v3.3.1',
+      version: 'v3.3.2',
+    }, {
+      extend: 'v3.3.1',
+      version: 'v3.3.4',
     }];
 })();
