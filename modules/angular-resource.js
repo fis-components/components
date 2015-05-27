@@ -3,7 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/angular/bower-angular-resource',
-        version: 'v1.3.14',
+        version: 'v1.4.0',
         description: 'HTML enhanced for web apps http://angularjs.org',
         name: 'angular-resource',
         main: 'angular-resource.js',
