@@ -143,6 +143,46 @@ shim 的 key 为文件的路径。 shim 的 value 中的属性说明
     ```
 
     jQuery 2.x 不会暴露 window.jQuery 所以需要修改成使用局部变量。
+    
+### extend
+
+当新加一个版本时，如果大部分的配置与之前配置的基本一致，可以通过 `extend` 关键字来继承。如：
+
+```javascript
+'use strict';
+
+module.exports = (function() {
+    return [{
+        repos: 'https://github.com/jquery/jquery.git',
+        version: '1.9.1',
+        name: 'jquery',
+        main: 'jquery.js',
+        build: 'npm install && npm install grunt-cli && ./node_modules/.bin/grunt',
+        mapping: [
+            {
+                reg: /\.min\.(js|css)$/,
+                release: false
+            },
+            {
+                reg: /^\/dist\/(.*\.js)/,
+                release: '$1'
+            },
+            {
+                reg: /^\/README\.md$/,
+                release: '$&'
+            },
+            {
+                reg: '*',
+                release: false
+            }
+        ]
+    }, {
+        version: '2.1.0',
+        build: 'npm run build',
+        extend: '1.9.1'
+    }]
+})();
+```
 
 ## 本地测试
 自己配置了规则，但是不知道是否转换正确，怎么办？
