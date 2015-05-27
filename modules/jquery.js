@@ -26,28 +26,8 @@ module.exports = (function() {
             }
         ]
     }, {
-        repos: 'https://github.com/jquery/jquery.git',
         version: '2.1.0',
         build: 'npm run build',
-        main: 'jquery.js',
-        name: 'jquery',
-        mapping: [
-            {
-                reg: /\.min\.(js|css)$/,
-                release: false
-            },
-            {
-                reg: /^\/dist\/(.*\.js)/,
-                release: '$1'
-            },
-            {
-                reg: /^\/README\.md$/,
-                release: '$&'
-            },
-            {
-                reg: '*',
-                release: false
-            }
-        ]
+        extend: '1.9.1'
     }]
 })();
