@@ -102,7 +102,8 @@ module.exports = (function() {
 
             "popover.js": {
               "deps": ["jquery"],
-              "vars": ["jQuery"]
+              "vars": ["jQuery"],
+              "deps": ["./tooltip.js"]
             },
 
             "scrollspy.js": {
