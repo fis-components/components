@@ -100,9 +100,8 @@ module.exports = (function() {
             },
 
             "popover.js": {
-              "deps": ["jquery"],
-              "vars": ["jQuery"],
-              "deps": ["./tooltip.js"]
+              "deps": ["jquery", "./tooltip.js"],
+              "vars": ["jQuery"]
             },
 
             "scrollspy.js": {
