@@ -12,6 +12,37 @@ if (argv.length < 3) {
     process.exit(1);
 }
 
+function mixin(a, b) {
+    if (a && b) {
+        for (var key in b) {
+            a[key] = b[key];
+        }
+    }
+    return a;
+}
+
+function loadConfig(path) {
+    var list = require(path);
+    var map = {};
+
+    list.forEach(function(item) {
+        map[item.version] = item;
+
+        if (item.extend) {
+            if (!map[item.extend]) {
+                throw new Error('Extend `'+item.extend+'` is not defined.');
+            }
+            var copySelf = mixin({}, item)
+            mixin(item, map[item.extend]);
+            mixin(item, copySelf);
+            delete item.extend;
+        }
+    });
+
+    return list;
+}
+
+
 var files = argv.slice(2);
 
 files = finder(__dirname, files)
@@ -26,7 +57,7 @@ files = finder(__dirname, files)
     });
 
 files.forEach(function(name) {
-    var list = require(path.join(ROOT, name));
+    var list = loadConfig(path.join(ROOT, name));
     name = name.replace('modules/', '')
         .replace(/\.js$/, '');
     var queue = [];

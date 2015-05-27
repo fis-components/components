@@ -22,7 +22,7 @@ git_update_repos () {
     echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
     git add -A -f
-    git commit -m 'auto sync' -a
+    git commit -m "based on https://github.com/fis-components/components/blob/master/modules/${repos}.js" -a
 
     git push origin master
     git tag -a "$version" -m "create tag $version"
