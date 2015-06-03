@@ -20,7 +20,11 @@ module.exports = function(options, callback) {
     var files = options.files;
 
     files.forEach(function(info) {
-        write(info.dest || info.absolute, transform(read(info.absolute, 'utf8'), options));
+        try {
+            write(info.dest || info.absolute, transform(read(info.absolute, 'utf8'), options));
+        } catch (e) {
+            console.log('Got Eroor: %s while converting %s', e.message, info.dest || info.absolute);
+        }
     });
 
     if (options.config && options.config.shim) {
