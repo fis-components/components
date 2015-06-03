@@ -17,7 +17,7 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/dist\/(.*?)$/,
+                reg: /^\/dist\/(.*?\.js)$/,
                 release: '$1'
             },
             {
