@@ -8,7 +8,7 @@ module.exports = (function() {
         tag: 'master',
         mapping: [
             {
-                reg: /^\/dist\/(.css|js)$/,
+                reg: /^\/dist\/((Rosetta|Rosetta-ie)\.(css|js))$/ig,
                 release: '$1'
             },
 
