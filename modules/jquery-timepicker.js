@@ -17,7 +17,7 @@ module.exports = (function() {
             {
                 reg: /^\/jquery\.timepicker\.css$/,
                 release: 'jquery.timepicker.css'
-            }
+            },
             {
                 reg: /^\/README\.md$/,
                 release: '$&'
