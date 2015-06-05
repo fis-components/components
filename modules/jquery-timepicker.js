@@ -27,5 +27,20 @@ module.exports = (function() {
                 release: false
             }
         ]
+    }, {
+        version: '1.6.12',
+        extend: '1.7.0'
+    },
+    {
+        version: '1.6.11',
+        extend: '1.7.0'
+    },
+    {
+        version: '1.6.10',
+        extend: '1.7.0'
+    },
+    {
+        version: '1.6.9',
+        extend: '1.7.0'
     }]
 })();
