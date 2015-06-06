@@ -5,8 +5,10 @@ module.exports = (function() {
         repos: 'https://github.com/eternicode/bootstrap-datepicker.git',
         version: 'v1.4.0',
         description: 'Bootstrap datapicker',
+        main: 'bootstrap-datepicker.js',
         dependencies: [
-            "bootstrap"
+            "bootstrap@>=2.0.4",
+            "jquery@>=1.7.1"
         ],
 
         mapping: [
@@ -30,6 +32,14 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            'bootstrap-datepicker': {
+                "replace": {
+                    "from": /window\.jQuery/g,
+                    "to": "require('jquery')"
+                }
+            }
+        }
     }];
 })();
