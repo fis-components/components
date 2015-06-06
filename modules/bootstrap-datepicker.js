@@ -34,7 +34,7 @@ module.exports = (function() {
             }
         ],
         shim: {
-            'bootstrap-datepicker': {
+            'bootstrap-datepicker.js': {
                 "replace": {
                     "from": /window\.jQuery/g,
                     "to": "require('jquery')"
