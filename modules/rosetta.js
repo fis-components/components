@@ -3,9 +3,9 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/jiexuangao/rosetta.git',
-        version: '1.0.0',
+        version: '1.0.1',
         main: 'Rosetta.js',
-        tag: 'master',
+        tag: 'v1.0.1',
         mapping: [
             {
                 reg: /^\/dist\/((Rosetta|Rosetta-ie)\.(css|js))$/ig,
