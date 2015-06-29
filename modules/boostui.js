@@ -29,7 +29,7 @@ module.exports = (function() {
 
             {
                 reg: /^\/js\/([^\/]*\.js)$/,
-                release: '$1'
+                release: false
             },
 
             {
