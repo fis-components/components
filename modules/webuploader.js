@@ -37,5 +37,9 @@ module.exports = (function() {
                 release: false
             }
         ]
+    }, {
+        version: '0.1.6',
+        extend: '0.1.5',
+        tag: 'master'
     }];
 })();
