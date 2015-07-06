@@ -22,7 +22,7 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/assets\/(.*)$/,
+                reg: /^\/assets\/png\/(.*)$/,
                 release: '$&'
             },
             {
