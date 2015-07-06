@@ -39,7 +39,8 @@ module.exports = (function() {
                     "from": /jQuery/g,
                     "to": "arguments[0]"
                 }
-            }
+            },
+            
             'i18n/defaults-bg_BG.js': {
                 deps: ['../bootstrap-select.js'],
                 "replace": {

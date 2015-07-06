@@ -40,6 +40,7 @@ module.exports = (function() {
                     "to": "require('jquery')"
                 }
             }
+            
         }
     }];
 })();
