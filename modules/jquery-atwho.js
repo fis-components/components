@@ -8,7 +8,8 @@ module.exports = (function() {
         name: 'jquery-atwho',
         main: 'jquery.atwho.js',
         dependencies: [
-            "jquery@>=1.7.0"
+            "jquery@>=1.7.0",
+            "jquery-caret"
         ],
         mapping: [
             {
@@ -28,5 +29,9 @@ module.exports = (function() {
                 release: false
             }
         ]
+    },{
+        version: 'v1.3.2',
+        extend: 'v1.1.0',
+        tag: 'v1.3.2'
     }]
 })();
