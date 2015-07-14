@@ -247,12 +247,13 @@ if (ARGV[2] == 'sync') {
                 r.dependencies.forEach(function(item) {
                     var parts = item.split('@');
 
-                    dependencies[parts[0]] = parts[1];
+                    dependencies[parts[0]] = parts[1] || '*';
                 });
 
                 r.dependencies = dependencies;
             }
 
+            // console.log('Write to %s with data:\n%s', path.join(ROOT, '_' + name, 'component.json'), JSON.stringify(r, null, 2));
             fs.writeFileSync(
                 path.join(ROOT, '_' + name, 'component.json'),
                 JSON.stringify(r, null,'    ')

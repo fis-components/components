@@ -11,6 +11,7 @@ module.exports = (function() {
         main: 'jquery.atwho.js',
         dependencies: [
             "jquery@>=1.7.0",
+            
             "jquery-caret"
         ],
         mapping: [
