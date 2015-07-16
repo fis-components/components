@@ -27,6 +27,11 @@ module.exports = (function() {
                 }
             ]
         },
+        
+        {
+          version: '1.11.3',
+          extend: '1.9.1'
+        },
 
         {
             version: '2.1.0',
