@@ -6,13 +6,13 @@ $ROOT = dirname(__DIR__)."/";
 
 include 'BaiduBce.phar';
 
-$config = [
-  'credentials' => [
+$config = array(
+  'credentials' => array(
       'ak' => 'your ak token',
       'sk' => 'your sk token',
-  ],
+  ),
   'endpoint' => 'http://bj.bcebos.com',
-];
+);
 
 $config['credentials']['ak'] = $argv[1];
 $config['credentials']['sk'] = $argv[2];

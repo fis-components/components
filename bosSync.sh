@@ -19,4 +19,5 @@ curl -o $infofile $info
 ak="${BOS_AK}"
 sk="${BOS_SK}"
 
+php -v
 php $ROOT/bos/sync.php "${ak}" "${sk}" $repos $version $filename $infofile
