@@ -6,7 +6,6 @@ module.exports = (function() {
         tag: 'master',
         version: '1.0.0',
         main: 'boost.js',
-
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
