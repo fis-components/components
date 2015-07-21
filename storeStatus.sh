@@ -4,6 +4,7 @@ currentCommitId=$(git rev-parse HEAD)
 
 mkdir ./output
 cd ./output
+cp ../.travis.yml ./.travis.yml
 echo "Last Commit Id is $currentCommitId"
 echo "$currentCommitId" > ./commitId.log
 

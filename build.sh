@@ -33,7 +33,7 @@ git_update_repos () {
 
 bos_sync () {
     echo "BOS Sync ${1}@${2}"
-    bash ROOT/bosSync.sh $1 $2
+    bash $ROOT/bosSync.sh $1 $2
 }
 
 export -f git_clone
