@@ -114,7 +114,7 @@ function getFilesFromLastMessage(cb) {
                     queue.push(function(cb) {
                         var h = spawn('bash', [
                             path.join(ROOT, 'bosSync.sh'),
-                            name,
+                            r.name,
                             r.version
                         ], {
                             cwd: __dirname
