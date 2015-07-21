@@ -89,6 +89,49 @@ function getFilesFromLastMessage(cb) {
         if (m) {
             files = m[2].split(/\s+/);
             force = m[1] === "forceupdate";
+        } else if (/^bos\ssync$/i.test(message)) {
+
+            // 更新所有 bos
+            files = finder(__dirname, 'modules/**/*.js')
+                .map(function(i) {
+                    return i.relative;
+                })
+                .filter(function(p) {
+                    if (p.indexOf('modules') == -1) {
+                        return false;
+                    }
+                    return /\.js$/.test(p);
+                });
+
+            var queue = [];
+
+            files.forEach(function(file) {
+                var list = loadConfig('./' + file);
+
+                list.forEach(function(r) {
+                    queue.push(function(cb) {
+                        var h = spawn('bash', [
+                            path.join(ROOT, 'bosSync.sh'),
+                            name,
+                            r.version
+                        ], {
+                            cwd: __dirname
+                        });
+                        h.stdout.on('end', function() {
+                            cb();
+                        });
+                        h.stdout.pipe(process.stdout);
+                        h.stderr.pipe(process.stderr);
+                    });
+                });
+            });
+
+            console.log('Start BOS Sync...');
+            async.series(queue, function() {
+                console.log('done');
+            });
+
+            return;
         }
 
         if (files && files.length) {

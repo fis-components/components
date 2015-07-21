@@ -8,7 +8,7 @@ env:
   - secure: a9kINH5eZ/xVQe8gQwy4dOGnVTkEBe9Tkzx28/mHrFTFGU5hyzfKrMRmXLPTiyuvSHcNy1t3IOfldhzT0luBb68fZdxUtQ4jR6wFLvpiG20cX8nUV6wX7Zmk8Ozt81ZRvlYESSvWdqM6PYWU+t6TOVtt2cQUUn+6F/JWMTPWAK0=
 before_script:
     - sudo apt-get update
-    - sudo apt-get install php5
+    - sudo apt-get install php56
 install:
 - npm install
 after_success:
