@@ -11,8 +11,8 @@ git init
 git remote add origin https://github.com/fis-components/components.git
 
 #AU
-git config --global user.email "fansekey@gmail.com"
-git config --global user.name "xiangshouding"
+git config --global user.email "${GIT_EMAIL}"
+git config --global user.name "${GIT_NAME}"
 git config credential.helper "store --file=.git/credential"
 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
