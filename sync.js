@@ -25,7 +25,7 @@ function loadConfig(path) {
 
         if (item.extend) {
             if (!map[item.extend]) {
-                throw new Error('Extend `'+item.extend+'` is not defined.');
+                throw new Error('Extend `' + item.extend + '` is not defined.');
             }
             var copySelf = mixin({}, item)
             mixin(item, map[item.extend]);
@@ -59,7 +59,7 @@ function createRepos(repos, token, from) {
         name: repos,
         org: 'fis-components',
         description: 'Fork from ' + from
-    }, function (err, data) {
+    }, function(err, data) {
         if (err) {
             //throw err;
             process.exit(1);
@@ -70,84 +70,121 @@ function createRepos(repos, token, from) {
     delete github;
 }
 
-function lastChangFiles(cb) {
-    var git_diff = spawn('git', ['diff', '--name-status', 'HEAD^..HEAD']);
-    git_diff.stderr.pipe(process.stderr);
+function getFilesFromLastMessage(cb) {
+    var git_log = spawn('git', ['log', '-1', '--pretty=%B']);
 
-    var o = '';
-    git_diff.stdout.on('data', function (c) {
-        o += c.toString();
+    git_log.stderr.pipe(process.stderr);
+
+    var message = '';
+    git_log.stdout.on('data', function(c) {
+        message += c.toString();
     });
 
-    git_diff.stdout.on('end', function () {
+    git_log.stdout.on('end', function() {
+        var m = /^(update|forceupdate)\s+(.*)/.exec(message);
+        var finder = require('./finder.js');
+        var files;
+        var force = false;
 
-        var arr = o.split('\n');
-        arr = arr
-            .filter(function (line) {
-                var parts = line.split(/\s+/);
-
-                if (!line || parts[0] === 'D') {
-                    return false;
-                }
-
-                if (parts[1].indexOf('modules') == -1) {
-                    return false;
-                }
-                return /\.js$/.test(parts[1]);
-            })
-            .map(function(line) {
-                return line.split(/\s+/)[1];
-            });
-
-        // 如果没有 modules 更新。则读取 commint message 指令。
-        if (!arr.length) {
-            var git_log = spawn('git', ['log', '-1', '--pretty=%B']);
-            git_log.stderr.pipe(process.stderr);
-
-            var message = '';
-            git_log.stdout.on('data', function (c) {
-                message += c.toString();
-            });
-
-            git_log.stdout.on('end', function () {
-                var m = /^(update|forceupdate)\s+(.*)/.exec(message);
-                var finder = require('./finder.js');
-                var files;
-                var force = false;
-
-                if (m) {
-                    files = m[2].split(/\s+/);
-                    force = m[1] === "forceupdate";
-                }
-
-                if (files && files.length) {
-                    files = finder(__dirname, files)
-                        .map(function(i) {
-                            return i.relative;
-                        })
-                        .filter(function(p) {
-                            if (p.indexOf('modules') == -1) {
-                                return false;
-                            }
-                            return /\.js$/.test(p);
-                        });
-
-                    if (files.length) {
-                        cb(files, force);
-                    }
-                }
-            });
-            return;
+        if (m) {
+            files = m[2].split(/\s+/);
+            force = m[1] === "forceupdate";
         }
 
-        //cb(['modules/jquery.js']);
-        cb(arr, true);
+        if (files && files.length) {
+            files = finder(__dirname, files)
+                .map(function(i) {
+                    return i.relative;
+                })
+                .filter(function(p) {
+                    if (p.indexOf('modules') == -1) {
+                        return false;
+                    }
+                    return /\.js$/.test(p);
+                });
+
+            if (files.length) {
+                cb(files, force);
+            }
+        }
     });
 }
 
-function dumpMapping (mapping) {
+function lastChangFiles(cb) {
+    var lastSuccessMessageId = 'HEAD';
+
+    var remote = 'https://raw.githubusercontent.com/fis-components/components/history/commitId.log';
+    
+    console.log('Fetching ' + remote);
+
+    var curl = spawn('curl', [remote]);
+    var body = '';
+    curl.stderr.pipe(process.stderr);
+    // curl.stdout.pipe(process.stdout);
+    curl.stdout.on('data', function(c) {
+        body += c.toString();
+    });
+    curl.stdout.on('end', function() {
+        if (!/Not Found/i.test(body)) {
+            lastSuccessMessageId = body.trim();
+        }
+        fn();
+    });
+
+    function fn() {
+        var git_diff = spawn('git', ['diff', '--name-status', lastSuccessMessageId + '^..HEAD']);
+        git_diff.stderr.pipe(process.stderr);
+
+        var o = '';
+        git_diff.stdout.on('data', function(c) {
+            o += c.toString();
+        });
+
+        git_diff.stdout.on('end', function() {
+
+            var arr = o.split('\n');
+            arr = arr
+                .filter(function(line) {
+                    var parts = line.split(/\s+/);
+
+                    if (!line || parts[0] === 'D') {
+                        return false;
+                    }
+
+                    if (parts[1].indexOf('modules') == -1) {
+                        return false;
+                    }
+                    return /\.js$/.test(parts[1]);
+                })
+                .map(function(line) {
+                    return line.split(/\s+/)[1];
+                });
+
+            // 如果没有 modules 更新。则读取 commint message 指令。
+            if (!arr.length) {
+                return getFilesFromLastMessage(cb);
+            }
+
+            //cb(['modules/jquery.js']);
+            cb(arr, true, function(cb) {
+                // 保存最后一次处理的 git message id.
+                var child = spawn('bash', [path.join(ROOT, 'storeStatus.sh')], {
+                    cwd: __dirname
+                });
+
+                child.stdout.on('end', function() {
+                    cb();
+                });
+                child.stdout.pipe(process.stdout);
+                child.stderr.pipe(process.stderr);
+            });
+        });
+    }
+}
+
+function dumpMapping(mapping) {
     var string = '[\n';
-    mapping.forEach(function (map) {
+    mapping.forEach(function(map) {
         string += '    {\n';
         string += '        reg: ' + map.reg + ',\n';
         string += '        release:' + map.release + '\n';
@@ -159,14 +196,14 @@ function dumpMapping (mapping) {
 
 if (ARGV[2] == 'sync') {
 
-    var sync = function (arr, rebuild) {
-        arr.forEach(function (name) {
+    var sync = function(arr, rebuild, callback) {
+        arr.forEach(function(name) {
             var list = loadConfig(path.join(ROOT, name));
             name = name.replace('modules/', '')
-                       .replace(/\.js$/, '');
+                .replace(/\.js$/, '');
             var queue = [];
-            list.forEach(function (r) {
-                queue.push(function (cb) {
+            list.forEach(function(r) {
+                queue.push(function(cb) {
                     var h = spawn('bash', [
                         path.join(ROOT, 'build.sh'),
                         name,
@@ -179,19 +216,23 @@ if (ARGV[2] == 'sync') {
                     ], {
                         cwd: __dirname
                     });
-                    h.stdout.on('end', function () {
+                    h.stdout.on('end', function() {
                         cb();
                     });
                     h.stdout.pipe(process.stdout);
                     h.stderr.pipe(process.stderr);
                 });
             });
-            async.series(queue, function () {
+            queue.push(function(cb) {
+                callback ? callback(cb) : cb();
+            });
+            async.series(queue, function() {
                 console.log('done');
             });
         });
     };
 
+    // 直接从 argv 里面读取。
     if (ARGV.length > 3) {
         var files = ARGV.slice(3);
         var finder = require('./finder.js');
@@ -210,8 +251,6 @@ if (ARGV[2] == 'sync') {
         if (files.length) {
             sync(files, true);
         }
-
-
     } else {
         lastChangFiles(sync);
     }
@@ -256,7 +295,7 @@ if (ARGV[2] == 'sync') {
             // console.log('Write to %s with data:\n%s', path.join(ROOT, '_' + name, 'component.json'), JSON.stringify(r, null, 2));
             fs.writeFileSync(
                 path.join(ROOT, '_' + name, 'component.json'),
-                JSON.stringify(r, null,'    ')
+                JSON.stringify(r, null, '    ')
             );
             break;
         }
@@ -334,4 +373,3 @@ if (ARGV[2] == 'sync') {
         });
     }
 }
-
