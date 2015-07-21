@@ -155,7 +155,6 @@ function getFilesFromLastMessage(cb) {
 
 function lastChangFiles(cb) {
     var lastSuccessMessageId = 'HEAD';
-
     var remote = 'https://raw.githubusercontent.com/fis-components/components/history/commitId.log';
     
     console.log('Fetching ' + remote);
@@ -204,6 +203,7 @@ function lastChangFiles(cb) {
 
             // 如果没有 modules 更新。则读取 commint message 指令。
             if (!arr.length) {
+                console.log('Nothing changed.')
                 return getFilesFromLastMessage(cb);
             }
 
@@ -276,6 +276,7 @@ if (ARGV[2] == 'sync') {
 
     // 直接从 argv 里面读取。
     if (ARGV.length > 3) {
+        console.log('Sync with args...')
         var files = ARGV.slice(3);
         var finder = require('./finder.js');
 
