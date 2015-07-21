@@ -86,6 +86,8 @@ function getFilesFromLastMessage(cb) {
         var files;
         var force = false;
 
+        console.log('Last Message: %s', message);
+
         if (m) {
             files = m[2].split(/\s+/);
             force = m[1] === "forceupdate";
