@@ -4,9 +4,11 @@ currentCommitId=$(git rev-parse HEAD)
 
 mkdir ./output
 cd ./output
+echo "Last Commit Id is $currentCommitId"
 echo "$currentCommitId" > ./commitId.log
 
 git init
+git remote add origin https://github.com/fis-components/components.git
 
 #AU
 git config --global user.email "fansekey@gmail.com"
