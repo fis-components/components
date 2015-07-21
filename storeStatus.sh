@@ -6,6 +6,8 @@ mkdir ./output
 cd ./output
 echo "$currentCommitId" > ./commitId.log
 
+git init
+
 #AU
 git config --global user.email "fansekey@gmail.com"
 git config --global user.name "xiangshouding"
