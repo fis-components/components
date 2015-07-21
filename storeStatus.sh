@@ -18,7 +18,8 @@ git config credential.helper "store --file=.git/credential"
 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
 git push origin :history
-git add *
+git add commitId.log
+git add .travis.yml
 git commit -am "save status"
 
 git branch history
