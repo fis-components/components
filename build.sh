@@ -27,10 +27,18 @@ git_update_repos () {
     git push origin master
     git tag -a "$version" -m "create tag $version"
     git push --tags
+
+    bos_sync $repos $version
+}
+
+bos_sync () {
+    echo "BOS Sync ${1}@${2}"
+    bash ROOT/bosSync.sh $1 $2
 }
 
 export -f git_clone
 export -f git_update_repos
+export -f bos_sync
 
 sync () {
     new=$1

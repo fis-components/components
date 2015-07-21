@@ -141,7 +141,6 @@ function lastChangFiles(cb) {
         });
 
         git_diff.stdout.on('end', function() {
-
             var arr = o.split('\n');
             arr = arr
                 .filter(function(line) {
