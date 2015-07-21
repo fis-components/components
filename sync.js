@@ -109,7 +109,7 @@ function getFilesFromLastMessage(cb) {
 
             files.forEach(function(file) {
                 var list = loadConfig('./' + file);
-                var name = name.replace('modules/', '')
+                var name = file.replace('modules/', '')
                     .replace(/\.js$/, '');
 
                 list.forEach(function(r) {
