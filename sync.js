@@ -109,12 +109,14 @@ function getFilesFromLastMessage(cb) {
 
             files.forEach(function(file) {
                 var list = loadConfig('./' + file);
+                var name = name.replace('modules/', '')
+                    .replace(/\.js$/, '');
 
                 list.forEach(function(r) {
                     queue.push(function(cb) {
                         var h = spawn('bash', [
                             path.join(ROOT, 'bosSync.sh'),
-                            r.name,
+                            name || r.name,
                             r.version
                         ], {
                             cwd: __dirname
