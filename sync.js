@@ -91,7 +91,7 @@ function getFilesFromLastMessage(cb) {
         if (m) {
             files = m[2].split(/\s+/);
             force = m[1] === "forceupdate";
-        } else if (/^bos\ssync$/i.test(message)) {
+        } else if (~message.indexOf('bos sync')) {
 
             // 更新所有 bos
             files = finder(__dirname, 'modules/**/*.js')
