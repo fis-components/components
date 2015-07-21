@@ -38,6 +38,5 @@ module.exports = (function() {
             build: 'npm run build',
             extend: '1.9.1'
         }
-
     ]
 })();
