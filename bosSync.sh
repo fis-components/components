@@ -5,8 +5,7 @@ ROOT=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 repos=$1
 version=$2
 
-rm -rf temp
-mkdir -p temp
+mkdir -p $ROOT/temp
 remote="https://codeload.github.com/fis-components/${repos}/tar.gz/${version}"
 filename="temp/${repos}_${version}.tar.gz"
 echo "Downloading ${remote}"
