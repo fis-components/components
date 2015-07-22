@@ -54,6 +54,5 @@ module.exports = (function() {
             version: '2.1.4',
             extend: '2.1.0'
         }
-        
     ]
 })();
