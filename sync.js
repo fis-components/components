@@ -121,7 +121,10 @@ function getFilesFromLastMessage(cb) {
                         ], {
                             cwd: __dirname
                         });
-                        h.stdout.on('end', function() {
+                        h.on('exit', function(code) {
+                            if (code) {
+                                process.exit(1);
+                            }
                             cb();
                         });
                         h.stdout.pipe(process.stdout);
@@ -218,7 +221,10 @@ function lastChangFiles(cb) {
                     cwd: __dirname
                 });
 
-                child.stdout.on('end', function() {
+                child.on('exit', function(code) {
+                    if (code) {
+                        process.exit(1);
+                    }
                     cb();
                 });
                 child.stdout.pipe(process.stdout);
@@ -262,7 +268,13 @@ if (ARGV[2] == 'sync') {
                     ], {
                         cwd: __dirname
                     });
-                    h.stdout.on('end', function() {
+                    // h.stdout.on('end', function() {
+                    //     cb();
+                    // });
+                    h.on('exit', function(code) {
+                        if (code) {
+                            process.exit(1);
+                        }
                         cb();
                     });
                     h.stdout.pipe(process.stdout);
