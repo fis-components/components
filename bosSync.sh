@@ -8,7 +8,7 @@ version=$2
 rm -rf temp
 mkdir -p temp
 remote="https://codeload.github.com/fis-components/${repos}/tar.gz/${version}"
-filename="temp/${repos}@${version}_all.tar.gz"
+filename="temp/${repos}_${version}.tar.gz"
 echo "Downloading ${remote}"
 echo "curl -o ${ROOT}/${filename} $remote"
 curl -o ${ROOT}/${filename} $remote
