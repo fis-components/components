@@ -35,8 +35,24 @@ module.exports = (function() {
 
         {
             version: '2.1.0',
-            build: 'npm run build',
+            build: null,
             extend: '1.9.1'
+        },
+        {
+            version: '2.1.1',
+            extend: '2.1.0'
+        },
+        {
+            version: '2.1.2',
+            extend: '2.1.0'
+        },
+        {
+            version: '2.1.3',
+            extend: '2.1.0'
+        },
+        {
+            version: '2.1.4',
+            extend: '2.1.0'
         }
         
     ]
