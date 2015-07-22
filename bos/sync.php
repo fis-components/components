@@ -21,6 +21,7 @@ $name = $argv[3];
 $version = $argv[4];
 $tarFile = $argv[5];
 $jsonFile = $argv[6];
+$versionsFile = $argv[7];
 
 use BaiduBce\BceClientConfigOptions;
 use BaiduBce\Util\Time;
@@ -36,5 +37,6 @@ $bosDIR = "/components/".$name."/".$version."/";
 
 $client->putObjectFromFile($bucket, $bosDIR."all.tar.gz", $ROOT.$tarFile);
 $client->putObjectFromFile($bucket, $bosDIR."component.json", $ROOT.$jsonFile);
+$client->putObjectFromFile($bucket, "/components/".$name."/versions.txt", $ROOT.$versionsFile);
 
 

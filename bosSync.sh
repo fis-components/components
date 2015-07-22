@@ -19,5 +19,9 @@ curl -o $infofile $info
 ak="${BOS_AK}"
 sk="${BOS_SK}"
 
+versions=$(git ls-remote --tags --refs --heads https://github.com/fis-components/${repos}.git  | awk -F/ '{print $3}')
+versionsfile="temp/${repos}_versions.txt"
+echo $versions > $versionsfile
+
 php -v
-php $ROOT/bos/sync.php "${ak}" "${sk}" $repos $version $filename $infofile
+php $ROOT/bos/sync.php "${ak}" "${sk}" $repos $version $filename $infofile $versionsfile
