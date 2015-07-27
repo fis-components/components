@@ -16,8 +16,8 @@ git_update_repos () {
     node $ROOT/sync.js create-component.json $repos $version
 
     #AU
-    git config --global user.email "fansekey@gmail.com"
-    git config --global user.name "xiangshouding"
+    git config --global user.email "${GIT_EMAIL}"
+    git config --global user.name "${GIT_NAME}"
     git config credential.helper "store --file=.git/credential"
     echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
@@ -27,10 +27,21 @@ git_update_repos () {
     git push origin master
     git tag -a "$version" -m "create tag $version"
     git push --tags
+
+    bos_sync $repos $version
+}
+
+bos_sync () {
+    echo "BOS Sync ${1}@${2}"
+    bash $ROOT/bosSync.sh $1 $2
+    if [ "$?" != "0" ]; then
+        exit 1
+    fi
 }
 
 export -f git_clone
 export -f git_update_repos
+export -f bos_sync
 
 sync () {
     new=$1
@@ -73,8 +84,8 @@ sync () {
                 echo "= Tag $version already exists, now deleting..."
 
                 #AU
-                git config --global user.email "fansekey@gmail.com"
-                git config --global user.name "xiangshouding"
+                git config --global user.email "${GIT_EMAIL}"
+                git config --global user.name "${GIT_NAME}"
                 git config credential.helper "store --file=.git/credential"
                 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
