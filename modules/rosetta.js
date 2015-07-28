@@ -25,8 +25,8 @@ module.exports = (function() {
             extend: '1.0.0'
         },
         {
-            version: '1.0.2',
             tag: '1.0.2',
+            version: '1.0.2',
             extend: '1.0.0'
         }
     ];
