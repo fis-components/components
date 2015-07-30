@@ -23,11 +23,9 @@ module.exports = (function() {
         ]
     },{
         version: '0.12.6',
-        extend: '0.11.10',
-        tag: '0.12.6'
+        extend: '0.11.10'
     },{
         version: '0.12.8',
-        extend: '0.11.10',
-        tag: '0.12.8'
+        extend: '0.11.10'
     }]
 })();
