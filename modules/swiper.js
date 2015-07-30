@@ -19,6 +19,7 @@ module.exports = (function() {
         reg: /^\/dist\/css\/(.*\.css)$/,
         release: '$1'
       },
+      
 			{
         reg: /^\/README\.md$/,
         release: '$&'
