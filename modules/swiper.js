@@ -12,14 +12,14 @@ module.exports = (function() {
 		],
 		mapping: [
 			{
-        reg: /^\/dist\/js\/(.*\.js)$/,
+        reg: /^\/dist\/js\/(swiper\.js)$/,
         release: '$1'
       },
       {
         reg: /^\/dist\/css\/(.*\.css)$/,
         release: '$1'
       },
-      
+
 			{
         reg: /^\/README\.md$/,
         release: '$&'
