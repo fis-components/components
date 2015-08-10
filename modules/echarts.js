@@ -15,7 +15,7 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /\/echarts\/util\/mapData\/rawData\/.*$/i,
+                reg: /\/util\/mapData\/rawData\/.*$/i,
                 release: false
             },
             {
