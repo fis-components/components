@@ -6,7 +6,7 @@ module.exports = (function() {
         version: 'v2.1.0',
         description: 'Internationalization plugin of Vue.js',
         name: 'vue-i18n',
-        main: 'vvue-i18n.js',
+        main: 'vue-i18n.js',
         dependencies: [
             "vue@>=0.12.0"
         ],
