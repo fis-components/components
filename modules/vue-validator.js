@@ -52,6 +52,5 @@ module.exports = (function() {
             "vue@>=0.12.0"
         ]
     }
-
     ]
 })();
