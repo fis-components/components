@@ -2,17 +2,17 @@
 
 module.exports = (function() {
     return [{
-        repos: 'https://github.com/kazupon/vue-i18n',
-        version: 'v2.1.0',
-        description: 'Internationalization plugin of Vue.js',
-        name: 'vue-i18n',
-        main: 'vue-i18n.js',
+        repos: 'https://github.com/vuejs/vue-resource',
+        version: '0.1.13',
+        description: 'Resource component for Vue.js',
+        name: 'vue-resource',
+        main: 'vue-resource.js',
         dependencies: [
             "vue@>=0.12.0"
         ],
         mapping: [
             {
-                reg: /^\/dist\/(vue-i18n\.js)/,
+                reg: /^\/dist\/(vue-resource\.js)/,
                 release: '$1'
             },
             {
