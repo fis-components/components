@@ -7,7 +7,7 @@ module.exports = (function() {
 		version: "v3.1.0",
 		description: "Most modern mobile touch slider with hardware accelerated transitions",
 		name: "Swiper",
-		main: "swiper.min.js",
+		main: "swiper.js",
 		dependencies: [
 		],
 		mapping: [
