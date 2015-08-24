@@ -161,7 +161,7 @@ function getFilesFromLastMessage(cb) {
 }
 
 function lastChangFiles(cb) {
-    var lastSuccessMessageId = 'HEAD';
+    var lastSuccessMessageId = 'HEAD^';
     var remote = 'https://raw.githubusercontent.com/fis-components/components/history/commitId.log';
     
     console.log('Fetching ' + remote);
@@ -181,7 +181,7 @@ function lastChangFiles(cb) {
     });
 
     function fn() {
-        var git_diff = spawn('git', ['diff', '--name-status', lastSuccessMessageId + '^..HEAD']);
+        var git_diff = spawn('git', ['diff', '--name-status', lastSuccessMessageId + '..HEAD']);
         git_diff.stderr.pipe(process.stderr);
 
         var o = '';

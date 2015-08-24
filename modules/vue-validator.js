@@ -29,7 +29,6 @@ module.exports = (function() {
     {
         version: 'v1.2.0',
         extend: 'v1.0.7',
-        tag: 'v1.2.0',
         dependencies: [
             "vue@>=0.12.0"
         ]
@@ -38,11 +37,17 @@ module.exports = (function() {
     {
         version: 'v1.3.3',
         extend: 'v1.0.7',
-        tag: 'v1.3.3',
+        dependencies: [
+            "vue@>=0.12.0"
+        ]
+    },
+
+    {
+        version: 'v1.4.1',
+        extend: 'v1.0.7',
         dependencies: [
             "vue@>=0.12.0"
         ]
     }
-
     ]
 })();

@@ -17,7 +17,7 @@ module.exports = (function() {
                 release: false
             },
             {
-                reg: /^\/query\.placeholder\.js$/,
+                reg: /^\/jquery\.placeholder\.js$/,
                 release: '$&'
             },
             {
