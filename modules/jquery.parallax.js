@@ -5,7 +5,7 @@ module.exports = (function() {
         repos: 'https://github.com/stephband/jparallax.git',
         version: '2.0.3',
         name: 'jquery-parallax',
-        main: 'js/jquery.parallax.js',
+        main: 'jquery.parallax.js',
         dependencies: [
             "jquery"
         ],
