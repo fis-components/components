@@ -12,12 +12,16 @@ module.exports = (function() {
 
         mapping: [
             {
-                reg: /^\/jquery\.parallax\.js$/,
+                reg: /^\/js\/jquery\.parallax\.js$/,
                 release: 'jquery.parallax.js'
             },
             {
-                reg: /^\/jquery\.parallax\.css$/,
-                release: 'jquery.parallax.css'
+                reg: /^\/js\/jquery\.event\.frame\.js$/,
+                release: 'jquery.event.frame.js'
+            },
+            {
+                reg: /^\/css\/(.*)$/,
+                release: '$1'
             },
             {
                 reg: /^\/README\.textile$/,
@@ -31,6 +35,10 @@ module.exports = (function() {
 
         shim: {
             "jquery.parallax.js": {
+              "deps": ["jquery"],
+              "vars": ["jQuery"]
+            },
+            "jquery.event.frame.js": {
               "deps": ["jquery"],
               "vars": ["jQuery"]
             }
