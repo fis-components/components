@@ -3,7 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/alvarotrigo/fullPage.js.git',
-        version: 'v2.2.8',
+        version: '2.6.9',
         name: 'jquery-fullpage',
         main: 'jquery.fullpage.js',
         dependencies: [
