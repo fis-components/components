@@ -30,7 +30,7 @@ module.exports = (function() {
         ],
 
         shim: {
-            "jquery. parallax.js": {
+            "jquery.parallax.js": {
               "deps": ["jquery"],
               "vars": ["jQuery"]
             }
