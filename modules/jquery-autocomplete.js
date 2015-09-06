@@ -11,7 +11,7 @@ module.exports = (function() {
         ],
         mapping: [
             {
-                reg: /^\/dist\/jquery\.autocomplete\.js$/,
+                reg: /^\/dist\/(jquery\.autocomplete\.js)$/,
                 release: '$1'
             },
             {
@@ -22,12 +22,6 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ],
-        shim: {
-            "jquery.autocomplete.js": {
-                "deps": ["jquery"],
-                "vars": ["jQuery"]
-            }
-        }
+        ]
     }];
 })();
