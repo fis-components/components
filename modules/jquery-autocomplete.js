@@ -11,7 +11,7 @@ module.exports = (function() {
         ],
         mapping: [
             {
-                reg: /^\/src\/(.*?\.js)$/,
+                reg: /^\/dist\/jquery\.autocomplete\.js$/,
                 release: '$1'
             },
             {
@@ -24,7 +24,7 @@ module.exports = (function() {
             }
         ],
         shim: {
-            "jquery.tagsinput.js": {
+            "jquery.autocomplete.js": {
                 "deps": ["jquery"],
                 "vars": ["jQuery"]
             }
