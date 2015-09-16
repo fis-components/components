@@ -10,15 +10,23 @@ module.exports = (function() {
             build: 'npm install && npm install grunt-cli && ./node_modules/.bin/grunt build',
             mapping: [
                 {
-                    reg: /\.min\.(js|css)$/,
+                    reg: /\.min\.(js|css)$/i,
                     release: false
                 },
                 {
-                    reg: /^\/build\/packages\/react\/(.*\.js)/,
-                    release: '$1'
+                    reg: /^\/build\/(JSXTransformer\.js)$/i,
+                    release: 'JSXTransformer.js'
                 },
                 {
-                    reg: /^\/README\.md$/,
+                    reg: /^\/build\/(react-with-addons\.js)$/i,
+                    release: 'react-with-addons.js'
+                },
+                {
+                    reg: /^\/build\/(react\.js)$/i,
+                    release: 'react.js'
+                },
+                {
+                    reg: /^\/README\.md$/i,
                     release: '$&'
                 },
                 {
