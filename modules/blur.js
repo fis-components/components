@@ -6,6 +6,7 @@ module.exports = (function() {
         main: 'blur.js',
         repos: 'https://github.com/jakiestfu/Blur.js',
         version: '0.0.1',
+        tag: 'master',
         dependencies: [
             "jquery@>=1.7"
         ],
