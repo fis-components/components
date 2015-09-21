@@ -21,10 +21,6 @@ module.exports = (function() {
                 release: false
             }
         ],
-        shim: {
-            "lodash.js": {
-                exports: "this._"
-            }
-        }
+        umd2commonjs: false
     }]
 })();
