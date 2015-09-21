@@ -20,6 +20,11 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        shim: {
+            "loadash.js": {
+                exports: "window._"
+            }
+        }
     }]
 })();
