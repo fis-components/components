@@ -22,7 +22,7 @@ module.exports = (function() {
             }
         ],
         shim: {
-            "loadash.js": {
+            "lodash.js": {
                 exports: "window._"
             }
         }
