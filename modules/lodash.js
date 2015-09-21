@@ -23,7 +23,7 @@ module.exports = (function() {
         ],
         shim: {
             "lodash.js": {
-                exports: "window._"
+                exports: "this._"
             }
         }
     }]
