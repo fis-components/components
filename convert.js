@@ -315,6 +315,11 @@ function transform(data, options) {
                     arguments: node.arguments
                 };
             } else if (node.type === 'IfStatement') {
+                
+                if (options.config.umd2commonjs === false) {
+                    return;
+                }
+
 
                 var parents = this.parents();
                 if (parents[parents.length - 1].type === 'IfStatement') {
