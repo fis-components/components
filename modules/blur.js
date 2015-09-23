@@ -2,14 +2,17 @@
 
 module.exports = (function() {
     return [{
-        repos: 'https://github.com/lodash/lodash',
-        version: '3.5.0',
-        description: 'A JavaScript utility library delivering consistency, modularity, performance, & extras. ',
-        name: 'lodash',
-        main: 'lodash.js',
+        name: 'blur',
+        main: 'blur.js',
+        repos: 'https://github.com/jakiestfu/Blur.js',
+        version: '0.0.1',
+        tag: 'master',
+        dependencies: [
+            "jquery@>=1.7"
+        ],
         mapping: [
             {
-                reg: /^\/lodash\.js$/,
+                reg: /^\/blur\.js$/,
                 release: '$&'
             },
             {
@@ -20,7 +23,6 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ],
-        umd2commonjs: false
+        ]
     }]
 })();

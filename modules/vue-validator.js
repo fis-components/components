@@ -48,6 +48,14 @@ module.exports = (function() {
         dependencies: [
             "vue@>=0.12.0"
         ]
+    },
+
+    {
+        version: 'v1.4.3',
+        extend: 'v1.0.7',
+        dependencies: [
+            "vue@>=0.12.0"
+        ]
     }
     ]
 })();

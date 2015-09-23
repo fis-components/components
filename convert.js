@@ -21,6 +21,8 @@ module.exports = function(options, callback) {
 
     files.forEach(function(info) {
         try {
+            if (options.config.umd2commonjs === false)return;
+            
             write(info.dest || info.absolute, transform(read(info.absolute, 'utf8'), options));
         } catch (e) {
             console.log('Got Eroor: %s while converting %s', e.message, info.dest || info.absolute);
@@ -315,7 +317,7 @@ function transform(data, options) {
                     arguments: node.arguments
                 };
             } else if (node.type === 'IfStatement') {
-
+                
                 var parents = this.parents();
                 if (parents[parents.length - 1].type === 'IfStatement') {
                     return;
