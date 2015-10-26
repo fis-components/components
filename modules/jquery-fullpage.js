@@ -28,5 +28,9 @@ module.exports = (function() {
                 release: false
             }
         ]
+    },
+    {
+        version: '2.7.4',
+        extend: '2.6.9'
     }]
 })();
