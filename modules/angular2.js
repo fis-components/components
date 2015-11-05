@@ -11,6 +11,11 @@ module.exports = (function() {
         mapping: [
 
             {
+                reg: /\bmin\b/i,
+                release: false
+            },
+
+            {
                 reg: /^\/node_modules\/angular2\/bundles\/(.*)$/,
                 release: '$1'
             },
@@ -19,7 +24,6 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-            
         ]
     }]
 })();
