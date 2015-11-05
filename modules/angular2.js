@@ -9,10 +9,12 @@ module.exports = (function() {
         main: 'angular2.js',
         build: 'rm package.json && npm install --prefix . angular2@2.0.0-alpha.45',
         mapping: [
+
             {
                 reg: /^\/node_modules\/angular2\/bundles\/(.*)$/,
                 release: '$1'
             },
+            
             {
                 reg: '*',
                 release: false
