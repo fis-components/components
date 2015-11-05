@@ -130,5 +130,8 @@ module.exports = (function() {
     }, {
       extend: 'v3.3.1',
       version: 'v3.3.4',
+    }, {
+      extend: 'v3.3.1',
+      version: 'v3.3.5',
     }];
 })();
