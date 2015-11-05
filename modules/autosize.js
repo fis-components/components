@@ -21,5 +21,8 @@ module.exports = (function() {
                 release: false
             }
         ]
+    },{
+        version: '3.0.13',
+        extend: '3.0.4'
     }]
 })();
