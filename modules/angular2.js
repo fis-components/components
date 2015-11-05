@@ -14,11 +14,12 @@ module.exports = (function() {
                 reg: /^\/node_modules\/angular2\/bundles\/(.*)$/,
                 release: '$1'
             },
-            
+
             {
                 reg: '*',
                 release: false
             }
+            
         ]
     }]
 })();
