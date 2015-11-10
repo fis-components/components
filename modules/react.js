@@ -34,6 +34,11 @@ module.exports = (function() {
                     release: false
                 }
             ]
+        },
+
+        {
+            version: 'v0.14.2',
+            extend: 'v0.13.3'
         }
     ]
 })();
