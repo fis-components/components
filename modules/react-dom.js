@@ -15,7 +15,7 @@ module.exports = (function() {
                 },
 
                 {
-                    reg: /^\/node_modules\/react-dom\/dist\/(.*)$/,
+                    reg: /^\/node_modules\/react\-dom\/dist\/(.*)$/,
                     release: '$1'
                 },
 
