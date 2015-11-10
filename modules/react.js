@@ -7,24 +7,18 @@ module.exports = (function() {
             version: 'v0.13.3',
             name: 'react',
             main: 'react.js',
-            build: 'npm install && npm install grunt-cli && ./node_modules/.bin/grunt build',
+            build: 'rm package.json && npm install --prefix . react@0.13.3',
             mapping: [
                 {
-                    reg: /\.min\.(js|css)$/i,
+                    reg: /\bmin\b/i,
                     release: false
                 },
+
                 {
-                    reg: /^\/build\/(JSXTransformer\.js)$/i,
-                    release: 'JSXTransformer.js'
+                    reg: /^\/node_modules\/react\/dist\/(.*)$/,
+                    release: '$1'
                 },
-                {
-                    reg: /^\/build\/(react-with-addons\.js)$/i,
-                    release: 'react-with-addons.js'
-                },
-                {
-                    reg: /^\/build\/(react\.js)$/i,
-                    release: 'react.js'
-                },
+
                 {
                     reg: /^\/README\.md$/i,
                     release: '$&'
@@ -38,7 +32,8 @@ module.exports = (function() {
 
         {
             extend: 'v0.13.3',
-            version: 'v0.14.2'
+            version: 'v0.14.2',
+            build: 'rm package.json && npm install --prefix . react@0.14.2',
         }
     ]
 })();
