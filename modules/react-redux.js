@@ -7,7 +7,7 @@ module.exports = (function() {
             version: 'v4.0.0',
             name: 'react-redux',
             main: 'react-redux.js',
-            build: 'rm package.json && npm install --prefix . react-redux@0.14.2',
+            build: 'rm package.json && npm install --prefix . react-redux@4.0.0',
             dependencies: [
                 "react@^0.14.0",
                 "redux"
