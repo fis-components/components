@@ -40,6 +40,6 @@ module.exports = (function() {
     }, {
         version: '0.1.6',
         extend: '0.1.5',
-        tag: 'master'
+        tag: 'master'// trigger
     }];
 })();
