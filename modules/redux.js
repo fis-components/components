@@ -3,11 +3,11 @@
 module.exports = (function() {
     return [
         {
-            repos: 'https://github.com/facebook/react.git',
-            version: 'v0.14.2',
-            name: 'react-dom',
-            main: 'react-dom.js',
-            build: 'rm package.json && npm install --prefix . react@0.14.2',
+            repos: 'https://github.com/rackt/redux.git',
+            version: 'v3.0.4',
+            name: 'redux',
+            main: 'redux.js',
+            build: 'rm package.json && npm install --prefix . redux@3.0.4',
             mapping: [
                  {
                     reg: /\bmin\b/i,
@@ -15,7 +15,7 @@ module.exports = (function() {
                 },
 
                 {
-                    reg: /^\/node_modules\/react-dom\/dist\/(.*)$/,
+                    reg: /^\/node_modules\/redux\/dist\/(.*)$/,
                     release: '$1'
                 },
 
