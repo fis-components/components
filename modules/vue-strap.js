@@ -10,6 +10,10 @@ module.exports = (function() {
         main: 'vue-strap.js',
         mapping: [
             {
+                reg: /\.min\.js$/,
+                release: false
+            },
+            {
                 reg: /^\/dist\/(.*)$/,
                 release: '$1'
             },
