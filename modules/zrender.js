@@ -28,5 +28,8 @@ module.exports = (function() {
                 release: false
             }
         ]
+    }, {
+        version: '2.1.1',
+        extend: '2.0.6'
     }]
 })();
