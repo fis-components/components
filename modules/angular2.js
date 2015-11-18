@@ -27,7 +27,7 @@ module.exports = (function() {
         ]
     },
     {
-        version: '2.0.0-alpha.45',
+        version: '2.0.0-alpha.46',
         extend: '2.0.0-alpha.45',
         build: 'rm package.json && npm install --prefix . angular2@2.0.0-alpha.46',
     }]
