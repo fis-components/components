@@ -2,21 +2,19 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
-        repos: 'https://github.com/ecomfe/zrender.git',
-        version: '2.0.6',
-        name: 'zrender',
-        main: 'zrender.js',
+        repos: 'https://github.com/BelinChung/vue-strap',
+        tag: 'master',
+        version: 'v0.1.2',
+        description: 'Bootstrap components built with Vue.js http://yuche.github.io/vue-strap/',
+        name: 'vue-strap',
+        main: 'vue-strap.js',
         mapping: [
             {
-                reg: /\.min\.(js|css)$/,
+                reg: /\.min\.js$/,
                 release: false
             },
             {
-                reg: /^\/src\/(.*)$/,
+                reg: /^\/dist\/(.*)$/,
                 release: '$1'
             },
             {
@@ -28,8 +26,5 @@ module.exports = (function() {
                 release: false
             }
         ]
-    }, {
-        version: '2.1.1',
-        extend: '2.0.6'
     }]
 })();
