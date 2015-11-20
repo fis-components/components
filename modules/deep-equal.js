@@ -3,25 +3,25 @@
 module.exports = (function() {
     return [
         {
-            repos: 'https://github.com/gaearon/redux-thunk.git',
-            version: 'v1.0.0',
-            name: 'redux-thunk',
+            repos: 'https://github.com/substack/node-deep-equal.git',
+            version: '1.0.1',
+            name: 'deep-equal',
             main: 'index.js',
-            build: 'rm package.json && npm install --prefix . redux-thunk@1.0.0',
-            dependencies: [
-                "redux"
-            ],
             mapping: [
                 {
                     reg: /\bmin\b/i,
                     release: false
                 },
                 {
-                    reg: /^\/node_modules\/redux\-thunk\/lib\/(.*)$/,
-                    release: '$1'
+                    reg: /^\/index\.js$/,
+                    release: '$0'
                 },
                 {
-                    reg: /^\/README\.md$/i,
+                    reg: /^\/lib\/.*\.js$/,
+                    release: '$0'
+                },
+                {
+                    reg: /^\/readme\.markdown$/i,
                     release: '$&'
                 },
                 {
