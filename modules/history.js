@@ -3,22 +3,24 @@
 module.exports = (function() {
     return [
         {
-            repos: 'https://github.com/rackt/redux-router.git',
-            version: 'v1.0.0-beta4',
-            name: 'redux-router',
+            repos: 'https://github.com/rackt/history.git',
+            version: 'v1.13.1',
+            name: 'history',
             main: 'index.js',
-            build: 'rm package.json && npm install --prefix . redux-router@1.0.0-beta4',
+            build: 'rm package.json && npm install --prefix . history@1.13.1',
             dependencies: [
-                "redux",
-                "deep-equal"
+                "invariant@^2.0.0",
+                "deep-equal@^1.0.0",
+                "qs@^4.0.0",
+                "warning@^2.0.0"
             ],
             mapping: [
                 {
-                    reg: /\bmin\b|__tests__/i,
+                    reg: /\bmin\b/i,
                     release: false
                 },
                 {
-                    reg: /^\/node_modules\/redux\-router\/lib\/(.*)$/,
+                    reg: /^\/node_modules\/history\/lib\/(.*)$/,
                     release: '$1'
                 },
                 {

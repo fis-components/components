@@ -3,22 +3,17 @@
 module.exports = (function() {
     return [
         {
-            repos: 'https://github.com/rackt/redux-router.git',
-            version: 'v1.0.0-beta4',
-            name: 'redux-router',
+            repos: 'https://github.com/hapijs/qs.git',
+            version: 'v6.0.0',
+            name: 'qs',
             main: 'index.js',
-            build: 'rm package.json && npm install --prefix . redux-router@1.0.0-beta4',
-            dependencies: [
-                "redux",
-                "deep-equal"
-            ],
             mapping: [
                 {
-                    reg: /\bmin\b|__tests__/i,
+                    reg: /\bmin\b/i,
                     release: false
                 },
                 {
-                    reg: /^\/node_modules\/redux\-router\/lib\/(.*)$/,
+                    reg: /^\/lib\/(.*)$/,
                     release: '$1'
                 },
                 {
@@ -30,6 +25,26 @@ module.exports = (function() {
                     release: false
                 }
             ]
+        },
+
+        {
+            version: 'v5.2.0',
+            extend: 'v6.0.0'
+        },
+
+        {
+            version: 'v5.1.0',
+            extend: 'v6.0.0'
+        },
+
+        {
+            version: 'v5.0.0',
+            extend: 'v6.0.0'
+        },
+
+        {
+            version: 'v4.0.0',
+            extend: 'v6.0.0'
         }
     ]
 })();
