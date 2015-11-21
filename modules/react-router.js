@@ -10,9 +10,9 @@ module.exports = (function() {
             build: 'rm package.json && npm install --prefix . react-router@1.0.0',
             dependencies: [
                 "react@^0.14.0",
-                "invariant": "^2.0.0",
-                "warning": "^2.0.0",
-                "history": "^1.13.1"
+                "invariant@^2.0.0",
+                "warning@^2.0.0",
+                "history@^1.13.1"
             ],
             mapping: [
                  {
