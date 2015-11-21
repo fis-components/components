@@ -14,6 +14,7 @@ module.exports = (function() {
                 "warning@^2.0.0",
                 "deep-equal@^1.0.0"
             ],
+            
             mapping: [
                 {
                     reg: /\bmin\b/i,
