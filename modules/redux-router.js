@@ -6,13 +6,13 @@ module.exports = (function() {
             repos: 'https://github.com/rackt/redux-router.git',
             version: 'v1.0.0-beta4',
             name: 'redux-router',
-            main: 'index.js',
+            main: 'lib/index.js',
             build: 'rm package.json && npm install --prefix . redux-router@1.0.0-beta4',
             dependencies: [
                 "redux",
                 "deep-equal"
             ],
-            
+
             mapping: [
                 {
                     reg: /\bmin\b|__tests__/i,
@@ -20,7 +20,7 @@ module.exports = (function() {
                 },
                 {
                     reg: /^\/node_modules\/redux\-router\/lib\/(.*)$/,
-                    release: '$1'
+                    release: 'lib/$1'
                 },
                 {
                     reg: /^\/README\.md$/i,
