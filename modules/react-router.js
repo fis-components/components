@@ -14,6 +14,7 @@ module.exports = (function() {
                 "warning@^2.0.0",
                 "history@^1.13.1"
             ],
+            
             mapping: [
                  {
                     reg: /\bmin\b/i,

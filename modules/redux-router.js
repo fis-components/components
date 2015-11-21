@@ -12,6 +12,7 @@ module.exports = (function() {
                 "redux",
                 "deep-equal"
             ],
+            
             mapping: [
                 {
                     reg: /\bmin\b|__tests__/i,
