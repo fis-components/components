@@ -6,7 +6,7 @@ module.exports = (function() {
             repos: 'https://github.com/rackt/react-router.git',
             version: 'v1.0.0',
             name: 'react-router',
-            main: 'index.js',
+            main: 'lib/index.js',
             build: 'rm package.json && npm install --prefix . react-router@1.0.0',
             dependencies: [
                 "react@^0.14.0",
@@ -22,7 +22,7 @@ module.exports = (function() {
 
                 {
                     reg: /^\/node_modules\/react\-router\/lib\/(.*)$/,
-                    release: '$1'
+                    release: 'lib/$1'
                 },
 
                 {
