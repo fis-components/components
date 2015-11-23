@@ -20,6 +20,7 @@ module.exports = (function() {
                 reg: '*',
                 release: false
             }
-        ]
+        ],
+        umd2commonjs: false
     }]
 })();
