@@ -13,7 +13,7 @@ module.exports = (function() {
                     release: false
                 },
                 {
-                    reg: /^index\.js$/,
+                    reg: /^\/index\.js$/,
                     release: 'index.js'
                 },
                 {
