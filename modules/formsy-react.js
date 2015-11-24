@@ -8,6 +8,9 @@ module.exports = (function() {
             name: 'formsy-react',
             main: 'lib/index.js',
             build: 'rm package.json && npm install --prefix . formsy-react@0.17.0',
+            dependencies: [
+                'form-data-to-object@^0.2.0'
+            ],
             mapping: [
                 {
                     reg: /\bmin\b/i,
