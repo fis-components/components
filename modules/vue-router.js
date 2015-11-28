@@ -3,7 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/vuejs/vue-router',
-        version: '0.7.7',
+        version: 'v0.7.7',
         description: 'The official router for Vue.js 0.12+',
         name: 'vue-router',
         main: 'vue-router.js',
@@ -24,7 +24,5 @@ module.exports = (function() {
                 release: false
             }
         ]
-    },{
-        version: '0.7.7'
     }]
 })();
