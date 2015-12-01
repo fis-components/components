@@ -24,12 +24,12 @@ module.exports = (function() {
         shim: {
             "fetch.js": {
               "exports": "window.fetch", 
-              "deps": ["es6-promise"]
+              // "deps": ["es6-promise"]
             }
         },
-        dependencies: [
+        /*dependencies: [
             "es6-promise"
-        ]
+        ]*/
     }, {
         repos: 'https://github.com/github/fetch',
         version: 'v0.7.0',
@@ -53,11 +53,11 @@ module.exports = (function() {
         shim: {
             "fetch.js": {
               "exports": "window.fetch", 
-              "deps": ["es6-promise"]
+              // "deps": ["es6-promise"]
             }
         },
-        dependencies: [
+        /*dependencies: [
             "es6-promise"
-        ]
+        ]*/
     }]
 })();
