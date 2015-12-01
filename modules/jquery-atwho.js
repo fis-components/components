@@ -42,6 +42,11 @@ module.exports = (function() {
     {
         version: 'v1.3.2',
         extend: 'v1.1.0'
+    },
+
+    {
+        version: 'v1.4.0',
+        extend: 'v1.1.0'
     }
 
     ];
