@@ -9,7 +9,7 @@ module.exports = (function() {
         main: 'autosize.js',
         mapping: [
             {
-                reg: '/dest/autosize.js',
+                reg: '/dist/autosize.js',
                 release: 'autosize.js'
             },
             {
