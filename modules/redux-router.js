@@ -31,6 +31,10 @@ module.exports = (function() {
                     release: false
                 }
             ]
+        }, {
+            version: 'v1.0.0-beta5',
+            extend: 'v1.0.0-beta4',
+            build: 'rm package.json && npm install --prefix . redux-router@1.0.0-beta5'
         }
     ]
 })();
