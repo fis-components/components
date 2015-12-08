@@ -33,7 +33,7 @@ module.exports = (function() {
             ]
         }, {
             version: 'v0.13.4',
-            extend: '0.14.0-rc1',
+            extend: 'v0.14.0-rc1',
             build: 'rm package.json && npm install --prefix . material-ui@0.13.4'
         }
     ]
