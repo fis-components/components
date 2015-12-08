@@ -5,7 +5,7 @@ module.exports = (function() {
         {
             repos: 'https://github.com/lodash/lodash.git',
             version: '3.0.4',
-            tag: '3.0.4-npm',
+            tag: 'master',
             name: 'lodash.throttle',
             main: 'index.js',
             build: 'rm package.json && npm install --prefix . lodash.throttle@3.0.4',

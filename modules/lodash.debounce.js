@@ -5,7 +5,7 @@ module.exports = (function() {
         {
             repos: 'https://github.com/lodash/lodash.git',
             version: '3.1.1',
-            tag: '3.1.1-npm',
+            tag: 'master',
             name: 'lodash.debounce',
             main: 'index.js',
             build: 'rm package.json && npm install --prefix . lodash.debounce@3.1.1',
