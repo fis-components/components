@@ -4,7 +4,7 @@ module.exports = (function() {
     return [
         {
             repos: 'https://github.com/callemall/material-ui.git',
-            version: '0.14.0-rc1',
+            version: 'v0.14.0-rc1',
             name: 'material-ui',
             main: 'lib/index.js',
             build: 'rm package.json && npm install --prefix . material-ui@0.14.0-rc1',
