@@ -36,6 +36,11 @@ module.exports = (function() {
                 {
                     from: "debug('jsonp req \"%s\"', url);",
                     to: ""
+                },
+
+                {
+                    from: "debug('jsonp got', data);",
+                    to: ""
                 }
             ]
         }
