@@ -5,7 +5,7 @@ module.exports = (function() {
         {
             repos: 'https://github.com/lodash/lodash.git',
             version: '3.9.1',
-            tag: '3.9.1-npm'
+            tag: '3.9.1-npm',
             name: 'lodash._getnative',
             main: 'index.js',
             build: 'rm package.json && npm install --prefix . lodash._getnative@3.9.1',
