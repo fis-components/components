@@ -5,16 +5,16 @@ module.exports = (function() {
         {
             repos: 'https://github.com/facebook/react.git',
             version: 'v0.14.3',
-            name: 'react-addons-create-fragment',
+            name: 'react-addons-pure-render-mixin',
             main: 'index.js',
-            build: 'rm package.json && npm install --prefix . react-addons-create-fragment@0.14.3',
+            build: 'rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.3',
             dependencies: [
                 "react@^0.14.3"
             ],
             
             mapping: [
                 {
-                    reg: /^\/node_modules\/react\-addons\-create\-fragment\/index\.js$/,
+                    reg: /^\/node_modules\/react\-addons\-pure\-render\-mixin\/index\.js$/,
                     release: 'index.js'
                 },
 
@@ -31,7 +31,7 @@ module.exports = (function() {
             shim: {
                 'index.js': {
                     content: [
-                        "module.exports = require('react').addons.createFragment;"
+                        "module.exports = require('react').addons.PureRenderMixin;"
                     ].join('\n')
                 }
             }
@@ -43,7 +43,7 @@ module.exports = (function() {
             dependencies: [
                 "react@^0.14.2"
             ],
-            build: 'rm package.json && npm install --prefix . react-addons-create-fragment@0.14.2'
+            build: 'rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2'
         }
     ]
 })();
