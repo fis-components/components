@@ -29,12 +29,12 @@ module.exports = (function() {
         "index.js": {
             "replace": [
                 {
-                    from: "var debug = require('debug')('jsonp');"
+                    from: "var debug = require('debug')('jsonp');",
                     to: ""
                 },
 
                 {
-                    from: "debug('jsonp req \"%s\"', url);"
+                    from: "debug('jsonp req \"%s\"', url);",
                     to: ""
                 }
             ]
