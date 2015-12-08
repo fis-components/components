@@ -33,5 +33,8 @@ module.exports = (function() {
                 release: false
             }
         ]
+    },{
+      extend: '5.6.0',
+      version: '5.9.0',
     }]
 })();

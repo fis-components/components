@@ -23,9 +23,23 @@ module.exports = (function() {
         ]
     },{
         version: '3.0.13',
-        extend: '3.0.4'
+        extend: '3.0.4',
+        mapping: [
+            {
+                reg: '/dist/autosize.js',
+                release: 'autosize.js'
+            },
+            {
+                reg: /^\/readme\.md$/,
+                release: '$&'
+            },
+            {
+                reg: '*',
+                release: false
+            }
+        ]
     },{
         version: '3.0.14',
-        extend: '3.0.4'
+        extend: '3.0.13'
     }]
 })();
