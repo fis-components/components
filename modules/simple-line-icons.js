@@ -29,7 +29,7 @@ module.exports = (function() {
                 release: '$&'
             },
             {
-                reg: /^\/readme.md$/i,
+                reg: /^\/readme\.md$/i,
                 release: '$&'
             },
             {
