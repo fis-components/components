@@ -8,7 +8,7 @@ module.exports = (function() {
             tag: 'master',
             name: 'redux-promise',
             main: 'lib/index.js',
-            build: 'rm package.json && npm install --prefix . redux-promise@0.1.1',
+            build: 'rm package.json && npm install --prefix . redux-promise@0.5.0',
             dependencies: [
                 "flux-standard-action@0.6.0"
             ],
@@ -29,9 +29,7 @@ module.exports = (function() {
                     reg: '*',
                     release: false
                 }
-            ],
-
-            umd2commonjs: false
+            ]
         }
     ]
 })();
