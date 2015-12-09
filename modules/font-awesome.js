@@ -4,6 +4,7 @@ module.exports = (function() {
     return [{
         repos: 'https://github.com/FortAwesome/Font-Awesome.git',
         name: "font-awesome",
+        main: "css/font-awesome.css",
         version: 'v4.2.0',
         description: 'The iconic font and CSS toolkit http://fontawesome.io',
         mapping: [
