@@ -249,11 +249,12 @@ function dumpMapping(mapping) {
 if (ARGV[2] == 'sync') {
 
     var sync = function(arr, rebuild, callback) {
+        var queue = [];
         arr.forEach(function(name) {
             var list = loadConfig(path.join(ROOT, name));
             name = name.replace('modules/', '')
                 .replace(/\.js$/, '');
-            var queue = [];
+            
             list.forEach(function(r) {
                 queue.push(function(cb) {
                     var h = spawn('bash', [
