@@ -281,12 +281,13 @@ if (ARGV[2] == 'sync') {
                     h.stderr.pipe(process.stderr);
                 });
             });
-            queue.push(function(cb) {
-                callback ? callback(cb) : cb();
-            });
-            async.series(queue, function() {
-                console.log('done');
-            });
+        });
+
+        queue.push(function(cb) {
+            callback ? callback(cb) : cb();
+        });
+        async.series(queue, function() {
+            console.log('done');
         });
     };
 
