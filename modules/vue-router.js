@@ -1,0 +1,25 @@
+'use strict';
+
+module.exports = (function() {
+    return [{
+        repos: 'https://github.com/vuejs/vue-router',
+        version: 'v0.7.7',
+        description: 'The official router for Vue.js 0.12+',
+        name: "vue-router",
+        main: "vue-router.js",
+        mapping: [
+            {
+                reg: /^\/dist\/(vue-router\.js)/,
+                release: '$1'
+            },
+            {
+                reg: /^\/README\.md$/,
+                release: '$&'
+            },
+            {
+                reg: '*',
+                release: false
+            }
+        ]
+    }]
+})();
