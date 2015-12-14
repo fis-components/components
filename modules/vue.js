@@ -22,22 +22,10 @@ module.exports = (function() {
             }
         ]
     },{
-        version: '0.12.6',
-        extend: '0.11.10'
-    },{
-        version: '0.12.8',
-        extend: '0.11.10'
-    },{
-        version: '0.12.10',
-        extend: '0.11.10'
-    },{
-        version: '0.12.12',
-        extend: '0.11.10'
-    },{
-        version: '0.12.14',
-        extend: '0.11.10'
-    },{
         version: '0.12.16',
+        extend: '0.11.10'
+    },{
+        version: 'v1.0.11',
         extend: '0.11.10'
     }]
 })();
