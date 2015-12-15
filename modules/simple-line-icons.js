@@ -2,11 +2,11 @@
 
 module.exports = (function() {
     return [{
-        repos: 'https://github.com/FortAwesome/Font-Awesome.git',
-        name: "font-awesome",
-        main: "css/font-awesome.css",
-        version: 'v4.2.0',
-        description: 'The iconic font and CSS toolkit http://fontawesome.io',
+        repos: 'https://github.com/thesabbir/simple-line-icons.git',
+        name: "simple-line-icons",
+        version: 'v0.1.2',
+        main: 'css/simple-line-icons.css',
+        description: 'Simple Line Icons Package https://thesabbir.github.io/simple-line-icons',
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
@@ -26,6 +26,10 @@ module.exports = (function() {
             },
             {
                 reg: /^\/fonts\/(.*?)$/,
+                release: '$&'
+            },
+            {
+                reg: /^\/readme\.md$/i,
                 release: '$&'
             },
             {

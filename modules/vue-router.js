@@ -5,8 +5,11 @@ module.exports = (function() {
         repos: 'https://github.com/vuejs/vue-router',
         version: 'v0.7.7',
         description: 'The official router for Vue.js 0.12+',
-        name: "vue-router",
-        main: "vue-router.js",
+        name: 'vue-router',
+        main: 'vue-router.js',
+        dependencies: [
+            "vue@>=0.12.0"
+        ],
         mapping: [
             {
                 reg: /^\/dist\/(vue-router\.js)/,

@@ -21,9 +21,12 @@ module.exports = function(options, callback) {
 
     files.forEach(function(info) {
         try {
-            if (options.config.umd2commonjs === false)return;
+            if (options.config.umd2commonjs !== true)return;
+            var content = transform(read(info.absolute, 'utf8'), options);
             
-            write(info.dest || info.absolute, transform(read(info.absolute, 'utf8'), options));
+            content = unsupportcode(content);
+
+            write(info.dest || info.absolute, content);
         } catch (e) {
             console.log('Got Eroor: %s while converting %s', e.message, info.dest || info.absolute);
         }
@@ -94,6 +97,10 @@ module.exports = function(options, callback) {
 
     callback();
 };
+
+function unsupportcode(contents) {
+    return contents.replace(/process\.env\.NODE_ENV\s?\!==\s?('|")production\1/ig, 'true');
+}
 
 function transform(data, options) {
 

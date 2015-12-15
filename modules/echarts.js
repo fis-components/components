@@ -31,5 +31,8 @@ module.exports = (function() {
                 release: false
             }
         ]
+    }, {
+        version: '2.2.7',
+        extend: '2.1.10'
     }]
 })();

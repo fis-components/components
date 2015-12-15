@@ -2,22 +2,25 @@
 
 module.exports = (function() {
     return [{
-        protocol: "github",
-        github: {
-            author: "fis-components"
-        },
-        repos: 'https://github.com/ecomfe/zrender.git',
-        version: '2.0.6',
-        name: 'zrender',
-        main: 'zrender.js',
+        repos: 'https://github.com/CodeSeven/toastr.git',
+        version: '2.1.2',
+        name: 'jquery-toastr',
+        main: 'toastr.js',
+        dependencies: [
+            "jquery@>=1.7"
+        ],
         mapping: [
             {
                 reg: /\.min\.(js|css)$/,
                 release: false
             },
             {
-                reg: /^\/src\/(.*)$/,
-                release: '$1'
+                reg: /^\/toastr\.js$/,
+                release: '$0'
+            },
+            {
+                reg: /^\/build\/toastr\.css$/,
+                release: 'toaster.css'
             },
             {
                 reg: /^\/README\.md$/,
@@ -28,8 +31,5 @@ module.exports = (function() {
                 release: false
             }
         ]
-    }, {
-        version: '2.1.1',
-        extend: '2.0.6'
     }]
 })();

@@ -19,5 +19,9 @@ module.exports = (function() {
                 release: false
             }
         ]
-    }];
+    }, {
+        version: 'v0.12.7',
+        extend: '1.0.2'
+    }
+    ];
 })();
