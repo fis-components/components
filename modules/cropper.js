@@ -3,7 +3,7 @@
 module.exports = (function() {
     return [{
         repos: 'https://github.com/fengyuanchen/cropper',
-        version: 'v0.9.3',
+        version: 'v2.2.1',
         description: 'A simple jQuery image cropping plugin. http://fengyuanchen.github.io/cropper',
         name: 'cropper',
         main: 'cropper.js',

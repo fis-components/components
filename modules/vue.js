@@ -39,5 +39,8 @@ module.exports = (function() {
     },{
         version: '0.12.16',
         extend: '0.11.10'
+    },{
+        version: 'v1.0.11',
+        extend: '0.11.10'
     }]
 })();
