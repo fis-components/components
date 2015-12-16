@@ -256,8 +256,6 @@ if (ARGV[2] == 'sync') {
                 .replace(/\.js$/, '');
             var basename = path.basename(name);
 
-            console.log('Folder is %s', name.substring(0, name.length - basename.length));
-            
             list.forEach(function(r) {
                 queue.push(function(cb) {
                     var h = spawn('bash', [
