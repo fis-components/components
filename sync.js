@@ -255,6 +255,8 @@ if (ARGV[2] == 'sync') {
             name = name.replace('modules/', '')
                 .replace(/\.js$/, '');
             var basename = path.basename(name);
+
+            console.log('Folder is %s', name.substring(0, name.length - basename.length));
             
             list.forEach(function(r) {
                 queue.push(function(cb) {
@@ -267,7 +269,7 @@ if (ARGV[2] == 'sync') {
                         r.build_dest || '',
                         r.tag || r.version,
                         rebuild ? 'true' : 'false',
-                        name.substr(0, name.length - basename.length)
+                        name.substring(0, name.length - basename.length)
                     ], {
                         cwd: __dirname
                     });
