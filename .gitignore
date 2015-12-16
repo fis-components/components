@@ -29,3 +29,5 @@ node_modules
 
 # test folder
 /test
+/tools/builds
+/tools/etc
