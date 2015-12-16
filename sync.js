@@ -37,7 +37,7 @@ function loadConfig(path) {
     return list;
 }
 
-function createRepos(repos, token, from) {
+function createRepos(repos, token, from, folder) {
 
     if (!token) {
         process.stderr.write('ERROR, must given token of GITHUB!\n');
@@ -254,18 +254,20 @@ if (ARGV[2] == 'sync') {
             var list = loadConfig(path.join(ROOT, name));
             name = name.replace('modules/', '')
                 .replace(/\.js$/, '');
+            var basename = path.basename(name);
             
             list.forEach(function(r) {
                 queue.push(function(cb) {
                     var h = spawn('bash', [
                         path.join(ROOT, 'build.sh'),
-                        name,
+                        basename,
                         r.repos,
                         r.build || '',
                         r.version,
                         r.build_dest || '',
                         r.tag || r.version,
-                        rebuild ? 'true' : 'false'
+                        rebuild ? 'true' : 'false',
+                        name.substr(0, name.length - basename.length)
                     ], {
                         cwd: __dirname
                     });
@@ -317,12 +319,13 @@ if (ARGV[2] == 'sync') {
     }
 } else if (ARGV[2] == 'create-repos') {
     console.log('=sync.js create repos: https://github.com/fis-components/%s', ARGV[3]);
-    createRepos(ARGV[3], ARGV[4], ARGV[5]);
+    createRepos(ARGV[3], ARGV[4], ARGV[5] ARGV[6]);
 } else if (ARGV[2] == 'create-component.json') {
     var name = ARGV[3].trim();
     var version = ARGV[4].trim();
+    var folder = ARGV[5].trim();
     try {
-        var list = loadConfig(path.join(ROOT, 'modules', name + '.js'));
+        var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
 
@@ -371,8 +374,9 @@ if (ARGV[2] == 'sync') {
     var version = ARGV[4].trim();
     var from = ARGV[5].trim();
     var to = ARGV[6].trim();
+    var folder = ARGV[7].trim();
     try {
-        var list = loadConfig(path.join(ROOT, 'modules', name + '.js'));
+        var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
 
@@ -409,11 +413,12 @@ if (ARGV[2] == 'sync') {
     var name = ARGV[3].trim();
     var version = ARGV[4].trim();
     var dist = ARGV[5].trim();
+    var folder = ARGV[6].trim();
 
     var convert = require('./convert.js');
     var finder = require('./finder.js');
 
-    var list = loadConfig(path.join(ROOT, 'modules', name + '.js'));
+    var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
 
     for (var i = 0; i < list.length; i++) {
         var r = list[i];

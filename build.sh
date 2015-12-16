@@ -13,7 +13,8 @@ git_clone () {
 git_update_repos () {
     repos=$1
     version=$2
-    node $ROOT/sync.js create-component.json $repos $version
+    folder=$3
+    node $ROOT/sync.js create-component.json $repos $version $folder
 
     #AU
     git config --global user.email "${GIT_EMAIL}"
@@ -52,6 +53,7 @@ sync () {
     tag=$6
     rebuild=$7
     testing=$8
+    folder=$9
 
     dest="$ROOT/_$new"
 
@@ -66,7 +68,7 @@ sync () {
 
     if [ "$?" != "0" ]; then
         # new origin
-        node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}"
+        node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}" "$folder"
         if [ "$?" != "0" ]; then
             exit 1
         fi
@@ -137,9 +139,9 @@ sync () {
         #     cp -rf "./dist" "$dest"
         # fi
 
-        node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest"
+        node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest" "$folder"
 
-        node $ROOT/sync.js convert "$new" "$version" "$dest"
+        node $ROOT/sync.js convert "$new" "$version" "$dest" "$folder"
 
         if [ "$?" != "0" ]; then
             echo '=ROADMAP move fail'
@@ -149,7 +151,7 @@ sync () {
         cd "$dest"
         echo "=CD $dest"
 
-        git_update_repos $new $version
+        git_update_repos $new $version $folder
 
         cd $ROOT
     fi
@@ -159,8 +161,8 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
+    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"
     echo '#END build.sh'
 }
 
-main "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
+main "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"

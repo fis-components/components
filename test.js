@@ -60,17 +60,19 @@ files.forEach(function(name) {
     var list = loadConfig(path.join(ROOT, name));
     name = name.replace('modules/', '')
         .replace(/\.js$/, '');
+    var basename = path.basename(name);
     var queue = [];
     list.forEach(function(r) {
         queue.push(function(cb) {
             var h = spawn('bash', [
                 path.join(ROOT, 'test.sh'),
-                name,
+                basename,
                 r.repos,
                 r.build || '',
                 r.version,
                 r.build_dest || '',
-                r.tag || r.version
+                r.tag || r.version,
+                name.substr(0, name.length - basename.length)
             ], {
                 cwd: __dirname
             });

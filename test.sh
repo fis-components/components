@@ -19,6 +19,7 @@ sync () {
     version=$4
     build_dest=$5
     tag=$6
+    folder=$7
 
     dest="$ROOT/$new@$version"
     tempDir="_$new"
@@ -55,11 +56,11 @@ sync () {
         # fi
 
         mkdir -p dest
-        node $ROOT/sync.js create-component.json "$new" "$version"
+        node $ROOT/sync.js create-component.json "$new" "$version" "$folder"
 
-        node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest"
+        node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest" "$folder"
 
-        node $ROOT/sync.js convert "$new" "$version" "$dest"
+        node $ROOT/sync.js convert "$new" "$version" "$dest" "$folder"
 
 
 
@@ -78,8 +79,9 @@ export -f sync
 
 main () {
     echo '#START test.sh'
-    sync "$1" "$2" "$3" "$4" "$5" "$6"
+    echo "$1 $2 $3 $4 $5 $6 $7"
+    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7"
     echo '#END test.sh'
 }
 
-main "$1" "$2" "$3" "$4" "$5" "$6"
+main "$1" "$2" "$3" "$4" "$5" "$6" "$7"
