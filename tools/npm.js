@@ -46,7 +46,7 @@ while (args.length) {
     config.dependencies = dependencies;
   }
 
-  var versions = Array.isArray(json.versions) ? json.versions.reverse().slice(0, 5) : [json.version];
+  var versions = Array.isArray(json.versions) ? json.versions.reverse().slice(0, 5).reverse() : [json.version];
   
   var items = [];
   versions.forEach(function(version) {
