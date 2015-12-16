@@ -55,6 +55,7 @@ sync () {
     testing=$8
     folder=$9
 
+    echo "Folder is $folder"
     dest="$ROOT/_$new"
 
     echo "=SYNC ${new} from ${repos}, version: ${version}"

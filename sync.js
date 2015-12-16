@@ -375,6 +375,7 @@ if (ARGV[2] == 'sync') {
     var from = ARGV[5].trim();
     var to = ARGV[6].trim();
     var folder = ARGV[7].trim();
+    console.log(ARGV.join(' '));
     try {
         console.log("load config from %s", folder + name + '.js' );
         var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
