@@ -9,6 +9,7 @@ module.exports = (function() {
             name: 'css-animation',
             main: 'lib/index.js',
             build: 'rm package.json && npm install --prefix . css-animation@1.1.1',
+            
             mapping: [
                 {
                     reg: /\bmin\b|__tests__/i,

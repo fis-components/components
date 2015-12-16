@@ -9,6 +9,7 @@ module.exports = (function() {
             name: 'gregorian-calendar',
             main: 'lib/gregorian-calendar.js',
             build: 'rm package.json && npm install --prefix . gregorian-calendar@4.0.4',
+            
             mapping: [
                 {
                     reg: /\bmin\b|__tests__/i,

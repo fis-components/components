@@ -9,6 +9,7 @@ module.exports = (function() {
             name: 'object-assign',
             main: 'index.js',
             build: 'rm package.json && npm install --prefix . object-assign@4.0.1',
+            
             mapping: [
                 {
                     reg: /\bmin\b|__tests__/i,
