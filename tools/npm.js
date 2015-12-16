@@ -20,6 +20,10 @@ rm('-rf', path.join(__dirname, 'builds'));
 
 mkdir('-p', path.join(__dirname, 'builds'));
 
+const modules = find('modules').map(function(file) {
+  return path.basename(file, '.js');
+}); 
+
 while (args.length) {
   var arg = args.shift();
 
@@ -40,7 +44,10 @@ while (args.length) {
   if (json.dependencies) {
     var dependencies = [];
     Object.keys(json.dependencies).forEach(function(key) {
-      args.push(key);
+      if (!~modules.indexOf(key)) {
+        args.push(key);
+      }
+      
       dependencies.push(key + '@' + json.dependencies[key])
     });
     config.dependencies = dependencies;
@@ -72,7 +79,7 @@ while (args.length) {
       });
     }
 
-    var main = json.main.replace(/^\.\//, '');
+    var main = (json.main || 'index.js').replace(/^\.\//, '');
 
     if (path.dirname(main) === '.' || path.dirname(main) === '') {
       item.mapping.push({
