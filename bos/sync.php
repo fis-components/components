@@ -43,8 +43,8 @@ deploy($bucket, "/components/".$name."/versions.txt", $ROOT.$versionsFile);
 function deploy($bucket, $src, $dest, $count = 0) {
   try {
     $client->putObjectFromFile($bucket, $src, $dest);
-  } catch ($e) {
-    echo "Deloy Error ".$e;
+  } catch (Exception $e) {
+    echo "Deloy Error ".$e->getMessage();
 
     // 重试两次
     if ($count < 2) {
