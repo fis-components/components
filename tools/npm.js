@@ -84,39 +84,57 @@ while (args.length) {
       });
     }
 
-    var main = (json.main || 'index.js').replace(/^\.\//, '');
-
-    if (path.dirname(main) === '.' || path.dirname(main) === '') {
+    if (json.browser) {
       item.mapping.push({
-        reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.js)$/i",
+        reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(json.browser) + ")$/i",
         release: '$1'
       });
-    }
 
-    if (path.dirname(main) === 'dist') {
-      item.mapping.push({
-        reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$/i",
-        release: '$1'
+      item.main = json.browser;
+    } else {
+      var main = (json.main || 'index.js').replace(/^\.\//, '');
+
+      if (path.dirname(main) === '.' || path.dirname(main) === '') {
+        item.mapping.push({
+          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.js)$/i",
+          release: '$1'
+        });
+      } else if (path.dirname(main) === 'dist') {
+        item.mapping.push({
+          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$/i",
+          release: '$1'
+        });
+        config.main = item.main = main.replace(/^dist\//, '');
+      } else if (path.dirname(main) === 'lib') {
+        // skip
+      } else if (path.dirname(main)) {
+        var dirname = path.dirname(main);
+
+        item.mapping.push({
+          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(dirname) + "\\/(.*)$/i",
+          release: dirname + '/$1'
+        });
+      }
+
+      ['assets', 'style'].forEach(function(assetDir) {
+        if (test('-d', path.join(__dirname, 'node_modules', item.name, assetDir))) {
+          item.mapping.push({
+            reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$/i",
+            release: assetDir + '/$1'
+          });
+        }
       });
-      config.main = item.main = main.replace(/^dist\//, '');
-    }
 
-    if (test('-d', path.join(__dirname, 'node_modules', item.name, 'assets'))) {
       item.mapping.push({
-        reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/assets\\/(.*)$/i",
-        release: 'assets/$1'
+        reg: "/^\\/README\\.md$/i",
+        release: '$&'
       });
+
+      item.mapping.push({
+        reg: '*',
+        release: false
+      });  
     }
-
-    item.mapping.push({
-      reg: "/^\\/README\\.md$/i",
-      release: '$&'
-    });
-
-    item.mapping.push({
-      reg: '*',
-      release: false
-    });
 
     var str = JSON.stringify(item, null, 2);
     str = str.replace(/('|")\/(.*)\/([ig]*)\1/g, function(_, quote, value, flag) {
