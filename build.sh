@@ -128,6 +128,7 @@ sync () {
         # run build
         if [ "$build" != "" ]; then
             echo  '=BUILD '$new
+            touch package.json
             eval $build || ('=BUILD build fail.' 2>&1 || exit 1)
         fi
 
