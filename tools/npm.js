@@ -37,7 +37,11 @@ while (args.length) {
   var config = {};
   config.name = json.name;
   config.description = json.description;
-  config.repos = json.repository.url;
+
+  var parts = json.repository.url.split('/');
+  parts = parts.splice(parts.length -2, 2);
+
+  config.repos = 'https://github.com/' + parts.join('/');
   config.main = json.main;
   config.tag = 'master';
 
@@ -47,13 +51,13 @@ while (args.length) {
       if (!~modules.indexOf(key)) {
         args.push(key);
       }
-      
+
       dependencies.push(key + '@' + json.dependencies[key])
     });
     config.dependencies = dependencies;
   }
 
-  var versions = Array.isArray(json.versions) ? json.versions.reverse().slice(0, 5).reverse() : [json.version];
+  var versions = Array.isArray(json.versions) ? json.versions.reverse().slice(0, 3).reverse() : [json.version];
   
   var items = [];
   versions.forEach(function(version) {

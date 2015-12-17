@@ -5,73 +5,7 @@ module.exports = (function() {
 {
   "name": "rc-collapse",
   "description": "rc-collapse ui component for react",
-  "repos": "git+ssh://git@github.com/react-component/rc-collapse.git",
-  "main": "./lib/index",
-  "tag": "master",
-  "dependencies": [
-    "classnames@2.x",
-    "rc-animate@2.x",
-    "velocity-animate@1.x"
-  ],
-  "version": "1.3.2",
-  "build": "rm package.json && npm install --prefix . rc-collapse@1.3.2",
-  "mapping": [
-    {
-      "reg": /\bmin\b|__tests__|gulpfile\.js|webpack\.config\.js|gruntfile\.js|test\.js/i,
-      "release": false
-    },
-    {
-      "reg": /^\/node_modules\/rc-collapse\/lib\/(.*)$/i,
-      "release": "lib/$1"
-    },
-    {
-      "reg": /^\/README\.md$/i,
-      "release": "$&"
-    },
-    {
-      "reg": "*",
-      "release": false
-    }
-  ]
-},
-
-{
-  "name": "rc-collapse",
-  "description": "rc-collapse ui component for react",
-  "repos": "git+ssh://git@github.com/react-component/rc-collapse.git",
-  "main": "./lib/index",
-  "tag": "master",
-  "dependencies": [
-    "classnames@2.x",
-    "rc-animate@2.x",
-    "velocity-animate@1.x"
-  ],
-  "version": "1.4.0",
-  "build": "rm package.json && npm install --prefix . rc-collapse@1.4.0",
-  "mapping": [
-    {
-      "reg": /\bmin\b|__tests__|gulpfile\.js|webpack\.config\.js|gruntfile\.js|test\.js/i,
-      "release": false
-    },
-    {
-      "reg": /^\/node_modules\/rc-collapse\/lib\/(.*)$/i,
-      "release": "lib/$1"
-    },
-    {
-      "reg": /^\/README\.md$/i,
-      "release": "$&"
-    },
-    {
-      "reg": "*",
-      "release": false
-    }
-  ]
-},
-
-{
-  "name": "rc-collapse",
-  "description": "rc-collapse ui component for react",
-  "repos": "git+ssh://git@github.com/react-component/rc-collapse.git",
+  "repos": "https://github.com/react-component/rc-collapse.git",
   "main": "./lib/index",
   "tag": "master",
   "dependencies": [
@@ -104,7 +38,7 @@ module.exports = (function() {
 {
   "name": "rc-collapse",
   "description": "rc-collapse ui component for react",
-  "repos": "git+ssh://git@github.com/react-component/rc-collapse.git",
+  "repos": "https://github.com/react-component/rc-collapse.git",
   "main": "./lib/index",
   "tag": "master",
   "dependencies": [
@@ -141,7 +75,7 @@ module.exports = (function() {
 {
   "name": "rc-collapse",
   "description": "rc-collapse ui component for react",
-  "repos": "git+ssh://git@github.com/react-component/rc-collapse.git",
+  "repos": "https://github.com/react-component/rc-collapse.git",
   "main": "./lib/index",
   "tag": "master",
   "dependencies": [

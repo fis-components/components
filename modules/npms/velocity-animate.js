@@ -5,69 +5,7 @@ module.exports = (function() {
 {
   "name": "velocity-animate",
   "description": "Accelerated JavaScript animation.",
-  "repos": "git+https://github.com/julianshapiro/velocity.git",
-  "main": "velocity.js",
-  "tag": "master",
-  "dependencies": [
-    "jquery@>= 1.4.3"
-  ],
-  "version": "1.1.0",
-  "build": "rm package.json && npm install --prefix . velocity-animate@1.1.0",
-  "mapping": [
-    {
-      "reg": /\bmin\b|__tests__|gulpfile\.js|webpack\.config\.js|gruntfile\.js|test\.js/i,
-      "release": false
-    },
-    {
-      "reg": /^\/node_modules\/velocity-animate\/(.*\.js)$/i,
-      "release": "$1"
-    },
-    {
-      "reg": /^\/README\.md$/i,
-      "release": "$&"
-    },
-    {
-      "reg": "*",
-      "release": false
-    }
-  ]
-},
-
-{
-  "name": "velocity-animate",
-  "description": "Accelerated JavaScript animation.",
-  "repos": "git+https://github.com/julianshapiro/velocity.git",
-  "main": "velocity.js",
-  "tag": "master",
-  "dependencies": [
-    "jquery@>= 1.4.3"
-  ],
-  "version": "1.2.0",
-  "build": "rm package.json && npm install --prefix . velocity-animate@1.2.0",
-  "mapping": [
-    {
-      "reg": /\bmin\b|__tests__|gulpfile\.js|webpack\.config\.js|gruntfile\.js|test\.js/i,
-      "release": false
-    },
-    {
-      "reg": /^\/node_modules\/velocity-animate\/(.*\.js)$/i,
-      "release": "$1"
-    },
-    {
-      "reg": /^\/README\.md$/i,
-      "release": "$&"
-    },
-    {
-      "reg": "*",
-      "release": false
-    }
-  ]
-},
-
-{
-  "name": "velocity-animate",
-  "description": "Accelerated JavaScript animation.",
-  "repos": "git+https://github.com/julianshapiro/velocity.git",
+  "repos": "https://github.com/julianshapiro/velocity.git",
   "main": "velocity.js",
   "tag": "master",
   "dependencies": [
@@ -98,7 +36,7 @@ module.exports = (function() {
 {
   "name": "velocity-animate",
   "description": "Accelerated JavaScript animation.",
-  "repos": "git+https://github.com/julianshapiro/velocity.git",
+  "repos": "https://github.com/julianshapiro/velocity.git",
   "main": "velocity.js",
   "tag": "master",
   "dependencies": [
@@ -129,7 +67,7 @@ module.exports = (function() {
 {
   "name": "velocity-animate",
   "description": "Accelerated JavaScript animation.",
-  "repos": "git+https://github.com/julianshapiro/velocity.git",
+  "repos": "https://github.com/julianshapiro/velocity.git",
   "main": "velocity.js",
   "tag": "master",
   "dependencies": [
