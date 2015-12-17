@@ -41,6 +41,8 @@ deploy($bucket, "/components/".$name."/versions.txt", $ROOT.$versionsFile);
 
 
 function deploy($bucket, $src, $dest, $count = 0) {
+  global $client;
+
   try {
     $client->putObjectFromFile($bucket, $src, $dest);
   } catch (Exception $e) {
