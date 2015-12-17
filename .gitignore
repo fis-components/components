@@ -31,3 +31,5 @@ node_modules
 /test
 /tools/builds
 /tools/etc
+
+.DS_Store
