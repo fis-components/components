@@ -138,23 +138,31 @@ sync () {
         # if [ -d "./dist" ]; then
         #     cp -rf "./dist" "$dest"
         # fi
+    else 
+        if [ "$build" != "" ]; then
+            mkdir -p $new
+            cd $new
 
-        node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest" "$folder"
-
-        node $ROOT/sync.js convert "$new" "$version" "$dest" "$folder"
-
-        if [ "$?" != "0" ]; then
-            echo '=ROADMAP move fail'
-            exit 1
+            echo  '=BUILD '$new
+            eval $build || ('=BUILD build fail.' 2>&1 || exit 1)
         fi
-
-        cd "$dest"
-        echo "=CD $dest"
-
-        git_update_repos $new $version $folder
-
-        cd $ROOT
     fi
+
+    node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest" "$folder"
+
+    node $ROOT/sync.js convert "$new" "$version" "$dest" "$folder"
+
+    if [ "$?" != "0" ]; then
+        echo '=ROADMAP move fail'
+        exit 1
+    fi
+
+    cd "$dest"
+    echo "=CD $dest"
+
+    git_update_repos $new $version $folder
+
+    cd $ROOT
 }
 
 export -f sync

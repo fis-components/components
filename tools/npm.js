@@ -44,6 +44,7 @@ while (args.length) {
   config.repos = 'https://github.com/' + parts.join('/');
   config.main = json.main;
   config.tag = 'master';
+  config.reposType = 'npm';
 
   if (json.dependencies) {
     var dependencies = [];
