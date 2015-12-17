@@ -323,7 +323,7 @@ if (ARGV[2] == 'sync') {
 } else if (ARGV[2] == 'create-component.json') {
     var name = ARGV[3].trim();
     var version = ARGV[4].trim();
-    var folder = ARGV[5].trim();
+    var folder = (ARGV[5] || '').trim();
     try {
         var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
         for (var i = 0; i < list.length; i++) {
@@ -374,7 +374,7 @@ if (ARGV[2] == 'sync') {
     var version = ARGV[4].trim();
     var from = ARGV[5].trim();
     var to = ARGV[6].trim();
-    var folder = ARGV[7].trim();
+    var folder = (ARGV[7] || '').trim();
     console.log(ARGV.join(' '));
     try {
         console.log("load config from %s", folder + name + '.js' );
@@ -415,7 +415,7 @@ if (ARGV[2] == 'sync') {
     var name = ARGV[3].trim();
     var version = ARGV[4].trim();
     var dist = ARGV[5].trim();
-    var folder = ARGV[6].trim();
+    var folder = (ARGV[6] || '').trim();
 
     var convert = require('./convert.js');
     var finder = require('./finder.js');
