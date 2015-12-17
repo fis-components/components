@@ -35,8 +35,23 @@ $bucket = 'fis-cloud';
 
 $bosDIR = "/components/".$name."/".$version."/";
 
-$client->putObjectFromFile($bucket, $bosDIR."all.tar.gz", $ROOT.$tarFile);
-$client->putObjectFromFile($bucket, $bosDIR."component.json", $ROOT.$jsonFile);
-$client->putObjectFromFile($bucket, "/components/".$name."/versions.txt", $ROOT.$versionsFile);
+deploy($bucket, $bosDIR."all.tar.gz", $ROOT.$tarFile);
+deploy($bucket, $bosDIR."component.json", $ROOT.$jsonFile);
+deploy($bucket, "/components/".$name."/versions.txt", $ROOT.$versionsFile);
 
+
+function deploy($bucket, $src, $dest, $count = 0) {
+  try {
+    $client->putObjectFromFile($bucket, $src, $dest);
+  } catch ($e) {
+    echo "Deloy Error ".$e;
+
+    // 重试两次
+    if ($count < 2) {
+      echo "Now retry...";
+      sleep(2);
+      deploy($bucket, $src, $dest, $count + 1);
+    }
+  }
+}
 
