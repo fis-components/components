@@ -8,6 +8,8 @@ const packages = [];
 const PREFIX = '\'use strict\';\n\nmodule.exports = (function() {\n    return [\n';
 const AFFIX = '\n    ]\n})();';
 
+const repos = require('./repos.json');
+
 function escapeReg(str) {
   return new String( str ).replace(
    /([\.\*\+\?\^\=\!\:\$\{\}\(\)\|\[\]\/\\])/g,
@@ -38,10 +40,15 @@ while (args.length) {
   config.name = json.name;
   config.description = json.description;
 
-  var parts = json.repository.url.split('/');
-  parts = parts.splice(parts.length -2, 2);
+  if (repos[config.name]) {
+    config.repos = repos[config.name];
+  } else {
+    var parts = json.repository.url.split('/');
+    parts = parts.splice(parts.length -2, 2);
 
-  config.repos = 'https://github.com/' + parts.join('/');
+    config.repos = 'https://github.com/' + parts.join('/');
+  }
+  
   config.main = json.main;
   config.tag = 'master';
   config.reposType = 'npm';
