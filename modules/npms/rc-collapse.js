@@ -2,6 +2,7 @@
 
 module.exports = (function() {
     return [
+    
 {
   "name": "rc-collapse",
   "description": "rc-collapse ui component for react",
