@@ -21,6 +21,10 @@ module.exports = (function() {
       "release": "lib/$1.js"
     },
     {
+      "reg": /^\/node_modules\/highcharts\/lib\/themes\/(.*)$/i,
+      "release": "lib/themes/$1"
+    },
+    {
       "reg": /^\/README\.md$/i,
       "release": "$&"
     },
@@ -50,6 +54,10 @@ module.exports = (function() {
       "release": "lib/$1.js"
     },
     {
+      "reg": /^\/node_modules\/highcharts\/lib\/themes\/(.*)$/i,
+      "release": "lib/themes/$1"
+    },
+    {
       "reg": /^\/README\.md$/i,
       "release": "$&"
     },
@@ -77,6 +85,10 @@ module.exports = (function() {
     {
       "reg": /^\/node_modules\/highcharts\/lib\/(.*)\.src\.js$/i,
       "release": "lib/$1.js"
+    },
+    {
+      "reg": /^\/node_modules\/highcharts\/lib\/themes\/(.*)$/i,
+      "release": "lib/themes/$1"
     },
     {
       "reg": /^\/README\.md$/i,
