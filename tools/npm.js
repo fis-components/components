@@ -76,6 +76,7 @@ while (args.length) {
     if (exec('npm install --prefix '+ __dirname +' ' + item.name + '@' + version).code !== 0) {
       return;
     }
+    var pkgPath = path.join(__dirname, 'node_modules', item.name);
 
     item.mapping = [];
 
@@ -99,20 +100,30 @@ while (args.length) {
 
       item.main = json.browser;
     } else {
-      var main = (json.main || 'index.js').replace(/^\.\//, '');
+      var main = (json.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
 
-      if (path.dirname(main) === '.' || path.dirname(main) === '') {
-        item.mapping.push({
-          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.js)$/i",
-          release: '$1'
-        });
-      } else if (path.dirname(main) === 'dist') {
+      if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+        main = path.join(main, 'index');
+      }
+
+      if (path.dirname(main) === 'dist') {
         item.mapping.push({
           reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$/i",
           release: '$1'
         });
         config.main = item.main = main.replace(/^dist\//, '');
-      } else if (path.dirname(main) === 'lib') {
+      } else if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
+        item.mapping.push({
+          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$/i",
+          release: '$1'
+        });
+        config.main = item.main = item.name + '.js';
+      } else if (path.dirname(main) === '.' || path.dirname(main) === '') {
+        item.mapping.push({
+          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.js)$/i",
+          release: '$1'
+        });
+      } else if (path.dirname(main) === 'lib' || main === 'lib') {
         // skip
       } else if (path.dirname(main)) {
         var dirname = path.dirname(main);
@@ -124,7 +135,7 @@ while (args.length) {
       }
 
       ['assets', 'style'].forEach(function(assetDir) {
-        if (test('-d', path.join(__dirname, 'node_modules', item.name, assetDir))) {
+        if (test('-d', path.join(pkgPath, assetDir))) {
           item.mapping.push({
             reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$/i",
             release: assetDir + '/$1'
