@@ -6,7 +6,7 @@ module.exports = (function() {
   "name": "react-slick",
   "description": " React port of slick carousel",
   "repos": "https://github.com/akiran/react-slick.git",
-  "main": "./lib",
+  "main": "react-slick.js",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [
@@ -28,7 +28,7 @@ module.exports = (function() {
       "release": "lib/$1"
     },
     {
-      "reg": /^\/node_modules\/react-slick\/(.*\.js)$/i,
+      "reg": /^\/node_modules\/react-slick\/dist\/(.*)$/i,
       "release": "$1"
     },
     {
@@ -46,7 +46,7 @@ module.exports = (function() {
   "name": "react-slick",
   "description": " React port of slick carousel",
   "repos": "https://github.com/akiran/react-slick.git",
-  "main": "./lib",
+  "main": "react-slick.js",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [
@@ -68,7 +68,7 @@ module.exports = (function() {
       "release": "lib/$1"
     },
     {
-      "reg": /^\/node_modules\/react-slick\/(.*\.js)$/i,
+      "reg": /^\/node_modules\/react-slick\/dist\/(.*)$/i,
       "release": "$1"
     },
     {
@@ -86,7 +86,7 @@ module.exports = (function() {
   "name": "react-slick",
   "description": " React port of slick carousel",
   "repos": "https://github.com/akiran/react-slick.git",
-  "main": "./lib",
+  "main": "react-slick.js",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [
@@ -108,7 +108,7 @@ module.exports = (function() {
       "release": "lib/$1"
     },
     {
-      "reg": /^\/node_modules\/react-slick\/(.*\.js)$/i,
+      "reg": /^\/node_modules\/react-slick\/dist\/(.*)$/i,
       "release": "$1"
     },
     {
