@@ -222,7 +222,7 @@ function lastChangFiles(cb) {
 
             getLastMessage(function(message) {
                 //cb(['modules/jquery.js']);
-                cb(arr, /forceupdate/i.test(message), function(cb) {
+                cb(arr, !/softupdate/i.test(message), function(cb) {
                     // 保存最后一次处理的 git message id.
                     var child = spawn('bash', [path.join(ROOT, 'storeStatus.sh')], {
                         cwd: __dirname

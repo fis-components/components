@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = (function() {
+    
     return [
         {
             repos: 'https://github.com/jlongster/redux-simple-router.git',
