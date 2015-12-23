@@ -39,6 +39,18 @@ module.exports = (function() {
             version: '1.0.0',
             build: 'rm package.json && npm install --prefix . redux-simple-router@1.0.0',
             extend: '0.0.8'
+        },
+
+        {
+            version: '1.0.1',
+            build: 'rm package.json && npm install --prefix . redux-simple-router@1.0.1',
+            extend: '0.0.8'
+        },
+
+        {
+            version: '1.0.2',
+            build: 'rm package.json && npm install --prefix . redux-simple-router@1.0.2',
+            extend: '0.0.8'
         }
     ]
 })();
