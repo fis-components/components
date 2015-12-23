@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const write = fs.writeFileSync;
 const assign = require('object-assign');
+const argv = require('minimist')(process.argv.slice(2));
+const semver = require('semver');
 
 const args = process.argv.slice(2);
 const packages = [];
@@ -29,10 +31,13 @@ const modules = find('modules').map(function(file) {
 
 while (args.length) {
   var arg = args.shift();
+  var parts = arg.split('@');
+  var pkgName = parts[0];
+  var pkgVersion = parts[1];
 
-  if (~packages.indexOf(arg))continue;
+  if (~packages.indexOf(pkgName))continue;
 
-  var info = exec('npm info ' + arg, {silent:true}).output;
+  var info = exec('npm info ' + pkgName, {silent:true}).output;
   /({[\s\S]*})/.test(info) && (info = RegExp.$1)
   // var json = JSON.parse(info);
   var json = (new Function("return " + info))();
@@ -68,8 +73,20 @@ while (args.length) {
     config.dependencies = dependencies;
   }
 
-  var versions = Array.isArray(json.versions) ? json.versions.reverse().slice(0, 3).reverse() : [json.version];
+  var versions = Array.isArray(json.versions) ? json.versions : [json.version];
+  versions = versions.filter(function(version) {
+    return semver.valid(version);
+  })
   
+  if (pkgVersion) {
+    versions = versions.filter(function(version) {
+      return semver.satisfies(version, pkgVersion);
+    });
+  } else if (!argv.hasOwnProperty('versions-count') || argv['versions-count'] != '0') {
+    var versionsCount = parseInt(argv['versions-count']) || 3;
+    versions = versions.reverse().slice(0, versionsCount).reverse();
+  }
+
   var items = [];
   versions.forEach(function(version) {
     var item = assign({}, config);
