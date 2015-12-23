@@ -70,7 +70,7 @@ function createRepos(repos, token, from, folder) {
     delete github;
 }
 
-function getFilesFromLastMessage(cb) {
+function getLastMessage(cb) {
     var git_log = spawn('git', ['log', '-1', '--pretty=%B']);
 
     git_log.stderr.pipe(process.stderr);
@@ -81,6 +81,12 @@ function getFilesFromLastMessage(cb) {
     });
 
     git_log.stdout.on('end', function() {
+        cb(message);
+    });
+}
+
+function getFilesFromLastMessage(cb) {
+    getLastMessage(function(message) {
         var m = /^(update|forceupdate)\s+(.*)/.exec(message);
         var finder = require('./finder.js');
         var files;
@@ -214,22 +220,24 @@ function lastChangFiles(cb) {
                 return getFilesFromLastMessage(cb);
             }
 
-            //cb(['modules/jquery.js']);
-            cb(arr, true, function(cb) {
-                // 保存最后一次处理的 git message id.
-                var child = spawn('bash', [path.join(ROOT, 'storeStatus.sh')], {
-                    cwd: __dirname
-                });
+            getLastMessage(function(message) {
+                //cb(['modules/jquery.js']);
+                cb(arr, /forceupdate/i.test(message), function(cb) {
+                    // 保存最后一次处理的 git message id.
+                    var child = spawn('bash', [path.join(ROOT, 'storeStatus.sh')], {
+                        cwd: __dirname
+                    });
 
-                child.on('exit', function(code) {
-                    if (code) {
-                        process.exit(1);
-                    }
-                    cb();
+                    child.on('exit', function(code) {
+                        if (code) {
+                            process.exit(1);
+                        }
+                        cb();
+                    });
+                    child.stdout.pipe(process.stdout);
+                    child.stderr.pipe(process.stderr);
                 });
-                child.stdout.pipe(process.stdout);
-                child.stderr.pipe(process.stderr);
-            });
+            })
         });
     }
 }

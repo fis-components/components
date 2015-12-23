@@ -99,8 +99,8 @@ sync () {
                 git commit -am "rm all files"
                 git push
             else
-                echo "=TAG tag $version exists."
-                exit 1
+                echo "=TAG tag $version exists. Skiped!"
+                exit 0
             fi
         fi
 
