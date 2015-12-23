@@ -2,6 +2,7 @@ require('shelljs/global');
 const fs = require('fs');
 const path = require('path');
 const write = fs.writeFileSync;
+const assign = require('object-assign');
 
 const args = process.argv.slice(2);
 const packages = [];
@@ -42,11 +43,13 @@ while (args.length) {
 
   if (repos[config.name]) {
     config.repos = repos[config.name];
-  } else {
+  } else if (json.repository) {
     var parts = json.repository.url.split('/');
     parts = parts.splice(parts.length -2, 2);
 
     config.repos = 'https://github.com/' + parts.join('/');
+  } else {
+    config.repos = 'https://github.com/2betop/placeholder.git';
   }
   
   config.main = json.main;
@@ -69,7 +72,7 @@ while (args.length) {
   
   var items = [];
   versions.forEach(function(version) {
-    var item = Object.assign({}, config);
+    var item = assign({}, config);
     item.version = version;
     item.build = 'rm package.json && npm install --prefix . ' + item.name + '@' + version;
 
