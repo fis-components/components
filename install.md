@@ -105,7 +105,7 @@ compnent.json 分两种：[私有的]和[发布的]。[发布的] 是指在那�
 更多语法请查看用 [semver语法说明](https://github.com/npm/node-semver)。
 
 ## 安装说明
-目标组件将会安装在 `/comonents` 目录下面。决定是否安装有以下 case:
+目标组件将会安装在 `/components` 目录下面。决定是否安装有以下 case:
 
 1. 如果目标组件已经安装，且 components.json中标记的版本满足版本需求，将不再重复安装。
 2. 如果目标组件已经安装，且当前版本满足需求，但是其依赖没被安装，其依赖将会被安装。
@@ -116,7 +116,7 @@ compnent.json 分两种：[私有的]和[发布的]。[发布的] 是指在那�
 
 因为所有依赖都会被打平安装在 components 目录下面，没有层级关系，如果出现同一组件被指定不同的版本将会出现冲突，目前的处理方案非常简单，没有做版本对比采用版本较高的版本，而是采用先入为主的原则处理。
 
-`compoennt.json` 中的 `protocol`、`github.author`、`gitlab.authro` 和 `lights.repos` 在组件里面定义也是有意义的。他能决定当前组件中内部依赖将会定位到什么平台已经哪个作者下面。当时又不影响此组件外的组件查找。
+`component.json` 中的 `protocol`、`github.author`、`gitlab.authro` 和 `lights.repos` 在组件里面定义也是有意义的。他能决定当前组件中内部依赖将会定位到什么平台已经哪个作者下面。当时又不影响此组件外的组件查找。
 
 ## root 目录查找规则
 `fis install` 执行时，可以不在 fis 项目目录，通过 --root 来设定。同时如果没有设定 --root，将会按以下规则来决定哪个目录为 root 目录
