@@ -7,8 +7,8 @@ var path = require('path');
 //
 // - dir是要搜索的目录。
 // - patterns是一个或一组符合glob规则的表达式。
-// - 排除目录。
-// - patterns规则有两种形式，一种是匹配，一种是不匹配（已英文惊叹号开头）。
+// - 如果匹配的是目录，则排除。
+// - 匹配英文惊叹号开头的patterns要从结果中排除。
 module.exports = function (dir, patterns) {
     'use strict';
     var p = patterns || '**',
