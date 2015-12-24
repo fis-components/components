@@ -29,7 +29,7 @@
     "esprima": "^1.2.2",
     "estraverse": "^1.9.1",
     "glob": "^4.3.2",
-    "lodash": "^2.4.1",
+    "lodash": "^3.10",
     "shelljs": "^0.5.3"
   }
 }
