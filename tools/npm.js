@@ -140,7 +140,7 @@ while (args.length) {
         config.main = item.main = item.name + '.js';
       } else if (path.dirname(main) === '.' || path.dirname(main) === '') {
         item.mapping.push({
-          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.js)$/i",
+          reg: "/^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.(?:js|css))$/i",
           release: '$1'
         });
       } else if (path.dirname(main) === 'lib' || main === 'lib') {
@@ -165,6 +165,11 @@ while (args.length) {
 
       item.mapping.push({
         reg: "/^\\/README\\.md$/i",
+        release: '$&'
+      });
+
+      item.mapping.push({
+        reg: "/^\\/LICENSE\\.md$/i",
         release: '$&'
       });
 

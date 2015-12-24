@@ -17,11 +17,15 @@ module.exports = (function() {
       "release": false
     },
     {
-      "reg": /^\/node_modules\/normalize\.css\/(.*\.js)$/i,
+      "reg": /^\/node_modules\/normalize\.css\/(.*\.(?:js|css))$/i,
       "release": "$1"
     },
     {
       "reg": /^\/README\.md$/i,
+      "release": "$&"
+    },
+    {
+      "reg": /^\/LICENSE\.md$/i,
       "release": "$&"
     },
     {
@@ -46,11 +50,15 @@ module.exports = (function() {
       "release": false
     },
     {
-      "reg": /^\/node_modules\/normalize\.css\/(.*\.js)$/i,
+      "reg": /^\/node_modules\/normalize\.css\/(.*\.(?:js|css))$/i,
       "release": "$1"
     },
     {
       "reg": /^\/README\.md$/i,
+      "release": "$&"
+    },
+    {
+      "reg": /^\/LICENSE\.md$/i,
       "release": "$&"
     },
     {
@@ -75,11 +83,15 @@ module.exports = (function() {
       "release": false
     },
     {
-      "reg": /^\/node_modules\/normalize\.css\/(.*\.js)$/i,
+      "reg": /^\/node_modules\/normalize\.css\/(.*\.(?:js|css))$/i,
       "release": "$1"
     },
     {
       "reg": /^\/README\.md$/i,
+      "release": "$&"
+    },
+    {
+      "reg": /^\/LICENSE\.md$/i,
       "release": "$&"
     },
     {
