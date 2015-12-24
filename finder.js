@@ -2,39 +2,33 @@ var glob = require('glob');
 var _ = require('lodash');
 var path = require('path');
 
-
-module.exports = function(dir, parttens) {
-    parttens = parttens || '**';
-
-    if (!Array.isArray(parttens)) {
-        parttens = [parttens];
-    }
-
-    var opts = {
-        sync: true,
-        cwd: dir,
-        nodir: true
-    };
-
-    var ret = [];
-
-    parttens.forEach(function(pattern) {
-        var exclude = pattern.substring(0, 1) === '!';
-
-        if (exclude) {
-            pattern = pattern.substring(1);
-        }
-
-        var mathes = glob.sync(pattern, opts);
-
-        ret = _[exclude ? 'difference' : 'union'](ret, mathes);
-    });
-
-    return ret.map(function(filepath) {
-        return {
-            relative: filepath,
+// ## 总体说明
+// 寻找给定目录符合匹配的文件。
+//
+// - dir是要搜索的目录。
+// - patterns是一个或一组符合glob规则的表达式。
+// - 排除目录。
+// - patterns规则有两种形式，一种是匹配，一种是不匹配（已英文惊叹号开头）。
+module.exports = function (dir, patterns) {
+    'use strict';
+    var p = patterns || '**',
+        opts = {
             cwd: dir,
-            absolute: path.join(dir, filepath)
-        }
-    });
+            nodir: true
+        };
+    if (!Array.isArray(patterns)) {
+        p = [patterns];
+    }
+    return _.chain(p)
+        .reduce(function (a, e) {
+            return e[0] === '!' ? a.difference(glob.sync(e.substring(1), opts)) : a.union(glob.sync(e, opts));
+        }, [])
+        .map(function (e) {
+            return {
+                relative: e,
+                cwd: dir,
+                absolute: path.join(dir, e)
+            };
+        })
+        .value();
 };
