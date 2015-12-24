@@ -21,7 +21,7 @@ module.exports = function (dir, patterns) {
     }
     return _.chain(p)
         .reduce(function (a, e) {
-            return e[0] === '!' ? a.difference(glob.sync(e.substring(1), opts)) : a.union(glob.sync(e, opts));
+            return e[0] === '!' ? _.difference(a, glob.sync(e.substring(1), opts)) : _.union(a, glob.sync(e, opts));
         }, [])
         .map(function (e) {
             return {
