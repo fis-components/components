@@ -30,6 +30,18 @@ module.exports = (function() {
                     release: false
                 }
             ]
+        },
+
+        {
+            version: 'v0.8.0',
+            extend: 'v0.7.0',
+            build: 'rm package.json && npm install --prefix . axios@0.8.0'
+        },
+
+        {
+            version: 'v0.8.1',
+            extend: 'v0.7.0',
+            build: 'rm package.json && npm install --prefix . axios@0.8.1'
         }
     ]
 })();
