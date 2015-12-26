@@ -5,23 +5,23 @@
   "build": "rm package.json && npm install --prefix . react@0.13.3",
   "mapping": [
     {
-      "reg": "^\\^bminb\\$$",
+      "reg": "\\bmin\\b",
       "release": false
     },
     {
-      "reg": "^\\^\\^\\/node_modules\\/react\\/dist\\/\\(\\.\\..*\\)\\$\\$$",
+      "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
       "release": "$1"
     },
     {
-      "reg": "^\\^\\^\\/README\\.md\\$\\$$",
+      "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^\\^\\^\\/package\\.json\\$\\$$",
+      "reg": "^\\/package\\.json$",
       "release": ".hook.js"
     },
     {
-      "reg": "^\\^\\^\\.\\..*\\$\\$$",
+      "reg": "^.*$",
       "release": false
     }
   ],

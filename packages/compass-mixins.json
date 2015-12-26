@@ -3,15 +3,15 @@
   "description": "A collection of compass' stylesheet for bower dependencies and libsass",
   "mapping": [
     {
-      "reg": "^\\.min\\.\\(js\\|css\\)\\$$",
+      "reg": "\\.min\\.(js|css)$",
       "release": false
     },
     {
-      "reg": "^\\^\\/lib\\/\\(\\..*.\\)\\$$",
+      "reg": "^\\/lib\\/(.*?)$",
       "release": "$1"
     },
     {
-      "reg": "^\\^\\..*\\$$",
+      "reg": "^.*$",
       "release": false
     }
   ],

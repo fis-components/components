@@ -7,19 +7,19 @@
   ],
   "mapping": [
     {
-      "reg": "^\\^\\/jquery\\.fullPage\\.js\\$$",
+      "reg": "^\\/jquery\\.fullPage\\.js$",
       "release": "jquery.fullpage.js"
     },
     {
-      "reg": "^\\^\\/jquery\\.fullPage\\.css\\$$",
+      "reg": "^\\/jquery\\.fullPage\\.css$",
       "release": "jquery.fullpage.css"
     },
     {
-      "reg": "^\\^\\/README\\.md\\$$",
+      "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^\\^\\..*\\$$",
+      "reg": "^.*$",
       "release": false
     }
   ],

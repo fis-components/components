@@ -9,19 +9,19 @@
   ],
   "mapping": [
     {
-      "reg": "^bminb\\|__tests__$",
+      "reg": "\\bmin\\b|__tests__",
       "release": false
     },
     {
-      "reg": "^\\^\\/node_modules\\/redux\\-router\\/lib\\/\\(\\..*\\)\\$$",
+      "reg": "^\\/node_modules\\/redux\\-router\\/lib\\/(.*)$",
       "release": "lib/$1"
     },
     {
-      "reg": "^\\^\\/README\\.md\\$$",
+      "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^\\^\\..*\\$$",
+      "reg": "^.*$",
       "release": false
     }
   ],

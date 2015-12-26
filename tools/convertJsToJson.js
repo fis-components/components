@@ -37,12 +37,11 @@ modules.forEach(function(filename) {
   data.forEach(function(item) {
 
     if (item.mapping) {
-      item.mapping.forEach(function(subitem) {
-        if (typeof subitem.reg === "string") {
-          subitem.reg = glob.make(subitem.reg);
-        }
-
-        subitem.reg = subitem.reg instanceof RegExp ? subitem.reg.source : subitem.reg;
+      item.mapping = item.mapping.map(function(subitem) {
+        subitem = assign({}, subitem)
+        var reg = subitem.reg;
+        subitem.reg = (reg instanceof RegExp) ? reg.source : glob.make(reg).source;
+        return subitem;
       })
     }
   });

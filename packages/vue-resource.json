@@ -8,15 +8,15 @@
   ],
   "mapping": [
     {
-      "reg": "^\\^\\^\\/dist\\/\\(vue-resource\\.js\\)\\$$",
+      "reg": "^\\/dist\\/(vue-resource\\.js)",
       "release": "$1"
     },
     {
-      "reg": "^\\^\\^\\/README\\.md\\$\\$$",
+      "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^\\^\\^\\.\\..*\\$\\$$",
+      "reg": "^.*$",
       "release": false
     }
   ],
