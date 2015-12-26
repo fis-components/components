@@ -1,0 +1,27 @@
+{
+  "repos": "https://github.com/jiexuangao/rosetta.git",
+  "tag": "1.0.0",
+  "main": "Rosetta.js",
+  "mapping": [
+    {
+      "reg": "^\\/dist\\/((Rosetta|Rosetta-ie)\\.(css|js))$",
+      "release": "$1"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.0"
+    },
+    {
+      "version": "1.0.1",
+      "tag": "1.0.1"
+    },
+    {
+      "tag": "1.0.2",
+      "version": "1.0.2"
+    }
+  ]
+}

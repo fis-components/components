@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/flatiron/director",
+  "description": "A client Side/Server Side Router",
+  "name": "director",
+  "main": "director.js",
+  "mapping": [
+    {
+      "reg": "^\\/build\\/(director\\.js)",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v1.2.8"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "repos": "https://github.com/ded/bowser.git",
+  "description": "a browser detector",
+  "name": "bowser",
+  "main": "bowser.js",
+  "mapping": [
+    {
+      "reg": "^\\/bowser\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "umd2commonjs": false,
+  "tags": [
+    {
+      "version": "v1.0.0",
+      "umd2commonjs": false
+    }
+  ]
+}

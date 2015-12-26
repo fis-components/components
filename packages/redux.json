@@ -1,0 +1,28 @@
+{
+  "repos": "https://github.com/rackt/redux.git",
+  "name": "redux",
+  "main": "redux.js",
+  "build": "rm package.json && npm install --prefix . redux@3.0.4",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v3.0.4"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repos": "https://github.com/cubiq/iscroll.git",
+  "description": "iScroll",
+  "main": "iscroll.js",
+  "mapping": [
+    {
+      "reg": "^\\/build\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "5.1.3"
+    }
+  ]
+}

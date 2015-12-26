@@ -1,0 +1,32 @@
+{
+  "name": "jquery-validation",
+  "main": "jquery.validate",
+  "repos": "https://github.com/jzaefferer/jquery-validation.git",
+  "description": "jquery-validation component",
+  "build": "npm install && npm install grunt-cli && ./node_modules/.bin/grunt release",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.js$",
+      "release": false
+    },
+    {
+      "reg": "^\\/dist\\/(.*?\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.13.1"
+    }
+  ]
+}

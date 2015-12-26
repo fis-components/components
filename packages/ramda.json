@@ -1,0 +1,22 @@
+{
+  "repos": "https://github.com/ramda/ramda",
+  "main": "ramda.js",
+  "mapping": [
+    {
+      "reg": "\\/dist\\/ramda\\.min\\.js$",
+      "release": "ramda.js"
+    },
+    {
+      "reg": "README\\.md$",
+      "release": "README.md"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v0.18.0"
+    }
+  ]
+}

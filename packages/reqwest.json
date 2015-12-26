@@ -1,0 +1,34 @@
+{
+  "name": "reqwest",
+  "description": "A wrapper for asynchronous http requests",
+  "repos": "https://github.com/ded/reqwest.git",
+  "main": {
+    "xhr2": false
+  },
+  "tag": "master",
+  "reposType": "npm",
+  "build": "rm package.json && npm install --prefix . reqwest@2.0.3",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/reqwest\\/(\\[object Object\\])$",
+      "release": "$1"
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.0.3"
+    },
+    {
+      "version": "2.0.4",
+      "build": "rm package.json && npm install --prefix . reqwest@2.0.4"
+    },
+    {
+      "version": "2.0.5",
+      "build": "rm package.json && npm install --prefix . reqwest@2.0.5"
+    }
+  ]
+}

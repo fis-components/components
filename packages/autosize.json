@@ -1,0 +1,29 @@
+{
+  "repos": "https://github.com/jackmoore/autosize",
+  "description": "Autosize is a small, stand-alone script to automatically adjust textarea height to fit text.http://www.jacklmoore.com/autosize/",
+  "name": "autosize",
+  "main": "autosize.js",
+  "mapping": [
+    {
+      "release": "autosize.js"
+    },
+    {
+      "reg": "^\\/readme\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "3.0.4"
+    },
+    {
+      "version": "3.0.13"
+    },
+    {
+      "version": "3.0.14"
+    }
+  ]
+}

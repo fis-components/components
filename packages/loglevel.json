@@ -1,0 +1,23 @@
+{
+  "repos": "https://github.com/pimterry/loglevel",
+  "description": "Minimal lightweight logging for JavaScript, adding reliable log level methods to wrap any available console.log methods http://pimterry.github.com/loglevel",
+  "name": "loglevel",
+  "main": "loglevel.js",
+  "mapping": [
+    {
+      "release": "loglevel.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.2.0"
+    }
+  ]
+}

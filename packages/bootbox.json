@@ -1,0 +1,27 @@
+{
+  "repos": "https://github.com/makeusabrew/bootbox",
+  "description": "Wrappers for JavaScript alert(), confirm() and other flexible dialogs using the Bootstrap framework",
+  "name": "bootbox",
+  "main": "bootbox.js",
+  "dependencies": [
+    "bootstrap@>=3.0.0"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/bootbox\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v4.4.0"
+    }
+  ]
+}

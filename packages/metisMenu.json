@@ -1,0 +1,39 @@
+{
+  "repos": "https://github.com/onokumus/metisMenu",
+  "description": "A jQuery menu plugin for Bootstrap 3",
+  "name": "metismenu",
+  "main": "metismenu.js",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "release": "metismenu.js"
+    },
+    {
+      "release": "metismenu.css"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "metismenu.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "1.1.3"
+    }
+  ]
+}

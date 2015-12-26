@@ -1,0 +1,37 @@
+{
+  "repos": "https://github.com/ecomfe/echarts.git",
+  "name": "echarts",
+  "main": "echarts.js",
+  "dependencies": [
+    "zrender"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "\\/util\\/mapData\\/rawData\\/.*$",
+      "release": false
+    },
+    {
+      "reg": "^\\/src\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.1.10"
+    },
+    {
+      "version": "2.2.7"
+    }
+  ]
+}

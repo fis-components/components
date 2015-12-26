@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/madrobby/keymaster",
+  "description": "A simple micro-library for defining and dispatching keyboard shortcuts. It has no dependencies.",
+  "name": "keymaster",
+  "main": "keymaster.js",
+  "mapping": [
+    {
+      "reg": "^\\/keymaster\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.markdown$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v1.6.3"
+    }
+  ]
+}

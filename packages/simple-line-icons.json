@@ -1,0 +1,40 @@
+{
+  "repos": "https://github.com/thesabbir/simple-line-icons.git",
+  "name": "simple-line-icons",
+  "main": "css/simple-line-icons.css",
+  "description": "Simple Line Icons Package https://thesabbir.github.io/simple-line-icons",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/css\\/(.*?)$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/scss\\/(.*?)$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/less\\/(.*?)$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/fonts\\/(.*?)$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/readme\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v0.1.2"
+    }
+  ]
+}

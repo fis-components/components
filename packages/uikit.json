@@ -1,0 +1,546 @@
+{
+  "repos": "https://github.com/uikit/bower-uikit.git",
+  "name": "uikit",
+  "main": "uikit.js",
+  "description": "A lightweight and modular front-end framework for developing fast and powerful web interfaces.",
+  "dependencies": [
+    "jquery@>=1.9"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/js\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "release": "$&"
+    }
+  ],
+  "shim": {
+    "uikit.js": {
+      "content": "module.exports = require('./core/core');\nrequire('./core/touch');\nrequire('./core/utility');\nrequire('./core/smooth-scroll');\nrequire('./core/scrollspy');\nrequire('./core/toggle');\nrequire('./core/alert');\nrequire('./core/button');\nrequire('./core/dropdown');\nrequire('./core/grid');\nrequire('./core/modal');\nrequire('./core/nav');\nrequire('./core/offcanvas');\nrequire('./core/switcher');\nrequire('./core/tab');\nrequire('./core/tooltip');",
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/alert.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/button.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/core.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/dropdown.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/grid.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/modal.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/nav.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/offcanvas.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/scrollspy.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/smooth-scroll.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/switcher.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/tab.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/toggle.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/tooltip.js": {
+      "deps": [
+        "jquery",
+        "./core",
+        "./touch",
+        "./utility"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/touch.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "core/utility.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/accordion.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/autocomplete.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/cover.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/datepicker.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/form-password.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/form-select.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/grid.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/htmleditor.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/lightbox.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/nestable.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/notify.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/pagination.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/search.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/slideshow-fx.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/slideshow.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/sortable.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/sticky.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/timepicker.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    },
+    "components/upload.js": {
+      "deps": [
+        "jquery",
+        "../uikit"
+      ],
+      "vars": [
+        "jQuery",
+        "UIkit"
+      ],
+      "replace": {
+        "from": {},
+        "to": "jQuery"
+      }
+    }
+  },
+  "tags": [
+    {
+      "version": "2.16.2"
+    }
+  ]
+}

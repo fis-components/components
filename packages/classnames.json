@@ -1,0 +1,27 @@
+{
+  "repos": "https://github.com/JedWatson/classnames.git",
+  "name": "classnames",
+  "main": "index.js",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__",
+      "release": false
+    },
+    {
+      "reg": "^\\/index\\.js$",
+      "release": "index.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v2.2.0"
+    }
+  ]
+}

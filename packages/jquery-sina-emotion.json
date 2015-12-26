@@ -1,0 +1,42 @@
+{
+  "repos": "https://github.com/Lanfei/jQuery-Sina-Emotion",
+  "tag": "v2.1",
+  "description": "一个用来方便快速地创建新浪微博表情选择对话框的jQuery插件。",
+  "name": "jquery-sina-emotion",
+  "main": "jquery-sina-emotion.js",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/jquery-sinaEmotion-(.*)?\\.js$",
+      "release": "jquery-sina-emotion.js"
+    },
+    {
+      "reg": "^\\/jquery-sinaEmotion-(.*)?\\.css$",
+      "release": "jquery-sina-emotion.css"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "jquery-sina-emotion.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "0.2.1"
+    }
+  ]
+}

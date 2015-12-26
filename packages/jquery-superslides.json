@@ -1,0 +1,36 @@
+{
+  "repos": "https://github.com/nicinabox/superslides.git",
+  "name": "jquery-superslides",
+  "main": "jquery.superslides.js",
+  "dependencies": [
+    "jquery"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/dist\\/jquery\\.superslides\\.js$",
+      "release": "jquery.superslides.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "jquery.superslides.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "0.6.2"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "repos": "https://github.com/ichord/At.js",
+  "description": "Add Github like mentions autocomplete to your application. http://ichord.github.com/At.js",
+  "name": "jquery-atwho",
+  "main": "jquery.atwho.js",
+  "dependencies": [
+    "jquery@>=1.7.0",
+    "jquery-caret"
+  ],
+  "mapping": [
+    {
+      "release": "jquery.atwho.js"
+    },
+    {
+      "release": "jquery.atwho.css"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "jquery.atwho.js": {
+      "deps": [
+        "jquery-caret"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "v1.1.0"
+    },
+    {
+      "version": "v1.3.2"
+    },
+    {
+      "version": "v1.4.0"
+    }
+  ]
+}

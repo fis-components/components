@@ -1,0 +1,37 @@
+{
+  "repos": "https://github.com/balupton/jquery-history.git",
+  "tag": "v1.5.0-final",
+  "name": "jquery-history",
+  "main": "jquery.history.js",
+  "dependencies": [
+    "jquery@>=1.4.1"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/scripts\\/jquery\\.history\\.js$",
+      "release": "jquery.history.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "jquery.history.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "1.5.0"
+    }
+  ]
+}

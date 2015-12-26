@@ -1,0 +1,28 @@
+{
+  "description": "require css component.",
+  "repos": "https://github.com/guybedford/require-css.git",
+  "name": "css",
+  "main": "css.js",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/css\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.1.8"
+    }
+  ]
+}

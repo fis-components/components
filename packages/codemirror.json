@@ -1,0 +1,39 @@
+{
+  "repos": "https://github.com/codemirror/codemirror",
+  "description": "In-browser code editor http://codemirror.net/",
+  "name": "codemirror",
+  "main": "codemirror.js",
+  "mapping": [
+    {
+      "reg": "^\\/lib\\/(.*\\.(css|js))$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/mode\\/(.*\\.(css|js))$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/addon\\/(.*\\.(css|js))$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/theme\\/(.*)$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "5.6.0"
+    },
+    {
+      "version": "5.9.0"
+    }
+  ]
+}

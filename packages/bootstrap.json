@@ -1,0 +1,165 @@
+{
+  "repos": "https://github.com/twbs/bootstrap.git",
+  "main": "bootstrap.js",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/dist\\/js\\/npm\\.js$",
+      "release": false
+    },
+    {
+      "reg": "^\\/dist\\/js\\/(.*\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/js\\/([^\\/]*\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "dependencies": [
+    "jquery@>=1.9.1"
+  ],
+  "shim": {
+    "bootstrap.js": {
+      "content": "require('./alert.js');\nrequire('./button.js');\nrequire('./carousel.js');\nrequire('./collapse.js');\nrequire('./dropdown.js');\nrequire('./modal.js');\nrequire('./tooltip.js');\nrequire('./popover.js');\nrequire('./scrollspy.js');\nrequire('./tab.js');\nrequire('./affix.js');",
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ],
+      "exports": "require('jquery')"
+    },
+    "affix.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "alert.js": {
+      "deps": [
+        "jquery",
+        "./transition"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "button.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "carousel.js": {
+      "deps": [
+        "jquery",
+        "./transition"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "collapse.js": {
+      "deps": [
+        "jquery",
+        "./transition"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "dropdown.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "modal.js": {
+      "deps": [
+        "jquery",
+        "./transition"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "popover.js": {
+      "deps": [
+        "jquery",
+        "./tooltip.js"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "scrollspy.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "tab.js": {
+      "deps": [
+        "jquery",
+        "./transition"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "tooltip.js": {
+      "deps": [
+        "jquery",
+        "./transition"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    },
+    "transition.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "v3.3.1"
+    },
+    {
+      "version": "v3.3.2"
+    },
+    {
+      "version": "v3.3.4"
+    },
+    {
+      "version": "v3.3.5"
+    }
+  ]
+}

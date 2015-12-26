@@ -1,0 +1,29 @@
+{
+  "repos": "https://github.com/angular/angular.git",
+  "description": "HTML enhanced for web apps http://angularjs.org",
+  "name": "angular2",
+  "main": "angular2.js",
+  "build": "rm package.json && npm install --prefix . angular2@2.0.0-alpha.45",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/angular2\\/bundles\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.0.0-alpha.45"
+    },
+    {
+      "version": "2.0.0-alpha.46",
+      "build": "rm package.json && npm install --prefix . angular2@2.0.0-alpha.46"
+    }
+  ]
+}

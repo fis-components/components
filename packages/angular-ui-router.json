@@ -1,0 +1,28 @@
+{
+  "repos": "https://github.com/angular-ui/ui-router.git",
+  "name": "angular-ui-router",
+  "main": "angular-ui-router.js",
+  "build": "rm package.json && npm install --prefix . angular-ui-router@0.2.15",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/angular\\-ui\\-router\\/release\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.15"
+    }
+  ]
+}

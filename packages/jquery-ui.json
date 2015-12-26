@@ -1,0 +1,32 @@
+{
+  "repos": "https://github.com/jquery/jquery-ui.git",
+  "description": "jquery-ui",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/ui\\/(.*?)$",
+      "release": "$1"
+    },
+    {
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.11.2"
+    }
+  ]
+}

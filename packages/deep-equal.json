@@ -1,0 +1,31 @@
+{
+  "repos": "https://github.com/substack/node-deep-equal.git",
+  "name": "deep-equal",
+  "main": "index.js",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/index\\.js$",
+      "release": "$0"
+    },
+    {
+      "reg": "^\\/lib\\/.*\\.js$",
+      "release": "$0"
+    },
+    {
+      "reg": "^\\/readme\\.markdown$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.1"
+    }
+  ]
+}

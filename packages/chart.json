@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/nnnick/Chart.js",
+  "description": "Simple HTML5 Charts using the <canvas> tag",
+  "name": "chart",
+  "main": "Chart.js",
+  "mapping": [
+    {
+      "reg": "^\\/Chart\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v1.0.2"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repos": "https://github.com/hammerjs/hammer.js.git",
+  "name": "hammerjs",
+  "main": "hammer.js",
+  "mapping": [
+    {
+      "reg": "^\\/hammer\\.js$",
+      "release": "$0"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.0.4"
+    }
+  ]
+}

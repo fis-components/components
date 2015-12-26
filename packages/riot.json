@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/muut/riotjs",
+  "description": "A React-like, 3.5KB user interface library",
+  "name": "riot",
+  "main": "riot.js",
+  "mapping": [
+    {
+      "reg": "^\\/riot\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v2.0.12"
+    }
+  ]
+}

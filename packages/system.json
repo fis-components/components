@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/systemjs/systemjs.git",
+  "description": "Universal dynamic module loader",
+  "name": "system",
+  "main": "system.js",
+  "mapping": [
+    {
+      "reg": "^\\/dist\\/(.*)\\.src\\.js$",
+      "release": "$1.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.19.6"
+    }
+  ]
+}

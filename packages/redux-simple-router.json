@@ -1,0 +1,45 @@
+{
+  "repos": "https://github.com/jlongster/redux-simple-router.git",
+  "tag": "master",
+  "name": "redux-simple-router",
+  "main": "lib/index.js",
+  "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.8",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux\\-simple\\-router\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.0.8"
+    },
+    {
+      "version": "0.0.10",
+      "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.10"
+    },
+    {
+      "version": "1.0.0",
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.0"
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2"
+    }
+  ]
+}

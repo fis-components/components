@@ -1,0 +1,72 @@
+{
+  "name": "add-dom-event-listener",
+  "description": "add dom event listener. normalize ie and others",
+  "repos": "https://github.com/yiminghe/add-dom-event-listener.git",
+  "main": "lib/index",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "object-assign@4.x"
+  ],
+  "build": "rm package.json && npm install --prefix . add-dom-event-listener@0.0.0",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.0.0"
+    },
+    {
+      "version": "1.0.0",
+      "build": "rm package.json && npm install --prefix . add-dom-event-listener@1.0.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/add-dom-event-listener\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . add-dom-event-listener@1.0.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/add-dom-event-listener\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "release": false
+        }
+      ]
+    }
+  ]
+}

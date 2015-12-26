@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/rdash/rdash-ui.git",
+  "description": "Responsive, bloat free, bootstrap powered admin style dashboard!",
+  "name": "rdash-ui",
+  "main": "css/rdash.css",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.1"
+    }
+  ]
+}

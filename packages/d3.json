@@ -1,0 +1,26 @@
+{
+  "repos": "https://github.com/mbostock/d3.git",
+  "description": "A JavaScript visualization library for HTML and SVG. https://d3js.org",
+  "name": "d3",
+  "main": "d3.js",
+  "mapping": [
+    {
+      "reg": "^\\/d3\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "umd2commonjs": false,
+  "tags": [
+    {
+      "version": "v3.5.9",
+      "umd2commonjs": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "repos": "https://github.com/Krinkle/jquery-json.git",
+  "name": "jquery-json",
+  "main": "jquery.json.js",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/src\\/jquery\\.json\\.js$",
+      "release": "jquery.json.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "jquery.json.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "v2.5.1"
+    }
+  ]
+}

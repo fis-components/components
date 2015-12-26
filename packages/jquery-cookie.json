@@ -1,0 +1,30 @@
+{
+  "repos": "https://github.com/carhartl/jquery-cookie.git",
+  "name": "jquery-cookie",
+  "main": "jquery.cookie.js",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/jquery\\.cookie\\.js$",
+      "release": "jquery.cookie.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v1.4.1"
+    }
+  ]
+}

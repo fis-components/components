@@ -1,0 +1,40 @@
+{
+  "repos": "https://github.com/mzabriskie/axios.git",
+  "name": "axios",
+  "main": "index.js",
+  "build": "rm package.json && npm install --prefix . axios@0.7.0",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/axios\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/index\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v0.7.0"
+    },
+    {
+      "version": "v0.8.0",
+      "build": "rm package.json && npm install --prefix . axios@0.8.0"
+    },
+    {
+      "version": "v0.8.1",
+      "build": "rm package.json && npm install --prefix . axios@0.8.1"
+    }
+  ]
+}

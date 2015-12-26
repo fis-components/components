@@ -1,0 +1,25 @@
+{
+  "repos": "https://github.com/Igosuki/compass-mixins.git",
+  "description": "A collection of compass' stylesheet for bower dependencies and libsass",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/lib\\/(.*?)$",
+      "release": "$1"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.2"
+    },
+    {
+      "version": "v0.12.7"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "repos": "https://github.com/lokesh/lightbox2/",
+  "description": "The original lightbox script, finally on github. http://lokeshdhakar.com/projects/lightbox2/",
+  "name": "lightbox",
+  "main": "lightbox.js",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "release": "lightbox.js"
+    },
+    {
+      "release": "lightbox.css"
+    },
+    {
+      "reg": "^\\/img\\/([^\\/]*\\.(png|gif))$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "jquery.qeditor.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "2.7.1"
+    }
+  ]
+}

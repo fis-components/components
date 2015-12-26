@@ -1,0 +1,27 @@
+{
+  "name": "blur",
+  "main": "blur.js",
+  "repos": "https://github.com/jakiestfu/Blur.js",
+  "tag": "master",
+  "dependencies": [
+    "jquery@>=1.7"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/blur\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.0.1"
+    }
+  ]
+}

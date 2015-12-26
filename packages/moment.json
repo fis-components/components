@@ -1,0 +1,30 @@
+{
+  "repos": "https://github.com/moment/moment.git",
+  "description": "Parse, validate, manipulate, and display dates in javascript. http://momentjs.com",
+  "name": "moment",
+  "main": "moment.js",
+  "mapping": [
+    {
+      "reg": "^\\/moment\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/locale\\/.*$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "umd2commonjs": false,
+  "tags": [
+    {
+      "version": "2.10.6",
+      "umd2commonjs": false
+    }
+  ]
+}

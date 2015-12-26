@@ -1,0 +1,30 @@
+{
+  "repos": "http://github.com/react-component/animate.git",
+  "description": "css-transition ui component for react",
+  "tag": "master",
+  "name": "rc-animate",
+  "main": "lib/index.js",
+  "build": "rm package.json && npm install --prefix . rc-animate@2.0.2",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/rc\\-animate\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.0.2"
+    }
+  ]
+}

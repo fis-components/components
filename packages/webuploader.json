@@ -1,0 +1,44 @@
+{
+  "name": "webuploader",
+  "main": "webuploader.js",
+  "repos": "https://github.com/fex-team/webuploader.git",
+  "description": "It's a new file uploader solution! http://fex.baidu.com/webuploader",
+  "build": "npm install && npm install grunt-cli && ./node_modules/.bin/grunt dist",
+  "dependencies": [
+    "jquery@>=1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/dist\\/Uploader\\.swf$",
+      "release": "webuploader.swf"
+    },
+    {
+      "reg": "^\\/css\\/webuploader\\.css$",
+      "release": "webuploader.css"
+    },
+    {
+      "reg": "^\\/src\\/(.*?)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.1.5"
+    },
+    {
+      "version": "0.1.6",
+      "tag": "master"
+    }
+  ]
+}

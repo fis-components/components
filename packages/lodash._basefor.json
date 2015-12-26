@@ -1,0 +1,25 @@
+{
+  "repos": "https://github.com/lodash/lodash.git",
+  "tag": "master",
+  "name": "lodash._basefor",
+  "main": "index.js",
+  "build": "rm package.json && npm install --prefix . lodash._basefor@3.0.2",
+  "mapping": [
+    {
+      "reg": "^\\/node_modules\\/lodash\\._basefor\\/index\\.js$",
+      "release": "index.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "3.0.2"
+    }
+  ]
+}

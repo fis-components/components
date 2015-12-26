@@ -1,0 +1,27 @@
+{
+  "repos": "https://github.com/christianalfoni/form-data-to-object.git",
+  "name": "form-data-to-object",
+  "main": "index.js",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/index.js$",
+      "release": "index.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v0.2.0"
+    }
+  ]
+}

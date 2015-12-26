@@ -1,0 +1,34 @@
+{
+  "protocol": "github",
+  "github": {
+    "author": "fis-components"
+  },
+  "repos": "https://github.com/ecomfe/zrender.git",
+  "name": "zrender",
+  "main": "zrender.js",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/src\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.0.6"
+    },
+    {
+      "version": "2.1.1"
+    }
+  ]
+}

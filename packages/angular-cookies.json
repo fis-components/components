@@ -1,0 +1,28 @@
+{
+  "repos": "https://github.com/angular/angular.js.git",
+  "name": "angular-cookies",
+  "main": "angular-cookies.js",
+  "build": "rm package.json && npm install --prefix . angular-cookies@1.4.7",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/angular\\-cookies\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v1.4.7"
+    }
+  ]
+}

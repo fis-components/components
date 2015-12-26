@@ -12,6 +12,7 @@ const PREFIX = '\'use strict\';\n\nmodule.exports = (function() {\n    return [\
 const AFFIX = '\n    ]\n})();';
 
 const repos = require('./repos.json');
+const browserIgnore = require('./browser.ignore.json');
 
 function escapeReg(str) {
   return new String( str ).replace(
@@ -64,9 +65,13 @@ while (args.length) {
   if (json.dependencies) {
     var dependencies = [];
     Object.keys(json.dependencies).forEach(function(key) {
-      if (!~modules.indexOf(key)) {
-        args.push(key);
+      if (browserIgnore[config.name] && ~browserIgnore[config.name].indexOf(key)) {
+        return;
       }
+
+      // if (!~modules.indexOf(key)) {
+        args.push(key + '@' + json.dependencies[key]);
+      // }
 
       dependencies.push(key + '@' + json.dependencies[key])
     });

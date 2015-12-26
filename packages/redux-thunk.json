@@ -1,0 +1,31 @@
+{
+  "repos": "https://github.com/gaearon/redux-thunk.git",
+  "name": "redux-thunk",
+  "main": "index.js",
+  "build": "rm package.json && npm install --prefix . redux-thunk@1.0.0",
+  "dependencies": [
+    "redux"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux\\-thunk\\/lib\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v1.0.0"
+    }
+  ]
+}

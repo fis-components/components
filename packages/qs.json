@@ -1,0 +1,39 @@
+{
+  "repos": "https://github.com/hapijs/qs.git",
+  "name": "qs",
+  "main": "index.js",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/lib\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v6.0.0"
+    },
+    {
+      "version": "v5.2.0"
+    },
+    {
+      "version": "v5.1.0"
+    },
+    {
+      "version": "v5.0.0"
+    },
+    {
+      "version": "v4.0.0"
+    }
+  ]
+}

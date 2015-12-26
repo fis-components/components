@@ -1,0 +1,29 @@
+{
+  "repos": "https://github.com/nolimits4web/Swiper.git",
+  "description": "Most modern mobile touch slider with hardware accelerated transitions",
+  "name": "Swiper",
+  "main": "swiper.js",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "^\\/dist\\/js\\/(swiper\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/dist\\/css\\/(.*\\.css)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v3.1.0"
+    }
+  ]
+}

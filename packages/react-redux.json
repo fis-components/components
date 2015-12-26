@@ -1,0 +1,32 @@
+{
+  "repos": "https://github.com/rackt/react-redux.git",
+  "name": "react-redux",
+  "main": "react-redux.js",
+  "build": "rm package.json && npm install --prefix . react-redux@4.0.0",
+  "dependencies": [
+    "react@^0.14.0",
+    "redux"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react\\-redux\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v4.0.0"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "repos": "https://github.com/fengyuanchen/cropper",
+  "description": "A simple jQuery image cropping plugin. http://fengyuanchen.github.io/cropper",
+  "name": "cropper",
+  "main": "cropper.js",
+  "dependencies": [
+    "jquery@>=1.7.0"
+  ],
+  "mapping": [
+    {
+      "release": "cropper.js"
+    },
+    {
+      "release": "cropper.css"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "cropper.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "v2.2.1"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "repos": "https://github.com/twbs/ratchet.git",
+  "description": "Build mobile apps with simple HTML, CSS, and JavaScript components.",
+  "name": "ratchet",
+  "main": "ratchet",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "^\\/dist\\/js\\/(.*\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/js\\/([^\\/]*\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v2.0.2"
+    }
+  ]
+}

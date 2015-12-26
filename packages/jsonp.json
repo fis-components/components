@@ -1,0 +1,43 @@
+{
+  "repos": "https://github.com/webmodules/jsonp.git",
+  "description": "A simple JSONP implementation",
+  "name": "jsonp",
+  "main": "index.js",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "^\\/index\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/Readme\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "index.js": {
+      "replace": [
+        {
+          "from": "var debug = require('debug')('jsonp');",
+          "to": ""
+        },
+        {
+          "from": "debug('jsonp req \"%s\"', url);",
+          "to": ""
+        },
+        {
+          "from": "debug('jsonp got', data);",
+          "to": ""
+        }
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "0.2.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "repos": "https://github.com/Automattic/socket.io-client",
+  "description": "Realtime application framework (client)",
+  "name": "socket.io",
+  "main": "socket.io.js",
+  "mapping": [
+    {
+      "release": "socket.io.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.3.5"
+    }
+  ]
+}

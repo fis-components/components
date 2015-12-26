@@ -1,0 +1,27 @@
+{
+  "repos": "https://github.com/necolas/normalize.css.git",
+  "name": "normalize-css",
+  "main": "normalize.css",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/normalize\\.css$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v2.1.3"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "detector",
+  "main": "detector.js",
+  "repos": "https://github.com/hotoo/detector",
+  "mapping": [
+    {
+      "reg": "^\\/detector\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.4.1"
+    }
+  ]
+}

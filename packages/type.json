@@ -1,0 +1,27 @@
+{
+  "repos": "https://github.com/component/type.git",
+  "name": "type",
+  "main": "index.js",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/index\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.1.0"
+    }
+  ]
+}

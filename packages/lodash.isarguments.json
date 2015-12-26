@@ -1,0 +1,25 @@
+{
+  "repos": "https://github.com/lodash/lodash.git",
+  "tag": "master",
+  "name": "lodash.isarguments",
+  "main": "index.js",
+  "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.4",
+  "mapping": [
+    {
+      "reg": "^\\/node_modules\\/lodash\\.isarguments\\/index\\.js$",
+      "release": "index.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "3.0.4"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "repos": "https://github.com/facebook/react.git",
+  "name": "react-addons-update",
+  "main": "index.js",
+  "build": "rm package.json && npm install --prefix . react-addons-update@0.14.3",
+  "dependencies": [
+    "react@^0.14.3"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/node_modules\\/react\\-addons\\-update\\/index\\.js$",
+      "release": "index.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "index.js": {
+      "content": "module.exports = require('react').addons.update;"
+    }
+  },
+  "tags": [
+    {
+      "version": "v0.14.3"
+    },
+    {
+      "version": "v0.14.2",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "build": "rm package.json && npm install --prefix . react-addons-update@0.14.2"
+    }
+  ]
+}

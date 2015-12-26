@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/ftlabs/fastclick",
+  "description": "Polyfill to remove click delays on browsers with touch UIs",
+  "name": "fastclick",
+  "main": "fastclick.js",
+  "mapping": [
+    {
+      "reg": "^\\/lib\\/(fastclick\\.js)",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v1.0.6"
+    }
+  ]
+}

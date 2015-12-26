@@ -1,0 +1,40 @@
+{
+  "repos": "https://github.com/defunkt/jquery-pjax.git",
+  "name": "jquery-pjax",
+  "main": "jquery.pjax.js",
+  "dependencies": [
+    "jquery@>=1.8"
+  ],
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/jquery\\.pjax\\.js$",
+      "release": "jquery.pjax.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "jquery.pjax.js": {
+      "deps": [
+        "jquery"
+      ],
+      "vars": [
+        "jQuery"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "version": "v1.9.4"
+    }
+  ]
+}

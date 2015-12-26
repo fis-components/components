@@ -1,0 +1,33 @@
+{
+  "repos": "https://github.com/alvarotrigo/fullPage.js.git",
+  "name": "jquery-fullpage",
+  "main": "jquery.fullpage.js",
+  "dependencies": [
+    "jquery"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/jquery\\.fullPage\\.js$",
+      "release": "jquery.fullpage.js"
+    },
+    {
+      "reg": "^\\/jquery\\.fullPage\\.css$",
+      "release": "jquery.fullpage.css"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.6.9"
+    },
+    {
+      "version": "2.7.4"
+    }
+  ]
+}

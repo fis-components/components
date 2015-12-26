@@ -1,0 +1,32 @@
+{
+  "repos": "https://github.com/acdlite/flux-standard-action.git",
+  "tag": "master",
+  "name": "flux-standard-action",
+  "main": "lib/index.js",
+  "build": "rm package.json && npm install --prefix . flux-standard-action@0.6.0",
+  "dependencies": [
+    "lodash.isplainobject@^3.2.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/flux\\-standard\\-action\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.6.0"
+    }
+  ]
+}

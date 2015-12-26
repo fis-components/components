@@ -1,0 +1,29 @@
+{
+  "repos": "https://github.com/yiminghe/css-animation.git",
+  "tag": "master",
+  "name": "css-animation",
+  "main": "lib/index.js",
+  "build": "rm package.json && npm install --prefix . css-animation@1.1.1",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/css\\-animation\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.1.1"
+    }
+  ]
+}

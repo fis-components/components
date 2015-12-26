@@ -1,0 +1,27 @@
+{
+  "repos": "https://github.com/Wolfy87/EventEmitter.git",
+  "name": "event-emitter",
+  "main": "index.js",
+  "mapping": [
+    {
+      "reg": "\\.min\\.(js|css)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/EventEmitter\\.js$",
+      "release": "/index.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "v4.2.11"
+    }
+  ]
+}

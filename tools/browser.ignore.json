@@ -1,0 +1,8 @@
+{
+  "warning": [
+    "loose-envify"
+  ],
+  "invariant": [
+    "loose-envify"
+  ]
+}

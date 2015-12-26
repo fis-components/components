@@ -1,0 +1,24 @@
+{
+  "repos": "https://github.com/ejci/favico.js",
+  "description": "Make use of your favicon with badges, images or videos http://lab.ejci.net/favico.js/",
+  "name": "favico",
+  "main": "favico.js",
+  "mapping": [
+    {
+      "reg": "^\\/favico\\.js$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/readme\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.3.10"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "repos": "https://github.com/zertosh/invariant.git",
+  "name": "invariant",
+  "main": "invariant.js",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b",
+      "release": false
+    },
+    {
+      "reg": "^\\/(browser\\.js)$",
+      "release": "invariant.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "invariant.js": {
+      "replace": {
+        "from": "process.env.NODE_ENV !== 'production'",
+        "to": "true"
+      }
+    }
+  },
+  "tags": [
+    {
+      "version": "v2.2.0"
+    }
+  ]
+}

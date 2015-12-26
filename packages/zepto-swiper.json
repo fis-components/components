@@ -1,0 +1,38 @@
+{
+  "repos": "https://github.com/nolimits4web/Swiper.git",
+  "name": "zepto-swiper",
+  "main": "swiper.js",
+  "dependencies": [
+    "zepto@~1.1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "^\\/dist\\/js\\/swiper\\.jquery\\.js$",
+      "release": "swiper.js"
+    },
+    {
+      "reg": "^\\/dist\\/css\\/swiper\\.css$",
+      "release": "swiper.css"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "shim": {
+    "swiper.js": {
+      "replace": {
+        "from": {},
+        "to": "var $ = require('zepto');"
+      }
+    }
+  },
+  "tags": [
+    {
+      "version": "v3.0.6"
+    }
+  ]
+}

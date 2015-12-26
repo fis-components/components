@@ -1,0 +1,58 @@
+{
+  "name": "rc-util",
+  "description": "Common Utils For React Component",
+  "repos": "https://github.com/react-component/util.git",
+  "main": "./lib/index",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "add-dom-event-listener@1.x",
+    "classnames@2.x",
+    "shallowequal@0.2.x",
+    "util-deprecate@1.x"
+  ],
+  "build": "rm package.json && npm install --prefix . rc-util@3.1.0",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/rc-util\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "3.1.0"
+    },
+    {
+      "version": "3.1.1",
+      "build": "rm package.json && npm install --prefix . rc-util@3.1.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "3.1.2",
+      "build": "rm package.json && npm install --prefix . rc-util@3.1.2"
+    }
+  ]
+}

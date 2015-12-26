@@ -1,0 +1,46 @@
+{
+  "name": "rc-tabs",
+  "description": "tabs ui component for react",
+  "repos": "https://github.com/react-component/tabs.git",
+  "main": "./lib/index",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "rc-animate@2.x"
+  ],
+  "build": "rm package.json && npm install --prefix . rc-tabs@5.5.1",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/rc-tabs\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/rc-tabs\\/assets\\/(.*)$",
+      "release": "assets/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "5.5.1"
+    },
+    {
+      "version": "5.5.2",
+      "build": "rm package.json && npm install --prefix . rc-tabs@5.5.2"
+    },
+    {
+      "version": "5.6.0",
+      "build": "rm package.json && npm install --prefix . rc-tabs@5.6.0"
+    }
+  ]
+}
