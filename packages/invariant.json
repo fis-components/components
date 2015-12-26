@@ -44,7 +44,8 @@
     },
     {
       "version": "2.2.0",
-      "build": "rm package.json && npm install --prefix . invariant@2.2.0"
+      "build": "rm package.json && npm install --prefix . invariant@2.2.0",
+      "__hash": "5e8d6a221c7777c7630f13d813c06e1d30dac082"
     }
   ]
 }
