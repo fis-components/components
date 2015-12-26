@@ -9,7 +9,6 @@ pwd
 #[ci skip]
 
 node $ROOT/saveHash.js $1 $2 $3
-git status
 
 #AU
 git config --global user.email "${GIT_EMAIL}"
@@ -18,6 +17,7 @@ git config credential.helper "store --file=.git/credential"
 git config --global push.default simple
 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
-git add ./packages
+git add packages
+git status
 git commit -m  "[ci skip] saveHash $1@$2"
 git push origin master
