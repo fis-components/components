@@ -19,6 +19,7 @@ function mixin(a, b) {
 }
 
 function loadConfig(path) {
+    console.log('Load config from %s', path);
     var list = require(path);
     var map = {};
 
