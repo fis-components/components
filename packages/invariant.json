@@ -24,7 +24,8 @@
     },
     {
       "version": "2.1.0",
-      "build": "rm package.json && npm install --prefix . invariant@2.1.0"
+      "build": "rm package.json && npm install --prefix . invariant@2.1.0",
+      "__hash": "29b51835db314ca8d77ebc1852444991ea321649"
     },
     {
       "version": "2.1.1",
