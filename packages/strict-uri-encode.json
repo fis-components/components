@@ -39,7 +39,8 @@
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.2"
+      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.2",
+      "__hash": "683982187bfb8087f841dbebab3691d1b6fa4294"
     }
   ]
 }
