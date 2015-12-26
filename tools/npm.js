@@ -190,7 +190,7 @@ while (args.length) {
     continue;
   }
 
-  if (test('-f', path.join(__dirname, '../packages/' + pkgName + '.json'))) {
+  if (!argv.override && test('-f', path.join(__dirname, '../packages/' + pkgName + '.json'))) {
     var pkgs = (function() {
       var pkg = require('../packages/' + pkgName + '.json');
       var pkgs = {};
