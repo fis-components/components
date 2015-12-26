@@ -1,0 +1,38 @@
+{
+  "name": "query-string",
+  "description": "Parse and stringify URL query strings",
+  "repos": "https://github.com/sindresorhus/query-string",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "strict-uri-encode@^1.0.0"
+  ],
+  "build": "rm package.json && npm install --prefix . query-string@3.0.0",
+  "mapping": [
+    {
+      "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
+      "release": false
+    },
+    {
+      "reg": "/^\\/node_modules\\/query-string\\/(.*\\.(?:js|css))$/i",
+      "release": "$1"
+    },
+    {
+      "reg": "/^\\/README\\.md$/i",
+      "release": "$&"
+    },
+    {
+      "reg": "/^\\/LICENSE\\.md$/i",
+      "release": "$&"
+    },
+    {
+      "reg": "*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "3.0.0"
+    }
+  ]
+}

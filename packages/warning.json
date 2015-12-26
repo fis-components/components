@@ -1,37 +1,29 @@
 {
-  "repos": "https://github.com/r3dm/warning.git",
   "name": "warning",
-  "main": "warning.js",
+  "description": "A mirror of Facebook's Warning",
+  "repos": "https://github.com/r3dm/warning.git",
+  "main": "browser.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "build": "rm package.json && npm install --prefix . warning@2.0.0",
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
       "release": false
     },
     {
-      "reg": "^\\/(browser\\.js)$",
-      "release": "warning.js"
-    },
-    {
-      "reg": "^\\/README\\.md$",
-      "release": "$&"
-    },
-    {
-      "reg": "^.*$",
-      "release": false
+      "reg": "/^\\/node_modules\\/warning\\/(browser\\.js)$/i",
+      "release": "$1"
     }
   ],
-  "shim": {
-    "warning.js": {
-      "replace": {
-        "from": "process.env.NODE_ENV !== 'production'",
-        "to": "true"
-      }
-    }
-  },
   "tags": [
     {
-      "version": "v2.1.0",
-      "__hash": "d6181daa59d331fe3e9928b012abe760e55d5c01"
+      "version": "2.0.0"
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . warning@2.1.0"
     }
   ]
 }

@@ -1,37 +1,45 @@
 {
-  "repos": "https://github.com/zertosh/invariant.git",
   "name": "invariant",
-  "main": "invariant.js",
+  "description": "invariant",
+  "repos": "https://github.com/zertosh/invariant.git",
+  "main": "browser.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "build": "rm package.json && npm install --prefix . invariant@2.0.0",
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
       "release": false
     },
     {
-      "reg": "^\\/(browser\\.js)$",
-      "release": "invariant.js"
-    },
-    {
-      "reg": "^\\/README\\.md$",
-      "release": "$&"
-    },
-    {
-      "reg": "^.*$",
-      "release": false
+      "reg": "/^\\/node_modules\\/invariant\\/(browser\\.js)$/i",
+      "release": "$1"
     }
   ],
-  "shim": {
-    "invariant.js": {
-      "replace": {
-        "from": "process.env.NODE_ENV !== 'production'",
-        "to": "true"
-      }
-    }
-  },
   "tags": [
     {
-      "version": "v2.2.0",
-      "__hash": "b79bf2ae5902fd6604fe26bbb2b0f8a9a61638bd"
+      "version": "2.0.0"
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . invariant@2.1.0"
+    },
+    {
+      "version": "2.1.1",
+      "build": "rm package.json && npm install --prefix . invariant@2.1.1"
+    },
+    {
+      "version": "2.1.2",
+      "build": "rm package.json && npm install --prefix . invariant@2.1.2"
+    },
+    {
+      "version": "2.1.3",
+      "build": "rm package.json && npm install --prefix . invariant@2.1.3"
+    },
+    {
+      "version": "2.2.0",
+      "build": "rm package.json && npm install --prefix . invariant@2.2.0"
     }
   ]
 }

@@ -1,22 +1,17 @@
 {
-  "name": "deep-equal",
-  "description": "node's assert.deepEqual algorithm",
-  "repos": "https://github.com/substack/node-deep-equal.git",
-  "main": "index.js",
+  "name": "strict-uri-encode",
+  "description": "A stricter URI encode adhering to RFC 3986",
+  "repos": "https://github.com/kevva/strict-uri-encode.git",
   "tag": "master",
   "reposType": "npm",
-  "build": "rm package.json && npm install --prefix . deep-equal@1.0.0",
+  "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.0",
   "mapping": [
     {
       "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
       "release": false
     },
     {
-      "reg": "/^\\/node_modules\\/deep-equal\\/lib\\/(.*)$/i",
-      "release": "lib/$1"
-    },
-    {
-      "reg": "/^\\/node_modules\\/deep-equal\\/(.*\\.(?:js|css))$/i",
+      "reg": "/^\\/node_modules\\/strict-uri-encode\\/(.*\\.(?:js|css))$/i",
       "release": "$1"
     },
     {
@@ -38,7 +33,11 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . deep-equal@1.0.1"
+      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.1"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.2"
     }
   ]
 }

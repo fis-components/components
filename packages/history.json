@@ -1,36 +1,50 @@
 {
-  "repos": "https://github.com/rackt/history.git",
   "name": "history",
-  "main": "lib/index.js",
-  "build": "rm package.json && npm install --prefix . history@1.13.1",
+  "description": "A minimal, functional history implementation for JavaScript",
+  "repos": "https://github.com/rackt/history.git",
+  "main": "lib/index",
+  "tag": "master",
+  "reposType": "npm",
   "dependencies": [
-    "qs@^4.0.0",
+    "deep-equal@^1.0.0",
     "invariant@^2.0.0",
-    "warning@^2.0.0",
-    "deep-equal@^1.0.0"
+    "query-string@^3.0.0",
+    "warning@^2.0.0"
   ],
+  "build": "rm package.json && npm install --prefix . history@1.15.0",
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+      "reg": "/^\\/node_modules\\/history\\/lib\\/(.*)$/i",
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "/^\\/README\\.md$/i",
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "/^\\/LICENSE\\.md$/i",
+      "release": "$&"
+    },
+    {
+      "reg": "*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "v1.13.1",
-      "__hash": "ab2c18e56a4b1b338f487ac0939c564d56a503c5"
+      "version": "1.15.0"
+    },
+    {
+      "version": "1.16.0",
+      "build": "rm package.json && npm install --prefix . history@1.16.0"
+    },
+    {
+      "version": "1.17.0",
+      "build": "rm package.json && npm install --prefix . history@1.17.0"
     }
   ]
 }
