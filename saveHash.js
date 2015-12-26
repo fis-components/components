@@ -32,4 +32,4 @@ var hashvalue = hash(data);
 
 tag.__hash = hashvalue;
 
-write('./packages/' + folder + name + '.json', JSON.stringify(package, null, 2));
+write(path.join(__dirname, './packages/' + folder + name + '.json'), JSON.stringify(package, null, 2));
