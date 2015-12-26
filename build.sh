@@ -40,9 +40,18 @@ bos_sync () {
     fi
 }
 
+save_hash() {
+    echo "Save hash  ${1}@${2}@${3}"
+    bash $ROOT/saveHash.sh $1 $2 $3
+    if [ "$?" != "0" ]; then
+        exit 1
+    fi
+}
+
 export -f git_clone
 export -f git_update_repos
 export -f bos_sync
+export -f save_hash
 
 sync () {
     new=$1
@@ -53,6 +62,7 @@ sync () {
     tag=$6
     rebuild=$7
     folder=$8
+    isFromJson=$9
 
     echo "Folder is $folder"
     dest="$ROOT/_$new"
@@ -68,7 +78,7 @@ sync () {
 
     if [ "$?" != "0" ]; then
         # new origin
-        node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}" "$folder"
+        node $ROOT/sync.js create-repos "${new}" "${GH_TOKEN}" "${repos}" "$folder" "$isFromJson"
         if [ "$?" != "0" ]; then
             exit 1
         fi
@@ -149,9 +159,9 @@ sync () {
         fi
     fi
 
-    node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest" "$folder"
+    node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest" "$folder" "$isFromJson"
 
-    node $ROOT/sync.js convert "$new" "$version" "$dest" "$folder"
+    node $ROOT/sync.js convert "$new" "$version" "$dest" "$folder" "$isFromJson"
 
     if [ "$?" != "0" ]; then
         echo '=ROADMAP move fail'
@@ -163,6 +173,10 @@ sync () {
 
     git_update_repos $new $version $folder
 
+    if [ "$isFromJson" = "true" ]; then
+        save_hash "$new" "$version" "$folder"
+    fi
+
     cd $ROOT
 }
 
@@ -170,8 +184,8 @@ export -f sync
 
 main () {
     echo '#START build.sh'
-    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
+    sync "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"
     echo '#END build.sh'
 }
 
-main "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8"
+main "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"

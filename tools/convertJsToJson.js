@@ -58,7 +58,10 @@ modules.forEach(function(filename) {
       }
     });
 
-    clone.__hash = hash(clone);
+    var data = assign({}, config, clone);
+    delete data.__hash;
+
+    clone.__hash = hash(data);
 
     return clone;
   })

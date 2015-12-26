@@ -6,6 +6,8 @@ var fs = require('fs');
 var async = require('async');
 var spawn = require('child_process').spawn;
 var util = require('util');
+var hash = require('object-hash');
+var assign = require('object-assign');
 
 function mixin(a, b) {
     if (a && b) {
@@ -20,22 +22,51 @@ function loadConfig(path) {
     var list = require(path);
     var map = {};
 
-    list.forEach(function(item) {
-        map[item.version] = item;
+    if (Array.isArray(list)) {
+        list.forEach(function(item) {
+            map[item.version] = item;
 
-        if (item.extend) {
-            if (!map[item.extend]) {
-                throw new Error('Extend `' + item.extend + '` is not defined.');
+            if (item.extend) {
+                if (!map[item.extend]) {
+                    throw new Error('Extend `'+item.extend+'` is not defined.');
+                }
+                var copySelf = mixin({}, item)
+                mixin(item, map[item.extend]);
+                mixin(item, copySelf);
+                delete item.extend;
             }
-            var copySelf = mixin({}, item)
-            mixin(item, map[item.extend]);
-            mixin(item, copySelf);
-            delete item.extend;
-        }
-    });
+        });    
+    } else {
+        var pkg = list;
+        list = [];
+        var tags = pkg.tags;
+
+        tags.forEach(function(tag) {
+            var data = assign({}, pkg, tag);
+            delete data.tags;
+            delete data.__hash;
+            var hashvalue = hash(data);
+
+            if (hashvalue === tag.__hash) {
+                return;
+            }
+
+            if (data.mapping) {
+                data.mapping = data.mapping.map(function(subitem) {
+                    var clone = assign({}, subitem);
+                    var reg = new RegExp(subitem.reg, "i");
+                    clone.reg = reg;
+                    return clone;
+                });
+            }
+
+            list.push(data);
+        });
+    }
 
     return list;
 }
+
 
 function createRepos(repos, token, from, folder) {
 
@@ -100,51 +131,51 @@ function getFilesFromLastMessage(cb) {
         } else if (~message.indexOf('bos sync')) {
 
             // 更新所有 bos
-            files = finder(__dirname, 'modules/**/*.js')
-                .map(function(i) {
-                    return i.relative;
-                })
-                .filter(function(p) {
-                    if (p.indexOf('modules') == -1) {
-                        return false;
-                    }
-                    return /\.js$/.test(p);
-                });
+            // files = finder(__dirname, 'modules/**/*.js')
+            //     .map(function(i) {
+            //         return i.relative;
+            //     })
+            //     .filter(function(p) {
+            //         if (p.indexOf('modules') == -1) {
+            //             return false;
+            //         }
+            //         return /\.js$/.test(p);
+            //     });
 
-            var queue = [];
+            // var queue = [];
 
-            files.forEach(function(file) {
-                var list = loadConfig('./' + file);
-                var name = file.replace('modules/', '')
-                    .replace(/\.js$/, '');
+            // files.forEach(function(file) {
+            //     var list = loadConfig('./' + file);
+            //     var name = file.replace('modules/', '')
+            //         .replace(/\.js$/, '');
 
-                list.forEach(function(r) {
-                    queue.push(function(cb) {
-                        var h = spawn('bash', [
-                            path.join(ROOT, 'bosSync.sh'),
-                            name || r.name,
-                            r.version
-                        ], {
-                            cwd: __dirname
-                        });
-                        h.on('exit', function(code) {
-                            if (code) {
-                                process.exit(1);
-                            }
-                            cb();
-                        });
-                        h.stdout.pipe(process.stdout);
-                        h.stderr.pipe(process.stderr);
-                    });
-                });
-            });
+            //     list.forEach(function(r) {
+            //         queue.push(function(cb) {
+            //             var h = spawn('bash', [
+            //                 path.join(ROOT, 'bosSync.sh'),
+            //                 name || r.name,
+            //                 r.version
+            //             ], {
+            //                 cwd: __dirname
+            //             });
+            //             h.on('exit', function(code) {
+            //                 if (code) {
+            //                     process.exit(1);
+            //                 }
+            //                 cb();
+            //             });
+            //             h.stdout.pipe(process.stdout);
+            //             h.stderr.pipe(process.stderr);
+            //         });
+            //     });
+            // });
 
-            console.log('Start BOS Sync...');
-            async.series(queue, function() {
-                console.log('done');
-            });
+            // console.log('Start BOS Sync...');
+            // async.series(queue, function() {
+            //     console.log('done');
+            // });
 
-            return;
+            // return;
         }
 
         if (files && files.length) {
@@ -153,10 +184,10 @@ function getFilesFromLastMessage(cb) {
                     return i.relative;
                 })
                 .filter(function(p) {
-                    if (p.indexOf('modules') == -1) {
+                    if (p.indexOf('modules') == -1 && p.indexOf("packages") == -1) {
                         return false;
                     }
-                    return /\.js$/.test(p);
+                    return /\.js(?:on)?$/.test(p);
                 });
 
             if (files.length) {
@@ -205,10 +236,10 @@ function lastChangFiles(cb) {
                         return false;
                     }
 
-                    if (parts[1].indexOf('modules') == -1) {
+                    if (parts[1].indexOf('modules') == -1 && p.indexOf("packages") == -1) {
                         return false;
                     }
-                    return /\.js$/.test(parts[1]);
+                    return /\.js(?:on)?$/.test(parts[1]);
                 })
                 .map(function(line) {
                     return line.split(/\s+/)[1];
@@ -260,8 +291,9 @@ if (ARGV[2] == 'sync') {
         var queue = [];
         arr.forEach(function(name) {
             var list = loadConfig(path.join(ROOT, name));
-            name = name.replace('modules/', '')
-                .replace(/\.js$/, '');
+            var isFromJson = /\.json$/.test(name);
+            name = name.replace(/(?:modules|packages)\//, '')
+                .replace(/\.js(?:on)?$/, '');
             var basename = path.basename(name);
 
             list.forEach(function(r) {
@@ -275,7 +307,8 @@ if (ARGV[2] == 'sync') {
                         r.build_dest || '',
                         r.tag || r.version,
                         rebuild ? 'true' : 'false',
-                        name.substring(0, name.length - basename.length)
+                        name.substring(0, name.length - basename.length),
+                        isFromJson ? 'true' : 'false'
                     ], {
                         cwd: __dirname
                     });
@@ -313,10 +346,10 @@ if (ARGV[2] == 'sync') {
                 return i.relative;
             })
             .filter(function(p) {
-                if (p.indexOf('modules') == -1) {
+                if (p.indexOf('modules') == -1 && p.indexOf("packages") == -1) {
                     return false;
                 }
-                return /\.js$/.test(p);
+                return /\.js(?:on)?$/.test(p);
             });
 
         if (files.length) {
@@ -332,8 +365,14 @@ if (ARGV[2] == 'sync') {
     var name = ARGV[3].trim();
     var version = ARGV[4].trim();
     var folder = (ARGV[5] || '').trim();
+    var isFromJson = (ARGV[6] || '').trim() === "true";
+    
     try {
-        var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
+        var list = loadConfig(
+                isFromJson ? 
+                path.join(ROOT, 'packages', folder + name + '.json'):
+                path.join(ROOT, 'modules', folder + name + '.js')
+            );
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
 
@@ -383,10 +422,15 @@ if (ARGV[2] == 'sync') {
     var from = ARGV[5].trim();
     var to = ARGV[6].trim();
     var folder = (ARGV[7] || '').trim();
-    console.log(ARGV.join(' '));
+    var isFromJson = (ARGV[8] || '').trim() === "true";
     try {
-        console.log("load config from %s", folder + name + '.js' );
-        var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
+        console.log("load config from %s", folder + name + (isFromJson ? '.js' : '.json') );
+        // var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
+        var list = loadConfig(
+                isFromJson ? 
+                path.join(ROOT, 'packages', folder + name + '.json'):
+                path.join(ROOT, 'modules', folder + name + '.js')
+            );
         for (var i = 0; i < list.length; i++) {
             var r = list[i];
 
@@ -424,11 +468,15 @@ if (ARGV[2] == 'sync') {
     var version = ARGV[4].trim();
     var dist = ARGV[5].trim();
     var folder = (ARGV[6] || '').trim();
+    var isFromJson = (ARGV[7] || '').trim() === "true";
 
     var convert = require('./convert.js');
     var finder = require('./finder.js');
 
-    var list = loadConfig(path.join(ROOT, 'modules', folder + name + '.js'));
+    var list = loadConfig(
+        isFromJson ? 
+        path.join(ROOT, 'packages', folder + name + '.json'):
+        path.join(ROOT, 'modules', folder + name + '.js'));
 
     for (var i = 0; i < list.length; i++) {
         var r = list[i];

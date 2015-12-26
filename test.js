@@ -6,6 +6,8 @@ var async = require('async');
 var spawn = require('child_process').spawn;
 var util = require('util');
 var argv = process.argv;
+var hash = require('object-hash');
+var assign = require('object-assign');
 
 if (argv.length < 3) {
     console.log('Please specify modules to be tested.\nFor example: `node test.js "modules/jquery-*.js"`');
@@ -25,43 +27,72 @@ function loadConfig(path) {
     var list = require(path);
     var map = {};
 
-    list.forEach(function(item) {
-        map[item.version] = item;
+    if (Array.isArray(list)) {
+        list.forEach(function(item) {
+            map[item.version] = item;
 
-        if (item.extend) {
-            if (!map[item.extend]) {
-                throw new Error('Extend `'+item.extend+'` is not defined.');
+            if (item.extend) {
+                if (!map[item.extend]) {
+                    throw new Error('Extend `'+item.extend+'` is not defined.');
+                }
+                var copySelf = mixin({}, item)
+                mixin(item, map[item.extend]);
+                mixin(item, copySelf);
+                delete item.extend;
             }
-            var copySelf = mixin({}, item)
-            mixin(item, map[item.extend]);
-            mixin(item, copySelf);
-            delete item.extend;
-        }
-    });
+        });    
+    } else {
+        var pkg = list;
+        list = [];
+        var tags = pkg.tags;
+
+        tags.forEach(function(tag) {
+            var data = assign({}, pkg, tag);
+            delete data.tags;
+            delete data.__hash;
+            var hashvalue = hash(data);
+
+            if (hashvalue === tag.__hash) {
+                return;
+            }
+
+            if (data.mapping) {
+                data.mapping = data.mapping.map(function(subitem) {
+                    var clone = assign({}, subitem);
+                    var reg = new RegExp(subitem.reg, "i");
+                    clone.reg = reg;
+                    return clone;
+                });
+            }
+
+            list.push(data);
+        });
+    }
 
     return list;
 }
 
 
 var files = argv.slice(2);
-
 files = finder(__dirname, files)
     .map(function(i) {
         return i.relative;
     })
     .filter(function(p) {
-        if (p.indexOf('modules') == -1 || p.indexOf('packages') == -1) {
+        if (p.indexOf('modules') == -1 && p.indexOf('packages') == -1) {
             return false;
         }
-        return /\.js(?:so)?$/.test(p);
+        return /\.js(?:on)?$/.test(p);
     });
 
 files.forEach(function(name) {
     var list = loadConfig(path.join(ROOT, name));
-    name = name.replace('modules/', '')
-        .replace(/\.js$/, '');
+    var isFromJson = /\.json$/.test(name);
+    name = name.replace(/(?:modules|packages)\//, '')
+        .replace(/\.js(?:on)?$/, '');
     var basename = path.basename(name);
     var queue = [];
+
     list.forEach(function(r) {
         queue.push(function(cb) {
             var h = spawn('bash', [
@@ -72,7 +103,8 @@ files.forEach(function(name) {
                 r.version,
                 r.build_dest || '',
                 r.tag || r.version,
-                name.substr(0, name.length - basename.length)
+                name.substr(0, name.length - basename.length),
+                isFromJson ? 'true' : false
             ], {
                 cwd: __dirname
             });
