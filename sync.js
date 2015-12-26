@@ -118,7 +118,7 @@ function getLastMessage(cb) {
 
 function getFilesFromLastMessage(cb) {
     getLastMessage(function(message) {
-        var m = /^(update|forceupdate)\s+(.*)/.exec(message);
+        var m = /^(update|forceupdate)\s+(.+)/.exec(message);
         var finder = require('./finder.js');
         var files;
         var force = false;
