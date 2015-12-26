@@ -21,7 +21,7 @@ git add packages
 git status
 git commit -m  "[ci skip] saveHash $1@$2"
 git branch
-git push origin master
+git push -f origin master
 
 git status
 exit 1;
