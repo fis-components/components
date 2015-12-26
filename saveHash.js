@@ -32,4 +32,5 @@ var hashvalue = hash(data);
 
 tag.__hash = hashvalue;
 
+console.log("Save new hash %s to %s", hashvalue, './packages/' + folder + name + '.json');
 write(path.join(__dirname, './packages/' + folder + name + '.json'), JSON.stringify(package, null, 2));

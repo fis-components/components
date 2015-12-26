@@ -3,6 +3,7 @@ set -e
 
 echo "$1 $2 $3"
 ROOT=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+pwd
 
 #[ci skip]
 
