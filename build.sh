@@ -14,7 +14,8 @@ git_update_repos () {
     repos=$1
     version=$2
     folder=$3
-    node $ROOT/sync.js create-component.json $repos $version $folder
+    isFromJson=$4
+    node $ROOT/sync.js create-component.json $repos $version $folder $isFromJson
 
     #AU
     git config --global user.email "${GIT_EMAIL}"
@@ -173,7 +174,7 @@ sync () {
     cd "$dest"
     echo "=CD $dest"
 
-    git_update_repos $new $version $folder
+    git_update_repos $new $version $folder $isFromJson
 
     if [ "$isFromJson" = "true" ]; then
         save_hash "$new" "$version" "$folder"
