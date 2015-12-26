@@ -29,6 +29,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],

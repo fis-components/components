@@ -9,16 +9,19 @@
   ],
   "mapping": [
     {
+      "reg": "^\\^\\^/dist/js/jquery\\.atwho\\.js\\$\\$$",
       "release": "jquery.atwho.js"
     },
     {
+      "reg": "^\\^\\^/dist/css/jquery\\.atwho\\.css\\$\\$$",
       "release": "jquery.atwho.css"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\/README\\.md\\$\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\^\\.\\..*\\$\\$$",
       "release": false
     }
   ],

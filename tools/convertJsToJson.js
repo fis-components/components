@@ -6,13 +6,31 @@ const deepEqual = require('deep-equal');
 const assign = require('object-assign');
 const semver = require('semver');
 var hash = require('object-hash');
+var glob = require('glob.js');
 
 const modules = find('modules').filter(function(file) { 
   return file.match(/\.js$/);
 });
 
 modules.forEach(function(filename) {
-  var data = require('../' + filename).filter(function(tag) {
+  var data = require('../' + filename)
+  var map = {};
+
+  data.forEach(function(item) {
+      map[item.version] = item;
+
+      if (item.extend) {
+          if (!map[item.extend]) {
+              throw new Error('Extend `' + item.extend + '` is not defined.');
+          }
+          var copySelf = assign({}, item)
+          assign(item, map[item.extend]);
+          assign(item, copySelf);
+          delete item.extend;
+      }
+  });
+
+  data = data.filter(function(tag) {
     return semver.valid(tag.version);
   });
 
@@ -20,7 +38,11 @@ modules.forEach(function(filename) {
 
     if (item.mapping) {
       item.mapping.forEach(function(subitem) {
-        subitem.reg = subitem.reg.source;
+        if (typeof subitem.reg === "string") {
+          subitem.reg = glob.make(subitem.reg);
+        }
+
+        subitem.reg = subitem.reg instanceof RegExp ? subitem.reg.source : subitem.reg;
       })
     }
   });
@@ -36,8 +58,6 @@ modules.forEach(function(filename) {
         delete clone[key];
       }
     });
-
-    delete clone.extend;
 
     clone.__hash = hash(clone);
 

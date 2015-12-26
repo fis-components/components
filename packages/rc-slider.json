@@ -22,6 +22,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],
@@ -51,10 +52,11 @@
           "release": "$&"
         },
         {
+          "reg": "^.*$",
           "release": false
         }
       ],
-      "__hash": "8bbe54b7cd8a35b2499b5882180900b9acc84073"
+      "__hash": "72fe847f3b27e7031e7745e5488541ab48fa7eb9"
     },
     {
       "version": "3.2.0",
@@ -77,10 +79,11 @@
           "release": "$&"
         },
         {
+          "reg": "^.*$",
           "release": false
         }
       ],
-      "__hash": "659d29ecc82af7c35ded96c6eafa30f085e3eb73"
+      "__hash": "d5893065c10c1c745e1435d1ba0e6c0e74232933"
     }
   ]
 }

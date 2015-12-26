@@ -21,6 +21,7 @@
     "deep-equal": "^1.0.1",
     "fis-scaffold-kernel": "~0.0.18",
     "github": "0.2.3",
+    "glob.js": "^0.1.0",
     "minimist": "^1.2.0",
     "object-assign": "^4.0.1",
     "object-hash": "^1.0.0",

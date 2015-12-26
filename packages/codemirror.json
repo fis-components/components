@@ -5,26 +5,27 @@
   "main": "codemirror.js",
   "mapping": [
     {
-      "reg": "^\\/lib\\/(.*\\.(css|js))$",
+      "reg": "^\\^\\/lib\\/\\(\\..*\\.\\(css\\|js\\)\\)\\$$",
       "release": "$&"
     },
     {
-      "reg": "^\\/mode\\/(.*\\.(css|js))$",
+      "reg": "^\\^\\/mode\\/\\(\\..*\\.\\(css\\|js\\)\\)\\$$",
       "release": "$&"
     },
     {
-      "reg": "^\\/addon\\/(.*\\.(css|js))$",
+      "reg": "^\\^\\/addon\\/\\(\\..*\\.\\(css\\|js\\)\\)\\$$",
       "release": "$&"
     },
     {
-      "reg": "^\\/theme\\/(.*)$",
+      "reg": "^\\^\\/theme\\/\\(\\..*\\)\\$$",
       "release": "$&"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\/README\\.md\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\..*\\$$",
       "release": false
     }
   ],

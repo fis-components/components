@@ -4,10 +4,11 @@
   "main": "Rosetta.js",
   "mapping": [
     {
-      "reg": "^\\/dist\\/((Rosetta|Rosetta-ie)\\.(css|js))$",
+      "reg": "^\\^\\^\\/dist\\/\\(\\(Rosetta\\|Rosetta-ie\\)\\.\\(css\\|js\\)\\)\\$\\$$",
       "release": "$1"
     },
     {
+      "reg": "^\\^\\^\\.\\..*\\$\\$$",
       "release": false
     }
   ],

@@ -5,6 +5,7 @@
   "main": "loglevel.js",
   "mapping": [
     {
+      "reg": "^/dist/loglevel\\.js$",
       "release": "loglevel.js"
     },
     {
@@ -12,6 +13,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],

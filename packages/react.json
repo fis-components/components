@@ -5,22 +5,23 @@
   "build": "rm package.json && npm install --prefix . react@0.13.3",
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "^\\^bminb\\$$",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
+      "reg": "^\\^\\^\\/node_modules\\/react\\/dist\\/\\(\\.\\..*\\)\\$\\$$",
       "release": "$1"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\/README\\.md\\$\\$$",
       "release": "$&"
     },
     {
-      "reg": "^\\/package\\.json$",
+      "reg": "^\\^\\^\\/package\\.json\\$\\$$",
       "release": ".hook.js"
     },
     {
+      "reg": "^\\^\\^\\.\\..*\\$\\$$",
       "release": false
     }
   ],
@@ -40,12 +41,14 @@
     {
       "version": "v0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "__hash": "e7bba8179ea82983579beccf4d6b557cfcdb44a5"
+      "umd2commonjs": false,
+      "__hash": "bee21895e53a5420b7c3193cf423e1784742f56e"
     },
     {
       "version": "v0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "__hash": "eec0614b189bf1d357e66bb86c17fb2eafdc4cc0"
+      "umd2commonjs": false,
+      "__hash": "b5a8e5758190076b3557e4299fa8c244d12f2650"
     }
   ]
 }

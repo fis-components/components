@@ -29,6 +29,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],
@@ -145,10 +146,11 @@
           "release": "$&"
         },
         {
+          "reg": "^.*$",
           "release": false
         }
       ],
-      "__hash": "f3fd3a9dcd84e765762457669e996dade29c255e"
+      "__hash": "88bf68c9ca3b525c5ecc9b8a74766cb98f0d3a87"
     },
     {
       "version": "0.18.0",

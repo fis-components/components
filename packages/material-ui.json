@@ -14,14 +14,15 @@
   ],
   "mapping": [
     {
-      "reg": "^\\/node_modules\\/material\\-ui\\/lib\\/(.*)$",
+      "reg": "^\\^\\/node_modules\\/material\\-ui\\/lib\\/\\(\\..*\\)\\$$",
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\/README\\.md\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\..*\\$$",
       "release": false
     }
   ],

@@ -5,9 +5,11 @@
   "main": "emojione.js",
   "mapping": [
     {
+      "reg": "^/lib/js/emojione\\.js$",
       "release": "emojione.js"
     },
     {
+      "reg": "^/assets/css/emojione\\.css$",
       "release": "emojione.css"
     },
     {
@@ -23,6 +25,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],

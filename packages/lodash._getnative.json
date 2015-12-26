@@ -6,14 +6,15 @@
   "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.1",
   "mapping": [
     {
-      "reg": "^\\/node_modules\\/lodash\\._getnative\\/index\\.js$",
+      "reg": "^\\^\\^\\^\\^\\/node_modules\\/lodash\\._getnative\\/index\\.js\\$\\$\\$\\$$",
       "release": "index.js"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\^\\^\\/README\\.md\\$\\$\\$\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\^\\^\\^\\.\\.\\.\\..*\\$\\$\\$\\$$",
       "release": false
     }
   ],

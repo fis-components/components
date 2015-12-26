@@ -8,14 +8,15 @@
   ],
   "mapping": [
     {
-      "reg": "^\\/node_modules\\/react\\-addons\\-update\\/index\\.js$",
+      "reg": "^\\^\\/node_modules\\/react\\-addons\\-update\\/index\\.js\\$$",
       "release": "index.js"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\/README\\.md\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\..*\\$$",
       "release": false
     }
   ],

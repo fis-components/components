@@ -5,18 +5,19 @@
   "build": "npm install && npm install grunt-cli && ./node_modules/.bin/grunt",
   "mapping": [
     {
-      "reg": "\\.min\\.(js|css)$",
+      "reg": "^\\^\\^\\^\\^\\^\\^\\.min\\.\\(js\\|css\\)\\$\\$\\$\\$\\$\\$\\$$",
       "release": false
     },
     {
-      "reg": "^\\/dist\\/(.*\\.js)",
+      "reg": "^\\^\\^\\^\\^\\^\\^\\^\\/dist\\/\\(\\.\\.\\.\\.\\.\\.\\..*\\.js\\)\\$\\$\\$\\$\\$\\$$",
       "release": "$1"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\^\\^\\^\\^\\^\\/README\\.md\\$\\$\\$\\$\\$\\$\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\^\\^\\^\\^\\^\\^\\.\\.\\.\\.\\.\\.\\..*\\$\\$\\$\\$\\$\\$\\$$",
       "release": false
     }
   ],
@@ -40,19 +41,23 @@
     },
     {
       "version": "2.1.1",
-      "__hash": "d0ccbb9070b215090d2bacedd605b0ca7911b089"
+      "build": null,
+      "__hash": "039d6c6e4d514ba748a5f18cfb9ebe106f4342f3"
     },
     {
       "version": "2.1.2",
-      "__hash": "8aa66c3b26890c8a44d3a35eefc73b44d1223ebb"
+      "build": null,
+      "__hash": "6479cf30c52186367542f6aa55f28ab741337501"
     },
     {
       "version": "2.1.3",
-      "__hash": "83fcb3914af473edabc31b4cccc0b32fa183393b"
+      "build": null,
+      "__hash": "9d9e768a06393d863cb62baae41b4e7af2cd602e"
     },
     {
       "version": "2.1.4",
-      "__hash": "61dfe3453c374981258869a868ed5c3603ca51bf"
+      "build": null,
+      "__hash": "56225b7c4ae1326be2f005c5161c9f8b04a8d6ba"
     }
   ]
 }

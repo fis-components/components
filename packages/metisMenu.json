@@ -8,9 +8,11 @@
   ],
   "mapping": [
     {
+      "reg": "^/dist/metisMenu\\.js$",
       "release": "metismenu.js"
     },
     {
+      "reg": "^/dist/metisMenu\\.css$",
       "release": "metismenu.css"
     },
     {
@@ -18,6 +20,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],

@@ -7,18 +7,19 @@
   ],
   "mapping": [
     {
-      "reg": "^\\/jquery\\.timepicker\\.js$",
+      "reg": "^\\^\\^\\^\\^\\/jquery\\.timepicker\\.js\\$\\$\\$\\$$",
       "release": "jquery.timepicker.js"
     },
     {
-      "reg": "^\\/jquery\\.timepicker\\.css$",
+      "reg": "^\\^\\^\\^\\^\\/jquery\\.timepicker\\.css\\$\\$\\$\\$$",
       "release": "jquery.timepicker.css"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\^\\^\\/README\\.md\\$\\$\\$\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\^\\^\\^\\.\\.\\.\\..*\\$\\$\\$\\$$",
       "release": false
     }
   ],

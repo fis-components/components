@@ -13,6 +13,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],
@@ -45,10 +46,11 @@
           "release": "$&"
         },
         {
+          "reg": "^.*$",
           "release": false
         }
       ],
-      "__hash": "0bee2994e533f13b0522fa2fdf1e4b8d4bec60d8"
+      "__hash": "f92598f914d1328a74953f5d692a3de3d05fbe0c"
     },
     {
       "description": "The modern build of lodash modular utilities.",
@@ -72,10 +74,11 @@
           "release": "$&"
         },
         {
+          "reg": "^.*$",
           "release": false
         }
       ],
-      "__hash": "5edba73afec16990657f2f5f3b4fc1884c2872fd"
+      "__hash": "d19ffc2fa43d6e3bd1d4cad38852c7f2dee53b6a"
     },
     {
       "description": "The modern build of lodash modular utilities.",
@@ -99,10 +102,11 @@
           "release": "$&"
         },
         {
+          "reg": "^.*$",
           "release": false
         }
       ],
-      "__hash": "f5b556b1b4de8d5591bf245b44d0b7d8e7bf5d85"
+      "__hash": "52a5003981cc857a028d9381f965601c69d69e51"
     }
   ]
 }

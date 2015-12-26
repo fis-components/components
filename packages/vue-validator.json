@@ -8,14 +8,15 @@
   ],
   "mapping": [
     {
-      "reg": "^\\/dist\\/(vue-validator\\.js)",
+      "reg": "^\\^\\^\\^\\^\\/dist\\/\\(vue-validator\\.js\\)\\$\\$\\$$",
       "release": "$1"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\^\\^\\/README\\.md\\$\\$\\$\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\^\\^\\^\\.\\.\\.\\..*\\$\\$\\$\\$$",
       "release": false
     }
   ],

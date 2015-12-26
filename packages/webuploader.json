@@ -9,26 +9,27 @@
   ],
   "mapping": [
     {
-      "reg": "\\.min\\.(js|css)$",
+      "reg": "^\\.min\\.\\(js\\|css\\)\\$$",
       "release": false
     },
     {
-      "reg": "^\\/dist\\/Uploader\\.swf$",
+      "reg": "^\\^\\/dist\\/Uploader\\.swf\\$$",
       "release": "webuploader.swf"
     },
     {
-      "reg": "^\\/css\\/webuploader\\.css$",
+      "reg": "^\\^\\/css\\/webuploader\\.css\\$$",
       "release": "webuploader.css"
     },
     {
-      "reg": "^\\/src\\/(.*?)$",
+      "reg": "^\\^\\/src\\/\\(\\..*.\\)\\$$",
       "release": "$1"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\/README\\.md\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\..*\\$$",
       "release": false
     }
   ],

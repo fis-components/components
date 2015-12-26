@@ -6,14 +6,15 @@
   "build": "rm package.json && npm install --prefix . angular2@2.0.0-alpha.45",
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "^bminb$",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/angular2\\/bundles\\/(.*)$",
+      "reg": "^\\^\\/node_modules\\/angular2\\/bundles\\/\\(\\..*\\)\\$$",
       "release": "$1"
     },
     {
+      "reg": "^\\^\\..*\\$$",
       "release": false
     }
   ],

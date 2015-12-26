@@ -5,22 +5,23 @@
   "build": "rm package.json && npm install --prefix . axios@0.7.0",
   "mapping": [
     {
-      "reg": "\\bmin\\b|__tests__",
+      "reg": "^\\^bminb\\|__tests__\\$$",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/axios\\/lib\\/(.*)$",
+      "reg": "^\\^\\^\\/node_modules\\/axios\\/lib\\/\\(\\.\\..*\\)\\$\\$$",
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/index\\.js$",
+      "reg": "^\\^\\^\\/index\\.js\\$\\$$",
       "release": "$&"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\/README\\.md\\$\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\^\\.\\..*\\$\\$$",
       "release": false
     }
   ],

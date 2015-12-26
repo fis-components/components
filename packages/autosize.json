@@ -5,6 +5,7 @@
   "main": "autosize.js",
   "mapping": [
     {
+      "reg": "^/dest/autosize\\.js$",
       "release": "autosize.js"
     },
     {
@@ -12,6 +13,7 @@
       "release": "$&"
     },
     {
+      "reg": "^.*$",
       "release": false
     }
   ],
@@ -22,11 +24,39 @@
     },
     {
       "version": "3.0.13",
-      "__hash": "807f6bdda709ad6f0b524c534b6b3f1a89d07ecc"
+      "mapping": [
+        {
+          "reg": "^\\^/dist/autosize\\.js\\$$",
+          "release": "autosize.js"
+        },
+        {
+          "reg": "^\\^\\/readme\\.md\\$$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\^\\..*\\$$",
+          "release": false
+        }
+      ],
+      "__hash": "7dca6b8189f9b9cef0bed3f4590ef1de4c29eb0a"
     },
     {
       "version": "3.0.14",
-      "__hash": "ead636813b7d62363bf29f222ef638523563e456"
+      "mapping": [
+        {
+          "reg": "^\\^/dist/autosize\\.js\\$$",
+          "release": "autosize.js"
+        },
+        {
+          "reg": "^\\^\\/readme\\.md\\$$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\^\\..*\\$$",
+          "release": false
+        }
+      ],
+      "__hash": "ac8399aec4cb3ff896078419ea9bcf65d0983c53"
     }
   ]
 }

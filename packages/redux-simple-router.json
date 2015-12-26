@@ -6,18 +6,19 @@
   "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.8",
   "mapping": [
     {
-      "reg": "\\bmin\\b|__tests__",
+      "reg": "^\\^\\^\\^bminb\\|__tests__\\$\\$\\$$",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/redux\\-simple\\-router\\/lib\\/(.*)$",
+      "reg": "^\\^\\^\\^\\^\\/node_modules\\/redux\\-simple\\-router\\/lib\\/\\(\\.\\.\\.\\..*\\)\\$\\$\\$\\$$",
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/README\\.md$",
+      "reg": "^\\^\\^\\^\\^\\/README\\.md\\$\\$\\$\\$$",
       "release": "$&"
     },
     {
+      "reg": "^\\^\\^\\^\\^\\.\\.\\.\\..*\\$\\$\\$\\$$",
       "release": false
     }
   ],
