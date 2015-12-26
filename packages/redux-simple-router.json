@@ -1,16 +1,21 @@
 {
-  "repos": "https://github.com/jlongster/redux-simple-router.git",
-  "tag": "master",
   "name": "redux-simple-router",
-  "main": "lib/index.js",
-  "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.8",
+  "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
+  "repos": "https://github.com/jlongster/redux-simple-router.git",
+  "main": "lib/index",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "deep-equal@^1.0.1"
+  ],
+  "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.0",
   "mapping": [
     {
-      "reg": "\\bmin\\b|__tests__",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/redux\\-simple\\-router\\/lib\\/(.*)$",
+      "reg": "^\\/node_modules\\/redux-simple-router\\/lib\\/(.*)$",
       "release": "lib/$1"
     },
     {
@@ -18,115 +23,25 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "0.0.8",
-      "__hash": "c1cd95d54519cff3a7092a90ad8b99bf8cc59939"
+      "version": "1.0.0"
     },
     {
-      "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.10",
-      "version": "0.0.10",
-      "__hash": "2e90afe834c548172d30f84710559ebff1e76f7b"
-    },
-    {
-      "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
-      "main": "lib/index",
-      "reposType": "npm",
-      "dependencies": [
-        "deep-equal@^1.0.1"
-      ],
-      "version": "1.0.0",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.0",
-      "mapping": [
-        {
-          "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
-          "release": false
-        },
-        {
-          "reg": "/^\\/node_modules\\/redux-simple-router\\/lib\\/(.*)$/i",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "/^\\/README\\.md$/i",
-          "release": "$&"
-        },
-        {
-          "reg": "/^\\/LICENSE\\.md$/i",
-          "release": "$&"
-        },
-        {
-          "reg": "*",
-          "release": false
-        }
-      ]
-    },
-    {
-      "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
-      "main": "lib/index",
-      "reposType": "npm",
-      "dependencies": [
-        "deep-equal@^1.0.1"
-      ],
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1",
-      "mapping": [
-        {
-          "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
-          "release": false
-        },
-        {
-          "reg": "/^\\/node_modules\\/redux-simple-router\\/lib\\/(.*)$/i",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "/^\\/README\\.md$/i",
-          "release": "$&"
-        },
-        {
-          "reg": "/^\\/LICENSE\\.md$/i",
-          "release": "$&"
-        },
-        {
-          "reg": "*",
-          "release": false
-        }
-      ]
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1"
     },
     {
-      "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
-      "main": "lib/index",
-      "reposType": "npm",
-      "dependencies": [
-        "deep-equal@^1.0.1"
-      ],
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2",
-      "mapping": [
-        {
-          "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
-          "release": false
-        },
-        {
-          "reg": "/^\\/node_modules\\/redux-simple-router\\/lib\\/(.*)$/i",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "/^\\/README\\.md$/i",
-          "release": "$&"
-        },
-        {
-          "reg": "/^\\/LICENSE\\.md$/i",
-          "release": "$&"
-        },
-        {
-          "reg": "*",
-          "release": false
-        }
-      ]
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2"
     }
   ]
 }
