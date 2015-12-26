@@ -4,6 +4,7 @@ set -e
 echo "$1 $2 $3"
 
 cd ..
+git checkout master
 
 #[ci skip]
 
