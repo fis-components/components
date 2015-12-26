@@ -29,15 +29,18 @@
   ],
   "tags": [
     {
-      "version": "3.6.0"
+      "version": "3.6.0",
+      "__hash": "520fe97a3aea10062a20387dbecfafa71efc272b"
     },
     {
       "version": "3.6.1",
-      "build": "rm package.json && npm install --prefix . rc-table@3.6.1"
+      "build": "rm package.json && npm install --prefix . rc-table@3.6.1",
+      "__hash": "b8513d790fe717be086a8c3381cce62e559387fa"
     },
     {
       "version": "3.6.2",
-      "build": "rm package.json && npm install --prefix . rc-table@3.6.2"
+      "build": "rm package.json && npm install --prefix . rc-table@3.6.2",
+      "__hash": "c906e8d59953420e4f2f8418f62af75f7d7231be"
     }
   ]
 }

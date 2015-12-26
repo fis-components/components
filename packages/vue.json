@@ -18,28 +18,36 @@
   ],
   "tags": [
     {
-      "version": "0.11.10"
+      "version": "0.11.10",
+      "__hash": "2a6850109fff4003621595f0a1bdb42e65e942a0"
     },
     {
-      "version": "0.12.6"
+      "version": "0.12.6",
+      "__hash": "3ce44c8aac3a19f183964ebfba61211f39a55bc9"
     },
     {
-      "version": "0.12.8"
+      "version": "0.12.8",
+      "__hash": "6a25300ec7c71348170f6bbba4689615be78ecec"
     },
     {
-      "version": "0.12.10"
+      "version": "0.12.10",
+      "__hash": "d89b4f1f939b4db231aab99d9710386f11d66cff"
     },
     {
-      "version": "0.12.12"
+      "version": "0.12.12",
+      "__hash": "05899b41cd97440c6a8593570bb43da91fb3d9af"
     },
     {
-      "version": "0.12.14"
+      "version": "0.12.14",
+      "__hash": "f6b2d4b6d627a2afd818cb129f5ea49bf4138d3e"
     },
     {
-      "version": "0.12.16"
+      "version": "0.12.16",
+      "__hash": "1efe8ea5dc1fcf7f296aa21e440feff69c7822a8"
     },
     {
-      "version": "v1.0.11"
+      "version": "v1.0.11",
+      "__hash": "f1113c8bc476b4910e5db304f39014138b692af8"
     }
   ]
 }

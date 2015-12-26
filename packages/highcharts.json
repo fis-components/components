@@ -29,15 +29,18 @@
   ],
   "tags": [
     {
-      "version": "0.0.11"
+      "version": "0.0.11",
+      "__hash": "2d39111119065412ff0bc80330e3d2453352ca8c"
     },
     {
       "version": "4.1.10",
-      "build": "rm package.json && npm install --prefix . highcharts@4.1.10"
+      "build": "rm package.json && npm install --prefix . highcharts@4.1.10",
+      "__hash": "4635404e4dd49cf1c4739586ac07742c1514ec1c"
     },
     {
       "version": "4.2.0",
-      "build": "rm package.json && npm install --prefix . highcharts@4.2.0"
+      "build": "rm package.json && npm install --prefix . highcharts@4.2.0",
+      "__hash": "021df13528fed2505f1f11276c9a60f46ec7de85"
     }
   ]
 }

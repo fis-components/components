@@ -36,15 +36,18 @@
   ],
   "tags": [
     {
-      "version": "4.8.1"
+      "version": "4.8.1",
+      "__hash": "2b2d85cc31d8adefd8a17e4df9a3f903265d706a"
     },
     {
       "version": "4.8.2",
-      "build": "rm package.json && npm install --prefix . rc-menu@4.8.2"
+      "build": "rm package.json && npm install --prefix . rc-menu@4.8.2",
+      "__hash": "c1e0faf98073eed654785ad9d785750aa6052451"
     },
     {
       "version": "4.8.3",
-      "build": "rm package.json && npm install --prefix . rc-menu@4.8.3"
+      "build": "rm package.json && npm install --prefix . rc-menu@4.8.3",
+      "__hash": "efaa11472d7eca85eda45200ea0838fa076ad237"
     }
   ]
 }

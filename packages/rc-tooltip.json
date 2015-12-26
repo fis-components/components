@@ -32,15 +32,18 @@
   ],
   "tags": [
     {
-      "version": "3.1.1"
+      "version": "3.1.1",
+      "__hash": "1dc630ef3487539395d35df3881063baf0615f0a"
     },
     {
       "version": "3.2.0",
-      "build": "rm package.json && npm install --prefix . rc-tooltip@3.2.0"
+      "build": "rm package.json && npm install --prefix . rc-tooltip@3.2.0",
+      "__hash": "77f3108f7f0209e2ce55df83d962ecec9bf81663"
     },
     {
       "version": "3.3.0",
-      "build": "rm package.json && npm install --prefix . rc-tooltip@3.3.0"
+      "build": "rm package.json && npm install --prefix . rc-tooltip@3.3.0",
+      "__hash": "5ea6fb0d1cbbf8ab0674c62dea566bbd7fb86b91"
     }
   ]
 }

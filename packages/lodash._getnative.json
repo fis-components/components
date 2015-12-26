@@ -19,27 +19,32 @@
   ],
   "tags": [
     {
-      "version": "3.9.1"
+      "version": "3.9.1",
+      "__hash": "d7a2dae2953eaa80976191e3012118adb0ff6b9d"
     },
     {
       "version": "3.9.2",
       "tag": "3.9.2-npm",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.2"
+      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.2",
+      "__hash": "b4037a3f2ec9e12fcd0172c164cba225964b70b8"
     },
     {
       "version": "3.9.3",
       "tag": "3.9.3-npm",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.3"
+      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.3",
+      "__hash": "edd06911cc72d5e11b0f45921e401ab8d5b8d64a"
     },
     {
       "version": "3.10.0",
       "tag": "3.10.0-npm",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.10.0"
+      "build": "rm package.json && npm install --prefix . lodash._getnative@3.10.0",
+      "__hash": "b57e47a3941196366cc61574541ebe0a8c8d3595"
     },
     {
       "version": "3.10.1",
       "tag": "3.10.1-npm",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.10.1"
+      "build": "rm package.json && npm install --prefix . lodash._getnative@3.10.1",
+      "__hash": "0519a2109b76222b319d1e30d253e711451cc789"
     }
   ]
 }

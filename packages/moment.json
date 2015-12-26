@@ -24,7 +24,8 @@
   "tags": [
     {
       "version": "2.10.6",
-      "umd2commonjs": false
+      "umd2commonjs": false,
+      "__hash": "a9ccda1472f4092357ba8b4293238f9e4b94ea89"
     }
   ]
 }

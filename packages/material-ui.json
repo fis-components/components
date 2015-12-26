@@ -27,11 +27,13 @@
   ],
   "tags": [
     {
-      "version": "v0.14.0-rc1"
+      "version": "v0.14.0-rc1",
+      "__hash": "081dca572ee014f22dcd380f8881ba5fc7d9f559"
     },
     {
       "version": "v0.13.4",
-      "build": "rm package.json && npm install --prefix . material-ui@0.13.4"
+      "build": "rm package.json && npm install --prefix . material-ui@0.13.4",
+      "__hash": "9baeb43ab7d0b343bed5fea0128558b1f5b964e3"
     }
   ]
 }

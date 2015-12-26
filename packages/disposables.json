@@ -25,11 +25,13 @@
   ],
   "tags": [
     {
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "__hash": "e8460fbf3d063ce77c217c19de5f230fbed873d8"
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . disposables@1.0.1"
+      "build": "rm package.json && npm install --prefix . disposables@1.0.1",
+      "__hash": "cb7f78a2d2716f3d6a688fb53ffefc5966ba370d"
     }
   ]
 }

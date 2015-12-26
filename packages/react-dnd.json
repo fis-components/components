@@ -31,15 +31,18 @@
   ],
   "tags": [
     {
-      "version": "2.0.0"
+      "version": "2.0.0",
+      "__hash": "8e0c9d05f9adacdefa07843f0219cc31315012d9"
     },
     {
       "version": "2.0.1",
-      "build": "rm package.json && npm install --prefix . react-dnd@2.0.1"
+      "build": "rm package.json && npm install --prefix . react-dnd@2.0.1",
+      "__hash": "bcd2bea278f19de9464da2fd23e545f441f2a871"
     },
     {
       "version": "2.0.2",
-      "build": "rm package.json && npm install --prefix . react-dnd@2.0.2"
+      "build": "rm package.json && npm install --prefix . react-dnd@2.0.2",
+      "__hash": "4d123eef2af891f1e389c8e084c185ddd65ffd45"
     }
   ]
 }

@@ -32,15 +32,18 @@
   ],
   "tags": [
     {
-      "version": "1.2.1"
+      "version": "1.2.1",
+      "__hash": "12df503d5a495b2e9e70950762882c1002d0406f"
     },
     {
       "version": "1.3.0",
-      "build": "rm package.json && npm install --prefix . rc-switch@1.3.0"
+      "build": "rm package.json && npm install --prefix . rc-switch@1.3.0",
+      "__hash": "47ffc4a6be6025b2c57f733aff9dd70bb936ead1"
     },
     {
       "version": "1.3.1",
-      "build": "rm package.json && npm install --prefix . rc-switch@1.3.1"
+      "build": "rm package.json && npm install --prefix . rc-switch@1.3.1",
+      "__hash": "8969d6ea9cf4de2cd1fcc4305802b9f734bcb2ab"
     }
   ]
 }

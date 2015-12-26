@@ -23,10 +23,12 @@
   },
   "tags": [
     {
-      "version": "v1.4.0"
+      "version": "v1.4.0",
+      "__hash": "de85f98aa05c4cd93a35580624e4b6ac205d229c"
     },
     {
-      "version": "v1.3.14"
+      "version": "v1.3.14",
+      "__hash": "382c1318fec1afa2ac88ed8529704e7816d36646"
     }
   ]
 }

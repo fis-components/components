@@ -26,14 +26,16 @@
   },
   "tags": [
     {
-      "version": "v0.14.3"
+      "version": "v0.14.3",
+      "__hash": "94bf0f66181f8d776e1c822b227e675001652003"
     },
     {
       "version": "v0.14.2",
       "dependencies": [
         "react@^0.14.2"
       ],
-      "build": "rm package.json && npm install --prefix . react-addons-update@0.14.2"
+      "build": "rm package.json && npm install --prefix . react-addons-update@0.14.2",
+      "__hash": "048b235150f03b15e5080e4f4bb6e11284171d37"
     }
   ]
 }

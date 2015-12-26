@@ -29,15 +29,18 @@
   ],
   "tags": [
     {
-      "version": "3.1.0"
+      "version": "3.1.0",
+      "__hash": "12d88b120f2e5be01e9e90a1225ae362213a34a1"
     },
     {
       "version": "3.1.1",
-      "build": "rm package.json && npm install --prefix . lodash.keys@3.1.1"
+      "build": "rm package.json && npm install --prefix . lodash.keys@3.1.1",
+      "__hash": "d027573c6cb0b7f0980586a97d0e5de177414dc8"
     },
     {
       "version": "3.1.2",
-      "build": "rm package.json && npm install --prefix . lodash.keys@3.1.2"
+      "build": "rm package.json && npm install --prefix . lodash.keys@3.1.2",
+      "__hash": "7a9eadf925c8fef398d9853c8a9d4a9cc77c739d"
     }
   ]
 }

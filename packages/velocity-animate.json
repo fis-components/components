@@ -27,15 +27,18 @@
   ],
   "tags": [
     {
-      "version": "1.2.1"
+      "version": "1.2.1",
+      "__hash": "12df503d5a495b2e9e70950762882c1002d0406f"
     },
     {
       "version": "1.2.2",
-      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.2"
+      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.2",
+      "__hash": "2ea192d85e2f556149ad5ec8ccfb1a7d94531069"
     },
     {
       "version": "1.2.3",
-      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.3"
+      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.3",
+      "__hash": "d2ab31df4ba6f3559af1f55c79366e8d56fbc4a8"
     }
   ]
 }

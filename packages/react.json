@@ -34,15 +34,18 @@
   "tags": [
     {
       "version": "v0.13.3",
-      "umd2commonjs": false
+      "umd2commonjs": false,
+      "__hash": "0681b5fd6062ccb119ad82cd00ce5115a65f2380"
     },
     {
       "version": "v0.14.2",
-      "build": "rm package.json && npm install --prefix . react@0.14.2"
+      "build": "rm package.json && npm install --prefix . react@0.14.2",
+      "__hash": "e7bba8179ea82983579beccf4d6b557cfcdb44a5"
     },
     {
       "version": "v0.14.3",
-      "build": "rm package.json && npm install --prefix . react@0.14.3"
+      "build": "rm package.json && npm install --prefix . react@0.14.3",
+      "__hash": "eec0614b189bf1d357e66bb86c17fb2eafdc4cc0"
     }
   ]
 }

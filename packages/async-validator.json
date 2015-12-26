@@ -25,15 +25,18 @@
   ],
   "tags": [
     {
-      "version": "1.3.4"
+      "version": "1.3.4",
+      "__hash": "480a11bcf98d86dcf9976bdaac761aaec5f01a0f"
     },
     {
       "version": "1.3.5",
-      "build": "rm package.json && npm install --prefix . async-validator@1.3.5"
+      "build": "rm package.json && npm install --prefix . async-validator@1.3.5",
+      "__hash": "bdde9c6415079b7caa970258451113eb42a580e2"
     },
     {
       "version": "1.3.7",
-      "build": "rm package.json && npm install --prefix . async-validator@1.3.7"
+      "build": "rm package.json && npm install --prefix . async-validator@1.3.7",
+      "__hash": "2d764e21fbbb66e52eb2d046c78997d4755b80fb"
     }
   ]
 }

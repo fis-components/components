@@ -5,6 +5,7 @@ const write = fs.writeFileSync;
 const deepEqual = require('deep-equal');
 const assign = require('object-assign');
 const semver = require('semver');
+var hash = require('object-hash');
 
 const modules = find('modules').filter(function(file) { 
   return file.match(/\.js$/);
@@ -37,6 +38,8 @@ modules.forEach(function(filename) {
     });
 
     delete clone.extend;
+
+    clone.__hash = hash(clone);
 
     return clone;
   })

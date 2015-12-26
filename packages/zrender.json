@@ -25,10 +25,12 @@
   ],
   "tags": [
     {
-      "version": "2.0.6"
+      "version": "2.0.6",
+      "__hash": "7a234e78a7988da94c380214ab3c6cccfb65a15a"
     },
     {
-      "version": "2.1.1"
+      "version": "2.1.1",
+      "__hash": "d0ccbb9070b215090d2bacedd605b0ca7911b089"
     }
   ]
 }

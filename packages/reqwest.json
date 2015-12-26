@@ -20,15 +20,18 @@
   ],
   "tags": [
     {
-      "version": "2.0.3"
+      "version": "2.0.3",
+      "__hash": "eb71d1b322101281332a4a1a924f9bcbf29dc3c8"
     },
     {
       "version": "2.0.4",
-      "build": "rm package.json && npm install --prefix . reqwest@2.0.4"
+      "build": "rm package.json && npm install --prefix . reqwest@2.0.4",
+      "__hash": "f731f64eb5a0716eb1d2499ce142c73d93b24202"
     },
     {
       "version": "2.0.5",
-      "build": "rm package.json && npm install --prefix . reqwest@2.0.5"
+      "build": "rm package.json && npm install --prefix . reqwest@2.0.5",
+      "__hash": "41c57cd21cba056d9304c5565cb9b2e790498a52"
     }
   ]
 }

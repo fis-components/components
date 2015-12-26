@@ -35,15 +35,18 @@
   ],
   "tags": [
     {
-      "version": "5.2.2"
+      "version": "5.2.2",
+      "__hash": "c7be27abbb5728e65ffcd540fef80f137c8280b8"
     },
     {
       "version": "5.3.0",
-      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.0"
+      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.0",
+      "__hash": "e876359053e99613193358461694e1c1dd60d31d"
     },
     {
       "version": "5.3.1",
-      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.1"
+      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.1",
+      "__hash": "bf05944706a38177f96241b21ccfd5ffd610b569"
     }
   ]
 }

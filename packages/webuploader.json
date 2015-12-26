@@ -34,11 +34,13 @@
   ],
   "tags": [
     {
-      "version": "0.1.5"
+      "version": "0.1.5",
+      "__hash": "24e940080ea45a595fe0f424a3fc396eed35ba84"
     },
     {
       "version": "0.1.6",
-      "tag": "master"
+      "tag": "master",
+      "__hash": "bcf6a2cc568ae3a72da3432a96f9f4b40dba8692"
     }
   ]
 }

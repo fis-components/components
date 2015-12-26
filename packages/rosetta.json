@@ -13,15 +13,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "__hash": "e8460fbf3d063ce77c217c19de5f230fbed873d8"
     },
     {
       "version": "1.0.1",
-      "tag": "1.0.1"
+      "tag": "1.0.1",
+      "__hash": "d7a356b674a8b69480e147f10d430471224099f2"
     },
     {
       "tag": "1.0.2",
-      "version": "1.0.2"
+      "version": "1.0.2",
+      "__hash": "df518ada285c4be2662f0c703dabb05dff859c25"
     }
   ]
 }

@@ -29,15 +29,18 @@
   ],
   "tags": [
     {
-      "version": "2.0.0"
+      "version": "2.0.0",
+      "__hash": "8e0c9d05f9adacdefa07843f0219cc31315012d9"
     },
     {
       "version": "2.1.0",
-      "build": "rm package.json && npm install --prefix . rc-align@2.1.0"
+      "build": "rm package.json && npm install --prefix . rc-align@2.1.0",
+      "__hash": "596ad77a88f824dcc261a3bef52337f32eebe7b4"
     },
     {
       "version": "2.2.0",
-      "build": "rm package.json && npm install --prefix . rc-align@2.2.0"
+      "build": "rm package.json && npm install --prefix . rc-align@2.2.0",
+      "__hash": "c73e3779ec79babca95e586b94498ad744b02eca"
     }
   ]
 }

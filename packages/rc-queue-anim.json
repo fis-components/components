@@ -32,15 +32,18 @@
   ],
   "tags": [
     {
-      "version": "0.11.0"
+      "version": "0.11.0",
+      "__hash": "e8ffc8ef50d42bb6cc76c4a45abba519d0ab5638"
     },
     {
       "version": "0.11.2",
-      "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.2"
+      "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.2",
+      "__hash": "8c81d959a446d9c14869707362f8aadd845f17b4"
     },
     {
       "version": "0.11.3",
-      "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.3"
+      "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.3",
+      "__hash": "fe0cae3daa9f0a45e3a0b408fa1b2e24ee98c1be"
     }
   ]
 }

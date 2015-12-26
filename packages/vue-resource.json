@@ -21,13 +21,16 @@
   ],
   "tags": [
     {
-      "version": "0.1.13"
+      "version": "0.1.13",
+      "__hash": "9aad221ab310aff585ea15f17504e3a61ac96d25"
     },
     {
-      "version": "0.1.15"
+      "version": "0.1.15",
+      "__hash": "87b5617a70e940304730cf4132828dfb27b784b3"
     },
     {
-      "version": "0.1.17"
+      "version": "0.1.17",
+      "__hash": "df897ff1423256252d029a34eb9022496df4ab76"
     }
   ]
 }

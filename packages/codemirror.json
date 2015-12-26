@@ -30,10 +30,12 @@
   ],
   "tags": [
     {
-      "version": "5.6.0"
+      "version": "5.6.0",
+      "__hash": "328a925fef5d9b52f12b4ec27e5a045731fae170"
     },
     {
-      "version": "5.9.0"
+      "version": "5.9.0",
+      "__hash": "9d2595222d67e40ac0807995f53a84b87c3110ca"
     }
   ]
 }

@@ -28,7 +28,8 @@
   ],
   "tags": [
     {
-      "version": "1.6.6"
+      "version": "1.6.6",
+      "__hash": "5bb9461cb7680447752b2ce4ade1e436696b773d"
     },
     {
       "version": "1.6.7-beta",
@@ -45,11 +46,13 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "4d9ecaad24f2c45873c5648db66ce5a958991ca1"
     },
     {
       "version": "1.7.0",
-      "build": "rm package.json && npm install --prefix . rc-upload@1.7.0"
+      "build": "rm package.json && npm install --prefix . rc-upload@1.7.0",
+      "__hash": "332c36d14fe543fccae2b07d4df84028ca4fa681"
     }
   ]
 }

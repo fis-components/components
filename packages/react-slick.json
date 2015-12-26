@@ -36,15 +36,18 @@
   ],
   "tags": [
     {
-      "version": "0.9.1"
+      "version": "0.9.1",
+      "__hash": "46724e00c57388a39b54b5e36700cf1b6f211321"
     },
     {
       "version": "0.9.2",
-      "build": "rm package.json && npm install --prefix . react-slick@0.9.2"
+      "build": "rm package.json && npm install --prefix . react-slick@0.9.2",
+      "__hash": "fd4bc15ea39aecf18f5a2650347599da82e53626"
     },
     {
       "version": "0.9.3",
-      "build": "rm package.json && npm install --prefix . react-slick@0.9.3"
+      "build": "rm package.json && npm install --prefix . react-slick@0.9.3",
+      "__hash": "fe16f09bd6bb5f57e4d6ada03b52082ace1f3924"
     }
   ]
 }

@@ -23,6 +23,7 @@
     "github": "0.2.3",
     "minimist": "^1.2.0",
     "object-assign": "^4.0.1",
+    "object-hash": "^1.0.0",
     "semver": "^5.1.0"
   },
   "devDependencies": {

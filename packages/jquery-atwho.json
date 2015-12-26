@@ -31,13 +31,16 @@
   },
   "tags": [
     {
-      "version": "v1.1.0"
+      "version": "v1.1.0",
+      "__hash": "ee070afdd0229832ac054d7ca45bf9290cd84a27"
     },
     {
-      "version": "v1.3.2"
+      "version": "v1.3.2",
+      "__hash": "f55989917bb6d23cb531e88180ad60682c31c922"
     },
     {
-      "version": "v1.4.0"
+      "version": "v1.4.0",
+      "__hash": "de85f98aa05c4cd93a35580624e4b6ac205d229c"
     }
   ]
 }

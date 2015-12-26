@@ -25,135 +25,168 @@
   ],
   "tags": [
     {
-      "version": "1.0.3"
+      "version": "1.0.3",
+      "__hash": "23c260fc8e6d0e90c1faa93f3342150b9b9de7b1"
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . underscore@1.0.4"
+      "build": "rm package.json && npm install --prefix . underscore@1.0.4",
+      "__hash": "c7cc718b5c82c4bf4d48c1a8575be8c0d9d49d5c"
     },
     {
       "version": "1.1.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.0",
+      "__hash": "f92e26720ccb82d763565ad7d35153da46b76eae"
     },
     {
       "version": "1.1.1",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.1"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.1",
+      "__hash": "5fc5c2520d87f9c64e28968c35ee841ae3cb46df"
     },
     {
       "version": "1.1.2",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.2"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.2",
+      "__hash": "bd085d2b99d08b75dc8219d5a02e95b3bb98c5af"
     },
     {
       "version": "1.1.3",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.3"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.3",
+      "__hash": "ea348e1bb3d086b383eafecc40a3664b3bfe39ad"
     },
     {
       "version": "1.1.4",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.4"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.4",
+      "__hash": "f5192b0c6f47bfebd2262125bf896088966ac643"
     },
     {
       "version": "1.1.5",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.5"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.5",
+      "__hash": "93d61c97f73d0dd67d2c17bf10e8f9a8cb800b4b"
     },
     {
       "version": "1.1.6",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.6"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.6",
+      "__hash": "33ce188665a106e9bd7c44a99513a4b8d7a97a94"
     },
     {
       "version": "1.1.7",
-      "build": "rm package.json && npm install --prefix . underscore@1.1.7"
+      "build": "rm package.json && npm install --prefix . underscore@1.1.7",
+      "__hash": "f8e601f4debfdfb8442215e1926e2d1363ee947f"
     },
     {
       "version": "1.2.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.2.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.2.0",
+      "__hash": "8b2d35524f749afe65bc00d1935d076d812373a6"
     },
     {
       "version": "1.2.1",
-      "build": "rm package.json && npm install --prefix . underscore@1.2.1"
+      "build": "rm package.json && npm install --prefix . underscore@1.2.1",
+      "__hash": "3050462b1a1232d0630668c2a00b7b633d0b9ffe"
     },
     {
       "version": "1.2.2",
-      "build": "rm package.json && npm install --prefix . underscore@1.2.2"
+      "build": "rm package.json && npm install --prefix . underscore@1.2.2",
+      "__hash": "61e6741a62701c61590eab8d8687f243f7bf33f9"
     },
     {
       "version": "1.2.3",
-      "build": "rm package.json && npm install --prefix . underscore@1.2.3"
+      "build": "rm package.json && npm install --prefix . underscore@1.2.3",
+      "__hash": "6a668a20d26f6105e654e9c0187b99eb9eedd032"
     },
     {
       "version": "1.2.4",
-      "build": "rm package.json && npm install --prefix . underscore@1.2.4"
+      "build": "rm package.json && npm install --prefix . underscore@1.2.4",
+      "__hash": "8aa3561a07926677ef52a09da1381075d00b9084"
     },
     {
       "version": "1.3.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.3.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.3.0",
+      "__hash": "5770a2e808bf961ccc3f14c7c8e24376c3a9ea80"
     },
     {
       "version": "1.3.1",
-      "build": "rm package.json && npm install --prefix . underscore@1.3.1"
+      "build": "rm package.json && npm install --prefix . underscore@1.3.1",
+      "__hash": "1fb7ab2f5f041c377870d94c051bfb51b9474b4d"
     },
     {
       "version": "1.3.2",
-      "build": "rm package.json && npm install --prefix . underscore@1.3.2"
+      "build": "rm package.json && npm install --prefix . underscore@1.3.2",
+      "__hash": "7441a3575243d912d95cc7928f5fbd7eaab21674"
     },
     {
       "version": "1.3.3",
-      "build": "rm package.json && npm install --prefix . underscore@1.3.3"
+      "build": "rm package.json && npm install --prefix . underscore@1.3.3",
+      "__hash": "376da4c3154624847ba2eefeac42d6af24d17da3"
     },
     {
       "version": "1.4.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.4.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.4.0",
+      "__hash": "2a5eb56061a14fca56d86700af1f5ae5c87b711d"
     },
     {
       "version": "1.4.1",
-      "build": "rm package.json && npm install --prefix . underscore@1.4.1"
+      "build": "rm package.json && npm install --prefix . underscore@1.4.1",
+      "__hash": "61cf1d8d4bc73e46eb4269f82bc9b3dffc3fba5c"
     },
     {
       "version": "1.4.2",
-      "build": "rm package.json && npm install --prefix . underscore@1.4.2"
+      "build": "rm package.json && npm install --prefix . underscore@1.4.2",
+      "__hash": "7bf31243f849b91f65ee759e5f741121cb5cd38b"
     },
     {
       "version": "1.4.3",
-      "build": "rm package.json && npm install --prefix . underscore@1.4.3"
+      "build": "rm package.json && npm install --prefix . underscore@1.4.3",
+      "__hash": "c20ee603c207ee29271cf7d1b40c7ee978bf9bff"
     },
     {
       "version": "1.4.4",
-      "build": "rm package.json && npm install --prefix . underscore@1.4.4"
+      "build": "rm package.json && npm install --prefix . underscore@1.4.4",
+      "__hash": "c0368c520b6ae75bef90d80af8e090d2458d2471"
     },
     {
       "version": "1.5.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.5.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.5.0",
+      "__hash": "0c13ef2af0229e52aff8c946bb70519490147aa9"
     },
     {
       "version": "1.5.1",
-      "build": "rm package.json && npm install --prefix . underscore@1.5.1"
+      "build": "rm package.json && npm install --prefix . underscore@1.5.1",
+      "__hash": "1e933024d55184d972cc46c2d6db80158a8309fc"
     },
     {
       "version": "1.5.2",
-      "build": "rm package.json && npm install --prefix . underscore@1.5.2"
+      "build": "rm package.json && npm install --prefix . underscore@1.5.2",
+      "__hash": "b5fbda789e5a6c91e69f34cdc753fc4c114b2c9a"
     },
     {
       "version": "1.6.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.6.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.6.0",
+      "__hash": "2912ea4cc855b45a2b26824a901a2f3d2562367b"
     },
     {
       "version": "1.7.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.7.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.7.0",
+      "__hash": "4161541413bee0cf59941334f4607a34038347aa"
     },
     {
       "version": "1.8.0",
-      "build": "rm package.json && npm install --prefix . underscore@1.8.0"
+      "build": "rm package.json && npm install --prefix . underscore@1.8.0",
+      "__hash": "cff543ed1a555fa827bf4310ed3ce7a9db5d3685"
     },
     {
       "version": "1.8.1",
-      "build": "rm package.json && npm install --prefix . underscore@1.8.1"
+      "build": "rm package.json && npm install --prefix . underscore@1.8.1",
+      "__hash": "2389d082af97ca2e162c5f77133f664c66e6be6a"
     },
     {
       "version": "1.8.2",
-      "build": "rm package.json && npm install --prefix . underscore@1.8.2"
+      "build": "rm package.json && npm install --prefix . underscore@1.8.2",
+      "__hash": "0e90446d4f95d21bbf2a6a770eafefeea24d5d7b"
     },
     {
       "version": "1.8.3",
-      "build": "rm package.json && npm install --prefix . underscore@1.8.3"
+      "build": "rm package.json && npm install --prefix . underscore@1.8.3",
+      "__hash": "6db2e50b9ee553231296bd792d92f209dd7b2a79"
     }
   ]
 }

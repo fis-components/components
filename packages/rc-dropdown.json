@@ -32,15 +32,18 @@
   ],
   "tags": [
     {
-      "version": "1.4.0"
+      "version": "1.4.0",
+      "__hash": "7e12038d4ca2dd3dd8903ad6a19e1510941c6c9b"
     },
     {
       "version": "1.4.2",
-      "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.2"
+      "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.2",
+      "__hash": "a7561b75c5c01ebe9fc01a518804704a101faf6d"
     },
     {
       "version": "1.4.3",
-      "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.3"
+      "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.3",
+      "__hash": "2d8891db3aaa484eb9d3aef0e2bf83c90d34e3c6"
     }
   ]
 }

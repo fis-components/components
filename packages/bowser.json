@@ -20,7 +20,8 @@
   "tags": [
     {
       "version": "v1.0.0",
-      "umd2commonjs": false
+      "umd2commonjs": false,
+      "__hash": "5dab44365c09bdda0ba749bc35340e38f44f4ca3"
     }
   ]
 }

@@ -30,15 +30,18 @@
   ],
   "tags": [
     {
-      "version": "1.2.0"
+      "version": "1.2.0",
+      "__hash": "bda3597b7901fde140eca42b3870ac069439d255"
     },
     {
       "version": "1.2.1",
-      "build": "rm package.json && npm install --prefix . dnd-core@1.2.1"
+      "build": "rm package.json && npm install --prefix . dnd-core@1.2.1",
+      "__hash": "e7ac8ec41a0d8ef2dbf074be27626f792995f20c"
     },
     {
       "version": "1.2.2",
-      "build": "rm package.json && npm install --prefix . dnd-core@1.2.2"
+      "build": "rm package.json && npm install --prefix . dnd-core@1.2.2",
+      "__hash": "aa08e214e44e2c05b37bc59158b03e8cebcdadc0"
     }
   ]
 }

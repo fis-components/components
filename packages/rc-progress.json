@@ -28,7 +28,8 @@
   ],
   "tags": [
     {
-      "version": "1.0.2"
+      "version": "1.0.2",
+      "__hash": "785d94c9ca7625202c6b87cca0f870f89987e14f"
     },
     {
       "version": "1.0.3",
@@ -53,7 +54,8 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "5b75b37d13297e9eed7ac8df16c830f86e67d8d6"
     },
     {
       "version": "1.0.4",
@@ -78,7 +80,8 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "e0573f7c3dab2a08803b56e56f08e7e01168a633"
     }
   ]
 }

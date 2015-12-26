@@ -20,7 +20,8 @@
   "tags": [
     {
       "version": "3.5.0",
-      "umd2commonjs": false
+      "umd2commonjs": false,
+      "__hash": "b56fadf3c1d7e7fb718ddb652a6be29d3bebce01"
     },
     {
       "description": "The modern build of lodash modular utilities.",
@@ -46,7 +47,8 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "0bee2994e533f13b0522fa2fdf1e4b8d4bec60d8"
     },
     {
       "description": "The modern build of lodash modular utilities.",
@@ -72,7 +74,8 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "5edba73afec16990657f2f5f3b4fc1884c2872fd"
     },
     {
       "description": "The modern build of lodash modular utilities.",
@@ -98,7 +101,8 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "f5b556b1b4de8d5591bf245b44d0b7d8e7bf5d85"
     }
   ]
 }

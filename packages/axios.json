@@ -26,15 +26,18 @@
   ],
   "tags": [
     {
-      "version": "v0.7.0"
+      "version": "v0.7.0",
+      "__hash": "a0081b77eb4e0c9f50b7ad121750bcf2973b81fd"
     },
     {
       "version": "v0.8.0",
-      "build": "rm package.json && npm install --prefix . axios@0.8.0"
+      "build": "rm package.json && npm install --prefix . axios@0.8.0",
+      "__hash": "ad3c097c27747100672a2386b35510f563cd7b34"
     },
     {
       "version": "v0.8.1",
-      "build": "rm package.json && npm install --prefix . axios@0.8.1"
+      "build": "rm package.json && npm install --prefix . axios@0.8.1",
+      "__hash": "9ae86a86faaf92f744b69e40cba93b8fd1550ffd"
     }
   ]
 }

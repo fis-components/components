@@ -29,15 +29,18 @@
   ],
   "tags": [
     {
-      "version": "3.0.1"
+      "version": "3.0.1",
+      "__hash": "3a656f31509b36a06aaaf57eae515e08fb2b6037"
     },
     {
       "version": "3.0.2",
-      "build": "rm package.json && npm install --prefix . normalize.css@3.0.2"
+      "build": "rm package.json && npm install --prefix . normalize.css@3.0.2",
+      "__hash": "50d1d06121d14d98ecdb3c532454d300116d2f2b"
     },
     {
       "version": "3.0.3",
-      "build": "rm package.json && npm install --prefix . normalize.css@3.0.3"
+      "build": "rm package.json && npm install --prefix . normalize.css@3.0.3",
+      "__hash": "a3500413bc882c2b033097a4f977ff933ce8e877"
     }
   ]
 }

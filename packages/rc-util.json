@@ -31,7 +31,8 @@
   ],
   "tags": [
     {
-      "version": "3.1.0"
+      "version": "3.1.0",
+      "__hash": "12d88b120f2e5be01e9e90a1225ae362213a34a1"
     },
     {
       "version": "3.1.1",
@@ -48,11 +49,13 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "36229876f3ff03423a03c8c015d47228ea4af003"
     },
     {
       "version": "3.1.2",
-      "build": "rm package.json && npm install --prefix . rc-util@3.1.2"
+      "build": "rm package.json && npm install --prefix . rc-util@3.1.2",
+      "__hash": "d46863efd874108263a63c27d355950d454aee37"
     }
   ]
 }

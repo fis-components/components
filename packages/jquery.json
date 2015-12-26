@@ -22,29 +22,37 @@
   ],
   "tags": [
     {
-      "version": "1.9.1"
+      "version": "1.9.1",
+      "__hash": "7eb77a7064175ff66f8a15f8e09b95bc44ab1b28"
     },
     {
-      "version": "1.11.3"
+      "version": "1.11.3",
+      "__hash": "19735aff7a97d19ea5c2c05c821192ccc34079a5"
     },
     {
-      "version": "1.11.2"
+      "version": "1.11.2",
+      "__hash": "e57f1127beb6633f27272b7b7f6fedc3bab6574a"
     },
     {
       "version": "2.1.0",
-      "build": null
+      "build": null,
+      "__hash": "16dd3562f77d3b2689020a7041c68f0a9532ae00"
     },
     {
-      "version": "2.1.1"
+      "version": "2.1.1",
+      "__hash": "d0ccbb9070b215090d2bacedd605b0ca7911b089"
     },
     {
-      "version": "2.1.2"
+      "version": "2.1.2",
+      "__hash": "8aa66c3b26890c8a44d3a35eefc73b44d1223ebb"
     },
     {
-      "version": "2.1.3"
+      "version": "2.1.3",
+      "__hash": "83fcb3914af473edabc31b4cccc0b32fa183393b"
     },
     {
-      "version": "2.1.4"
+      "version": "2.1.4",
+      "__hash": "61dfe3453c374981258869a868ed5c3603ca51bf"
     }
   ]
 }

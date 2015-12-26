@@ -32,15 +32,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.3"
+      "version": "1.0.3",
+      "__hash": "23c260fc8e6d0e90c1faa93f3342150b9b9de7b1"
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . rc-radio@1.0.4"
+      "build": "rm package.json && npm install --prefix . rc-radio@1.0.4",
+      "__hash": "5013b65955255480c8e6ad77b48327033ae52055"
     },
     {
       "version": "2.0.0",
-      "build": "rm package.json && npm install --prefix . rc-radio@2.0.0"
+      "build": "rm package.json && npm install --prefix . rc-radio@2.0.0",
+      "__hash": "943529abb1ed27395318cd4838cab3c00ab0bbc4"
     }
   ]
 }

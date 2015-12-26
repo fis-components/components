@@ -32,11 +32,13 @@
   ],
   "tags": [
     {
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "__hash": "e8460fbf3d063ce77c217c19de5f230fbed873d8"
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.0.1"
+      "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.0.1",
+      "__hash": "a8fb65afc173d0c6da30a624be1b2011a9464368"
     }
   ]
 }

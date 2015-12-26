@@ -34,83 +34,103 @@
   ],
   "tags": [
     {
-      "version": "0.9.5"
+      "version": "0.9.5",
+      "__hash": "3b965d4d4dfc63e849a2b3c173f8fcb60a358ab8"
     },
     {
       "version": "0.10.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.10.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.10.0",
+      "__hash": "936852d1e48c1acfffdf5406978ccaecf4086b8d"
     },
     {
       "version": "0.11.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.11.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.11.0",
+      "__hash": "523d2754fe6061f3924585360b9c6bff9ed5d211"
     },
     {
       "version": "0.12.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.12.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.12.1",
+      "__hash": "f3ce278380c089badee702d8fd51e867f1facdac"
     },
     {
       "version": "0.13.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.13.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.13.0",
+      "__hash": "82feaac7da48c7aafe1e78e418801b840fc9146f"
     },
     {
       "version": "0.13.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.13.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.13.1",
+      "__hash": "2ff94de59e613e57ef268f07398eae7e9b670ee6"
     },
     {
       "version": "0.14.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.14.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.14.0",
+      "__hash": "99af8009e1636030151b41ef6e552fbb01bb6624"
     },
     {
       "version": "0.14.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.14.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.14.1",
+      "__hash": "3f646f938dff41aec73a77fb4d4ff867c61b4a66"
     },
     {
       "version": "0.14.2",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.14.2"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.14.2",
+      "__hash": "478b2654a1ef4c639d9a21aba8d15b783492fe94"
     },
     {
       "version": "0.14.3",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.14.3"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.14.3",
+      "__hash": "e834d3f56cd6897b8cdf9be00441610aeab2d5e1"
     },
     {
       "version": "0.14.4",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.14.4"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.14.4",
+      "__hash": "c7d1825eb425c7e81e8f2a0d73b4149a56521488"
     },
     {
       "version": "0.15.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.15.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.15.0",
+      "__hash": "04853823746363b82cb5de38945a206bc8d1b9b1"
     },
     {
       "version": "0.15.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.15.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.15.1",
+      "__hash": "4ef7f9ca6323e7d8fcb84d3cf789ebe1f40d169c"
     },
     {
       "version": "0.15.2",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.15.2"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.15.2",
+      "__hash": "8465ead94a9a4c5da5544c9236246e96c2189579"
     },
     {
       "version": "0.15.3",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.15.3"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.15.3",
+      "__hash": "301fac426f78034be279c7fe0bb08fbfa8c4d82f"
     },
     {
       "version": "0.15.4",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.15.4"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.15.4",
+      "__hash": "1688f0bd4f6e5b1a07983bea00e254c1eecffa51"
     },
     {
       "version": "0.16.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.16.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.16.0",
+      "__hash": "ac9ab7f12f4131702d07d4d5117ed66ba0e942ce"
     },
     {
       "version": "0.16.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.16.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.16.1",
+      "__hash": "3b03d20b35208c226fc79e28c2e3543dc528350d"
     },
     {
       "version": "0.16.2",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.16.2"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.16.2",
+      "__hash": "a6ef935aec2bbe63abc472d0b80961fef229e50a"
     },
     {
       "version": "0.17.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.17.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.17.0",
+      "__hash": "49f6b8ac5294304f0112c5c7283d0951bb16cf98"
     },
     {
       "version": "0.17.1",
@@ -127,43 +147,53 @@
         {
           "release": false
         }
-      ]
+      ],
+      "__hash": "f3fd3a9dcd84e765762457669e996dade29c255e"
     },
     {
       "version": "0.18.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.18.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.18.0",
+      "__hash": "62ecd6a4ee96dd5a1a411519d3cc429c869eaef1"
     },
     {
       "version": "0.18.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.18.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.18.1",
+      "__hash": "8166af396512375aee8650992083dd83224d5bfb"
     },
     {
       "version": "0.19.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.19.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.19.0",
+      "__hash": "f7520149c78afef19595fc2ee8236d4b11367523"
     },
     {
       "version": "0.19.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.19.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.19.1",
+      "__hash": "af36e8428f1d4827aba455afadc0f7a5199a2feb"
     },
     {
       "version": "0.20.0",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.20.0"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.20.0",
+      "__hash": "2757c7e4ad7963ad59051b861ffca1b2e78e133a"
     },
     {
       "version": "0.20.1",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.20.1"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.20.1",
+      "__hash": "8dc8392efc558dd5e36b6f022418601f07aec4a0"
     },
     {
       "version": "0.20.2",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.20.2"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.20.2",
+      "__hash": "72db51d9f27b4b7888ef5b7705039b17f2bfe4b3"
     },
     {
       "version": "0.20.3",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.20.3"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.20.3",
+      "__hash": "51a9fd3c000c073834fcb4724d87c7682dc9cda4"
     },
     {
       "version": "0.20.4",
-      "build": "rm package.json && npm install --prefix . rc-tree@0.20.4"
+      "build": "rm package.json && npm install --prefix . rc-tree@0.20.4",
+      "__hash": "6a127da7ab63f33da65cdd04a32e3725e4a70cc6"
     }
   ]
 }

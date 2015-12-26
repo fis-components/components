@@ -28,15 +28,18 @@
   ],
   "tags": [
     {
-      "version": "1.5.7"
+      "version": "1.5.7",
+      "__hash": "8fab077bc00b3209f1d4454efc6e7a792b480fc4"
     },
     {
       "version": "1.5.8",
-      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.8"
+      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.8",
+      "__hash": "c8e21378bfe59d7b890869a5572863dabe85ac16"
     },
     {
       "version": "1.5.9",
-      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.9"
+      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.9",
+      "__hash": "ab96bf568bc3e526b9e7f490362e07c7511339bd"
     }
   ]
 }

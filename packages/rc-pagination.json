@@ -29,15 +29,18 @@
   ],
   "tags": [
     {
-      "version": "1.3.4-beta"
+      "version": "1.3.4-beta",
+      "__hash": "47a10b61279dffc84919af3df8609c120f7e0f13"
     },
     {
       "version": "1.3.4",
-      "build": "rm package.json && npm install --prefix . rc-pagination@1.3.4"
+      "build": "rm package.json && npm install --prefix . rc-pagination@1.3.4",
+      "__hash": "98bb353c7109ab6ce87065fab779d3813f9e87bb"
     },
     {
       "version": "1.3.5",
-      "build": "rm package.json && npm install --prefix . rc-pagination@1.3.5"
+      "build": "rm package.json && npm install --prefix . rc-pagination@1.3.5",
+      "__hash": "43cca1cb70679916e62656ed4b7d052a456b5b6d"
     }
   ]
 }

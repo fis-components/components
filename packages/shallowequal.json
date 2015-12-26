@@ -28,15 +28,18 @@
   ],
   "tags": [
     {
-      "version": "0.2.0"
+      "version": "0.2.0",
+      "__hash": "02b5f208640acd125d9754d3dccc1b20ec57590a"
     },
     {
       "version": "0.2.1",
-      "build": "rm package.json && npm install --prefix . shallowequal@0.2.1"
+      "build": "rm package.json && npm install --prefix . shallowequal@0.2.1",
+      "__hash": "7010ab19a7e3be036a910b37c26f9075230ae3c4"
     },
     {
       "version": "0.2.2",
-      "build": "rm package.json && npm install --prefix . shallowequal@0.2.2"
+      "build": "rm package.json && npm install --prefix . shallowequal@0.2.2",
+      "__hash": "6e579ad1538ca67c74a8d1ea6cdd938995a3621a"
     }
   ]
 }

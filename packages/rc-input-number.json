@@ -32,15 +32,18 @@
   ],
   "tags": [
     {
-      "version": "2.4.0"
+      "version": "2.4.0",
+      "__hash": "2399f5586c587d5c1bdb39fa813e10aae73e9985"
     },
     {
       "version": "2.4.1",
-      "build": "rm package.json && npm install --prefix . rc-input-number@2.4.1"
+      "build": "rm package.json && npm install --prefix . rc-input-number@2.4.1",
+      "__hash": "d1d7ad84fb194ab88ac09aeebe8a709a35b12db6"
     },
     {
       "version": "2.4.2",
-      "build": "rm package.json && npm install --prefix . rc-input-number@2.4.2"
+      "build": "rm package.json && npm install --prefix . rc-input-number@2.4.2",
+      "__hash": "d9171b7a8e2b702d74ded56d93ef54b8f7b1d263"
     }
   ]
 }

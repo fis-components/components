@@ -50,10 +50,10 @@ files = finder(__dirname, files)
         return i.relative;
     })
     .filter(function(p) {
-        if (p.indexOf('modules') == -1) {
+        if (p.indexOf('modules') == -1 || p.indexOf('packages') == -1) {
             return false;
         }
-        return /\.js$/.test(p);
+        return /\.js(?:so)?$/.test(p);
     });
 
 files.forEach(function(name) {

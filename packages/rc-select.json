@@ -36,15 +36,18 @@
   ],
   "tags": [
     {
-      "version": "5.3.0"
+      "version": "5.3.0",
+      "__hash": "41914b9550906e98ec7a9b7880ffd89fb7e06a91"
     },
     {
       "version": "5.3.1",
-      "build": "rm package.json && npm install --prefix . rc-select@5.3.1"
+      "build": "rm package.json && npm install --prefix . rc-select@5.3.1",
+      "__hash": "2aae0078feb9bf1f5f5e9e7c34552142be29bee6"
     },
     {
       "version": "5.4.0",
-      "build": "rm package.json && npm install --prefix . rc-select@5.4.0"
+      "build": "rm package.json && npm install --prefix . rc-select@5.4.0",
+      "__hash": "552e4c6cffc2883b669160ccf7c043759e6f59e7"
     }
   ]
 }

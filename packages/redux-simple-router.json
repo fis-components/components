@@ -23,23 +23,28 @@
   ],
   "tags": [
     {
-      "version": "0.0.8"
+      "version": "0.0.8",
+      "__hash": "22a3837dd23a4f79003785d4c45ac9b648468f41"
     },
     {
       "version": "0.0.10",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.10"
+      "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.10",
+      "__hash": "b7bd24a9111d90c1589979a52b2c6b78579369d3"
     },
     {
       "version": "1.0.0",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.0"
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.0",
+      "__hash": "8d76466d0c9d9bc8750829e9224d1f56c1d7ef45"
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1"
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1",
+      "__hash": "7b7c3e3aab2114c411f5357386eaea38f179ca3b"
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2"
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2",
+      "__hash": "79f5a6d9faf2d9cdff88aa1c787059208621c064"
     }
   ]
 }
