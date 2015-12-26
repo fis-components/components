@@ -34,17 +34,17 @@
   "tags": [
     {
       "version": "0.11.0",
-      "__hash": "e8ffc8ef50d42bb6cc76c4a45abba519d0ab5638"
+      "__hash": "d94123e14cbcee2cc4c8fb53a95b07ebfdc111b8"
     },
     {
       "version": "0.11.2",
       "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.2",
-      "__hash": "8c81d959a446d9c14869707362f8aadd845f17b4"
+      "__hash": "f146f6d17a980da1412611104b7e05401339bd48"
     },
     {
       "version": "0.11.3",
       "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.3",
-      "__hash": "fe0cae3daa9f0a45e3a0b408fa1b2e24ee98c1be"
+      "__hash": "ba653a170e636ed1206594446119509a4addd5a8"
     }
   ]
 }

@@ -21,12 +21,12 @@
   "tags": [
     {
       "version": "2.0.0-alpha.45",
-      "__hash": "273ffd9d6cf610e3a05e753d84f13facba7ce880"
+      "__hash": "de8d38d8d91b6d066cd5163dd9551863b6615f7e"
     },
     {
       "version": "2.0.0-alpha.46",
       "build": "rm package.json && npm install --prefix . angular2@2.0.0-alpha.46",
-      "__hash": "67b1f4b34dcf3aa0d79b6571b41af6941f6d49fa"
+      "__hash": "43ab9b730f17e86e91eaf6c6377326a024dbdc51"
     }
   ]
 }

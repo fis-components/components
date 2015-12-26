@@ -34,17 +34,17 @@
   "tags": [
     {
       "version": "2.4.0",
-      "__hash": "2399f5586c587d5c1bdb39fa813e10aae73e9985"
+      "__hash": "b351fd1f7e07173fa3f79cca6bb8110842ad04c5"
     },
     {
       "version": "2.4.1",
       "build": "rm package.json && npm install --prefix . rc-input-number@2.4.1",
-      "__hash": "d1d7ad84fb194ab88ac09aeebe8a709a35b12db6"
+      "__hash": "31c17407438a1476c03ca521ed2dc04454d4387f"
     },
     {
       "version": "2.4.2",
       "build": "rm package.json && npm install --prefix . rc-input-number@2.4.2",
-      "__hash": "d9171b7a8e2b702d74ded56d93ef54b8f7b1d263"
+      "__hash": "7593f5656938d6879500b341761bf1e9b40d2bee"
     }
   ]
 }

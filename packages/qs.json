@@ -23,23 +23,23 @@
   "tags": [
     {
       "version": "v6.0.0",
-      "__hash": "196b9aa3f44060284f4a7c810b35eb9fbc1b0ebd"
+      "__hash": "1e5ae5ff5ffe478ca572aa9524fc3d4e21f11263"
     },
     {
       "version": "v5.2.0",
-      "__hash": "5fe6c07cd17771ea9382ae9dcf23054ab75d8445"
+      "__hash": "85067e3700a252554df30ae6e9e74887e67ec4ac"
     },
     {
       "version": "v5.1.0",
-      "__hash": "17e75bc7da0583e3b9a2ad0600539a87a28e40f4"
+      "__hash": "7849137e924316b2fb62bd20b6dd925f5986c276"
     },
     {
       "version": "v5.0.0",
-      "__hash": "8b69615e0b6428f46c403227367ccfa5ae5f5d6b"
+      "__hash": "1ef640c9c7e8175b9a9b30132d9a2a836b034343"
     },
     {
       "version": "v4.0.0",
-      "__hash": "a7fc4f05845a4f6535514a49d14350940b603aa6"
+      "__hash": "01661a3af3ceeddfa4a021ac87a7d8f70f26acc6"
     }
   ]
 }

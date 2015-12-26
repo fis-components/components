@@ -30,17 +30,17 @@
   "tags": [
     {
       "version": "1.5.7",
-      "__hash": "8fab077bc00b3209f1d4454efc6e7a792b480fc4"
+      "__hash": "00254bea0fb21adb61e720af9edb14099ec13c8a"
     },
     {
       "version": "1.5.8",
       "build": "rm package.json && npm install --prefix . slick-carousel@1.5.8",
-      "__hash": "c8e21378bfe59d7b890869a5572863dabe85ac16"
+      "__hash": "3745e42462b26388bd7b6426017b5c4b863b74c5"
     },
     {
       "version": "1.5.9",
       "build": "rm package.json && npm install --prefix . slick-carousel@1.5.9",
-      "__hash": "ab96bf568bc3e526b9e7f490362e07c7511339bd"
+      "__hash": "76641e2114a5720d887356c664f0c08acde8b850"
     }
   ]
 }

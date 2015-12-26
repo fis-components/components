@@ -31,17 +31,17 @@
   "tags": [
     {
       "version": "0.0.11",
-      "__hash": "2d39111119065412ff0bc80330e3d2453352ca8c"
+      "__hash": "80c0a4d1cf649546cb8b20b0c449ea74a3264afc"
     },
     {
       "version": "4.1.10",
       "build": "rm package.json && npm install --prefix . highcharts@4.1.10",
-      "__hash": "4635404e4dd49cf1c4739586ac07742c1514ec1c"
+      "__hash": "a8240c0c34f4df794f6a22f60c18668aa53f1cbd"
     },
     {
       "version": "4.2.0",
       "build": "rm package.json && npm install --prefix . highcharts@4.2.0",
-      "__hash": "021df13528fed2505f1f11276c9a60f46ec7de85"
+      "__hash": "8fd1e2cdbfb3f6492cc93c65f1fcd5f62b3079e2"
     }
   ]
 }

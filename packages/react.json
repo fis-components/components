@@ -36,19 +36,19 @@
     {
       "version": "v0.13.3",
       "umd2commonjs": false,
-      "__hash": "0681b5fd6062ccb119ad82cd00ce5115a65f2380"
+      "__hash": "c50da27f48817f3c4ce47703d8e56c1f28ddb8cc"
     },
     {
       "version": "v0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
       "umd2commonjs": false,
-      "__hash": "bee21895e53a5420b7c3193cf423e1784742f56e"
+      "__hash": "cdfd57d22b56ce9aee8ef6631563e460d13d39ab"
     },
     {
       "version": "v0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
       "umd2commonjs": false,
-      "__hash": "b5a8e5758190076b3557e4299fa8c244d12f2650"
+      "__hash": "25986e7a6423beefa32353c78ee0bb3ea65fee30"
     }
   ]
 }

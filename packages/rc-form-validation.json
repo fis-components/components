@@ -32,17 +32,17 @@
   "tags": [
     {
       "version": "2.4.15",
-      "__hash": "5b55c4de16a183a876c4e2f2b138a10f6fdd9574"
+      "__hash": "031ae081ad97217c50e334f3ef59033cb682325e"
     },
     {
       "version": "2.4.16",
       "build": "rm package.json && npm install --prefix . rc-form-validation@2.4.16",
-      "__hash": "0b564194f0e4ec8284698504d66f736cae4359e9"
+      "__hash": "1d26b78666c61c29c2daa00426d23076683ace6e"
     },
     {
       "version": "2.5.0",
       "build": "rm package.json && npm install --prefix . rc-form-validation@2.5.0",
-      "__hash": "c8d944e8cc4d57d01eb834637a4729477c2ee91f"
+      "__hash": "79b531479b9b5d1dedd02c62f978d1eaad674521"
     }
   ]
 }

@@ -15,17 +15,17 @@
   "tags": [
     {
       "version": "1.0.0",
-      "__hash": "e8460fbf3d063ce77c217c19de5f230fbed873d8"
+      "__hash": "7feedf2c8c412f4664dd83cb313000cffbf955e4"
     },
     {
       "version": "1.0.1",
       "tag": "1.0.1",
-      "__hash": "d7a356b674a8b69480e147f10d430471224099f2"
+      "__hash": "1bcbd47a5c41f13a40551e7b7e1e567121d48eed"
     },
     {
       "tag": "1.0.2",
       "version": "1.0.2",
-      "__hash": "df518ada285c4be2662f0c703dabb05dff859c25"
+      "__hash": "a7c5c8553f31b85d8f4949f2185494e5156af9c8"
     }
   ]
 }

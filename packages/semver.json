@@ -27,17 +27,17 @@
   "tags": [
     {
       "version": "5.0.2",
-      "__hash": "74b9cc8e2aa5067a7f34316375c566c2abaf4ea1"
+      "__hash": "2c8a90551beba3caaf6c50873c206125b23c9318"
     },
     {
       "version": "5.0.3",
       "build": "rm package.json && npm install --prefix . semver@5.0.3",
-      "__hash": "70b4467c379d331bd91d016960dea7077569c56b"
+      "__hash": "408d513e1fe8829b7eb170d7505c1f0dc4de9ddf"
     },
     {
       "version": "5.1.0",
       "build": "rm package.json && npm install --prefix . semver@5.1.0",
-      "__hash": "962c994ac291a88163af0adc9ce29e3046f6c9b7"
+      "__hash": "6580d398341501aa87e62accbd852e8598ae06c5"
     }
   ]
 }

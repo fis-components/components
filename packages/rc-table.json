@@ -31,17 +31,17 @@
   "tags": [
     {
       "version": "3.6.0",
-      "__hash": "520fe97a3aea10062a20387dbecfafa71efc272b"
+      "__hash": "1cf172a7450f7cf13cbaa4b942e5ae2665c216a0"
     },
     {
       "version": "3.6.1",
       "build": "rm package.json && npm install --prefix . rc-table@3.6.1",
-      "__hash": "b8513d790fe717be086a8c3381cce62e559387fa"
+      "__hash": "2c0ebc65d55d3545bb9a047125b512629f3a60da"
     },
     {
       "version": "3.6.2",
       "build": "rm package.json && npm install --prefix . rc-table@3.6.2",
-      "__hash": "c906e8d59953420e4f2f8418f62af75f7d7231be"
+      "__hash": "3d3a5a966887a5e73c9919b4d7fdff5120f2b24f"
     }
   ]
 }

@@ -26,77 +26,77 @@
   "tags": [
     {
       "version": "0.1.0",
-      "__hash": "f868a117d5de77314ec1f191e4c66ebf2e1a0e4a"
+      "__hash": "2c4c527e362eb1a1fa0fc47fdd9cf974cc395011"
     },
     {
       "version": "0.1.1",
       "build": "rm package.json && npm install --prefix . object-assign@0.1.1",
-      "__hash": "6640d8925bd3845126fb924eea5e37f2b5aad9a4"
+      "__hash": "31906f891d8170a4196867d722d64969c971978d"
     },
     {
       "version": "0.1.2",
       "build": "rm package.json && npm install --prefix . object-assign@0.1.2",
-      "__hash": "a2870c22eb10930ac2e32f7e365592da81a28ded"
+      "__hash": "9d62b254708c3633b6071afa8f01ccdeda52ea51"
     },
     {
       "version": "0.2.0",
       "build": "rm package.json && npm install --prefix . object-assign@0.2.0",
-      "__hash": "82d2fee76aa0e2f621628d51843f92330c205021"
+      "__hash": "6de5523e7fab04dbf0a71639ea1552077fc5ab6b"
     },
     {
       "version": "0.2.1",
       "build": "rm package.json && npm install --prefix . object-assign@0.2.1",
-      "__hash": "9dbce8b8a6a88f964e2eb939af33133c704227a6"
+      "__hash": "59acdc234d0853f5976cf7b8de710087f8f5f41a"
     },
     {
       "version": "0.2.2",
       "build": "rm package.json && npm install --prefix . object-assign@0.2.2",
-      "__hash": "12aaa9eb6f6c42c4361c116a5b7630e03ffbc03e"
+      "__hash": "097fb43854c2afa76edf6d844e2a18ab79867957"
     },
     {
       "version": "0.3.0",
       "build": "rm package.json && npm install --prefix . object-assign@0.3.0",
-      "__hash": "46935046fbbf671452e407522ffd3198a0110c36"
+      "__hash": "a2ca428456c83db2b72af6f2162501e1f533549a"
     },
     {
       "version": "0.3.1",
       "build": "rm package.json && npm install --prefix . object-assign@0.3.1",
-      "__hash": "1362a62f5ac8b71ccea128b52465d9bdae05edd1"
+      "__hash": "d2091704602b1ae7f16793db058e2a36607e251f"
     },
     {
       "version": "0.4.0",
       "build": "rm package.json && npm install --prefix . object-assign@0.4.0",
-      "__hash": "3cb518f840fe71189a976ec7b54587c1e63d6748"
+      "__hash": "f96e791c47f7a2cef03d72ee7798c3cacd803d59"
     },
     {
       "version": "1.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@1.0.0",
-      "__hash": "2ee6611db18cd5f118d6fd7b15ede0ebe1e8a07f"
+      "__hash": "18a53ced81a50f9153714f11e96f9f35c6036617"
     },
     {
       "version": "2.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@2.0.0",
-      "__hash": "44cee00d459555e3443867c4b9fe92030bd2e4d3"
+      "__hash": "34727eca77e794b769ab9af32d8edc52fa7230e3"
     },
     {
       "version": "2.1.1",
       "build": "rm package.json && npm install --prefix . object-assign@2.1.1",
-      "__hash": "8f387591a86544f397f2517dc5f2f60dcff987d3"
+      "__hash": "e1fe5a58dd41374b4067906d843962afcd201cef"
     },
     {
       "version": "3.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@3.0.0",
-      "__hash": "b016e606a4c071211937e3a3b868d7b65e3cb43d"
+      "__hash": "d3c782bb1e4709f7b87cc27178c3d858d8c949a5"
     },
     {
       "version": "4.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.0",
-      "__hash": "aa763d97d4c08bb2dbf41cf5fab78b55667b984f"
+      "__hash": "073653bd002d356fb1201fe385e78856cf52a4d5"
     },
     {
       "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.1",
-      "__hash": "24976f06fa92df5cf6ef6d1c517ec4a21d8093dc"
+      "__hash": "0c4bb82815ef52254ec1d89fbe9500844fb9589e"
     }
   ]
 }

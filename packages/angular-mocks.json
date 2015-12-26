@@ -30,14 +30,14 @@
   "tags": [
     {
       "version": "v1.4.0",
-      "__hash": "de85f98aa05c4cd93a35580624e4b6ac205d229c"
+      "__hash": "59e6f1e7f9e4212c7c76801f55f3ff8589801093"
     },
     {
       "version": "v1.3.14",
       "dependencies": [
         "angular@~1.3.14"
       ],
-      "__hash": "94abca6da428cdba94ee82f437b7d48e26be97a4"
+      "__hash": "349d00f43450a0a53e85612e0ec3667ecc5e6cd1"
     }
   ]
 }

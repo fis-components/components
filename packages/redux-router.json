@@ -28,12 +28,12 @@
   "tags": [
     {
       "version": "v1.0.0-beta4",
-      "__hash": "f8a4bc8c4bf94a42ed30125366bc2469e8410ab1"
+      "__hash": "ddf2f3d1d873b141d813489fcbc735e5942b98ca"
     },
     {
       "version": "v1.0.0-beta5",
       "build": "rm package.json && npm install --prefix . redux-router@1.0.0-beta5",
-      "__hash": "6618ed1fada3839eed94bfe4682b8ddcc02c4efb"
+      "__hash": "d701ec0dd43374bcd4837d9001ca15a3f1e0c9b2"
     }
   ]
 }

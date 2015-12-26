@@ -31,17 +31,17 @@
   "tags": [
     {
       "version": "3.0.1",
-      "__hash": "3a656f31509b36a06aaaf57eae515e08fb2b6037"
+      "__hash": "839f2b1c5174d878753df60fedb3341b113b4cc9"
     },
     {
       "version": "3.0.2",
       "build": "rm package.json && npm install --prefix . normalize.css@3.0.2",
-      "__hash": "50d1d06121d14d98ecdb3c532454d300116d2f2b"
+      "__hash": "ea022bd945abaec04e331ddcc16967e491f8ddc3"
     },
     {
       "version": "3.0.3",
       "build": "rm package.json && npm install --prefix . normalize.css@3.0.3",
-      "__hash": "a3500413bc882c2b033097a4f977ff933ce8e877"
+      "__hash": "9027dab15d3ae3d7e30054db8879b8202e1b8bf2"
     }
   ]
 }

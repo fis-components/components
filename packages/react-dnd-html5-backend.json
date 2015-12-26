@@ -30,12 +30,12 @@
   "tags": [
     {
       "version": "1.0.0",
-      "__hash": "e8460fbf3d063ce77c217c19de5f230fbed873d8"
+      "__hash": "6906512ef3549f21e7fecf0482c4f2c366fb33e2"
     },
     {
       "version": "2.0.0",
       "build": "rm package.json && npm install --prefix . react-dnd-html5-backend@2.0.0",
-      "__hash": "351542a835eb1983e30ecf2b58628f5ec48e4b07"
+      "__hash": "fce2c737047bc80ddbd15c779c0c4d1e015ca0d1"
     }
   ]
 }

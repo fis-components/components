@@ -70,17 +70,17 @@
   "tags": [
     {
       "version": "0.10.3",
-      "__hash": "0f7ced08c3ffab9e66ea4d000b75a2014771ccfe"
+      "__hash": "d624702037ade88e79b497adb8f070ca67968c32"
     },
     {
       "version": "0.10.4",
       "build": "rm package.json && npm install --prefix . antd@0.10.4",
-      "__hash": "f6dd08d5142b28bc72239fa707623b6dc5aa6d7a"
+      "__hash": "409f2666ce4a6900593271ff6ae452326b6d3e9b"
     },
     {
       "version": "0.11.0-beta1",
       "build": "rm package.json && npm install --prefix . antd@0.11.0-beta1",
-      "__hash": "d7aee2db9aea0878f13677154b856b17b5e8257e"
+      "__hash": "e8c7ecfc2cd8341c59507fc8f127040af53ac70c"
     }
   ]
 }

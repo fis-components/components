@@ -33,7 +33,7 @@
   "tags": [
     {
       "version": "3.1.0",
-      "__hash": "12d88b120f2e5be01e9e90a1225ae362213a34a1"
+      "__hash": "27d3e2e4ff20fff883c74365b3c9fc029ffce84b"
     },
     {
       "version": "3.1.1",
@@ -52,12 +52,12 @@
           "release": false
         }
       ],
-      "__hash": "abc5dc791ef349896b7fe58421bfc8390b3eb23e"
+      "__hash": "ffa290faa26fd2cd138cce25f75b21bf91ac68a0"
     },
     {
       "version": "3.1.2",
       "build": "rm package.json && npm install --prefix . rc-util@3.1.2",
-      "__hash": "d46863efd874108263a63c27d355950d454aee37"
+      "__hash": "df5d3ace86b62bb8cc608a687b9bbc33b3fd2ac3"
     }
   ]
 }

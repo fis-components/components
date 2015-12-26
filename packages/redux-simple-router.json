@@ -25,27 +25,27 @@
   "tags": [
     {
       "version": "0.0.8",
-      "__hash": "22a3837dd23a4f79003785d4c45ac9b648468f41"
+      "__hash": "c1cd95d54519cff3a7092a90ad8b99bf8cc59939"
     },
     {
       "version": "0.0.10",
       "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.10",
-      "__hash": "b7bd24a9111d90c1589979a52b2c6b78579369d3"
+      "__hash": "2e90afe834c548172d30f84710559ebff1e76f7b"
     },
     {
       "version": "1.0.0",
       "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.0",
-      "__hash": "8d76466d0c9d9bc8750829e9224d1f56c1d7ef45"
+      "__hash": "765b321c387e56197cd5786071a9228affb62cd6"
     },
     {
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1",
-      "__hash": "7b7c3e3aab2114c411f5357386eaea38f179ca3b"
+      "__hash": "ea0a9e83dbf0e434af08c526720c86560e64b032"
     },
     {
       "version": "1.0.2",
       "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2",
-      "__hash": "79f5a6d9faf2d9cdff88aa1c787059208621c064"
+      "__hash": "278be91a8b9f65d63dcc5c298d8566ab82992c49"
     }
   ]
 }

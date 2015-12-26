@@ -27,167 +27,167 @@
   "tags": [
     {
       "version": "1.0.3",
-      "__hash": "23c260fc8e6d0e90c1faa93f3342150b9b9de7b1"
+      "__hash": "4d84d6a1883d075d6d7652cc7e80de31ef3910c2"
     },
     {
       "version": "1.0.4",
       "build": "rm package.json && npm install --prefix . underscore@1.0.4",
-      "__hash": "c7cc718b5c82c4bf4d48c1a8575be8c0d9d49d5c"
+      "__hash": "79c81c053aeb3b6fc13e2a12e058f3456a08a255"
     },
     {
       "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . underscore@1.1.0",
-      "__hash": "f92e26720ccb82d763565ad7d35153da46b76eae"
+      "__hash": "071d1341b9bd0a7e0b2374365d4713acfea3f02e"
     },
     {
       "version": "1.1.1",
       "build": "rm package.json && npm install --prefix . underscore@1.1.1",
-      "__hash": "5fc5c2520d87f9c64e28968c35ee841ae3cb46df"
+      "__hash": "7074a31a02e0d2e9eafac0b9dd4052150f3ca8bf"
     },
     {
       "version": "1.1.2",
       "build": "rm package.json && npm install --prefix . underscore@1.1.2",
-      "__hash": "bd085d2b99d08b75dc8219d5a02e95b3bb98c5af"
+      "__hash": "39abc3a5788363c7ff7fb1e91da167be5259cf88"
     },
     {
       "version": "1.1.3",
       "build": "rm package.json && npm install --prefix . underscore@1.1.3",
-      "__hash": "ea348e1bb3d086b383eafecc40a3664b3bfe39ad"
+      "__hash": "b0951d906867aae7ba9ad8dbb0a510e880dee6c2"
     },
     {
       "version": "1.1.4",
       "build": "rm package.json && npm install --prefix . underscore@1.1.4",
-      "__hash": "f5192b0c6f47bfebd2262125bf896088966ac643"
+      "__hash": "eae64440611832797a73c691c8e9d755cc701de9"
     },
     {
       "version": "1.1.5",
       "build": "rm package.json && npm install --prefix . underscore@1.1.5",
-      "__hash": "93d61c97f73d0dd67d2c17bf10e8f9a8cb800b4b"
+      "__hash": "15e9e79af886ef62dc44d07b763379f19cead5e1"
     },
     {
       "version": "1.1.6",
       "build": "rm package.json && npm install --prefix . underscore@1.1.6",
-      "__hash": "33ce188665a106e9bd7c44a99513a4b8d7a97a94"
+      "__hash": "baff1051e9395334c23671754da769b729277f82"
     },
     {
       "version": "1.1.7",
       "build": "rm package.json && npm install --prefix . underscore@1.1.7",
-      "__hash": "f8e601f4debfdfb8442215e1926e2d1363ee947f"
+      "__hash": "1bfa2d807347b20eea45b1b89c191079b38cc5af"
     },
     {
       "version": "1.2.0",
       "build": "rm package.json && npm install --prefix . underscore@1.2.0",
-      "__hash": "8b2d35524f749afe65bc00d1935d076d812373a6"
+      "__hash": "a712fad9f1f0365e5928b43904e9c5ff73b1bf40"
     },
     {
       "version": "1.2.1",
       "build": "rm package.json && npm install --prefix . underscore@1.2.1",
-      "__hash": "3050462b1a1232d0630668c2a00b7b633d0b9ffe"
+      "__hash": "7e295cd5e07199429dafac3c96ded7556b426d07"
     },
     {
       "version": "1.2.2",
       "build": "rm package.json && npm install --prefix . underscore@1.2.2",
-      "__hash": "61e6741a62701c61590eab8d8687f243f7bf33f9"
+      "__hash": "a9879dfa50beaf462b54d479860fe3cc17e7cac1"
     },
     {
       "version": "1.2.3",
       "build": "rm package.json && npm install --prefix . underscore@1.2.3",
-      "__hash": "6a668a20d26f6105e654e9c0187b99eb9eedd032"
+      "__hash": "5c808b0ad8df0e27248bcf4fde8d82a6c39a4674"
     },
     {
       "version": "1.2.4",
       "build": "rm package.json && npm install --prefix . underscore@1.2.4",
-      "__hash": "8aa3561a07926677ef52a09da1381075d00b9084"
+      "__hash": "5742bb4626ebcf2f82db39086124ad15cb723480"
     },
     {
       "version": "1.3.0",
       "build": "rm package.json && npm install --prefix . underscore@1.3.0",
-      "__hash": "5770a2e808bf961ccc3f14c7c8e24376c3a9ea80"
+      "__hash": "ec3d34c83330a373ab354cc39467c1e91222ae32"
     },
     {
       "version": "1.3.1",
       "build": "rm package.json && npm install --prefix . underscore@1.3.1",
-      "__hash": "1fb7ab2f5f041c377870d94c051bfb51b9474b4d"
+      "__hash": "534822cfda9ce1dfe71a9c945f9db81120fdd050"
     },
     {
       "version": "1.3.2",
       "build": "rm package.json && npm install --prefix . underscore@1.3.2",
-      "__hash": "7441a3575243d912d95cc7928f5fbd7eaab21674"
+      "__hash": "69f833397d4284d8019ce0ff6c5820302b6e320a"
     },
     {
       "version": "1.3.3",
       "build": "rm package.json && npm install --prefix . underscore@1.3.3",
-      "__hash": "376da4c3154624847ba2eefeac42d6af24d17da3"
+      "__hash": "72086ec97d537a4d2ea73272d932b3e2f7962bb0"
     },
     {
       "version": "1.4.0",
       "build": "rm package.json && npm install --prefix . underscore@1.4.0",
-      "__hash": "2a5eb56061a14fca56d86700af1f5ae5c87b711d"
+      "__hash": "f32fbdc51e3d47a3e3a8cdb2dff921dde36dfa1d"
     },
     {
       "version": "1.4.1",
       "build": "rm package.json && npm install --prefix . underscore@1.4.1",
-      "__hash": "61cf1d8d4bc73e46eb4269f82bc9b3dffc3fba5c"
+      "__hash": "4606c2bbaea97c15d13b7c64933cea17ccf5f3af"
     },
     {
       "version": "1.4.2",
       "build": "rm package.json && npm install --prefix . underscore@1.4.2",
-      "__hash": "7bf31243f849b91f65ee759e5f741121cb5cd38b"
+      "__hash": "bd3205277371fba7208abf9621cfe52849080451"
     },
     {
       "version": "1.4.3",
       "build": "rm package.json && npm install --prefix . underscore@1.4.3",
-      "__hash": "c20ee603c207ee29271cf7d1b40c7ee978bf9bff"
+      "__hash": "804ae0598c420eae6794d210e2ac244b907476d9"
     },
     {
       "version": "1.4.4",
       "build": "rm package.json && npm install --prefix . underscore@1.4.4",
-      "__hash": "c0368c520b6ae75bef90d80af8e090d2458d2471"
+      "__hash": "1386be4b510e7bd38a3628f8d9584bc7301b6540"
     },
     {
       "version": "1.5.0",
       "build": "rm package.json && npm install --prefix . underscore@1.5.0",
-      "__hash": "0c13ef2af0229e52aff8c946bb70519490147aa9"
+      "__hash": "5e8d8e35a7fb36e947f503a325be1a40b085e122"
     },
     {
       "version": "1.5.1",
       "build": "rm package.json && npm install --prefix . underscore@1.5.1",
-      "__hash": "1e933024d55184d972cc46c2d6db80158a8309fc"
+      "__hash": "5bcaaa3700380ad2294b4786583f124f5bab59e3"
     },
     {
       "version": "1.5.2",
       "build": "rm package.json && npm install --prefix . underscore@1.5.2",
-      "__hash": "b5fbda789e5a6c91e69f34cdc753fc4c114b2c9a"
+      "__hash": "ecc5a3e54a37b1227a7511ebe37a6b69b5602709"
     },
     {
       "version": "1.6.0",
       "build": "rm package.json && npm install --prefix . underscore@1.6.0",
-      "__hash": "2912ea4cc855b45a2b26824a901a2f3d2562367b"
+      "__hash": "d071e439df3b4a2c17c66967320817960ea10ac9"
     },
     {
       "version": "1.7.0",
       "build": "rm package.json && npm install --prefix . underscore@1.7.0",
-      "__hash": "4161541413bee0cf59941334f4607a34038347aa"
+      "__hash": "00a5a857aa5be07d6ebc84f29e40e3c885976dff"
     },
     {
       "version": "1.8.0",
       "build": "rm package.json && npm install --prefix . underscore@1.8.0",
-      "__hash": "cff543ed1a555fa827bf4310ed3ce7a9db5d3685"
+      "__hash": "77f8a014e845fc7daa313acb2a214b573a88572d"
     },
     {
       "version": "1.8.1",
       "build": "rm package.json && npm install --prefix . underscore@1.8.1",
-      "__hash": "2389d082af97ca2e162c5f77133f664c66e6be6a"
+      "__hash": "e1b2f57c7bd099dea13b9c8716020911e873610c"
     },
     {
       "version": "1.8.2",
       "build": "rm package.json && npm install --prefix . underscore@1.8.2",
-      "__hash": "0e90446d4f95d21bbf2a6a770eafefeea24d5d7b"
+      "__hash": "6aa58395bb86496a6f614cca551ecb4ccb4d7701"
     },
     {
       "version": "1.8.3",
       "build": "rm package.json && npm install --prefix . underscore@1.8.3",
-      "__hash": "6db2e50b9ee553231296bd792d92f209dd7b2a79"
+      "__hash": "62d63b9a6c12efc93c7d5b25c574aeb665311dc3"
     }
   ]
 }

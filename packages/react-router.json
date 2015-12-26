@@ -35,17 +35,17 @@
   "tags": [
     {
       "version": "1.0.0",
-      "__hash": "e8460fbf3d063ce77c217c19de5f230fbed873d8"
+      "__hash": "53c8a97420775531742339dabfd2ffff8491b9c5"
     },
     {
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . react-router@1.0.1",
-      "__hash": "36f55ed6cc6779eaf7104a4455e8202ca133a283"
+      "__hash": "d8990f03fe2fac0927a8bd77c50b1528f5e9c5a0"
     },
     {
       "version": "1.0.3",
       "build": "rm package.json && npm install --prefix . react-router@1.0.3",
-      "__hash": "651404e3610aab9a6976073a684c22c1f169b9c5"
+      "__hash": "b23f49ef69680edba8f090f6d4ff09c4d0395600"
     }
   ]
 }

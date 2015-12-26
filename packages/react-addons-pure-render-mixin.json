@@ -28,7 +28,7 @@
   "tags": [
     {
       "version": "v0.14.3",
-      "__hash": "94bf0f66181f8d776e1c822b227e675001652003"
+      "__hash": "21057c66c626683d7a07ba352fe5d58f91869ec9"
     },
     {
       "version": "v0.14.2",
@@ -36,7 +36,7 @@
         "react@^0.14.2"
       ],
       "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2",
-      "__hash": "07a38515e817bf97633935db70a0497ed4cf8e9a"
+      "__hash": "d0619375cdaf3966094fd5a058008cea416699f0"
     }
   ]
 }

@@ -29,17 +29,17 @@
   "tags": [
     {
       "version": "1.2.1",
-      "__hash": "12df503d5a495b2e9e70950762882c1002d0406f"
+      "__hash": "22189cca47e157266c758787111d488284ccd7b6"
     },
     {
       "version": "1.2.2",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.2.2",
-      "__hash": "2ea192d85e2f556149ad5ec8ccfb1a7d94531069"
+      "__hash": "a43a632cb9f553ac389c70d935e83f2c612b69dc"
     },
     {
       "version": "1.2.3",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.2.3",
-      "__hash": "d2ab31df4ba6f3559af1f55c79366e8d56fbc4a8"
+      "__hash": "031fbc43ca1f9abff6ecc3cf97a83bb3e746a224"
     }
   ]
 }

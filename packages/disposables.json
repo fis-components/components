@@ -27,12 +27,12 @@
   "tags": [
     {
       "version": "1.0.0",
-      "__hash": "e8460fbf3d063ce77c217c19de5f230fbed873d8"
+      "__hash": "507f96988816b710612a2feb9c854dd9cd15407d"
     },
     {
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . disposables@1.0.1",
-      "__hash": "cb7f78a2d2716f3d6a688fb53ffefc5966ba370d"
+      "__hash": "968b3ccf6268862987540d1d28957b8adc414144"
     }
   ]
 }

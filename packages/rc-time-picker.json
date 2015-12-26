@@ -29,7 +29,7 @@
   "tags": [
     {
       "version": "1.0.0-alpha7",
-      "__hash": "7c45e556f9edc86bb31d303f74c890de055dc974"
+      "__hash": "35598cb5da21813b68874fdf6b0cc1072c5a6813"
     },
     {
       "version": "1.0.0-alpha8",
@@ -56,7 +56,7 @@
           "release": false
         }
       ],
-      "__hash": "b75658b54d4daf35d0568eb004c9493a4aea5262"
+      "__hash": "ca317815608f02c8cc3733a489d3478984be41b8"
     },
     {
       "version": "1.0.0-alpha9",
@@ -83,7 +83,7 @@
           "release": false
         }
       ],
-      "__hash": "843ddc7ca27f4a4bdbf4252a189443a69fe05788"
+      "__hash": "b6841cf0365c278141545cb1455b0159ab574ec1"
     }
   ]
 }

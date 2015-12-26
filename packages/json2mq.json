@@ -30,12 +30,12 @@
   "tags": [
     {
       "version": "0.1.0",
-      "__hash": "f868a117d5de77314ec1f191e4c66ebf2e1a0e4a"
+      "__hash": "e23908d4578fcf0b0f6782934e4e9d6638ac0a29"
     },
     {
       "version": "0.2.0",
       "build": "rm package.json && npm install --prefix . json2mq@0.2.0",
-      "__hash": "67ebd7b1b0b317d2168224186eea4b38e8bfc4d0"
+      "__hash": "5a9a4086d3ebf2defafa7cdb1f999feaef67dd9d"
     }
   ]
 }

@@ -24,40 +24,40 @@
   "tags": [
     {
       "version": "1.9.1",
-      "__hash": "7eb77a7064175ff66f8a15f8e09b95bc44ab1b28"
+      "__hash": "09752b24d86475326c15a351e7e0e6997ae674c5"
     },
     {
       "version": "1.11.3",
-      "__hash": "19735aff7a97d19ea5c2c05c821192ccc34079a5"
+      "__hash": "440fab4347850c4868720dbf6e651b6ba3531fa8"
     },
     {
       "version": "1.11.2",
-      "__hash": "e57f1127beb6633f27272b7b7f6fedc3bab6574a"
+      "__hash": "1710f5e3d0f27fe9756515d2751bcd37f24fe680"
     },
     {
       "version": "2.1.0",
       "build": null,
-      "__hash": "16dd3562f77d3b2689020a7041c68f0a9532ae00"
+      "__hash": "76757b228d661d5b4b58dc27085f4c543bca94d1"
     },
     {
       "version": "2.1.1",
       "build": null,
-      "__hash": "039d6c6e4d514ba748a5f18cfb9ebe106f4342f3"
+      "__hash": "e5e6ea81f0664bb85cb3e04da156f42ccac88e3c"
     },
     {
       "version": "2.1.2",
       "build": null,
-      "__hash": "6479cf30c52186367542f6aa55f28ab741337501"
+      "__hash": "27c2fcfc4a203f2ec11a5a4f5c179bb3b3e36cb0"
     },
     {
       "version": "2.1.3",
       "build": null,
-      "__hash": "9d9e768a06393d863cb62baae41b4e7af2cd602e"
+      "__hash": "997baf1199534402431a4cd213b1e292802c4a98"
     },
     {
       "version": "2.1.4",
       "build": null,
-      "__hash": "56225b7c4ae1326be2f005c5161c9f8b04a8d6ba"
+      "__hash": "d18d09fb07e8aeddb20276d3186b3c83b17ad606"
     }
   ]
 }

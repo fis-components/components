@@ -33,17 +33,17 @@
   "tags": [
     {
       "version": "2.0.0",
-      "__hash": "8e0c9d05f9adacdefa07843f0219cc31315012d9"
+      "__hash": "a8d0c1ca3f8ba6b2da1046f86c32cd96dd13e2f1"
     },
     {
       "version": "2.0.1",
       "build": "rm package.json && npm install --prefix . react-dnd@2.0.1",
-      "__hash": "bcd2bea278f19de9464da2fd23e545f441f2a871"
+      "__hash": "598e000ed23ab82fcbe3205740b096d9352a8e4a"
     },
     {
       "version": "2.0.2",
       "build": "rm package.json && npm install --prefix . react-dnd@2.0.2",
-      "__hash": "4d123eef2af891f1e389c8e084c185ddd65ffd45"
+      "__hash": "6fdef700721c0f1abf33b9db8289301931aa36ea"
     }
   ]
 }

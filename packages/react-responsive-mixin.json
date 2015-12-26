@@ -32,17 +32,17 @@
   "tags": [
     {
       "version": "0.3.3",
-      "__hash": "edb74dc864b23c716f0d0f5e81130796d5103688"
+      "__hash": "7f58cb4e332af5db42e09e337d48f9da2cff82be"
     },
     {
       "version": "0.3.4",
       "build": "rm package.json && npm install --prefix . react-responsive-mixin@0.3.4",
-      "__hash": "f3a14d08a34835e132090672beb52a6328489483"
+      "__hash": "be0757a6a6b80c1ed992d3defbe9d72e59e83f5a"
     },
     {
       "version": "0.3.5",
       "build": "rm package.json && npm install --prefix . react-responsive-mixin@0.3.5",
-      "__hash": "2cf570fa2df92a6c0b51293fee27a170c7053c92"
+      "__hash": "72ea6f163e95b6e4d33741fa22b5c46979273132"
     }
   ]
 }

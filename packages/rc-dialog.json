@@ -37,17 +37,17 @@
   "tags": [
     {
       "version": "5.2.2",
-      "__hash": "c7be27abbb5728e65ffcd540fef80f137c8280b8"
+      "__hash": "8b383af92918426c0db42c827f07379d10b4c29b"
     },
     {
       "version": "5.3.0",
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.0",
-      "__hash": "e876359053e99613193358461694e1c1dd60d31d"
+      "__hash": "ad5a04c26b16af466f844be4215b47c29b0ff713"
     },
     {
       "version": "5.3.1",
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.1",
-      "__hash": "bf05944706a38177f96241b21ccfd5ffd610b569"
+      "__hash": "b7e421c64231d645905c94a38abe0ef3a309cfb2"
     }
   ]
 }

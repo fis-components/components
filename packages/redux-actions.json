@@ -35,32 +35,32 @@
   "tags": [
     {
       "version": "0.5.0",
-      "__hash": "1472aa704d832c18e2987d7b273ee23f94fe085f"
+      "__hash": "849fe1c6a280d62c5b09893a987f72f757e6b725"
     },
     {
       "version": "0.5.1",
       "build": "rm package.json && npm install --prefix . redux-actions@0.5.1",
-      "__hash": "09a794dbaf03bdb1df5cb3ef90d2638250ff4af9"
+      "__hash": "98bff2ab5862b3f88b53613236f8a66be5315e9b"
     },
     {
       "version": "0.6.0",
       "build": "rm package.json && npm install --prefix . redux-actions@0.6.0",
-      "__hash": "b699a8f9775a49cab793b00b9c47d80bfd80a7ba"
+      "__hash": "79ceb0ee0637dc24a4055a4fa6bbb9a68664c41d"
     },
     {
       "version": "0.7.0",
       "build": "rm package.json && npm install --prefix . redux-actions@0.7.0",
-      "__hash": "5fa1121a896ed26e06b23e22d6ca7a5a903779c6"
+      "__hash": "8e4143ff6b579f5717b2518e54b315323e5b5bbd"
     },
     {
       "version": "0.8.0",
       "build": "rm package.json && npm install --prefix . redux-actions@0.8.0",
-      "__hash": "ef82538d4acb92150928d0352b3400c8e06d7118"
+      "__hash": "31f36dc68debcf2a8fecae04c02a61a5b2ce522a"
     },
     {
       "version": "0.9.0",
       "build": "rm package.json && npm install --prefix . redux-actions@0.9.0",
-      "__hash": "5534254b8be28bd3cff8fe565af351fbd247ac3f"
+      "__hash": "2a2b139e216427cf484bdb46c51059f366f5739e"
     }
   ]
 }

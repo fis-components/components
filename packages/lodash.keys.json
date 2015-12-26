@@ -31,17 +31,17 @@
   "tags": [
     {
       "version": "3.1.0",
-      "__hash": "12d88b120f2e5be01e9e90a1225ae362213a34a1"
+      "__hash": "6ae8dea0a0a144e01faf61e1ccda1247848281f7"
     },
     {
       "version": "3.1.1",
       "build": "rm package.json && npm install --prefix . lodash.keys@3.1.1",
-      "__hash": "d027573c6cb0b7f0980586a97d0e5de177414dc8"
+      "__hash": "9fdadd5fd9e8f900e542e302fdb80c2f6efc1c6d"
     },
     {
       "version": "3.1.2",
       "build": "rm package.json && npm install --prefix . lodash.keys@3.1.2",
-      "__hash": "7a9eadf925c8fef398d9853c8a9d4a9cc77c739d"
+      "__hash": "d9f093d690d25c52edbdf64e13610b81c7b8aab6"
     }
   ]
 }

@@ -31,17 +31,17 @@
   "tags": [
     {
       "version": "1.3.4-beta",
-      "__hash": "47a10b61279dffc84919af3df8609c120f7e0f13"
+      "__hash": "cbcd97c023ea4f43ebd5178c7a186088c6417033"
     },
     {
       "version": "1.3.4",
       "build": "rm package.json && npm install --prefix . rc-pagination@1.3.4",
-      "__hash": "98bb353c7109ab6ce87065fab779d3813f9e87bb"
+      "__hash": "f752909ea7ea50544ad9e9612aef390006a835b0"
     },
     {
       "version": "1.3.5",
       "build": "rm package.json && npm install --prefix . rc-pagination@1.3.5",
-      "__hash": "43cca1cb70679916e62656ed4b7d052a456b5b6d"
+      "__hash": "970622cad4f9f4526c999eced4181efc2eac1ba1"
     }
   ]
 }

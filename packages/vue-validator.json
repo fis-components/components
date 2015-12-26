@@ -23,35 +23,35 @@
   "tags": [
     {
       "version": "v1.0.7",
-      "__hash": "abbd70516fd11c5bcbaa97370bbebf156045ded8"
+      "__hash": "832d2f4fa1437cdb0faf2c6584c37e2dbfba9d96"
     },
     {
       "version": "v1.2.0",
       "dependencies": [
         "vue@>=0.12.0"
       ],
-      "__hash": "72f957fce5fca967d8c229731bde0862b2421d8f"
+      "__hash": "79a1365a8250d1bc7eb211c842c8d7475cbcbc68"
     },
     {
       "version": "v1.3.3",
       "dependencies": [
         "vue@>=0.12.0"
       ],
-      "__hash": "f64420c26a9be6408124e69a777804bff457de5f"
+      "__hash": "f5337466b6fd064cbdb1f282acb408913a415dec"
     },
     {
       "version": "v1.4.1",
       "dependencies": [
         "vue@>=0.12.0"
       ],
-      "__hash": "119c8bc697fe10399c929ffa57e03728ec8e6c51"
+      "__hash": "627a56cfc1f02c3460e88daf94d50d2987a4c2ed"
     },
     {
       "version": "v1.4.3",
       "dependencies": [
         "vue@>=0.12.0"
       ],
-      "__hash": "36346804c3513980c55e6f0da60f63011ac08855"
+      "__hash": "4a3a28ec77b3a5f91318b5e5545270dfe8eb08db"
     }
   ]
 }

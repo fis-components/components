@@ -27,17 +27,17 @@
   "tags": [
     {
       "version": "1.3.4",
-      "__hash": "480a11bcf98d86dcf9976bdaac761aaec5f01a0f"
+      "__hash": "3a54047e9db0124af00c812d8d167be081ef0387"
     },
     {
       "version": "1.3.5",
       "build": "rm package.json && npm install --prefix . async-validator@1.3.5",
-      "__hash": "bdde9c6415079b7caa970258451113eb42a580e2"
+      "__hash": "f3ed8cb1f764f09ba724ecbba06e55bda650da6d"
     },
     {
       "version": "1.3.7",
       "build": "rm package.json && npm install --prefix . async-validator@1.3.7",
-      "__hash": "2d764e21fbbb66e52eb2d046c78997d4755b80fb"
+      "__hash": "8489042ba7c35eb5f465303df7b8a1859c7ec3d6"
     }
   ]
 }

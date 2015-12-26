@@ -34,17 +34,17 @@
   "tags": [
     {
       "version": "5.5.1",
-      "__hash": "3dfb8645137c621569695721b8c645448cfa2da2"
+      "__hash": "6e606a0158e9c33b26f36ce3275bd680a474c741"
     },
     {
       "version": "5.5.2",
       "build": "rm package.json && npm install --prefix . rc-tabs@5.5.2",
-      "__hash": "cfb49ccc1d0bcae494bcbd495993eb8e57b35a72"
+      "__hash": "c8723a1f7bd05e365d7a74267893e8c6674f169b"
     },
     {
       "version": "5.6.0",
       "build": "rm package.json && npm install --prefix . rc-tabs@5.6.0",
-      "__hash": "2a183aca7329101b5e553fec4e6a4d68652dc7d1"
+      "__hash": "757d3da3fd655843a7a078e665cef5c50cd5e027"
     }
   ]
 }

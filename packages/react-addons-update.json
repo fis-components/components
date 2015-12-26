@@ -28,7 +28,7 @@
   "tags": [
     {
       "version": "v0.14.3",
-      "__hash": "94bf0f66181f8d776e1c822b227e675001652003"
+      "__hash": "2342f082deb5720a0c67a4beb2c791da47bc3877"
     },
     {
       "version": "v0.14.2",
@@ -36,7 +36,7 @@
         "react@^0.14.2"
       ],
       "build": "rm package.json && npm install --prefix . react-addons-update@0.14.2",
-      "__hash": "048b235150f03b15e5080e4f4bb6e11284171d37"
+      "__hash": "d92b32a5a71c697ac5be88ff7d99c9d3b312a692"
     }
   ]
 }

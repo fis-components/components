@@ -34,17 +34,17 @@
   "tags": [
     {
       "version": "1.0.3",
-      "__hash": "23c260fc8e6d0e90c1faa93f3342150b9b9de7b1"
+      "__hash": "b01da6ffb139fac244a0a7c1730863d8c0628782"
     },
     {
       "version": "1.0.4",
       "build": "rm package.json && npm install --prefix . rc-radio@1.0.4",
-      "__hash": "5013b65955255480c8e6ad77b48327033ae52055"
+      "__hash": "b6ddf3887d056444108c25e670b8a63339131b8f"
     },
     {
       "version": "2.0.0",
       "build": "rm package.json && npm install --prefix . rc-radio@2.0.0",
-      "__hash": "943529abb1ed27395318cd4838cab3c00ab0bbc4"
+      "__hash": "75675bfaa0184bf3eb2278e2ad5ba4e6a888e8a4"
     }
   ]
 }
