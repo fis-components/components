@@ -18,11 +18,5 @@ git config --global push.default simple
 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
 git add packages
-git status
 git commit -m "[ci skip] saveHash $1@$2"
-git branch
 git push -f origin master
-
-
-git status
-exit 1;
