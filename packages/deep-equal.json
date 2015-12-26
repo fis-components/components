@@ -1,33 +1,40 @@
 {
-  "repos": "https://github.com/substack/node-deep-equal.git",
   "name": "deep-equal",
+  "description": "node's assert.deepEqual algorithm",
+  "repos": "https://github.com/substack/node-deep-equal.git",
   "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "build": "rm package.json && npm install --prefix . deep-equal@1.0.1",
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
       "release": false
     },
     {
-      "reg": "^\\/index\\.js$",
-      "release": "$0"
+      "reg": "/^\\/node_modules\\/deep-equal\\/lib\\/(.*)$/i",
+      "release": "lib/$1"
     },
     {
-      "reg": "^\\/lib\\/.*\\.js$",
-      "release": "$0"
+      "reg": "/^\\/node_modules\\/deep-equal\\/(.*\\.(?:js|css))$/i",
+      "release": "$1"
     },
     {
-      "reg": "^\\/readme\\.markdown$",
+      "reg": "/^\\/README\\.md$/i",
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "/^\\/LICENSE\\.md$/i",
+      "release": "$&"
+    },
+    {
+      "reg": "*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "1.0.1",
-      "__hash": "275da311afeb9194cf33a2de6250905070708829"
+      "version": "1.0.1"
     }
   ]
 }

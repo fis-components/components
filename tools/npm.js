@@ -5,12 +5,11 @@ const write = fs.writeFileSync;
 const assign = require('object-assign');
 const argv = require('minimist')(process.argv.slice(2));
 const semver = require('semver');
+const deepEqual = require('deep-equal');
+var hash = require('object-hash');
 
 const args = process.argv.slice(2);
 const packages = [];
-const PREFIX = '\'use strict\';\n\nmodule.exports = (function() {\n    return [\n';
-const AFFIX = '\n    ]\n})();';
-
 const repos = require('./repos.json');
 const browserIgnore = require('./browser.ignore.json');
 
@@ -184,19 +183,65 @@ while (args.length) {
       });  
     }
 
-    var str = JSON.stringify(item, null, 2);
-    str = str.replace(/('|")\/(.*)\/([ig]*)\1/g, function(_, quote, value, flag) {
-      return '/' + value.replace(/\\\\/g, '\\') + '/' + flag;
-    });
-    items.push(str);
+    items.push(item);
   });
 
   if (!items.length) {
     continue;
   }
-  
-  var contents = PREFIX + items.join(',\n\n') + AFFIX;
-  write(path.join(__dirname, "builds", config.name + '.js'), contents);
-  console.log('Created %s', config.name + '.js');
-  packages.push(config.name)
+
+  if (test('-f', path.join(__dirname, '../packages/' + pkgName + '.json'))) {
+    var pkgs = (function() {
+      var pkg = require('../packages/' + pkgName + '.json');
+      var pkgs = {};
+      var tags = pkg.tags;
+
+      tags.forEach(function(tag) {
+          var data = assign({}, pkg, tag);
+          delete data.tags;
+          pkgs[data.version] = data;
+      });
+      return pkgs;
+    })();
+    items.forEach(function(item) {
+      if (pkgs[item.version]) {
+        var clone = assign({}, pkgs[item.version]);
+        delete clone.__hash;
+
+        if (deepEqual(clone, item)) {
+          return;
+        }
+      }
+      pkgs[item.version] = item;
+    });
+
+    items = Object.keys(pkgs).sort(function(a, b) {
+      return semver.compare(a, b);
+    }).map(function(version) {
+      return pkgs[version];
+    })
+  }
+
+
+  (function() {
+    var config = assign({}, items[0]);
+
+    delete config['version'];
+    delete config['__hash'];
+    config.tags = items.map(function(tag) {
+      var clone = assign({}, tag);
+
+      Object.keys(tag).forEach(function(key) {
+        if (tag[key] && config[key] && deepEqual(tag[key], config[key])) {
+          delete clone[key];
+        }
+      });
+
+      return clone;
+    });
+
+    write(path.join(__dirname, "builds", config.name + '.json'),  JSON.stringify(config, null, 2));
+    console.log('Created %s', config.name + '.json');
+    packages.push(config.name);
+  })();
 }

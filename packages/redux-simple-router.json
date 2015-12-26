@@ -28,24 +28,105 @@
       "__hash": "c1cd95d54519cff3a7092a90ad8b99bf8cc59939"
     },
     {
-      "version": "0.0.10",
       "build": "rm package.json && npm install --prefix . redux-simple-router@0.0.10",
+      "version": "0.0.10",
       "__hash": "2e90afe834c548172d30f84710559ebff1e76f7b"
     },
     {
+      "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
+      "main": "lib/index",
+      "reposType": "npm",
+      "dependencies": [
+        "deep-equal@^1.0.1"
+      ],
       "version": "1.0.0",
       "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.0",
-      "__hash": "765b321c387e56197cd5786071a9228affb62cd6"
+      "mapping": [
+        {
+          "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
+          "release": false
+        },
+        {
+          "reg": "/^\\/node_modules\\/redux-simple-router\\/lib\\/(.*)$/i",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "/^\\/README\\.md$/i",
+          "release": "$&"
+        },
+        {
+          "reg": "/^\\/LICENSE\\.md$/i",
+          "release": "$&"
+        },
+        {
+          "reg": "*",
+          "release": false
+        }
+      ]
     },
     {
+      "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
+      "main": "lib/index",
+      "reposType": "npm",
+      "dependencies": [
+        "deep-equal@^1.0.1"
+      ],
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1",
-      "__hash": "ea0a9e83dbf0e434af08c526720c86560e64b032"
+      "mapping": [
+        {
+          "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
+          "release": false
+        },
+        {
+          "reg": "/^\\/node_modules\\/redux-simple-router\\/lib\\/(.*)$/i",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "/^\\/README\\.md$/i",
+          "release": "$&"
+        },
+        {
+          "reg": "/^\\/LICENSE\\.md$/i",
+          "release": "$&"
+        },
+        {
+          "reg": "*",
+          "release": false
+        }
+      ]
     },
     {
+      "description": "Ruthlessly simple bindings to keep react-router and redux in sync",
+      "main": "lib/index",
+      "reposType": "npm",
+      "dependencies": [
+        "deep-equal@^1.0.1"
+      ],
       "version": "1.0.2",
       "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2",
-      "__hash": "278be91a8b9f65d63dcc5c298d8566ab82992c49"
+      "mapping": [
+        {
+          "reg": "/\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js/i",
+          "release": false
+        },
+        {
+          "reg": "/^\\/node_modules\\/redux-simple-router\\/lib\\/(.*)$/i",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "/^\\/README\\.md$/i",
+          "release": "$&"
+        },
+        {
+          "reg": "/^\\/LICENSE\\.md$/i",
+          "release": "$&"
+        },
+        {
+          "reg": "*",
+          "release": false
+        }
+      ]
     }
   ]
 }
