@@ -7,7 +7,7 @@ cd ..
 
 #[ci skip]
 
-node $saveHash.js $1 $2 $3
+node saveHash.js $1 $2 $3
 
 #AU
 git config --global user.email "${GIT_EMAIL}"
