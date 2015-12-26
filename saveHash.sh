@@ -20,7 +20,7 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credential
 git add packages
 git status
 git commit -m  "[ci skip] saveHash $1@$2"
-git brach
+git branch
 git push origin master
 
 git status
