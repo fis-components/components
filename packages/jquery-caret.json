@@ -8,7 +8,7 @@
   ],
   "mapping": [
     {
-      "reg": "^/dist/jquery\\.caret\\.js$",
+      "reg": "^\\/dist\\/jquery\\.caret\\.js$",
       "release": "jquery.caret.js"
     },
     {

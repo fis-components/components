@@ -17,7 +17,7 @@
       "release": "$1"
     },
     {
-      "reg": "^/dist/css/select2\\.css$",
+      "reg": "^\\/dist\\/css\\/select2\\.css$",
       "release": "select2.css"
     },
     {

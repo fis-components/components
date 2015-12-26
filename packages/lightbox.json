@@ -8,11 +8,11 @@
   ],
   "mapping": [
     {
-      "reg": "^/js/lightbox\\.js$",
+      "reg": "^\\/js\\/lightbox\\.js$",
       "release": "lightbox.js"
     },
     {
-      "reg": "^/css/lightbox\\.css$",
+      "reg": "^\\/css\\/lightbox\\.css$",
       "release": "lightbox.css"
     },
     {

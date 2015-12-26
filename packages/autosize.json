@@ -5,7 +5,7 @@
   "main": "autosize.js",
   "mapping": [
     {
-      "reg": "^/dest/autosize\\.js$",
+      "reg": "^\\/dest\\/autosize\\.js$",
       "release": "autosize.js"
     },
     {
@@ -26,7 +26,7 @@
       "version": "3.0.13",
       "mapping": [
         {
-          "reg": "^/dist/autosize\\.js$",
+          "reg": "^\\/dist\\/autosize\\.js$",
           "release": "autosize.js"
         },
         {
@@ -38,13 +38,13 @@
           "release": false
         }
       ],
-      "__hash": "b48e15f6b75abb233a35dd02393ea9fe546b1166"
+      "__hash": "66aa77a2a1557fce2b90c21a73f7d1a389f9bc30"
     },
     {
       "version": "3.0.14",
       "mapping": [
         {
-          "reg": "^/dist/autosize\\.js$",
+          "reg": "^\\/dist\\/autosize\\.js$",
           "release": "autosize.js"
         },
         {
@@ -56,7 +56,7 @@
           "release": false
         }
       ],
-      "__hash": "6446b181675ea43d89b3248b80eeba9846346fcf"
+      "__hash": "f49ca1be79703b3a8148f89ce559efa50bd1a273"
     }
   ]
 }

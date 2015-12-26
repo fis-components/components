@@ -8,11 +8,11 @@
   ],
   "mapping": [
     {
-      "reg": "^/dist/cropper\\.js$",
+      "reg": "^\\/dist\\/cropper\\.js$",
       "release": "cropper.js"
     },
     {
-      "reg": "^/dist/cropper\\.css$",
+      "reg": "^\\/dist\\/cropper\\.css$",
       "release": "cropper.css"
     },
     {

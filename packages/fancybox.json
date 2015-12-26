@@ -8,11 +8,11 @@
   ],
   "mapping": [
     {
-      "reg": "^/source/jquery\\.fancybox\\.js$",
+      "reg": "^\\/source\\/jquery\\.fancybox\\.js$",
       "release": "jquery.fancybox.js"
     },
     {
-      "reg": "^/source/jquery\\.fancybox\\.css$",
+      "reg": "^\\/source\\/jquery\\.fancybox\\.css$",
       "release": "jquery.fancybox.css"
     },
     {

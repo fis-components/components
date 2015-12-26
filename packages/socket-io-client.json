@@ -5,7 +5,7 @@
   "main": "socket.io.js",
   "mapping": [
     {
-      "reg": "^/socket\\.io\\.js$",
+      "reg": "^\\/socket\\.io\\.js$",
       "release": "socket.io.js"
     },
     {

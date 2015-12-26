@@ -40,7 +40,7 @@ modules.forEach(function(filename) {
       item.mapping = item.mapping.map(function(subitem) {
         subitem = assign({}, subitem)
         var reg = subitem.reg;
-        subitem.reg = (reg instanceof RegExp) ? reg.source : glob.make(reg).source;
+        subitem.reg = (reg instanceof RegExp) ? reg.source : glob.make(reg).source.replace(/\//g, '\\/');
         return subitem;
       })
     }
