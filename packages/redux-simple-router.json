@@ -40,7 +40,7 @@
     {
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.1",
-      "__hash": "ea0a9e83dbf0e434af08c526720c86560e64b033"
+      "__hash": "ea0a9e83dbf0e434af08c526720c86560e64b0343"
     },
     {
       "version": "1.0.2",
