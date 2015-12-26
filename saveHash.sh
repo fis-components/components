@@ -8,12 +8,11 @@ ROOT=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 node $ROOT/saveHash.js $1 $2 $3
 
-exit 1;
-
 #AU
 git config --global user.email "${GIT_EMAIL}"
 git config --global user.name "${GIT_NAME}"
 git config credential.helper "store --file=.git/credential"
+git config --global push.default simple
 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
 git add packages/

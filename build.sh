@@ -19,6 +19,7 @@ git_update_repos () {
     #AU
     git config --global user.email "${GIT_EMAIL}"
     git config --global user.name "${GIT_NAME}"
+    git config --global push.default simple
     git config credential.helper "store --file=.git/credential"
     echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
@@ -98,6 +99,7 @@ sync () {
                 #AU
                 git config --global user.email "${GIT_EMAIL}"
                 git config --global user.name "${GIT_NAME}"
+                git config --global push.default simple
                 git config credential.helper "store --file=.git/credential"
                 echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
