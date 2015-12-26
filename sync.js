@@ -236,7 +236,7 @@ function lastChangFiles(cb) {
                         return false;
                     }
 
-                    if (parts[1].indexOf('modules') == -1 && p.indexOf("packages") == -1) {
+                    if (parts[1].indexOf('modules') == -1 && parts[1].indexOf("packages") == -1) {
                         return false;
                     }
                     return /\.js(?:on)?$/.test(parts[1]);
