@@ -43,7 +43,8 @@
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2"
+      "build": "rm package.json && npm install --prefix . redux-simple-router@1.0.2",
+      "__hash": "468e0e08859282254881f31f231b9e1053cc0b6e"
     }
   ]
 }
