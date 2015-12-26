@@ -3,17 +3,11 @@ set -e
 
 echo "$1 $2 $3"
 
-mkdir _tmp_
-cd _tmp_
-git clone https://github.com/fis-components/components.git
-cd components
-npm install
-ROOT=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-pwd
+cd ..
 
 #[ci skip]
 
-node $ROOT/saveHash.js $1 $2 $3
+node $saveHash.js $1 $2 $3
 
 #AU
 git config --global user.email "${GIT_EMAIL}"
@@ -28,8 +22,6 @@ git commit -m "[ci skip] saveHash $1@$2"
 git branch
 git push -f origin master
 
-cd ../../
-rm -rf _tmp_
 
 git status
 exit 1;
