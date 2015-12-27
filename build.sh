@@ -17,7 +17,10 @@ git_update_repos () {
     folder=$3
     isFromJson=$4
     echo "node $ROOT/sync.js create-component.json $repos $version $folder $isFromJson"
-    node $ROOT/sync.js create-component.json $repos $version $folder $isFromJson
+    node $ROOT/sync.js create-component.json $repos $version "$folder" $isFromJson
+    if [ "$?" != "0" ]; then
+        return 1
+    fi
 
     #AU
     git config --global user.email "${GIT_EMAIL}"
