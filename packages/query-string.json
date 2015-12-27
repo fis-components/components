@@ -42,7 +42,8 @@
     },
     {
       "version": "3.0.0",
-      "build": "rm package.json && npm install --prefix . query-string@3.0.0"
+      "build": "rm package.json && npm install --prefix . query-string@3.0.0",
+      "__hash": "e03224a075a6762382cdb5ed1baa539ac6e4c21b"
     }
   ]
 }
