@@ -29,15 +29,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "__hash": "9d3beadcd42198a8bd64df2c02250f3cf4e09f2e"
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.1"
+      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.1",
+      "__hash": "e17f9d8be49be00b931b1cb7408e643ed086a7c8"
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.2"
+      "build": "rm package.json && npm install --prefix . strict-uri-encode@1.0.2",
+      "__hash": "683982187bfb8087f841dbebab3691d1b6fa4294"
     }
   ]
 }
