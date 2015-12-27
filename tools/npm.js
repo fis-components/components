@@ -61,7 +61,7 @@ while (args.length) {
     config.repos = 'https://github.com/2betop/placeholder.git';
   }
   
-  config.main = json.main;
+  json.main && (config.main = json.main);
   config.tag = 'master';
   config.reposType = 'npm';
 
@@ -195,6 +195,7 @@ while (args.length) {
   }
 
   if (!argv.override && test('-f', path.join(__dirname, '../packages/' + pkgName + '.json'))) {
+    console.log('Merging...')
     var pkgs = (function() {
       var pkg = require('../packages/' + pkgName + '.json');
       var pkgs = {};
