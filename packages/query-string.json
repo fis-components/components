@@ -7,7 +7,7 @@
   "dependencies": [
     "strict-uri-encode@^1.0.0"
   ],
-  "build": "rm package.json && npm install --prefix . query-string@3.0.0",
+  "build": "rm package.json && npm install --prefix . query-string@2.4.1",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -32,8 +32,15 @@
   ],
   "tags": [
     {
+      "version": "2.4.1"
+    },
+    {
+      "version": "2.4.2",
+      "build": "rm package.json && npm install --prefix . query-string@2.4.2"
+    },
+    {
       "version": "3.0.0",
-      "__hash": "e03224a075a6762382cdb5ed1baa539ac6e4c21b"
+      "build": "rm package.json && npm install --prefix . query-string@3.0.0"
     }
   ]
 }
