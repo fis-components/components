@@ -16,8 +16,8 @@ git_update_repos () {
     version=$2
     folder=$3
     isFromJson=$4
-    echo "node $ROOT/sync.js create-component.json $repos $version $folder $isFromJson"
-    node $ROOT/sync.js create-component.json "$repos" "$version" "$folder" "$isFromJson"
+    echo "node $ROOT/sync.js create-component.json $repos $version $isFromJson $folder"
+    node $ROOT/sync.js create-component.json "$repos" "$version" "$isFromJson" "$folder" 
     if [ "$?" != "0" ]; then
         return 1
     fi
@@ -185,7 +185,7 @@ sync () {
     cd "$dest"
     echo "=CD $dest"
 
-    git_update_repos $new $version $folder $isFromJson
+    git_update_repos "$new" "$version" "$folder" "$isFromJson"
 
     if [ "$isFromJson" = "true" ]; then
         save_hash "$new" "$version" "$folder"

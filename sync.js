@@ -365,8 +365,8 @@ if (ARGV[2] == 'sync') {
 } else if (ARGV[2] == 'create-component.json') {
     var name = ARGV[3].trim();
     var version = ARGV[4].trim();
-    var folder = (ARGV[5] || '').trim();
-    var isFromJson = (ARGV[6] || '').trim() === "true";
+    var isFromJson = (ARGV[5] || '').trim() === "true";
+    var folder = (ARGV[6] || '').trim();
     console.log.apply(console, ARGV);
     console.log(name, version, folder, isFromJson);
     
