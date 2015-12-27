@@ -46,7 +46,8 @@
     },
     {
       "version": "1.17.0",
-      "build": "rm package.json && npm install --prefix . history@1.17.0"
+      "build": "rm package.json && npm install --prefix . history@1.17.0",
+      "__hash": "e63bfe4ac8c0ca20758cec73496c098cc9cdcbf1"
     }
   ]
 }
