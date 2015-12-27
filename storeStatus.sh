@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -e
 currentCommitId=$(git rev-parse HEAD)
 
 mkdir ./output

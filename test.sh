@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -e
 export ROOT=$(pwd)
 
 git_clone () {
