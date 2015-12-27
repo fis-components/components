@@ -367,6 +367,8 @@ if (ARGV[2] == 'sync') {
     var version = ARGV[4].trim();
     var folder = (ARGV[5] || '').trim();
     var isFromJson = (ARGV[6] || '').trim() === "true";
+    console.log.apply(console, ARGV);
+    console.log(name, version, folder, isFromJson);
     
     try {
         var list = loadConfig(
