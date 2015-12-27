@@ -36,18 +36,15 @@
   ],
   "tags": [
     {
-      "version": "1.15.0",
-      "__hash": "58e7a72a2ac2454a75896c84f2d6bc1c8e0e44a1"
+      "version": "1.15.0"
     },
     {
       "version": "1.16.0",
-      "build": "rm package.json && npm install --prefix . history@1.16.0",
-      "__hash": "0bf979a818d0c29cb71d3d8030d29a60694d1be1"
+      "build": "rm package.json && npm install --prefix . history@1.16.0"
     },
     {
       "version": "1.17.0",
-      "build": "rm package.json && npm install --prefix . history@1.17.0",
-      "__hash": "e63bfe4ac8c0ca20758cec73496c098cc9cdcbf1"
+      "build": "rm package.json && npm install --prefix . history@1.17.0"
     }
   ]
 }

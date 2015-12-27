@@ -21,8 +21,11 @@ module.exports = function(options, callback) {
 
     files.forEach(function(info) {
         try {
-            if (options.config.umd2commonjs !== true)return;
-            var content = transform(read(info.absolute, 'utf8'), options);
+            var content = read(info.absolute, 'utf8');
+
+            if (options.config.umd2commonjs === true) {
+                content = transform(content, options);
+            }
             
             content = unsupportcode(content);
 
