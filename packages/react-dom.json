@@ -28,6 +28,13 @@
     {
       "version": "v0.14.2",
       "__hash": "170f4ddabfe51da2fbc6ebd26f3949d5ca9c9a92"
+    },
+    {
+      "version": "v0.14.3",
+      "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
+      "dependencies": [
+        "react@^0.14.3"
+      ]
     }
   ]
 }
