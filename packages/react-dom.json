@@ -34,7 +34,8 @@
       "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
       "dependencies": [
         "react@^0.14.3"
-      ]
+      ],
+      "__hash": "1f0f348c92fa6c9df9d61b6032c9a67e6fd76891"
     }
   ]
 }
