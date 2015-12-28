@@ -42,5 +42,8 @@ module.exports = (function() {
     },{
         version: 'v1.0.11',
         extend: '0.11.10'
+    },{
+        version: 'v1.0.13',
+        extend: '0.11.10'
     }]
 })();

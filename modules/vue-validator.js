@@ -24,38 +24,35 @@ module.exports = (function() {
                 release: false
             }
         ]
-    },
-
-    {
+    },{
         version: 'v1.2.0',
         extend: 'v1.0.7',
         dependencies: [
             "vue@>=0.12.0"
         ]
-    },
-    
-    {
+    },{
         version: 'v1.3.3',
         extend: 'v1.0.7',
         dependencies: [
             "vue@>=0.12.0"
         ]
-    },
-
-    {
+    },{
         version: 'v1.4.1',
         extend: 'v1.0.7',
         dependencies: [
             "vue@>=0.12.0"
         ]
-    },
-
-    {
+    },{
         version: 'v1.4.3',
         extend: 'v1.0.7',
         dependencies: [
             "vue@>=0.12.0"
         ]
-    }
-    ]
+    },{
+        version: 'v2.0.0-alpha.8',
+        extend: 'v1.0.7',
+        dependencies: [
+            "vue@>=1.0.10"
+        ]
+    }]
 })();
