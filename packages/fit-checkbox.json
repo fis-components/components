@@ -45,7 +45,8 @@
     },
     {
       "version": "1.0.23",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.23"
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.23",
+      "__hash": "9aa799a0ff3539f95a89757fc16cd753d5653f85"
     }
   ]
 }
