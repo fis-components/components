@@ -221,7 +221,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "d7e129a6e7c29b1382aa61bd381f70d5c50ddbfa"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree@0.20.0",
