@@ -41,7 +41,8 @@
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.4"
+      "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.4",
+      "__hash": "c49d568bde06ea66c65f53ef939985762e05384b"
     }
   ]
 }
