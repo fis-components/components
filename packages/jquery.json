@@ -27,37 +27,62 @@
       "__hash": "09752b24d86475326c15a351e7e0e6997ae674c5"
     },
     {
-      "version": "1.11.3",
-      "__hash": "440fab4347850c4868720dbf6e651b6ba3531fa8"
-    },
-    {
       "version": "1.11.2",
       "__hash": "1710f5e3d0f27fe9756515d2751bcd37f24fe680"
     },
     {
-      "version": "2.1.0",
+      "version": "1.11.3",
+      "__hash": "440fab4347850c4868720dbf6e651b6ba3531fa8"
+    },
+    {
       "build": null,
+      "version": "2.1.0",
       "__hash": "76757b228d661d5b4b58dc27085f4c543bca94d1"
     },
     {
-      "version": "2.1.1",
       "build": null,
+      "version": "2.1.1",
       "__hash": "e5e6ea81f0664bb85cb3e04da156f42ccac88e3c"
     },
     {
-      "version": "2.1.2",
       "build": null,
+      "version": "2.1.2",
       "__hash": "27c2fcfc4a203f2ec11a5a4f5c179bb3b3e36cb0"
     },
     {
-      "version": "2.1.3",
       "build": null,
+      "version": "2.1.3",
       "__hash": "997baf1199534402431a4cd213b1e292802c4a98"
     },
     {
+      "description": "JavaScript library for DOM operations",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "version": "2.1.4",
-      "build": null,
-      "__hash": "d18d09fb07e8aeddb20276d3186b3c83b17ad606"
+      "build": "rm package.json && npm install --prefix . jquery@2.1.4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/jquery\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

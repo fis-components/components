@@ -33,6 +33,44 @@
     {
       "version": "v4.2.0",
       "__hash": "75ca5658d8a2a2e25a99f9d4d9ff85ea042a15b4"
+    },
+    {
+      "description": "The iconic font and CSS framework",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "version": "4.5.0",
+      "build": "rm package.json && npm install --prefix . font-awesome@4.5.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/font-awesome\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\font-awesome\\/fonts\\/(.*)$",
+          "release": "fonts/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\font-awesome\\/css\\/(.*)$",
+          "release": "css/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

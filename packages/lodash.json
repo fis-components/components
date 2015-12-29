@@ -20,18 +20,43 @@
   "umd2commonjs": false,
   "tags": [
     {
-      "version": "3.5.0",
       "umd2commonjs": false,
+      "version": "3.5.0",
       "__hash": "f6ff15ce3f53686e0d2144c5756015054d1816aa"
     },
     {
-      "description": "The modern build of lodash modular utilities.",
       "repos": "https://github.com/lodash/lodash.git",
+      "description": "The modern build of lodash modular utilities.",
       "main": "index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^.*$",
+          "release": false
+        }
+      ],
+      "umd2commonjs": false,
       "tag": "master",
       "reposType": "npm",
       "version": "3.9.3",
       "build": "rm package.json && npm install --prefix . lodash@3.9.3",
+      "__hash": "d377fc5f9ba3fd554240ee91d9c2d37b8e3e917f"
+    },
+    {
+      "repos": "https://github.com/lodash/lodash.git",
+      "description": "The modern build of lodash modular utilities.",
+      "main": "index.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -50,34 +75,11 @@
           "release": false
         }
       ],
-      "__hash": "d377fc5f9ba3fd554240ee91d9c2d37b8e3e917f"
-    },
-    {
-      "description": "The modern build of lodash modular utilities.",
-      "repos": "https://github.com/lodash/lodash.git",
-      "main": "index.js",
+      "umd2commonjs": false,
       "tag": "master",
       "reposType": "npm",
       "version": "3.10.0",
       "build": "rm package.json && npm install --prefix . lodash@3.10.0",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^.*$",
-          "release": false
-        }
-      ],
       "__hash": "f61d3a8c50a225ce44412e82cee815a0cdca0bf9"
     },
     {
@@ -94,7 +96,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.(?:js|css))$",
           "release": "$1"
         },
         {
@@ -102,11 +104,14 @@
           "release": "$&"
         },
         {
-          "reg": "^.*$",
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "eb8f4eb6594168354e325fe2a48d2dcff28efa30"
+      ]
     }
   ]
 }

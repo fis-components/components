@@ -135,7 +135,7 @@ while (args.length) {
         main = path.join(main, 'index');
       }
 
-      if (path.dirname(main) === 'dist') {
+      if (/^dist/.test(main)) {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
           release: '$1'
@@ -164,7 +164,7 @@ while (args.length) {
       }
     }
 
-    ['assets', 'style'].forEach(function(assetDir) {
+    ['assets', 'style', 'fonts', 'css'].forEach(function(assetDir) {
       if (test('-d', path.join(pkgPath, assetDir))) {
         item.mapping.push({
           reg: "^\\/node_modules\\" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$",
@@ -245,9 +245,8 @@ while (args.length) {
 
       return clone;
     });
-
-    write(path.join(__dirname, "builds", config.name + '.json'),  JSON.stringify(config, null, 2));
-    console.log('Created %s', config.name + '.json');
-    packages.push(config.name);
+    write(path.join(__dirname, "builds", pkgName + '.json'),  JSON.stringify(config, null, 2));
+    console.log('Created %s', pkgName + '.json');
+    packages.push(pkgName);
   })();
 }
