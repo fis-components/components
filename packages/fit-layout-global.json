@@ -45,7 +45,8 @@
     },
     {
       "version": "0.1.29",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.29"
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.29",
+      "__hash": "dd2c3c3fe0e34b2376462add70e2ea7834be9309"
     }
   ]
 }
