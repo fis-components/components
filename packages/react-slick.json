@@ -51,7 +51,8 @@
     },
     {
       "version": "0.9.3",
-      "build": "rm package.json && npm install --prefix . react-slick@0.9.3"
+      "build": "rm package.json && npm install --prefix . react-slick@0.9.3",
+      "__hash": "369ea383102338c75458b3d7fbb1a4a583a64828"
     }
   ]
 }
