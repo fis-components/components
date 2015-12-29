@@ -60,7 +60,8 @@
     },
     {
       "version": "1.0.6",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.6"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.6",
+      "__hash": "1c758ce4b0f9fcd3ce82ad9b399fc7c03021e79e"
     },
     {
       "version": "1.0.7",
