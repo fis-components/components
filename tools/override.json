@@ -4,26 +4,34 @@
   },
   "bootstrap": {
     "main": "bootstrap.js",
-    "mapping": [{
-      "reg": "\\.min\\.(js|css)$",
+    "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
-    }, {
-      "reg": "^\\/dist\\/js\\/npm\\.js$",
-      "release": false
-    }, {
-      "reg": "^\\/dist\\/js\\/(.*\\.js)$",
+    },
+    {
+      "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/umd\\/(.*)$",
       "release": "$1"
-    }, {
-      "reg": "^\\/dist\\/(.*)$",
+    },
+    {
+      "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/(.*)$",
       "release": "$1"
-    }, {
-      "reg": "^\\/js\\/([^\\/]*\\.js)$",
+    },
+    {
+      "reg": "^\\/node_modules\\/bootstrap\\/dist\\/(.*)$",
       "release": "$1"
-    }, {
+    },
+
+    {
       "reg": "^\\/README\\.md$",
       "release": "$&"
-    }, {
-      "reg": "^.*$",
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }],
     "dependencies": [
@@ -31,27 +39,11 @@
     ],
     "shim": {
       "bootstrap.js": {
-        "content": "require('./alert.js');\nrequire('./button.js');\nrequire('./carousel.js');\nrequire('./collapse.js');\nrequire('./dropdown.js');\nrequire('./modal.js');\nrequire('./tooltip.js');\nrequire('./popover.js');\nrequire('./scrollspy.js');\nrequire('./tab.js');\nrequire('./affix.js');",
-        "deps": [
-          "jquery"
-        ],
-        "vars": [
-          "jQuery"
-        ],
-        "exports": "require('jquery')"
-      },
-      "affix.js": {
-        "deps": [
-          "jquery"
-        ],
-        "vars": [
-          "jQuery"
-        ]
+        "content": "require('./npm.js');"
       },
       "alert.js": {
         "deps": [
-          "jquery",
-          "./transition"
+          "jquery"
         ],
         "vars": [
           "jQuery"
@@ -67,8 +59,7 @@
       },
       "carousel.js": {
         "deps": [
-          "jquery",
-          "./transition"
+          "jquery"
         ],
         "vars": [
           "jQuery"
@@ -76,8 +67,7 @@
       },
       "collapse.js": {
         "deps": [
-          "jquery",
-          "./transition"
+          "jquery"
         ],
         "vars": [
           "jQuery"
@@ -93,8 +83,7 @@
       },
       "modal.js": {
         "deps": [
-          "jquery",
-          "./transition"
+          "jquery"
         ],
         "vars": [
           "jQuery"
@@ -119,8 +108,7 @@
       },
       "tab.js": {
         "deps": [
-          "jquery",
-          "./transition"
+          "jquery"
         ],
         "vars": [
           "jQuery"
@@ -128,14 +116,13 @@
       },
       "tooltip.js": {
         "deps": [
-          "jquery",
-          "./transition"
+          "jquery"
         ],
         "vars": [
           "jQuery"
         ]
       },
-      "transition.js": {
+      "util.js": {
         "deps": [
           "jquery"
         ],
