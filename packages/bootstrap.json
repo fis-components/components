@@ -172,7 +172,8 @@
       "tag": "master",
       "reposType": "npm",
       "version": "4.0.0-alpha.2",
-      "build": "rm package.json && npm install --prefix . bootstrap@4.0.0-alpha.2"
+      "build": "rm package.json && npm install --prefix . bootstrap@4.0.0-alpha.2",
+      "__hash": "aed01c05403d41861f48e3547672a6de60778607"
     }
   ]
 }
