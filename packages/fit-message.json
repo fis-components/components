@@ -38,7 +38,8 @@
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . fit-message@1.0.4"
+      "build": "rm package.json && npm install --prefix . fit-message@1.0.4",
+      "__hash": "b9f42f5c255613c4f02e8b4bf783e590a3f035e8"
     },
     {
       "version": "1.0.5",
