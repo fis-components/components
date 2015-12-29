@@ -38,7 +38,8 @@
     },
     {
       "version": "2.0.1",
-      "build": "rm package.json && npm install --prefix . rc-animate@2.0.1"
+      "build": "rm package.json && npm install --prefix . rc-animate@2.0.1",
+      "__hash": "bbd16cbbcdd26676028d8a689451ef650c39a335"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-animate@2.0.2",
