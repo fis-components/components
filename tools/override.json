@@ -1,0 +1,8 @@
+{
+  "rc-collapse": {
+    "repos": "https://github.com/react-component/collapse.git"
+  },
+  "bootstrap": {
+    "shim": null
+  }
+}

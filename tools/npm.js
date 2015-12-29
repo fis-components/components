@@ -10,7 +10,7 @@ var hash = require('object-hash');
 
 const args = argv._.concat();
 const packages = [];
-const repos = require('./repos.json');
+const overrided = require('./override.json');
 const browserIgnore = require('./browser.ignore.json');
 const ignore = require("./ignore.json");
 
@@ -51,9 +51,7 @@ while (args.length) {
   config.name = json.name;
   config.description = json.description;
 
-  if (repos[config.name]) {
-    config.repos = repos[config.name];
-  } else if (json.repository) {
+  if (json.repository) {
     var parts = json.repository.url.split('/');
     parts = parts.splice(parts.length -2, 2);
 
@@ -187,6 +185,8 @@ while (args.length) {
       reg: '\\.*',
       release: false
     });  
+
+    overrided[pkgName] && assign(item, overrided[pkgName]);
 
     items.push(item);
   });
