@@ -4,5 +4,11 @@
   ],
   "invariant": [
     "loose-envify"
+  ],
+  "react": [
+    "envify"
+  ],
+  "fbjs": [
+    "loose-envify"
   ]
 }

@@ -12,6 +12,7 @@ const args = argv._.concat();
 const packages = [];
 const repos = require('./repos.json');
 const browserIgnore = require('./browser.ignore.json');
+const ignore = require("./ignore.json");
 
 function escapeReg(str) {
   return new String( str ).replace(
@@ -35,11 +36,11 @@ while (args.length) {
   var pkgName = parts[0];
   var pkgVersion = parts[1];
 
+  if (~packages.indexOf(pkgName) || ~ignore.indexOf(pkgName))continue;
+
   console.log('\n.....................')
   console.log('Analyzing %s@%s', pkgName, pkgVersion);
   console.log('.......................\n')
-
-  if (~packages.indexOf(pkgName))continue;
 
   var info = exec('npm info ' + pkgName, {silent:true}).output;
   /({[\s\S]*})/.test(info) && (info = RegExp.$1)
