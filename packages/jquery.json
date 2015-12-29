@@ -347,7 +347,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "e3f18f1870130701c4d33d78f7f17742e9318a68"
     },
     {
       "build": "rm package.json && npm install --prefix . jquery@2.1.4",
