@@ -42,7 +42,8 @@
     },
     {
       "version": "5.5.1",
-      "build": "rm package.json && npm install --prefix . rc-tabs@5.5.1"
+      "build": "rm package.json && npm install --prefix . rc-tabs@5.5.1",
+      "__hash": "de1d795bf330b924bbeb254258536b251f77e886"
     },
     {
       "version": "5.5.2",
