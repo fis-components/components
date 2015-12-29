@@ -75,7 +75,8 @@
     },
     {
       "version": "1.0.9",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.9"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.9",
+      "__hash": "f8662ea975e26ef0944fe085c7081d73fac352e0"
     },
     {
       "version": "1.0.10",
