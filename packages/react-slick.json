@@ -31,24 +31,25 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "0.9.1",
-      "__hash": "16bbe859f5e7563f155f69d2118ce9d5f9720351"
+      "version": "0.9.1"
     },
     {
       "version": "0.9.2",
-      "build": "rm package.json && npm install --prefix . react-slick@0.9.2",
-      "__hash": "61916ca2a9189ed8febeeb1ab22102cc407e579d"
+      "build": "rm package.json && npm install --prefix . react-slick@0.9.2"
     },
     {
       "version": "0.9.3",
-      "build": "rm package.json && npm install --prefix . react-slick@0.9.3",
-      "__hash": "27310a6c1ac576957fe4dbb139b7b30c504a4e1a"
+      "build": "rm package.json && npm install --prefix . react-slick@0.9.3"
     }
   ]
 }

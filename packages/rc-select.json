@@ -41,14 +41,39 @@
       "__hash": "e9205709796c6c1a4c2e3e18aa3a2ba2be6b4f40"
     },
     {
-      "version": "5.3.1",
       "build": "rm package.json && npm install --prefix . rc-select@5.3.1",
+      "version": "5.3.1",
       "__hash": "7c0cb3bd714bffa36075651022f17db5592d108a"
     },
     {
       "version": "5.4.0",
       "build": "rm package.json && npm install --prefix . rc-select@5.4.0",
-      "__hash": "ec650a4b24ad0fe2f765edecb37a9f0a02db805f"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\rc-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

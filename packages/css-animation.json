@@ -1,16 +1,18 @@
 {
-  "repos": "https://github.com/yiminghe/css-animation.git",
-  "tag": "master",
   "name": "css-animation",
-  "main": "lib/index.js",
-  "build": "rm package.json && npm install --prefix . css-animation@1.1.1",
+  "description": "css-animation ui component for react",
+  "repos": "https://github.com/yiminghe/css-animation.git",
+  "main": "./lib/index",
+  "tag": "master",
+  "reposType": "npm",
+  "build": "rm package.json && npm install --prefix . css-animation@1.1.0",
   "mapping": [
     {
-      "reg": "\\bmin\\b|__tests__",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/css\\-animation\\/lib\\/(.*)$",
+      "reg": "^\\/node_modules\\/css-animation\\/lib\\/(.*)$",
       "release": "lib/$1"
     },
     {
@@ -18,14 +20,21 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
+      "version": "1.1.0"
+    },
+    {
       "version": "1.1.1",
-      "__hash": "7886b7016fbe8cc208247fc7516b812bd83bd2df"
+      "build": "rm package.json && npm install --prefix . css-animation@1.1.1"
     }
   ]
 }

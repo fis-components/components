@@ -26,11 +26,6 @@
       "__hash": "267ed814c179b4a1843d1a75bba67899dc248b31"
     },
     {
-      "description": "A simple utility for conditionally joining classNames together",
-      "tag": "master",
-      "reposType": "npm",
-      "version": "2.2.1",
-      "build": "rm package.json && npm install --prefix . classnames@2.2.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -53,6 +48,11 @@
           "release": false
         }
       ],
+      "description": "A simple utility for conditionally joining classNames together",
+      "tag": "master",
+      "reposType": "npm",
+      "version": "2.2.1",
+      "build": "rm package.json && npm install --prefix . classnames@2.2.1",
       "__hash": "9924cab213f5f4fb14b6902740146912a3c7499e"
     }
   ]

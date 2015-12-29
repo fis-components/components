@@ -23,24 +23,25 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "0.2.0",
-      "__hash": "084175beea9ea56e8143128c352d2baaa6545147"
+      "version": "0.2.0"
     },
     {
       "version": "0.2.1",
-      "build": "rm package.json && npm install --prefix . shallowequal@0.2.1",
-      "__hash": "50278bfc37a55465fbd140038f9346646dff6115"
+      "build": "rm package.json && npm install --prefix . shallowequal@0.2.1"
     },
     {
       "version": "0.2.2",
-      "build": "rm package.json && npm install --prefix . shallowequal@0.2.2",
-      "__hash": "61e795be63ea7f66451fc7785761509c33912f4e"
+      "build": "rm package.json && npm install --prefix . shallowequal@0.2.2"
     }
   ]
 }

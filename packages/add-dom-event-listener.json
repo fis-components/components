@@ -45,11 +45,14 @@
           "release": "$&"
         },
         {
-          "reg": "^.*$",
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "74a39d8129cc4812a0f76ba7bbafdd27fd07b164"
+      ]
     },
     {
       "version": "1.0.1",
@@ -68,11 +71,14 @@
           "release": "$&"
         },
         {
-          "reg": "^.*$",
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "890b777ac351ef518ad357f7f21b241eeee27343"
+      ]
     }
   ]
 }

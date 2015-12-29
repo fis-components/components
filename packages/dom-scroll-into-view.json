@@ -15,11 +15,11 @@
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/node_modules\\/dom-scroll-into-view\\/(.*\\.js)$",
+      "reg": "^\\/node_modules\\/dom-scroll-into-view\\/(.*\\.(?:js|css))$",
       "release": "$1"
     },
     {
-      "reg": "^\\/node_modules\\/dom-scroll-into-view\\/assets\\/(.*)$",
+      "reg": "^\\/node_modules\\dom-scroll-into-view\\/assets\\/(.*)$",
       "release": "assets/$1"
     },
     {
@@ -27,19 +27,21 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "1.0.0",
-      "__hash": "95879c8224024f81613f34dd209e55cea9b9b059"
+      "version": "1.0.0"
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.0.1",
-      "__hash": "428e64c79461203c67cfea98cbbf37408f119e8f"
+      "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.0.1"
     }
   ]
 }

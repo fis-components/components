@@ -1,0 +1,50 @@
+{
+  "name": "fit-input",
+  "description": "输入框",
+  "repos": "https://github.com/2betop/placeholder.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "classnames@^2.2.1",
+    "lodash@^3.10.1",
+    "react@^0.14.3",
+    "fit-style@^1.0.27"
+  ],
+  "build": "rm package.json && npm install --prefix . fit-input@1.0.15",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fit-input\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.15"
+    },
+    {
+      "version": "1.0.16",
+      "build": "rm package.json && npm install --prefix . fit-input@1.0.16"
+    },
+    {
+      "version": "1.0.18",
+      "build": "rm package.json && npm install --prefix . fit-input@1.0.18"
+    }
+  ]
+}

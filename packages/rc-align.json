@@ -24,24 +24,25 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "2.0.0",
-      "__hash": "c07882128f56af94a0c2edcb024ccb402eabf797"
+      "version": "2.0.0"
     },
     {
       "version": "2.1.0",
-      "build": "rm package.json && npm install --prefix . rc-align@2.1.0",
-      "__hash": "5c12a43bba4084d4ec2bcb295bf411d2543eade5"
+      "build": "rm package.json && npm install --prefix . rc-align@2.1.0"
     },
     {
       "version": "2.2.0",
-      "build": "rm package.json && npm install --prefix . rc-align@2.2.0",
-      "__hash": "3e278d806dbcd83e6a14c03b6d59531b43c20144"
+      "build": "rm package.json && npm install --prefix . rc-align@2.2.0"
     }
   ]
 }

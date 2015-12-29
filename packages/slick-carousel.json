@@ -8,7 +8,7 @@
   "dependencies": [
     "jquery@>=1.7.2"
   ],
-  "build": "rm package.json && npm install --prefix . slick-carousel@1.5.7",
+  "build": "rm package.json && npm install --prefix . slick-carousel@1.5.5",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -23,24 +23,33 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
+      "version": "1.5.5"
+    },
+    {
+      "version": "1.5.6",
+      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.6"
+    },
+    {
       "version": "1.5.7",
-      "__hash": "00254bea0fb21adb61e720af9edb14099ec13c8a"
+      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.7"
     },
     {
       "version": "1.5.8",
-      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.8",
-      "__hash": "3745e42462b26388bd7b6426017b5c4b863b74c5"
+      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.8"
     },
     {
       "version": "1.5.9",
-      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.9",
-      "__hash": "76641e2114a5720d887356c664f0c08acde8b850"
+      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.9"
     }
   ]
 }

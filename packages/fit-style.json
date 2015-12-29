@@ -37,6 +37,16 @@
       "description": "",
       "version": "1.0.25",
       "__hash": "4dfaa735012200749c292004a405a39a748cf017"
+    },
+    {
+      "description": "",
+      "version": "1.0.27",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.27"
+    },
+    {
+      "description": "",
+      "version": "1.0.28",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.28"
     }
   ]
 }

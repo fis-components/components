@@ -1,0 +1,49 @@
+{
+  "name": "fit-datepicker",
+  "description": "tb react datapicker",
+  "repos": "https://github.com/tb-component/datepicker.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "antd@^0.10.4",
+    "react@^0.14.3",
+    "fit-style@^1.0.25"
+  ],
+  "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.21",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fit-datepicker\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.1.21"
+    },
+    {
+      "version": "0.1.22",
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.22"
+    },
+    {
+      "version": "0.1.23",
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.23"
+    }
+  ]
+}

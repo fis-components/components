@@ -35,14 +35,35 @@
       "__hash": "031ae081ad97217c50e334f3ef59033cb682325e"
     },
     {
-      "version": "2.4.16",
       "build": "rm package.json && npm install --prefix . rc-form-validation@2.4.16",
+      "version": "2.4.16",
       "__hash": "1d26b78666c61c29c2daa00426d23076683ace6e"
     },
     {
       "version": "2.5.0",
       "build": "rm package.json && npm install --prefix . rc-form-validation@2.5.0",
-      "__hash": "79b531479b9b5d1dedd02c62f978d1eaad674521"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-form-validation\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

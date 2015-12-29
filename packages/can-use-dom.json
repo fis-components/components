@@ -12,7 +12,7 @@
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/can-use-dom\\/(.*\\.js)$",
+      "reg": "^\\/node_modules\\/can-use-dom\\/(.*\\.(?:js|css))$",
       "release": "$1"
     },
     {
@@ -20,14 +20,17 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "0.1.0",
-      "__hash": "b62a0f86874e6dcbed5e556127daa4b0679e4147"
+      "version": "0.1.0"
     }
   ]
 }

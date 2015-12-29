@@ -29,74 +29,95 @@
       "__hash": "2c4c527e362eb1a1fa0fc47fdd9cf974cc395011"
     },
     {
-      "version": "0.1.1",
       "build": "rm package.json && npm install --prefix . object-assign@0.1.1",
+      "version": "0.1.1",
       "__hash": "31906f891d8170a4196867d722d64969c971978d"
     },
     {
-      "version": "0.1.2",
       "build": "rm package.json && npm install --prefix . object-assign@0.1.2",
+      "version": "0.1.2",
       "__hash": "9d62b254708c3633b6071afa8f01ccdeda52ea51"
     },
     {
-      "version": "0.2.0",
       "build": "rm package.json && npm install --prefix . object-assign@0.2.0",
+      "version": "0.2.0",
       "__hash": "6de5523e7fab04dbf0a71639ea1552077fc5ab6b"
     },
     {
-      "version": "0.2.1",
       "build": "rm package.json && npm install --prefix . object-assign@0.2.1",
+      "version": "0.2.1",
       "__hash": "59acdc234d0853f5976cf7b8de710087f8f5f41a"
     },
     {
-      "version": "0.2.2",
       "build": "rm package.json && npm install --prefix . object-assign@0.2.2",
+      "version": "0.2.2",
       "__hash": "097fb43854c2afa76edf6d844e2a18ab79867957"
     },
     {
-      "version": "0.3.0",
       "build": "rm package.json && npm install --prefix . object-assign@0.3.0",
+      "version": "0.3.0",
       "__hash": "a2ca428456c83db2b72af6f2162501e1f533549a"
     },
     {
-      "version": "0.3.1",
       "build": "rm package.json && npm install --prefix . object-assign@0.3.1",
+      "version": "0.3.1",
       "__hash": "d2091704602b1ae7f16793db058e2a36607e251f"
     },
     {
-      "version": "0.4.0",
       "build": "rm package.json && npm install --prefix . object-assign@0.4.0",
+      "version": "0.4.0",
       "__hash": "f96e791c47f7a2cef03d72ee7798c3cacd803d59"
     },
     {
-      "version": "1.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@1.0.0",
+      "version": "1.0.0",
       "__hash": "18a53ced81a50f9153714f11e96f9f35c6036617"
     },
     {
-      "version": "2.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@2.0.0",
+      "version": "2.0.0",
       "__hash": "34727eca77e794b769ab9af32d8edc52fa7230e3"
     },
     {
-      "version": "2.1.1",
       "build": "rm package.json && npm install --prefix . object-assign@2.1.1",
+      "version": "2.1.1",
       "__hash": "e1fe5a58dd41374b4067906d843962afcd201cef"
     },
     {
-      "version": "3.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@3.0.0",
+      "version": "3.0.0",
       "__hash": "d3c782bb1e4709f7b87cc27178c3d858d8c949a5"
     },
     {
-      "version": "4.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.0",
+      "version": "4.0.0",
       "__hash": "073653bd002d356fb1201fe385e78856cf52a4d5"
     },
     {
       "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.1",
-      "__hash": "0c4bb82815ef52254ec1d89fbe9500844fb9589e"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/object-assign\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

@@ -32,11 +32,32 @@
     {
       "version": "5.0.3",
       "build": "rm package.json && npm install --prefix . semver@5.0.3",
-      "__hash": "408d513e1fe8829b7eb170d7505c1f0dc4de9ddf"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/semver\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
-      "version": "5.1.0",
       "build": "rm package.json && npm install --prefix . semver@5.1.0",
+      "version": "5.1.0",
       "__hash": "6580d398341501aa87e62accbd852e8598ae06c5"
     }
   ]

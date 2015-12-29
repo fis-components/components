@@ -32,14 +32,58 @@
       "__hash": "22189cca47e157266c758787111d488284ccd7b6"
     },
     {
+      "reposType": "npm",
       "version": "1.2.2",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.2.2",
-      "__hash": "a43a632cb9f553ac389c70d935e83f2c612b69dc"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
+      "reposType": "npm",
       "version": "1.2.3",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.2.3",
-      "__hash": "031fbc43ca1f9abff6ecc3cf97a83bb3e746a224"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
