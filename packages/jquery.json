@@ -94,7 +94,8 @@
     },
     {
       "version": "1.7.2",
-      "build": "rm package.json && npm install --prefix . jquery@1.7.2"
+      "build": "rm package.json && npm install --prefix . jquery@1.7.2",
+      "__hash": "0d7425068a4623ce164d6151d559b31327313177"
     },
     {
       "version": "1.7.3",
