@@ -36,7 +36,8 @@
     },
     {
       "version": "2.0.0",
-      "build": "rm package.json && npm install --prefix . warning@2.0.0"
+      "build": "rm package.json && npm install --prefix . warning@2.0.0",
+      "__hash": "9fbe60f7b70082b077d7fdeec02f355ecfb4f825"
     },
     {
       "version": "2.1.0",
