@@ -40,7 +40,8 @@
   ],
   "tags": [
     {
-      "version": "5.2.2"
+      "version": "5.2.2",
+      "__hash": "cb62ad4da41b2fe07df7e4f8bec87c9ca5856f73"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.0",
