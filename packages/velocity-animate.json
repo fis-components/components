@@ -53,7 +53,8 @@
     },
     {
       "version": "1.2.1",
-      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.1"
+      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.1",
+      "__hash": "0ae1b7a5bebf910e0d63488871f5e4f478b18e81"
     },
     {
       "build": "rm package.json && npm install --prefix . velocity-animate@1.2.2",
