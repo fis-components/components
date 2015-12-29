@@ -46,7 +46,8 @@
     },
     {
       "version": "1.0.18",
-      "build": "rm package.json && npm install --prefix . fit-input@1.0.18"
+      "build": "rm package.json && npm install --prefix . fit-input@1.0.18",
+      "__hash": "cf75e7c42598f2faf6818f061589a77a80731970"
     }
   ]
 }
