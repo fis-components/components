@@ -30,7 +30,8 @@
   ],
   "tags": [
     {
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "__hash": "2fa2d1dc794f512f184bef28f9ddf72e8e9344d4"
     },
     {
       "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1",
