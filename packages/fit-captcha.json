@@ -42,7 +42,8 @@
     },
     {
       "version": "1.0.8",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.8"
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.8",
+      "__hash": "eb31c98d64482f7f9de861f7734f09bfd07d4d00"
     },
     {
       "version": "1.0.9",
