@@ -104,7 +104,8 @@
     },
     {
       "version": "1.8.2",
-      "build": "rm package.json && npm install --prefix . jquery@1.8.2"
+      "build": "rm package.json && npm install --prefix . jquery@1.8.2",
+      "__hash": "351ee1c30c2d254ace51535afc184af5c2e0deca"
     },
     {
       "version": "1.9.1",
