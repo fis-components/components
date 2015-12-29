@@ -42,7 +42,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.0.1"
+      "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.0.1",
+      "__hash": "970c4888704ca69e89953d7c0163c9be462b699c"
     }
   ]
 }
