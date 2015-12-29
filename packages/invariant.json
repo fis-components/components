@@ -23,29 +23,92 @@
       "__hash": "5f4731171177536ea27c9245fe4b24358d065193"
     },
     {
-      "version": "2.1.0",
       "build": "rm package.json && npm install --prefix . invariant@2.1.0",
+      "version": "2.1.0",
       "__hash": "29b51835db314ca8d77ebc1852444991ea321649"
     },
     {
-      "version": "2.1.1",
       "build": "rm package.json && npm install --prefix . invariant@2.1.1",
+      "version": "2.1.1",
       "__hash": "71be74d17ccf5c2423f1377bc1716e0e31022a6b"
     },
     {
       "version": "2.1.2",
       "build": "rm package.json && npm install --prefix . invariant@2.1.2",
-      "__hash": "58a3b3cb9653527bcee57ed707d66fbed5d8ed03"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "2.1.3",
       "build": "rm package.json && npm install --prefix . invariant@2.1.3",
-      "__hash": "af0626f07102a7fe8747dfd0b1a0bba29fa33519"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "2.2.0",
       "build": "rm package.json && npm install --prefix . invariant@2.2.0",
-      "__hash": "5e8d6a221c7777c7630f13d813c06e1d30dac082"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

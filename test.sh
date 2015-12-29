@@ -57,7 +57,7 @@ sync () {
         # fi
 
         mkdir -p dest
-        node $ROOT/sync.js create-component.json "$new" "$version" "$folder" "$isFromJson"
+        node $ROOT/sync.js create-component.json "$new" "$version" "$isFromJson" "$folder"
 
         node $ROOT/sync.js move "$new" "$version" "$(pwd)" "$dest" "$folder" "$isFromJson"
 

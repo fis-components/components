@@ -161,31 +161,31 @@ while (args.length) {
           release: dirname + '/$1'
         });
       }
-
-      ['assets', 'style'].forEach(function(assetDir) {
-        if (test('-d', path.join(pkgPath, assetDir))) {
-          item.mapping.push({
-            reg: "^\\/node_modules\\" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$",
-            release: assetDir + '/$1'
-          });
-        }
-      });
-
-      item.mapping.push({
-        reg: "^\\/README\\.md$",
-        release: '$&'
-      });
-
-      item.mapping.push({
-        reg: "^\\/LICENSE\\.md$",
-        release: '$&'
-      });
-
-      item.mapping.push({
-        reg: '\\.*',
-        release: false
-      });  
     }
+
+    ['assets', 'style'].forEach(function(assetDir) {
+      if (test('-d', path.join(pkgPath, assetDir))) {
+        item.mapping.push({
+          reg: "^\\/node_modules\\" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$",
+          release: assetDir + '/$1'
+        });
+      }
+    });
+
+    item.mapping.push({
+      reg: "^\\/README\\.md$",
+      release: '$&'
+    });
+
+    item.mapping.push({
+      reg: "^\\/LICENSE\\.md$",
+      release: '$&'
+    });
+
+    item.mapping.push({
+      reg: '\\.*',
+      release: false
+    });  
 
     items.push(item);
   });

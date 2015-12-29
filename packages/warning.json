@@ -15,22 +15,31 @@
     {
       "reg": "^\\/node_modules\\/warning\\/(browser\\.js)$",
       "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
     }
   ],
   "tags": [
     {
-      "version": "1.0.2",
-      "__hash": "ea726a4de28a6a4c2c3480d49486e3b01f37896b"
+      "version": "1.0.2"
     },
     {
-      "build": "rm package.json && npm install --prefix . warning@2.0.0",
       "version": "2.0.0",
-      "__hash": "cce2f21f39ea9b8c88f17a4664c97aae4d2f4665"
+      "build": "rm package.json && npm install --prefix . warning@2.0.0"
     },
     {
-      "build": "rm package.json && npm install --prefix . warning@2.1.0",
       "version": "2.1.0",
-      "__hash": "2085360b09bcf6c90cc5a759bd6443814f76fe41"
+      "build": "rm package.json && npm install --prefix . warning@2.1.0"
     }
   ]
 }
