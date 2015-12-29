@@ -40,7 +40,8 @@
     },
     {
       "version": "1.1.29",
-      "build": "rm package.json && npm install --prefix . fit-button@1.1.29"
+      "build": "rm package.json && npm install --prefix . fit-button@1.1.29",
+      "__hash": "136f2d276980b6482e3dd76cfd7c6dbdfa739e84"
     },
     {
       "version": "1.2.1",
