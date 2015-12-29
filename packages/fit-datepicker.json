@@ -40,7 +40,8 @@
     },
     {
       "version": "0.1.22",
-      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.22"
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.22",
+      "__hash": "9bc2646c3ac0f0a7c730d72451849e247abd91e5"
     },
     {
       "version": "0.1.23",
