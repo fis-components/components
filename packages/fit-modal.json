@@ -43,7 +43,8 @@
     },
     {
       "version": "1.0.10",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.10"
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.10",
+      "__hash": "d456ae357d9be804f517649c0981d7133db61baf"
     }
   ]
 }
