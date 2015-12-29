@@ -138,7 +138,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "549b095a73f046c78510c17c9a78577781529c49"
     },
     {
       "build": "rm package.json && npm install --prefix . antd@0.11.0-beta1",
