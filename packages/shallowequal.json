@@ -38,7 +38,8 @@
     },
     {
       "version": "0.2.1",
-      "build": "rm package.json && npm install --prefix . shallowequal@0.2.1"
+      "build": "rm package.json && npm install --prefix . shallowequal@0.2.1",
+      "__hash": "ae13d542ed172d3d17506212b9e08b5b5175a274"
     },
     {
       "version": "0.2.2",
