@@ -35,7 +35,8 @@
     },
     {
       "version": "0.1.5",
-      "build": "rm package.json && npm install --prefix . fit-collapse@0.1.5"
+      "build": "rm package.json && npm install --prefix . fit-collapse@0.1.5",
+      "__hash": "d9e14c0812de9ef3f10326924a96d129b04d6a98"
     }
   ]
 }
