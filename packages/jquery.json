@@ -247,7 +247,11 @@
       "build": "rm package.json && npm install --prefix . jquery@2.1.0",
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js|^\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/jquery\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
@@ -266,15 +270,18 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "206abf0f8a0ee6bc81c7e5d3efaaef0ab2f30709"
+      ]
     },
     {
       "version": "2.1.1",
       "build": "rm package.json && npm install --prefix . jquery@2.1.1",
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js|^\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/jquery\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
@@ -293,15 +300,18 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "fc522bc195dee78057918887d5c031807e4a7d59"
+      ]
     },
     {
       "version": "2.1.2",
       "build": "rm package.json && npm install --prefix . jquery@2.1.2",
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js|^\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/jquery\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
@@ -320,15 +330,18 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "c0bfc79808766dcd231b2bc45a9552cb61c0f7c4"
+      ]
     },
     {
       "version": "2.1.3",
       "build": "rm package.json && npm install --prefix . jquery@2.1.3",
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js|^\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/jquery\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
@@ -347,15 +360,18 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "ea2ee91ad4af5b09848e69f4ec5bb9e6c0f9a492"
+      ]
     },
     {
       "version": "2.1.4",
       "build": "rm package.json && npm install --prefix . jquery@2.1.4",
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js|^\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/jquery\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
@@ -374,8 +390,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "05db0090e153f460377010c83bd987533f132976"
+      ]
     }
   ]
 }
