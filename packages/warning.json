@@ -19,7 +19,8 @@
   ],
   "tags": [
     {
-      "version": "1.0.2"
+      "version": "1.0.2",
+      "__hash": "ea726a4de28a6a4c2c3480d49486e3b01f37896b"
     },
     {
       "build": "rm package.json && npm install --prefix . warning@2.0.0",
