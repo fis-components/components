@@ -108,7 +108,7 @@ while (args.length) {
     item.mapping = [];
 
     item.mapping.push({
-      reg: "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      reg: "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js|^\\/(?:test|build)\\/",
       release: false
     });
 
