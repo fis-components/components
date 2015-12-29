@@ -56,7 +56,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "0fc3596d35ca363f9785c8a2db9aab6bedf414d1"
     },
     {
       "reposType": "npm",
