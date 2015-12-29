@@ -44,7 +44,8 @@
     },
     {
       "version": "1.0.22",
-      "build": "rm package.json && npm install --prefix . fit-layout@1.0.22"
+      "build": "rm package.json && npm install --prefix . fit-layout@1.0.22",
+      "__hash": "e0ace351e5af610925fb8397ba61d0700de108cf"
     }
   ]
 }
