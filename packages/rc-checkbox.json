@@ -42,7 +42,8 @@
     },
     {
       "version": "1.1.2",
-      "build": "rm package.json && npm install --prefix . rc-checkbox@1.1.2"
+      "build": "rm package.json && npm install --prefix . rc-checkbox@1.1.2",
+      "__hash": "9829d3f090ec8733e646075210401911f4a2b2c5"
     }
   ]
 }
