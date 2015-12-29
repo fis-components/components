@@ -53,7 +53,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "614159918497a93367a757182c2dbb424d021d5a"
     },
     {
       "build": "rm package.json && npm install --prefix . semver@5.1.0",
