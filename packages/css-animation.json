@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . css-animation@1.0.2"
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.2",
+      "__hash": "be0573711925e8684acbadae66bd56fec2c3579b"
     },
     {
       "version": "1.0.3",
