@@ -35,7 +35,8 @@
     },
     {
       "version": "1.3.1",
-      "build": "rm package.json && npm install --prefix . async-validator@1.3.1"
+      "build": "rm package.json && npm install --prefix . async-validator@1.3.1",
+      "__hash": "fc53cad98efccba4a9cc3ce18fe20050befce87a"
     },
     {
       "version": "1.3.2",
