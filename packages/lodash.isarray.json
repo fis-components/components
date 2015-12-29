@@ -44,7 +44,8 @@
     },
     {
       "version": "3.0.3",
-      "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.3"
+      "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.3",
+      "__hash": "a7366ab0a4777470371cbe0778d4ba50ebdaebae"
     },
     {
       "version": "3.0.4",
