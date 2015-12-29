@@ -39,7 +39,8 @@
     },
     {
       "version": "2.1.0",
-      "build": "rm package.json && npm install --prefix . rc-align@2.1.0"
+      "build": "rm package.json && npm install --prefix . rc-align@2.1.0",
+      "__hash": "b0b316f31cd744d9da4e2047c1cfa75bd9756ebf"
     },
     {
       "version": "2.2.0",
