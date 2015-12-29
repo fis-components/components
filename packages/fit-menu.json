@@ -44,7 +44,8 @@
     },
     {
       "version": "1.0.30",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.0.30"
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.30",
+      "__hash": "bb84fc4ff6eac387d10f92051f87be2516898390"
     }
   ]
 }
