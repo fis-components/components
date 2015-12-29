@@ -6,7 +6,7 @@
   "tag": "master",
   "reposType": "npm",
   "dependencies": [],
-  "build": "rm package.json && npm install --prefix . warning@2.0.0",
+  "build": "rm package.json && npm install --prefix . warning@1.0.2",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -19,13 +19,15 @@
   ],
   "tags": [
     {
-      "version": "2.0.0",
-      "__hash": "cce2f21f39ea9b8c88f17a4664c97aae4d2f4665"
+      "version": "1.0.2"
     },
     {
-      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . warning@2.0.0",
+      "version": "2.0.0"
+    },
+    {
       "build": "rm package.json && npm install --prefix . warning@2.1.0",
-      "__hash": "2085360b09bcf6c90cc5a759bd6443814f76fe41"
+      "version": "2.1.0"
     }
   ]
 }
