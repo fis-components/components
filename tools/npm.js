@@ -1,6 +1,7 @@
 require('shelljs/global');
 const fs = require('fs');
 const path = require('path');
+const read = fs.readFileSync;
 const write = fs.writeFileSync;
 const assign = require('object-assign');
 const argv = require('minimist')(process.argv.slice(2));
@@ -45,42 +46,9 @@ while (args.length) {
   var info = exec('npm info ' + pkgName, {silent:true}).output;
   /({[\s\S]*})/.test(info) && (info = RegExp.$1)
   // var json = JSON.parse(info);
-  var json = (new Function("return " + info))();
+  var infoJson = (new Function("return " + info))();
 
-  var config = {};
-  config.name = json.name;
-  config.description = json.description;
-
-  if (json.repository) {
-    var parts = json.repository.url.split('/');
-    parts = parts.splice(parts.length -2, 2);
-
-    config.repos = 'https://github.com/' + parts.join('/');
-  } else {
-    config.repos = 'https://github.com/2betop/placeholder.git';
-  }
-  
-  json.main && (config.main = json.main);
-  config.tag = 'master';
-  config.reposType = 'npm';
-
-  if (json.dependencies) {
-    var dependencies = [];
-    Object.keys(json.dependencies).forEach(function(key) {
-      if (browserIgnore[config.name] && ~browserIgnore[config.name].indexOf(key)) {
-        return;
-      }
-
-      // if (!~modules.indexOf(key)) {
-        args.push(key + '@' + json.dependencies[key]);
-      // }
-
-      dependencies.push(key + '@' + json.dependencies[key])
-    });
-    config.dependencies = dependencies;
-  }
-
-  var versions = Array.isArray(json.versions) ? json.versions : [json.version];
+  var versions = Array.isArray(infoJson.versions) ? infoJson.versions : [infoJson.version];
   versions = versions.filter(function(version) {
     return semver.valid(version);
   })
@@ -96,14 +64,47 @@ while (args.length) {
 
   var items = [];
   versions.forEach(function(version) {
-    var item = assign({}, config);
+    var item = {};
     item.version = version;
-    item.build = 'rm package.json && npm install --prefix . ' + item.name + '@' + version;
+    item.build = 'rm package.json && npm install --prefix . ' + pkgName + '@' + version;
 
-    if (exec('npm install --prefix '+ __dirname +' ' + item.name + '@' + version).code !== 0) {
+    if (exec('npm install --prefix '+ __dirname +' ' + pkgName + '@' + version).code !== 0) {
       return;
     }
-    var pkgPath = path.join(__dirname, 'node_modules', item.name);
+    var pkgPath = path.join(__dirname, 'node_modules', pkgName);
+    var json = JSON.parse(read(path.join(pkgPath, 'package.json'), 'utf8'));
+    item.name = json.name;
+    item.description = json.description;
+
+    if (json.repository) {
+      var parts = json.repository.url.split('/');
+      parts = parts.splice(parts.length -2, 2);
+
+      item.repos = 'https://github.com/' + parts.join('/');
+    } else {
+      item.repos = 'https://github.com/2betop/placeholder.git';
+    }
+    
+    json.main && (item.main = json.main);
+    item.tag = 'master';
+    item.reposType = 'npm';
+
+    if (json.dependencies) {
+      var dependencies = [];
+      Object.keys(json.dependencies).forEach(function(key) {
+        if (browserIgnore[item.name] && ~browserIgnore[item.name].indexOf(key)) {
+          return;
+        }
+
+        // if (!~modules.indexOf(key)) {
+          args.push(key + '@' + json.dependencies[key]);
+        // }
+
+        dependencies.push(key + '@' + json.dependencies[key])
+      });
+      item.dependencies = dependencies;
+    }
+    
 
     item.mapping = [];
 
@@ -138,18 +139,20 @@ while (args.length) {
         main = path.join(main, 'index');
       }
 
+      // console.log(json, main)
+
       if (/^dist/.test(main)) {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
           release: '$1'
         });
-        config.main = item.main = main.replace(/^dist\//, '');
+        item.main = item.main = main.replace(/^dist\//, '');
       } else if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
           release: '$1'
         });
-        config.main = item.main = item.name + '.js';
+        item.main = item.main = item.name + '.js';
       } else if (path.dirname(main) === '.' || path.dirname(main) === '') {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.(?:js|css))$",
