@@ -128,7 +128,8 @@
     },
     {
       "version": "1.3.0",
-      "build": "rm package.json && npm install --prefix . dom-align@1.3.0"
+      "build": "rm package.json && npm install --prefix . dom-align@1.3.0",
+      "__hash": "e464e87b8e9de0b77afd61439a0de63548e9443d"
     }
   ]
 }
