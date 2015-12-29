@@ -33,15 +33,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.7"
+      "version": "1.0.7",
+      "__hash": "7330b4b006af0c7b7843e257fbcd3a0fb4ffa83b"
     },
     {
       "version": "1.0.9",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.9"
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.9",
+      "__hash": "ad4534bc6998d5d1d44de6b9d0a59bf4f6398750"
     },
     {
       "version": "1.0.10",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.10"
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.10",
+      "__hash": "d456ae357d9be804f517649c0981d7133db61baf"
     }
   ]
 }

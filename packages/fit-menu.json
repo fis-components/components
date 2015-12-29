@@ -34,15 +34,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.27"
+      "version": "1.0.27",
+      "__hash": "cbbdfcabc528b7e4d35b20fb73e33511a72f9ebb"
     },
     {
       "version": "1.0.29",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.0.29"
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.29",
+      "__hash": "f3c7086f813a4269f93e0571693dd352bc7391d0"
     },
     {
       "version": "1.0.30",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.0.30"
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.30",
+      "__hash": "bb84fc4ff6eac387d10f92051f87be2516898390"
     }
   ]
 }

@@ -35,15 +35,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.21"
+      "version": "1.0.21",
+      "__hash": "b544cf79126706919d745e6e497c041154ee4017"
     },
     {
       "version": "1.0.22",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.22"
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.22",
+      "__hash": "d4a6554d8682815346d524db38253fa3ddc91de5"
     },
     {
       "version": "1.0.23",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.23"
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.23",
+      "__hash": "9aa799a0ff3539f95a89757fc16cd753d5653f85"
     }
   ]
 }

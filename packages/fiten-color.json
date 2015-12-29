@@ -31,15 +31,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.2"
+      "version": "1.0.2",
+      "__hash": "8c7bedbf89fc95652815caaa9dba92eeab0e659b"
     },
     {
       "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . fiten-color@1.0.3"
+      "build": "rm package.json && npm install --prefix . fiten-color@1.0.3",
+      "__hash": "c14318406380718f6b3a95e28e2e8bce9ee0691f"
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . fiten-color@1.0.4"
+      "build": "rm package.json && npm install --prefix . fiten-color@1.0.4",
+      "__hash": "96dbd217f469eb5e506b72734aec956945af8ca7"
     }
   ]
 }

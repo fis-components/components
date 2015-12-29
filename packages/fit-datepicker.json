@@ -35,15 +35,18 @@
   ],
   "tags": [
     {
-      "version": "0.1.21"
+      "version": "0.1.21",
+      "__hash": "ec679b5598ff879cd2c8ddc9402ef9109c451267"
     },
     {
       "version": "0.1.22",
-      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.22"
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.22",
+      "__hash": "9bc2646c3ac0f0a7c730d72451849e247abd91e5"
     },
     {
       "version": "0.1.23",
-      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.23"
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.1.23",
+      "__hash": "dfce22d8a0c8a7df19abf6519b5bc12c265dc7c2"
     }
   ]
 }

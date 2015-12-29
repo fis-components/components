@@ -29,11 +29,13 @@
   ],
   "tags": [
     {
-      "version": "3.9.0"
+      "version": "3.9.0",
+      "__hash": "3c2837973774cacb81b6b24c8984c75126ea5e72"
     },
     {
       "version": "3.9.1",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.1"
+      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.1",
+      "__hash": "ee304a0a3e430b1298eb9a47bc043d86f8625a97"
     },
     {
       "tag": "3.9.2-npm",
@@ -54,7 +56,7 @@
         }
       ],
       "version": "3.9.2",
-      "__hash": "dfe046c3e67589542e7008697b8b81b387128989"
+      "__hash": "f05fed8b823bf4f2170f4916d3bb200a628f8797"
     },
     {
       "tag": "3.9.3-npm",
@@ -75,7 +77,7 @@
         }
       ],
       "version": "3.9.3",
-      "__hash": "7d29bec50163bd4d2f30cf9a88688aa991d3f02f"
+      "__hash": "42bf3cd64e362078f31d5c7d5586eb8e12c51899"
     },
     {
       "tag": "3.10.0-npm",
@@ -96,7 +98,7 @@
         }
       ],
       "version": "3.10.0",
-      "__hash": "4e265ca0fb6aacf1907f072182ee9615cea952ef"
+      "__hash": "de7b2973244c83b096d1f4b3149dfd4da3ad0c22"
     },
     {
       "tag": "3.10.1-npm",
@@ -117,7 +119,7 @@
         }
       ],
       "version": "3.10.1",
-      "__hash": "6225ea9153be625b9b1ad6a88e0bd7b45928d032"
+      "__hash": "27b93c65db3391cf959a8e583edd87c65c49d7ad"
     }
   ]
 }

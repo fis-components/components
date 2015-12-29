@@ -55,27 +55,33 @@
     },
     {
       "version": "1.0.5",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.5"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.5",
+      "__hash": "bc8071d131daf8a7c395167cb47cf72f07643cec"
     },
     {
       "version": "1.0.6",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.6"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.6",
+      "__hash": "1c758ce4b0f9fcd3ce82ad9b399fc7c03021e79e"
     },
     {
       "version": "1.0.7",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.7"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.7",
+      "__hash": "56960a6015af4ccccbadb714335a7f29a97a33dc"
     },
     {
       "version": "1.0.8",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.8"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.8",
+      "__hash": "78bdd039756a18f2a5ae8812244e9495fa9a77f7"
     },
     {
       "version": "1.0.9",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.9"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.9",
+      "__hash": "f8662ea975e26ef0944fe085c7081d73fac352e0"
     },
     {
       "version": "1.0.10",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.10"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.10",
+      "__hash": "79235e4da7a2c734fba9daf81dcd25951534612f"
     },
     {
       "version": "1.0.11",
@@ -97,27 +103,33 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "479064c5655d852574d9d8cc6f105250c9ac2ce2"
     },
     {
       "version": "1.0.12",
-      "build": "rm package.json && npm install --prefix . dom-align@1.0.12"
+      "build": "rm package.json && npm install --prefix . dom-align@1.0.12",
+      "__hash": "40fd38dfa7ddf399e1b384c44528f80f403ca5ea"
     },
     {
       "version": "1.1.0",
-      "build": "rm package.json && npm install --prefix . dom-align@1.1.0"
+      "build": "rm package.json && npm install --prefix . dom-align@1.1.0",
+      "__hash": "7f76f3425a6c188da0c7b7710465a76bffb4ae98"
     },
     {
       "version": "1.2.0",
-      "build": "rm package.json && npm install --prefix . dom-align@1.2.0"
+      "build": "rm package.json && npm install --prefix . dom-align@1.2.0",
+      "__hash": "1a8a670cf9d9350ea28968ab4e5f6308882a7f8f"
     },
     {
       "version": "1.2.1",
-      "build": "rm package.json && npm install --prefix . dom-align@1.2.1"
+      "build": "rm package.json && npm install --prefix . dom-align@1.2.1",
+      "__hash": "6f1f715f3603f0fe353c78f9c4500b44073367dc"
     },
     {
       "version": "1.3.0",
-      "build": "rm package.json && npm install --prefix . dom-align@1.3.0"
+      "build": "rm package.json && npm install --prefix . dom-align@1.3.0",
+      "__hash": "e464e87b8e9de0b77afd61439a0de63548e9443d"
     }
   ]
 }

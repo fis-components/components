@@ -35,15 +35,18 @@
   ],
   "tags": [
     {
-      "version": "0.1.26"
+      "version": "0.1.26",
+      "__hash": "4e9879214f743e2e49954ed1ec8ba91813f22487"
     },
     {
       "version": "0.1.28",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.28"
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.28",
+      "__hash": "90bf5ea4ae995f9e055b7d4c8f68551e99b64220"
     },
     {
       "version": "0.1.29",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.29"
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.29",
+      "__hash": "dd2c3c3fe0e34b2376462add70e2ea7834be9309"
     }
   ]
 }

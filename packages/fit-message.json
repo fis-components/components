@@ -33,15 +33,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.2"
+      "version": "1.0.2",
+      "__hash": "05c1ffe73b4631418da6584f4f119cc5f2bcb161"
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . fit-message@1.0.4"
+      "build": "rm package.json && npm install --prefix . fit-message@1.0.4",
+      "__hash": "b9f42f5c255613c4f02e8b4bf783e590a3f035e8"
     },
     {
       "version": "1.0.5",
-      "build": "rm package.json && npm install --prefix . fit-message@1.0.5"
+      "build": "rm package.json && npm install --prefix . fit-message@1.0.5",
+      "__hash": "736c3f8c54cc25d140f01e665b9bbb8835d123d0"
     }
   ]
 }

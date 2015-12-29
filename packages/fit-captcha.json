@@ -37,15 +37,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.7"
+      "version": "1.0.7",
+      "__hash": "df05e034cff38c651f641928d6df4708862c0e68"
     },
     {
       "version": "1.0.8",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.8"
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.8",
+      "__hash": "eb31c98d64482f7f9de861f7734f09bfd07d4d00"
     },
     {
       "version": "1.0.9",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.9"
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.9",
+      "__hash": "19d3d6660b101809e753373f93a4860c66b404a2"
     }
   ]
 }

@@ -34,15 +34,18 @@
   ],
   "tags": [
     {
-      "version": "1.0.19"
+      "version": "1.0.19",
+      "__hash": "dba732af23d08a6b65891b5822b4a36fe3724de8"
     },
     {
       "version": "1.0.21",
-      "build": "rm package.json && npm install --prefix . fit-layout@1.0.21"
+      "build": "rm package.json && npm install --prefix . fit-layout@1.0.21",
+      "__hash": "4b8a29c53eb1b5dfb3d10067083104cb51540ea5"
     },
     {
       "version": "1.0.22",
-      "build": "rm package.json && npm install --prefix . fit-layout@1.0.22"
+      "build": "rm package.json && npm install --prefix . fit-layout@1.0.22",
+      "__hash": "e0ace351e5af610925fb8397ba61d0700de108cf"
     }
   ]
 }

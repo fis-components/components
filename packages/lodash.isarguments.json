@@ -29,23 +29,28 @@
   ],
   "tags": [
     {
-      "version": "3.0.0"
+      "version": "3.0.0",
+      "__hash": "d5edccf3e230f485fb383599ba140893a23ecc56"
     },
     {
       "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.1"
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.1",
+      "__hash": "fc5f82be4a680cd3601dd9d1c51a8d4aee0920d8"
     },
     {
       "version": "3.0.2",
-      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.2"
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.2",
+      "__hash": "63c0ada78d839d6f666ec20e0880a510f676005e"
     },
     {
       "version": "3.0.3",
-      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.3"
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.3",
+      "__hash": "950aec40b955b8a1e021110aa2e460b73ae5652a"
     },
     {
       "version": "3.0.4",
-      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.4"
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.4",
+      "__hash": "782e5fb1daaa1d3d0b86b927d53f933392a127a3"
     }
   ]
 }
