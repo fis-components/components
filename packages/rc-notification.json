@@ -80,7 +80,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "841c8fadddfa35a56d943d72e0c1588937ace317"
     },
     {
       "dependencies": [
