@@ -209,6 +209,7 @@ while (args.length) {
       });
       return pkgs;
     })();
+    var allSkiped = true;
     items.forEach(function(item) {
       if (pkgs[item.version]) {
         var clone = assign({}, pkgs[item.version]);
@@ -218,8 +219,14 @@ while (args.length) {
           return;
         }
       }
+      allSkiped = false;
       pkgs[item.version] = item;
     });
+
+    if (allSkiped) {
+      console.log("Nothing changed, skiped!")
+      continue;
+    }
 
     items = Object.keys(pkgs).sort(function(a, b) {
       return semver.compare(a, b);
