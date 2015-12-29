@@ -51,7 +51,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-pagination\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-pagination\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -66,8 +66,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "0cf5e759c574160d21189e52bbbea3df1b65e306"
+      ]
     }
   ]
 }

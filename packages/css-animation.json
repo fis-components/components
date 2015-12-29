@@ -5,7 +5,7 @@
   "main": "./lib/index",
   "tag": "master",
   "reposType": "npm",
-  "build": "rm package.json && npm install --prefix . css-animation@1.1.0",
+  "build": "rm package.json && npm install --prefix . css-animation@1.0.0",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -30,12 +30,36 @@
   ],
   "tags": [
     {
+      "version": "1.0.0"
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.1"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.2"
+    },
+    {
+      "version": "1.0.3",
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.3"
+    },
+    {
+      "version": "1.0.4",
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.4"
+    },
+    {
+      "version": "1.0.5",
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.5"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . css-animation@1.1.0",
       "version": "1.1.0",
       "__hash": "edbd8e021a8551fc60c85f362120bc631f45ee29"
     },
     {
-      "version": "1.1.1",
       "build": "rm package.json && npm install --prefix . css-animation@1.1.1",
+      "version": "1.1.1",
       "__hash": "3b9d5d7bb850368c432bee50d772a2dac68644cd"
     }
   ]

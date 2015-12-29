@@ -165,7 +165,7 @@ while (args.length) {
     ['assets', 'style', 'fonts', 'css'].forEach(function(assetDir) {
       if (test('-d', path.join(pkgPath, assetDir))) {
         item.mapping.push({
-          reg: "^\\/node_modules\\" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$",
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$",
           release: assetDir + '/$1'
         });
       }

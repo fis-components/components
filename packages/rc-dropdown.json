@@ -54,7 +54,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-dropdown\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-dropdown\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -69,8 +69,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "e596b08cc237b8361e58d104125ad0ac92f602b8"
+      ]
     }
   ]
 }

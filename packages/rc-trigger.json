@@ -57,7 +57,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-trigger\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-trigger\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -72,8 +72,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "ea292268345bf447260fd3b923f7a42e926fdd63"
+      ]
     }
   ]
 }

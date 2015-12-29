@@ -19,7 +19,7 @@
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/node_modules\\rc-tabs\\/assets\\/(.*)$",
+      "reg": "^\\/node_modules\\/rc-tabs\\/assets\\/(.*)$",
       "release": "assets/$1"
     },
     {
@@ -37,18 +37,15 @@
   ],
   "tags": [
     {
-      "version": "5.5.0",
-      "__hash": "71b56b02ada2ca3fc2a29ccb5b4f4be8631db450"
+      "version": "5.5.0"
     },
     {
       "version": "5.5.1",
-      "build": "rm package.json && npm install --prefix . rc-tabs@5.5.1",
-      "__hash": "8e8828eb395ef99ff372a92ec8edf1aaede2d73e"
+      "build": "rm package.json && npm install --prefix . rc-tabs@5.5.1"
     },
     {
       "version": "5.5.2",
-      "build": "rm package.json && npm install --prefix . rc-tabs@5.5.2",
-      "__hash": "6db6a84d6554e46b4aa47c69f6a87a0c9012b471"
+      "build": "rm package.json && npm install --prefix . rc-tabs@5.5.2"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tabs@5.6.0",

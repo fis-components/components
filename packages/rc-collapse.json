@@ -101,7 +101,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-collapse\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-collapse\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -116,8 +116,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "af7b12683e0fce22e54f5a88b753654a9365bb70"
+      ]
     }
   ]
 }

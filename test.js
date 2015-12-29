@@ -94,6 +94,7 @@ files.forEach(function(name) {
     var queue = [];
 
     list.forEach(function(r) {
+        console.log(r.mapping);process.exit(1);
         queue.push(function(cb) {
             var h = spawn('bash', [
                 path.join(ROOT, 'test.sh'),

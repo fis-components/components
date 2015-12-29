@@ -54,7 +54,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-radio\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-radio\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -69,8 +69,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "e78753dc5fa1a6a69a85ad91258ace608cb0d478"
+      ]
     }
   ]
 }

@@ -72,7 +72,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-progress\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-progress\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -87,8 +87,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "45f89d8a0f652c74650425689368b206ecdba78a"
+      ]
     }
   ]
 }

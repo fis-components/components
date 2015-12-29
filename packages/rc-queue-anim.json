@@ -49,7 +49,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-queue-anim\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-queue-anim\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -64,8 +64,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "1febb8fdfe2bb568ffed5978426691f86929d9d3"
+      ]
     },
     {
       "version": "0.11.3",
@@ -80,7 +79,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-queue-anim\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-queue-anim\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -95,8 +94,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "1d55cc36c025b8d1a25df2c53fd5c4bf36c8728a"
+      ]
     }
   ]
 }

@@ -98,7 +98,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-time-picker\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-time-picker\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -113,8 +113,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "70a2ce1ed6752e93161cb0000843079677a79477"
+      ]
     }
   ]
 }

@@ -65,7 +65,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-notification\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-notification\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -80,8 +80,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "841c8fadddfa35a56d943d72e0c1588937ace317"
+      ]
     },
     {
       "dependencies": [
@@ -101,7 +100,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-notification\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-notification\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -116,8 +115,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "068f6c5dbe96f221f31955be677b9aa24939f2ee"
+      ]
     }
   ]
 }

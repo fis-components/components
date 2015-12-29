@@ -8,7 +8,7 @@
   "dependencies": [
     "css-animation@1.x"
   ],
-  "build": "rm package.json && npm install --prefix . rc-animate@2.0.2",
+  "build": "rm package.json && npm install --prefix . rc-animate@2.0.0",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -33,6 +33,14 @@
   ],
   "tags": [
     {
+      "version": "2.0.0"
+    },
+    {
+      "version": "2.0.1",
+      "build": "rm package.json && npm install --prefix . rc-animate@2.0.1"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . rc-animate@2.0.2",
       "version": "2.0.2",
       "__hash": "98af51450d65592ec16f3ad7c2019d86afe91c67"
     }

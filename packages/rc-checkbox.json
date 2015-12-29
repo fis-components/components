@@ -19,7 +19,7 @@
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/node_modules\\rc-checkbox\\/assets\\/(.*)$",
+      "reg": "^\\/node_modules\\/rc-checkbox\\/assets\\/(.*)$",
       "release": "assets/$1"
     },
     {
@@ -37,13 +37,11 @@
   ],
   "tags": [
     {
-      "version": "1.1.1",
-      "__hash": "3a60a3fef5846d9562ac7d272bd01c8fe6dabd5a"
+      "version": "1.1.1"
     },
     {
       "version": "1.1.2",
-      "build": "rm package.json && npm install --prefix . rc-checkbox@1.1.2",
-      "__hash": "4a4c2d7c9c590c4fe76f85a72405bea1e089d3c4"
+      "build": "rm package.json && npm install --prefix . rc-checkbox@1.1.2"
     }
   ]
 }

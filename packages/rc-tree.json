@@ -175,7 +175,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-tree\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-tree\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -190,8 +190,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "0a51b593db22ffb41f79bb32b4d3d1243481f67f"
+      ]
     },
     {
       "version": "0.19.1",
@@ -206,7 +205,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-tree\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-tree\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -221,8 +220,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "d7e129a6e7c29b1382aa61bd381f70d5c50ddbfa"
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree@0.20.0",

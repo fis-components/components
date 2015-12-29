@@ -22,7 +22,7 @@
       "release": "lib/$1"
     },
     {
-      "reg": "^\\/node_modules\\rc-dialog\\/assets\\/(.*)$",
+      "reg": "^\\/node_modules\\/rc-dialog\\/assets\\/(.*)$",
       "release": "assets/$1"
     },
     {
@@ -40,8 +40,7 @@
   ],
   "tags": [
     {
-      "version": "5.2.2",
-      "__hash": "0bfc4440ab8b692f85a6dc3f782a29dcd7066bf1"
+      "version": "5.2.2"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.0",

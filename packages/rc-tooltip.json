@@ -54,7 +54,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-tooltip\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-tooltip\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -69,8 +69,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "e9e58748883d19fb54436e032659d9cf5d22af84"
+      ]
     }
   ]
 }

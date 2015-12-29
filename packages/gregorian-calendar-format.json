@@ -9,7 +9,7 @@
     "gregorian-calendar@4.x",
     "warning@2.x"
   ],
-  "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.4",
+  "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.0",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -34,6 +34,22 @@
   ],
   "tags": [
     {
+      "version": "4.0.0"
+    },
+    {
+      "version": "4.0.1",
+      "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.1"
+    },
+    {
+      "version": "4.0.2",
+      "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.2"
+    },
+    {
+      "version": "4.0.3",
+      "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.3"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.4",
       "version": "4.0.4",
       "__hash": "939ac316db73554fb3038d5fee112e56004adb6b"
     }

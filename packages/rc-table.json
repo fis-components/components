@@ -56,7 +56,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-table\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-table\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -71,8 +71,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "12b0e07cb2d5f0671c743b97d5eea22d98398e6a"
+      ]
     }
   ]
 }

@@ -49,7 +49,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-input-number\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-input-number\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -64,8 +64,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "b869219d18bea706085ffd396830678d7f816c2e"
+      ]
     },
     {
       "version": "2.4.2",
@@ -80,7 +79,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-input-number\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-input-number\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -95,8 +94,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "5aa2f43d06a92774b285efc90740596e7818697e"
+      ]
     }
   ]
 }

@@ -55,7 +55,7 @@
           "release": "lib/$1"
         },
         {
-          "reg": "^\\/node_modules\\rc-calendar\\/assets\\/(.*)$",
+          "reg": "^\\/node_modules\\/rc-calendar\\/assets\\/(.*)$",
           "release": "assets/$1"
         },
         {
@@ -70,8 +70,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "d5ebd06731df81c3da37695f90746f4595aae210"
+      ]
     }
   ]
 }
