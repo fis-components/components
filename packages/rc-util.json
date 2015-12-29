@@ -36,7 +36,8 @@
   ],
   "tags": [
     {
-      "version": "3.0.1"
+      "version": "3.0.1",
+      "__hash": "8669d5caf698b5dda19c20faed56c10383354826"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-util@3.1.0",
