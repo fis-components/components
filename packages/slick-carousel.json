@@ -48,7 +48,8 @@
     },
     {
       "version": "1.5.8",
-      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.8"
+      "build": "rm package.json && npm install --prefix . slick-carousel@1.5.8",
+      "__hash": "48dff9777f5409307da09c6523cff2a7795eb08b"
     },
     {
       "version": "1.5.9",
