@@ -34,7 +34,8 @@
     },
     {
       "version": "3.9.1",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.1"
+      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.1",
+      "__hash": "ee304a0a3e430b1298eb9a47bc043d86f8625a97"
     },
     {
       "tag": "3.9.2-npm",
