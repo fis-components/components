@@ -55,7 +55,8 @@
     },
     {
       "version": "1.0.5",
-      "build": "rm package.json && npm install --prefix . css-animation@1.0.5"
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.5",
+      "__hash": "d70d67d38c32e0d318480532d94dcec1f266359f"
     },
     {
       "build": "rm package.json && npm install --prefix . css-animation@1.1.0",
