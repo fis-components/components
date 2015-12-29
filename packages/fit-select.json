@@ -48,7 +48,8 @@
     },
     {
       "version": "1.0.12",
-      "build": "rm package.json && npm install --prefix . fit-select@1.0.12"
+      "build": "rm package.json && npm install --prefix . fit-select@1.0.12",
+      "__hash": "acbc4000417b05f58b367e2d6648800ee54a8098"
     }
   ]
 }
