@@ -4,6 +4,7 @@
   },
   "jquery": {
     "main": "jquery.js",
+    "repos": "https://github.com/jquery/jquery",
     "tag": "",
     "mapping": [
     {

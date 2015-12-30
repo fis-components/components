@@ -37,7 +37,7 @@
     {
       "version": "1.5.1",
       "description": "jQuery: The Write Less, Do More, JavaScript Library",
-      "repos": "https://github.com/2betop/placeholder.git",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -66,7 +66,7 @@
       "version": "1.6.2",
       "build": "rm package.json && npm install --prefix . jquery@1.6.2",
       "description": "jQuery: The Write Less, Do More, JavaScript Library",
-      "repos": "https://github.com/2betop/placeholder.git",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -95,7 +95,7 @@
       "version": "1.6.3",
       "build": "rm package.json && npm install --prefix . jquery@1.6.3",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
-      "repos": "https://github.com/2betop/placeholder.git",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -124,7 +124,7 @@
       "version": "1.7.2",
       "build": "rm package.json && npm install --prefix . jquery@1.7.2",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
-      "repos": "https://github.com/coolaj86/node-jquery.git",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -153,7 +153,7 @@
       "version": "1.7.3",
       "build": "rm package.json && npm install --prefix . jquery@1.7.3",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
-      "repos": "https://github.com/coolaj86/node-jquery.git",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -182,7 +182,7 @@
       "version": "1.8.2",
       "build": "rm package.json && npm install --prefix . jquery@1.8.2",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
-      "repos": "https://github.com/coolaj86/node-jquery.git",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -210,6 +210,7 @@
     {
       "version": "1.9.1",
       "build": "rm package.json && npm install --prefix . jquery@1.9.1",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -237,6 +238,7 @@
     {
       "version": "1.11.0",
       "build": "rm package.json && npm install --prefix . jquery@1.11.0",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -264,6 +266,7 @@
     {
       "version": "1.11.1",
       "build": "rm package.json && npm install --prefix . jquery@1.11.1",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -291,6 +294,7 @@
     {
       "version": "1.11.2",
       "build": "rm package.json && npm install --prefix . jquery@1.11.2",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
@@ -318,6 +322,7 @@
     {
       "version": "1.11.3",
       "build": "rm package.json && npm install --prefix . jquery@1.11.3",
+      "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
         {
