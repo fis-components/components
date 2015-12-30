@@ -154,7 +154,7 @@
       "build": "rm package.json && npm install --prefix . jquery@1.7.3",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
       "repos": "https://github.com/jquery/jquery",
-      "tag": "",
+      "tag": "master",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
