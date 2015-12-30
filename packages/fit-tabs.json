@@ -1,18 +1,22 @@
 {
-  "repos": "https://github.com/facebook/react.git",
-  "name": "react-dom",
-  "main": "react-dom.js",
-  "build": "rm package.json && npm install --prefix . react-dom@0.14.2",
+  "name": "fit-style",
+  "description": "",
+  "repos": "https://github.com/2betop/placeholder.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
   "dependencies": [
-    "react@^0.14.2"
+    "bootstrap@^4.0.0-alpha.2",
+    "font-awesome@^4.5.0"
   ],
+  "build": "rm package.json && npm install --prefix . fit-style@1.0.25",
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react\\-dom\\/dist\\/(.*)$",
+      "reg": "^\\/node_modules\\/fit-style\\/dist\\/(.*)$",
       "release": "$1"
     },
     {
@@ -20,40 +24,32 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "v0.14.2",
-      "__hash": "170f4ddabfe51da2fbc6ebd26f3949d5ca9c9a92"
-    },
-    {
-      "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
-      "dependencies": [
-        "react@^0.14.3"
-      ],
-      "version": "v0.14.3",
-      "__hash": "1f0f348c92fa6c9df9d61b6032c9a67e6fd76891"
-    },
-    {
-      "version": "0.14.3",
-      "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
-      "description": "React package for working with the DOM.",
-      "tag": "master",
-      "reposType": "npm",
+      "version": "0.1.17",
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.1.17",
+      "name": "fit-tabs",
+      "description": "tbas",
+      "repos": "https://github.com/tb-component/pc-tabs.git",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "reg": "^\\/node_modules\\/fit-tabs\\/dist\\/(.*)$",
           "release": "$1"
         },
         {
@@ -74,22 +70,22 @@
       }
     },
     {
-      "version": "0.14.4",
-      "build": "rm package.json && npm install --prefix . react-dom@0.14.4",
-      "description": "React package for working with the DOM.",
-      "tag": "master",
-      "reposType": "npm",
+      "version": "0.1.20",
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.1.20",
+      "name": "fit-tabs",
+      "description": "tbas",
+      "repos": "https://github.com/tb-component/pc-tabs.git",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "reg": "^\\/node_modules\\/fit-tabs\\/dist\\/(.*)$",
           "release": "$1"
         },
         {
@@ -110,22 +106,22 @@
       }
     },
     {
-      "version": "0.14.5",
-      "build": "rm package.json && npm install --prefix . react-dom@0.14.5",
-      "description": "React package for working with the DOM.",
-      "tag": "master",
-      "reposType": "npm",
+      "version": "0.1.23",
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.1.23",
+      "name": "fit-tabs",
+      "description": "tbas",
+      "repos": "https://github.com/tb-component/pc-tabs.git",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "reg": "^\\/node_modules\\/fit-tabs\\/dist\\/(.*)$",
           "release": "$1"
         },
         {

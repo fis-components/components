@@ -35,7 +35,6 @@
   ],
   "tags": [
     {
-      "version": "1.5.1",
       "description": "jQuery: The Write Less, Do More, JavaScript Library",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
@@ -61,14 +60,14 @@
           "release": false
         }
       ],
+      "version": "1.5.1",
       "__hash": "02ef5d4365573c463d8d29724abe4205e490cf23"
     },
     {
-      "version": "1.6.2",
-      "build": "rm package.json && npm install --prefix . jquery@1.6.2",
       "description": "jQuery: The Write Less, Do More, JavaScript Library",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.6.2",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -91,14 +90,14 @@
           "release": false
         }
       ],
+      "version": "1.6.2",
       "__hash": "e7c263c040e088469ebbc6e7afd759ece25867ac"
     },
     {
-      "version": "1.6.3",
-      "build": "rm package.json && npm install --prefix . jquery@1.6.3",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.6.3",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -121,14 +120,14 @@
           "release": false
         }
       ],
+      "version": "1.6.3",
       "__hash": "91fef36aeca4cd4bacd45ae5df664f337ff8d322"
     },
     {
-      "version": "1.7.2",
-      "build": "rm package.json && npm install --prefix . jquery@1.7.2",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.7.2",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -151,14 +150,13 @@
           "release": false
         }
       ],
+      "version": "1.7.2",
       "__hash": "37d66e1ce1523262b10818b8158e33f048d5c758"
     },
     {
-      "version": "1.7.3",
-      "build": "rm package.json && npm install --prefix . jquery@1.7.3",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
       "repos": "https://github.com/jquery/jquery",
-      "tag": "master",
+      "build": "rm package.json && npm install --prefix . jquery@1.7.3",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -181,14 +179,14 @@
           "release": false
         }
       ],
+      "version": "1.7.3",
       "__hash": "629a1db0ad46cea57fcd19bce8fd4043f7ea54d2"
     },
     {
-      "version": "1.8.2",
-      "build": "rm package.json && npm install --prefix . jquery@1.8.2",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.8.2",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -211,13 +209,13 @@
           "release": false
         }
       ],
+      "version": "1.8.2",
       "__hash": "d4cc59dedcdb601e8350a6e60d49de269529e556"
     },
     {
-      "version": "1.9.1",
-      "build": "rm package.json && npm install --prefix . jquery@1.9.1",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.9.1",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -240,13 +238,13 @@
           "release": false
         }
       ],
+      "version": "1.9.1",
       "__hash": "4041170745743b8d45bcaf60303b2b7eda4330f9"
     },
     {
-      "version": "1.11.0",
-      "build": "rm package.json && npm install --prefix . jquery@1.11.0",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.11.0",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -269,13 +267,13 @@
           "release": false
         }
       ],
+      "version": "1.11.0",
       "__hash": "b7d918538aab12f0c27aa1a2f32c7f7e8ee5fd7b"
     },
     {
-      "version": "1.11.1",
-      "build": "rm package.json && npm install --prefix . jquery@1.11.1",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.11.1",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -298,13 +296,13 @@
           "release": false
         }
       ],
+      "version": "1.11.1",
       "__hash": "c18a9ce8273792c44e8ba28c436e781aff3815ac"
     },
     {
-      "version": "1.11.2",
-      "build": "rm package.json && npm install --prefix . jquery@1.11.2",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.11.2",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -327,13 +325,13 @@
           "release": false
         }
       ],
+      "version": "1.11.2",
       "__hash": "ee7bb94db6599671dd4fac9f3bfa764b3dab5309"
     },
     {
-      "version": "1.11.3",
-      "build": "rm package.json && npm install --prefix . jquery@1.11.3",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
+      "build": "rm package.json && npm install --prefix . jquery@1.11.3",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -356,6 +354,7 @@
           "release": false
         }
       ],
+      "version": "1.11.3",
       "__hash": "bcfac3728442e26d28422372c65032612b59f882"
     },
     {
@@ -483,19 +482,18 @@
       "__hash": "a6cb4737b20949b2a78f199ebc371b9b0ec68c3d"
     },
     {
+      "version": "2.1.4",
       "build": "rm package.json && npm install --prefix . jquery@2.1.4",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
         },
         {
-          "reg": "^\\/node_modules\\/jquery\\/(?:test|build|dist\\/cdn)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/jquery\\/dist\\/(.*)$",
-          "release": "$1"
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -510,8 +508,9 @@
           "release": false
         }
       ],
-      "version": "2.1.4",
-      "__hash": "01ee9d1fbdb2eb7979f3ea94a88fbc6cfe424502"
+      "paths": {
+        "dist": "."
+      }
     }
   ]
 }

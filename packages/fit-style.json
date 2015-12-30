@@ -51,9 +51,8 @@
       "__hash": "def1bdcb86c925d3437225ad2c53ebdba108f28e"
     },
     {
-      "version": "1.0.33",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.33",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.33",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -80,10 +79,11 @@
           "release": false
         }
       ],
+      "version": "1.0.33",
       "__hash": "57fd78a6cc3065d3b4c08f20a4482831caed3429"
     },
     {
-      "version": "1.0.35",
+      "description": "",
       "build": "rm package.json && npm install --prefix . fit-style@1.0.35",
       "mapping": [
         {
@@ -111,7 +111,105 @@
           "release": false
         }
       ],
+      "version": "1.0.35",
       "__hash": "7cf4c8b47ef2aa004e9d226460a1b6d3aa3fe257"
+    },
+    {
+      "version": "1.0.42",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.42",
+      "description": "",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.45",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.45",
+      "description": "",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.48",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.48",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

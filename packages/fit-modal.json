@@ -47,11 +47,10 @@
       "__hash": "d456ae357d9be804f517649c0981d7133db61baf"
     },
     {
-      "version": "1.0.13",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.13",
       "dependencies": [
         "fit-style@^1.0.31"
       ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.13",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -78,14 +77,14 @@
           "release": false
         }
       ],
+      "version": "1.0.13",
       "__hash": "6bed6f4d2389d7508b84aba0a1108c54bb3635e9"
     },
     {
-      "version": "1.0.15",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.15",
       "dependencies": [
         "fit-style@^1.0.33"
       ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.15",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -112,13 +111,48 @@
           "release": false
         }
       ],
+      "version": "1.0.15",
       "__hash": "9f13172f650c6905552bdf46071ab58fd06e9f58"
     },
     {
-      "version": "1.0.17",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.17",
       "dependencies": [
         "fit-style@^1.0.35"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.17",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.17",
+      "__hash": "e651405845eed95782225cef3ae003b63caf07e9"
+    },
+    {
+      "version": "1.0.24",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.24",
+      "dependencies": [
+        "fit-style@^1.0.42"
       ],
       "mapping": [
         {
@@ -146,7 +180,77 @@
           "release": false
         }
       ],
-      "__hash": "e651405845eed95782225cef3ae003b63caf07e9"
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.27",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.27",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.0.45"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.30",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.30",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.0.48"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

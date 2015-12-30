@@ -1,26 +1,22 @@
 {
-  "name": "fit-select",
-  "description": "选择框",
+  "name": "fit-style",
+  "description": "",
   "repos": "https://github.com/2betop/placeholder.git",
   "main": "index.js",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [
-    "classnames@^2.2.1",
-    "jquery@^2.1.4",
-    "lodash@^3.10.1",
-    "react@^0.14.3",
-    "react-dom@^0.14.3",
-    "fit-style@^1.0.25"
+    "bootstrap@^4.0.0-alpha.2",
+    "font-awesome@^4.5.0"
   ],
-  "build": "rm package.json && npm install --prefix . fit-select@1.0.10",
+  "build": "rm package.json && npm install --prefix . fit-style@1.0.25",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/fit-select\\/dist\\/(.*)$",
+      "reg": "^\\/node_modules\\/fit-style\\/dist\\/(.*)$",
       "release": "$1"
     },
     {
@@ -38,28 +34,13 @@
   ],
   "tags": [
     {
-      "version": "1.0.10",
-      "__hash": "fa457b9785c102f6ab9309ce3c711a87be15f2e9"
-    },
-    {
-      "build": "rm package.json && npm install --prefix . fit-select@1.0.11",
-      "version": "1.0.11",
-      "__hash": "f1d82255c60493fb0ed957d1fe865ad87ba763de"
-    },
-    {
-      "build": "rm package.json && npm install --prefix . fit-select@1.0.12",
-      "version": "1.0.12",
-      "__hash": "acbc4000417b05f58b367e2d6648800ee54a8098"
-    },
-    {
       "version": "1.0.28",
-      "build": "rm package.json && npm install --prefix . fit-select@1.0.28",
+      "build": "rm package.json && npm install --prefix . fit-switch@1.0.28",
+      "name": "fit-switch",
+      "description": "开关",
       "dependencies": [
         "classnames@^2.2.1",
-        "jquery@^2.1.4",
-        "lodash@^3.10.1",
         "react@^0.14.3",
-        "react-dom@^0.14.3",
         "fit-style@^1.0.42"
       ],
       "mapping": [
@@ -68,11 +49,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-switch\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/dist\\/(.*)$",
+          "reg": "^\\/node_modules\\/fit-switch\\/dist\\/(.*)$",
           "release": "$1"
         },
         {
@@ -94,14 +75,13 @@
     },
     {
       "version": "1.0.31",
-      "build": "rm package.json && npm install --prefix . fit-select@1.0.31",
+      "build": "rm package.json && npm install --prefix . fit-switch@1.0.31",
+      "name": "fit-switch",
+      "description": "开关",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
-        "jquery@^2.1.4",
-        "lodash@^3.10.1",
         "react@^0.14.3",
-        "react-dom@^0.14.3",
         "fit-style@^1.0.45"
       ],
       "mapping": [
@@ -110,11 +90,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-switch\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/lib\\/(.*)$",
+          "reg": "^\\/node_modules\\/fit-switch\\/lib\\/(.*)$",
           "release": "lib/$1"
         },
         {
@@ -133,14 +113,13 @@
     },
     {
       "version": "1.0.34",
-      "build": "rm package.json && npm install --prefix . fit-select@1.0.34",
+      "build": "rm package.json && npm install --prefix . fit-switch@1.0.34",
+      "name": "fit-switch",
+      "description": "开关",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
-        "jquery@^2.1.4",
-        "lodash@^3.10.1",
         "react@^0.14.3",
-        "react-dom@^0.14.3",
         "fit-style@^1.0.48"
       ],
       "mapping": [
@@ -149,11 +128,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-switch\\/(?:test|build|dist\\/cdn)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/lib\\/(.*)$",
+          "reg": "^\\/node_modules\\/fit-switch\\/lib\\/(.*)$",
           "release": "lib/$1"
         },
         {

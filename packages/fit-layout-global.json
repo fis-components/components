@@ -49,13 +49,12 @@
       "__hash": "dd2c3c3fe0e34b2376462add70e2ea7834be9309"
     },
     {
-      "version": "0.1.32",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.32",
       "dependencies": [
         "jquery@^2.1.4",
         "redux@^3.0.5",
         "fit-style@^1.0.31"
       ],
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.32",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -82,16 +81,16 @@
           "release": false
         }
       ],
+      "version": "0.1.32",
       "__hash": "5af02b5668cc5b259c1cbffe93f42e74bf485545"
     },
     {
-      "version": "0.1.34",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.34",
       "dependencies": [
         "jquery@^2.1.4",
         "redux@^3.0.5",
         "fit-style@^1.0.33"
       ],
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.34",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -118,16 +117,16 @@
           "release": false
         }
       ],
+      "version": "0.1.34",
       "__hash": "11122d067169bc23534067cdda15eb5b6d88887d"
     },
     {
-      "version": "0.1.36",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.36",
       "dependencies": [
         "jquery@^2.1.4",
         "redux@^3.0.5",
         "fit-style@^1.0.35"
       ],
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.36",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -154,7 +153,118 @@
           "release": false
         }
       ],
+      "version": "0.1.36",
       "__hash": "53239fed29c1775354451c414c5efb3070851253"
+    },
+    {
+      "version": "0.1.43",
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.43",
+      "dependencies": [
+        "jquery@^2.1.4",
+        "redux@^3.0.5",
+        "fit-style@^1.0.42"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "0.1.46",
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.46",
+      "main": "lib/index.js",
+      "dependencies": [
+        "jquery@^2.1.4",
+        "redux@^3.0.5",
+        "fit-style@^1.0.45"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.1.49",
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.1.49",
+      "main": "lib/index.js",
+      "dependencies": [
+        "jquery@^2.1.4",
+        "redux@^3.0.5",
+        "fit-style@^1.0.48"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
