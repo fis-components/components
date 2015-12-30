@@ -167,12 +167,12 @@
       "__hash": "3b01f1ab939de0d94a2b40cef4571457e98906d2"
     },
     {
+      "version": "4.0.0-alpha.2",
+      "build": "rm package.json && npm install --prefix . bootstrap@4.0.0-alpha.2",
       "name": "bootstrap",
       "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
       "tag": "master",
       "reposType": "npm",
-      "version": "4.0.0-alpha.2",
-      "build": "rm package.json && npm install --prefix . bootstrap@4.0.0-alpha.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -203,6 +203,9 @@
           "release": false
         }
       ],
+      "paths": {
+        "dist": "."
+      },
       "shim": {
         "bootstrap.js": {
           "content": "require('./npm.js');"
@@ -296,8 +299,7 @@
             "jQuery"
           ]
         }
-      },
-      "__hash": "e3ea93bd2c93df3111a3a7cb0f4f7ca7e81ab3b7"
+      }
     }
   ]
 }
