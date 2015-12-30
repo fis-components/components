@@ -180,7 +180,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "629a1db0ad46cea57fcd19bce8fd4043f7ea54d2"
     },
     {
       "version": "1.8.2",
@@ -209,7 +210,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "d4cc59dedcdb601e8350a6e60d49de269529e556"
     },
     {
       "version": "1.9.1",
@@ -237,7 +239,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "4041170745743b8d45bcaf60303b2b7eda4330f9"
     },
     {
       "version": "1.11.0",
@@ -265,7 +268,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "b7d918538aab12f0c27aa1a2f32c7f7e8ee5fd7b"
     },
     {
       "version": "1.11.1",
@@ -293,7 +297,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "c18a9ce8273792c44e8ba28c436e781aff3815ac"
     },
     {
       "version": "1.11.2",
@@ -321,7 +326,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "ee7bb94db6599671dd4fac9f3bfa764b3dab5309"
     },
     {
       "version": "1.11.3",
@@ -349,7 +355,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "bcfac3728442e26d28422372c65032612b59f882"
     },
     {
       "build": "rm package.json && npm install --prefix . jquery@2.1.0",
