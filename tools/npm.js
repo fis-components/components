@@ -174,12 +174,16 @@ while (args.length) {
           release: '$1'
         });
         item.main = item.main = main.replace(/^dist\//, '');
+        item.paths = item.paths || {};
+        item.paths.dist = path.dirname(item.main);
       } else if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
           release: '$1'
         });
         item.main = item.main = item.name + '.js';
+        item.paths = item.paths || {};
+        item.paths.dist = path.dirname(item.main);
       } else if (path.dirname(main) === '.' || path.dirname(main) === '') {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.(?:js|css))$",
