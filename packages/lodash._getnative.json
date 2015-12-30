@@ -1,13 +1,17 @@
 {
+  "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.0",
   "name": "lodash._getnative",
   "description": "The modern build of lodash’s internal `getNative` as a module.",
   "repos": "https://github.com/lodash/lodash.git",
   "tag": "master",
   "reposType": "npm",
-  "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.0",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\._getnative\\/(?:test|build|dist\\/cdn)\\/",
       "release": false
     },
     {
@@ -29,97 +33,11 @@
   ],
   "tags": [
     {
-      "version": "3.9.0",
-      "__hash": "3c2837973774cacb81b6b24c8984c75126ea5e72"
+      "version": "3.9.0"
     },
     {
       "version": "3.9.1",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.1",
-      "__hash": "ee304a0a3e430b1298eb9a47bc043d86f8625a97"
-    },
-    {
-      "tag": "3.9.2-npm",
-      "main": "index.js",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.2",
-      "mapping": [
-        {
-          "reg": "^\\/node_modules\\/lodash\\._getnative\\/index\\.js$",
-          "release": "index.js"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^.*$",
-          "release": false
-        }
-      ],
-      "version": "3.9.2",
-      "__hash": "f05fed8b823bf4f2170f4916d3bb200a628f8797"
-    },
-    {
-      "tag": "3.9.3-npm",
-      "main": "index.js",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.3",
-      "mapping": [
-        {
-          "reg": "^\\/node_modules\\/lodash\\._getnative\\/index\\.js$",
-          "release": "index.js"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^.*$",
-          "release": false
-        }
-      ],
-      "version": "3.9.3",
-      "__hash": "42bf3cd64e362078f31d5c7d5586eb8e12c51899"
-    },
-    {
-      "tag": "3.10.0-npm",
-      "main": "index.js",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.10.0",
-      "mapping": [
-        {
-          "reg": "^\\/node_modules\\/lodash\\._getnative\\/index\\.js$",
-          "release": "index.js"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^.*$",
-          "release": false
-        }
-      ],
-      "version": "3.10.0",
-      "__hash": "de7b2973244c83b096d1f4b3149dfd4da3ad0c22"
-    },
-    {
-      "tag": "3.10.1-npm",
-      "main": "index.js",
-      "build": "rm package.json && npm install --prefix . lodash._getnative@3.10.1",
-      "mapping": [
-        {
-          "reg": "^\\/node_modules\\/lodash\\._getnative\\/index\\.js$",
-          "release": "index.js"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^.*$",
-          "release": false
-        }
-      ],
-      "version": "3.10.1",
-      "__hash": "27b93c65db3391cf959a8e583edd87c65c49d7ad"
+      "build": "rm package.json && npm install --prefix . lodash._getnative@3.9.1"
     }
   ]
 }
