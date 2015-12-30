@@ -233,6 +233,7 @@ while (args.length) {
 
     if (allSkiped) {
       console.log("Nothing changed, skiped!")
+      packages.push(pkgName);
       continue;
     }
 
