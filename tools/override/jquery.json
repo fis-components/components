@@ -1,0 +1,28 @@
+{
+  "main": "jquery.js",
+  "repos": "https://github.com/jquery/jquery",
+  "tag": "",
+  "mapping": [
+  {
+    "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+    "release": "jquery.js"
+  },
+  {
+    "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+    "release": "jquery.js"
+  },
+  {
+    "reg": "^\\/README\\.md$",
+    "release": "$&"
+  },
+  {
+    "reg": "^\\/LICENSE\\.md$",
+    "release": "$&"
+  },
+  {
+    "reg": "\\.*",
+    "release": false
+  }],
+  "dependencies": [
+  ]
+}

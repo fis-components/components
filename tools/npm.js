@@ -11,7 +11,6 @@ var hash = require('object-hash');
 
 const args = argv._.concat();
 const packages = [];
-const overrided = require('./override.json');
 const browserIgnore = require('./browser.ignore.json');
 const ignore = require("./ignore.json");
 
@@ -88,18 +87,20 @@ while (args.length) {
     json.main && (item.main = json.main);
     item.tag = 'master';
     item.reposType = 'npm';
+    var overrided = getOverride(pkgName, version);
 
-    if (overrided[pkgName] && overrided[pkgName].dependencies) {
-      json.dependencies = overrided[pkgName].dependencies;
+    if (overrided && overrided.dependencies) {
+      json.dependencies = overrided.dependencies;
       if (Array.isArray(json.dependencies)) {
         var tmp = {};
         json.dependencies.forEach(function(dep) {
           var parts = dep.split('@');
           var key = parts[0];
-          var key = parts[1];
+          var value = parts[1];
           tmp[key] = value;
         });
       }
+      json.dependencies = tmp;
     }
 
     if (json.dependencies) {
@@ -139,12 +140,25 @@ while (args.length) {
     }
 
     if (json.browser) {
-      item.mapping.push({
-        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(json.browser) + ")$",
-        release: '$1'
-      });
+      if (typeof json.browser === 'object') {
+        item.paths = json.browser;
 
-      item.main = json.browser;
+        Object.keys(item.paths).forEach(function(key) {
+          var value = item.paths[key].replace(/^\.\//, '');
+
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(value) + ")$",
+            release: '$1'
+          });
+        });
+      } else {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(json.browser) + ")$",
+          release: '$1'
+        });
+
+        item.main = json.browser;
+      }
     } else {
       var main = (json.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
 
@@ -207,7 +221,7 @@ while (args.length) {
       release: false
     });  
 
-    overrided[pkgName] && assign(item, overrided[pkgName]);
+    overrided && assign(item, overrided);
 
     items.push(item);
   });
@@ -280,4 +294,29 @@ while (args.length) {
     console.log('Created %s', pkgName + '.json');
     packages.push(pkgName);
   })();
+}
+
+
+function getOverride(pkgname, version) {
+  var configPath = path.join(__dirname, 'override', pkgname + '.json');
+  if (test('-f', configPath)) {
+    var json = require(configPath);
+    var data = assign({}, json);
+    delete data.tags;
+
+    if (version && semver.valid(version) && json.tags) {
+      Object.keys(json.tags).forEach(function(key) {
+        var tag = json.tags[key];
+
+        if (semver.valid(version) && semver.satisfies(version, key)) {
+          console.log('Load override %s', key);
+          assign(data, tag);
+        }
+      })
+    }
+
+    return data
+  }
+
+  return null;
 }
