@@ -1,4 +1,5 @@
 {
+  "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.2",
   "name": "fiten-color-native",
   "description": "样式",
   "repos": "https://github.com/2betop/placeholder.git",
@@ -6,10 +7,13 @@
   "tag": "master",
   "reposType": "npm",
   "dependencies": [],
-  "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.2",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fiten-color-native\\/(?:test|build|dist\\/cdn)\\/",
       "release": false
     },
     {
@@ -31,18 +35,15 @@
   ],
   "tags": [
     {
-      "version": "1.0.2",
-      "__hash": "3e3d1166fcefd17c37366d3aced2c40d7d1b58a1"
+      "version": "1.0.2"
     },
     {
       "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.3",
-      "__hash": "1f2e73b2c264a26e3560e2c89b9a82ae9c827b9c"
+      "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.3"
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.4",
-      "__hash": "c49d568bde06ea66c65f53ef939985762e05384b"
+      "build": "rm package.json && npm install --prefix . fiten-color-native@1.0.4"
     }
   ]
 }
