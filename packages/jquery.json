@@ -60,7 +60,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "02ef5d4365573c463d8d29724abe4205e490cf23"
     },
     {
       "version": "1.6.2",
@@ -89,7 +90,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "e7c263c040e088469ebbc6e7afd759ece25867ac"
     },
     {
       "version": "1.6.3",
@@ -118,7 +120,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "91fef36aeca4cd4bacd45ae5df664f337ff8d322"
     },
     {
       "version": "1.7.2",
@@ -147,7 +150,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "37d66e1ce1523262b10818b8158e33f048d5c758"
     },
     {
       "version": "1.7.3",
