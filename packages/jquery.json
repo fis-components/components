@@ -180,7 +180,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "629a1db0ad46cea57fcd19bce8fd4043f7ea54d2"
     },
     {
       "version": "1.8.2",
