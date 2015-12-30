@@ -77,7 +77,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "6bed6f4d2389d7508b84aba0a1108c54bb3635e9"
     },
     {
       "version": "1.0.15",
@@ -110,7 +111,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "9f13172f650c6905552bdf46071ab58fd06e9f58"
     },
     {
       "version": "1.0.17",
@@ -143,7 +145,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "e651405845eed95782225cef3ae003b63caf07e9"
     }
   ]
 }
