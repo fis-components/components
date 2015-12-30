@@ -2,6 +2,33 @@
   "rc-collapse": {
     "repos": "https://github.com/react-component/collapse.git"
   },
+  "jquery": {
+    "main": "jquery.js",
+    "tag": "",
+    "mapping": [
+    {
+      "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+      "release": "jquery.js"
+    },
+    {
+      "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+      "release": "jquery.js"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }],
+    "dependencies": [
+    ]
+  },
   "bootstrap": {
     "main": "bootstrap.js",
     "mapping": [

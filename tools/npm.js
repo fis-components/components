@@ -89,6 +89,19 @@ while (args.length) {
     item.tag = 'master';
     item.reposType = 'npm';
 
+    if (overrided[pkgName] && overrided[pkgName].dependencies) {
+      json.dependencies = overrided[pkgName].dependencies;
+      if (Array.isArray(json.dependencies)) {
+        var tmp = {};
+        json.dependencies.forEach(function(dep) {
+          var parts = dep.split('@');
+          var key = parts[0];
+          var key = parts[1];
+          tmp[key] = value;
+        });
+      }
+    }
+
     if (json.dependencies) {
       var dependencies = [];
       Object.keys(json.dependencies).forEach(function(key) {
@@ -203,12 +216,14 @@ while (args.length) {
     continue;
   }
 
+  var topConfig;
   if (!argv.override && test('-f', path.join(__dirname, '../packages/' + pkgName + '.json'))) {
     console.log('Merging...')
     var pkgs = (function() {
       var pkg = require('../packages/' + pkgName + '.json');
       var pkgs = {};
       var tags = pkg.tags;
+      topConfig = pkg;
 
       tags.forEach(function(tag) {
           var data = assign({}, pkg, tag);
@@ -246,7 +261,7 @@ while (args.length) {
 
 
   (function() {
-    var config = assign({}, items[0]);
+    var config = assign({}, topConfig || items[0]);
 
     delete config['version'];
     delete config['__hash'];
