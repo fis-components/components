@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . fiten-color@1.0.3"
+      "build": "rm package.json && npm install --prefix . fiten-color@1.0.3",
+      "__hash": "8531d9b6dc6459a6a45453f308f88092eaf95f32"
     },
     {
       "version": "1.0.4",
