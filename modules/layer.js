@@ -8,6 +8,7 @@ module.exports = (function() {
         // 需要转换的版本
         version: 'v2.1',
         tag: "master",
+        build: "grunt",
 
         // 在 fis-components 中的名称
         name: 'layer',
@@ -23,8 +24,14 @@ module.exports = (function() {
         // 配置文件信息，只把需要的文件 copy 过来
         mapping: [
             {
-                reg: /\.(js|css)$/,
+                reg: /^(?:\/src\/|\/test|GruntFile\.js)/i,
                 release: false
+
+            },
+
+            {
+                reg: /\.(js|css)$/,
+                release: '$0',
             },
             {
                 reg: /^\/README\.md$/,
