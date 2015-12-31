@@ -30,7 +30,13 @@ module.exports = (function() {
             },
 
             {
-                reg: /^.*\.(js|css)$/,
+                reg: /^\/(?:mobile|extend)\//i,
+                release: '$0'
+
+            },
+
+            {
+                reg: /^\/layer\.(js|css)$/,
                 release: '$0',
             },
             {
