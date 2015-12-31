@@ -30,7 +30,7 @@ module.exports = (function() {
             },
 
             {
-                reg: /\.(js|css)$/,
+                reg: /^.*\.(js|css)$/,
                 release: '$0',
             },
             {
