@@ -415,7 +415,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "6902dd0ecd0dc1e80b2331ba289b817e0bbb253a"
     },
     {
       "dependencies": [
