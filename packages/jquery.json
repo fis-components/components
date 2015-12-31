@@ -494,7 +494,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "9b2038351a2c05916c3e9f68f9346cdd23875f55"
     },
     {
       "repos": "https://github.com/jquery/jquery",
