@@ -7,6 +7,7 @@ module.exports = (function() {
 
         // 需要转换的版本
         version: 'v2.1',
+        tag: "master",
 
         // 在 fis-components 中的名称
         name: 'layer',
