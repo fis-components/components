@@ -153,12 +153,11 @@
       "__hash": "853344abb5d44e4c262cf5c86edf1b8acf93032a"
     },
     {
-      "version": "1.0.44",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.0.44",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.0.42"
       ],
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.44",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -185,19 +184,19 @@
           "release": false
         }
       ],
+      "version": "1.0.44",
       "paths": {
         "dist": "."
       },
       "__hash": "2bd138e3d8a915b1d83ec7fac2e508932e24e85d"
     },
     {
-      "version": "1.0.47",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.0.47",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.0.45"
       ],
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.47",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -224,16 +223,16 @@
           "release": false
         }
       ],
+      "version": "1.0.47",
       "__hash": "5e58abcb3a6cb4da9bcfb202da89d4d717c1c32f"
     },
     {
-      "version": "1.0.50",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.0.50",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.0.48"
       ],
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.50",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -260,7 +259,78 @@
           "release": false
         }
       ],
+      "version": "1.0.50",
       "__hash": "397dc6b89111f7c66dce62287faf3ec5441ffe66"
+    },
+    {
+      "version": "1.0.54",
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.54",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.0.55"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-menu\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.56",
+      "build": "rm package.json && npm install --prefix . fit-menu@1.0.56",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.0.55"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-menu\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

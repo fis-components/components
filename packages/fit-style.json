@@ -527,9 +527,9 @@
       "__hash": "89832ad4f6d154132f55f1ad24906810d316022a"
     },
     {
-      "version": "1.0.45",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.45",
+      "description": "",
       "main": "lib/index.js",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.45",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -555,7 +555,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "1.0.45"
     },
     {
       "version": "1.0.48",
