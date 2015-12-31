@@ -111,7 +111,7 @@ while (args.length) {
         }
 
         // if (!~modules.indexOf(key)) {
-          args.push(key + '@' + json.dependencies[key]);
+          argv.r === false || args.push(key + '@' + json.dependencies[key]);
         // }
 
         dependencies.push(key + '@' + json.dependencies[key])
@@ -152,12 +152,31 @@ while (args.length) {
           });
         });
       } else {
-        item.mapping.push({
-          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(json.browser) + ")$",
-          release: '$1'
-        });
 
-        item.main = json.browser;
+        var main = json.browser.replace(/^\.\//, '').replace(/\/$/, '/index');
+
+        if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+          main = path.join(main, 'index');
+        }
+
+        // console.log(json, main)
+        // console.log(main);
+        if (/^dist/.test(main)) {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+            release: '$1'
+          });
+          item.main = item.main = main.replace(/^dist\//, '');
+          item.paths = item.paths || {};
+          item.paths.dist = path.dirname(item.main);
+        } else {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(json.browser) + ")$",
+            release: '$1'
+          });
+
+          item.main = json.browser;
+        }
       }
     } else {
       var main = (json.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
@@ -167,6 +186,7 @@ while (args.length) {
       }
 
       // console.log(json, main)
+      // console.log(main);
 
       if (/^dist/.test(main)) {
         item.mapping.push({

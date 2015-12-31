@@ -161,14 +161,13 @@
       "__hash": "6ada69488b2b9d6d769c2d2c6a62ec465db078b7"
     },
     {
-      "version": "1.0.33",
-      "build": "rm package.json && npm install --prefix . fit-input@1.0.33",
       "dependencies": [
         "classnames@^2.2.1",
         "lodash@^3.10.1",
         "react@^0.14.3",
         "fit-style@^1.0.42"
       ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.0.33",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -195,14 +194,13 @@
           "release": false
         }
       ],
+      "version": "1.0.33",
       "paths": {
         "dist": "."
       },
       "__hash": "eb06e25ffb1244d2e7407cac5ec70fc701a7948f"
     },
     {
-      "version": "1.0.36",
-      "build": "rm package.json && npm install --prefix . fit-input@1.0.36",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -210,6 +208,7 @@
         "react@^0.14.3",
         "fit-style@^1.0.45"
       ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.0.36",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -236,11 +235,10 @@
           "release": false
         }
       ],
+      "version": "1.0.36",
       "__hash": "23bfd3b5fcd29bd4dd732c077fdc79c9f4fd0f08"
     },
     {
-      "version": "1.0.39",
-      "build": "rm package.json && npm install --prefix . fit-input@1.0.39",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -248,6 +246,7 @@
         "react@^0.14.3",
         "fit-style@^1.0.48"
       ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.0.39",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -274,7 +273,45 @@
           "release": false
         }
       ],
+      "version": "1.0.39",
       "__hash": "93c95f43e798190f38946e32fdd1a0a9cdfbad74"
+    },
+    {
+      "version": "1.0.43",
+      "build": "rm package.json && npm install --prefix . fit-input@1.0.43",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.55"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

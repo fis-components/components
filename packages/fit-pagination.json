@@ -33,8 +33,6 @@
   ],
   "tags": [
     {
-      "version": "1.0.34",
-      "build": "rm package.json && npm install --prefix . fit-pagination@1.0.34",
       "name": "fit-pagination",
       "description": "分页",
       "dependencies": [
@@ -42,6 +40,7 @@
         "react@^0.14.3",
         "fit-style@^1.0.42"
       ],
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.0.34",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -68,14 +67,13 @@
           "release": false
         }
       ],
+      "version": "1.0.34",
       "paths": {
         "dist": "."
       },
       "__hash": "ec04dcb8cae620bba19c950826cab78c91d282a4"
     },
     {
-      "version": "1.0.37",
-      "build": "rm package.json && npm install --prefix . fit-pagination@1.0.37",
       "name": "fit-pagination",
       "description": "分页",
       "main": "lib/index.js",
@@ -84,6 +82,7 @@
         "react@^0.14.3",
         "fit-style@^1.0.45"
       ],
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.0.37",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -110,11 +109,10 @@
           "release": false
         }
       ],
+      "version": "1.0.37",
       "__hash": "fe78150a3b4f4860cad96b1350944ad798deaf97"
     },
     {
-      "version": "1.0.40",
-      "build": "rm package.json && npm install --prefix . fit-pagination@1.0.40",
       "name": "fit-pagination",
       "description": "分页",
       "main": "lib/index.js",
@@ -123,6 +121,7 @@
         "react@^0.14.3",
         "fit-style@^1.0.48"
       ],
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.0.40",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -149,7 +148,46 @@
           "release": false
         }
       ],
+      "version": "1.0.40",
       "__hash": "59f34705a7b51473b7b04c18373a5ef69c5d97fb"
+    },
+    {
+      "version": "1.0.44",
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.0.44",
+      "name": "fit-pagination",
+      "description": "分页",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.55"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-pagination\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-pagination\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

@@ -149,11 +149,10 @@
       "__hash": "e651405845eed95782225cef3ae003b63caf07e9"
     },
     {
-      "version": "1.0.24",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.24",
       "dependencies": [
         "fit-style@^1.0.42"
       ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.24",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -180,18 +179,18 @@
           "release": false
         }
       ],
+      "version": "1.0.24",
       "paths": {
         "dist": "."
       },
       "__hash": "b2ccf0aa6cafa4ad4936156ca4552375f7b680b2"
     },
     {
-      "version": "1.0.27",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.27",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.0.45"
       ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.27",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -218,15 +217,15 @@
           "release": false
         }
       ],
+      "version": "1.0.27",
       "__hash": "ffe609c606bd77e34db3b8cf09e91617e7bc07cd"
     },
     {
-      "version": "1.0.30",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.0.30",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.0.48"
       ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.30",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -253,7 +252,42 @@
           "release": false
         }
       ],
+      "version": "1.0.30",
       "__hash": "546d10d16c53a7dfe367f2064f350929e18770ee"
+    },
+    {
+      "version": "1.0.34",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.0.34",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.0.55"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

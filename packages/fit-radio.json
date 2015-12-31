@@ -33,8 +33,6 @@
   ],
   "tags": [
     {
-      "version": "1.0.28",
-      "build": "rm package.json && npm install --prefix . fit-radio@1.0.28",
       "name": "fit-radio",
       "description": "单选框",
       "dependencies": [
@@ -43,6 +41,7 @@
         "fit-button@^1.1.48",
         "fit-style@^1.0.42"
       ],
+      "build": "rm package.json && npm install --prefix . fit-radio@1.0.28",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -69,14 +68,13 @@
           "release": false
         }
       ],
+      "version": "1.0.28",
       "paths": {
         "dist": "."
       },
       "__hash": "333b08792d8eadf9df39a3f3cb4d9cbbc0a55dce"
     },
     {
-      "version": "1.0.31",
-      "build": "rm package.json && npm install --prefix . fit-radio@1.0.31",
       "name": "fit-radio",
       "description": "单选框",
       "main": "lib/index.js",
@@ -86,6 +84,7 @@
         "fit-button@^1.1.51",
         "fit-style@^1.0.45"
       ],
+      "build": "rm package.json && npm install --prefix . fit-radio@1.0.31",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -112,11 +111,10 @@
           "release": false
         }
       ],
+      "version": "1.0.31",
       "__hash": "c8593f525200e9f695702c4d1ca4eee965e9de2f"
     },
     {
-      "version": "1.0.34",
-      "build": "rm package.json && npm install --prefix . fit-radio@1.0.34",
       "name": "fit-radio",
       "description": "单选框",
       "main": "lib/index.js",
@@ -126,6 +124,7 @@
         "fit-button@^1.1.54",
         "fit-style@^1.0.48"
       ],
+      "build": "rm package.json && npm install --prefix . fit-radio@1.0.34",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -152,7 +151,47 @@
           "release": false
         }
       ],
+      "version": "1.0.34",
       "__hash": "423f95af5522a76eb70b7890c01c2a2715a1b2c2"
+    },
+    {
+      "version": "1.0.38",
+      "build": "rm package.json && npm install --prefix . fit-radio@1.0.38",
+      "name": "fit-radio",
+      "description": "单选框",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-button@^1.1.58",
+        "fit-style@^1.0.55"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
