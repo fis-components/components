@@ -223,7 +223,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "a1cccca4ef478c8718f0e26d6d6702179c8731aa"
     },
     {
       "build": "rm package.json && npm install --prefix . fit-button@1.2.1",
