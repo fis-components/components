@@ -26,38 +26,8 @@
       "__hash": "267ed814c179b4a1843d1a75bba67899dc248b31"
     },
     {
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/classnames\\/(.*\\.(?:js|css))$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "description": "A simple utility for conditionally joining classNames together",
-      "tag": "master",
-      "reposType": "npm",
       "version": "2.2.0",
       "build": "rm package.json && npm install --prefix . classnames@2.2.0",
-      "__hash": "9ca575310d31ba00f92288531b741b4d5b6c9a86"
-    },
-    {
-      "version": "2.2.1",
-      "build": "rm package.json && npm install --prefix . classnames@2.2.1",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
@@ -86,7 +56,40 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
       ],
+      "version": "2.2.1",
+      "build": "rm package.json && npm install --prefix . classnames@2.2.1",
+      "description": "A simple utility for conditionally joining classNames together",
+      "tag": "master",
+      "reposType": "npm",
       "__hash": "b65eff9abe03b9d65ef115d53c314ded707a2a64"
     }
   ]
