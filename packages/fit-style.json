@@ -34,9 +34,8 @@
   ],
   "tags": [
     {
-      "version": "1.0.20",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.20",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.20",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -63,15 +62,15 @@
           "release": false
         }
       ],
+      "version": "1.0.20",
       "paths": {
         "dist": "."
       },
       "__hash": "95dcdaa87244c4a1a4c24c5b536055205e0e985f"
     },
     {
-      "version": "1.0.22",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.22",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.22",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -98,15 +97,15 @@
           "release": false
         }
       ],
+      "version": "1.0.22",
       "paths": {
         "dist": "."
       },
       "__hash": "f55e372c1c734e7a8b2143171972d889683bef32"
     },
     {
-      "version": "1.0.23",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.23",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.23",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -133,14 +132,48 @@
           "release": false
         }
       ],
+      "version": "1.0.23",
       "paths": {
         "dist": "."
       },
       "__hash": "29553e2344e3fb45d93ef2b4cb3cae10e51d68f0"
     },
     {
-      "version": "1.0.24",
+      "description": "",
       "build": "rm package.json && npm install --prefix . fit-style@1.0.24",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.24",
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "fcca76e8913c23be3e6491452714a36ebc2efbfc"
+    },
+    {
       "description": "",
       "mapping": [
         {
@@ -168,46 +201,14 @@
           "release": false
         }
       ],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "fcca76e8913c23be3e6491452714a36ebc2efbfc"
-    },
-    {
       "version": "1.0.25",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/fit-style\\/(?:test|build|dist\\/cdn)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/fit-style\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
       "paths": {
         "dist": "."
       },
       "__hash": "398a92d55601dfdbad9303ce39e6698b93e4d3c9"
     },
     {
-      "version": "1.0.27",
+      "description": "",
       "build": "rm package.json && npm install --prefix . fit-style@1.0.27",
       "mapping": [
         {
@@ -235,13 +236,14 @@
           "release": false
         }
       ],
+      "version": "1.0.27",
       "paths": {
         "dist": "."
       },
       "__hash": "005c2419514b7362edfea9b497a62702d02c20f1"
     },
     {
-      "version": "1.0.28",
+      "description": "",
       "build": "rm package.json && npm install --prefix . fit-style@1.0.28",
       "mapping": [
         {
@@ -269,15 +271,15 @@
           "release": false
         }
       ],
+      "version": "1.0.28",
       "paths": {
         "dist": "."
       },
       "__hash": "9bc09a48992d76dc143fcd4fb9b00cc21d0f5ed9"
     },
     {
-      "version": "1.0.29",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.29",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.29",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -304,15 +306,15 @@
           "release": false
         }
       ],
+      "version": "1.0.29",
       "paths": {
         "dist": "."
       },
       "__hash": "d50185ad0444c9a85bf89d3bea92c4a9ad401aca"
     },
     {
-      "version": "1.0.31",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.31",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.31",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -339,13 +341,14 @@
           "release": false
         }
       ],
+      "version": "1.0.31",
       "paths": {
         "dist": "."
       },
       "__hash": "93085de73ba2480a1c90de89e4f915824cdf92fa"
     },
     {
-      "version": "1.0.33",
+      "description": "",
       "build": "rm package.json && npm install --prefix . fit-style@1.0.33",
       "mapping": [
         {
@@ -373,13 +376,14 @@
           "release": false
         }
       ],
+      "version": "1.0.33",
       "paths": {
         "dist": "."
       },
       "__hash": "ec2ed02822acf79974d217fdf194f3ff63053618"
     },
     {
-      "version": "1.0.35",
+      "description": "",
       "build": "rm package.json && npm install --prefix . fit-style@1.0.35",
       "mapping": [
         {
@@ -407,15 +411,15 @@
           "release": false
         }
       ],
+      "version": "1.0.35",
       "paths": {
         "dist": "."
       },
       "__hash": "7db3d5250d04376fc52fad16f2991613a960c93d"
     },
     {
-      "version": "1.0.37",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.37",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.37",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -442,15 +446,15 @@
           "release": false
         }
       ],
+      "version": "1.0.37",
       "paths": {
         "dist": "."
       },
       "__hash": "295d4882c642266494e1545c47e7480383f944f4"
     },
     {
-      "version": "1.0.39",
-      "build": "rm package.json && npm install --prefix . fit-style@1.0.39",
       "description": "",
+      "build": "rm package.json && npm install --prefix . fit-style@1.0.39",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -481,6 +485,7 @@
           "release": false
         }
       ],
+      "version": "1.0.39",
       "paths": {
         "dist": "."
       },
@@ -522,9 +527,9 @@
       "__hash": "89832ad4f6d154132f55f1ad24906810d316022a"
     },
     {
-      "description": "",
-      "main": "lib/index.js",
+      "version": "1.0.45",
       "build": "rm package.json && npm install --prefix . fit-style@1.0.45",
+      "main": "lib/index.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -550,9 +555,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "1.0.45",
-      "__hash": "cd8215e5d0c4c05f7b8f4a72379c24973c032f10"
+      ]
     },
     {
       "version": "1.0.48",
@@ -583,8 +586,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "e533abf59826924d4153e6a1895a926c12acd582"
+      ]
     }
   ]
 }
