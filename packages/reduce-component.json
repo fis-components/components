@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . reduce-component@1.0.1"
+      "build": "rm package.json && npm install --prefix . reduce-component@1.0.1",
+      "__hash": "46cb4fbc06b851c8435d7e3a90bbdfc2ccc720c4"
     }
   ]
 }
