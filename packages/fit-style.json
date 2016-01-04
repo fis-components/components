@@ -589,7 +589,8 @@
           "release": false
         }
       ],
-      "version": "1.0.48"
+      "version": "1.0.48",
+      "__hash": "e533abf59826924d4153e6a1895a926c12acd582"
     },
     {
       "description": "",
@@ -621,7 +622,8 @@
           "release": false
         }
       ],
-      "version": "1.0.55"
+      "version": "1.0.55",
+      "__hash": "a607a44cb287c1014dd4ad40032934e381a82924"
     },
     {
       "version": "1.1.4",
@@ -654,7 +656,7 @@
           "release": false
         }
       ],
-      "__hash": "e533abf59826924d4153e6a1895a926c12acd582"
+      "__hash": "5dd41bf34c9a9ac14ea8e2cd30dc8051f530649a"
     },
     {
       "version": "1.1.7",
@@ -686,7 +688,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "6cff043a245acbe6355a1a2cf886184986acfcaa"
     },
     {
       "version": "1.1.9",
@@ -718,7 +721,7 @@
           "release": false
         }
       ],
-      "__hash": "a607a44cb287c1014dd4ad40032934e381a82924"
+      "__hash": "0d2336d4c7ef0e2ba10a8bcb57e8e88c05d8a726"
     }
   ]
 }

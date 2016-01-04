@@ -313,7 +313,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "9558c4a557ca7fa2be383d41f1ee0e239ffb4d4e"
     },
     {
       "version": "0.2.8",
@@ -353,7 +354,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "08b510a7d8b3d15438a9703356390fe36c3e3236"
     },
     {
       "version": "0.2.10",
@@ -393,7 +395,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "ec523e80d8b2d461aaf476ff40d06678891b68c0"
     }
   ]
 }

@@ -295,7 +295,8 @@
           "release": false
         }
       ],
-      "version": "1.0.54"
+      "version": "1.0.54",
+      "__hash": "8cf955aed35a85595c15029105c880bf1d1c3c37"
     },
     {
       "main": "lib/index.js",
@@ -330,7 +331,8 @@
           "release": false
         }
       ],
-      "version": "1.0.56"
+      "version": "1.0.56",
+      "__hash": "c51105daaff0138c8d1f7383e98b251e4ac71e53"
     },
     {
       "version": "1.1.4",
@@ -366,7 +368,7 @@
           "release": false
         }
       ],
-      "__hash": "8cf955aed35a85595c15029105c880bf1d1c3c37"
+      "__hash": "a63778115cc1cca58fbee97d03f9c4280fd0e6be"
     },
     {
       "version": "1.1.7",
@@ -401,7 +403,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "9f8cd873f19bbb4181caf3134a4af7a87bf3d439"
     },
     {
       "version": "1.1.9",
@@ -437,7 +440,7 @@
           "release": false
         }
       ],
-      "__hash": "c51105daaff0138c8d1f7383e98b251e4ac71e53"
+      "__hash": "711dea3240b91edcc252ddcba007f5b0804ce838"
     }
   ]
 }

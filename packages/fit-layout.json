@@ -295,7 +295,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "f8f06578d1b00939fefe79291b3cc2859293c8a5"
     },
     {
       "version": "1.1.7",
@@ -330,7 +331,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "0d6321edf83ec3f85ad851ee60f99c1501c55ede"
     },
     {
       "version": "1.1.9",
@@ -365,7 +367,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "c20d57a478e4340c2f511c14b4756a38139d7981"
     }
   ]
 }
