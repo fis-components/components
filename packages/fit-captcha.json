@@ -165,8 +165,6 @@
       "__hash": "96e27fc806c7f748d8b897ac9c389d67cd293e29"
     },
     {
-      "version": "1.0.26",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.26",
       "dependencies": [
         "classnames@^2.2.1",
         "lodash@^3.10.1",
@@ -174,6 +172,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.0.42"
       ],
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.26",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -200,14 +199,13 @@
           "release": false
         }
       ],
+      "version": "1.0.26",
       "paths": {
         "dist": "."
       },
       "__hash": "e52bbeaf166e2bdf35ee050c3e2e1ec713a494da"
     },
     {
-      "version": "1.0.29",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.29",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -216,6 +214,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.0.45"
       ],
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.29",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -242,11 +241,10 @@
           "release": false
         }
       ],
+      "version": "1.0.29",
       "__hash": "f0c7af82c6aa789fd91a9af04e6e1dbed0672356"
     },
     {
-      "version": "1.0.32",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.32",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -255,6 +253,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.0.48"
       ],
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.0.32",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -281,7 +280,122 @@
           "release": false
         }
       ],
+      "version": "1.0.32",
       "__hash": "e302ec95f10d873196838157d80cfccc192dff4e"
+    },
+    {
+      "version": "1.1.4",
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.4",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "react-dom@^0.14.3",
+        "fit-style@^1.1.4"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.7",
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.7",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "react-dom@^0.14.3",
+        "fit-style@^1.1.7"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.9",
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.9",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "react-dom@^0.14.3",
+        "fit-style@^1.1.9"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

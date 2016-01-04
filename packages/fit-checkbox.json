@@ -532,14 +532,13 @@
       "__hash": "59e5af8732058b2f0e55f880dd383871db970a31"
     },
     {
-      "version": "1.0.48",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.48",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.3",
         "fit-style@^1.0.50"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.48",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -566,17 +565,17 @@
           "release": false
         }
       ],
+      "version": "1.0.48",
       "__hash": "bc830cd6e4a9771badde4c695274032e14202b36"
     },
     {
-      "version": "1.0.50",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.50",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.3",
         "fit-style@^1.0.55"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.50",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -603,7 +602,116 @@
           "release": false
         }
       ],
+      "version": "1.0.50",
       "__hash": "13ba2521596e02f3b15baf1dd8fdc88f38ba7075"
+    },
+    {
+      "version": "1.1.4",
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.4",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.1.4"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.7",
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.7",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.1.7"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.9",
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.9",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.1.9"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
