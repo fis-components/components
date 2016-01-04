@@ -331,7 +331,8 @@
           "release": false
         }
       ],
-      "version": "1.0.56"
+      "version": "1.0.56",
+      "__hash": "c51105daaff0138c8d1f7383e98b251e4ac71e53"
     },
     {
       "version": "1.1.4",
