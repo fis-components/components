@@ -556,7 +556,8 @@
           "release": false
         }
       ],
-      "version": "1.0.45"
+      "version": "1.0.45",
+      "__hash": "cd8215e5d0c4c05f7b8f4a72379c24973c032f10"
     },
     {
       "description": "",
@@ -652,7 +653,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "e533abf59826924d4153e6a1895a926c12acd582"
     },
     {
       "version": "1.1.7",
@@ -715,7 +717,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "a607a44cb287c1014dd4ad40032934e381a82924"
     }
   ]
 }
