@@ -1,0 +1,22 @@
+{
+  "dependencies": [
+    "component-emitter@^1.1.2",
+    "reduce-component@^1.0.1"
+  ],
+  "main": "./lib/client.js",
+  "shim": {
+    "lib/index.js": {
+      "replace": [
+        {
+          "from": "'emitter'",
+          "to": "'component-emitter'"
+        },
+        {
+          "from": "'reduce'",
+          "to": "'reduce-component'"
+        }
+      ]
+    }
+
+  }
+}
