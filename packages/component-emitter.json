@@ -34,15 +34,18 @@
   ],
   "tags": [
     {
-      "version": "1.1.2"
+      "version": "1.1.2",
+      "__hash": "79344f0630290aac7f564241a7c070db4c7d4f2a"
     },
     {
       "version": "1.1.3",
-      "build": "rm package.json && npm install --prefix . component-emitter@1.1.3"
+      "build": "rm package.json && npm install --prefix . component-emitter@1.1.3",
+      "__hash": "657f1147dae0c9878882f5fba1ca4ce616e6c75d"
     },
     {
       "version": "1.2.0",
-      "build": "rm package.json && npm install --prefix . component-emitter@1.2.0"
+      "build": "rm package.json && npm install --prefix . component-emitter@1.2.0",
+      "__hash": "8776407a97e334919a76faaea1f4f85c938e44a0"
     }
   ]
 }
