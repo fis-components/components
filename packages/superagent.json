@@ -10,48 +10,37 @@
     "component-emitter@^1.1.2",
     "reduce-component@^1.0.1"
   ],
-  "mapping": [
-    {
-      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-      "release": false
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(?:test|build|dist\\/cdn)\\/",
-      "release": false
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/lib\\/(.*)$",
-      "release": "lib/$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(lib\\/client\\.js)$",
-      "release": "$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(component-emitter)$",
-      "release": "$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(reduce-component)$",
-      "release": "$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(test\\/support\\/blank\\.js)$",
-      "release": "$1"
-    },
-    {
-      "reg": "^\\/README\\.md$",
-      "release": "$&"
-    },
-    {
-      "reg": "^\\/LICENSE\\.md$",
-      "release": "$&"
-    },
-    {
-      "reg": "\\.*",
-      "release": false
-    }
-  ],
+  "mapping": [{
+    "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+    "release": false
+  }, {
+    "reg": "^\\/node_modules\\/superagent\\/(?:test|build|dist\\/cdn)\\/",
+    "release": false
+  }, {
+    "reg": "^\\/node_modules\\/superagent\\/lib\\/(.*)$",
+    "release": "lib/$1"
+  }, {
+    "reg": "^\\/node_modules\\/superagent\\/(lib\\/client\\.js)$",
+    "release": "$1"
+  }, {
+    "reg": "^\\/node_modules\\/superagent\\/(component-emitter)$",
+    "release": "$1"
+  }, {
+    "reg": "^\\/node_modules\\/superagent\\/(reduce-component)$",
+    "release": "$1"
+  }, {
+    "reg": "^\\/node_modules\\/superagent\\/(test\\/support\\/blank\\.js)$",
+    "release": "$1"
+  }, {
+    "reg": "^\\/README\\.md$",
+    "release": "$&"
+  }, {
+    "reg": "^\\/LICENSE\\.md$",
+    "release": "$&"
+  }, {
+    "reg": "\\.*",
+    "release": false
+  }],
   "paths": {
     "./lib/node/index.js": "./lib/client.js",
     "emitter": "component-emitter",
@@ -59,23 +48,17 @@
     "./test/support/server.js": "./test/support/blank.js"
   },
   "shim": {
-    "lib/index.js": {
-      "replace": [
-        {
-          "from": "'emitter'",
-          "to": "'component-emitter'"
-        },
-        {
-          "from": "'reduce'",
-          "to": "'reduce-component'"
-        }
-      ]
+    "lib/client.js": {
+      "replace": [{
+        "from": "'emitter'",
+        "to": "'component-emitter'"
+      }, {
+        "from": "'reduce'",
+        "to": "'reduce-component'"
+      }]
     }
   },
-  "tags": [
-    {
-      "version": "1.6.1",
-      "__hash": "d1f7c7a119f6dc9e19af3d03107bc543f0b75455"
-    }
-  ]
+  "tags": [{
+    "version": "1.6.1"
+  }]
 }
