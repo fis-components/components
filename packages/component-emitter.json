@@ -44,7 +44,8 @@
     },
     {
       "version": "1.2.0",
-      "build": "rm package.json && npm install --prefix . component-emitter@1.2.0"
+      "build": "rm package.json && npm install --prefix . component-emitter@1.2.0",
+      "__hash": "8776407a97e334919a76faaea1f4f85c938e44a0"
     }
   ]
 }
