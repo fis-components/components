@@ -720,7 +720,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "0d2336d4c7ef0e2ba10a8bcb57e8e88c05d8a726"
     }
   ]
 }
