@@ -276,8 +276,6 @@
       "__hash": "ffaaec018e09f16f4e08b2c83035dc57a90b1918"
     },
     {
-      "version": "0.2.7",
-      "build": "rm package.json && npm install --prefix . fit-datepicker@0.2.7",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -288,6 +286,7 @@
         "react@^0.14.3",
         "react-date-range@^0.1.8"
       ],
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.2.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -314,11 +313,10 @@
           "release": false
         }
       ],
+      "version": "0.2.7",
       "__hash": "9558c4a557ca7fa2be383d41f1ee0e239ffb4d4e"
     },
     {
-      "version": "0.2.8",
-      "build": "rm package.json && npm install --prefix . fit-datepicker@0.2.8",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -329,6 +327,7 @@
         "react@^0.14.3",
         "react-date-range@^0.1.8"
       ],
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.2.8",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -355,11 +354,53 @@
           "release": false
         }
       ],
+      "version": "0.2.8",
       "__hash": "08b510a7d8b3d15438a9703356390fe36c3e3236"
     },
     {
-      "version": "0.2.10",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.9",
+        "fit-timepicker@^0.2.10",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "react-date-range@^0.1.8"
+      ],
       "build": "rm package.json && npm install --prefix . fit-datepicker@0.2.10",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-datepicker\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-datepicker\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.2.10",
+      "__hash": "ec523e80d8b2d461aaf476ff40d06678891b68c0"
+    },
+    {
+      "version": "0.2.11",
+      "build": "rm package.json && npm install --prefix . fit-datepicker@0.2.11",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -395,8 +436,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "ec523e80d8b2d461aaf476ff40d06678891b68c0"
+      ]
     }
   ]
 }
