@@ -324,8 +324,6 @@
       "__hash": "c5136612286e18f2bd61ff6f6c8ed433e2b460f7"
     },
     {
-      "version": "1.1.11",
-      "build": "rm package.json && npm install --prefix . fit-table@1.1.11",
       "name": "fit-table",
       "description": "表格",
       "main": "lib/index.js",
@@ -344,6 +342,7 @@
         "fit-modal@^1.1.7",
         "fit-timepicker@^0.2.8"
       ],
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -370,11 +369,10 @@
           "release": false
         }
       ],
+      "version": "1.1.11",
       "__hash": "390590202d71db1f5fbdf29d1ccaac8997b170fa"
     },
     {
-      "version": "1.1.12",
-      "build": "rm package.json && npm install --prefix . fit-table@1.1.12",
       "name": "fit-table",
       "description": "表格",
       "main": "lib/index.js",
@@ -393,6 +391,7 @@
         "fit-modal@^1.1.7",
         "fit-timepicker@^0.2.8"
       ],
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.12",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -419,11 +418,61 @@
           "release": false
         }
       ],
+      "version": "1.1.12",
       "__hash": "df689cb2694646738ebd497cb600976fc6121ac2"
     },
     {
-      "version": "1.1.13",
+      "name": "fit-table",
+      "description": "表格",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "font-awesome@^4.5.0",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "fit-button@^1.2.9",
+        "fit-checkbox@^1.1.9",
+        "fit-input@^1.1.10",
+        "fit-pagination@^1.1.9",
+        "fit-radio@^1.1.9",
+        "fit-style@^1.1.9",
+        "fit-modal@^1.1.9",
+        "fit-timepicker@^0.2.10"
+      ],
       "build": "rm package.json && npm install --prefix . fit-table@1.1.13",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.13",
+      "__hash": "ef4c161e81b0c5498509feb45c3c43cb24c4c598"
+    },
+    {
+      "version": "1.1.14",
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.14",
       "name": "fit-table",
       "description": "表格",
       "main": "lib/index.js",
@@ -467,8 +516,55 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "1.1.15",
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.15",
+      "name": "fit-table",
+      "description": "表格",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "font-awesome@^4.5.0",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "fit-button@^1.2.9",
+        "fit-checkbox@^1.1.9",
+        "fit-input@^1.1.10",
+        "fit-pagination@^1.1.9",
+        "fit-radio@^1.1.9",
+        "fit-style@^1.1.9",
+        "fit-modal@^1.1.9",
+        "fit-timepicker@^0.2.10"
       ],
-      "__hash": "ef4c161e81b0c5498509feb45c3c43cb24c4c598"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

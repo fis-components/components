@@ -626,10 +626,9 @@
       "__hash": "a607a44cb287c1014dd4ad40032934e381a82924"
     },
     {
-      "version": "1.1.4",
-      "build": "rm package.json && npm install --prefix . fit-style@1.1.4",
       "description": "",
       "main": "lib/index.js",
+      "build": "rm package.json && npm install --prefix . fit-style@1.1.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -656,13 +655,13 @@
           "release": false
         }
       ],
+      "version": "1.1.4",
       "__hash": "5dd41bf34c9a9ac14ea8e2cd30dc8051f530649a"
     },
     {
-      "version": "1.1.7",
-      "build": "rm package.json && npm install --prefix . fit-style@1.1.7",
       "description": "",
       "main": "lib/index.js",
+      "build": "rm package.json && npm install --prefix . fit-style@1.1.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -689,6 +688,7 @@
           "release": false
         }
       ],
+      "version": "1.1.7",
       "__hash": "6cff043a245acbe6355a1a2cf886184986acfcaa"
     },
     {
@@ -720,8 +720,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "0d2336d4c7ef0e2ba10a8bcb57e8e88c05d8a726"
+      ]
     }
   ]
 }
