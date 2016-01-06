@@ -61,7 +61,8 @@
         "./asap.js": "./browser-asap.js",
         "./raw.js": "./browser-raw.js",
         "./test/domain.js": "./test/browser-domain.js"
-      }
+      },
+      "__hash": "979196f736cd21d6e9faca675dd72021a35c10a1"
     },
     {
       "version": "2.0.3",
