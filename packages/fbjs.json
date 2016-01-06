@@ -49,7 +49,8 @@
     },
     {
       "version": "0.3.2",
-      "build": "rm package.json && npm install --prefix . fbjs@0.3.2"
+      "build": "rm package.json && npm install --prefix . fbjs@0.3.2",
+      "__hash": "ca6aa0d72e2825db8fc63733ea161febb62e7a07"
     }
   ]
 }
