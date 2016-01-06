@@ -1,0 +1,195 @@
+{
+  "build": "rm package.json && npm install --prefix . babel-runtime@5.5.8",
+  "name": "babel-runtime",
+  "description": "babel selfContained runtime",
+  "repos": "https://github.com/babel/babel.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "core-js@^0.9.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/babel-runtime\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/babel-runtime\\/(.*\\.(?:js|css))$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "5.5.8"
+    },
+    {
+      "version": "5.6.0",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.0"
+    },
+    {
+      "version": "5.6.1",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.1"
+    },
+    {
+      "version": "5.6.2",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.2"
+    },
+    {
+      "version": "5.6.3",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.3"
+    },
+    {
+      "version": "5.6.4",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.4"
+    },
+    {
+      "version": "5.6.5",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.5"
+    },
+    {
+      "version": "5.6.6",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.6"
+    },
+    {
+      "version": "5.6.7",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.7"
+    },
+    {
+      "version": "5.6.8",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.8"
+    },
+    {
+      "version": "5.6.9",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.9"
+    },
+    {
+      "version": "5.6.10",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.10"
+    },
+    {
+      "version": "5.6.11",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.11"
+    },
+    {
+      "version": "5.6.12",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.12"
+    },
+    {
+      "version": "5.6.14",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.14"
+    },
+    {
+      "version": "5.6.15",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.15"
+    },
+    {
+      "version": "5.6.16",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.16"
+    },
+    {
+      "version": "5.6.17",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.17"
+    },
+    {
+      "version": "5.6.18",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.18",
+      "repos": "https://github.com/babel/babel"
+    },
+    {
+      "version": "5.6.19",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.19",
+      "repos": "https://github.com/babel/babel"
+    },
+    {
+      "version": "5.6.20",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.20",
+      "repos": "https://github.com/babel/babel"
+    },
+    {
+      "version": "5.7.0",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.7.0"
+    },
+    {
+      "version": "5.8.2",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.2"
+    },
+    {
+      "version": "5.8.3",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.3"
+    },
+    {
+      "version": "5.8.5",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.5"
+    },
+    {
+      "version": "5.8.8",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.8",
+      "repos": "https://github.com/babel/babel"
+    },
+    {
+      "version": "5.8.9",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.9",
+      "repos": "https://github.com/babel/babel"
+    },
+    {
+      "version": "5.8.12",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.12",
+      "repos": "https://github.com/babel/babel"
+    },
+    {
+      "version": "5.8.19",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.19"
+    },
+    {
+      "version": "5.8.20",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.20",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ]
+    },
+    {
+      "version": "5.8.24",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.24",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ]
+    },
+    {
+      "version": "5.8.25",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.25",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ]
+    },
+    {
+      "version": "5.8.29",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.29",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ]
+    },
+    {
+      "version": "5.8.34",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.34",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ]
+    }
+  ]
+}
