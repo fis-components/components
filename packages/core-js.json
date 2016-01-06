@@ -124,7 +124,8 @@
     },
     {
       "version": "0.9.18",
-      "build": "rm package.json && npm install --prefix . core-js@0.9.18"
+      "build": "rm package.json && npm install --prefix . core-js@0.9.18",
+      "__hash": "ae1244ed0ca201756da730ddd3b3464bf3215614"
     }
   ]
 }
