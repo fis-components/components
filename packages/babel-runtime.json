@@ -76,7 +76,8 @@
     },
     {
       "version": "5.6.7",
-      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.7"
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.7",
+      "__hash": "d2051211b18106394186645ab44a8ccfc21de848"
     },
     {
       "version": "5.6.8",
