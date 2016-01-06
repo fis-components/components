@@ -46,7 +46,8 @@
     },
     {
       "version": "7.0.4",
-      "build": "rm package.json && npm install --prefix . promise@7.0.4"
+      "build": "rm package.json && npm install --prefix . promise@7.0.4",
+      "__hash": "1f67734f1fb67f9f941ae2acfab393546b82990a"
     },
     {
       "version": "7.1.0",
