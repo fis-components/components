@@ -51,7 +51,8 @@
     },
     {
       "version": "7.1.0",
-      "build": "rm package.json && npm install --prefix . promise@7.1.0"
+      "build": "rm package.json && npm install --prefix . promise@7.1.0",
+      "__hash": "5fc1f9610c30b86863fb239cbec939b20dadf7d4"
     },
     {
       "version": "7.1.1",
