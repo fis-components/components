@@ -127,7 +127,8 @@
     {
       "version": "5.6.18",
       "build": "rm package.json && npm install --prefix . babel-runtime@5.6.18",
-      "repos": "https://github.com/babel/babel"
+      "repos": "https://github.com/babel/babel",
+      "__hash": "41b4e0801c99a654e4bc94c2a821d84f8f7b8e85"
     },
     {
       "version": "5.6.19",
