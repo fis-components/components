@@ -56,7 +56,8 @@
       "dependencies": [
         "babel-runtime@^5.8.25",
         "react@^0.13.3"
-      ]
+      ],
+      "__hash": "178f4873ff73efc73482516d5f97c9465ae353c6"
     }
   ]
 }
