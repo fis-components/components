@@ -153,8 +153,6 @@
       "__hash": "81401895c26309f4d4f80e723cc66e73939590ca"
     },
     {
-      "version": "1.1.4",
-      "build": "rm package.json && npm install --prefix . fit-switch@1.1.4",
       "name": "fit-switch",
       "description": "开关",
       "main": "lib/index.js",
@@ -163,6 +161,7 @@
         "react@^0.14.3",
         "fit-style@^1.1.4"
       ],
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -189,11 +188,10 @@
           "release": false
         }
       ],
+      "version": "1.1.4",
       "__hash": "91f5696e0bd2df9721426bac895e2304bd6a106e"
     },
     {
-      "version": "1.1.7",
-      "build": "rm package.json && npm install --prefix . fit-switch@1.1.7",
       "name": "fit-switch",
       "description": "开关",
       "main": "lib/index.js",
@@ -202,6 +200,7 @@
         "react@^0.14.3",
         "fit-style@^1.1.7"
       ],
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -228,11 +227,10 @@
           "release": false
         }
       ],
+      "version": "1.1.7",
       "__hash": "144e19f1ac3d23cb5275881fba65f3b884a7e94f"
     },
     {
-      "version": "1.1.9",
-      "build": "rm package.json && npm install --prefix . fit-switch@1.1.9",
       "name": "fit-switch",
       "description": "开关",
       "main": "lib/index.js",
@@ -241,6 +239,7 @@
         "react@^0.14.3",
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.9",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -267,7 +266,47 @@
           "release": false
         }
       ],
+      "version": "1.1.9",
       "__hash": "913903d8212550a87b395bcbc8beb371d1b8b127"
+    },
+    {
+      "version": "1.1.10",
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.10",
+      "name": "fit-switch",
+      "description": "开关",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.9",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
