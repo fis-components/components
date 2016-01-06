@@ -1,0 +1,44 @@
+{
+  "build": "rm package.json && npm install --prefix . ua-parser-js@0.7.9",
+  "name": "ua-parser-js",
+  "description": "Lightweight JavaScript-based user-agent string parser",
+  "repos": "https://github.com/faisalman/ua-parser-js.git",
+  "main": "src/ua-parser.js",
+  "tag": "master",
+  "reposType": "npm",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/ua-parser-js\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/ua-parser-js\\/src\\/(.*)$",
+      "release": "src/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.7.9"
+    },
+    {
+      "version": "0.7.10",
+      "build": "rm package.json && npm install --prefix . ua-parser-js@0.7.10"
+    }
+  ]
+}

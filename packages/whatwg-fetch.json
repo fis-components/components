@@ -1,0 +1,40 @@
+{
+  "build": "rm package.json && npm install --prefix . whatwg-fetch@0.9.0",
+  "name": "whatwg-fetch",
+  "description": "The global `fetch` function is an easier way to make web requests and handle responses than using an XMLHttpRequest. This polyfill is written as closely as possible to the standard Fetch specification at https://fetch.spec.whatwg.org.",
+  "repos": "https://github.com/github/fetch.git",
+  "main": "fetch.js",
+  "tag": "master",
+  "reposType": "npm",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/whatwg-fetch\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/whatwg-fetch\\/(.*\\.(?:js|css))$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.9.0"
+    }
+  ]
+}

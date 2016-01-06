@@ -1,0 +1,54 @@
+{
+  "build": "rm package.json && npm install --prefix . fbjs@0.3.1",
+  "name": "fbjs",
+  "description": "## Purpose",
+  "repos": "https://github.com/facebook/fbjs.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "core-js@^1.0.0",
+    "promise@^7.0.3",
+    "ua-parser-js@^0.7.9",
+    "whatwg-fetch@^0.9.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fbjs\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fbjs\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/fbjs\\/(.*\\.(?:js|css))$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.3.1"
+    },
+    {
+      "version": "0.3.2",
+      "build": "rm package.json && npm install --prefix . fbjs@0.3.2"
+    }
+  ]
+}
