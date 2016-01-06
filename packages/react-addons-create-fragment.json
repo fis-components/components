@@ -111,7 +111,8 @@
           "release": false
         }
       ],
-      "shim": null
+      "shim": null,
+      "__hash": "06959da07106d4497d1e27b586a11ae12303055b"
     }
   ]
 }
