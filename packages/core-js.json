@@ -44,7 +44,8 @@
     },
     {
       "version": "0.9.2",
-      "build": "rm package.json && npm install --prefix . core-js@0.9.2"
+      "build": "rm package.json && npm install --prefix . core-js@0.9.2",
+      "__hash": "a5bbc2d99b42943cfe0a1c5b237c90623f6bb7ea"
     },
     {
       "version": "0.9.3",
