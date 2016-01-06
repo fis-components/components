@@ -270,8 +270,47 @@
       "__hash": "913903d8212550a87b395bcbc8beb371d1b8b127"
     },
     {
-      "version": "1.1.10",
+      "name": "fit-switch",
+      "description": "开关",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.9",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
       "build": "rm package.json && npm install --prefix . fit-switch@1.1.10",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.10"
+    },
+    {
+      "version": "1.1.11",
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.11",
       "name": "fit-switch",
       "description": "开关",
       "main": "lib/index.js",
@@ -306,8 +345,46 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "1.1.12",
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.12",
+      "name": "fit-switch",
+      "description": "开关",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.9",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
       ],
-      "__hash": "b0d5c598d7db674a34adfb8474be9df3f5dcddc7"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

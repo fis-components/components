@@ -315,8 +315,6 @@
       "__hash": "53d8df025b09ec70c2d96b148b926f3cd4842855"
     },
     {
-      "version": "1.1.7",
-      "build": "rm package.json && npm install --prefix . fit-input@1.1.7",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -325,6 +323,7 @@
         "lodash@^3.10.1",
         "react@^0.14.3"
       ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -351,11 +350,10 @@
           "release": false
         }
       ],
+      "version": "1.1.7",
       "__hash": "d5b5cd5f52f1ad060433999d831bf49fb41a16b0"
     },
     {
-      "version": "1.1.8",
-      "build": "rm package.json && npm install --prefix . fit-input@1.1.8",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -364,6 +362,7 @@
         "lodash@^3.10.1",
         "react@^0.14.3"
       ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.8",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -390,11 +389,51 @@
           "release": false
         }
       ],
+      "version": "1.1.8",
       "__hash": "c30bfba77c143b6bfde4aaee9e09b82c540cdefc"
     },
     {
-      "version": "1.1.10",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.9",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
       "build": "rm package.json && npm install --prefix . fit-input@1.1.10",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.10",
+      "__hash": "168dadcc5c2b665b738e611cf3bd5cc7683e81c8"
+    },
+    {
+      "version": "1.1.11",
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.11",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -428,8 +467,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "168dadcc5c2b665b738e611cf3bd5cc7683e81c8"
+      ]
     }
   ]
 }
