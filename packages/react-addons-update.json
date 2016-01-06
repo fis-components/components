@@ -73,7 +73,8 @@
           "release": false
         }
       ],
-      "shim": null
+      "shim": null,
+      "__hash": "fc41d000cb12009947571a61c2b6b250841f18b4"
     },
     {
       "version": "0.14.5",
