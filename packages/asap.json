@@ -1,0 +1,75 @@
+{
+  "build": "rm package.json && npm install --prefix . asap@2.0.1",
+  "name": "asap",
+  "description": "High-priority task queue for Node.js and browsers",
+  "repos": "https://github.com/kriskowal/asap.git",
+  "main": "./asap.js",
+  "tag": "master",
+  "reposType": "npm",
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/asap\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/asap\\/(browser-asap\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/asap\\/(browser-raw\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/asap\\/(test\\/browser-domain\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/asap\\/(.*\\.(?:js|css))$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "paths": {
+    "./asap": "./browser-asap.js",
+    "./raw": "./browser-raw.js",
+    "./test/domain": "./test/browser-domain.js"
+  },
+  "tags": [
+    {
+      "version": "2.0.1"
+    },
+    {
+      "version": "2.0.2",
+      "build": "rm package.json && npm install --prefix . asap@2.0.2",
+      "paths": {
+        "./asap.js": "./browser-asap.js",
+        "./raw.js": "./browser-raw.js",
+        "./test/domain.js": "./test/browser-domain.js"
+      }
+    },
+    {
+      "version": "2.0.3",
+      "build": "rm package.json && npm install --prefix . asap@2.0.3",
+      "paths": {
+        "./asap.js": "./browser-asap.js",
+        "./raw.js": "./browser-raw.js",
+        "./test/domain.js": "./test/browser-domain.js"
+      }
+    }
+  ]
+}
