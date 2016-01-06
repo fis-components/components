@@ -110,18 +110,23 @@ while (args.length) {
       json.dependencies = tmp;
     }
 
-    if (json.dependencies) {
+    var npmDependencies = json.dependencies || {};
+    if (json.peerDependencies) {
+      assign(npmDependencies, json.peerDependencies);
+    }
+
+    if (npmDependencies) {
       var dependencies = [];
-      Object.keys(json.dependencies).forEach(function(key) {
+      Object.keys(npmDependencies).forEach(function(key) {
         if (browserIgnore[item.name] && ~browserIgnore[item.name].indexOf(key)) {
           return;
         }
 
         // if (!~modules.indexOf(key)) {
-          argv.r === false || args.push(key + '@' + json.dependencies[key]);
+          argv.r === false || args.push(key + '@' + npmDependencies[key]);
         // }
 
-        dependencies.push(key + '@' + json.dependencies[key])
+        dependencies.push(key + '@' + npmDependencies[key])
       });
       item.dependencies = dependencies;
     }
@@ -317,11 +322,20 @@ while (args.length) {
     delete config['__hash'];
     config.tags = items.map(function(tag) {
       var clone = assign({}, tag);
+      var rest = assign({}, config);
+
+      delete rest.tags;
 
       Object.keys(tag).forEach(function(key) {
+        delete rest[key];
+
         if (tag[key] && config[key] && deepEqual(tag[key], config[key])) {
           delete clone[key];
         }
+      });
+
+      Object.keys(rest).forEach(function(key) {
+        clone[key] = null;
       });
 
       return clone;
