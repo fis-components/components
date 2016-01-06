@@ -39,7 +39,8 @@
     },
     {
       "version": "0.7.10",
-      "build": "rm package.json && npm install --prefix . ua-parser-js@0.7.10"
+      "build": "rm package.json && npm install --prefix . ua-parser-js@0.7.10",
+      "__hash": "749ffcc3afab82acc88bf684e2f8e93b1b09ce9c"
     }
   ]
 }
