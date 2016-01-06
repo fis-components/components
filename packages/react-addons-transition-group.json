@@ -27,16 +27,90 @@
   },
   "tags": [
     {
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.2",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "version": "v0.14.2",
+      "__hash": "3de05e8b0682ab749b1e323847b5de69224c3295"
+    },
+    {
       "version": "v0.14.3",
       "__hash": "a7c564a34e9ca1a87edfe5f192341f8164c35d9e"
     },
     {
-      "version": "v0.14.2",
+      "version": "0.14.4",
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.4",
+      "description": "This package provides the React TransitionGroup add-on.",
+      "tag": "master",
+      "reposType": "npm",
       "dependencies": [
-        "react@^0.14.2"
+        "react@^0.14.4"
       ],
-      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.2",
-      "__hash": "3de05e8b0682ab749b1e323847b5de69224c3295"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-transition-group\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-transition-group\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "shim": null
+    },
+    {
+      "version": "0.14.5",
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.5",
+      "description": "This package provides the React TransitionGroup add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.5"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-transition-group\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-transition-group\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "shim": null
     }
   ]
 }

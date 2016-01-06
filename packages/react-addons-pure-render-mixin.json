@@ -27,16 +27,90 @@
   },
   "tags": [
     {
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "version": "v0.14.2",
+      "__hash": "d0619375cdaf3966094fd5a058008cea416699f0"
+    },
+    {
       "version": "v0.14.3",
       "__hash": "21057c66c626683d7a07ba352fe5d58f91869ec9"
     },
     {
-      "version": "v0.14.2",
+      "version": "0.14.4",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.4",
+      "description": "This package provides the React PureRenderMixin add-on.",
+      "tag": "master",
+      "reposType": "npm",
       "dependencies": [
-        "react@^0.14.2"
+        "react@^0.14.4"
       ],
-      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2",
-      "__hash": "d0619375cdaf3966094fd5a058008cea416699f0"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "shim": null
+    },
+    {
+      "version": "0.14.5",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.5",
+      "description": "This package provides the React PureRenderMixin add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.5"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "shim": null
     }
   ]
 }
