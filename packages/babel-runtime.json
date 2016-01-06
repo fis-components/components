@@ -149,7 +149,8 @@
     },
     {
       "version": "5.8.2",
-      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.2"
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.2",
+      "__hash": "f5cd21c56735af86c04c14cb301668d7bb15b7f2"
     },
     {
       "version": "5.8.3",
