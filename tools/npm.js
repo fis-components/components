@@ -36,7 +36,7 @@ while (args.length) {
   var pkgName = parts[0];
   var pkgVersion = parts[1];
 
-  if (~packages.indexOf(pkgName) || ~ignore.indexOf(pkgName))continue;
+  if (~packages.indexOf(pkgName)) continue;
 
   console.log('\n.....................')
   console.log('Analyzing %s@%s', pkgName, pkgVersion);
@@ -52,7 +52,9 @@ while (args.length) {
     return semver.valid(version);
   })
   
-  if (pkgVersion) {
+  if (pkgVersion === 'latest') {
+    versions = [infoJson.version];
+  } else if (pkgVersion) {
     versions = versions.filter(function(version) {
       return semver.satisfies(version, pkgVersion);
     });
@@ -63,6 +65,11 @@ while (args.length) {
 
   var items = [];
   versions.forEach(function(version) {
+    if (isIgnored(pkgName, version)) {
+      console.log('%s@%s is skipped, due to settings in ignore.json', pkgName, version);
+      return;
+    }
+
     var item = {};
     item.version = version;
     item.build = 'rm package.json && npm install --prefix . ' + pkgName + '@' + version;
@@ -201,7 +208,7 @@ while (args.length) {
         item.main = item.main = main.replace(/^dist\//, '');
         item.paths = item.paths || {};
         item.paths.dist = path.dirname(item.main);
-      } else if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
+      } else /*if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
           release: '$1'
@@ -209,7 +216,7 @@ while (args.length) {
         item.main = item.main = item.name + '.js';
         item.paths = item.paths || {};
         item.paths.dist = path.dirname(item.main);
-      } else if (path.dirname(main) === '.' || path.dirname(main) === '') {
+      } else*/ if (path.dirname(main) === '.' || path.dirname(main) === '') {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.(?:js|css))$",
           release: '$1'
@@ -259,7 +266,7 @@ while (args.length) {
     continue;
   }
 
-  var topConfig;
+  var topConfig = null;
   if (!argv.override && test('-f', path.join(__dirname, '../packages/' + pkgName + '.json'))) {
     console.log('Merging...')
     var pkgs = (function() {
@@ -323,6 +330,31 @@ while (args.length) {
     console.log('Created %s', pkgName + '.json');
     packages.push(pkgName);
   })();
+}
+
+function isIgnored(name, version) {
+  if (!ignore[name]) {
+    return false;
+  }
+
+  if (ignore[name] == '*') {
+    return true;
+  }
+
+  if (!Array.isArray(ignore[name])) {
+    ignore[name] = [ignore[name]];
+  }
+
+  var satisfied = false;
+  ignore[name].every(function(item) {
+    if (semver.satisfies(version, item)) {
+      satisfied = true;
+      return false;
+    }
+    return true;
+  });
+
+  return satisfied;
 }
 
 
