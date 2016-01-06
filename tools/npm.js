@@ -151,6 +151,11 @@ while (args.length) {
             release: '$1'
           });
         });
+
+        item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.(?:js|css))$",
+            release: '$1'
+        });
       } else {
 
         var main = json.browser.replace(/^\.\//, '').replace(/\/$/, '/index');
