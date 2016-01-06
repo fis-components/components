@@ -206,7 +206,8 @@
       "build": "rm package.json && npm install --prefix . babel-runtime@5.8.25",
       "dependencies": [
         "core-js@^1.0.0"
-      ]
+      ],
+      "__hash": "69c819bab7ac176b0f13197c3ad10b24c29d232b"
     },
     {
       "version": "5.8.29",
