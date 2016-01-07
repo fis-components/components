@@ -1,5 +1,4 @@
 {
-  "react": "<=0.14.3",
   "react-addons-css-transition-group": "<=0.14.3",
   "react-addons-transition-group": "<=0.14.3",
   "react-addons-update": "<=0.14.3",

@@ -1,11 +1,20 @@
 {
-  "repos": "https://github.com/facebook/react.git",
+  "build": "rm package.json && npm install --prefix . react@0.14.0",
   "name": "react",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "repos": "https://github.com/facebook/react.git",
   "main": "react.js",
-  "build": "rm package.json && npm install --prefix . react@0.13.3",
+  "tag": "master",
+  "reposType": "npm",
+  "files": null,
+  "dependencies": [],
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
@@ -17,45 +26,40 @@
       "release": "$&"
     },
     {
-      "reg": "^\\/package\\.json$",
-      "release": ".hook.js"
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "\\.*",
       "release": false
     }
   ],
-  "umd2commonjs": false,
-  "hook": ".hook.js",
-  "shim": {
-    ".hook.js": {
-      "content": "var path = require('path');\n\nmodule.exports = function(json, files) {\n  var hasAddons = false;\n\n  Object.keys(files).every(function(subpath) {\n    var cName = path.basename(path.dirname(subpath));\n\n    // some thing like `react-addons-create-fragment`\n    if (cName.substring(0, 13) === 'react-addons-') {\n      hasAddons = true;\n      return false;\n    }\n\n    return true;\n  });\n\n  // 自动切换到 react-with-addons 如果依赖列表中有 react-addons 的话。\n  // 实在不想再把 react 给拆了。\n  if (hasAddons) {\n    json.main = 'react-with-addons.js';\n  }\n};"
-    }
+  "paths": {
+    "dist": "."
   },
   "tags": [
     {
-      "umd2commonjs": false,
-      "version": "v0.13.3",
-      "__hash": "c50da27f48817f3c4ce47703d8e56c1f28ddb8cc"
+      "version": "0.14.0",
+      "files": null
     },
     {
+      "version": "0.14.1",
+      "build": "rm package.json && npm install --prefix . react@0.14.1",
+      "files": null
+    },
+    {
+      "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "umd2commonjs": false,
-      "version": "v0.14.2",
-      "__hash": "cdfd57d22b56ce9aee8ef6631563e460d13d39ab"
+      "files": null
     },
     {
+      "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "umd2commonjs": false,
-      "version": "v0.14.3",
-      "__hash": "25986e7a6423beefa32353c78ee0bb3ea65fee30"
+      "files": null
     },
     {
       "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react@0.14.4",
-      "description": "React is a JavaScript library for building user interfaces.",
-      "tag": "master",
-      "reposType": "npm",
       "dependencies": [
         "fbjs@^0.3.1"
       ],
@@ -65,16 +69,32 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(LICENSE)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(PATENTS)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(addons\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(react\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
+          "release": "dist/$1"
         },
         {
           "reg": "^\\/node_modules\\/react\\/lib\\/(.*)$",
           "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(.*\\.(?:js|css))$",
-          "release": "$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -89,14 +109,12 @@
           "release": false
         }
       ],
-      "__hash": "34fce7ff789f5038a929f562240e12f4eebf39c6"
+      "files": null,
+      "paths": null
     },
     {
       "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react@0.14.5",
-      "description": "React is a JavaScript library for building user interfaces.",
-      "tag": "master",
-      "reposType": "npm",
       "dependencies": [
         "fbjs@^0.6.0"
       ],
@@ -106,16 +124,32 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(LICENSE)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(PATENTS)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(addons\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(react\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
+          "release": "dist/$1"
         },
         {
           "reg": "^\\/node_modules\\/react\\/lib\\/(.*)$",
           "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(.*\\.(?:js|css))$",
-          "release": "$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -130,7 +164,63 @@
           "release": false
         }
       ],
-      "__hash": "898a1863b168e73f841fe6ef41e48297f51fc59d"
+      "files": null,
+      "paths": null
+    },
+    {
+      "version": "0.14.6",
+      "build": "rm package.json && npm install --prefix . react@0.14.6",
+      "dependencies": [
+        "fbjs@^0.6.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(LICENSE)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(PATENTS)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(addons\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(react\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
+          "release": "dist/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "files": null,
+      "paths": null
     }
   ]
 }

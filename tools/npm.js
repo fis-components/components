@@ -98,6 +98,7 @@ while (args.length) {
     json.main && (item.main = json.main);
     item.tag = 'master';
     item.reposType = 'npm';
+    json.files && (item.files = json.files);
     var overrided = getOverride(pkgName, version);
     if (overrided && overrided.dependencies) {
       json.dependencies = overrided.dependencies;
@@ -266,10 +267,10 @@ while (args.length) {
         }));
 
         item.main = main;
-      } else if (json.files) {
+      } else if (item.files && item.files.length) {
         var folders = [];
 
-        json.files.forEach(function(filepath) {
+        item.files.forEach(function(filepath) {
           if (/\/$/.test(filepath)) {
             folders.push(filepath.replace(/^\.\//, ''));
           } else if (/\.js$/.test(filepath)) {
@@ -313,6 +314,8 @@ while (args.length) {
           var name = item.split('@')[0];
           return ~deps.indexOf(name);
         }));
+
+        delete item.files;
       } else {
         var main = (item.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
 

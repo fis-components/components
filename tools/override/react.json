@@ -1,0 +1,9 @@
+{
+
+  "tags": {
+    "<=0.14.3": {
+      "main": "./dist/react.js",
+      "files": null
+    }
+  }
+}
