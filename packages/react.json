@@ -120,7 +120,8 @@
       ],
       "files": null,
       "shim": null,
-      "paths": null
+      "paths": null,
+      "__hash": "34bc42ef4daf776c50c5b443cde982f386c1af02"
     },
     {
       "version": "0.14.5",
