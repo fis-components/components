@@ -60,7 +60,8 @@
       "main": "index.js",
       "dependencies": [
         "react@^0.14.1"
-      ]
+      ],
+      "__hash": "a6fb33b5c47bae67932e87bcd23fec1fbd5050d6"
     },
     {
       "version": "0.14.2",
