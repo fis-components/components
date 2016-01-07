@@ -44,18 +44,6 @@ exec("cp tools/builds/*.json packages/");
 task  = '#last:' + currentCommitId +'\n' + task;
 write(taskFile, task);
 
-console.log("git status");
-exec("git status");
-
-console.log("git add packages");
-exec("git add packages");
-
-console.log("git add task.yml");
-exec("git add task.yml");
-
-console.log("git commit -m \"Created by https://github.com/fis-components/components/blob/master/task.yml\"");
-exec("git commit -m \"Created by https://github.com/fis-components/components/blob/master/task.yml\"");
-
 var comment = 'sh ' + path.join(__dirname, './commit.sh');
 console.log(comment);
 exec(comment).code && exit(1);
