@@ -81,7 +81,8 @@
           "release": false
         }
       ],
-      "main": null
+      "main": null,
+      "__hash": "c24720135f2cd450fead0a192421a9b693dac3b1"
     },
     {
       "version": "1.3.7",
