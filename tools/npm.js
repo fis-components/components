@@ -318,7 +318,7 @@ while (args.length) {
 
     overrided && assign(item, overrided);
 
-    if (item.dependencies && argv.r === false) {
+    if (item.dependencies && argv.r !== false) {
       args.push.apply(args, item.dependencies);
     }
 
