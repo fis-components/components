@@ -1,0 +1,87 @@
+{
+  "build": "rm package.json && npm install --prefix . weui@0.1.0",
+  "name": "weui",
+  "description": "为微信 Web 服务量身设计",
+  "repos": "https://github.com/weui/weui.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/weui\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/weui\\/(.*\\.(?:js|css))$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.1.0"
+    },
+    {
+      "version": "0.2.0",
+      "build": "rm package.json && npm install --prefix . weui@0.2.0",
+      "description": "wechat mobile ui",
+      "repos": "https://github.com/2betop/placeholder.git"
+    },
+    {
+      "version": "0.2.2",
+      "build": "rm package.json && npm install --prefix . weui@0.2.2",
+      "description": "wechat mobile ui",
+      "repos": "https://github.com/2betop/placeholder.git"
+    },
+    {
+      "version": "0.2.3",
+      "build": "rm package.json && npm install --prefix . weui@0.2.3",
+      "main": "style/weui.css",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/weui\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/weui\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "style"
+      }
+    }
+  ]
+}
