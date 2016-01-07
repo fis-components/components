@@ -158,8 +158,25 @@ while (args.length) {
         item.main && startFiles.push(item.paths[item.main] || item.main);
 
         Object.keys(item.paths).forEach(function(key) {
-          startFiles.push(item.paths[key]);
-        })
+          if (/^[^\.\/]+/.test(key)) {
+            item.shim = item.shim || {};
+            if (!item.shim['**/*.js']) {
+              item.shim['**/*.js'] = {
+                replace: []
+              };
+            }
+
+            item.shim['**/*.js'].replace.push(
+              {
+                from: '/\\brequire\\s*\\(\\s*(\'|")' + escapeReg(key) + '\\b/ig',
+                to: 'require($1' + item.paths[key]
+              }
+            );
+            delete json.browser[key];
+          } else {
+            startFiles.push(item.paths[key]);
+          }
+        });
 
         var ret = collect(pkgPath, startFiles);
         ret.deps = ret.deps.map(function(name) {

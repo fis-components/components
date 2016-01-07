@@ -53,7 +53,7 @@ module.exports = function(folder, entry) {
 
       content.replace(/"(?:[^\\"\r\n\f]|\\[\s\S])*"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|(\/\/[^\r\n\f]+|\/\*[\s\S]+?(?:\*\/|$))|\b(require|_dereq_)\s*\(\s*('|")(.+?)\3\s*\)/g, function(m, comment, type, quote, value) {
         if (comment || !value)return;
-        console.log(value);
+        // console.log(value);
 
         if (value[0] === '.') {
           type === 'require' && collect(resolve(path.join(path.dirname(shortpath), value)));

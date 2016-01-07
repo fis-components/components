@@ -29,13 +29,19 @@ sync () {
         rm -rf $tempDir
     fi
 
-    git_clone $repos $tempDir
+    if [ "$isFromJson" = "true" ]; then
+        mkdir -p $tempDir
+    else
+        git_clone $repos $tempDir
+    fi
 
     if [ "$?" = "0" ]; then
 
         cd $tempDir
 
-        git checkout $tag
+        if [ "$isFromJson" != "true" ]; then
+            git checkout $tag
+        fi
 
         if [ "$?" != "0" ]; then
             echo "=GIT: git checkout $tag fail."
@@ -45,6 +51,7 @@ sync () {
         # run build
         if [ "$build" != "" ]; then
             echo  '=BUILD '$new
+            touch package.json
             eval $build || ('=BUILD build fail.' 2>&1 || exit 1)
         fi
 
