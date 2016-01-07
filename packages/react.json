@@ -63,7 +63,8 @@
     },
     {
       "version": "0.14.4",
-      "build": "rm package.json && npm install --prefix . react@0.14.4"
+      "build": "rm package.json && npm install --prefix . react@0.14.4",
+      "__hash": "307698bedd189b9ca8816a3f0535e6a3b5c8c5b7"
     },
     {
       "version": "0.14.5",
