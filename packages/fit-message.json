@@ -140,7 +140,6 @@
       "__hash": "1c51bacdd58b821c323e49ae20ad9b1846e6e437"
     },
     {
-      "version": "1.0.19",
       "build": "rm package.json && npm install --prefix . fit-message@1.0.19",
       "mapping": [
         {
@@ -168,15 +167,15 @@
           "release": false
         }
       ],
+      "version": "1.0.19",
       "paths": {
         "dist": "."
       },
       "__hash": "b9ed23d0a667679c228f48412e06c5a5b82bb489"
     },
     {
-      "version": "1.0.22",
-      "build": "rm package.json && npm install --prefix . fit-message@1.0.22",
       "main": "lib/index.js",
+      "build": "rm package.json && npm install --prefix . fit-message@1.0.22",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -203,11 +202,44 @@
           "release": false
         }
       ],
+      "version": "1.0.22",
       "__hash": "edcf1a2511383dbb216a9d609760f77a50145655"
     },
     {
-      "version": "1.0.25",
+      "main": "lib/index.js",
       "build": "rm package.json && npm install --prefix . fit-message@1.0.25",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.25",
+      "__hash": "52404e84482cbfe4ef5cb36d3cebf806ab815783"
+    },
+    {
+      "version": "1.1.4",
+      "build": "rm package.json && npm install --prefix . fit-message@1.1.4",
       "main": "lib/index.js",
       "mapping": [
         {
@@ -235,7 +267,71 @@
           "release": false
         }
       ],
-      "__hash": "52404e84482cbfe4ef5cb36d3cebf806ab815783"
+      "__hash": "0521b3d2371567ca7dab9e847bc480ef1fa147f7"
+    },
+    {
+      "version": "1.1.7",
+      "build": "rm package.json && npm install --prefix . fit-message@1.1.7",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "3d9b5c48ff7591313489d18079042c8b90afb56d"
+    },
+    {
+      "version": "1.1.9",
+      "build": "rm package.json && npm install --prefix . fit-message@1.1.9",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "9413a55f5a0cbc42d32ee36bfbea0848a247f85b"
     }
   ]
 }

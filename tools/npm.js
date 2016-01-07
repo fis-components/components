@@ -11,7 +11,6 @@ var hash = require('object-hash');
 
 const args = argv._.concat();
 const packages = [];
-const browserIgnore = require('./browser.ignore.json');
 const ignore = require("./ignore.json");
 
 function escapeReg(str) {
@@ -36,7 +35,7 @@ while (args.length) {
   var pkgName = parts[0];
   var pkgVersion = parts[1];
 
-  if (~packages.indexOf(pkgName) || ~ignore.indexOf(pkgName))continue;
+  if (~packages.indexOf(pkgName)) continue;
 
   console.log('\n.....................')
   console.log('Analyzing %s@%s', pkgName, pkgVersion);
@@ -52,7 +51,9 @@ while (args.length) {
     return semver.valid(version);
   })
   
-  if (pkgVersion) {
+  if (pkgVersion === 'latest') {
+    versions = [infoJson.version];
+  } else if (pkgVersion) {
     versions = versions.filter(function(version) {
       return semver.satisfies(version, pkgVersion);
     });
@@ -63,6 +64,11 @@ while (args.length) {
 
   var items = [];
   versions.forEach(function(version) {
+    if (isIgnored(pkgName, version)) {
+      console.log('%s@%s is skipped, due to settings in ignore.json', pkgName, version);
+      return;
+    }
+
     var item = {};
     item.version = version;
     item.build = 'rm package.json && npm install --prefix . ' + pkgName + '@' + version;
@@ -88,7 +94,6 @@ while (args.length) {
     item.tag = 'master';
     item.reposType = 'npm';
     var overrided = getOverride(pkgName, version);
-
     if (overrided && overrided.dependencies) {
       json.dependencies = overrided.dependencies;
       if (Array.isArray(json.dependencies)) {
@@ -100,21 +105,33 @@ while (args.length) {
           tmp[key] = value;
         });
       }
+      delete overrided.dependencies;
       json.dependencies = tmp;
     }
 
-    if (json.dependencies) {
-      var dependencies = [];
-      Object.keys(json.dependencies).forEach(function(key) {
-        if (browserIgnore[item.name] && ~browserIgnore[item.name].indexOf(key)) {
-          return;
+    var npmDependencies = json.dependencies || {};
+    if (json.peerDependencies) {
+      assign(npmDependencies, json.peerDependencies);
+    }
+
+    if (overrided && overrided.ignoreDependencies) {
+      var ignoreDependencies = overrided.ignoreDependencies;
+      
+      Object.keys(npmDependencies).forEach(function(key) {
+        var parts = key.split('@');
+
+        if (~ignoreDependencies.indexOf(parts[0])) {
+          delete npmDependencies[key];
         }
+      });
 
-        // if (!~modules.indexOf(key)) {
-          args.push(key + '@' + json.dependencies[key]);
-        // }
+      delete overrided.ignoreDependencies;
+    }
 
-        dependencies.push(key + '@' + json.dependencies[key])
+    if (npmDependencies) {
+      var dependencies = [];
+      Object.keys(npmDependencies).forEach(function(key) {
+        dependencies.push(key + '@' + npmDependencies[key])
       });
       item.dependencies = dependencies;
     }
@@ -132,13 +149,6 @@ while (args.length) {
       release: false
     });
 
-    if (test('-d', path.join(__dirname, 'node_modules', item.name, 'lib'))) {
-      item.mapping.push({
-        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/lib\\/(.*)$",
-        release: 'lib/$1'
-      });
-    }
-
     if (json.browser) {
       if (typeof json.browser === 'object') {
         item.paths = json.browser;
@@ -151,15 +161,74 @@ while (args.length) {
             release: '$1'
           });
         });
+
+        item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.(?:js|css))$",
+            release: '$1'
+        });
+      } else {
+
+        var main = json.browser.replace(/^\.\//, '').replace(/\/$/, '/index');
+
+        if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+          main = path.join(main, 'index');
+        }
+
+        // console.log(json, main)
+        // console.log(main);
+        if (/^dist/.test(main)) {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+            release: '$1'
+          });
+          item.main = item.main = main.replace(/^dist\//, '');
+          item.paths = item.paths || {};
+          item.paths.dist = path.dirname(item.main);
+        } else {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(json.browser) + ")$",
+            release: '$1'
+          });
+
+          item.main = json.browser;
+        }
+      }
+    } else if (json.jspm) {
+      var main = json.jspm.main.replace(/^\.\//, '').replace(/\/$/, '/index');
+
+      if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+        main = path.join(main, 'index');
+      }
+
+      // console.log(json, main)
+      // console.log(main);
+      if (/^dist/.test(main)) {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+          release: '$1'
+        });
+        item.main = item.main = main.replace(/^dist\//, '');
+        item.paths = item.paths || {};
+        item.paths.dist = path.dirname(item.main);
       } else {
         item.mapping.push({
-          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(json.browser) + ")$",
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(main) + ")$",
           release: '$1'
         });
 
-        item.main = json.browser;
+        item.main = main;
       }
+
+      // todo
+      item.dependencies = [];
     } else {
+      if (test('-d', path.join(__dirname, 'node_modules', item.name, 'lib'))) {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/lib\\/(.*)$",
+          release: 'lib/$1'
+        });
+      }
+
       var main = (json.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
 
       if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
@@ -167,6 +236,7 @@ while (args.length) {
       }
 
       // console.log(json, main)
+      // console.log(main);
 
       if (/^dist/.test(main)) {
         item.mapping.push({
@@ -176,7 +246,7 @@ while (args.length) {
         item.main = item.main = main.replace(/^dist\//, '');
         item.paths = item.paths || {};
         item.paths.dist = path.dirname(item.main);
-      } else if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
+      } else /*if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
           release: '$1'
@@ -184,7 +254,7 @@ while (args.length) {
         item.main = item.main = item.name + '.js';
         item.paths = item.paths || {};
         item.paths.dist = path.dirname(item.main);
-      } else if (path.dirname(main) === '.' || path.dirname(main) === '') {
+      } else*/ if (path.dirname(main) === '.' || path.dirname(main) === '') {
         item.mapping.push({
           reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(.*\\.(?:js|css))$",
           release: '$1'
@@ -223,9 +293,13 @@ while (args.length) {
     item.mapping.push({
       reg: '\\.*',
       release: false
-    });  
+    });
 
     overrided && assign(item, overrided);
+
+    if (item.dependencies && argv.r === false) {
+      args.push.apply(args, item.dependencies);
+    }
 
     items.push(item);
   });
@@ -234,7 +308,7 @@ while (args.length) {
     continue;
   }
 
-  var topConfig;
+  var topConfig = null;
   if (!argv.override && test('-f', path.join(__dirname, '../packages/' + pkgName + '.json'))) {
     console.log('Merging...')
     var pkgs = (function() {
@@ -285,11 +359,20 @@ while (args.length) {
     delete config['__hash'];
     config.tags = items.map(function(tag) {
       var clone = assign({}, tag);
+      var rest = assign({}, config);
+
+      delete rest.tags;
 
       Object.keys(tag).forEach(function(key) {
+        delete rest[key];
+
         if (tag[key] && config[key] && deepEqual(tag[key], config[key])) {
           delete clone[key];
         }
+      });
+
+      Object.keys(rest).forEach(function(key) {
+        clone[key] = null;
       });
 
       return clone;
@@ -298,6 +381,31 @@ while (args.length) {
     console.log('Created %s', pkgName + '.json');
     packages.push(pkgName);
   })();
+}
+
+function isIgnored(name, version) {
+  if (!ignore[name]) {
+    return false;
+  }
+
+  if (ignore[name] == '*') {
+    return true;
+  }
+
+  if (!Array.isArray(ignore[name])) {
+    ignore[name] = [ignore[name]];
+  }
+
+  var satisfied = false;
+  ignore[name].every(function(item) {
+    if (semver.satisfies(version, item)) {
+      satisfied = true;
+      return false;
+    }
+    return true;
+  });
+
+  return satisfied;
 }
 
 

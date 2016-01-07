@@ -35,18 +35,232 @@
   ],
   "tags": [
     {
-      "version": "1.0.21",
-      "__hash": "b544cf79126706919d745e6e497c041154ee4017"
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.14"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.19",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.19",
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "c364302ca0244b1216d631146fa10fccffd030e8"
     },
     {
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.22"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.21",
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "a3fe9de65641fa1376c2079daf4b0504dc7e2bfa"
+    },
+    {
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.23"
+      ],
       "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.22",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "1.0.22",
-      "__hash": "d4a6554d8682815346d524db38253fa3ddc91de5"
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "22bb121459945d1f75e66dc593c1c4993384a5d6"
     },
     {
       "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.23",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "1.0.23",
-      "__hash": "9aa799a0ff3539f95a89757fc16cd753d5653f85"
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "f3e1a45ffa504cabda168272acb2096e321dc161"
+    },
+    {
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.27"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.25",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.25",
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "fa24a486f3e0f7fe4726f0c8d93cf43c9f230243"
+    },
+    {
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.28"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.26",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.26",
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "82439921c142cc9bbe8b3749b96f2e5b4e8318d8"
     },
     {
       "dependencies": [
@@ -82,7 +296,10 @@
         }
       ],
       "version": "1.0.29",
-      "__hash": "3eb5c41b20eef9fee9ab7216c57f2bb191de90f2"
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "d52cce3d0d11039ade04a5b4f0c4c96e5a8736de"
     },
     {
       "dependencies": [
@@ -118,7 +335,10 @@
         }
       ],
       "version": "1.0.31",
-      "__hash": "912b34e9e9e4e82ff721b9238955765a566e2d5e"
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "7d3eae379f99b67154b0ed70613addf5f5b5d3ac"
     },
     {
       "dependencies": [
@@ -154,16 +374,18 @@
         }
       ],
       "version": "1.0.33",
-      "__hash": "5aa6639359c5216bf40180426326a2fda1eff524"
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "0e116c24fddd33247d11797ca9ad6219c02cb7be"
     },
     {
-      "version": "1.0.40",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.40",
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.3",
-        "fit-style@^1.0.42"
+        "fit-style@^1.0.37"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.35",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -190,20 +412,59 @@
           "release": false
         }
       ],
+      "version": "1.0.35",
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "6902dd0ecd0dc1e80b2331ba289b817e0bbb253a"
+    },
+    {
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.42"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.40",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.40",
       "paths": {
         "dist": "."
       },
       "__hash": "c13732e7b2d9d625c85ad53333aadd1163e8747e"
     },
     {
-      "version": "1.0.43",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.43",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.3",
         "fit-style@^1.0.45"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.43",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -230,17 +491,17 @@
           "release": false
         }
       ],
+      "version": "1.0.43",
       "__hash": "5701a0f0a77f4e37c80cef7659ead342d884f448"
     },
     {
-      "version": "1.0.46",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.46",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.3",
         "fit-style@^1.0.48"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.46",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -267,7 +528,231 @@
           "release": false
         }
       ],
+      "version": "1.0.46",
       "__hash": "59e5af8732058b2f0e55f880dd383871db970a31"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.50"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.48",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.48",
+      "__hash": "bc830cd6e4a9771badde4c695274032e14202b36"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.0.55"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.0.50",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.50",
+      "__hash": "13ba2521596e02f3b15baf1dd8fdc88f38ba7075"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.1.4"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.4",
+      "__hash": "eaa14d2fc0c4eb585b687131f0a2ccb582b3c8f1"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.1.7"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.7",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.7",
+      "__hash": "6271cc54df9dfc1fd2108422c08a01d10363f897"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.1.9"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.9",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.9",
+      "__hash": "8f14c5cf11fe40d4cb03b274e9700639d415b723"
+    },
+    {
+      "version": "1.1.10",
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.10",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.9",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "c45c2dbdb729132de2aee4460b20ac6a4905d098"
     }
   ]
 }

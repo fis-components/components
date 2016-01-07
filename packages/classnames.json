@@ -32,6 +32,10 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/classnames\\/(.*\\.(?:js|css))$",
           "release": "$1"
         },
@@ -48,16 +52,50 @@
           "release": false
         }
       ],
+      "version": "2.2.0",
+      "build": "rm package.json && npm install --prefix . classnames@2.2.0",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
-      "version": "2.2.0",
-      "build": "rm package.json && npm install --prefix . classnames@2.2.0",
-      "__hash": "9ca575310d31ba00f92288531b741b4d5b6c9a86"
+      "__hash": "a39558823c1145aab51f1668583f70f279e38341"
     },
     {
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(.*\\.(?:js|css))$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "2.2.1",
       "build": "rm package.json && npm install --prefix . classnames@2.2.1",
+      "description": "A simple utility for conditionally joining classNames together",
+      "tag": "master",
+      "reposType": "npm",
+      "__hash": "b65eff9abe03b9d65ef115d53c314ded707a2a64"
+    },
+    {
+      "version": "2.2.2",
+      "build": "rm package.json && npm install --prefix . classnames@2.2.2",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
@@ -87,7 +125,7 @@
           "release": false
         }
       ],
-      "__hash": "b65eff9abe03b9d65ef115d53c314ded707a2a64"
+      "__hash": "41c463680b29fbd527ba3a6d3e9a35436c2ef913"
     }
   ]
 }

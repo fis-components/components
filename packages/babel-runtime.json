@@ -1,0 +1,229 @@
+{
+  "build": "rm package.json && npm install --prefix . babel-runtime@5.5.8",
+  "name": "babel-runtime",
+  "description": "babel selfContained runtime",
+  "repos": "https://github.com/babel/babel.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "core-js@^0.9.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/babel-runtime\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/babel-runtime\\/(.*\\.(?:js|css))$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "5.5.8",
+      "__hash": "213a70f7a58dfd824c8b3a42e9162ba6bfd38eb0"
+    },
+    {
+      "version": "5.6.0",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.0",
+      "__hash": "af9e3f3e5f0e89a2d954bc6013250c1c65b09e36"
+    },
+    {
+      "version": "5.6.1",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.1",
+      "__hash": "00e5b55629265be611735f16d076f1096c8a4c6f"
+    },
+    {
+      "version": "5.6.2",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.2",
+      "__hash": "b394479874a3c063076bf919515ba73b3b9114f2"
+    },
+    {
+      "version": "5.6.3",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.3",
+      "__hash": "9bcc4df40480e820ab34fc93bf024f834eff2c2d"
+    },
+    {
+      "version": "5.6.4",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.4",
+      "__hash": "3759853b733028b13185c6833255335bae8369ec"
+    },
+    {
+      "version": "5.6.5",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.5",
+      "__hash": "507dc1673101784e4292a6de44df50634cddfeea"
+    },
+    {
+      "version": "5.6.6",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.6",
+      "__hash": "0fddaebb948ea7da9cc11e4bd72bdcac33fccd81"
+    },
+    {
+      "version": "5.6.7",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.7",
+      "__hash": "d2051211b18106394186645ab44a8ccfc21de848"
+    },
+    {
+      "version": "5.6.8",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.8",
+      "__hash": "ffcc18b4a81e041455b51e5cedee59784c3f3e35"
+    },
+    {
+      "version": "5.6.9",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.9",
+      "__hash": "8909310c3da7436e14507242f0fd081893db3f9f"
+    },
+    {
+      "version": "5.6.10",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.10",
+      "__hash": "1335ed01c3c2aa750028c8b468c3f334e1ea6c17"
+    },
+    {
+      "version": "5.6.11",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.11",
+      "__hash": "14b1f9560388d64cf2b17ea0ead7489371c0d162"
+    },
+    {
+      "version": "5.6.12",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.12",
+      "__hash": "506d0de666bf2b74cfe635816bd7cf50101a84ba"
+    },
+    {
+      "version": "5.6.14",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.14",
+      "__hash": "f33c18255ded695c7d301aa170de5ea725dd9735"
+    },
+    {
+      "version": "5.6.15",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.15",
+      "__hash": "15eb97bec42d13cd61b068065f558231d6ebb9ac"
+    },
+    {
+      "version": "5.6.16",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.16",
+      "__hash": "f894c5fbe264e16e735e41352ceb85661d74f2bb"
+    },
+    {
+      "version": "5.6.17",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.17",
+      "__hash": "f25b40498280b40ba6d75c2b0f3e1d955fcf2073"
+    },
+    {
+      "version": "5.6.18",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.18",
+      "repos": "https://github.com/babel/babel",
+      "__hash": "41b4e0801c99a654e4bc94c2a821d84f8f7b8e85"
+    },
+    {
+      "version": "5.6.19",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.19",
+      "repos": "https://github.com/babel/babel",
+      "__hash": "cd049e9f1328f6bc1af6b0f095597fffeb55f602"
+    },
+    {
+      "version": "5.6.20",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.6.20",
+      "repos": "https://github.com/babel/babel",
+      "__hash": "8558a6715ca8c381d0d7fba26ded7b12da7c3712"
+    },
+    {
+      "version": "5.7.0",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.7.0",
+      "__hash": "14238fbc33fe486616b24f49636100fe46a10e30"
+    },
+    {
+      "version": "5.8.2",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.2",
+      "__hash": "f5cd21c56735af86c04c14cb301668d7bb15b7f2"
+    },
+    {
+      "version": "5.8.3",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.3",
+      "__hash": "ce518f59cc1432b282f8153646d70925eeee952a"
+    },
+    {
+      "version": "5.8.5",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.5",
+      "__hash": "d7a8dfdb673efb98a08a3a54648625bc8aadc309"
+    },
+    {
+      "version": "5.8.8",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.8",
+      "repos": "https://github.com/babel/babel",
+      "__hash": "6afe8780011ee7c2815bc310f8f616632a98b034"
+    },
+    {
+      "version": "5.8.9",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.9",
+      "repos": "https://github.com/babel/babel",
+      "__hash": "729ce9ed5235694c04141da5cfc5a6c590a075c9"
+    },
+    {
+      "version": "5.8.12",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.12",
+      "repos": "https://github.com/babel/babel",
+      "__hash": "5fe7328c3ed281310bec3ddf8a4c06f9dc0aae40"
+    },
+    {
+      "version": "5.8.19",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.19",
+      "__hash": "3847cc8b8fda07ad23e37950f1b48f9d2ab30d50"
+    },
+    {
+      "version": "5.8.20",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.20",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ],
+      "__hash": "332cb5692a599fa429478becea36741c22235398"
+    },
+    {
+      "version": "5.8.24",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.24",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ],
+      "__hash": "c0eafa1fad273c1b961edabbcdfe3b4d42c503ab"
+    },
+    {
+      "version": "5.8.25",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.25",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ],
+      "__hash": "69c819bab7ac176b0f13197c3ad10b24c29d232b"
+    },
+    {
+      "version": "5.8.29",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.29",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ],
+      "__hash": "cd7f69420e8b9f46332fa34cec54fcffb53415a8"
+    },
+    {
+      "version": "5.8.34",
+      "build": "rm package.json && npm install --prefix . babel-runtime@5.8.34",
+      "dependencies": [
+        "core-js@^1.0.0"
+      ],
+      "__hash": "97008402c64c2ee447eb0afd2d01b3046890f95a"
+    }
+  ]
+}

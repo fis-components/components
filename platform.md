@@ -11,6 +11,22 @@ FIS 目前把一些常用的的组件，结合 travis-ci 自动转换成了 Comm
 
 如何管理这些组件？
 
+**2016-01-07 更新**
+如果，想同步现有 npm 组件过来，只需要修改 [task.yml](./task.yml) 文件即可，把需要同步的组件填写入。CI 会自动转换。
+
+```yml
+sync:
+  npm:
+    # 当不指定版本时，默认同步最新的3个版本。
+    # 当版本为 latest 时只会同步最新的那个版本。
+    # 可以同时处理多个组件。如：
+    # - whatwg-fetch
+    # - react@0.14.5
+    - whatwg-fetch@latest
+```
+
+
+
 实际上现在所有的组件都配置在 [modules](https://github.com/fis-components/components/tree/master/modules) 下面。
 
 

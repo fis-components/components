@@ -1,0 +1,592 @@
+{
+  "build": "rm package.json && npm install --prefix . redux-logger@0.0.1",
+  "name": "redux-logger",
+  "description": "Logger for redux",
+  "repos": "https://github.com/fcomb/redux-logger.git",
+  "main": "build/logger.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux-logger\\/build\\/(.*)$",
+      "release": "build/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.0.1",
+      "__hash": "187b3f495f0d186a11f772c4ea818ed9aaa138ec"
+    },
+    {
+      "version": "0.0.2",
+      "build": "rm package.json && npm install --prefix . redux-logger@0.0.2",
+      "__hash": "99295ca2d507a61baf088cd6470b6258c982ab20"
+    },
+    {
+      "version": "0.0.3",
+      "build": "rm package.json && npm install --prefix . redux-logger@0.0.3",
+      "__hash": "06be01dae5d757978be53224a56c361107015c98"
+    },
+    {
+      "version": "1.0.0",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.0",
+      "main": "build/index.js",
+      "__hash": "82b265eb0fe0c41e524236fe915b8e48415c9ae1"
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.1",
+      "main": "build/index.js",
+      "__hash": "1a2926592056821372cea16a966f5ab5935f9a0d"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.2",
+      "main": "build/index.js",
+      "__hash": "c80e380afe934b50dea2c8c06e1206fdb822320e"
+    },
+    {
+      "version": "1.0.3",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.3",
+      "main": "build/index.js",
+      "__hash": "c9ceec7597ac4105ee47fc0fb2b3ec40ce3f27d6"
+    },
+    {
+      "version": "1.0.4",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.4",
+      "main": "build/index.js",
+      "__hash": "7148211aeb9d176ba0855291ef818c5c49ae328b"
+    },
+    {
+      "version": "1.0.5",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.5",
+      "main": "build/index.js",
+      "__hash": "b8771ea2f2e57590e9cd0639cefb525d3f02a709"
+    },
+    {
+      "version": "1.0.6",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.6",
+      "main": "build/index.js",
+      "__hash": "100837df99b3f6ca22ae1fc56edfacd3868abfec"
+    },
+    {
+      "version": "1.0.7",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.7",
+      "main": "build/index.js",
+      "__hash": "5a95f57ec388cb6ae2d02bcc873190fdb2da1c83"
+    },
+    {
+      "version": "1.0.8",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.8",
+      "main": "build/index.js",
+      "__hash": "201716e9c23124e9044610d07ed1f1b283c9e34c"
+    },
+    {
+      "version": "1.0.9",
+      "build": "rm package.json && npm install --prefix . redux-logger@1.0.9",
+      "main": "build/index.js",
+      "__hash": "f2e6b0314798ff733e4288c1ee0e8427e1680bcb"
+    },
+    {
+      "version": "2.0.0",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.0.0",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "2b6e7f742d15af82c1539175c0e4812df5859327"
+    },
+    {
+      "version": "2.0.1",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.0.1",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "f1bff3a95d19ee5559de8aeecd4b0f62718e215d"
+    },
+    {
+      "version": "2.0.2",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.0.2",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "e12011d8a1b4f690e83e705612a8893284ed4ed2"
+    },
+    {
+      "version": "2.0.3",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.0.3",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "f33c95de81ecab33bcbe6c7ca1d1ad90b29688c9"
+    },
+    {
+      "version": "2.0.4",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.0.4",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "8479353d053b9d17339c1dab929ad20e0fd5e33f"
+    },
+    {
+      "version": "2.0.5",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.0.5",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "ece398852ccab0544849ede02ab14f3d9372bdc1"
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.1.0",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "0a86bf7f85beb86fafb74783a93fb72cdcc83fa7"
+    },
+    {
+      "version": "2.1.1",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.1.1",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "f75fdb54dbd6b0d841124959efb451b62431d9a4"
+    },
+    {
+      "version": "2.1.2",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.1.2",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "0b14160d3da851b8297326f5c0cef3ce8463db49"
+    },
+    {
+      "version": "2.1.3",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.1.3",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "8a3b1414c31042cf8ce144de96e9398f098857cb"
+    },
+    {
+      "version": "2.1.4",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.1.4",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "97b5a5963a701eb02f1798ce4a49acf7945cd057"
+    },
+    {
+      "version": "2.2.0",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.2.0",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "7f31b4705a8428d40ab1984c41d5c3b8ca09e31f"
+    },
+    {
+      "version": "2.2.1",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.2.1",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "a11d88aed8a91cbedb8274f0521b04213f2d0f1d"
+    },
+    {
+      "version": "2.3.0",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.3.0",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "6fec58eba102999f8e056f2eee70df13131f3453"
+    },
+    {
+      "version": "2.3.1",
+      "build": "rm package.json && npm install --prefix . redux-logger@2.3.1",
+      "main": "lib/index.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux-logger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "99124569b01ab67722bcda930279546d351f7c03"
+    }
+  ]
+}
