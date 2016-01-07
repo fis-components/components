@@ -8,6 +8,11 @@
   "reposType": "npm",
   "files": null,
   "dependencies": [],
+  "shim": {
+    ".hook.js": {
+      "content": "var path = require('path');\n\nmodule.exports = function(json, files) {\n  var hasAddons = false;\n\n  Object.keys(files).every(function(subpath) {\n    var cName = path.basename(path.dirname(subpath));\n\n    // some thing like `react-addons-create-fragment`\n    if (cName.substring(0, 13) === 'react-addons-') {\n      hasAddons = true;\n      return false;\n    }\n\n    return true;\n  });\n\n  // 自动切换到 react-with-addons 如果依赖列表中有 react-addons 的话。\n  // 实在不想再把 react 给拆了。\n  if (hasAddons) {\n    json.main = 'react-with-addons.js';\n  }\n};"
+    }
+  },
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -40,26 +45,22 @@
   "tags": [
     {
       "version": "0.14.0",
-      "files": null,
-      "__hash": "60674fde775ad428004f48a1fd468dc87dd905cd"
+      "files": null
     },
     {
       "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react@0.14.1",
-      "files": null,
-      "__hash": "683e2509b30f67d826a039fa3745fae971ccd6b1"
+      "files": null
     },
     {
       "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "files": null,
-      "__hash": "d7e10026a34d70b878cafdcffd25377a94b4b0e6"
+      "files": null
     },
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "files": null,
-      "__hash": "49b62757a8edbc4d61b4fac857f3866bdc1af91f"
+      "files": null
     },
     {
       "version": "0.14.4",
@@ -114,8 +115,8 @@
         }
       ],
       "files": null,
-      "paths": null,
-      "__hash": "20e1ff74adb0617a19b21aaa37f9f624fbe0e033"
+      "shim": null,
+      "paths": null
     },
     {
       "version": "0.14.5",
@@ -170,8 +171,8 @@
         }
       ],
       "files": null,
-      "paths": null,
-      "__hash": "2bcb935a33749f2f103cd6619194123198419939"
+      "shim": null,
+      "paths": null
     },
     {
       "version": "0.14.6",
@@ -226,8 +227,8 @@
         }
       ],
       "files": null,
-      "paths": null,
-      "__hash": "405adaafb5d7de7be81adf0daf8e1776f0a1314e"
+      "shim": null,
+      "paths": null
     }
   ]
 }
