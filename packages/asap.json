@@ -72,7 +72,8 @@
         "./asap.js": "./browser-asap.js",
         "./raw.js": "./browser-raw.js",
         "./test/domain.js": "./test/browser-domain.js"
-      }
+      },
+      "__hash": "1f022e326d02bb34164038620e5f0d251f3cc9c6"
     }
   ]
 }
