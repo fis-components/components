@@ -131,7 +131,8 @@
           "release": false
         }
       ],
-      "main": null
+      "main": null,
+      "__hash": "501af7216b8cac6912e1a80100bb908a4741f30a"
     },
     {
       "version": "1.4.0",
