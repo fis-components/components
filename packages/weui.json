@@ -37,15 +37,13 @@
       "version": "0.2.0",
       "build": "rm package.json && npm install --prefix . weui@0.2.0",
       "description": "wechat mobile ui",
-      "repos": "https://github.com/2betop/placeholder.git",
-      "__hash": "bcb0c3b114d4d757b489ae6bbb4d0e8a934d1a4f"
+      "repos": "https://github.com/2betop/placeholder.git"
     },
     {
       "version": "0.2.2",
       "build": "rm package.json && npm install --prefix . weui@0.2.2",
       "description": "wechat mobile ui",
-      "repos": "https://github.com/2betop/placeholder.git",
-      "__hash": "92e24d6fe497a6f7016cb744f2c8bd2405140436"
+      "repos": "https://github.com/2betop/placeholder.git"
     },
     {
       "version": "0.2.3",
