@@ -45,7 +45,7 @@ module.exports = function(options, callback) {
                 return item.relative;
             });
 
-            if (!files.length && exists(path.join(options.dir, key))) {
+            if (!files.length) {
                 files = [key];
             }
 
