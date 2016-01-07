@@ -136,7 +136,8 @@
     {
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . core-js@1.0.1",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "17571d1073387670d813bd8917f0df1191b3be47"
     },
     {
       "version": "1.1.0",
