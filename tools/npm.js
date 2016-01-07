@@ -210,40 +210,28 @@ while (args.length) {
             main = path.join(main, 'index');
           }
 
-          // console.log(json, main)
-          // console.log(main);
-          if (/^dist/.test(main)) {
+          var ret = collect(pkgPath, json.browser);
+
+          ret.enties.forEach(function(shorpath) {
             item.mapping.push({
-              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
               release: '$1'
             });
-            item.main = item.main = main.replace(/^dist\//, '');
-            item.paths = item.paths || {};
-            item.paths.dist = '.';
-          } else {
-            var ret = collect(pkgPath, json.browser);
+          });
 
-            ret.enties.forEach(function(shorpath) {
-              item.mapping.push({
-                reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
-                release: '$1'
-              });
+          item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
+            var name = item.split('@')[0];
+            return ~ret.deps.indexOf(name);
+          }));
+
+          if (test('-d', path.join(pkgPath, 'dist'))) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+              release: 'dist/$1'
             });
-
-            item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
-              var name = item.split('@')[0];
-              return ~ret.deps.indexOf(name);
-            }));
-
-            if (test('-d', path.join(pkgPath, 'dist'))) {
-              item.mapping.push({
-                reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-                release: 'dist/$1'
-              });
-            }
-
-            item.main = json.browser;
           }
+
+          item.main = json.browser;
         }
       } else if (json.jspm) {
         var main = json.jspm.main.replace(/^\.\//, '').replace(/\/$/, '/index');
@@ -372,18 +360,6 @@ while (args.length) {
           });
 
           deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'lib/**/*.js').map(function(item) {
-            return item.relative;
-          })).dpes);
-        }
-        
-
-        if (test('-d', path.join(pkgPath, 'dist'))) {
-          item.mapping.push({
-            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-            release: 'dist/$1'
-          });
-
-          deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'dist/**/*.js').map(function(item) {
             return item.relative;
           })).dpes);
         }
