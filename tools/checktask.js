@@ -32,7 +32,9 @@ if (!Array.isArray(packages)) {
   packages = [packages];
 }
 
-var comment = 'node ' + path.join(__dirname, './npm.js') + ' ' + packages.join(' ') + '';
+var comment = 'node ' + path.join(__dirname, './npm.js') + ' ' + packages.map(function(item) {
+  return '"' + item + '"';
+}).join(' ') + '';
 console.log(comment);
 exec(comment).code && exit(1);
 

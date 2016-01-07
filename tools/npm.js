@@ -9,6 +9,7 @@ const semver = require('semver');
 const deepEqual = require('deep-equal');
 var hash = require('object-hash');
 const collect = require('./collect');
+const finder = require('../finder.js');
 
 const args = argv._.concat();
 const packages = [];
@@ -54,6 +55,9 @@ while (args.length) {
   
   if (pkgVersion === 'latest') {
     versions = [infoJson.version];
+  } else if (/^latest(\d+)$/.test(pkgVersion)) {
+    var versionsCount = parseInt(RegExp.$1) || 3;
+    versions = versions.reverse().slice(0, versionsCount).reverse();
   } else if (pkgVersion) {
     versions = versions.filter(function(version) {
       return semver.satisfies(version, pkgVersion);
@@ -137,84 +141,54 @@ while (args.length) {
       item.dependencies = dependencies;
     }
     
+    overrided && assign(item, overrided);
 
-    item.mapping = [];
+    if (!item.mapping) {
+      item.mapping = [];
 
-    item.mapping.push({
-      reg: "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-      release: false
-    });
+      item.mapping.push({
+        reg: "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+        release: false
+      });
 
-    item.mapping.push({
-      reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(?:test|build|dist\\/cdn)\\/",
-      release: false
-    });
+      item.mapping.push({
+        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+        release: false
+      });
 
-    var startFiles = [];
+      var startFiles = [];
 
-    if (json.browser) {
-      if (typeof json.browser === 'object') {
-        item.paths = json.browser;
-        item.main = item.paths[item.main] || item.main;
-        item.main && startFiles.push(item.main);
+      if (json.browser) {
+        if (typeof json.browser === 'object') {
+          item.paths = json.browser;
+          item.main = item.paths[item.main] || item.main;
+          item.main && startFiles.push(item.main);
 
-        Object.keys(item.paths).forEach(function(key) {
-          if (/^[^\.\/]+/.test(key)) {
-            item.shim = item.shim || {};
-            if (!item.shim['**/*.js']) {
-              item.shim['**/*.js'] = {
-                replace: []
-              };
-            }
-
-            item.shim['**/*.js'].replace.push(
-              {
-                from: '/\\brequire\\s*\\(\\s*(\'|")' + escapeReg(key) + '\\b/ig',
-                to: 'require($1' + item.paths[key]
+          Object.keys(item.paths).forEach(function(key) {
+            if (/^[^\.\/]+/.test(key)) {
+              item.shim = item.shim || {};
+              if (!item.shim['**/*.js']) {
+                item.shim['**/*.js'] = {
+                  replace: []
+                };
               }
-            );
-            delete json.browser[key];
-          } else {
-            startFiles.push(item.paths[key]);
-          }
-        });
 
-        var ret = collect(pkgPath, startFiles);
-        ret.deps = ret.deps.map(function(name) {
-          return item.paths[name] || name;
-        });
-
-        ret.enties.forEach(function(shorpath) {
-          item.mapping.push({
-            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
-            release: '$1'
+              item.shim['**/*.js'].replace.push(
+                {
+                  from: '/\\brequire\\s*\\(\\s*(\'|")' + escapeReg(key) + '\\b/ig',
+                  to: 'require($1' + item.paths[key]
+                }
+              );
+              delete json.browser[key];
+            } else {
+              startFiles.push(item.paths[key]);
+            }
           });
-        });
 
-        item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
-          var name = item.split('@')[0];
-          return ~ret.deps.indexOf(name);
-        }));
-      } else {
-
-        var main = json.browser.replace(/^\.\//, '').replace(/\/$/, '/index');
-
-        if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
-          main = path.join(main, 'index');
-        }
-
-        // console.log(json, main)
-        // console.log(main);
-        if (/^dist/.test(main)) {
-          item.mapping.push({
-            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-            release: '$1'
+          var ret = collect(pkgPath, startFiles);
+          ret.deps = ret.deps.map(function(name) {
+            return item.paths[name] || name;
           });
-          item.main = item.main = main.replace(/^dist\//, '');
-          item.paths = item.paths || {};
-          item.paths.dist = '.';
-        } else {
-          var ret = collect(pkgPath, json.browser);
 
           ret.enties.forEach(function(shorpath) {
             item.mapping.push({
@@ -227,66 +201,57 @@ while (args.length) {
             var name = item.split('@')[0];
             return ~ret.deps.indexOf(name);
           }));
+        } else {
 
-          if (test('-d', path.join(pkgPath, 'dist'))) {
-            item.mapping.push({
-              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-              release: 'dist/$1'
-            });
+          var main = json.browser.replace(/^\.\//, '').replace(/\/$/, '/index');
+
+          if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+            main = path.join(main, 'index');
           }
 
-          item.main = json.browser;
+          // console.log(json, main)
+          // console.log(main);
+          if (/^dist/.test(main)) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+              release: '$1'
+            });
+            item.main = item.main = main.replace(/^dist\//, '');
+            item.paths = item.paths || {};
+            item.paths.dist = '.';
+          } else {
+            var ret = collect(pkgPath, json.browser);
+
+            ret.enties.forEach(function(shorpath) {
+              item.mapping.push({
+                reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
+                release: '$1'
+              });
+            });
+
+            item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
+              var name = item.split('@')[0];
+              return ~ret.deps.indexOf(name);
+            }));
+
+            if (test('-d', path.join(pkgPath, 'dist'))) {
+              item.mapping.push({
+                reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+                release: 'dist/$1'
+              });
+            }
+
+            item.main = json.browser;
+          }
         }
-      }
-    } else if (json.jspm) {
-      var main = json.jspm.main.replace(/^\.\//, '').replace(/\/$/, '/index');
+      } else if (json.jspm) {
+        var main = json.jspm.main.replace(/^\.\//, '').replace(/\/$/, '/index');
 
-      if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
-        main = path.join(main, 'index');
-      }
-
-      var ret = collect(pkgPath, main);
-
-      ret.enties.forEach(function(shorpath) {
-        item.mapping.push({
-          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
-          release: '$1'
-        });
-      });
-
-      item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
-        var name = item.split('@')[0];
-        return ~ret.deps.indexOf(name);
-      }));
-
-      item.main = main;
-    } else {
-      var main = (json.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
-
-      if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
-        main = path.join(main, 'index');
-      }
-
-      // console.log(json, main)
-      // console.log(main);
-
-      if (/^dist/.test(main)) {
-        item.mapping.push({
-          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-          release: '$1'
-        });
-        item.main = item.main = main.replace(/^dist\//, '');
-        item.paths = item.paths || {};
-        item.paths.dist = '.';
-      } else {
-        startFiles.push(main);
-
-        if (test('-d', path.join(pkgPath, 'lib'))) {
-          startFiles.push.apply(startFiles, ls('*.js', path.join(pkgPath, 'lib')));
+        if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+          main = path.join(main, 'index');
         }
 
-        var ret = collect(pkgPath, startFiles);
-
+        var ret = collect(pkgPath, main);
 
         ret.enties.forEach(function(shorpath) {
           item.mapping.push({
@@ -300,42 +265,156 @@ while (args.length) {
           return ~ret.deps.indexOf(name);
         }));
 
-        if (test('-d', path.join(pkgPath, 'dist'))) {
+        item.main = main;
+      } else if (json.files) {
+        var folders = [];
+
+        json.files.forEach(function(filepath) {
+          if (/\/$/.test(filepath)) {
+            folders.push(filepath.replace(/^\.\//, ''));
+          } else if (/\.js$/.test(filepath)) {
+            startFiles.push(filepath);
+          } else {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(filepath) + ")$",
+              release: '$1'
+            });
+          }
+        });
+
+        var ret = collect(pkgPath, startFiles);
+        var deps = ret.deps.concat();
+        var rFolder = folders.length ? new RegExp("^(" + folders.map(escapeReg).join('|') + ")", 'i') : null;
+
+        ret.enties.forEach(function(shorpath) {
+          if (rFolder && rFolder.test(shorpath))return;
+
           item.mapping.push({
-            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-            release: 'dist/$1'
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
+            release: '$1'
           });
+        });
+
+        folders.forEach(function(folder) {
+          if (test('-d', path.join(pkgPath, folder))) {
+            folder = folder.replace(/\//, '');
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(folder) + "\\/(.*)$",
+              release: folder + '/$1'
+            });
+
+            deps.push.apply(deps, collect(pkgPath, finder(pkgPath, folder + '/**/*.js').map(function(item) {
+              return item.relative;
+            })).dpes);
+          }
+        });
+
+        item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
+          var name = item.split('@')[0];
+          return ~deps.indexOf(name);
+        }));
+      } else {
+        var main = (item.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
+
+        if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+          main = path.join(main, 'index');
         }
 
-        item.main = main;
+        // console.log(json, main)
+        // console.log(main);
+
+        if (/^dist/.test(main)) {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+            release: '$1'
+          });
+          item.main = item.main = main.replace(/^dist\//, '');
+          item.paths = item.paths || {};
+          item.paths.dist = '.';
+
+          // 分析去掉没用的依赖。
+          if (item.dependencies) {
+            startFiles.push.apply(startFiles, finder(pkgPath, 'dist/**/*.js').map(function(item) {
+              return item.relative;
+            }))
+
+            var ret = collect(pkgPath, startFiles);
+
+            item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
+              var name = item.split('@')[0];
+              return ~ret.deps.indexOf(name);
+            }));
+          }
+        } else {
+          startFiles.push(main);
+          var ret = collect(pkgPath, startFiles);
+          var deps = ret.deps.concat();
+
+          ret.enties.forEach(function(shorpath) {
+            if (path.dirname(shorpath) === 'lib')return;
+
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
+              release: '$1'
+            });
+          });
+
+          if (test('-d', path.join(pkgPath, 'lib'))) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/lib\\/(.*)$",
+              release: 'lib/$1'
+            });
+
+            deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'lib/**/*.js').map(function(item) {
+              return item.relative;
+            })).dpes);
+          }
+          
+
+          if (test('-d', path.join(pkgPath, 'dist'))) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+              release: 'dist/$1'
+            });
+
+            deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'dist/**/*.js').map(function(item) {
+              return item.relative;
+            })).dpes);
+          }
+
+          item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
+            var name = item.split('@')[0];
+            return ~deps.indexOf(name);
+          }));
+
+          item.main = main;
+        }
       }
+
+      ['assets', 'style', 'fonts', 'css'].forEach(function(assetDir) {
+        if (test('-d', path.join(pkgPath, assetDir))) {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$",
+            release: assetDir + '/$1'
+          });
+        }
+      });
+
+      item.mapping.push({
+        reg: "^\\/README\\.md$",
+        release: '$&'
+      });
+
+      item.mapping.push({
+        reg: "^\\/LICENSE\\.md$",
+        release: '$&'
+      });
+
+      item.mapping.push({
+        reg: '\\.*',
+        release: false
+      });
     }
-
-    ['assets', 'style', 'fonts', 'css'].forEach(function(assetDir) {
-      if (test('-d', path.join(pkgPath, assetDir))) {
-        item.mapping.push({
-          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(assetDir) + "\\/(.*)$",
-          release: assetDir + '/$1'
-        });
-      }
-    });
-
-    item.mapping.push({
-      reg: "^\\/README\\.md$",
-      release: '$&'
-    });
-
-    item.mapping.push({
-      reg: "^\\/LICENSE\\.md$",
-      release: '$&'
-    });
-
-    item.mapping.push({
-      reg: '\\.*',
-      release: false
-    });
-
-    overrided && assign(item, overrided);
 
     if (item.dependencies && argv.r !== false) {
       args.push.apply(args, item.dependencies);
