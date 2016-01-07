@@ -192,7 +192,7 @@ while (args.length) {
           });
 
           ret.enties.forEach(function(shorpath) {
-            if (/^(lib)/i.test(shorpath))return;
+            if (/^(lib|modules)/i.test(shorpath))return;
 
             item.mapping.push({
               reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
@@ -207,6 +207,17 @@ while (args.length) {
             });
 
             deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['lib/**/*.js', '!lib/node/**/*.js']).map(function(item) {
+              return item.relative;
+            })).dpes);
+          }
+
+          if (test('-d', path.join(pkgPath, 'modules'))) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/modules\\/(.*)$",
+              release: 'modules/$1'
+            });
+
+            deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['modules/**/*.js', '!modules/node/**/*.js']).map(function(item) {
               return item.relative;
             })).dpes);
           }
@@ -358,7 +369,7 @@ while (args.length) {
         var deps = ret.deps.concat();
 
         ret.enties.forEach(function(shorpath) {
-          if (/^lib/i.test(shorpath))return;
+          if (/^(lib|modules)/i.test(shorpath))return;
 
           item.mapping.push({
             reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
@@ -373,6 +384,17 @@ while (args.length) {
           });
 
           deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'lib/**/*.js').map(function(item) {
+            return item.relative;
+          })).dpes);
+        }
+
+        if (test('-d', path.join(pkgPath, 'modules'))) {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/modules\\/(.*)$",
+            release: 'modules/$1'
+          });
+
+          deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'modules/**/*.js').map(function(item) {
             return item.relative;
           })).dpes);
         }

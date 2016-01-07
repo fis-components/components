@@ -47,27 +47,27 @@
     },
     {
       "version": "0.14.1",
-      "build": "rm package.json && npm install --prefix . react@0.14.1",
+      "build": "rm package.json && npm install --prefix . react@0.14.1"
     },
     {
       "version": "0.14.2",
-      "build": "rm package.json && npm install --prefix . react@0.14.2",
+      "build": "rm package.json && npm install --prefix . react@0.14.2"
     },
     {
       "version": "0.14.3",
-      "build": "rm package.json && npm install --prefix . react@0.14.3",
+      "build": "rm package.json && npm install --prefix . react@0.14.3"
     },
     {
       "version": "0.14.4",
-      "build": "rm package.json && npm install --prefix . react@0.14.4",
+      "build": "rm package.json && npm install --prefix . react@0.14.4"
     },
     {
       "version": "0.14.5",
-      "build": "rm package.json && npm install --prefix . react@0.14.5",
+      "build": "rm package.json && npm install --prefix . react@0.14.5"
     },
     {
       "version": "0.14.6",
-      "build": "rm package.json && npm install --prefix . react@0.14.6",
+      "build": "rm package.json && npm install --prefix . react@0.14.6"
     }
   ]
 }
