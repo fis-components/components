@@ -142,7 +142,8 @@
         "parseuri@0.0.4",
         "socket.io-parser@2.2.5",
         "to-array@0.1.3"
-      ]
+      ],
+      "__hash": "34b6a70e46851577f216c6c9050cdc8e075e6001"
     }
   ]
 }
