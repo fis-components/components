@@ -1,15 +1,4 @@
 {
-  "ignoreDependencies": [
-    "qs",
-    "formidable",
-    "mime",
-    "methods",
-    "cookiejar",
-    "debug",
-    "extend",
-    "form-data",
-    "readable-stream"
-  ],
   "main": "./lib/client.js",
   "shim": {
     "lib/client.js": {
