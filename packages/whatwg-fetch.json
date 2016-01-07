@@ -42,7 +42,8 @@
       "version": "0.10.1",
       "build": "rm package.json && npm install --prefix . whatwg-fetch@0.10.1",
       "description": "This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to uphold this code. [code-of-conduct]: http://todogroup.org/opencodeofconduct/#fetch/opensource@github.com",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "29b307a31bab41ac5212f8a6fc0d45eabaaf42fe"
     }
   ]
 }
