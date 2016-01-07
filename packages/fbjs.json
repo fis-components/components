@@ -61,7 +61,8 @@
     {
       "version": "0.6.1",
       "build": "rm package.json && npm install --prefix . fbjs@0.6.1",
-      "description": "A collection of utility libraries used by other Facebook JS projects"
+      "description": "A collection of utility libraries used by other Facebook JS projects",
+      "__hash": "d24fd5b87d2e8cb8287a53808267b7c99f29ab1b"
     }
   ]
 }
