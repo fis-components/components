@@ -93,7 +93,8 @@
     {
       "version": "1.0.7",
       "build": "rm package.json && npm install --prefix . redux-logger@1.0.7",
-      "main": "build/index.js"
+      "main": "build/index.js",
+      "__hash": "5a95f57ec388cb6ae2d02bcc873190fdb2da1c83"
     },
     {
       "version": "1.0.8",
