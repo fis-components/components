@@ -51,11 +51,12 @@ module.exports = function(folder, entry) {
 
       var content = read(realpath, 'utf8');
 
-      content.replace(/"(?:[^\\"\r\n\f]|\\[\s\S])*"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|(\/\/[^\r\n\f]+|\/\*[\s\S]+?(?:\*\/|$))|\brequire\s*\(\s*('|")(.+?)\2\s*\)/g, function(m, comment, quote, value) {
+      content.replace(/"(?:[^\\"\r\n\f]|\\[\s\S])*"|'(?:[^\\'\n\r\f]|\\[\s\S])*'|(\/\/[^\r\n\f]+|\/\*[\s\S]+?(?:\*\/|$))|\b(require|_dereq_)\s*\(\s*('|")(.+?)\3\s*\)/g, function(m, comment, type, quote, value) {
         if (comment || !value)return;
+        console.log(value);
 
         if (value[0] === '.') {
-          collect(resolve(path.join(path.dirname(shortpath), value)));
+          type === 'require' && collect(resolve(path.join(path.dirname(shortpath), value)));
         } else {
           var dep = value.split('/')[0];
 
@@ -67,3 +68,6 @@ module.exports = function(folder, entry) {
     }
   }
 }
+
+// var ret = module.exports(path.join(__dirname, 'node_modules/socket.io-client'), 'socket.io.js');
+// console.log(ret);
