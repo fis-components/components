@@ -5,4 +5,4 @@ sync:
     # 可以同时处理多个组件。
     # - whatwg-fetch
     # - react@0.14.5
-    - whatwg-fetch@latest
+    - redux-logger@*
