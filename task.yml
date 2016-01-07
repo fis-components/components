@@ -7,3 +7,4 @@ sync:
     # - react@0.14.5
     # 每次只保留当前需要转换的组件。
     - redux-logger@*
+    - fit-number@latest 
