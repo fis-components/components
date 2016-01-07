@@ -17,10 +17,6 @@
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react-weui\\/(.*\\.(?:js|css))$",
-      "release": "$1"
-    },
-    {
       "reg": "^\\/README\\.md$",
       "release": "$&"
     },
@@ -35,13 +31,12 @@
   ],
   "tags": [
     {
-      "version": "0.0.0",
-      "__hash": "0bdee7d9e2a280e0e93335fe3445ab2b75f1ce9b"
+      "version": "0.0.0"
     },
     {
       "version": "0.1.0",
       "build": "rm package.json && npm install --prefix . react-weui@0.1.0",
-      "main": "./lib",
+      "main": "lib/index",
       "dependencies": [
         "classnames@^2.2.0",
         "react@^0.14.2"
@@ -56,8 +51,124 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-weui\\/lib\\/(.*)$",
-          "release": "lib/$1"
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/button\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/button\\/button\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/button\\/button_area\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cells\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cells_title\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cells_tips\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell_header\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell_body\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell_footer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/mask\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/mask\\/mask\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/form\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/toast\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/toast\\/toast\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/icon\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/icon\\/icon\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/progress\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/progress\\/progress\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/actionsheet\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/actionsheet\\/actionsheet\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/dialog\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/dialog\\/confirm\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/dialog\\/alert\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/msg\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/msg\\/msg\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/article\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/article\\/article\\.js)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -71,13 +182,12 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "576b21b6968ec576bdd03fe12ebebec9a88f7fe9"
+      ]
     },
     {
       "version": "0.2.0",
       "build": "rm package.json && npm install --prefix . react-weui@0.2.0",
-      "main": "./lib",
+      "main": "lib/index",
       "dependencies": [
         "classnames@^2.2.0",
         "react@^0.14.2"
@@ -92,8 +202,124 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-weui\\/lib\\/(.*)$",
-          "release": "lib/$1"
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/button\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/button\\/button\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/button\\/button_area\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cells\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cells_title\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cells_tips\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell_header\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell_body\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/cell\\/cell_footer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/mask\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/mask\\/mask\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/form\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/toast\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/toast\\/toast\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/icon\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/icon\\/icon\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/progress\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/progress\\/progress\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/actionsheet\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/actionsheet\\/actionsheet\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/dialog\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/dialog\\/confirm\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/dialog\\/alert\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/msg\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/msg\\/msg\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/article\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-weui\\/(lib\\/components\\/article\\/article\\.js)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -107,8 +333,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "7cf661a133a43f98be620f19b9a9c402fd56c9e6"
+      ]
     }
   ]
 }

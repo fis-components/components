@@ -115,19 +115,19 @@ while (args.length) {
       assign(npmDependencies, json.peerDependencies);
     }
 
-    if (overrided && overrided.ignoreDependencies) {
-      var ignoreDependencies = overrided.ignoreDependencies;
+    // if (overrided && overrided.ignoreDependencies) {
+    //   var ignoreDependencies = overrided.ignoreDependencies;
       
-      Object.keys(npmDependencies).forEach(function(key) {
-        var parts = key.split('@');
+    //   Object.keys(npmDependencies).forEach(function(key) {
+    //     var parts = key.split('@');
 
-        if (~ignoreDependencies.indexOf(parts[0])) {
-          delete npmDependencies[key];
-        }
-      });
+    //     if (~ignoreDependencies.indexOf(parts[0])) {
+    //       delete npmDependencies[key];
+    //     }
+    //   });
 
-      delete overrided.ignoreDependencies;
-    }
+    //   delete overrided.ignoreDependencies;
+    // }
 
     if (npmDependencies) {
       var dependencies = [];
@@ -194,7 +194,7 @@ while (args.length) {
           });
           item.main = item.main = main.replace(/^dist\//, '');
           item.paths = item.paths || {};
-          item.paths.dist = path.dirname(item.main);
+          item.paths.dist = '.';
         } else {
           var ret = collect(pkgPath, json.browser);
 
@@ -229,7 +229,7 @@ while (args.length) {
         });
         item.main = item.main = main.replace(/^dist\//, '');
         item.paths = item.paths || {};
-        item.paths.dist = path.dirname(item.main);
+        item.paths.dist = '.';
       } else {
 
         var ret = collect(pkgPath, main, '_dereq_');
@@ -265,7 +265,7 @@ while (args.length) {
         });
         item.main = item.main = main.replace(/^dist\//, '');
         item.paths = item.paths || {};
-        item.paths.dist = path.dirname(item.main);
+        item.paths.dist = '.';
       } else {
         startFiles.push(main);
 
