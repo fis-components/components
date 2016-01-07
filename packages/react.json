@@ -44,37 +44,30 @@
   "tags": [
     {
       "version": "0.14.0",
-      "__hash": "716f1a8680e77dd4362712654faa7319a780d7c5"
     },
     {
       "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react@0.14.1",
-      "__hash": "ded79a8fac429b923098ace2af470714679c8ff3"
     },
     {
       "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "__hash": "351f145ce8a59fb729014c82733c490f476ed998"
     },
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "__hash": "f105d468f8570dcf8515c2f52637b191bf9dce79"
     },
     {
       "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react@0.14.4",
-      "__hash": "307698bedd189b9ca8816a3f0535e6a3b5c8c5b7"
     },
     {
       "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react@0.14.5",
-      "__hash": "777a26b72a943884e8d39317fa5272890a091e56"
     },
     {
       "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react@0.14.6",
-      "__hash": "d57b0582e0429231d12ad18f4c5f12d8545ceedd"
     }
   ]
 }
