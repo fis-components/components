@@ -40,7 +40,8 @@
     },
     {
       "version": "0.0.2",
-      "build": "rm package.json && npm install --prefix . redux-logger@0.0.2"
+      "build": "rm package.json && npm install --prefix . redux-logger@0.0.2",
+      "__hash": "99295ca2d507a61baf088cd6470b6258c982ab20"
     },
     {
       "version": "0.0.3",
