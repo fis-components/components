@@ -1,0 +1,47 @@
+{
+  "build": "rm package.json && npm install --prefix . debug@2.2.0",
+  "name": "debug",
+  "description": "small debugging utility",
+  "repos": "https://github.com/visionmedia/debug.git",
+  "main": "./browser.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "ms@0.7.1"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/debug\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/debug\\/(browser\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/debug\\/(debug\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.2.0"
+    }
+  ]
+}

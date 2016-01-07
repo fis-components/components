@@ -62,8 +62,85 @@
   ],
   "tags": [
     {
+      "version": "1.3.6",
+      "build": "rm package.json && npm install --prefix . socket.io-client@1.3.6",
+      "description": "[![Build Status](https://secure.travis-ci.org/Automattic/socket.io-client.svg)](http://travis-ci.org/Automattic/socket.io-client) ![NPM version](https://badge.fury.io/js/socket.io-client.svg) ![Downloads](http://img.shields.io/npm/dm/socket.io-client.svg?",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/socket\\.io-client\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/socket\\.io-client\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index.js"
+    },
+    {
+      "version": "1.3.7",
+      "build": "rm package.json && npm install --prefix . socket.io-client@1.3.7",
+      "description": "[![Build Status](https://secure.travis-ci.org/Automattic/socket.io-client.svg)](http://travis-ci.org/Automattic/socket.io-client) ![NPM version](https://badge.fury.io/js/socket.io-client.svg) ![Downloads](http://img.shields.io/npm/dm/socket.io-client.svg?",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/socket\\.io-client\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/socket\\.io-client\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index.js"
+    },
+    {
       "version": "1.4.0",
-      "__hash": "2c2fcff0676f235b9ed8fe671855c3e3964cf052"
+      "dependencies": [
+        "backo2@1.0.2",
+        "component-bind@1.0.0",
+        "component-emitter@1.2.0",
+        "debug@2.2.0",
+        "engine.io-client@1.6.4",
+        "has-binary@0.1.7",
+        "indexof@0.0.1",
+        "parseuri@0.0.4",
+        "socket.io-parser@2.2.5",
+        "to-array@0.1.3"
+      ]
     }
   ]
 }
