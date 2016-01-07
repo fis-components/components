@@ -210,6 +210,13 @@ while (args.length) {
             return ~ret.deps.indexOf(name);
           }));
 
+          if (test('-d', path.join(pkgPath, 'dist'))) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+              release: 'dist/$1'
+            });
+          }
+
           item.main = json.browser;
         }
       }
@@ -287,6 +294,13 @@ while (args.length) {
           var name = item.split('@')[0];
           return ~ret.deps.indexOf(name);
         }));
+
+        if (test('-d', path.join(pkgPath, 'dist'))) {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+            release: 'dist/$1'
+          });
+        }
 
         item.main = main;
       }
