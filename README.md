@@ -61,6 +61,19 @@ AMD 和 UMD 扩展自 CommonJs 规范，主要为了适用于浏览器。 而在
 
 目前此机构下面的组件都来源于[这些配置文件](https://github.com/fis-components/components/tree/master/modules), 欢迎大家提 pull request 丰富我们的组件平台。
 
+如果是 npm 组件想同步过来，只需要修改 [task.yml](./task.yml) 文件即可，把需要同步的组件填写入。CI 会自动转换。
+
+```yml
+sync:
+  npm:
+    # 当不指定版本时，默认同步最新的3个版本。
+    # 当版本为 latest 时只会同步最新的那个版本。
+    # 可以同时处理多个组件。如：
+    # - whatwg-fetch
+    # - react@0.14.5
+    - whatwg-fetch@latest
+```
+
 
 ## 支持强大的 [semverion](https://github.com/npm/node-semver)
 
