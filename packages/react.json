@@ -57,7 +57,8 @@
     {
       "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "files": null
+      "files": null,
+      "__hash": "c19cb373db82bfc8086b95b57f7f9c4fe66a3822"
     },
     {
       "version": "0.14.3",
