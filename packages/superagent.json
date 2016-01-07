@@ -13,12 +13,12 @@
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/superagent\\/(?:test|build|dist\\/cdn)\\/",
+      "reg": "^\\/node_modules\\/superagent\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/superagent\\/(lib\\/client\\.js)$",
-      "release": "$1"
+      "reg": "^\\/node_modules\\/superagent\\/lib\\/(.*)$",
+      "release": "lib/$1"
     },
     {
       "reg": "^\\/README\\.md$",
@@ -53,8 +53,7 @@
   },
   "tags": [
     {
-      "version": "1.6.1",
-      "__hash": "07c12630e6b8aae6916ca98a9c12f7f416dca184"
+      "version": "1.6.1"
     }
   ]
 }

@@ -187,20 +187,33 @@ while (args.length) {
           });
 
           var ret = collect(pkgPath, startFiles);
-          ret.deps = ret.deps.map(function(name) {
+          var deps = ret.deps = ret.deps.map(function(name) {
             return item.paths[name] || name;
           });
 
           ret.enties.forEach(function(shorpath) {
+            if (/^(lib)/i.test(shorpath))return;
+
             item.mapping.push({
               reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
               release: '$1'
             });
           });
 
+          if (test('-d', path.join(pkgPath, 'lib'))) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/lib\\/(.*)$",
+              release: 'lib/$1'
+            });
+
+            deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['lib/**/*.js', '!lib/node/**/*.js']).map(function(item) {
+              return item.relative;
+            })).dpes);
+          }
+
           item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
             var name = item.split('@')[0];
-            return ~ret.deps.indexOf(name);
+            return ~deps.indexOf(name);
           }));
         } else {
 
@@ -345,7 +358,7 @@ while (args.length) {
         var deps = ret.deps.concat();
 
         ret.enties.forEach(function(shorpath) {
-          if (path.dirname(shorpath) === 'lib')return;
+          if (/^lib/i.test(shorpath))return;
 
           item.mapping.push({
             reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
