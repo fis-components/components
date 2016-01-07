@@ -9,7 +9,7 @@ echo "https://${GH_TOKEN}:@github.com" > .git/credential
 
 
 git add packages
-git add task.yml.log
+git add task.yml.log -f
 
 echo "git status"
 git status

@@ -39,10 +39,10 @@ exec(comment).code && exit(1);
 console.log("git checkout master");
 exec("git checkout master").code && exit(1);
 
+write(taskLogFile, currentCommitId);
+
 console.log("cp tools/builds/*.json packages/");
 exec("cp tools/builds/*.json packages/");
-
-write(taskLogFile, currentCommitId);
 
 var comment = 'sh ' + path.join(__dirname, './commit.sh');
 console.log(comment);
