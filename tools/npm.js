@@ -155,7 +155,8 @@ while (args.length) {
     if (json.browser) {
       if (typeof json.browser === 'object') {
         item.paths = json.browser;
-        item.main && startFiles.push(item.paths[item.main] || item.main);
+        item.main = item.paths[item.main] || item.main;
+        item.main && startFiles.push(item.main);
 
         Object.keys(item.paths).forEach(function(key) {
           if (/^[^\.\/]+/.test(key)) {

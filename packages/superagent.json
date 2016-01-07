@@ -3,7 +3,7 @@
   "name": "superagent",
   "description": "elegant & feature rich browser / node HTTP with a fluent API",
   "repos": "https://github.com/visionmedia/superagent.git",
-  "main": "./lib/node/index.js",
+  "main": "./lib/client.js",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [],
@@ -53,8 +53,7 @@
   },
   "tags": [
     {
-      "version": "1.6.1",
-      "__hash": "804a01224da7928e517f4dc83e951d7585b85aa4"
+      "version": "1.6.1"
     }
   ]
 }
