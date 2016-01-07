@@ -3,10 +3,9 @@
   "name": "react",
   "description": "React is a JavaScript library for building user interfaces.",
   "repos": "https://github.com/facebook/react.git",
-  "main": "react.js",
+  "main": "react",
   "tag": "master",
   "reposType": "npm",
-  "files": null,
   "dependencies": [],
   "shim": {
     ".hook.js": {
@@ -44,198 +43,31 @@
   },
   "tags": [
     {
-      "version": "0.14.0",
-      "files": null,
-      "__hash": "251af1fef51f360415ebcaf6bbf796f5da9e60a8"
+      "version": "0.14.0"
     },
     {
       "version": "0.14.1",
-      "build": "rm package.json && npm install --prefix . react@0.14.1",
-      "files": null,
-      "__hash": "8200067b7240b3b11b67e207c39920a9a138debd"
+      "build": "rm package.json && npm install --prefix . react@0.14.1"
     },
     {
       "version": "0.14.2",
-      "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "files": null,
-      "__hash": "c19cb373db82bfc8086b95b57f7f9c4fe66a3822"
+      "build": "rm package.json && npm install --prefix . react@0.14.2"
     },
     {
       "version": "0.14.3",
-      "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "files": null,
-      "__hash": "962c9956230e7a5eddd0e22f761a5fb2e8fb5e70"
+      "build": "rm package.json && npm install --prefix . react@0.14.3"
     },
     {
       "version": "0.14.4",
-      "build": "rm package.json && npm install --prefix . react@0.14.4",
-      "dependencies": [
-        "fbjs@^0.3.1"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(LICENSE)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(PATENTS)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(addons\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(react\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
-          "release": "dist/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "files": null,
-      "shim": null,
-      "paths": null,
-      "__hash": "34bc42ef4daf776c50c5b443cde982f386c1af02"
+      "build": "rm package.json && npm install --prefix . react@0.14.4"
     },
     {
       "version": "0.14.5",
-      "build": "rm package.json && npm install --prefix . react@0.14.5",
-      "dependencies": [
-        "fbjs@^0.6.0"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(LICENSE)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(PATENTS)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(addons\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(react\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
-          "release": "dist/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "files": null,
-      "shim": null,
-      "paths": null,
-      "__hash": "302d58791eef458b0e34a43b33919a2739b2f82e"
+      "build": "rm package.json && npm install --prefix . react@0.14.5"
     },
     {
       "version": "0.14.6",
-      "build": "rm package.json && npm install --prefix . react@0.14.6",
-      "dependencies": [
-        "fbjs@^0.6.1"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(LICENSE)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(PATENTS)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(addons\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(react\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
-          "release": "dist/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "files": null,
-      "shim": null,
-      "paths": null,
-      "__hash": "87f1d357643a82b4ccfcd1151411701550010108"
+      "build": "rm package.json && npm install --prefix . react@0.14.6"
     }
   ]
 }
