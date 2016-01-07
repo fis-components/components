@@ -11,7 +11,6 @@ var hash = require('object-hash');
 
 const args = argv._.concat();
 const packages = [];
-const browserIgnore = require('./browser.ignore.json');
 const ignore = require("./ignore.json");
 
 function escapeReg(str) {
@@ -132,10 +131,6 @@ while (args.length) {
     if (npmDependencies) {
       var dependencies = [];
       Object.keys(npmDependencies).forEach(function(key) {
-        if (browserIgnore[item.name] && ~browserIgnore[item.name].indexOf(key)) {
-          return;
-        }
-
         dependencies.push(key + '@' + npmDependencies[key])
       });
       item.dependencies = dependencies;
@@ -233,7 +228,7 @@ while (args.length) {
           release: 'lib/$1'
         });
       }
-    
+
       var main = (json.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
 
       if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
