@@ -7,7 +7,6 @@
   "tag": "master",
   "reposType": "npm",
   "dependencies": [],
-  
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -32,8 +31,7 @@
   ],
   "tags": [
     {
-      "version": "0.1.0",
-      "__hash": "403f55ce84db06445ac734248d45d1e6d4405862"
+      "version": "0.1.0"
     },
     {
       "version": "0.2.0",
