@@ -130,72 +130,72 @@
     {
       "version": "1.0.0",
       "build": "rm package.json && npm install --prefix . core-js@1.0.0",
-      "__hash": "f48e0a1f4cf01b7922439b70b789468627b91412"
+      "dependencies": []
     },
     {
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . core-js@1.0.1",
-      "__hash": "4c7d41b363c4da1a286f707c2d12a1ea0a38f694"
+      "dependencies": []
     },
     {
       "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . core-js@1.1.0",
-      "__hash": "c47fe2fe5f43e3fc0d09950dc490be9e22fe7f79"
+      "dependencies": []
     },
     {
       "version": "1.1.1",
       "build": "rm package.json && npm install --prefix . core-js@1.1.1",
-      "__hash": "b7437447926c54d848ce4b5bd4ca3f9e35514817"
+      "dependencies": []
     },
     {
       "version": "1.1.2",
       "build": "rm package.json && npm install --prefix . core-js@1.1.2",
-      "__hash": "d58061a46433b3cc87920d1c3559c759dbbeabee"
+      "dependencies": []
     },
     {
       "version": "1.1.3",
       "build": "rm package.json && npm install --prefix . core-js@1.1.3",
-      "__hash": "44aab839e8241c31e4de312b1142b805242e4a41"
+      "dependencies": []
     },
     {
       "version": "1.1.4",
       "build": "rm package.json && npm install --prefix . core-js@1.1.4",
-      "__hash": "775f3e4f297c67120e6f4a13a93698fbac43ac5d"
+      "dependencies": []
     },
     {
       "version": "1.2.0",
       "build": "rm package.json && npm install --prefix . core-js@1.2.0",
-      "__hash": "d8f61a623a5a6159078555308805ac3b01435b57"
+      "dependencies": []
     },
     {
       "version": "1.2.1",
       "build": "rm package.json && npm install --prefix . core-js@1.2.1",
-      "__hash": "f198468499c80b593b242f666aa0c296d544dfa3"
+      "dependencies": []
     },
     {
       "version": "1.2.2",
       "build": "rm package.json && npm install --prefix . core-js@1.2.2",
-      "__hash": "69d7b0f2049e3b2185ce44522323feafbf802bee"
+      "dependencies": []
     },
     {
       "version": "1.2.3",
       "build": "rm package.json && npm install --prefix . core-js@1.2.3",
-      "__hash": "1377015038b403335e9a1fa6ba44c2bbc344a038"
+      "dependencies": []
     },
     {
       "version": "1.2.4",
       "build": "rm package.json && npm install --prefix . core-js@1.2.4",
-      "__hash": "05e5537ad8672316f03470195f04e444a980741a"
+      "dependencies": []
     },
     {
       "version": "1.2.5",
       "build": "rm package.json && npm install --prefix . core-js@1.2.5",
-      "__hash": "e3e426c0fe735f27272e23104eee8f7affa4d881"
+      "dependencies": []
     },
     {
       "version": "1.2.6",
       "build": "rm package.json && npm install --prefix . core-js@1.2.6",
-      "__hash": "79009bd81bd556c0259a0be74ac9ae78829615ac"
+      "dependencies": []
     }
   ]
 }

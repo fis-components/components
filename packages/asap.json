@@ -55,24 +55,24 @@
       "__hash": "f1fec4e21b82d212daf4cead26a87496ed8ec727"
     },
     {
-      "version": "2.0.2",
       "build": "rm package.json && npm install --prefix . asap@2.0.2",
       "paths": {
         "./asap.js": "./browser-asap.js",
         "./raw.js": "./browser-raw.js",
         "./test/domain.js": "./test/browser-domain.js"
       },
+      "version": "2.0.2",
       "__hash": "979196f736cd21d6e9faca675dd72021a35c10a1"
     },
     {
       "version": "2.0.3",
       "build": "rm package.json && npm install --prefix . asap@2.0.3",
+      "dependencies": [],
       "paths": {
         "./asap.js": "./browser-asap.js",
         "./raw.js": "./browser-raw.js",
         "./test/domain.js": "./test/browser-domain.js"
-      },
-      "__hash": "7387d5c7315d08c944be66241677b2cedc52607e"
+      }
     }
   ]
 }

@@ -35,12 +35,12 @@
   "tags": [
     {
       "version": "0.7.9",
-      "__hash": "02cd459781e48f11f50006e144657843611b8a71"
+      "dependencies": []
     },
     {
       "version": "0.7.10",
       "build": "rm package.json && npm install --prefix . ua-parser-js@0.7.10",
-      "__hash": "749ffcc3afab82acc88bf684e2f8e93b1b09ce9c"
+      "dependencies": []
     }
   ]
 }

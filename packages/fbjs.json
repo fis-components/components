@@ -48,9 +48,19 @@
       "__hash": "e3d4dd155a4da32023b5957b86ac40b3a85cc647"
     },
     {
-      "version": "0.3.2",
       "build": "rm package.json && npm install --prefix . fbjs@0.3.2",
+      "version": "0.3.2",
       "__hash": "ca6aa0d72e2825db8fc63733ea161febb62e7a07"
+    },
+    {
+      "version": "0.6.0",
+      "build": "rm package.json && npm install --prefix . fbjs@0.6.0",
+      "description": "A collection of utility libraries used by other Facebook JS projects"
+    },
+    {
+      "version": "0.6.1",
+      "build": "rm package.json && npm install --prefix . fbjs@0.6.1",
+      "description": "A collection of utility libraries used by other Facebook JS projects"
     }
   ]
 }
