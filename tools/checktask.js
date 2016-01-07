@@ -6,22 +6,23 @@ const read = fs.readFileSync;
 const write = fs.writeFileSync;
 
 var taskFile = path.join(__dirname, '../task.yml');
+var taskLogFile = path.join(__dirname, '../task.yml.log');
 if (!test('-f', taskFile)) {
   console.log("task.yml miss!");
   exit();
 }
 
-var task = read(taskFile, 'utf8');
-if (/^#last\:([^\r\n]*)/i.test(task)) {
-  var lastSuccessMessageId = RegExp.$1;
+if (test('-f', taskLogFile)) {
+  var lastSuccessMessageId = read(taskLogFile, 'utf8').trim();
 
   var result = exec('git diff --name-status ' + lastSuccessMessageId + '..HEAD').output;
   if (!/\stask\.yml\s/.test(result)) {
     console.log("Nothing changed, skip!")
     exit();
-  }
+  } 
 }
 
+var task = read(taskFile, 'utf8');
 var currentCommitId=exec('git rev-parse HEAD').output.trim();
 
 config = yaml.load(task);
@@ -41,8 +42,7 @@ exec("git checkout master").code && exit(1);
 console.log("cp tools/builds/*.json packages/");
 exec("cp tools/builds/*.json packages/");
 
-task  = '#last:' + currentCommitId +'\n' + task;
-write(taskFile, task);
+write(taskLogFile, currentCommitId);
 
 var comment = 'sh ' + path.join(__dirname, './commit.sh');
 console.log(comment);
