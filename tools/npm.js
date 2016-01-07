@@ -95,7 +95,6 @@ while (args.length) {
     item.tag = 'master';
     item.reposType = 'npm';
     var overrided = getOverride(pkgName, version);
-
     if (overrided && overrided.dependencies) {
       json.dependencies = overrided.dependencies;
       if (Array.isArray(json.dependencies)) {
@@ -107,6 +106,7 @@ while (args.length) {
           tmp[key] = value;
         });
       }
+      delete overrided.dependencies;
       json.dependencies = tmp;
     }
 
@@ -115,16 +115,26 @@ while (args.length) {
       assign(npmDependencies, json.peerDependencies);
     }
 
+    if (overrided && overrided.ignoreDependencies) {
+      var ignoreDependencies = overrided.ignoreDependencies;
+      
+      Object.keys(npmDependencies).forEach(function(key) {
+        var parts = key.split('@');
+
+        if (~ignoreDependencies.indexOf(parts[0])) {
+          delete npmDependencies[key];
+        }
+      });
+
+      delete overrided.ignoreDependencies;
+    }
+
     if (npmDependencies) {
       var dependencies = [];
       Object.keys(npmDependencies).forEach(function(key) {
         if (browserIgnore[item.name] && ~browserIgnore[item.name].indexOf(key)) {
           return;
         }
-
-        // if (!~modules.indexOf(key)) {
-          argv.r === false || args.push(key + '@' + npmDependencies[key]);
-        // }
 
         dependencies.push(key + '@' + npmDependencies[key])
       });
@@ -143,13 +153,6 @@ while (args.length) {
       reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(?:test|build|dist\\/cdn)\\/",
       release: false
     });
-
-    if (test('-d', path.join(__dirname, 'node_modules', item.name, 'lib'))) {
-      item.mapping.push({
-        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/lib\\/(.*)$",
-        release: 'lib/$1'
-      });
-    }
 
     if (json.browser) {
       if (typeof json.browser === 'object') {
@@ -195,7 +198,42 @@ while (args.length) {
           item.main = json.browser;
         }
       }
+    } else if (json.jspm) {
+      var main = json.jspm.main.replace(/^\.\//, '').replace(/\/$/, '/index');
+
+      if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+        main = path.join(main, 'index');
+      }
+
+      // console.log(json, main)
+      // console.log(main);
+      if (/^dist/.test(main)) {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
+          release: '$1'
+        });
+        item.main = item.main = main.replace(/^dist\//, '');
+        item.paths = item.paths || {};
+        item.paths.dist = path.dirname(item.main);
+      } else {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(main) + ")$",
+          release: '$1'
+        });
+
+        item.main = main;
+      }
+
+      // todo
+      item.dependencies = [];
     } else {
+      if (test('-d', path.join(__dirname, 'node_modules', item.name, 'lib'))) {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/lib\\/(.*)$",
+          release: 'lib/$1'
+        });
+      }
+    
       var main = (json.main || 'index.js').replace(/^\.\//, '').replace(/\/$/, '/index');
 
       if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
@@ -260,9 +298,13 @@ while (args.length) {
     item.mapping.push({
       reg: '\\.*',
       release: false
-    });  
+    });
 
     overrided && assign(item, overrided);
+
+    if (item.dependencies && argv.r === false) {
+      args.push.apply(args, item.dependencies);
+    }
 
     items.push(item);
   });
