@@ -400,7 +400,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "ba6c9b512c180ddeb1d777e45c22b66fc06c7ad6"
     }
   ]
 }
