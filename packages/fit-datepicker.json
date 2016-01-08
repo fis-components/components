@@ -500,7 +500,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "8048f919acfb1efa8ad351313475d68e0b079b9a"
     }
   ]
 }
