@@ -40,7 +40,8 @@
     },
     {
       "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.1"
+      "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.1",
+      "__hash": "eb69da0a6772f22ec98a907bba10f37bf9cfb1b9"
     },
     {
       "version": "3.0.2",
