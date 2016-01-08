@@ -99,7 +99,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "c4309bc6ff539827adbeddd3ad2f4bdcc1e459a0"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-css-transition-group@0.14.2",
