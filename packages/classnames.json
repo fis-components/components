@@ -162,7 +162,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "2c22e1cd3397f0e6498f515c449aeef46c13538e"
     },
     {
       "version": "2.2.1",
