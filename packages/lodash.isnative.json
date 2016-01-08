@@ -40,7 +40,8 @@
     },
     {
       "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.1"
+      "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.1",
+      "__hash": "8477448e6d1c2e5632e0c7718d82d94ff493c0d8"
     },
     {
       "version": "3.0.2",
