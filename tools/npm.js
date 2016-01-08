@@ -192,7 +192,7 @@ while (args.length) {
           });
 
           ret.enties.forEach(function(shorpath) {
-            if (/^(lib|modules)/i.test(shorpath))return;
+            if (/^(lib|modules|release)/i.test(shorpath))return;
 
             item.mapping.push({
               reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
@@ -218,6 +218,17 @@ while (args.length) {
             });
 
             deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['modules/**/*.js', '!modules/node/**/*.js']).map(function(item) {
+              return item.relative;
+            })).dpes);
+          }
+
+          if (test('-d', path.join(pkgPath, 'release'))) {
+            item.mapping.push({
+              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/release\\/(.*)$",
+              release: 'release/$1'
+            });
+
+            deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['release/**/*.js', '!release/node/**/*.js']).map(function(item) {
               return item.relative;
             })).dpes);
           }
@@ -370,7 +381,7 @@ while (args.length) {
         var deps = ret.deps.concat();
 
         ret.enties.forEach(function(shorpath) {
-          if (/^(lib|modules)/i.test(shorpath))return;
+          if (/^(lib|modules|release)/i.test(shorpath))return;
 
           item.mapping.push({
             reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
@@ -396,6 +407,17 @@ while (args.length) {
           });
 
           deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'modules/**/*.js').map(function(item) {
+            return item.relative;
+          })).dpes);
+        }
+
+        if (test('-d', path.join(pkgPath, 'release'))) {
+          item.mapping.push({
+            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/release\\/(.*)$",
+            release: 'release/$1'
+          });
+
+          deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['release/**/*.js']).map(function(item) {
             return item.relative;
           })).dpes);
         }

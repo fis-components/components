@@ -1,0 +1,45 @@
+{
+  "build": "rm package.json && npm install --prefix . formsy-react-components@0.6.5",
+  "name": "formsy-react-components",
+  "description": "A set of React JS components for use in a formsy-react form. Markup adheres to Bootstrap structure.",
+  "repos": "https://github.com/twisty/formsy-react-components.git",
+  "main": "release/main.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "classnames@^2.1.3",
+    "react@^0.14.0",
+    "formsy-react@^0.17.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/formsy-react-components\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/formsy-react-components\\/release\\/(.*)$",
+      "release": "release/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.6.5"
+    }
+  ]
+}
