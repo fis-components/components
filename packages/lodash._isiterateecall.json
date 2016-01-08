@@ -55,7 +55,8 @@
     },
     {
       "version": "3.0.4",
-      "build": "rm package.json && npm install --prefix . lodash._isiterateecall@3.0.4"
+      "build": "rm package.json && npm install --prefix . lodash._isiterateecall@3.0.4",
+      "__hash": "eec4967a72cee397c886832fae3734e9a1b584b6"
     },
     {
       "version": "3.0.5",
