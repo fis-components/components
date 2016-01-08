@@ -62,7 +62,8 @@
     {
       "version": "3.0.5",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.5",
-      "repos": "https://github.com/lodash/lodash.git"
+      "repos": "https://github.com/lodash/lodash.git",
+      "__hash": "b77cb2c2d1e074da15b47e6b8d7901dc4e2a885c"
     },
     {
       "version": "3.0.6",
