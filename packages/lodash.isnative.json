@@ -60,7 +60,8 @@
       "repos": "https://github.com/lodash/lodash.git",
       "dependencies": [
         "lodash.isfunction@^3.0.0"
-      ]
+      ],
+      "__hash": "7ba11f3e4e2582fafadbbed4488276f6d6953c88"
     }
   ]
 }
