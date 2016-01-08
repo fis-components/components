@@ -40,7 +40,8 @@
     },
     {
       "version": "3.6.1",
-      "build": "rm package.json && npm install --prefix . lodash.restparam@3.6.1"
+      "build": "rm package.json && npm install --prefix . lodash.restparam@3.6.1",
+      "__hash": "57f99d069ee36504a115e690cdc58aee963f8102"
     }
   ]
 }
