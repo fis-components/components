@@ -3,7 +3,7 @@
   "name": "react-lazy-load",
   "description": "Simple lazy loading component built with react",
   "repos": "https://github.com/loktar00/react-lazy-load.git",
-  "main": "lib/LazyLoad.js",
+  "main": "LazyLoad.js",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [
@@ -40,18 +40,15 @@
   },
   "tags": [
     {
-      "version": "2.0.0",
-      "__hash": "81e7862f1ca4cd6c3b67240d1d6b228aa818bb2a"
+      "version": "2.0.0"
     },
     {
       "version": "2.0.1",
-      "build": "rm package.json && npm install --prefix . react-lazy-load@2.0.1",
-      "__hash": "77b615f23ee0f5b9fc0bfc167ecf2c5611c02e47"
+      "build": "rm package.json && npm install --prefix . react-lazy-load@2.0.1"
     },
     {
       "version": "2.0.2",
-      "build": "rm package.json && npm install --prefix . react-lazy-load@2.0.2",
-      "__hash": "a389396544994a150575391d6dc75d19999aa240"
+      "build": "rm package.json && npm install --prefix . react-lazy-load@2.0.2"
     }
   ]
 }

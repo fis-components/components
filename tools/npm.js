@@ -285,6 +285,7 @@ while (args.length) {
         if (!/^dist/.test(main)) {
           test('-f', path.join(pkgPath, 'dist', item.name + '.js')) && (main = 'dist/' + item.name);
           test('-f', path.join(pkgPath, 'dist', 'index.js')) && (main = 'dist/index');
+          test('-f', path.join(pkgPath, main.replace(/^lib/, 'dist'))) && (main = main.replace(/^lib/, 'dist'))
         }
 
         item.mapping.push({

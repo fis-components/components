@@ -41,6 +41,9 @@ exec(comment).code && exit(1);
 console.log("git checkout master");
 exec("git checkout master").code && exit(1);
 
+console.log("git pull origin master");
+exec("git pull origin master").code && exit(1);
+
 write(taskLogFile, currentCommitId);
 
 console.log("cp tools/builds/*.json packages/");
