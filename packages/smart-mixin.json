@@ -40,7 +40,8 @@
     },
     {
       "version": "1.2.1",
-      "build": "rm package.json && npm install --prefix . smart-mixin@1.2.1"
+      "build": "rm package.json && npm install --prefix . smart-mixin@1.2.1",
+      "__hash": "540785d4da479b5f93e1421ac0d4f6bd73c3f331"
     }
   ]
 }
