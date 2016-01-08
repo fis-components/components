@@ -99,7 +99,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "c43f4a169540983a07b952502aab9affc36cdf8c"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-create-fragment@0.14.2",
