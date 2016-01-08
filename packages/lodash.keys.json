@@ -425,7 +425,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "dd87ce9328241cde63abf7b5e8acb79c02a86a30"
     }
   ]
 }
