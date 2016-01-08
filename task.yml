@@ -12,3 +12,4 @@ sync:
     - react-addons-transition-group@^0.14.0
     - react-addons-update@^0.14.0
     - fit-table@latest
+    - react-lazy-load@latest
