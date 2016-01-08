@@ -9,6 +9,7 @@ var estraverse = require('estraverse');
 var escodegen = require('escodegen');
 var escope = require('escope');
 var esformatter = require('esformatter');
+var browserfy = require('./browserfy');
 
 // 转换 js
 module.exports = function(options, callback) {
@@ -28,7 +29,7 @@ module.exports = function(options, callback) {
                 content = transform(content, options);
             }
             
-            content = unsupportcode(content);
+            content = browserfy(content);
 
             write(info.dest || info.absolute, content);
         } catch (e) {
@@ -117,10 +118,6 @@ module.exports = function(options, callback) {
 
     callback();
 };
-
-function unsupportcode(contents) {
-    return contents.replace(/process\.env\.NODE_ENV\s?\!==\s?('|")production\1/ig, 'true');
-}
 
 function transform(data, options) {
 
