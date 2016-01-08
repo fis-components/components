@@ -6,9 +6,4 @@ sync:
     # - whatwg-fetch
     # - react@0.14.5
     # 每次只保留当前需要转换的组件。
-    - react-addons-create-fragment@^0.14.0
-    - react-addons-css-transition-group@^0.14.0
-    - react-addons-pure-render-mixin@^0.14.0
-    - react-addons-transition-group@^0.14.0
-    - react-addons-update@^0.14.0
-    - fit-table@latest
+    - react-lazy-load
