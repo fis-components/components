@@ -79,7 +79,8 @@
         "lodash.istypedarray@^3.0.0",
         "lodash.keys@^3.0.0",
         "lodash.toplainobject@^3.0.0"
-      ]
+      ],
+      "__hash": "9a249ac3dc355c5b9548cf1b6757e607b5bd6bd9"
     }
   ]
 }
