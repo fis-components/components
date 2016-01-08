@@ -44,21 +44,31 @@ function createEnvify(env) {
   return visitProcessEnv
 }
 
-function createGlobal(content) {
-  var ast = esprima.parse(content, {
-      range: true,
-      tokens: true
-  });
-  var scopes = escope.analyze(ast).scopes;
-  var gs = scopes.filter(function(scope) {
-      return scope.type == 'global';
-  })[0];
-
+function createGlobal() {
   function visitGlobal(traverse, node, path, state) {
-    var varGlobal = findVar(gs, node.name);
+    var idx = 0;
+    while (path[idx]) {
+      if (path[idx].type === Syntax.FunctionExpression || path[idx].type === Syntax.Program ) {
+        var scopes = escope.analyze(path[idx]).scopes.filter(function(item) {
+          return item.block === path[idx];
+        });
+        var resolved = false;
 
-    if (varGlobal) {
-        return false;
+        scopes.every(function(scope) {
+          if (findVar(scope, node.name)) {
+            resolved = true;
+            return false;
+          }
+
+          return true;
+        });
+
+        if (resolved) {
+          return false;
+        }
+      }
+
+      idx++;
     }
 
     utils.catchup(node.range[0], state)
@@ -77,20 +87,11 @@ function createGlobal(content) {
   function findVar(scope, name) {
       var refs = scope.variables;
       var i = 0;
-      var ref, childScope;
+      var ref;
 
       while ((ref = refs[i++])) {
 
           if (ref.name === name) {
-              return ref;
-          }
-      }
-
-      i = 0;
-
-      while ((childScope = scope.childScopes[i++])) {
-
-          if ((ref = findVar(childScope, name))) {
               return ref;
           }
       }
@@ -103,9 +104,9 @@ function createGlobal(content) {
 module.exports = function(content) {
   var visitors = [createEnvify({
     NODE_ENV: 'production'
-  }), createGlobal(content)];
+  }), createGlobal()];
   return jstransform.transform(visitors, content).code
 }
 
-// console.log(module.exports('var global2 = global.xxx; global.xxx = xxx;if (process.env.NODE_ENV === "production") {xx.global.xxx =1;}'));
+// console.log(module.exports('(function(){  var global2 = global.xxx; global.xxx = xxx;if (process.env.NODE_ENV === "production") {xx.global.xxx =1;} })();(function() {var global = 1; global.xxx = 1;})();'));
 
