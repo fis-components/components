@@ -99,7 +99,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "6efc75c8373bd2e81d1ef4dfe0dda8818a05ad1d"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2",
