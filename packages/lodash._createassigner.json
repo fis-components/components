@@ -64,7 +64,8 @@
         "lodash._bindcallback@^3.0.0",
         "lodash._isiterateecall@^3.0.0",
         "lodash.restparam@^3.0.0"
-      ]
+      ],
+      "__hash": "4d5c0ff866c4ca2c5139a4287676f85fe0fe3c9d"
     }
   ]
 }
