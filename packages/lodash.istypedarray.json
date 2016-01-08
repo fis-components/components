@@ -46,7 +46,8 @@
     {
       "version": "3.0.2",
       "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.2",
-      "repos": "https://github.com/lodash/lodash.git"
+      "repos": "https://github.com/lodash/lodash.git",
+      "__hash": "958782584f8197f5ae501b8548af069c5eb2e8c9"
     }
   ]
 }
