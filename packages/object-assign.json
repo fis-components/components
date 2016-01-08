@@ -118,17 +118,18 @@
     {
       "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.1",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/object-assign\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/object-assign\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/object-assign\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/object-assign\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -143,8 +144,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "850700296ea41d824d3b988e233a93121003fdde"
+      ]
     }
   ]
 }
