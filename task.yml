@@ -7,23 +7,4 @@ sync:
     # - react@0.14.5
     # 每次只保留当前需要转换的组件。
     
-    - fit-button
-    - fit-captcha
-    - fit-checkbox
-    - fit-collapse
-    - fit-input
-    - fit-datepicker
-    - fit-layout
-    - fit-layout-global
-    - fit-menu
-    - fit-message
-    - fit-modal
-    - fit-number
-    - fit-pagination
-    - fit-radio
-    - fit-select
-    - fit-style
-    - fit-switch
     - fit-table
-    - fit-tabs
-    - fit-timepicker
