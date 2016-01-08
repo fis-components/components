@@ -27,6 +27,80 @@
   },
   "tags": [
     {
+      "version": "0.14.0",
+      "build": "rm package.json && npm install --prefix . react-addons-create-fragment@0.14.0",
+      "description": "This package provides the React createFragment add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.14.1",
+      "build": "rm package.json && npm install --prefix . react-addons-create-fragment@0.14.1",
+      "description": "This package provides the React createFragment add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "build": "rm package.json && npm install --prefix . react-addons-create-fragment@0.14.2",
       "dependencies": [
         "react@^0.14.2"
@@ -35,8 +109,77 @@
       "__hash": "3e124ff10832372559992063c6b204be4dabf885"
     },
     {
+      "version": "0.14.2",
+      "build": "rm package.json && npm install --prefix . react-addons-create-fragment@0.14.2",
+      "description": "This package provides the React createFragment add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "v0.14.3",
       "__hash": "0c199382245e9ec7b4f01f9f9c53a3130cf50063"
+    },
+    {
+      "version": "0.14.3",
+      "description": "This package provides the React createFragment add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "0.14.4",
@@ -53,11 +196,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -72,9 +215,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "shim": null,
-      "__hash": "e4931521a2a898afcec9ac627ffca52406b4ee9c"
+      ]
     },
     {
       "version": "0.14.5",
@@ -91,11 +232,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -110,9 +251,43 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "0.14.6",
+      "build": "rm package.json && npm install --prefix . react-addons-create-fragment@0.14.6",
+      "description": "This package provides the React createFragment add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.6"
       ],
-      "shim": null,
-      "__hash": "06959da07106d4497d1e27b586a11ae12303055b"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-create-fragment\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

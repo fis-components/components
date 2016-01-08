@@ -814,14 +814,13 @@
       "__hash": "788171a46e81e3ac9c76ce2cf5b123e1e3eafd20"
     },
     {
-      "version": "1.1.25",
-      "build": "rm package.json && npm install --prefix . fit-table@1.1.25",
       "name": "fit-table",
       "description": "表格",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.25",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -848,17 +847,17 @@
           "release": false
         }
       ],
+      "version": "1.1.25",
       "__hash": "1abb7e6f0814896bee7d894101f5daa6e62207f5"
     },
     {
-      "version": "1.1.28",
-      "build": "rm package.json && npm install --prefix . fit-table@1.1.28",
       "name": "fit-table",
       "description": "表格",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.28",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -885,11 +884,49 @@
           "release": false
         }
       ],
+      "version": "1.1.28",
       "__hash": "ca2c6b044c411edbc0d73bea8a1483d395133380"
     },
     {
-      "version": "1.1.34",
+      "name": "fit-table",
+      "description": "表格",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.10"
+      ],
       "build": "rm package.json && npm install --prefix . fit-table@1.1.34",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.34",
+      "__hash": "80a60815a1471cbab7b592e68aad4d4d14387119"
+    },
+    {
+      "version": "1.1.35",
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.35",
       "name": "fit-table",
       "description": "表格",
       "main": "lib/index.js",
@@ -921,8 +958,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "80a60815a1471cbab7b592e68aad4d4d14387119"
+      ]
     }
   ]
 }

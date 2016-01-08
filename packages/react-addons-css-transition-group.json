@@ -27,6 +27,80 @@
   },
   "tags": [
     {
+      "version": "0.14.0",
+      "build": "rm package.json && npm install --prefix . react-addons-css-transition-group@0.14.0",
+      "description": "This package provides the React CSSTransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.14.1",
+      "build": "rm package.json && npm install --prefix . react-addons-css-transition-group@0.14.1",
+      "description": "This package provides the React CSSTransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "build": "rm package.json && npm install --prefix . react-addons-css-transition-group@0.14.2",
       "dependencies": [
         "react@^0.14.2"
@@ -35,8 +109,77 @@
       "__hash": "f487e451e2599b5d8175010cdb873b3f9fc773a1"
     },
     {
+      "version": "0.14.2",
+      "build": "rm package.json && npm install --prefix . react-addons-css-transition-group@0.14.2",
+      "description": "This package provides the React CSSTransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "v0.14.3",
       "__hash": "777587a295b1bd29b49b52117e4cbe17bcd5a86d"
+    },
+    {
+      "version": "0.14.3",
+      "description": "This package provides the React CSSTransitionGroup add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "0.14.4",
@@ -53,11 +196,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -72,9 +215,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "shim": null,
-      "__hash": "99bf6fb3020f569017f86a6bcda634d64be69c1b"
+      ]
     },
     {
       "version": "0.14.5",
@@ -91,11 +232,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -110,9 +251,43 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "0.14.6",
+      "build": "rm package.json && npm install --prefix . react-addons-css-transition-group@0.14.6",
+      "description": "This package provides the React CSSTransitionGroup add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.6"
       ],
-      "shim": null,
-      "__hash": "b5dc78ee7301ab4d410d58d81bf20d5f3d80ac40"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-css-transition-group\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

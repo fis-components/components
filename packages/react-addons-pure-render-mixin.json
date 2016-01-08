@@ -27,6 +27,80 @@
   },
   "tags": [
     {
+      "version": "0.14.0",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.0",
+      "description": "This package provides the React PureRenderMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.14.1",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.1",
+      "description": "This package provides the React PureRenderMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2",
       "dependencies": [
         "react@^0.14.2"
@@ -35,8 +109,77 @@
       "__hash": "d0619375cdaf3966094fd5a058008cea416699f0"
     },
     {
+      "version": "0.14.2",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2",
+      "description": "This package provides the React PureRenderMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "v0.14.3",
       "__hash": "21057c66c626683d7a07ba352fe5d58f91869ec9"
+    },
+    {
+      "version": "0.14.3",
+      "description": "This package provides the React PureRenderMixin add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "0.14.4",
@@ -53,11 +196,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -72,9 +215,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "shim": null,
-      "__hash": "727ee9abef6092f58223e1133d6a9ea2a10fe82f"
+      ]
     },
     {
       "version": "0.14.5",
@@ -91,11 +232,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -110,9 +251,43 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "0.14.6",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.6",
+      "description": "This package provides the React PureRenderMixin add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.6"
       ],
-      "shim": null,
-      "__hash": "a25a64d45a2acda4b2ab9ef00cd630cbd7a1bc3d"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
