@@ -40,7 +40,8 @@
     },
     {
       "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash._bindcallback@3.0.1"
+      "build": "rm package.json && npm install --prefix . lodash._bindcallback@3.0.1",
+      "__hash": "bbe51cb62987d1f2b1b31021a6c65f94b092960e"
     }
   ]
 }
