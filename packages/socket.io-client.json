@@ -45,7 +45,8 @@
     },
     {
       "version": "1.4.2",
-      "build": "rm package.json && npm install --prefix . socket.io-client@1.4.2"
+      "build": "rm package.json && npm install --prefix . socket.io-client@1.4.2",
+      "__hash": "130a9bd4b89295417ad5d4d7f0ebc293671d50b5"
     }
   ]
 }
