@@ -291,12 +291,11 @@
       "__hash": "01d08923cb02616954fae2e0e90f3bb5c7f2ad1c"
     },
     {
-      "version": "1.1.4",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.1.4",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.4"
       ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.1.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -323,6 +322,7 @@
           "release": false
         }
       ],
+      "version": "1.1.4",
       "__hash": "8ebce9d92c46c7c92dbe8bd7cc4c8c9447a895a3"
     },
     {
@@ -338,7 +338,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -357,8 +357,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "75c8711be77f81f3d0777f6f20208aee1d41576e"
+      ]
     },
     {
       "version": "1.1.9",
@@ -373,7 +372,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -392,8 +391,41 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "1.1.10",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.1.10",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.10"
       ],
-      "__hash": "e4d8a7cac5404fca91b146a9883082ccb3e7ee79"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

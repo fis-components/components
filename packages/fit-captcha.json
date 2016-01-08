@@ -284,8 +284,6 @@
       "__hash": "e302ec95f10d873196838157d80cfccc192dff4e"
     },
     {
-      "version": "1.1.4",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.4",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -294,6 +292,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.4"
       ],
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -320,11 +319,10 @@
           "release": false
         }
       ],
+      "version": "1.1.4",
       "__hash": "513bde52454ebfdd43177f1ff00a62b672c75f58"
     },
     {
-      "version": "1.1.7",
-      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.7",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -333,6 +331,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.7"
       ],
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -359,26 +358,21 @@
           "release": false
         }
       ],
+      "version": "1.1.7",
       "__hash": "a716aefe0ec4af936755123614cc86755c65092a"
     },
     {
       "version": "1.1.9",
       "build": "rm package.json && npm install --prefix . fit-captcha@1.1.9",
       "main": "lib/index.js",
-      "dependencies": [
-        "classnames@^2.2.1",
-        "lodash@^3.10.1",
-        "react@^0.14.3",
-        "react-dom@^0.14.3",
-        "fit-style@^1.1.9"
-      ],
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-captcha\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-captcha\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -397,8 +391,71 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "12b5b2f1d4b7af963cf28decb9ce77a8fb3b5ca1"
+      ]
+    },
+    {
+      "version": "1.1.10",
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.10",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.11",
+      "build": "rm package.json && npm install --prefix . fit-captcha@1.1.11",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-captcha\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

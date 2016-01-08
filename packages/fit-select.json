@@ -174,8 +174,6 @@
       "__hash": "0cbd27b6e1f66c75cd6c11839da49768c5670192"
     },
     {
-      "version": "1.1.4",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.4",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -185,6 +183,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.4"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -211,6 +210,7 @@
           "release": false
         }
       ],
+      "version": "1.1.4",
       "__hash": "d6792d684f37cf806397cbc3931738e2028aeb93"
     },
     {
@@ -218,11 +218,6 @@
       "build": "rm package.json && npm install --prefix . fit-select@1.1.7",
       "main": "lib/index.js",
       "dependencies": [
-        "classnames@^2.2.1",
-        "jquery@^2.1.4",
-        "lodash@^3.10.1",
-        "react@^0.14.3",
-        "react-dom@^0.14.3",
         "fit-style@^1.1.7"
       ],
       "mapping": [
@@ -231,7 +226,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -250,19 +245,13 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "b511d5b4fc05b4077f85e5a926e116425150e96c"
+      ]
     },
     {
       "version": "1.1.9",
       "build": "rm package.json && npm install --prefix . fit-select@1.1.9",
       "main": "lib/index.js",
       "dependencies": [
-        "classnames@^2.2.1",
-        "jquery@^2.1.4",
-        "lodash@^3.10.1",
-        "react@^0.14.3",
-        "react-dom@^0.14.3",
         "fit-style@^1.1.9"
       ],
       "mapping": [
@@ -271,7 +260,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -290,8 +279,41 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "1.1.10",
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.10",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.10"
       ],
-      "__hash": "3e32834723160f3ff54f5e36fbb0976c42efde9e"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

@@ -230,9 +230,8 @@
       "__hash": "5173c747ffd3e2b94d94c8b15a09d38b0e2cceb1"
     },
     {
-      "version": "0.2.4",
-      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.4",
       "main": "lib/index.js",
+      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -259,12 +258,12 @@
           "release": false
         }
       ],
+      "version": "0.2.4",
       "__hash": "7c758f795ee322811e29de5b7165335a422ad309"
     },
     {
-      "version": "0.2.7",
-      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.7",
       "main": "lib/index.js",
+      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -291,19 +290,21 @@
           "release": false
         }
       ],
+      "version": "0.2.7",
       "__hash": "66d7650708f65b8daf114afd7c2cb77770b40d72"
     },
     {
       "version": "0.2.9",
       "build": "rm package.json && npm install --prefix . fit-collapse@0.2.9",
       "main": "lib/index.js",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -322,8 +323,71 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "91b8f9932c93c355e1ae8b25670c47e5a3107811"
+      ]
+    },
+    {
+      "version": "0.2.10",
+      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.10",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-collapse\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.2.11",
+      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.11",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-collapse\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

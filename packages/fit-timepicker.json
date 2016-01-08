@@ -122,20 +122,16 @@
       "__hash": "616a65d5a829ed243f327006dbf0c205fc979106"
     },
     {
-      "repos": "https://github.com/tb-component/timepicker.git",
-      "name": "fit-timepicker",
-      "main": "lib/index.js",
+      "version": "0.2.10",
       "build": "rm package.json && npm install --prefix . fit-timepicker@0.2.10",
+      "name": "fit-timepicker",
+      "description": "tb react timepicker",
+      "repos": "https://github.com/tb-component/timepicker.git",
+      "main": "lib/index.js",
+      "tag": "master",
+      "reposType": "npm",
       "dependencies": [
-        "classnames@^2.2.1",
-        "fit-input@^1.1.10",
-        "fit-radio@^1.1.9",
-        "fit-select@^1.1.9",
-        "fit-style@^1.1.9",
-        "jquery@^2.1.4",
-        "moment@^2.10.6",
-        "react@^0.14.3",
-        "react-date-range@^0.1.8"
+        "fit-style@^1.1.9"
       ],
       "mapping": [
         {
@@ -143,7 +139,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-timepicker\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-timepicker\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -162,12 +158,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "0.2.10",
-      "description": "tb react timepicker",
-      "tag": "master",
-      "reposType": "npm",
-      "__hash": "72019f5c1ba0b0dd1166e793f473aeb00cb63a7e"
+      ]
     },
     {
       "version": "0.2.12",
@@ -179,15 +170,7 @@
       "tag": "master",
       "reposType": "npm",
       "dependencies": [
-        "classnames@^2.2.1",
-        "fit-input@^1.1.11",
-        "fit-radio@^1.1.9",
-        "fit-select@^1.1.9",
-        "fit-style@^1.1.9",
-        "jquery@^2.1.4",
-        "moment@^2.10.6",
-        "react@^0.14.3",
-        "react-date-range@^0.1.8"
+        "fit-style@^1.1.9"
       ],
       "mapping": [
         {
@@ -195,7 +178,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-timepicker\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-timepicker\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -214,8 +197,46 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "0.2.16",
+      "build": "rm package.json && npm install --prefix . fit-timepicker@0.2.16",
+      "name": "fit-timepicker",
+      "description": "tb react timepicker",
+      "repos": "https://github.com/tb-component/timepicker.git",
+      "main": "lib/index.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "fit-style@^1.1.10"
       ],
-      "__hash": "d9355f7b23cd48acfabcea73827f75b8e39c0475"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-timepicker\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-timepicker\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

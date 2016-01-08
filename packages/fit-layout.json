@@ -263,13 +263,12 @@
       "__hash": "2091fd689140d9871bb4f0f14959cda793effb99"
     },
     {
-      "version": "1.1.4",
-      "build": "rm package.json && npm install --prefix . fit-layout@1.1.4",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.1.4"
       ],
+      "build": "rm package.json && npm install --prefix . fit-layout@1.1.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -296,6 +295,7 @@
           "release": false
         }
       ],
+      "version": "1.1.4",
       "__hash": "f8f06578d1b00939fefe79291b3cc2859293c8a5"
     },
     {
@@ -303,7 +303,6 @@
       "build": "rm package.json && npm install --prefix . fit-layout@1.1.7",
       "main": "lib/index.js",
       "dependencies": [
-        "classnames@^2.2.1",
         "fit-style@^1.1.7"
       ],
       "mapping": [
@@ -312,7 +311,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-layout\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-layout\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -331,15 +330,13 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "0d6321edf83ec3f85ad851ee60f99c1501c55ede"
+      ]
     },
     {
       "version": "1.1.9",
       "build": "rm package.json && npm install --prefix . fit-layout@1.1.9",
       "main": "lib/index.js",
       "dependencies": [
-        "classnames@^2.2.1",
         "fit-style@^1.1.9"
       ],
       "mapping": [
@@ -348,7 +345,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-layout\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-layout\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -367,8 +364,41 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "1.1.10",
+      "build": "rm package.json && npm install --prefix . fit-layout@1.1.10",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.10"
       ],
-      "__hash": "c20d57a478e4340c2f511c14b4756a38139d7981"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

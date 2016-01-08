@@ -145,11 +145,10 @@
       "__hash": "f74ab7ee59db3558b77786efcb4e9df1ca6b30b5"
     },
     {
-      "version": "0.2.4",
-      "build": "rm package.json && npm install --prefix . fit-tabs@0.2.4",
       "name": "fit-tabs",
       "description": "tbas",
       "repos": "https://github.com/tb-component/pc-tabs.git",
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.2.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -180,6 +179,7 @@
           "release": false
         }
       ],
+      "version": "0.2.4",
       "paths": {
         "dist": "."
       },
@@ -191,22 +191,20 @@
       "name": "fit-tabs",
       "description": "tbas",
       "repos": "https://github.com/tb-component/pc-tabs.git",
+      "main": "dist/index.js",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
           "reg": "^\\/node_modules\\/fit-tabs\\/lib\\/(.*)$",
           "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/fit-tabs\\/dist\\/(.*)$",
-          "release": "$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -220,11 +218,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "cb4e72b27fcdb53f2f7950aa72dd67b5246f5c51"
+      ]
     },
     {
       "version": "0.2.9",
@@ -232,22 +226,20 @@
       "name": "fit-tabs",
       "description": "tbas",
       "repos": "https://github.com/tb-component/pc-tabs.git",
+      "main": "dist/index.js",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
           "reg": "^\\/node_modules\\/fit-tabs\\/lib\\/(.*)$",
           "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/fit-tabs\\/dist\\/(.*)$",
-          "release": "$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -261,11 +253,42 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "48f207c587779d5b3b43ddb7cf42e51288e60247"
+      ]
+    },
+    {
+      "version": "0.2.10",
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.2.10",
+      "name": "fit-tabs",
+      "description": "tbas",
+      "repos": "https://github.com/tb-component/pc-tabs.git",
+      "main": "dist/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-tabs\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
