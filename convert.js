@@ -33,6 +33,7 @@ module.exports = function(options, callback) {
 
             write(info.dest || info.absolute, content);
         } catch (e) {
+            console.log(e.stack);
             console.log('Got Eroor: %s while converting %s', e.message, info.dest || info.absolute);
         }
     });

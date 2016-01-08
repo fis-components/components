@@ -27,7 +27,7 @@ function createEnvify(env) {
     utils.move(node.range[1], state)
   }
 
-  replaceEnv.test = function(node, path, state) {
+  visitProcessEnv.test = function(node, path, state) {
     return (
       node.type === Syntax.MemberExpression
       && !(path[0].type === Syntax.AssignmentExpression && path[0].left === node)
@@ -69,6 +69,7 @@ function createGlobal(content) {
   visitGlobal.test = function(node, path, state) {
     return (
       node.type === Syntax.Identifier && 
+      path[0].type === Syntax.MemberExpression && path[0].object === node &&
       node.name === "global"
     )
   }
@@ -89,7 +90,7 @@ function createGlobal(content) {
 
       while ((childScope = scope.childScopes[i++])) {
 
-          if ((ref = findRef(childScope, name))) {
+          if ((ref = findVar(childScope, name))) {
               return ref;
           }
       }
@@ -106,5 +107,5 @@ module.exports = function(content) {
   return jstransform.transform(visitors, content).code
 }
 
-// console.log(module.exports('var global2 = window;if (process.env.NODE_ENV === "production") {global.xxx = "1223";}'));
+// console.log(module.exports('var global2 = global.xxx; global.xxx = xxx;if (process.env.NODE_ENV === "production") {xx.global.xxx =1;}'));
 
