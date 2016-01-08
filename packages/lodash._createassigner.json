@@ -43,7 +43,8 @@
     },
     {
       "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash._createassigner@3.0.1"
+      "build": "rm package.json && npm install --prefix . lodash._createassigner@3.0.1",
+      "__hash": "d3b786cf8493f02de6ed4fe4d0f0642344f496e9"
     },
     {
       "version": "3.1.0",
