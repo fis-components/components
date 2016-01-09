@@ -41,7 +41,7 @@
     {
       "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . react-router@1.0.1",
-      "__hash": "12ed0b668a3538fd67bbb3ac88dd3aaef6a5b06b"
+      "__hash": "f1d1c6c75aabf95e829f844615d07db72996731b"
     },
     {
       "version": "1.0.3",
