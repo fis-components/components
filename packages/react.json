@@ -12,6 +12,7 @@
       "content": "var path = require('path');\n\nmodule.exports = function(json, files) {\n  var hasAddons = false;\n\n  Object.keys(files).every(function(subpath) {\n    var cName = path.basename(path.dirname(subpath));\n\n    // some thing like `react-addons-create-fragment`\n    if (cName.substring(0, 13) === 'react-addons-') {\n      hasAddons = true;\n      return false;\n    }\n\n    return true;\n  });\n\n  // 自动切换到 react-with-addons 如果依赖列表中有 react-addons 的话。\n  // 实在不想再把 react 给拆了。\n  if (hasAddons) {\n    json.main = 'react-with-addons.js';\n  }\n};"
     }
   },
+  "hook": ".hook.js",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
