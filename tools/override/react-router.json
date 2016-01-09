@@ -1,0 +1,6 @@
+{
+  "main": "./umd/ReactRouter.js",
+  "files": [
+    "umd/"
+  ]
+}
