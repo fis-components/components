@@ -1,23 +1,25 @@
 {
-  "build": "rm package.json && npm install --prefix . react-dom@0.1.0",
+  "build": "rm package.json && npm install --prefix . react-dom@0.14.0",
   "name": "react-dom",
-  "description": "DOM is a `React.DOM` wrapper with — subjectively — more sanity and awesome helpers",
-  "repos": "https://github.com/EtienneLem/react-dom.git",
-  "main": "react-dom.js",
+  "description": "React package for working with the DOM.",
+  "repos": "https://github.com/facebook/react.git",
+  "main": "react-dom",
   "tag": "master",
   "reposType": "npm",
-  "dependencies": [],
+  "dependencies": [
+    "react@^0.14.0"
+  ],
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn)\\/",
+      "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react-dom\\/dist\\/(react-dom\\.js)$",
+      "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
       "release": "$1"
     },
     {
@@ -38,178 +40,49 @@
   },
   "tags": [
     {
-      "version": "0.1.0",
-      "__hash": "0a59c5778456eb648c979791eb8414275c465cad"
-    },
-    {
-      "version": "0.14.0",
-      "build": "rm package.json && npm install --prefix . react-dom@0.14.0",
-      "description": "React package for working with the DOM.",
-      "repos": "https://github.com/facebook/react.git",
-      "main": "index.js",
-      "dependencies": [
-        "react@^0.14.0"
-      ],
-      "__hash": "c416289f428456608ceff28b5261feaa495575f0"
+      "version": "0.14.0"
     },
     {
       "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.1",
-      "description": "React package for working with the DOM.",
-      "repos": "https://github.com/facebook/react.git",
-      "main": "index.js",
       "dependencies": [
         "react@^0.14.1"
-      ],
-      "__hash": "a6fb33b5c47bae67932e87bcd23fec1fbd5050d6"
+      ]
     },
     {
       "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.2",
-      "description": "React package for working with the DOM.",
-      "repos": "https://github.com/facebook/react.git",
-      "main": "index.js",
       "dependencies": [
         "react@^0.14.2"
-      ],
-      "__hash": "6843a0a338ce169a69a009f18802f332bc0f8bd6"
+      ]
     },
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
-      "description": "React package for working with the DOM.",
-      "repos": "https://github.com/facebook/react.git",
-      "main": "index.js",
       "dependencies": [
         "react@^0.14.3"
-      ],
-      "__hash": "a2e011b07335c1a6a3d0cf2bad3e2626b1ba19d5"
+      ]
     },
     {
       "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.4",
-      "description": "React package for working with the DOM.",
-      "repos": "https://github.com/facebook/react.git",
-      "main": "index.js",
       "dependencies": [
         "react@^0.14.4"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
-          "release": "dist/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "paths": null,
-      "__hash": "c6af2b7f9e1f1f8ed0fa83d32bf43549f9e80567"
+      ]
     },
     {
       "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.5",
-      "description": "React package for working with the DOM.",
-      "repos": "https://github.com/facebook/react.git",
-      "main": "index.js",
       "dependencies": [
         "react@^0.14.5"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
-          "release": "dist/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "paths": null,
-      "__hash": "42415eb120154b1304b377dc738ec83e93ff2573"
+      ]
     },
     {
       "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.6",
-      "description": "React package for working with the DOM.",
-      "repos": "https://github.com/facebook/react.git",
-      "main": "index.js",
       "dependencies": [
         "react@^0.14.6"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/(?:test|build|dist\\/cdn)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
-          "release": "dist/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "paths": null,
-      "__hash": "592f5035fde5f37649cbd1bde5b3fce906e3ebc7"
+      ]
     }
   ]
 }
