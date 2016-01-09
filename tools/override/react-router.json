@@ -1,6 +1,9 @@
 {
-  "main": "./umd/ReactRouter.js",
-  "files": [
-    "umd/"
-  ]
+  "tags": {
+    "^1.0.0": {
+      "files": [
+        "lib/"
+      ]
+    }
+  }
 }

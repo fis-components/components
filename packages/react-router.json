@@ -3,7 +3,7 @@
   "name": "react-router",
   "description": "A complete routing library for React.js",
   "repos": "https://github.com/rackt/react-router.git",
-  "main": "./umd/ReactRouter.js",
+  "main": "lib/index",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [],
@@ -17,8 +17,8 @@
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react-router\\/umd\\/(.*)$",
-      "release": "umd/$1"
+      "reg": "^\\/node_modules\\/react-router\\/lib\\/(.*)$",
+      "release": "lib/$1"
     },
     {
       "reg": "^\\/README\\.md$",
