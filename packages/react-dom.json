@@ -40,49 +40,56 @@
   },
   "tags": [
     {
-      "version": "0.14.0"
+      "version": "0.14.0",
+      "__hash": "2627fb9bec2151f5af26d4302ebc0d715699bf39"
     },
     {
       "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.1",
       "dependencies": [
         "react@^0.14.1"
-      ]
+      ],
+      "__hash": "e5de7cac0b14ecf99044653758d2ae424a4104a8"
     },
     {
       "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.2",
       "dependencies": [
         "react@^0.14.2"
-      ]
+      ],
+      "__hash": "5d850b4e8eecd08b3fdc569ffb1da5662bbdf1b4"
     },
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
       "dependencies": [
         "react@^0.14.3"
-      ]
+      ],
+      "__hash": "6c4ce4582eb55e33f6fa43a4279134adb228cd4d"
     },
     {
       "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.4",
       "dependencies": [
         "react@^0.14.4"
-      ]
+      ],
+      "__hash": "2a6e3292d0c07a667fb3f112d874a04ebedbe1fd"
     },
     {
       "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.5",
       "dependencies": [
         "react@^0.14.5"
-      ]
+      ],
+      "__hash": "acf48f9c70e42f37688fa7831edcf5b565c4c812"
     },
     {
       "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.6",
       "dependencies": [
         "react@^0.14.6"
-      ]
+      ],
+      "__hash": "aa3dd395d05586854cfdebbd05a81ba2c9213c74"
     }
   ]
 }
