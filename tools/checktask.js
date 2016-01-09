@@ -15,7 +15,12 @@ if (!test('-f', taskFile)) {
 if (test('-f', taskLogFile)) {
   var lastSuccessMessageId = read(taskLogFile, 'utf8').trim();
 
-  var result = exec('git diff --name-status ' + lastSuccessMessageId + '..HEAD').output;
+  var ret = exec('git diff --name-status ' + lastSuccessMessageId + '..HEAD');
+
+  if (ret.code) {
+    ret = exec('git diff --name-status HEAD^..HEAD');
+  }
+  var result = ret.output;
   if (!/\stask\.yml\s/.test(result)) {
     console.log("Nothing changed, skip!")
     exit();
