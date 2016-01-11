@@ -25,6 +25,7 @@
     "glob.js": "^0.1.0",
     "js-yaml": "^3.4.6",
     "jstransform": "^11.0.3",
+    "minimatch": "^3.0.0",
     "minimist": "^1.2.0",
     "object-assign": "^4.0.1",
     "object-hash": "^1.0.0",

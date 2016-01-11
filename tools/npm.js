@@ -7,6 +7,7 @@ const assign = require('object-assign');
 const argv = require('minimist')(process.argv.slice(2));
 const semver = require('semver');
 const deepEqual = require('deep-equal');
+const minimatch = require('minimatch');
 var hash = require('object-hash');
 const collect = require('./collect');
 const finder = require('../finder.js');
@@ -29,7 +30,7 @@ mkdir('-p', path.join(__dirname, 'builds'));
 
 const modules = find('modules').map(function(file) {
   return path.basename(file, '.js');
-}); 
+});
 
 while (args.length) {
   var arg = args.shift();
@@ -52,7 +53,7 @@ while (args.length) {
   versions = versions.filter(function(version) {
     return semver.valid(version);
   })
-  
+
   if (pkgVersion === 'latest') {
     versions = [infoJson.version];
   } else if (/^latest(\d+)$/.test(pkgVersion)) {
@@ -94,7 +95,7 @@ while (args.length) {
     } else {
       item.repos = 'https://github.com/2betop/placeholder.git';
     }
-    
+
     json.main && (item.main = json.main);
     item.tag = 'master';
     item.reposType = 'npm';
@@ -122,7 +123,7 @@ while (args.length) {
 
     // if (overrided && overrided.ignoreDependencies) {
     //   var ignoreDependencies = overrided.ignoreDependencies;
-      
+
     //   Object.keys(npmDependencies).forEach(function(key) {
     //     var parts = key.split('@');
 
@@ -141,7 +142,7 @@ while (args.length) {
       });
       item.dependencies = dependencies;
     }
-    
+
     overrided && assign(item, overrided);
 
     if (!item.mapping) {
@@ -269,27 +270,7 @@ while (args.length) {
           item.main = json.browser;
         }
       } else if (json.jspm) {
-        var main = json.jspm.main.replace(/^\.\//, '').replace(/\/$/, '/index');
-
-        if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
-          main = path.join(main, 'index');
-        }
-
-        var ret = collect(pkgPath, main);
-
-        ret.enties.forEach(function(shorpath) {
-          item.mapping.push({
-            reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
-            release: '$1'
-          });
-        });
-
-        item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
-          var name = item.split('@')[0];
-          return ~ret.deps.indexOf(name);
-        }));
-
-        item.main = main;
+        convertFromJspm(json, item, pkgName, pkgPath);
       } else if (test('-d', path.join(pkgPath, 'dist'))) {
         var main = item.main.replace(/^\.\//, '').replace(/\/$/, '/index');
 
@@ -590,4 +571,149 @@ function getOverride(pkgname, version) {
   }
 
   return null;
+}
+
+function globToReg(pattern, prefix) {
+  prefix = prefix || "";
+
+  // 由于minimatch提供的glob支持中()语法不符合fis glob的需求，因此只针对()单独处理
+  var hasBracket = ~pattern.indexOf('(');
+
+  // 当用户配置 *.js 这种写法的时候，需要让其命中所有所有目录下面的。
+  if (/^(\(*?)(?!\:|\/|\(|\*\*)(.*)$/.test(pattern)) {
+    pattern = '**/' + pattern;
+  }
+
+  pattern = prefix + pattern;
+
+  // support special global star
+  // 保留原来的 **/ 和 /** 用法，只扩展 **.ext 这种用法。
+  pattern = pattern.replace(/\*\*(?!\/|$)/g, '\uFFF0gs\uFFF1');
+  if (hasBracket) {
+    pattern = pattern.replace(/\(/g, '\uFFF0/').replace(/\)/g, '/\uFFF1');
+  }
+
+  regex = minimatch.makeRe(pattern, {
+    // matchBase: true
+  });
+
+  pattern = regex.source;
+  pattern = pattern.replace(/\uFFF0gs\uFFF1/g, '(?!\\.)(?=.).*');
+
+  if (hasBracket) {
+    pattern = pattern.replace(/\uFFF0\\\//g, '(').replace(/\\\/\uFFF1/g, ')');
+  }
+
+  regex = new RegExp(pattern, regex.ignoreCase ? 'i' : '');
+  return regex;
+}
+
+function reg2str(reg) {
+  return reg.source.replace(/\//g, '\\/');
+}
+
+function convertFromJspm(json, item, pkgName, pkgPath) {
+  var jspm = json.jspm;
+  var main = (json.jspm.main || json.main).replace(/^\.\//, '').replace(/\/$/, '/index');
+  var pathPrefix = '/node_modules/' + pkgName + '/';
+
+  if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
+    main = path.join(main, 'index');
+  }
+
+  if (jspm.ignore) {
+    jspm.ignore.forEach(function(filepath) {
+      if (test('-d', path.join(pkgPath, filepath))) {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(filepath) + "\\/.*)$",
+          release: false
+        });
+      } else {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(filepath) + ")$",
+          release: false
+        });
+      }
+    });
+  }
+
+  var startFiles = [
+    path.join(pkgPath, main)
+  ];
+
+
+  if (jspm.files) {
+    var folders = [];
+
+    jspm.files.forEach(function(filepath) {
+      if (test('-d', path.join(pkgPath, filepath))) {
+        folders.push(filepath.replace(/^\.\//, ''));
+      } else if (/\.js$/.test(filepath)) {
+        startFiles.push(filepath);
+      } else {
+        item.mapping.push({
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(filepath) + ")$",
+          release: '$1'
+        });
+      }
+    });
+  }
+
+  if (jspm.map) {
+    Object.keys(jspm.map).forEach(function(key) {
+      var value = jspm.map[key];
+      if (/^[^\.\/]+/.test(key)) {
+        item.shim = item.shim || {};
+        if (!item.shim['**/*.js']) {
+          item.shim['**/*.js'] = {
+            replace: []
+          };
+        }
+
+        item.shim['**/*.js'].replace.push(
+          {
+            from: '/\\brequire\\s*\\(\\s*(\'|")' + escapeReg(key) + '\\b/ig',
+            to: 'require($1' + value
+          }
+        );
+        delete jspm.map[key];
+      }
+
+      startFiles.push(value);
+    });
+
+    item.paths = jspm.map;
+  }
+
+  var ret = collect(pkgPath, startFiles);
+  var deps = ret.deps.concat();
+  var rFolder = folders.length ? new RegExp("^(" + folders.map(escapeReg).join('|') + ")", 'i') : null;
+
+  ret.enties.forEach(function(shorpath) {
+    if (rFolder && rFolder.test(shorpath))return;
+
+    item.mapping.push({
+      reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(shorpath) + ")$",
+      release: '$1'
+    });
+  });
+
+  folders.forEach(function(folder) {
+    if (test('-d', path.join(pkgPath, folder))) {
+      folder = folder.replace(/\//, '');
+      item.mapping.push({
+        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/" + escapeReg(folder) + "\\/(.*)$",
+        release: folder + '/$1'
+      });
+
+      deps.push.apply(deps, collect(pkgPath, finder(pkgPath, folder + '/**/*.js').map(function(item) {
+        return item.relative;
+      })).dpes);
+    }
+  });
+
+  item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
+    var name = item.split('@')[0];
+    return ~deps.indexOf(name);
+  }));
 }
