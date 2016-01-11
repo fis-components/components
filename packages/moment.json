@@ -46,7 +46,8 @@
     {
       "version": "2.2.1",
       "build": "rm package.json && npm install --prefix . moment@2.2.1",
-      "repos": "https://github.com/moment/moment.git"
+      "repos": "https://github.com/moment/moment.git",
+      "__hash": "5d3f862f558ec9d342c48cc5bf3503241a758874"
     },
     {
       "version": "2.3.0",
