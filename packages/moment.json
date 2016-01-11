@@ -40,7 +40,8 @@
     },
     {
       "version": "2.1.0",
-      "build": "rm package.json && npm install --prefix . moment@2.1.0"
+      "build": "rm package.json && npm install --prefix . moment@2.1.0",
+      "__hash": "92bc141534d8ba21aa331abbce4e5ce05f1e10f2"
     },
     {
       "version": "2.2.1",
