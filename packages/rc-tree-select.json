@@ -53,7 +53,8 @@
     },
     {
       "version": "0.3.6",
-      "build": "rm package.json && npm install --prefix . rc-tree-select@0.3.6"
+      "build": "rm package.json && npm install --prefix . rc-tree-select@0.3.6",
+      "__hash": "8982be034cb35a82647c951e5dc1e5dd96be6d9f"
     }
   ]
 }
