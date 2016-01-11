@@ -685,6 +685,21 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
     item.paths = jspm.map;
   }
 
+  if (jspm.shim) {
+    var shim = {};
+
+    Object.keys(jspm.shim).forEach(function(key) {
+      var value = jspm.shim[key];
+
+      if (/\.js$/.test(key)) {
+        key += '.js';
+      }
+
+      shim[key] = value;
+    });
+    item.shim = shim;
+  }
+
   var ret = collect(pkgPath, startFiles);
   var deps = ret.deps.concat();
   var rFolder = folders.length ? new RegExp("^(" + folders.map(escapeReg).join('|') + ")", 'i') : null;
