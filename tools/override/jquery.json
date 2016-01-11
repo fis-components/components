@@ -24,5 +24,10 @@
     "release": false
   }],
   "dependencies": [
-  ]
+  ],
+  "tags": {
+    "<1.10.0": {
+      "umd2commonjs": true
+    }
+  }
 }
