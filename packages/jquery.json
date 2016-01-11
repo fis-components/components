@@ -383,7 +383,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "9d6872e14233eacbb99f824dd3187ae742e1013d"
     },
     {
       "repos": "https://github.com/jquery/jquery",
