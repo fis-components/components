@@ -5,7 +5,7 @@ sync:
     # 可以同时处理多个组件。
     # - whatwg-fetch
     # - react@0.14.5
-    # 每次只保留当前需要转换的组件。
+    # 不要删除现有的，免得冲突 merge 不了。工具会自动 diff 只处理本次更新的部分。
     - array-tree-filter
     - rc-cascader
     - rc-tree-select
