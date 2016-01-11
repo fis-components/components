@@ -185,7 +185,6 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
-      "version": "0.11.0-beta6",
       "build": "rm package.json && npm install --prefix . antd@0.11.0-beta6",
       "mapping": [
         {
@@ -213,6 +212,7 @@
           "release": false
         }
       ],
+      "version": "0.11.0-beta6",
       "__hash": "9a2f4e3d609abc26f5b82a1bd88dc78f495842f1"
     },
     {
@@ -254,7 +254,6 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
-      "version": "0.11.0",
       "build": "rm package.json && npm install --prefix . antd@0.11.0",
       "mapping": [
         {
@@ -282,6 +281,7 @@
           "release": false
         }
       ],
+      "version": "0.11.0",
       "__hash": "966995f1e42413e27a59db48a04bb222eab3a450"
     },
     {
@@ -323,7 +323,6 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
-      "version": "0.11.1",
       "build": "rm package.json && npm install --prefix . antd@0.11.1",
       "mapping": [
         {
@@ -351,7 +350,125 @@
           "release": false
         }
       ],
+      "version": "0.11.1",
       "__hash": "76cc9772ff67a0b466499667fc73105ddf4d98c9"
+    },
+    {
+      "version": "0.12.0-beta5",
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta5",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.12.0-beta6",
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta6",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.12.0-beta7",
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta7",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
