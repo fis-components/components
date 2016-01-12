@@ -177,7 +177,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "a30be8bc0e40e6fd464f8cba564b1d26d6ec4abb"
     },
     {
       "version": "1.0.4",
