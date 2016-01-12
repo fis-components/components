@@ -126,7 +126,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "aecfd956346cf8b20a5fe60ac36bf7f2e8ea8073"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.3",
