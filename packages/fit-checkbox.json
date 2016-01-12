@@ -717,12 +717,11 @@
       "__hash": "8f14c5cf11fe40d4cb03b274e9700639d415b723"
     },
     {
-      "version": "1.1.10",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.10",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.10",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -749,15 +748,15 @@
           "release": false
         }
       ],
+      "version": "1.1.10",
       "__hash": "a3e10172f94661cec58374fd2edd724935e3a16c"
     },
     {
-      "version": "1.1.11",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.11",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -784,6 +783,7 @@
           "release": false
         }
       ],
+      "version": "1.1.11",
       "__hash": "81a8e51c7880a4eff3ef9dbef35bba845a289782"
     },
     {
@@ -791,7 +791,10 @@
       "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.12",
       "main": "lib/index.js",
       "dependencies": [
-        "fit-style@^1.1.10"
+        "classnames@^2.2.1",
+        "fit-style@^1.1.10",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
       ],
       "mapping": [
         {
@@ -818,8 +821,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "805f3fa90021d4ff6bbb5770a3e49dc1afee6c33"
+      ]
     }
   ]
 }

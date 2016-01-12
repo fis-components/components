@@ -214,12 +214,11 @@
       "__hash": "d6792d684f37cf806397cbc3931738e2028aeb93"
     },
     {
-      "version": "1.1.7",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.7",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.7"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -246,15 +245,15 @@
           "release": false
         }
       ],
+      "version": "1.1.7",
       "__hash": "5e6f8161f44a0f38b6fd7a3edf6ffcec67d51a7e"
     },
     {
-      "version": "1.1.9",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.9",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.9",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -281,6 +280,7 @@
           "release": false
         }
       ],
+      "version": "1.1.9",
       "__hash": "8ea1b201da71dc022e192c12b694d927c73eb121"
     },
     {
@@ -288,6 +288,11 @@
       "build": "rm package.json && npm install --prefix . fit-select@1.1.10",
       "main": "lib/index.js",
       "dependencies": [
+        "classnames@^2.2.1",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "react-dom@^0.14.3",
         "fit-style@^1.1.10"
       ],
       "mapping": [
@@ -315,8 +320,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "074a3e174b3cad191b05955e30b19431a937122f"
+      ]
     }
   ]
 }

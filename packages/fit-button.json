@@ -335,12 +335,11 @@
       "__hash": "f3ebe935ca475d24f298f0d137fa028fe37b3ff4"
     },
     {
-      "version": "1.2.9",
-      "build": "rm package.json && npm install --prefix . fit-button@1.2.9",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-button@1.2.9",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -367,15 +366,15 @@
           "release": false
         }
       ],
+      "version": "1.2.9",
       "__hash": "2f3a6e9b524d6905547a3122c387882902039fcc"
     },
     {
-      "version": "1.2.12",
-      "build": "rm package.json && npm install --prefix . fit-button@1.2.12",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-button@1.2.12",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -402,6 +401,7 @@
           "release": false
         }
       ],
+      "version": "1.2.12",
       "__hash": "f838390cedf7e3764704aec2b377b8313e0d2dcf"
     },
     {
@@ -409,6 +409,8 @@
       "build": "rm package.json && npm install --prefix . fit-button@1.2.13",
       "main": "lib/index.js",
       "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
         "fit-style@^1.1.10"
       ],
       "mapping": [
@@ -436,8 +438,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "9c0a965d2f59287feca6b8e35458dc3e7223aec8"
+      ]
     }
   ]
 }
