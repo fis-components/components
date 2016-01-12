@@ -60,7 +60,8 @@
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "hook": null
+      "hook": null,
+      "__hash": "f58eeb8e714ea120d3e94347181f79e624d7e3c8"
     },
     {
       "version": "0.14.4",
