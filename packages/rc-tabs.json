@@ -154,7 +154,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "3ca17315e733ac2f24e3e53ff8633ee5e30211ea"
     }
   ]
 }
