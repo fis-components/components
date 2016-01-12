@@ -1213,7 +1213,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "e35d048ef8bebac1217510ab11905e4dbd9b7127"
     }
   ]
 }
