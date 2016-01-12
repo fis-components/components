@@ -117,7 +117,8 @@
           "release": false
         }
       ],
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "faec35c0a83e0bd822e83f5ec658543943b1bf82"
     }
   ]
 }
