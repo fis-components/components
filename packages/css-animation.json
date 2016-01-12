@@ -190,7 +190,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "c9cb173bbba3387daddafc52024bf75084470816"
     },
     {
       "version": "1.0.5",
