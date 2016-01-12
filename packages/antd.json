@@ -740,7 +740,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "cfd42a122ded8812b739ffcc4d02cbb588932529"
     },
     {
       "version": "0.12.0-beta6",
