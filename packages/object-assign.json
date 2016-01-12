@@ -117,7 +117,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "4a36433adb42302a793ca7dfcb21f21a2945d22a"
     },
     {
       "build": "rm package.json && npm install --prefix . object-assign@4.0.1",
