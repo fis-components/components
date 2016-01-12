@@ -17,9 +17,9 @@ module.exports = function(folder, entry) {
   }
 
   entry.forEach(function(entry) {
-    collect(resolve(entry));  
+    collect(resolve(entry));
   });
-  
+
   return {
     enties: enties,
     deps: deps
@@ -28,10 +28,14 @@ module.exports = function(folder, entry) {
   function resolve(entry) {
     var resolved = null;
 
-    ['', '.js', '.jsx', '.es', '.es6', '.ts', '.tsx', '.coffee', '.cjsx'].every(function(affix) {
+    [
+      '',
+      '.js',
+      '/index.js'
+    ].every(function(affix) {
       var realpath = path.join(folder, entry + affix);
 
-      if (exists(realpath)) {
+      if (exists(realpath) && isFile(realpath)) {
         resolved = realpath;
         return false;
       }

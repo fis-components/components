@@ -23,7 +23,7 @@ function escapeReg(str) {
   );
 }
 
-rm('-rf', path.join(__dirname, 'node_modules'));
+// rm('-rf', path.join(__dirname, 'node_modules'));
 rm('-rf', path.join(__dirname, 'builds'));
 
 mkdir('-p', path.join(__dirname, 'builds'));
@@ -68,22 +68,31 @@ while (args.length) {
     versions = versions.reverse().slice(0, versionsCount).reverse();
   }
 
+  console.log(versions);
+
   var items = [];
   versions.forEach(function(version) {
     if (isIgnored(pkgName, version)) {
       console.log('%s@%s is skipped, due to settings in ignore.json', pkgName, version);
       return;
     }
-
+    var pkgPath = path.join(__dirname, 'node_modules', pkgName);
     var item = {};
     item.version = version;
     item.build = 'rm package.json && npm install --prefix . ' + pkgName + '@' + version;
+    var json;
 
-    if (exec('npm install --prefix '+ __dirname +' ' + pkgName + '@' + version).code !== 0) {
+    if (
+      (
+        !test('-f', path.join(pkgPath, 'package.json'))
+        || !(json = JSON.parse(read(path.join(pkgPath, 'package.json'), 'utf8')))
+        || json.version !== pkgVersion
+      )
+      && exec('npm install --prefix '+ __dirname +' ' + pkgName + '@' + version).code !== 0) {
+
       return;
     }
-    var pkgPath = path.join(__dirname, 'node_modules', pkgName);
-    var json = JSON.parse(read(path.join(pkgPath, 'package.json'), 'utf8'));
+    json = json || JSON.parse(read(path.join(pkgPath, 'package.json'), 'utf8'));
     item.name = json.name;
     item.description = json.description;
 
@@ -209,7 +218,7 @@ while (args.length) {
 
             deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['lib/**/*.js', '!lib/node/**/*.js']).map(function(item) {
               return item.relative;
-            })).dpes);
+            })).deps);
           }
 
           if (test('-d', path.join(pkgPath, 'modules'))) {
@@ -220,7 +229,7 @@ while (args.length) {
 
             deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['modules/**/*.js', '!modules/node/**/*.js']).map(function(item) {
               return item.relative;
-            })).dpes);
+            })).deps);
           }
 
           if (test('-d', path.join(pkgPath, 'release'))) {
@@ -231,7 +240,7 @@ while (args.length) {
 
             deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['release/**/*.js', '!release/node/**/*.js']).map(function(item) {
               return item.relative;
-            })).dpes);
+            })).deps);
           }
 
           item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
@@ -304,6 +313,8 @@ while (args.length) {
       } else if (item.files && item.files.length) {
         var folders = [];
 
+        startFiles.push(item.main);
+
         item.files.forEach(function(filepath) {
           if (test('-d', path.join(pkgPath, filepath))) {
             folders.push(filepath.replace(/^\.\//, ''));
@@ -340,7 +351,7 @@ while (args.length) {
 
             deps.push.apply(deps, collect(pkgPath, finder(pkgPath, folder + '/**/*.js').map(function(item) {
               return item.relative;
-            })).dpes);
+            })).deps);
           }
         });
 
@@ -378,7 +389,7 @@ while (args.length) {
 
           deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'lib/**/*.js').map(function(item) {
             return item.relative;
-          })).dpes);
+          })).deps);
         }
 
         if (test('-d', path.join(pkgPath, 'modules'))) {
@@ -389,7 +400,7 @@ while (args.length) {
 
           deps.push.apply(deps, collect(pkgPath, finder(pkgPath, 'modules/**/*.js').map(function(item) {
             return item.relative;
-          })).dpes);
+          })).deps);
         }
 
         if (test('-d', path.join(pkgPath, 'release'))) {
@@ -400,7 +411,7 @@ while (args.length) {
 
           deps.push.apply(deps, collect(pkgPath, finder(pkgPath, ['release/**/*.js']).map(function(item) {
             return item.relative;
-          })).dpes);
+          })).deps);
         }
 
         item.dependencies && (item.dependencies = item.dependencies.filter(function(item) {
@@ -549,8 +560,8 @@ function isIgnored(name, version) {
 }
 
 
-function getOverride(pkgname, version) {
-  var configPath = path.join(__dirname, 'override', pkgname + '.json');
+function getOverride(pkgName, version) {
+  var configPath = path.join(__dirname, 'override', pkgName + '.json');
   if (test('-f', configPath)) {
     var json = require(configPath);
     var data = assign({}, json);
@@ -723,7 +734,7 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
 
       deps.push.apply(deps, collect(pkgPath, finder(pkgPath, folder + '/**/*.js').map(function(item) {
         return item.relative;
-      })).dpes);
+      })).deps);
     }
   });
 
