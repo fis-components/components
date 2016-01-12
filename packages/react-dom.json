@@ -80,7 +80,8 @@
       "build": "rm package.json && npm install --prefix . react-dom@0.14.5",
       "dependencies": [
         "react@^0.14.4"
-      ]
+      ],
+      "__hash": "755538e14f56541d431c37d72e11d9311adab3f7"
     },
     {
       "version": "0.14.6",
