@@ -242,14 +242,10 @@
       "__hash": "8f6335d8479f740c1984039292e0dcb5f56a55d9"
     },
     {
-      "version": "0.2.17",
-      "build": "rm package.json && npm install --prefix . fit-timepicker@0.2.17",
-      "name": "fit-timepicker",
-      "description": "tb react timepicker",
       "repos": "https://github.com/tb-component/timepicker.git",
+      "name": "fit-timepicker",
       "main": "lib/index.js",
-      "tag": "master",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . fit-timepicker@0.2.17",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-input@^1.1.13",
@@ -286,6 +282,10 @@
           "release": false
         }
       ],
+      "version": "0.2.17",
+      "description": "tb react timepicker",
+      "tag": "master",
+      "reposType": "npm",
       "__hash": "da6b84198b5f2ffdff452a68e01cd75819f4a895"
     },
     {
@@ -299,7 +299,7 @@
       "reposType": "npm",
       "dependencies": [
         "classnames@^2.2.1",
-        "fit-input@^1.1.13",
+        "fit-input@^1.1.14",
         "fit-radio@^1.1.13",
         "fit-select@^1.1.10",
         "fit-style@^1.1.10",
@@ -332,8 +332,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "4ab05a7ca2e2c6f4f8e8cb4da3b963e4ba898e23"
+      ]
     }
   ]
 }

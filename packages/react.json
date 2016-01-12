@@ -60,26 +60,22 @@
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "hook": null,
-      "__hash": "f58eeb8e714ea120d3e94347181f79e624d7e3c8"
+      "hook": null
     },
     {
       "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react@0.14.4",
-      "hook": null,
-      "__hash": "7aace68448f3af6807fcc82bf823440c68e4c017"
+      "hook": null
     },
     {
       "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react@0.14.5",
-      "hook": null,
-      "__hash": "f33d16ba572d730b3e6cd58f3bf162cf9b6dc3dc"
+      "hook": null
     },
     {
       "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react@0.14.6",
-      "hook": null,
-      "__hash": "78df71ad0b39f5dabcf3cdc8427756c3d7fe3090"
+      "hook": null
     }
   ]
 }
