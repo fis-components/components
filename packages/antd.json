@@ -506,7 +506,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "b5d04ea3902f41d1ce8677e9305fda6a107d8e46"
     },
     {
       "version": "0.12.0-beta3",
