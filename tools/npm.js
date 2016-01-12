@@ -313,7 +313,7 @@ while (args.length) {
       } else if (item.files && item.files.length) {
         var folders = [];
 
-        startFiles.push(item.main);
+        item.main && startFiles.push(item.main);
 
         item.files.forEach(function(filepath) {
           if (test('-d', path.join(pkgPath, filepath))) {
