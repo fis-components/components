@@ -29,9 +29,7 @@
   ],
   "tags": [
     {
-      "version": "3.0.0",
       "repos": "https://github.com/lodash/lodash",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -58,14 +56,14 @@
           "release": false
         }
       ],
+      "version": "3.0.0",
+      "dependencies": [],
       "main": "index.js",
       "__hash": "f59ebfc0cf62ce774318034e054d9f3c8e87930b"
     },
     {
-      "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.1",
       "repos": "https://github.com/lodash/lodash",
-      "dependencies": [],
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -92,12 +90,15 @@
           "release": false
         }
       ],
+      "version": "3.0.1",
+      "dependencies": [],
       "main": "index.js",
       "__hash": "63b0fae576131a76b3445616beec4cfe5c1fc5da"
     },
     {
       "version": "3.0.2",
       "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.2",
+      "repos": "https://github.com/lodash/lodash",
       "dependencies": [],
       "mapping": [
         {
@@ -125,13 +126,10 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "4c1306042d29d17c89ac53016874fd03126049c5"
+      "main": "index.js"
     },
     {
-      "version": "3.0.3",
       "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.3",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -158,13 +156,13 @@
           "release": false
         }
       ],
+      "version": "3.0.3",
+      "dependencies": [],
       "main": "index.js",
       "__hash": "b6599138c3962e2110e9f78daf174a66d8d3505d"
     },
     {
-      "version": "3.0.4",
       "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.4",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -191,6 +189,8 @@
           "release": false
         }
       ],
+      "version": "3.0.4",
+      "dependencies": [],
       "main": "index.js",
       "__hash": "9bcb9361b6fd57f06144d05a5266a66180438be1"
     }
