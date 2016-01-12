@@ -30,7 +30,7 @@ if (test('-f', taskLogFile)) {
 
   result = exec('git diff ' + range + ' -- task.yml').output;
   result.replace(/^\+\s+\-\s(.*)$/img, function(_, name) {
-    packages.push(name);
+    packages.push(name.trim().replace(/^\-\s/, ''));
   });
 
   if (!packages.length) {
