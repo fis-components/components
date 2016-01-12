@@ -9,3 +9,4 @@ sync:
     - array-tree-filter
     - rc-cascader
     - rc-tree-select
+    - vue
