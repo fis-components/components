@@ -160,7 +160,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "5e2458c09e92233e1c1005bc00789deb650f720d"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.4",
