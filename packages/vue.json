@@ -87,7 +87,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "319a1a1797351c5e75a2a2ed4b4e6665b53c68bc"
     },
     {
       "version": "1.0.14-csp",
