@@ -82,7 +82,8 @@
     },
     {
       "version": "0.7.2",
-      "build": "rm package.json && npm install --prefix . react-infinite@0.7.2"
+      "build": "rm package.json && npm install --prefix . react-infinite@0.7.2",
+      "__hash": "56a3a322c49b8d7d0ca876a7c3585bfb6fd4b4b0"
     },
     {
       "version": "0.7.3",
