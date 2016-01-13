@@ -68,8 +68,6 @@ while (args.length) {
     versions = versions.reverse().slice(0, versionsCount).reverse();
   }
 
-  console.log(versions);
-
   var items = [];
   versions.forEach(function(version) {
     if (isIgnored(pkgName, version)) {
@@ -86,7 +84,7 @@ while (args.length) {
       (
         !test('-f', path.join(pkgPath, 'package.json'))
         || !(json = JSON.parse(read(path.join(pkgPath, 'package.json'), 'utf8')))
-        || json.version !== pkgVersion
+        || json.version !== version
       )
       && exec('npm install --prefix '+ __dirname +' ' + pkgName + '@' + version).code !== 0) {
 
@@ -171,7 +169,7 @@ while (args.length) {
 
       if (json.browser) {
         if (typeof json.browser === 'object') {
-          item.paths = json.browser;
+          item.paths = assign({}, json.browser);
           item.main = item.paths[item.main] || item.main;
           item.main && startFiles.push(item.main);
 
@@ -190,7 +188,7 @@ while (args.length) {
                   to: 'require($1' + item.paths[key]
                 }
               );
-              delete json.browser[key];
+              delete item.paths[key];
             } else {
               startFiles.push(item.paths[key]);
             }
@@ -198,7 +196,7 @@ while (args.length) {
 
           var ret = collect(pkgPath, startFiles);
           var deps = ret.deps = ret.deps.map(function(name) {
-            return item.paths[name] || name;
+            return json.browser[name] || name;
           });
 
           ret.enties.forEach(function(shorpath) {
