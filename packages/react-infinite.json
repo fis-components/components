@@ -1,5 +1,5 @@
 {
-  "build": "rm package.json && npm install --prefix . react-infinite@0.7.3",
+  "build": "rm package.json && npm install --prefix . react-infinite@0.7.1",
   "name": "react-infinite",
   "description": "A browser-ready efficient scrolling container based on UITableView",
   "repos": "https://github.com/seatgeek/react-infinite.git",
@@ -19,7 +19,7 @@
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react-infinite\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "reg": "^\\/node_modules\\/react-infinite\\/(?:test|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
@@ -63,10 +63,6 @@
       "release": "$1"
     },
     {
-      "reg": "^\\/node_modules\\/react-infinite\\/dist\\/(.*)$",
-      "release": "dist/$1"
-    },
-    {
       "reg": "^\\/README\\.md$",
       "release": "$&"
     },
@@ -81,8 +77,15 @@
   ],
   "tags": [
     {
+      "version": "0.7.1"
+    },
+    {
+      "version": "0.7.2",
+      "build": "rm package.json && npm install --prefix . react-infinite@0.7.2"
+    },
+    {
       "version": "0.7.3",
-      "__hash": "0fa694b6d777ed83d9782f23a93f720487bdf7d1"
+      "build": "rm package.json && npm install --prefix . react-infinite@0.7.3"
     }
   ]
 }

@@ -161,7 +161,7 @@ while (args.length) {
       });
 
       item.mapping.push({
-        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(?:test|dist\\/cdn|lib\\/node)\\/",
         release: false
       });
 
@@ -253,7 +253,7 @@ while (args.length) {
             main = path.join(main, 'index');
           }
 
-          var ret = collect(pkgPath, json.browser);
+          var ret = collect(pkgPath, main);
 
           ret.enties.forEach(function(shorpath) {
             item.mapping.push({
@@ -266,13 +266,6 @@ while (args.length) {
             var name = item.split('@')[0];
             return ~ret.deps.indexOf(name);
           }));
-
-          if (test('-d', path.join(pkgPath, 'dist'))) {
-            item.mapping.push({
-              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-              release: 'dist/$1'
-            });
-          }
 
           item.main = json.browser;
         }
