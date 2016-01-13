@@ -6,7 +6,10 @@
   "main": "./lib/client.js",
   "tag": "master",
   "reposType": "npm",
-  "dependencies": [],
+  "dependencies": [
+    "component-emitter@1.1.2",
+    "reduce-component@1.0.1"
+  ],
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -53,8 +56,7 @@
   },
   "tags": [
     {
-      "version": "1.6.1",
-      "__hash": "b014410c7dbec13b9b7e749e2793581f0277845d"
+      "version": "1.6.1"
     }
   ]
 }
