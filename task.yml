@@ -7,4 +7,4 @@ sync:
     # - react@0.14.5
     # 不要删除现有的，免得冲突 merge 不了。工具会自动 diff 只处理本次更新的部分。
     -
-    - flux@latest
+    - react-infinite@latest
