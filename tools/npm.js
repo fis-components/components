@@ -68,8 +68,6 @@ while (args.length) {
     versions = versions.reverse().slice(0, versionsCount).reverse();
   }
 
-  console.log(versions);
-
   var items = [];
   versions.forEach(function(version) {
     if (isIgnored(pkgName, version)) {
@@ -86,7 +84,7 @@ while (args.length) {
       (
         !test('-f', path.join(pkgPath, 'package.json'))
         || !(json = JSON.parse(read(path.join(pkgPath, 'package.json'), 'utf8')))
-        || json.version !== pkgVersion
+        || json.version !== version
       )
       && exec('npm install --prefix '+ __dirname +' ' + pkgName + '@' + version).code !== 0) {
 
@@ -163,7 +161,7 @@ while (args.length) {
       });
 
       item.mapping.push({
-        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+        reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(?:test|dist\\/cdn|lib\\/node)\\/",
         release: false
       });
 
@@ -171,7 +169,7 @@ while (args.length) {
 
       if (json.browser) {
         if (typeof json.browser === 'object') {
-          item.paths = json.browser;
+          item.paths = assign({}, json.browser);
           item.main = item.paths[item.main] || item.main;
           item.main && startFiles.push(item.main);
 
@@ -190,7 +188,7 @@ while (args.length) {
                   to: 'require($1' + item.paths[key]
                 }
               );
-              delete json.browser[key];
+              delete item.paths[key];
             } else {
               startFiles.push(item.paths[key]);
             }
@@ -198,7 +196,7 @@ while (args.length) {
 
           var ret = collect(pkgPath, startFiles);
           var deps = ret.deps = ret.deps.map(function(name) {
-            return item.paths[name] || name;
+            return json.browser[name] || name;
           });
 
           ret.enties.forEach(function(shorpath) {
@@ -255,7 +253,7 @@ while (args.length) {
             main = path.join(main, 'index');
           }
 
-          var ret = collect(pkgPath, json.browser);
+          var ret = collect(pkgPath, main);
 
           ret.enties.forEach(function(shorpath) {
             item.mapping.push({
@@ -268,13 +266,6 @@ while (args.length) {
             var name = item.split('@')[0];
             return ~ret.deps.indexOf(name);
           }));
-
-          if (test('-d', path.join(pkgPath, 'dist'))) {
-            item.mapping.push({
-              reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/dist\\/(.*)$",
-              release: 'dist/$1'
-            });
-          }
 
           item.main = json.browser;
         }
@@ -313,7 +304,7 @@ while (args.length) {
       } else if (item.files && item.files.length) {
         var folders = [];
 
-        startFiles.push(item.main);
+        item.main && startFiles.push(item.main);
 
         item.files.forEach(function(filepath) {
           if (test('-d', path.join(pkgPath, filepath))) {
