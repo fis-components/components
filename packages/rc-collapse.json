@@ -97,10 +97,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "f7d479830105192d800fb8e96c2c847e5709161d"
     },
     {
-
       "version": "1.4.4",
       "build": "rm package.json && npm install --prefix . rc-collapse@1.4.4",
       "mapping": [
