@@ -125,6 +125,7 @@
           "release": false
         }
       ]
+
     },
     {
       "repos": "https://github.com/react-component/calendar.git",

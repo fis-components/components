@@ -30,6 +30,7 @@
       "reg": "^.*$",
       "release": false
     }
+
   ],
   "tags": [
     {
@@ -72,6 +73,7 @@
           "reg": "\\.*",
           "release": false
         }
+
       ]
     },
     {

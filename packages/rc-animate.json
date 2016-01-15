@@ -32,6 +32,7 @@
     }
   ],
   "tags": [
+
     {
       "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . rc-animate@1.1.0",

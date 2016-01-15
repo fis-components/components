@@ -100,6 +100,7 @@
       ]
     },
     {
+
       "version": "1.4.4",
       "build": "rm package.json && npm install --prefix . rc-collapse@1.4.4",
       "mapping": [

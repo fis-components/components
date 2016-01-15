@@ -213,6 +213,7 @@
         "rc-animate@2.x",
         "rc-util@3.x"
       ],
+
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",

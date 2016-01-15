@@ -75,6 +75,7 @@
           "release": false
         }
       ]
+
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.0",
