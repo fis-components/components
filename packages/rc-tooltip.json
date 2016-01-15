@@ -30,7 +30,6 @@
       "reg": "^.*$",
       "release": false
     }
-
   ],
   "tags": [
     {
@@ -73,8 +72,8 @@
           "reg": "\\.*",
           "release": false
         }
-
-      ]
+      ],
+      "__hash": "e8daadcea4acbef8392ac13352d3100a7fad8d50"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tooltip@3.3.0",
