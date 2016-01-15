@@ -70,7 +70,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "7bddf26807256374b555acee50092e484c04cd59"
     },
     {
       "version": "2.0.1",
