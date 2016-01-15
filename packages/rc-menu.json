@@ -1155,7 +1155,8 @@
           "release": false
         }
       ],
-      "version": "4.8.4"
+      "version": "4.8.4",
+      "__hash": "0644d6da6093074c420ec3fe22f0a0ac85ef8d52"
     },
     {
       "version": "4.9.0",
