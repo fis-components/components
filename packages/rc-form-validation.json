@@ -48,6 +48,10 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/rc-form-validation\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/rc-form-validation\\/lib\\/(.*)$",
           "release": "lib/$1"
         },
@@ -63,8 +67,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "f91e1b12351faa679b46c6b62d807c808d03ad81"
+      ]
     }
   ]
 }

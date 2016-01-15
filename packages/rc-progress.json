@@ -68,8 +68,16 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/rc-progress\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/rc-progress\\/lib\\/(.*)$",
           "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-progress\\/assets\\/(.*)$",
+          "release": "assets/$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-progress\\/assets\\/(.*)$",
@@ -87,8 +95,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "7b71c64ccdae021f62c54fcbd6f047c30c44a2c8"
+      ]
     }
   ]
 }

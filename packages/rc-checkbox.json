@@ -47,7 +47,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-checkbox\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-checkbox\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -70,8 +70,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "31bd9248108d764684673b6c90a50f1e03f45eae"
+      ]
     },
     {
       "version": "1.1.2",
@@ -85,7 +84,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-checkbox\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-checkbox\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -108,11 +107,9 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "4bc02e7f47676d86f56fb8ef9f86e920d9f43062"
+      ]
     },
     {
-      "version": "1.2.0",
       "build": "rm package.json && npm install --prefix . rc-checkbox@1.2.0",
       "mapping": [
         {
@@ -144,6 +141,7 @@
           "release": false
         }
       ],
+      "version": "1.2.0",
       "__hash": "d4456b8766fefcf2c67d1616d4e1494302fe77c0"
     }
   ]

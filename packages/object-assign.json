@@ -89,9 +89,7 @@
       "__hash": "d3c782bb1e4709f7b87cc27178c3d858d8c949a5"
     },
     {
-      "version": "4.0.0",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.0",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -118,17 +116,21 @@
           "release": false
         }
       ],
+      "version": "4.0.0",
+      "dependencies": [],
       "__hash": "4a36433adb42302a793ca7dfcb21f21a2945d22a"
     },
     {
+      "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.1",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/object-assign\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/object-assign\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -147,10 +149,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "4.0.1",
-      "dependencies": [],
-      "__hash": "1f8d493495f73181dad3432eb0ed3e4873a1b8cf"
+      ]
     }
   ]
 }

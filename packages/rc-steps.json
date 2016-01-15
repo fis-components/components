@@ -59,10 +59,19 @@
     {
       "version": "1.4.1",
       "build": "rm package.json && npm install --prefix . rc-steps@1.4.1",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-steps\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-steps\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-steps\\/lib\\/(.*)$",
@@ -84,8 +93,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "3f0aa28aa514855a9a92cfc580777c357d77647d"
+      ]
     }
   ]
 }

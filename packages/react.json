@@ -44,45 +44,70 @@
   },
   "tags": [
     {
-      "version": "0.14.0",
       "hook": null,
+      "version": "0.14.0",
       "__hash": "b8d5a6556a00a7ec2d1747a5895e46cc9e08affc"
     },
     {
-      "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react@0.14.1",
       "hook": null,
+      "version": "0.14.1",
       "__hash": "302e74f01bcf8fc3b3475e4825747c54dd740e31"
     },
     {
-      "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
       "hook": null,
+      "version": "0.14.2",
       "__hash": "32aceadaedadb4e9266897bd39e554b85ce49852"
     },
     {
-      "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
       "hook": null,
+      "version": "0.14.3",
       "__hash": "f58eeb8e714ea120d3e94347181f79e624d7e3c8"
     },
     {
-      "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react@0.14.4",
       "hook": null,
+      "version": "0.14.4",
       "__hash": "7aace68448f3af6807fcc82bf823440c68e4c017"
     },
     {
-      "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react@0.14.5",
       "hook": null,
+      "version": "0.14.5",
       "__hash": "f33d16ba572d730b3e6cd58f3bf162cf9b6dc3dc"
     },
     {
       "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react@0.14.6",
-      "hook": null,
-      "__hash": "78df71ad0b39f5dabcf3cdc8427756c3d7fe3090"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "hook": null
     }
   ]
 }

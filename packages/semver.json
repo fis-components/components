@@ -26,8 +26,6 @@
   ],
   "tags": [
     {
-      "version": "5.0.2",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -54,6 +52,8 @@
           "release": false
         }
       ],
+      "version": "5.0.2",
+      "dependencies": [],
       "__hash": "fd26026a6dd5aa6e0f24d37a8bf1d89dcda9fa7c"
     },
     {
@@ -66,7 +66,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/semver\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/semver\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -85,13 +85,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "3e2889128a93199d109f860728ee432febaddfd8"
+      ]
     },
     {
-      "version": "5.1.0",
       "build": "rm package.json && npm install --prefix . semver@5.1.0",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -118,6 +115,8 @@
           "release": false
         }
       ],
+      "version": "5.1.0",
+      "dependencies": [],
       "__hash": "487720d78558e1480bb8ceb859d0fb9db6b01687"
     }
   ]

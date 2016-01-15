@@ -30,9 +30,7 @@
   ],
   "tags": [
     {
-      "version": "1.0.0",
       "main": "lib/index",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -59,13 +57,13 @@
           "release": false
         }
       ],
+      "version": "1.0.0",
+      "dependencies": [],
       "__hash": "5785328f51c54c6ab898bde475a87fbef8600abd"
     },
     {
-      "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . css-animation@1.0.1",
       "main": "lib/index",
-      "dependencies": [],
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -92,13 +90,13 @@
           "release": false
         }
       ],
+      "version": "1.0.1",
+      "dependencies": [],
       "__hash": "81d4c8ed1008b0d47cca9b61658c3dd31b234609"
     },
     {
-      "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . css-animation@1.0.2",
       "main": "lib/index",
-      "dependencies": [],
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -125,13 +123,13 @@
           "release": false
         }
       ],
+      "version": "1.0.2",
+      "dependencies": [],
       "__hash": "485098d3d139db9560a6fa1bb7a5fdaf7ad03344"
     },
     {
-      "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . css-animation@1.0.3",
       "main": "lib/index",
-      "dependencies": [],
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.3",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -158,13 +156,13 @@
           "release": false
         }
       ],
+      "version": "1.0.3",
+      "dependencies": [],
       "__hash": "290a50f18e91f6696d504b4406afaef846c509f1"
     },
     {
-      "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . css-animation@1.0.4",
       "main": "lib/index",
-      "dependencies": [],
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -191,13 +189,13 @@
           "release": false
         }
       ],
+      "version": "1.0.4",
+      "dependencies": [],
       "__hash": "c9cb173bbba3387daddafc52024bf75084470816"
     },
     {
-      "version": "1.0.5",
-      "build": "rm package.json && npm install --prefix . css-animation@1.0.5",
       "main": "lib/index",
-      "dependencies": [],
+      "build": "rm package.json && npm install --prefix . css-animation@1.0.5",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -224,6 +222,8 @@
           "release": false
         }
       ],
+      "version": "1.0.5",
+      "dependencies": [],
       "__hash": "b353de94f39e5a02ca4d35a5290d7981c66d24a6"
     },
     {
@@ -237,7 +237,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/css-animation\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/css-animation\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -256,8 +256,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "9a07af737a20bce5bfc10be99ec28f198c563687"
+      ]
     },
     {
       "version": "1.1.1",
@@ -270,7 +269,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/css-animation\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/css-animation\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -289,8 +288,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "40aaa0b28c380b29b3727d6e5c02f42000ef4051"
+      ]
     }
   ]
 }

@@ -45,7 +45,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-scroll-into-view\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-scroll-into-view\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -73,8 +73,7 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "ce8259cf4084d60d4518b01fc0f300b9f5c6eb96"
+      "main": "index.js"
     },
     {
       "version": "1.0.1",
@@ -86,7 +85,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-scroll-into-view\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-scroll-into-view\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -114,8 +113,7 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "dab0399c534de45769b3e4178a05d2b9119f22d4"
+      "main": "index.js"
     }
   ]
 }

@@ -30,8 +30,6 @@
   ],
   "tags": [
     {
-      "version": "1.0.0",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -58,6 +56,8 @@
           "release": false
         }
       ],
+      "version": "1.0.0",
+      "dependencies": [],
       "__hash": "bccd3f48d58b1178a6996aa72fbaf7ca8e4ab2a4"
     },
     {
@@ -70,7 +70,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -89,8 +89,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "c2789ea6390bc116fd573b24fff63804232811b7"
+      ]
     },
     {
       "version": "1.0.2",
@@ -102,7 +101,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -121,8 +120,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "f96256f29d99aca48166fb91fc12b6903f64a59b"
+      ]
     }
   ]
 }

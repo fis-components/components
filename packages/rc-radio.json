@@ -50,6 +50,10 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/rc-radio\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/rc-radio\\/lib\\/(.*)$",
           "release": "lib/$1"
         },
@@ -69,8 +73,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "309da68cc93cac45146d06fbc1866cdde25babdc"
+      ]
     }
   ]
 }

@@ -37,7 +37,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/add-dom-event-listener\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/add-dom-event-listener\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -56,8 +56,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "7b8747ebc7b410775ac9c33817e94ba9f2294917"
+      ]
     },
     {
       "version": "1.0.1",
@@ -68,7 +67,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/add-dom-event-listener\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/add-dom-event-listener\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -87,8 +86,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "1c711588b61f6aebb7bf9c4b99a5c96ef463e9c6"
+      ]
     }
   ]
 }

@@ -38,7 +38,40 @@
   "tags": [
     {
       "version": "5.5.0",
-      "__hash": "1442bdfb510bac471e40d6db47ae4971c4628a74"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "5.5.1",
@@ -49,7 +82,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-tabs\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -76,8 +109,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "5e5298c6a1f1c960659349a5ac4b30c7af34d31b"
+      ]
     },
     {
       "version": "5.5.2",
@@ -88,7 +120,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-tabs\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -115,11 +147,9 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "8845f76b035db90bd2a2919d9d781d154d53edbb"
+      ]
     },
     {
-      "version": "5.6.0",
       "build": "rm package.json && npm install --prefix . rc-tabs@5.6.0",
       "mapping": [
         {
@@ -155,6 +185,7 @@
           "release": false
         }
       ],
+      "version": "5.6.0",
       "__hash": "3ca17315e733ac2f24e3e53ff8633ee5e30211ea"
     }
   ]

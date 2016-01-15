@@ -45,7 +45,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -64,8 +64,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "77362cf7b032a67f2803940b79dac66a15e1027d"
+      ]
     },
     {
       "version": "2.1.0",
@@ -80,7 +79,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -99,8 +98,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "33f008d23d016469fa1abc84ec8cdfa3a040202f"
+      ]
     },
     {
       "version": "2.2.0",
@@ -115,7 +113,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -134,8 +132,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "183d9327cfedd6494836a3c323cc4ccad4309740"
+      ]
     }
   ]
 }

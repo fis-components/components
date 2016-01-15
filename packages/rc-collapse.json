@@ -62,6 +62,7 @@
       "__hash": "d960966d1ae16a51576b7b0f2afb2ba44dc45e78"
     },
     {
+      "version": "1.4.3",
       "build": "rm package.json && npm install --prefix . rc-collapse@1.4.3",
       "mapping": [
         {
@@ -69,32 +70,12 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-collapse\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-collapse\\/assets\\/(.*)$",
-          "release": "assets/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^.*$",
+          "reg": "^\\/node_modules\\/rc-collapse\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
-        }
-      ],
-      "version": "1.4.3",
-      "__hash": "597cf2d9ab485f1968c432e691ab1b43e5ae415d"
-    },
-    {
-      "version": "1.4.4",
-      "build": "rm package.json && npm install --prefix . rc-collapse@1.4.4",
-      "mapping": [
+        },
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
+          "reg": "^\\/node_modules\\/rc-collapse\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-collapse\\/lib\\/(.*)$",
@@ -116,8 +97,45 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "bc3135a888fb7a8da476d2b4856d543b7d508dc6"
+      ]
+    },
+    {
+      "version": "1.4.4",
+      "build": "rm package.json && npm install --prefix . rc-collapse@1.4.4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-collapse\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-collapse\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-collapse\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-collapse\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

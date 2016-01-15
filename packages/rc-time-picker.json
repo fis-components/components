@@ -28,6 +28,96 @@
   ],
   "tags": [
     {
+      "version": "0.7.1",
+      "build": "rm package.json && npm install --prefix . rc-time-picker@0.7.1",
+      "dependencies": [
+        "classnames@~2.2.0",
+        "gregorian-calendar@4.x",
+        "gregorian-calendar-format@4.x",
+        "rc-trigger@1.x",
+        "rc-util@2.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.7.2",
+      "build": "rm package.json && npm install --prefix . rc-time-picker@0.7.2",
+      "dependencies": [
+        "classnames@~2.2.0",
+        "gregorian-calendar@4.x",
+        "gregorian-calendar-format@4.x",
+        "rc-trigger@1.x",
+        "rc-util@2.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "1.0.0-alpha7",
       "__hash": "35598cb5da21813b68874fdf6b0cc1072c5a6813"
     },
@@ -86,7 +176,6 @@
       "__hash": "b6841cf0365c278141545cb1455b0159ab574ec1"
     },
     {
-      "version": "1.0.0",
       "build": "rm package.json && npm install --prefix . rc-time-picker@1.0.0",
       "mapping": [
         {
@@ -114,6 +203,7 @@
           "release": false
         }
       ],
+      "version": "1.0.0",
       "__hash": "f7ad6ff16846f025920b21d3ccc1fd2b1ecc1f22"
     }
   ]
