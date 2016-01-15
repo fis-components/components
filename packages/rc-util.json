@@ -68,7 +68,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "706238e909188ff51c04e794aecfb0d8dee3808a"
     },
     {
       "dependencies": [
@@ -182,7 +183,6 @@
     },
     {
       "version": "3.1.2",
-
       "build": "rm package.json && npm install --prefix . rc-util@3.1.2",
       "mapping": [
         {
