@@ -228,7 +228,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "997849f6e0a370bbd9acbbdcf2d81db942bf2a55"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-slider@3.2.0",
