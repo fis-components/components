@@ -1,4 +1,4 @@
-FIS 组件生态![https://travis-ci.org/fis-components/components.svg?branch=master](travis-ci.org/fis-components/components)
+FIS 组件生态
 ===========
 
 ![](./install.png)
