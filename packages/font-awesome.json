@@ -71,7 +71,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "295b8972602bdb8e4c4bb62d179516dd70bb660c"
     }
   ]
 }
