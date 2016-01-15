@@ -26,7 +26,6 @@
       "release": false
     }
   ],
-
   "tags": [
     {
       "version": "0.7.1",
@@ -71,9 +70,9 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "c1c01b03f133e6c60e16defb65a788711172b705"
     },
-
     {
       "version": "0.7.2",
       "build": "rm package.json && npm install --prefix . rc-time-picker@0.7.2",
