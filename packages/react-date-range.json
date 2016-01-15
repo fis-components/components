@@ -51,7 +51,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-date-range\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-date-range\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -70,8 +70,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "18ab28a63ea777f2f7d2c64822a5f3442e97fe05"
+      ]
     }
   ]
 }

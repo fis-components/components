@@ -309,8 +309,6 @@
       "__hash": "15bd87470b172b853a4a8379a01cdf36b916cad8"
     },
     {
-      "version": "1.1.13",
-      "build": "rm package.json && npm install --prefix . fit-radio@1.1.13",
       "name": "fit-radio",
       "description": "单选框",
       "main": "lib/index.js",
@@ -320,6 +318,7 @@
         "fit-button@^1.2.13",
         "fit-style@^1.1.10"
       ],
+      "build": "rm package.json && npm install --prefix . fit-radio@1.1.13",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -346,7 +345,49 @@
           "release": false
         }
       ],
+      "version": "1.1.13",
       "__hash": "f47f3acaf66256eae3c95aeedca29f6bfbd24875"
+    },
+    {
+      "version": "1.1.19",
+      "build": "rm package.json && npm install --prefix . fit-radio@1.1.19",
+      "name": "fit-radio",
+      "description": "单选框",
+      "repos": "https://github.com/tb-component/pc-radio.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-button@^1.2.13",
+        "fit-style@^1.1.10",
+        "lodash@^3.10.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

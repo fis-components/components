@@ -39,36 +39,35 @@
       "__hash": "f192709a2031da2f2627bb62ffaa5253f64a5b8e"
     },
     {
-      "version": "2.1.0",
       "build": "rm package.json && npm install --prefix . moment@2.1.0",
+      "version": "2.1.0",
       "__hash": "92bc141534d8ba21aa331abbce4e5ce05f1e10f2"
     },
     {
-      "version": "2.2.1",
       "build": "rm package.json && npm install --prefix . moment@2.2.1",
       "repos": "https://github.com/moment/moment.git",
+      "version": "2.2.1",
       "__hash": "5d3f862f558ec9d342c48cc5bf3503241a758874"
     },
     {
-      "version": "2.3.0",
       "build": "rm package.json && npm install --prefix . moment@2.3.0",
       "repos": "https://github.com/moment/moment.git",
+      "version": "2.3.0",
       "__hash": "d50246d8bada120c0c98bfdcbc064b4c7ba294ef"
     },
     {
-      "version": "2.3.1",
       "build": "rm package.json && npm install --prefix . moment@2.3.1",
       "repos": "https://github.com/moment/moment.git",
+      "version": "2.3.1",
       "__hash": "d117404c5814581db10f850bef04ff70093cc547"
     },
     {
-      "version": "2.4.0",
       "build": "rm package.json && npm install --prefix . moment@2.4.0",
       "repos": "https://github.com/moment/moment.git",
+      "version": "2.4.0",
       "__hash": "d49c0828d9ac5868b7aeaf8e80600e08fa3f825a"
     },
     {
-      "version": "2.5.0",
       "build": "rm package.json && npm install --prefix . moment@2.5.0",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -102,6 +101,7 @@
           "release": false
         }
       ],
+      "version": "2.5.0",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -116,7 +116,6 @@
       "__hash": "ced3de93ddddf2878a078253164c3ebdece9ced7"
     },
     {
-      "version": "2.5.1",
       "build": "rm package.json && npm install --prefix . moment@2.5.1",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -150,6 +149,7 @@
           "release": false
         }
       ],
+      "version": "2.5.1",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -164,7 +164,6 @@
       "__hash": "50830204ca9d85a02773fb9f7c8d7fb926bb4cf4"
     },
     {
-      "version": "2.6.0",
       "build": "rm package.json && npm install --prefix . moment@2.6.0",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -198,6 +197,7 @@
           "release": false
         }
       ],
+      "version": "2.6.0",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -212,7 +212,6 @@
       "__hash": "0483646d88eb075350a756a98a5a39b8bddcfc17"
     },
     {
-      "version": "2.7.0",
       "build": "rm package.json && npm install --prefix . moment@2.7.0",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -246,6 +245,7 @@
           "release": false
         }
       ],
+      "version": "2.7.0",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -260,7 +260,6 @@
       "__hash": "2629c508a3d4b6db25c62d53173cece679fd695f"
     },
     {
-      "version": "2.8.1",
       "build": "rm package.json && npm install --prefix . moment@2.8.1",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -294,6 +293,7 @@
           "release": false
         }
       ],
+      "version": "2.8.1",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -308,7 +308,6 @@
       "__hash": "a0313719188a3cfab7879128d504a3da25b46671"
     },
     {
-      "version": "2.8.2",
       "build": "rm package.json && npm install --prefix . moment@2.8.2",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -342,6 +341,7 @@
           "release": false
         }
       ],
+      "version": "2.8.2",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -356,7 +356,6 @@
       "__hash": "6baf09ad6ada5e2389a72cbb4cf2c29dc9d2e100"
     },
     {
-      "version": "2.8.3",
       "build": "rm package.json && npm install --prefix . moment@2.8.3",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -390,6 +389,7 @@
           "release": false
         }
       ],
+      "version": "2.8.3",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -404,7 +404,6 @@
       "__hash": "a71ec48c460b4c5ae0ebb755e27f61dd9a6f6288"
     },
     {
-      "version": "2.8.4",
       "build": "rm package.json && npm install --prefix . moment@2.8.4",
       "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
@@ -438,6 +437,7 @@
           "release": false
         }
       ],
+      "version": "2.8.4",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -452,7 +452,6 @@
       "__hash": "134013ad8baf50294d8f0e8e2679a0e0af5626db"
     },
     {
-      "version": "2.9.0",
       "build": "rm package.json && npm install --prefix . moment@2.9.0",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
@@ -487,6 +486,7 @@
           "release": false
         }
       ],
+      "version": "2.9.0",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -501,7 +501,6 @@
       "__hash": "29a2e92f41283d4109a6452f82319c93dc5d5214"
     },
     {
-      "version": "2.10.2",
       "build": "rm package.json && npm install --prefix . moment@2.10.2",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
@@ -536,6 +535,7 @@
           "release": false
         }
       ],
+      "version": "2.10.2",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -550,7 +550,6 @@
       "__hash": "5d11f8ce14acf5a5b61d9d29dda31b4b67af5dc9"
     },
     {
-      "version": "2.10.3",
       "build": "rm package.json && npm install --prefix . moment@2.10.3",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
@@ -585,6 +584,7 @@
           "release": false
         }
       ],
+      "version": "2.10.3",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -599,7 +599,6 @@
       "__hash": "932e3e72927202dfff8c5f31a62144862a9c8a82"
     },
     {
-      "version": "2.10.5",
       "build": "rm package.json && npm install --prefix . moment@2.10.5",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
@@ -634,6 +633,7 @@
           "release": false
         }
       ],
+      "version": "2.10.5",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -659,7 +659,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/moment\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -693,8 +693,7 @@
           ]
         }
       },
-      "paths": {},
-      "__hash": "7ed56c536a1bc54c83136427d08ce228edc807f0"
+      "paths": {}
     },
     {
       "version": "2.11.0",
@@ -708,7 +707,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/moment\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -742,8 +741,7 @@
           ]
         }
       },
-      "paths": {},
-      "__hash": "f24f02059a83dcfb5fdc97cbf1a65552c1fce39d"
+      "paths": {}
     },
     {
       "version": "2.11.1",
@@ -757,7 +755,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/moment\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -791,8 +789,7 @@
           ]
         }
       },
-      "paths": {},
-      "__hash": "7070d100f9915ab6c50c5b2694c6c25f59709410"
+      "paths": {}
     }
   ]
 }

@@ -320,7 +320,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-pagination\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-pagination\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -339,8 +339,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "a66a33c202aa0eb6dc6d0a9bab146371d64ffb23"
+      ]
     }
   ]
 }

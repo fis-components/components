@@ -802,7 +802,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -821,8 +821,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "38ea77e4e637e1173e60188316fb9519417c3a78"
+      ]
     }
   ]
 }

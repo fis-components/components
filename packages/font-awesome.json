@@ -47,7 +47,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/font-awesome\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/font-awesome\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -71,8 +71,7 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "dbd129cfa1c24686b4b8ab5ad55bf0cf4ecbd5b7"
+      "main": "index.js"
     }
   ]
 }

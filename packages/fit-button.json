@@ -419,7 +419,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-button\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-button\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -438,8 +438,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "9805de8079902d2850bcdbcf5290b10253ce04d3"
+      ]
     }
   ]
 }

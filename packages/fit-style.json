@@ -734,7 +734,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-style\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-style\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -753,8 +753,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "531163298ff988e6c9dba189d076139214d12b10"
+      ]
     }
   ]
 }
