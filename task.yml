@@ -10,3 +10,4 @@ sync:
     - rc-select@~5.1.2
     - revalidator@latest
     - cookie@latest
+    - fit-radio@latest
