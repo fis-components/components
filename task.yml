@@ -10,4 +10,7 @@ sync:
     - rc-select@~5.1.2
     - revalidator@latest
     - cookie@latest
-    - fit-radio@latest
+    - fit-datepicker@0.2.27
+    - fit-radio@1.1.19
+    - fit-table@1.1.53
+    - fit-timepicker@0.2.25
