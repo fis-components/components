@@ -1,3 +1,8 @@
 {
-  "main": "./dist/prefixer"
+  "tags": {
+    ">=0.6.1": {
+      "main": "./dist/prefixer.js"
+    }
+
+  }
 }
