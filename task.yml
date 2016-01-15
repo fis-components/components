@@ -9,3 +9,4 @@ sync:
     - antd@0.10.5
     - rc-select@~5.1.2
     - revalidator@latest
+    - cookie@latest
