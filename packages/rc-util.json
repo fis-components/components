@@ -261,7 +261,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "1ad2b01d0ca6e644ab48b49cb6102a307978401f"
     },
     {
       "dependencies": [],
