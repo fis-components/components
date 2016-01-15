@@ -158,7 +158,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "5bcf8d9354c3b1eef8f33bedfbeec0eb6b33e6fa"
     },
     {
       "build": "rm package.json && npm install --prefix . gregorian-calendar@4.1.0",
