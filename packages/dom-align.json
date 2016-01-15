@@ -215,7 +215,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "f0dbad55f33404efae5a626e4f13855f9afa4e81"
     },
     {
       "version": "1.0.5",
