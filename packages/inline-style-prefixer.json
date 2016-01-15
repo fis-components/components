@@ -50,7 +50,8 @@
     },
     {
       "version": "0.6.3",
-      "build": "rm package.json && npm install --prefix . inline-style-prefixer@0.6.3"
+      "build": "rm package.json && npm install --prefix . inline-style-prefixer@0.6.3",
+      "__hash": "30ea9f78a2757d4c2d0362226177cd6fe0f23120"
     }
   ]
 }
