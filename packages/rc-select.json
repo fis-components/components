@@ -36,6 +36,7 @@
     }
   ],
   "tags": [
+
     {
       "version": "5.1.2",
       "build": "rm package.json && npm install --prefix . rc-select@5.1.2",
