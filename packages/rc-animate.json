@@ -402,7 +402,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "8ef45fa828ae0b7b233405d7a8f8fb0f98622ac7"
     },
     {
       "mapping": [
