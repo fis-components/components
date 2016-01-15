@@ -203,7 +203,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "3bc5e252c0062283a02f02c16d3e513cace97aea"
     },
     {
       "version": "0.19.1",
@@ -213,7 +214,6 @@
         "rc-animate@2.x",
         "rc-util@3.x"
       ],
-
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
