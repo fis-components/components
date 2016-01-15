@@ -165,7 +165,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "338cf2648efca6333cabf509714706ec32d6bb6d"
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.4",
