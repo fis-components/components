@@ -149,7 +149,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "90a7978565c38c52c8a9235b1f17406d866f2617"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tabs@5.6.0",
