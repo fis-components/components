@@ -108,7 +108,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "91dfd30880edfc7febf5ef27ebadd6cc316b5dcd"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-checkbox@1.2.0",
