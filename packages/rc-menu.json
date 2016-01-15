@@ -37,63 +37,20 @@
   ],
   "tags": [
     {
-      "dependencies": [
-        "dom-scroll-into-view@1.x",
-        "object-assign@3.x",
-        "rc-util@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.0.0",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
-          "release": "assets/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
       "version": "4.0.0",
-      "__hash": "ce091488326716f8ac0bc797f5421fae9f91e380"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.0.0",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.0.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -120,29 +77,36 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.0.1",
-      "__hash": "2c80daa5d14434d701c39d96c1f38da11547ec12"
-    },
-    {
-      "dependencies": [],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.0.2",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.0.1",
+      "dependencies": [
+        "dom-scroll-into-view@1.x",
+        "object-assign@3.x",
+        "rc-util@2.x"
+      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(lib)$",
-          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
           "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
+          "release": "assets/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -156,37 +120,28 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.0.2",
-      "__hash": "8a48f0c679e05a1d82a979f2223b2bb06dbaf438"
-    },
-    {
-      "dependencies": [
-        "dom-scroll-into-view@1.x",
-        "object-assign@3.x",
-        "rc-util@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.0.3",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.0.2",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(lib)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
           "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
-          "release": "assets/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -200,24 +155,23 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.0.3",
-      "__hash": "694bf086ba428003285641182e566c7211b045fb"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.0.3",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.1.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -244,29 +198,36 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.1.0",
-      "__hash": "c1fa198fc901366cc7c6cd82038f62ae5f45190c"
-    },
-    {
-      "dependencies": [],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.2.0",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.1.0",
+      "dependencies": [
+        "dom-scroll-into-view@1.x",
+        "object-assign@3.x",
+        "rc-util@2.x"
+      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(lib)$",
-          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
           "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
+          "release": "assets/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -280,196 +241,19 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.2.0",
-      "__hash": "ea920faf58bf6f0307ac2e11dadef9973cd42141"
-    },
-    {
-      "dependencies": [
-        "dom-scroll-into-view@1.x",
-        "object-assign@3.x",
-        "rc-util@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.2.1",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
-          "release": "assets/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "4.2.1",
-      "__hash": "4b36b0e861116c67be9e4121cb604c09e95b0491"
-    },
-    {
-      "dependencies": [
-        "dom-scroll-into-view@1.x",
-        "object-assign@3.x",
-        "rc-util@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.3.0",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
-          "release": "assets/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "4.3.0",
-      "__hash": "2af715caf8e6122631700780fed1cbb45d57e4f2"
-    },
-    {
-      "dependencies": [
-        "dom-scroll-into-view@1.x",
-        "object-assign@3.x",
-        "rc-util@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.3.1",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
-          "release": "assets/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "4.3.1",
-      "__hash": "f05ff7e8d354895a363953f19125252c5a60eaa0"
-    },
-    {
-      "dependencies": [
-        "dom-scroll-into-view@1.x",
-        "object-assign@3.x",
-        "rc-util@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.3.2",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
-          "release": "assets/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "4.3.2",
-      "__hash": "1aa131b43280bf4824d99b1c0d9526364f698f8e"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.2.0",
       "dependencies": [],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.4.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -492,38 +276,200 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "4.2.1",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.2.1",
+      "dependencies": [
+        "dom-scroll-into-view@1.x",
+        "object-assign@3.x",
+        "rc-util@2.x"
       ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "4.3.0",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.3.0",
+      "dependencies": [
+        "dom-scroll-into-view@1.x",
+        "object-assign@3.x",
+        "rc-util@2.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "4.3.1",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.3.1",
+      "dependencies": [
+        "dom-scroll-into-view@1.x",
+        "object-assign@3.x",
+        "rc-util@2.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "4.3.2",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.3.2",
+      "dependencies": [
+        "dom-scroll-into-view@1.x",
+        "object-assign@3.x",
+        "rc-util@2.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "4.4.0",
-      "__hash": "f2da2784faeb38376e99cb379d8a5ad9b7587c02"
-    },
-    {
-      "dependencies": [
-        "dom-scroll-into-view@1.x",
-        "object-assign@3.x",
-        "rc-animate@^1.1.0",
-        "rc-util@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.4.1",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.4.0",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(lib)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
           "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
-          "release": "assets/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -537,25 +483,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.4.1",
-      "__hash": "05c8cfb1aebef87976deee69ce95c60121767e64"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.4.1",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@^1.1.0",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.4.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -582,25 +527,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.4.2",
-      "__hash": "40b115bb7805ade794e40cd4787a91ad6d8d6e96"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.4.2",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@^1.1.0",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.4.3",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -627,25 +571,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.4.3",
-      "__hash": "81323df639e1f4e29e56328df0567d1385cda750"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.4.3",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@^1.1.0",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.4.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -672,25 +615,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.4.4",
-      "__hash": "e9648be6270ad60768111f8eb578efed6a9acf59"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.4.4",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
-        "rc-animate@1.x",
+        "rc-animate@^1.1.0",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.4.5",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -717,25 +659,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.4.5",
-      "__hash": "549f0b38eaa5add36ec8198e863c39e79145c675"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.4.5",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@1.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.5.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -762,25 +703,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.5.0",
-      "__hash": "61b79eac86d5f5e07063a89641dac8684354d375"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.5.0",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@1.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.6.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -807,25 +747,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.6.0",
-      "__hash": "90a48d44a472764730c9bebe0c855b8dc2bec584"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.6.0",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@1.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.6.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -852,25 +791,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.6.1",
-      "__hash": "efb38057866c5a522166b55780e7539bbbb229f5"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.6.1",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@1.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.6.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -897,25 +835,24 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
+      ]
+    },
+    {
       "version": "4.6.2",
-      "__hash": "b97045cc7e9265f96aabb6ef1f483d8ffc784fc9"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . rc-menu@4.6.2",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@3.x",
         "rc-animate@1.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.7.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -942,25 +879,68 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "4.7.0",
-      "__hash": "8d94915deeef17c7693029edb01f10cc4b76e2d9"
+      ]
     },
     {
+      "version": "4.7.0",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.7.0",
+      "dependencies": [
+        "dom-scroll-into-view@1.x",
+        "object-assign@3.x",
+        "rc-animate@1.x",
+        "rc-util@2.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-menu\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "4.8.0",
+      "build": "rm package.json && npm install --prefix . rc-menu@4.8.0",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@4.x",
         "rc-animate@2.x",
         "rc-util@2.x"
       ],
-      "build": "rm package.json && npm install --prefix . rc-menu@4.8.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -987,9 +967,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "4.8.0",
-      "__hash": "f4fb3b8e2bf7f6fa571768350b9e5b3621d9ce21"
+      ]
     },
     {
       "version": "4.8.1",
@@ -997,7 +975,7 @@
         "dom-scroll-into-view@1.x",
         "object-assign@4.x",
         "rc-animate@2.x",
-        "rc-util@3.x"
+        "rc-util@2.x"
       ],
       "mapping": [
         {
@@ -1035,14 +1013,13 @@
       ]
     },
     {
-      "version": "4.8.2",
-      "build": "rm package.json && npm install --prefix . rc-menu@4.8.2",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@4.x",
         "rc-animate@2.x",
         "rc-util@3.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-menu@4.8.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -1076,10 +1053,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "4.8.2"
     },
     {
-      "version": "4.8.3",
       "build": "rm package.json && npm install --prefix . rc-menu@4.8.3",
       "mapping": [
         {
@@ -1114,10 +1091,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "4.8.3"
     },
     {
-      "version": "4.8.4",
       "build": "rm package.json && npm install --prefix . rc-menu@4.8.4",
       "mapping": [
         {
@@ -1152,9 +1129,11 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "4.8.4"
     },
     {
+      "version": "4.9.0",
       "build": "rm package.json && npm install --prefix . rc-menu@4.9.0",
       "mapping": [
         {
@@ -1162,7 +1141,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -1189,9 +1168,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "4.9.0",
-      "__hash": "974aae5abe45a9d66fdae3b327574966c20f8433"
+      ]
     }
   ]
 }

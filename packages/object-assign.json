@@ -84,9 +84,36 @@
       "__hash": "e1fe5a58dd41374b4067906d843962afcd201cef"
     },
     {
-      "build": "rm package.json && npm install --prefix . object-assign@3.0.0",
       "version": "3.0.0",
-      "__hash": "d3c782bb1e4709f7b87cc27178c3d858d8c949a5"
+      "build": "rm package.json && npm install --prefix . object-assign@3.0.0",
+      "repos": "https://github.com/sindresorhus/object-assign",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/object-assign\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/object-assign\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . object-assign@4.0.0",
@@ -121,9 +148,7 @@
       "__hash": "4a36433adb42302a793ca7dfcb21f21a2945d22a"
     },
     {
-      "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . object-assign@4.0.1",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -150,6 +175,8 @@
           "release": false
         }
       ],
+      "version": "4.0.1",
+      "dependencies": [],
       "__hash": "a6a452d6bf6e9142c3cb69fa5ee32b757f2b5ef1"
     }
   ]

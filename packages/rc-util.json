@@ -36,15 +36,16 @@
   ],
   "tags": [
     {
-      "dependencies": [],
+      "version": "3.0.0",
       "build": "rm package.json && npm install --prefix . rc-util@3.0.0",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-util\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-util\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -67,12 +68,48 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "3.0.0",
-      "__hash": "883310bf98659f1cba107b3749b9b3e4cd9f220c"
+      ]
     },
     {
-      "version": "3.0.1",
+      "dependencies": [
+        "add-dom-event-listener@1.x",
+        "classnames@2.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-util\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-util\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-util\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "3.0.1"
+    },
+    {
+      "version": "3.1.0",
+      "build": "rm package.json && npm install --prefix . rc-util@3.1.0",
       "dependencies": [
         "add-dom-event-listener@1.x",
         "classnames@2.x"
@@ -109,54 +146,16 @@
       ]
     },
     {
-      "dependencies": [
-        "add-dom-event-listener@1.x",
-        "classnames@2.x"
-      ],
-      "build": "rm package.json && npm install --prefix . rc-util@3.1.0",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-util\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-util\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-util\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.0",
-      "__hash": "d2b452f3957656863037675212832ef89e0269a9"
-    },
-    {
-      "dependencies": [],
+      "version": "3.1.1",
       "build": "rm package.json && npm install --prefix . rc-util@3.1.1",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-util\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-util\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -179,11 +178,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "3.1.1",
-      "__hash": "55babd7e00d877d0f56575c513d062e9c7e198a3"
+      ]
     },
     {
+      "version": "3.1.2",
       "build": "rm package.json && npm install --prefix . rc-util@3.1.2",
       "mapping": [
         {
@@ -191,7 +189,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-util\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-util\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -214,9 +212,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "3.1.2",
-      "__hash": "d46a87ab3c1c8de81311f3f9e58f5bdfab2ebf17"
+      ]
     }
   ]
 }

@@ -30,13 +30,44 @@
   ],
   "tags": [
     {
+      "version": "1.0.0",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/util-deprecate\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -56,45 +87,11 @@
           "release": false
         }
       ],
-      "version": "1.0.0",
-      "dependencies": [],
-      "__hash": "bccd3f48d58b1178a6996aa72fbaf7ca8e4ab2a4"
-    },
-    {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1",
-      "dependencies": [],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(browser\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ]
+      "dependencies": []
     },
     {
-      "version": "1.0.2",
       "build": "rm package.json && npm install --prefix . util-deprecate@1.0.2",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -120,7 +117,9 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "1.0.2",
+      "dependencies": []
     }
   ]
 }

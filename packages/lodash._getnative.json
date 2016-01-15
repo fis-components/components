@@ -41,7 +41,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\._getnative\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\._getnative\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -61,8 +61,7 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "815b32d728cb753dfd7d8ae0722109380406628a"
+      "main": "index.js"
     },
     {
       "version": "3.9.1",
@@ -74,7 +73,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\._getnative\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\._getnative\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -94,8 +93,7 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "5e3a3a75d43624bb0d40cf01563ee752ff020ee0"
+      "main": "index.js"
     }
   ]
 }

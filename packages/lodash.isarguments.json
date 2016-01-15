@@ -29,14 +29,16 @@
   ],
   "tags": [
     {
+      "version": "3.0.0",
       "repos": "https://github.com/lodash/lodash",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -56,21 +58,20 @@
           "release": false
         }
       ],
-      "version": "3.0.0",
-      "dependencies": [],
-      "main": "index.js",
-      "__hash": "f59ebfc0cf62ce774318034e054d9f3c8e87930b"
+      "main": "index.js"
     },
     {
-      "repos": "https://github.com/lodash/lodash",
+      "version": "3.0.1",
       "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.1",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -90,10 +91,7 @@
           "release": false
         }
       ],
-      "version": "3.0.1",
-      "dependencies": [],
-      "main": "index.js",
-      "__hash": "63b0fae576131a76b3445616beec4cfe5c1fc5da"
+      "main": "index.js"
     },
     {
       "version": "3.0.2",
@@ -106,7 +104,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -126,51 +124,19 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "aecfd956346cf8b20a5fe60ac36bf7f2e8ea8073"
+      "main": "index.js"
     },
     {
-      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.3",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
       "version": "3.0.3",
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.3",
       "dependencies": [],
-      "main": "index.js",
-      "__hash": "b6599138c3962e2110e9f78daf174a66d8d3505d"
-    },
-    {
-      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -190,10 +156,71 @@
           "release": false
         }
       ],
+      "main": "index.js"
+    },
+    {
       "version": "3.0.4",
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.4",
       "dependencies": [],
-      "main": "index.js",
-      "__hash": "9bcb9361b6fd57f06144d05a5266a66180438be1"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index.js"
+    },
+    {
+      "version": "3.0.5",
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.5",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index.js"
     }
   ]
 }
