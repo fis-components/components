@@ -36,7 +36,8 @@
   "tags": [
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . fiten-scale@1.0.1"
+      "build": "rm package.json && npm install --prefix . fiten-scale@1.0.1",
+      "__hash": "e50c95f14b1b42a7d8fa1b1d122cddde164061df"
     },
     {
       "version": "1.0.2",
