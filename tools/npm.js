@@ -616,7 +616,7 @@ function reg2str(reg) {
 
 function convertFromJspm(json, item, pkgName, pkgPath) {
   var jspm = json.jspm;
-  var main = (json.jspm.main || json.main).replace(/^\.\//, '').replace(/\/$/, '/index');
+  var main = (json.spm && json.spm.main || json.jspm.main || json.main).replace(/^\.\//, '').replace(/\/$/, '/index');
   var pathPrefix = '/node_modules/' + pkgName + '/';
 
   if (!test('-f', path.join(pkgPath, main))) {
@@ -626,8 +626,6 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
       main = path.join(jspm.directories.lib, main);
     }
   }
-
-  console.log(main);
 
   if (jspm.ignore) {
     jspm.ignore.forEach(function(filepath) {
@@ -646,7 +644,7 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
   }
 
   var startFiles = [
-    path.join(pkgPath, main)
+    main
   ];
 
 
@@ -739,4 +737,6 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
     var name = item.split('@')[0];
     return ~deps.indexOf(name);
   }));
+
+  item.main = main;
 }
