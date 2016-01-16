@@ -1,30 +1,41 @@
 {
-  "repos": "https://github.com/daneden/animate.css.git",
+  "build": "rm package.json && npm install --prefix . animate.css@3.4.0",
   "name": "animate.css",
-  "main": "animate.css",
-  "description": "A cross-browser library of CSS animations. As easy to use as an easy thing. http://daneden.github.io/animate.css",
+  "description": "*Just-add-water CSS animation*",
+  "repos": "https://github.com/daneden/animate.css.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
   "mapping": [
     {
-      "reg": "\\.min\\.(js|css)$",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/animate\\.css$",
+      "reg": "^\\/node_modules\\/animate\\.css\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/animate\\.css\\/(animate\\.css)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^\\/readme\\.md$",
+      "reg": "^\\/LICENSE\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "\\.*",
       "release": false
     }
   ],
+  "main": "animate.css",
   "tags": [
     {
-      "version": "v3.1.0",
-      "__hash": "7d0e8ef993c53ce5479644206762178d0972e278"
+      "version": "3.4.0"
     }
   ]
 }
