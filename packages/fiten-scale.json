@@ -45,7 +45,8 @@
     },
     {
       "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . fiten-scale@1.0.3"
+      "build": "rm package.json && npm install --prefix . fiten-scale@1.0.3",
+      "__hash": "b3070a1186413d956286cbe62765d80554cb90f7"
     }
   ]
 }
