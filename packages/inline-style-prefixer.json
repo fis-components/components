@@ -49,7 +49,8 @@
   ],
   "tags": [
     {
-      "version": "0.5.3"
+      "version": "0.5.3",
+      "__hash": "d67fa0b7210f2c42b91a7f11f75e1e8f8a4fc2bb"
     },
     {
       "version": "0.5.4",
@@ -88,7 +89,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "90cfa3bcaacb2e90084c8a832bee442e00f9ccb2"
     },
     {
       "version": "0.6.0",
@@ -127,7 +129,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "d5fa1229db76a483f22affcc2000d116e554b39f"
     },
     {
       "version": "0.6.1",
@@ -162,7 +165,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "8c5b607ee1b00204f51a924c77dd9aff308cdd02"
     },
     {
       "version": "0.6.2",
@@ -196,7 +200,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "7c68d3b4c020b3b589d753cc9bff2d2b359b70ec"
     },
     {
       "version": "0.6.3",
@@ -230,7 +235,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "95938092ccb8b0bfd4873f7202732ba3ead103f2"
     }
   ]
 }
