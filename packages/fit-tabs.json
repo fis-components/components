@@ -186,13 +186,12 @@
       "__hash": "ca5a7324fe8bcec1bea9e7da6f63fbbd20f87a8a"
     },
     {
-      "version": "0.2.7",
-      "build": "rm package.json && npm install --prefix . fit-tabs@0.2.7",
       "name": "fit-tabs",
       "description": "tbas",
       "repos": "https://github.com/tb-component/pc-tabs.git",
       "main": "dist/index.js",
       "dependencies": [],
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.2.7",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -219,6 +218,7 @@
           "release": false
         }
       ],
+      "version": "0.2.7",
       "__hash": "69a46302b46343343602e1ee28b604e12154c0bc"
     },
     {
@@ -235,7 +235,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -254,8 +254,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "136273b03ac6b3d50e7c1d6a9df2245022cb163f"
+      ]
     },
     {
       "version": "0.2.10",
@@ -271,7 +270,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -290,8 +289,42 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "882e172a1853e6c88d32c49eca2e54a75f36b681"
+      ]
+    },
+    {
+      "version": "0.2.11",
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.2.11",
+      "name": "fit-tabs",
+      "description": "tbas",
+      "repos": "https://github.com/tb-component/pc-tabs.git",
+      "main": "dist/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-tabs\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
