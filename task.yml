@@ -4,8 +4,9 @@ sync:
     # 当版本为 latest 时只会同步最新的那个版本。
     # 可以同时处理多个组件。
     # - whatwg-fetch
-    # - react@0.14.5
+    # - react@0.14.5	
     # 不要删除现有的，免得冲突 merge 不了。工具会自动 diff 只处理本次更新的部分。
     - fiten-scale
     - fit-iframe
     - fit-tabs
+    - emojione
