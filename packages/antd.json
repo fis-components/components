@@ -502,7 +502,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "935c5b92de8634b34123359616f9e4ec00e84350"
     },
     {
       "dependencies": [
