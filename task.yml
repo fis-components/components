@@ -12,3 +12,4 @@ sync:
     - animate.css@latest
     - antd@latest
     - emojione
+    - color@latest
