@@ -9,3 +9,4 @@ sync:
     - fiten-scale
     - fit-iframe
     - fit-tabs
+    - animate.css@latest
