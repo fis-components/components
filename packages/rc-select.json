@@ -37,13 +37,12 @@
   ],
   "tags": [
     {
-      "version": "5.1.2",
-      "build": "rm package.json && npm install --prefix . rc-select@5.1.2",
       "dependencies": [
         "rc-menu@4.x",
         "rc-trigger@1.x",
         "rc-util@3.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-select@5.1.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -78,6 +77,7 @@
           "release": false
         }
       ],
+      "version": "5.1.2",
       "__hash": "b51bb9f884e673564f5e9d132335372722d3bce1"
     },
     {
@@ -90,11 +90,20 @@
       "__hash": "7c0cb3bd714bffa36075651022f17db5592d108a"
     },
     {
+      "version": "5.4.0",
       "build": "rm package.json && npm install --prefix . rc-select@5.4.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-select\\/lib\\/(.*)$",
@@ -116,9 +125,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "5.4.0",
-      "__hash": "c69f798378e901051d324d2b6aaeb97af777c645"
+      ]
     },
     {
       "dependencies": [

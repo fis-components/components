@@ -39,9 +39,7 @@
       "__hash": "2c0ebc65d55d3545bb9a047125b512629f3a60da"
     },
     {
-      "version": "3.6.2",
       "build": "rm package.json && npm install --prefix . rc-table@3.6.2",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -76,12 +74,12 @@
           "release": false
         }
       ],
+      "version": "3.6.2",
+      "dependencies": [],
       "__hash": "36d0b597182c2b5280f97266d49858761aa74f6e"
     },
     {
-      "version": "3.6.3",
       "build": "rm package.json && npm install --prefix . rc-table@3.6.3",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -116,14 +114,26 @@
           "release": false
         }
       ],
+      "version": "3.6.3",
+      "dependencies": [],
       "__hash": "b6d77ed79ca0c7122b311e79cf3b48df1f847889"
     },
     {
+      "version": "3.7.1",
       "build": "rm package.json && npm install --prefix . rc-table@3.7.1",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-table\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-table\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-table\\/lib\\/(.*)$",
@@ -145,9 +155,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "3.7.1",
-      "__hash": "fa30181355c1edf0b2657cea7269ce24cb195cac"
+      ]
     }
   ]
 }

@@ -43,7 +43,6 @@
       "__hash": "61c770ab7c697fd37bb9fe7093f545ca1d1abf7b"
     },
     {
-      "version": "1.3.0",
       "build": "rm package.json && npm install --prefix . rc-notification@1.3.0",
       "mapping": [
         {
@@ -79,50 +78,12 @@
           "release": false
         }
       ],
+      "version": "1.3.0",
       "__hash": "fc174815f63bfd49b190b9dcc6cadedccd39f8ca"
     },
     {
       "version": "1.3.1",
       "build": "rm package.json && npm install --prefix . rc-notification@1.3.1",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-notification\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-notification\\/(assets\\/\\*\\.css)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-notification\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/rc-notification\\/assets\\/(.*)$",
-          "release": "assets/$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "__hash": "dfb2e50355b510737727b35d7f734a54b1a8e005"
-    },
-    {
-      "version": "1.3.2",
-      "build": "rm package.json && npm install --prefix . rc-notification@1.3.2",
       "dependencies": [
         "classnames@~2.2.1",
         "rc-animate@~2.0.2",
@@ -161,7 +122,50 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "dependencies": [
+        "classnames@~2.2.1",
+        "rc-animate@~2.0.2",
+        "rc-util@~3.1.2"
       ],
+      "build": "rm package.json && npm install --prefix . rc-notification@1.3.2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-notification\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-notification\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-notification\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-notification\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.3.2",
       "__hash": "462febf0bc1f31cf08669efc38419f8cebc5636b"
     }
   ]

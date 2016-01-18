@@ -37,7 +37,6 @@
       "__hash": "60b4e71ed658e4d57e19516fb8c285a53b97b104"
     },
     {
-      "version": "3.2.0",
       "build": "rm package.json && npm install --prefix . rc-tooltip@3.2.0",
       "mapping": [
         {
@@ -73,14 +72,24 @@
           "release": false
         }
       ],
+      "version": "3.2.0",
       "__hash": "e8daadcea4acbef8392ac13352d3100a7fad8d50"
     },
     {
+      "version": "3.3.0",
       "build": "rm package.json && npm install --prefix . rc-tooltip@3.3.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tooltip\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tooltip\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-tooltip\\/lib\\/(.*)$",
@@ -102,9 +111,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "3.3.0",
-      "__hash": "8f660934f9041a0b17be48f5a96665a4c8561a58"
+      ]
     }
   ]
 }
