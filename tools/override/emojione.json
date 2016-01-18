@@ -1,0 +1,29 @@
+{
+  "mapping": [
+    {
+      "reg": "^\\/node_modules\\/emojione\\/lib\\/js\\/emojione\\.js$",
+      "release": "emojione.js"
+    },
+    {
+      "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/emojione\\.css$",
+      "release": "emojione.css"
+    },
+    {
+      "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/(.*)$",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^.*$",
+      "release": false
+    }
+  ],
+  "main": "emojione.js"
+}

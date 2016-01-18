@@ -39,123 +39,105 @@
       "build": "rm package.json && npm install --prefix . emojione@1.5.2",
       "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
       "repos": "https://github.com/Ranks/emojione.git",
-      "main": "lib/js/emojione.js",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "reg": "^\\/node_modules\\/emojione\\/lib\\/js\\/emojione\\.js$",
+          "release": "emojione.js"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/emojione\\.css$",
+          "release": "emojione.css"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/(.*)$",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/emojione\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/emojione\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/emojione\\/assets\\/(.*)$",
-          "release": "assets/$1"
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
+          "release": "$&"
         },
         {
           "reg": "^\\/README\\.md$",
           "release": "$&"
         },
         {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
+          "reg": "^.*$",
           "release": false
         }
-      ],
-      "__hash": "7216e453a3a0877c934be27f1f42243bf663724f"
+      ]
     },
     {
       "version": "2.0.0",
       "build": "rm package.json && npm install --prefix . emojione@2.0.0",
       "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
       "repos": "https://github.com/Ranks/emojione.git",
-      "main": "lib/js/emojione.js",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "reg": "^\\/node_modules\\/emojione\\/lib\\/js\\/emojione\\.js$",
+          "release": "emojione.js"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/emojione\\.css$",
+          "release": "emojione.css"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/(.*)$",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/emojione\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/emojione\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/emojione\\/assets\\/(.*)$",
-          "release": "assets/$1"
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
+          "release": "$&"
         },
         {
           "reg": "^\\/README\\.md$",
           "release": "$&"
         },
         {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
+          "reg": "^.*$",
           "release": false
         }
-      ],
-      "__hash": "c0c6e82757145c59cc93462f5cd2487496b938ff"
+      ]
     },
     {
       "version": "2.0.1",
       "build": "rm package.json && npm install --prefix . emojione@2.0.1",
       "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
       "repos": "https://github.com/Ranks/emojione.git",
-      "main": "lib/js/emojione.js",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "reg": "^\\/node_modules\\/emojione\\/lib\\/js\\/emojione\\.js$",
+          "release": "emojione.js"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/emojione\\.css$",
+          "release": "emojione.css"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/(.*)$",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/emojione\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/emojione\\/lib\\/(.*)$",
-          "release": "lib/$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/emojione\\/assets\\/(.*)$",
-          "release": "assets/$1"
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
+          "release": "$&"
         },
         {
           "reg": "^\\/README\\.md$",
           "release": "$&"
         },
         {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
+          "reg": "^.*$",
           "release": false
         }
-      ],
-      "__hash": "d1e86730d9c1cfc3782aded7056bff1992540116"
+      ]
     }
   ]
 }
