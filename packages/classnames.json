@@ -22,8 +22,8 @@
   ],
   "tags": [
     {
-      "version": "2.1.3",
-      "build": "rm package.json && npm install --prefix . classnames@2.1.3",
+      "version": "2.0.0",
+      "build": "rm package.json && npm install --prefix . classnames@2.0.0",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
@@ -34,7 +34,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -53,8 +53,143 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "26c45a2a036531cf8f2db90b6f203f5bdae67261"
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . classnames@2.1.0",
+      "description": "A simple utility for conditionally joining classNames together",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.1.1",
+      "build": "rm package.json && npm install --prefix . classnames@2.1.1",
+      "description": "A simple utility for conditionally joining classNames together",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.1.2",
+      "build": "rm package.json && npm install --prefix . classnames@2.1.2",
+      "description": "A simple utility for conditionally joining classNames together",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.1.3",
+      "build": "rm package.json && npm install --prefix . classnames@2.1.3",
+      "description": "A simple utility for conditionally joining classNames together",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "2.1.4",
@@ -69,7 +204,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -88,8 +223,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "281868e466b4b2d0e4691debe47fcbdc67dd72a9"
+      ]
     },
     {
       "version": "2.1.5",
@@ -104,7 +238,35 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -124,26 +286,26 @@
           "release": false
         }
       ],
-      "__hash": "85ddbcd5f30e46428f6081bda5ab6b789b08b4dd"
-    },
-    {
-      "version": "v2.2.0",
-      "__hash": "267ed814c179b4a1843d1a75bba67899dc248b31"
-    },
-    {
       "version": "2.2.0",
       "build": "rm package.json && npm install --prefix . classnames@2.2.0",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
+      "__hash": "af46df2b6a7ae742de9a87f7fa2cc22b2b603a7d"
+    },
+    {
+      "version": "v2.2.0",
+      "__hash": "267ed814c179b4a1843d1a75bba67899dc248b31"
+    },
+    {
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -163,22 +325,22 @@
           "release": false
         }
       ],
-      "__hash": "2c22e1cd3397f0e6498f515c449aeef46c13538e"
-    },
-    {
       "version": "2.2.1",
       "build": "rm package.json && npm install --prefix . classnames@2.2.1",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
+      "__hash": "3fcd956c4584076a52d35b4201d807b22b9e6ecf"
+    },
+    {
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -198,22 +360,22 @@
           "release": false
         }
       ],
-      "__hash": "89652142eb15c7625fd018257625c71f4c1b9aba"
-    },
-    {
       "version": "2.2.2",
       "build": "rm package.json && npm install --prefix . classnames@2.2.2",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
+      "__hash": "317f0b89a80c969f4ade5397f402b81f9eabb524"
+    },
+    {
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/classnames\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -233,42 +395,13 @@
           "release": false
         }
       ],
-      "__hash": "744bd39d4a82d2151978cba639fe97cf4fed14de"
-    },
-    {
       "version": "2.2.3",
       "build": "rm package.json && npm install --prefix . classnames@2.2.3",
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/classnames\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/classnames\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "__hash": "c6b7df2ff295bf5a41cefbbacc8c1ab1b6986026"
+      "__hash": "dd7b87f5602949fc625d83fe0073f458ba43baea"
     }
   ]
 }

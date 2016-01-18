@@ -7,19 +7,19 @@
   "tag": "master",
   "reposType": "npm",
   "dependencies": [],
+  "hook": ".hook.js",
   "shim": {
     ".hook.js": {
       "content": "var path = require('path');\n\nmodule.exports = function(json, files) {\n  var hasAddons = false;\n\n  Object.keys(files).every(function(subpath) {\n    var cName = path.basename(path.dirname(subpath));\n\n    // some thing like `react-addons-create-fragment`\n    if (cName.substring(0, 13) === 'react-addons-') {\n      hasAddons = true;\n      return false;\n    }\n\n    return true;\n  });\n\n  // 自动切换到 react-with-addons 如果依赖列表中有 react-addons 的话。\n  // 实在不想再把 react 给拆了。\n  if (hasAddons) {\n    json.main = 'react-with-addons.js';\n  }\n};"
     }
   },
-  "hook": ".hook.js",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "reg": "^\\/node_modules\\/react\\/(?:test|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
@@ -45,44 +45,37 @@
   "tags": [
     {
       "version": "0.14.0",
-      "hook": null,
-      "__hash": "b8d5a6556a00a7ec2d1747a5895e46cc9e08affc"
+      "__hash": "78d08d9f6ece7672dd8a517ef8a896a8ab5dee71"
     },
     {
       "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react@0.14.1",
-      "hook": null,
-      "__hash": "302e74f01bcf8fc3b3475e4825747c54dd740e31"
+      "__hash": "903227f1878a6a23a36c6e5306877891ea8c51ef"
     },
     {
       "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "hook": null,
-      "__hash": "32aceadaedadb4e9266897bd39e554b85ce49852"
+      "__hash": "f8f0328c8315350c0fa2fd6366f6916642cedb0e"
     },
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "hook": null,
-      "__hash": "f58eeb8e714ea120d3e94347181f79e624d7e3c8"
+      "__hash": "ee4f012d2818d0f0a92a23a185419ca558da3289"
     },
     {
       "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react@0.14.4",
-      "hook": null,
-      "__hash": "7aace68448f3af6807fcc82bf823440c68e4c017"
+      "__hash": "1d01398019a75514b0bc5ea95b4495d061f4da92"
     },
     {
       "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react@0.14.5",
-      "hook": null,
-      "__hash": "f33d16ba572d730b3e6cd58f3bf162cf9b6dc3dc"
+      "__hash": "5f6ff00a882c75ff5e58d7d0f46708897b48460f"
     },
     {
       "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react@0.14.6",
-      "hook": null,
-      "__hash": "78df71ad0b39f5dabcf3cdc8427756c3d7fe3090"
+      "__hash": "1005bf6d4dda378a2155b66344d35d28ad32cbdc"
     }
   ]
 }

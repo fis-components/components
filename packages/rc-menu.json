@@ -50,7 +50,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -78,7 +78,7 @@
           "release": false
         }
       ],
-      "__hash": "ce091488326716f8ac0bc797f5421fae9f91e380"
+      "__hash": "6a2be34f3588524010458eb612ced1bf4c5981b1"
     },
     {
       "version": "4.0.1",
@@ -94,7 +94,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -122,7 +122,7 @@
           "release": false
         }
       ],
-      "__hash": "2c80daa5d14434d701c39d96c1f38da11547ec12"
+      "__hash": "327718ea696bdcd75e56e24cbe09370eb2e61559"
     },
     {
       "version": "4.0.2",
@@ -134,7 +134,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -158,7 +158,7 @@
           "release": false
         }
       ],
-      "__hash": "8a48f0c679e05a1d82a979f2223b2bb06dbaf438"
+      "__hash": "8418a05327021a794e0083e8b32b9987ada46e49"
     },
     {
       "version": "4.0.3",
@@ -174,7 +174,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -202,7 +202,7 @@
           "release": false
         }
       ],
-      "__hash": "694bf086ba428003285641182e566c7211b045fb"
+      "__hash": "5df27809cdd76a8367df88966893803c608c6d3b"
     },
     {
       "version": "4.1.0",
@@ -218,7 +218,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -246,7 +246,7 @@
           "release": false
         }
       ],
-      "__hash": "c1fa198fc901366cc7c6cd82038f62ae5f45190c"
+      "__hash": "0d5277224e76731c4b29b8fc42ff46d5e22837e2"
     },
     {
       "version": "4.2.0",
@@ -258,7 +258,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -282,7 +282,7 @@
           "release": false
         }
       ],
-      "__hash": "ea920faf58bf6f0307ac2e11dadef9973cd42141"
+      "__hash": "7358027780ffd94b77d24f3e66d820ce2ef84870"
     },
     {
       "version": "4.2.1",
@@ -298,7 +298,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -326,7 +326,7 @@
           "release": false
         }
       ],
-      "__hash": "4b36b0e861116c67be9e4121cb604c09e95b0491"
+      "__hash": "6620a1a3ab8490f63a5d8f9ff25915c34c8d332f"
     },
     {
       "version": "4.3.0",
@@ -342,7 +342,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -370,7 +370,7 @@
           "release": false
         }
       ],
-      "__hash": "2af715caf8e6122631700780fed1cbb45d57e4f2"
+      "__hash": "2ca8c66072e83c49d270e6aa4fd7e63fbaafd1c5"
     },
     {
       "version": "4.3.1",
@@ -386,7 +386,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -414,7 +414,7 @@
           "release": false
         }
       ],
-      "__hash": "f05ff7e8d354895a363953f19125252c5a60eaa0"
+      "__hash": "69d54c66c981ad35425106a3ce7f186bd71b7198"
     },
     {
       "version": "4.3.2",
@@ -430,7 +430,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -458,7 +458,7 @@
           "release": false
         }
       ],
-      "__hash": "1aa131b43280bf4824d99b1c0d9526364f698f8e"
+      "__hash": "a752e0e2c974fc012919532fd85abdc65a93f6e5"
     },
     {
       "version": "4.4.0",
@@ -470,7 +470,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -494,7 +494,7 @@
           "release": false
         }
       ],
-      "__hash": "f2da2784faeb38376e99cb379d8a5ad9b7587c02"
+      "__hash": "0ce709101ebc8557c328006f63485169bb0bfa6e"
     },
     {
       "version": "4.4.1",
@@ -511,7 +511,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -539,7 +539,7 @@
           "release": false
         }
       ],
-      "__hash": "05c8cfb1aebef87976deee69ce95c60121767e64"
+      "__hash": "fa5a362e570a709cbe2dc486a9953c86615a611e"
     },
     {
       "version": "4.4.2",
@@ -556,7 +556,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -584,7 +584,7 @@
           "release": false
         }
       ],
-      "__hash": "40b115bb7805ade794e40cd4787a91ad6d8d6e96"
+      "__hash": "dddee3cb9841713280e8b38026f89ab3e6e1785f"
     },
     {
       "version": "4.4.3",
@@ -601,7 +601,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -629,7 +629,7 @@
           "release": false
         }
       ],
-      "__hash": "81323df639e1f4e29e56328df0567d1385cda750"
+      "__hash": "3dae37338016c03bec62d990636bae03391220cc"
     },
     {
       "version": "4.4.4",
@@ -646,7 +646,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -674,7 +674,7 @@
           "release": false
         }
       ],
-      "__hash": "e9648be6270ad60768111f8eb578efed6a9acf59"
+      "__hash": "dd48c4d2d0b03fd70a7342d88687791c0b4b827b"
     },
     {
       "version": "4.4.5",
@@ -691,7 +691,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -719,7 +719,7 @@
           "release": false
         }
       ],
-      "__hash": "549f0b38eaa5add36ec8198e863c39e79145c675"
+      "__hash": "2bb64a479951eb4ec6455bf6ece498492668ea52"
     },
     {
       "version": "4.5.0",
@@ -736,7 +736,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -764,7 +764,7 @@
           "release": false
         }
       ],
-      "__hash": "61b79eac86d5f5e07063a89641dac8684354d375"
+      "__hash": "64651054b28364406cad24c63eb954bc1cc25c70"
     },
     {
       "version": "4.6.0",
@@ -781,7 +781,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -809,7 +809,7 @@
           "release": false
         }
       ],
-      "__hash": "90a48d44a472764730c9bebe0c855b8dc2bec584"
+      "__hash": "541074a1d3815ba383bd026dc70e10dbcef6ea70"
     },
     {
       "version": "4.6.1",
@@ -826,7 +826,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -854,7 +854,7 @@
           "release": false
         }
       ],
-      "__hash": "efb38057866c5a522166b55780e7539bbbb229f5"
+      "__hash": "5460b1f938b72a09b9f036ada55833aed530aa08"
     },
     {
       "version": "4.6.2",
@@ -871,7 +871,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -899,7 +899,7 @@
           "release": false
         }
       ],
-      "__hash": "b97045cc7e9265f96aabb6ef1f483d8ffc784fc9"
+      "__hash": "2b3f1ad0214c6f06b5b8875084cafdd88546ebcf"
     },
     {
       "version": "4.7.0",
@@ -916,7 +916,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -944,7 +944,7 @@
           "release": false
         }
       ],
-      "__hash": "8d94915deeef17c7693029edb01f10cc4b76e2d9"
+      "__hash": "812dc7fb2afacb94a23832effda3a6d8fd98c969"
     },
     {
       "version": "4.8.0",
@@ -961,7 +961,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -989,7 +989,7 @@
           "release": false
         }
       ],
-      "__hash": "f4fb3b8e2bf7f6fa571768350b9e5b3621d9ce21"
+      "__hash": "f32c400124752e2f29e062785443c5231f025ce3"
     },
     {
       "version": "4.8.1",
@@ -1005,7 +1005,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -1033,24 +1033,23 @@
           "release": false
         }
       ],
-      "__hash": "f7d191e693efb82527df4c312a6a09c7e549cfc3"
+      "__hash": "111bbbb88d96eeb2325c54fccb21648b0c71e33f"
     },
     {
-      "version": "4.8.2",
-      "build": "rm package.json && npm install --prefix . rc-menu@4.8.2",
       "dependencies": [
         "dom-scroll-into-view@1.x",
         "object-assign@4.x",
         "rc-animate@2.x",
         "rc-util@3.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-menu@4.8.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -1078,10 +1077,10 @@
           "release": false
         }
       ],
-      "__hash": "0a9f5e95cc6cc2c6a92fc85761ea5b072d30ff2a"
+      "version": "4.8.2",
+      "__hash": "7970b65550b64dd2bd83441ba41271640da77875"
     },
     {
-      "version": "4.8.3",
       "build": "rm package.json && npm install --prefix . rc-menu@4.8.3",
       "mapping": [
         {
@@ -1089,7 +1088,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -1117,10 +1116,10 @@
           "release": false
         }
       ],
-      "__hash": "1911e2592294dda1fe36f784040f808eb52721fa"
+      "version": "4.8.3",
+      "__hash": "f95c7b87c8113cd32401656962206feed1b54477"
     },
     {
-      "version": "4.8.4",
       "build": "rm package.json && npm install --prefix . rc-menu@4.8.4",
       "mapping": [
         {
@@ -1128,7 +1127,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -1156,7 +1155,8 @@
           "release": false
         }
       ],
-      "__hash": "53376ba7ed0febe110e054e6c65f26c684845ebc"
+      "version": "4.8.4",
+      "__hash": "0644d6da6093074c420ec3fe22f0a0ac85ef8d52"
     },
     {
       "version": "4.9.0",
@@ -1167,7 +1167,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -1195,7 +1195,7 @@
           "release": false
         }
       ],
-      "__hash": "974aae5abe45a9d66fdae3b327574966c20f8433"
+      "__hash": "3dbb73de9d54d7e6d63e528c48eb13c92adc50b3"
     }
   ]
 }

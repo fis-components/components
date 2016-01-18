@@ -1,0 +1,42 @@
+{
+  "build": "rm package.json && npm install --prefix . events@1.1.0",
+  "name": "events",
+  "description": "Node's event emitter for all engines.",
+  "repos": "https://github.com/Gozala/events.git",
+  "main": "events.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/events\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/events\\/(events\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.1.0",
+      "__hash": "32507048a884939f8b715ad8717a9105d8b9b293"
+    }
+  ]
+}

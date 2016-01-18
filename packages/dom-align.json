@@ -39,7 +39,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -64,7 +64,7 @@
         }
       ],
       "main": "index.js",
-      "__hash": "d5efca87d041a9adbd3bed6d768b9b6405b3987f"
+      "__hash": "63ec6f96eab9891f42fd89b970c17efb6de5566b"
     },
     {
       "version": "1.0.1",
@@ -77,7 +77,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -102,7 +102,7 @@
         }
       ],
       "main": "index.js",
-      "__hash": "8898bb31680fbd9af7e153c707fd284bef79de9c"
+      "__hash": "73e6bbd3574dbd1d24f6f91869222254bfa8cdd6"
     },
     {
       "version": "1.0.2",
@@ -115,7 +115,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -140,7 +140,7 @@
         }
       ],
       "main": "index.js",
-      "__hash": "c7d0566f20eeaefb714b568b9bc8416afaf47cca"
+      "__hash": "0d345b2eb53c89591501a4b1cee2332ad69db94d"
     },
     {
       "version": "1.0.3",
@@ -153,7 +153,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -178,7 +178,7 @@
         }
       ],
       "main": "index.js",
-      "__hash": "a30be8bc0e40e6fd464f8cba564b1d26d6ec4abb"
+      "__hash": "cdec274db364278ee4356fc3f7de7dd305c52ff2"
     },
     {
       "version": "1.0.4",
@@ -191,7 +191,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -216,7 +216,7 @@
         }
       ],
       "main": "index.js",
-      "__hash": "6dff09888aeacc2cb568e697ed88f66ff8fe3a27"
+      "__hash": "f0dbad55f33404efae5a626e4f13855f9afa4e81"
     },
     {
       "version": "1.0.5",
@@ -229,7 +229,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -254,7 +254,7 @@
         }
       ],
       "main": "index.js",
-      "__hash": "437e3f6b39b8b339c3153a6819a6b3f33be3ccc3"
+      "__hash": "17f234eb7dfeb5353f9214def9b01e690ff7e38c"
     },
     {
       "version": "1.0.6",
@@ -267,7 +267,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -288,7 +288,7 @@
         }
       ],
       "main": "index.js",
-      "__hash": "2de1d6e646b1afb38c74201616c32d443f687f3e"
+      "__hash": "536b059ea8d1a6ab6d54c8088b07e0545ff85f75"
     },
     {
       "version": "1.0.7",
@@ -301,7 +301,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -321,7 +321,7 @@
           "release": false
         }
       ],
-      "__hash": "f45d71407a97cd9db214ee32d3ce0921788d83fa"
+      "__hash": "e9eae5c8060b1c6bd487f6b0f69dee2994f845c6"
     },
     {
       "version": "1.0.8",
@@ -334,7 +334,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -354,7 +354,7 @@
           "release": false
         }
       ],
-      "__hash": "55a6fc7057f3d6f2ef5fa7b527dcd67de981c0d7"
+      "__hash": "a1020ea9b2b0b9223c01ce73eaefa008c73ee8ac"
     },
     {
       "version": "1.0.9",
@@ -367,7 +367,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -387,7 +387,7 @@
           "release": false
         }
       ],
-      "__hash": "5f1ac789aecffe3252d5ba02ba9625e41d13a6a8"
+      "__hash": "74a6c0b143bfb544aa82a7f531834de915076a30"
     },
     {
       "version": "1.0.10",
@@ -399,7 +399,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -419,7 +419,7 @@
           "release": false
         }
       ],
-      "__hash": "07b384a30e73bcfb73ab807f64a745c0ea5a3e6d"
+      "__hash": "c0178cab4f568299ccfeb417294804108c98a983"
     },
     {
       "version": "1.0.11",
@@ -431,7 +431,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -451,7 +451,7 @@
           "release": false
         }
       ],
-      "__hash": "02c9de50df389a5d4fbdb5ae49203265e4bf97eb"
+      "__hash": "30e85422f028d1e0c934ce1b220b1c40d4438714"
     },
     {
       "version": "1.0.12",
@@ -463,7 +463,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -483,7 +483,7 @@
           "release": false
         }
       ],
-      "__hash": "7b216b1172b3739f32f5e1478cced38183a15cd2"
+      "__hash": "218d32d88f78e5910527903e6a6c51831e719743"
     },
     {
       "version": "1.1.0",
@@ -495,7 +495,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -515,7 +515,7 @@
           "release": false
         }
       ],
-      "__hash": "227501d22faaef3b8edb24cb3a09eadd80447d38"
+      "__hash": "4743c80e4853afde77c53a4070aabefde59b8308"
     },
     {
       "version": "1.2.0",
@@ -527,7 +527,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -547,7 +547,7 @@
           "release": false
         }
       ],
-      "__hash": "fec5a7f085a99e2ef13089645bc577a73cca8132"
+      "__hash": "bf8fbe17b242d453d9efcfc54e1564af5fcd87cf"
     },
     {
       "version": "1.2.1",
@@ -559,7 +559,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -579,7 +579,7 @@
           "release": false
         }
       ],
-      "__hash": "696de03fbef7c888fc6e1aa2e8aa86f1ad85e5d7"
+      "__hash": "f2102e4217315db1073bf116c1dd3663fdbad25a"
     },
     {
       "version": "1.3.0",
@@ -591,7 +591,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/dom-align\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/dom-align\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -611,7 +611,7 @@
           "release": false
         }
       ],
-      "__hash": "0cb7fb9d6fbce9254891e3af26e21c894d63d374"
+      "__hash": "86e4facb71bfdec2ec2bdaf86fad3a288f036906"
     }
   ]
 }

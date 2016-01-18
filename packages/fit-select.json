@@ -301,7 +301,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-select\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -321,7 +321,7 @@
           "release": false
         }
       ],
-      "__hash": "a9ea46e33be33df72a493227e937e31cc7d0b804"
+      "__hash": "7e61b58b1acea789be4f8aceb824f6830d60050e"
     }
   ]
 }

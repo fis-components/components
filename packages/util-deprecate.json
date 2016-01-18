@@ -38,7 +38,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -57,20 +57,17 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "bccd3f48d58b1178a6996aa72fbaf7ca8e4ab2a4"
+      ]
     },
     {
-      "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -90,19 +87,18 @@
           "release": false
         }
       ],
-      "__hash": "c2789ea6390bc116fd573b24fff63804232811b7"
+      "version": "1.0.1",
+      "dependencies": []
     },
     {
-      "version": "1.0.2",
       "build": "rm package.json && npm install --prefix . util-deprecate@1.0.2",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -122,7 +118,8 @@
           "release": false
         }
       ],
-      "__hash": "f96256f29d99aca48166fb91fc12b6903f64a59b"
+      "version": "1.0.2",
+      "dependencies": []
     }
   ]
 }

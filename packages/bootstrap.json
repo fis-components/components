@@ -206,9 +206,10 @@
       "paths": {
         "dist": "."
       },
+      "jspm": null,
       "shim": {
         "bootstrap.js": {
-          "content": "require('./npm.js');"
+          "content": "require('./util.js');\nrequire('./alert.js');\nrequire('./button.js');\nrequire('./carousel.js');\nrequire('./collapse.js');\nrequire('./dropdown.js');\nrequire('./modal.js');\nrequire('./scrollspy.js');\nrequire('./tab.js');\nrequire('./tooltip.js');\nrequire('./popover.js')"
         },
         "alert.js": {
           "deps": [
@@ -300,7 +301,7 @@
           ]
         }
       },
-      "__hash": "ce49c2a94eeef1dae097dbf40818ec7d1076f8c8"
+      "__hash": "71e3a87a203a4d1d34774485cbf916a72c9e3640"
     }
   ]
 }

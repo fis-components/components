@@ -616,11 +616,15 @@ function reg2str(reg) {
 
 function convertFromJspm(json, item, pkgName, pkgPath) {
   var jspm = json.jspm;
-  var main = (json.jspm.main || json.main).replace(/^\.\//, '').replace(/\/$/, '/index');
+  var main = (json.spm && json.spm.main || json.jspm.main || json.main).replace(/^\.\//, '').replace(/\/$/, '/index');
   var pathPrefix = '/node_modules/' + pkgName + '/';
 
-  if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
-    main = path.join(main, 'index');
+  if (!test('-f', path.join(pkgPath, main))) {
+    if (test('-d', path.join(pkgPath, main))) {
+      main = path.join(main, 'index');
+    } else if (jspm.directories && jspm.directories.lib && test('-f', path.join(pkgPath, jspm.directories.lib, main))) {
+      main = path.join(jspm.directories.lib, main);
+    }
   }
 
   if (jspm.ignore) {
@@ -632,7 +636,7 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
         });
       } else {
         item.mapping.push({
-          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(filepath) + ")$",
+          reg: "^\\/node_modules\\/" + escapeReg(item.name) + "\\/(" + escapeReg(filepath) + "(?:\\.js)?)$",
           release: false
         });
       }
@@ -640,7 +644,7 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
   }
 
   var startFiles = [
-    path.join(pkgPath, main)
+    main
   ];
 
 
@@ -704,7 +708,7 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
 
   var ret = collect(pkgPath, startFiles);
   var deps = ret.deps.concat();
-  var rFolder = folders.length ? new RegExp("^(" + folders.map(escapeReg).join('|') + ")", 'i') : null;
+  var rFolder = folders && folders.length ? new RegExp("^(" + folders.map(escapeReg).join('|') + ")", 'i') : null;
 
   ret.enties.forEach(function(shorpath) {
     if (rFolder && rFolder.test(shorpath))return;
@@ -715,7 +719,7 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
     });
   });
 
-  folders.forEach(function(folder) {
+  folders && folders.forEach(function(folder) {
     if (test('-d', path.join(pkgPath, folder))) {
       folder = folder.replace(/\//, '');
       item.mapping.push({
@@ -733,4 +737,6 @@ function convertFromJspm(json, item, pkgName, pkgPath) {
     var name = item.split('@')[0];
     return ~deps.indexOf(name);
   }));
+
+  item.main = main;
 }

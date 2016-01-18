@@ -40,53 +40,235 @@
   },
   "tags": [
     {
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "0.14.0",
-      "__hash": "2627fb9bec2151f5af26d4302ebc0d715699bf39"
+      "__hash": "0a20ef7348eb4e79adabb416f23f5e74a4f222cf"
     },
     {
-      "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.1",
-      "__hash": "c8513cd7ff4561b2379e23f511dee0e09ebbd753"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.14.1",
+      "__hash": "13711d9e379b88476e22d423c2e3128c8a8cc7e3"
     },
     {
-      "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.2",
       "dependencies": [
         "react@^0.14.1"
       ],
-      "__hash": "4041013800d56da3466780ea4e5a2e13ea2bd3ca"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.14.2",
+      "__hash": "b767a7a192eda2baed069e971d2a7ee476f86403"
     },
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
       "dependencies": [
-        "react@^0.14.2"
+        "react@^0.14.3"
       ],
-      "__hash": "a8b8ca7a0089f763b6ed2cd40406819f55e889eb"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "338cf2648efca6333cabf509714706ec32d6bb6d"
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.4",
       "dependencies": [
         "react@^0.14.3"
       ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "0.14.4",
-      "__hash": "d04d86fd544beab1c67e573be96a6bb308d0c9c9"
+      "__hash": "e842c7b4c9a148c81ec57d290c6262b0ac8f56da"
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.5",
       "dependencies": [
         "react@^0.14.4"
       ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "0.14.5",
-      "__hash": "755538e14f56541d431c37d72e11d9311adab3f7"
+      "__hash": "fd7cca66b9066bb41c27f0d121f6d0435d2c463d"
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.6",
       "dependencies": [
         "react@^0.14.5"
       ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dom\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "0.14.6",
-      "__hash": "af849f31bceb849e631c64042bdfb53cf783bc91"
+      "__hash": "2f0acf305858629214bc4644f643a323bf16b54e"
     }
   ]
 }

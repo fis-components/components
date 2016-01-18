@@ -50,7 +50,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -78,7 +78,7 @@
           "release": false
         }
       ],
-      "__hash": "ea49843d19a47ab5a647d12788ce4ab873665d2e"
+      "__hash": "e011d31896088375e023558c8fe3ebf9780ed63b"
     },
     {
       "version": "1.0.1",
@@ -95,7 +95,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -123,7 +123,7 @@
           "release": false
         }
       ],
-      "__hash": "f923d27163c9cb458b644dee8b882bd32b5bffd0"
+      "__hash": "6c27afa230725db3afdfae690fbb0d87b3caba32"
     },
     {
       "version": "1.0.2",
@@ -140,7 +140,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -168,7 +168,7 @@
           "release": false
         }
       ],
-      "__hash": "c483688fe3b9d6d2a45fc5c720993d3dcb8cee10"
+      "__hash": "d75ee61b5151600ac09881b976c3e4d5ca854a63"
     },
     {
       "version": "1.0.3",
@@ -185,7 +185,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -213,7 +213,7 @@
           "release": false
         }
       ],
-      "__hash": "71f054a48c3d30c6745c11d7fafa2da8c013c7b5"
+      "__hash": "869dae9dcce1c4048fe428e7254f1d3a8cc43520"
     },
     {
       "version": "1.0.4",
@@ -229,7 +229,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -257,7 +257,7 @@
           "release": false
         }
       ],
-      "__hash": "d18c395a15b4477fd74554aa10c7fdd6665e73ca"
+      "__hash": "bd018dc967e2ff1bac2a21b1c894c381a809b587"
     },
     {
       "version": "1.0.5",
@@ -274,7 +274,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -302,7 +302,7 @@
           "release": false
         }
       ],
-      "__hash": "6a4003ed0ac42475536ab52fde825095e2313b1c"
+      "__hash": "bcb993c506644f3fbec94381cfab448fa77d62a5"
     },
     {
       "version": "1.0.6",
@@ -313,7 +313,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -341,7 +341,7 @@
           "release": false
         }
       ],
-      "__hash": "3de9656f41d58a2c9b728910767cf46e7dba3d53"
+      "__hash": "d873e23984ceaed73eadf7ca25e2a8067844603d"
     },
     {
       "version": "1.1.0",
@@ -352,7 +352,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -380,7 +380,7 @@
           "release": false
         }
       ],
-      "__hash": "57e37017ab1afbe52d47548a753d29d3c3a95fdd"
+      "__hash": "0a46511021d85a9e45c623e8d264f7db6e83ddcf"
     }
   ]
 }

@@ -29,48 +29,16 @@
   ],
   "tags": [
     {
-      "repos": "https://github.com/lodash/lodash",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
       "version": "3.0.0",
-      "dependencies": [],
-      "main": "index.js",
-      "__hash": "4831039a40f3b8cc65a001476a4be18e6aa47534"
-    },
-    {
       "repos": "https://github.com/lodash/lodash",
-      "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.1",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -90,21 +58,20 @@
           "release": false
         }
       ],
+      "main": "index.js"
+    },
+    {
       "version": "3.0.1",
-      "dependencies": [],
-      "main": "index.js",
-      "__hash": "f1ead7599b35fc3367496c1fb76deb8482f15972"
-    },
-    {
+      "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.1",
       "repos": "https://github.com/lodash/lodash",
-      "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.2",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -124,10 +91,40 @@
           "release": false
         }
       ],
+      "main": "index.js"
+    },
+    {
       "version": "3.0.2",
+      "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.2",
+      "repos": "https://github.com/lodash/lodash",
       "dependencies": [],
-      "main": "index.js",
-      "__hash": "1636264c36034ce1fd70b88459ded3417072e363"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index.js"
     },
     {
       "version": "3.0.3",
@@ -140,7 +137,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -160,18 +157,19 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "5e2458c09e92233e1c1005bc00789deb650f720d"
+      "main": "index.js"
     },
     {
+      "version": "3.0.4",
       "build": "rm package.json && npm install --prefix . lodash.isarray@3.0.4",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isarray\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -191,10 +189,7 @@
           "release": false
         }
       ],
-      "version": "3.0.4",
-      "dependencies": [],
-      "main": "index.js",
-      "__hash": "dca925eb7c1bd92e11dc00876c35761e95d3ce44"
+      "main": "index.js"
     }
   ]
 }

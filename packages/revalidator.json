@@ -1,0 +1,42 @@
+{
+  "build": "rm package.json && npm install --prefix . revalidator@0.3.1",
+  "name": "revalidator",
+  "description": "A cross-browser / node.js validator powered by JSON Schema",
+  "repos": "https://github.com/flatiron/revalidator.git",
+  "main": "lib/revalidator",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/revalidator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/revalidator\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.3.1",
+      "__hash": "52512b77cdab8f861a9b948bdd0293abaf3b90e8"
+    }
+  ]
+}
