@@ -10,3 +10,10 @@ sync:
     - fit-iframe
     - fit-tabs
     - emojione
+    - util-deprecate
+    - rc-table
+    - rc-time-picker
+    - rc-tree
+    - rc-tree-select
+    - rc-trigger
+    - antd
