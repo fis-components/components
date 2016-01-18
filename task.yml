@@ -10,3 +10,4 @@ sync:
     - fit-iframe
     - fit-tabs
     - animate.css@latest
+    - antd@latest
