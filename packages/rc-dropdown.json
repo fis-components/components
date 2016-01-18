@@ -50,6 +50,14 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/rc-dropdown\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dropdown\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
           "reg": "^\\/node_modules\\/rc-dropdown\\/lib\\/(.*)$",
           "release": "lib/$1"
         },
@@ -70,7 +78,7 @@
           "release": false
         }
       ],
-      "__hash": "ceff97dd1d4b5b9636a5f57cd69d86eb3cf98926"
+      "__hash": "2163afc658ace2a457d6f4d6ce4918f06186ea35"
     }
   ]
 }

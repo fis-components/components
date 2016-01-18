@@ -3,11 +3,13 @@ var path = require('path');
 var exists = fs.existsSync;
 var write = fs.writeFileSync;
 var read = fs.readFileSync;
+var finder = require('./finder.js');
 var esprima = require('esprima');
 var estraverse = require('estraverse');
 var escodegen = require('escodegen');
 var escope = require('escope');
 var esformatter = require('esformatter');
+var browserfy = require('./browserfy');
 
 // 转换 js
 module.exports = function(options, callback) {
@@ -27,83 +29,96 @@ module.exports = function(options, callback) {
                 content = transform(content, options);
             }
             
-            content = unsupportcode(content);
+            content = browserfy(content);
 
             write(info.dest || info.absolute, content);
         } catch (e) {
+            console.log(e.stack);
             console.log('Got Eroor: %s while converting %s', e.message, info.dest || info.absolute);
         }
     });
 
     if (options.config && options.config.shim) {
         var shim = options.config.shim;
-
+        
         Object.keys(shim).forEach(function(key) {
             var obj = shim[key];
-            var filepath = path.join(options.dir, key);
+            var files = finder(options.dir, key).map(function(item) {
+                return item.relative;
+            });
 
-            if (!exists(filepath) && !obj.content) {
-                return;
+            if (!files.length) {
+                files = [key];
             }
 
-            if (Array.isArray(obj)) {
-                obj = {
-                    deps: obj
+            var replaceFile = function(key) {
+                var filepath = path.join(options.dir, key);
+
+                if (!exists(filepath) && !obj.content) {
+                    return;
                 }
-            }
 
-            var prefix = '';
-            var affix = '';
+                if (Array.isArray(obj)) {
+                    obj = {
+                        deps: obj
+                    }
+                }
 
-            if (obj.deps) {
-                // require 同时赋值给某个变量。
-                var vars = obj.vars || [];
+                var prefix = '';
+                var affix = '';
 
-                obj.deps.forEach(function(dep, i) {
-                    prefix += (vars[i] ? ('var ' + vars[i] +' = ') : '') + 'require(\'' + dep + '\');\n';
-                });
-            }
+                if (obj.deps) {
+                    // require 同时赋值给某个变量。
+                    var vars = obj.vars || [];
 
-            if (obj.init) {
-                affix = 'modules.exports = ('+obj.init+')('+(function() {
-                    var deps = [];
+                    obj.deps.forEach(function(dep, i) {
+                        prefix += (vars[i] ? ('var ' + vars[i] +' = ') : '') + 'require(\'' + dep + '\');\n';
+                    });
+                }
 
-                    if (obj.deps) {
-                        obj.deps.forEach(function(dep) {
-                            deps.push('require(\''+ dep +'\')');
-                        });
+                if (obj.init) {
+                    affix = 'modules.exports = ('+obj.init+')('+(function() {
+                        var deps = [];
+
+                        if (obj.deps) {
+                            obj.deps.forEach(function(dep) {
+                                deps.push('require(\''+ dep +'\')');
+                            });
+                        }
+
+                        return deps.join(', ');
+                    })()+');\n' + affix;
+                } else if (obj.exports) {
+                    affix = '\nmodule.exports = ' + obj.exports + ';\n' + affix;
+                }
+
+                var contents = prefix + (obj.content || read(filepath, 'utf8')) + affix;
+
+                if (obj['replace']) {
+                    var replace = obj['replace'];
+
+                    if (!Array.isArray(replace)) {
+                        replace = [replace];
                     }
 
-                    return deps.join(', ');
-                })()+');\n' + affix;
-            } else if (obj.exports) {
-                affix = '\nmodule.exports = ' + obj.exports + ';\n' + affix;
-            }
+                    replace.forEach(function(item) {
+                        if (/^\/(.*)\/([isg]*)$/.test(item.from)) {
+                            item.from = new RegExp(RegExp.$1, RegExp.$2);
+                        }
 
-            var contents = prefix + (obj.content || read(filepath, 'utf8')) + affix;
-
-            if (obj['replace']) {
-                var replace = obj['replace'];
-
-                if (!Array.isArray(replace)) {
-                    replace = [replace];
+                        contents = contents.replace(item.from, item.to);
+                    });
                 }
 
-                replace.forEach(function(item) {
-                    contents = contents.replace(item.from, item.to);
-                });
+                write(filepath, contents);
             }
 
-            write(filepath, contents);
+            files.forEach(replaceFile);
         });
     }
 
     callback();
 };
-
-function unsupportcode(contents) {
-    return contents.replace(/process\.env\.NODE_ENV\s?\!==\s?('|")production\1/ig, 'true');
-}
 
 function transform(data, options) {
 

@@ -142,6 +142,83 @@
       "__hash": "549b095a73f046c78510c17c9a78577781529c49"
     },
     {
+      "version": "0.10.5",
+      "build": "rm package.json && npm install --prefix . antd@0.10.5",
+      "dependencies": [
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.0.1",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~4.0.0",
+        "rc-checkbox@~1.1.1",
+        "rc-collapse@~1.4.3",
+        "rc-dialog@~5.2.2",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.8.1",
+        "rc-notification@~1.3.0",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.1.2",
+        "rc-slider@~3.1.2",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.6.2",
+        "rc-tabs@~5.5.0",
+        "rc-time-picker@~0.7.1",
+        "rc-tooltip@~3.2.0",
+        "rc-tree@~0.19.0",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "reqwest@~2.0.5",
+        "semver@~5.0.3",
+        "util-deprecate@~1.0.1",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "b2ea156e7186f8e7bea31f129d7e388d82b83c39"
+    },
+    {
       "build": "rm package.json && npm install --prefix . antd@0.11.0-beta1",
       "version": "0.11.0-beta1",
       "__hash": "e8c7ecfc2cd8341c59507fc8f127040af53ac70c"
@@ -185,7 +262,6 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
-      "version": "0.11.0-beta6",
       "build": "rm package.json && npm install --prefix . antd@0.11.0-beta6",
       "mapping": [
         {
@@ -213,6 +289,7 @@
           "release": false
         }
       ],
+      "version": "0.11.0-beta6",
       "__hash": "9a2f4e3d609abc26f5b82a1bd88dc78f495842f1"
     },
     {
@@ -254,7 +331,6 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
-      "version": "0.11.0",
       "build": "rm package.json && npm install --prefix . antd@0.11.0",
       "mapping": [
         {
@@ -282,6 +358,7 @@
           "release": false
         }
       ],
+      "version": "0.11.0",
       "__hash": "966995f1e42413e27a59db48a04bb222eab3a450"
     },
     {
@@ -323,7 +400,6 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
-      "version": "0.11.1",
       "build": "rm package.json && npm install --prefix . antd@0.11.1",
       "mapping": [
         {
@@ -351,7 +427,554 @@
           "release": false
         }
       ],
+      "version": "0.11.1",
       "__hash": "76cc9772ff67a0b466499667fc73105ddf4d98c9"
+    },
+    {
+      "dependencies": [
+        "array-tree-filter@~1.0.0",
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.1.0",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~5.2.0",
+        "rc-cascader@~0.6.0",
+        "rc-checkbox@~1.2.0",
+        "rc-collapse@~1.4.4",
+        "rc-dialog@~5.3.1",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.9.0",
+        "rc-notification@~1.3.1",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.6.1",
+        "rc-slider@~3.3.0",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.7.1",
+        "rc-tabs@~5.6.0",
+        "rc-time-picker@~1.0.0",
+        "rc-tooltip@~3.3.0",
+        "rc-tree@^0.25.3",
+        "rc-tree-select@^0.3.3",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "semver@~5.1.0",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.12.0-beta1",
+      "__hash": "7856cf7d677feb614364165247f559da7ead2951"
+    },
+    {
+      "dependencies": [
+        "array-tree-filter@~1.0.0",
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.1.0",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~5.2.0",
+        "rc-cascader@~0.5.0",
+        "rc-checkbox@~1.1.1",
+        "rc-collapse@~1.4.4",
+        "rc-dialog@~5.2.2",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.9.0",
+        "rc-notification@~1.3.1",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.4.0",
+        "rc-slider@~3.3.0",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.7.1",
+        "rc-tabs@~5.6.0",
+        "rc-time-picker@~1.0.0",
+        "rc-tooltip@~3.3.0",
+        "rc-tree@^0.23.1",
+        "rc-tree-select@^0.3.3",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "semver@~5.0.3",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.12.0-beta2",
+      "__hash": "b5d04ea3902f41d1ce8677e9305fda6a107d8e46"
+    },
+    {
+      "dependencies": [
+        "array-tree-filter@~1.0.0",
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.1.0",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~5.2.0",
+        "rc-cascader@~0.5.0",
+        "rc-checkbox@~1.1.1",
+        "rc-collapse@~1.4.4",
+        "rc-dialog@~5.2.2",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.9.0",
+        "rc-notification@~1.3.1",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.4.0",
+        "rc-slider@~3.3.0",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.7.1",
+        "rc-tabs@~5.6.0",
+        "rc-time-picker@~1.0.0",
+        "rc-tooltip@~3.3.0",
+        "rc-tree@^0.23.1",
+        "rc-tree-select@^0.3.3",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "semver@~5.0.3",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta3",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.12.0-beta3",
+      "__hash": "1116a85f5a56d2317aaefc9389ed696c8c31727f"
+    },
+    {
+      "dependencies": [
+        "array-tree-filter@~1.0.0",
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.1.0",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~5.2.0",
+        "rc-cascader@~0.5.0",
+        "rc-checkbox@~1.1.1",
+        "rc-collapse@~1.4.4",
+        "rc-dialog@~5.2.2",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.9.0",
+        "rc-notification@~1.3.1",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.4.0",
+        "rc-slider@~3.3.0",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.7.1",
+        "rc-tabs@~5.6.0",
+        "rc-time-picker@~1.0.0",
+        "rc-tooltip@~3.3.0",
+        "rc-tree@^0.23.1",
+        "rc-tree-select@^0.3.3",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "semver@~5.0.3",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.12.0-beta4",
+      "__hash": "3e55e9e746299bfc7bdef858c0b2a4786ff12cb5"
+    },
+    {
+      "dependencies": [
+        "array-tree-filter@~1.0.0",
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.1.0",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~5.2.0",
+        "rc-cascader@~0.5.0",
+        "rc-checkbox@~1.1.1",
+        "rc-collapse@~1.4.4",
+        "rc-dialog@~5.2.2",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.9.0",
+        "rc-notification@~1.3.1",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.4.0",
+        "rc-slider@~3.3.0",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.7.1",
+        "rc-tabs@~5.6.0",
+        "rc-time-picker@~1.0.0",
+        "rc-tooltip@~3.3.0",
+        "rc-tree@^0.23.1",
+        "rc-tree-select@^0.3.3",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "semver@~5.0.3",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta5",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.12.0-beta5",
+      "__hash": "cfd42a122ded8812b739ffcc4d02cbb588932529"
+    },
+    {
+      "dependencies": [
+        "array-tree-filter@~1.0.0",
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.1.0",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~5.2.0",
+        "rc-cascader@~0.6.0",
+        "rc-checkbox@~1.2.0",
+        "rc-collapse@~1.4.4",
+        "rc-dialog@~5.3.1",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.9.0",
+        "rc-notification@~1.3.1",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.6.1",
+        "rc-slider@~3.3.0",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.7.1",
+        "rc-tabs@~5.6.0",
+        "rc-time-picker@~1.0.0",
+        "rc-tooltip@~3.3.0",
+        "rc-tree@^0.23.1",
+        "rc-tree-select@^0.3.3",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "semver@~5.1.0",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta6",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.12.0-beta6",
+      "__hash": "06315e6e16274569c1b988a47b442c8e92229841"
+    },
+    {
+      "dependencies": [
+        "array-tree-filter@~1.0.0",
+        "classnames@~2.2.0",
+        "css-animation@1.1.x",
+        "gregorian-calendar@~4.1.0",
+        "gregorian-calendar-format@~4.0.4",
+        "object-assign@~4.0.1",
+        "rc-animate@~2.0.2",
+        "rc-calendar@~5.2.0",
+        "rc-cascader@~0.6.0",
+        "rc-checkbox@~1.2.0",
+        "rc-collapse@~1.4.4",
+        "rc-dialog@~5.3.1",
+        "rc-dropdown@~1.4.3",
+        "rc-form-validation@~2.5.0",
+        "rc-input-number@~2.4.1",
+        "rc-menu@~4.9.0",
+        "rc-notification@~1.3.1",
+        "rc-pagination@~1.3.5",
+        "rc-progress@~1.0.4",
+        "rc-queue-anim@~0.11.2",
+        "rc-radio@~2.0.0",
+        "rc-select@~5.6.1",
+        "rc-slider@~3.3.0",
+        "rc-steps@~1.4.1",
+        "rc-switch@~1.3.1",
+        "rc-table@~3.7.1",
+        "rc-tabs@~5.6.0",
+        "rc-time-picker@~1.0.0",
+        "rc-tooltip@~3.3.0",
+        "rc-tree@^0.25.3",
+        "rc-tree-select@^0.3.3",
+        "rc-upload@~1.7.0",
+        "rc-util@~3.0.1",
+        "react-slick@~0.9.1",
+        "semver@~5.1.0",
+        "velocity-animate@~1.2.2",
+        "warning@~2.1.0"
+      ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.0-beta7",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/style\\/(.*)$",
+          "release": "style/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.12.0-beta7",
+      "__hash": "4baaf2a534da2a0e8f589df9d83c81fea20e5a06"
     }
   ]
 }

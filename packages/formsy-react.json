@@ -1,14 +1,22 @@
 {
-  "repos": "https://github.com/christianalfoni/formsy-react.git",
-  "name": "formsy-react",
-  "main": "lib/index.js",
   "build": "rm package.json && npm install --prefix . formsy-react@0.17.0",
+  "name": "formsy-react",
+  "description": "A form input builder and validator for React JS",
+  "repos": "https://github.com/christianalfoni/formsy-react.git",
+  "main": "lib/main.js",
+  "tag": "master",
+  "reposType": "npm",
   "dependencies": [
-    "form-data-to-object@^0.2.0"
+    "form-data-to-object@^0.1.0",
+    "react@^0.14.0"
   ],
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/formsy-react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
@@ -16,20 +24,26 @@
       "release": "lib/$1"
     },
     {
+      "reg": "^\\/node_modules\\/formsy-react\\/release\\/(.*)$",
+      "release": "release/$1"
+    },
+    {
       "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
-  "umd2commonjs": false,
   "tags": [
     {
-      "version": "v0.17.0",
-      "umd2commonjs": false,
-      "__hash": "e0269d24327f1f25913b58ced2f80917285d4b51"
+      "version": "0.17.0",
+      "__hash": "fa072cadfb2d3129e0a79968f1e65739c20154d4"
     }
   ]
 }

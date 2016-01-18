@@ -395,11 +395,7 @@
     {
       "main": "lib/index.js",
       "dependencies": [
-        "classnames@^2.2.1",
-        "fit-style@^1.1.9",
-        "jquery@^2.1.4",
-        "lodash@^3.10.1",
-        "react@^0.14.3"
+        "fit-style@^1.1.9"
       ],
       "build": "rm package.json && npm install --prefix . fit-input@1.1.10",
       "mapping": [
@@ -408,7 +404,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -429,26 +425,21 @@
         }
       ],
       "version": "1.1.10",
-      "__hash": "168dadcc5c2b665b738e611cf3bd5cc7683e81c8"
+      "__hash": "1cac233e29f028c46da63f2f8fa07cb8d854b192"
     },
     {
-      "version": "1.1.11",
-      "build": "rm package.json && npm install --prefix . fit-input@1.1.11",
       "main": "lib/index.js",
       "dependencies": [
-        "classnames@^2.2.1",
-        "fit-style@^1.1.9",
-        "jquery@^2.1.4",
-        "lodash@^3.10.1",
-        "react@^0.14.3"
+        "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -468,7 +459,161 @@
           "release": false
         }
       ],
-      "__hash": "666a012a2eeccf712d64b27b4d645fae5f4935f9"
+      "version": "1.1.11",
+      "__hash": "6e12fbc1b668074474b34ac3637e6d305ab1018f"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.10"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.12",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.12",
+      "__hash": "4025668ef0d4e2fab41c34917c43041391278f7f"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.10",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.13",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.13",
+      "__hash": "e2b66c41d371b87224c0c7194bc0b989f474a700"
+    },
+    {
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.10",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.14",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.14",
+      "__hash": "831a4bcc4d850aa8ba11d67472ee1f6d8b793b09"
+    },
+    {
+      "version": "1.1.15",
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.15",
+      "repos": "https://github.com/tb-component/pc-input.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.10",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "14265760baf8adcdd2aa0fe45a934c0547ea320f"
     }
   ]
 }

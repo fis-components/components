@@ -7,8 +7,8 @@
   "tag": "master",
   "reposType": "npm",
   "dependencies": [
-    "component-emitter@^1.1.2",
-    "reduce-component@^1.0.1"
+    "component-emitter@1.1.2",
+    "reduce-component@1.0.1"
   ],
   "mapping": [
     {
@@ -16,28 +16,12 @@
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/superagent\\/(?:test|build|dist\\/cdn)\\/",
+      "reg": "^\\/node_modules\\/superagent\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
       "reg": "^\\/node_modules\\/superagent\\/lib\\/(.*)$",
       "release": "lib/$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(lib\\/client\\.js)$",
-      "release": "$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(component-emitter)$",
-      "release": "$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(reduce-component)$",
-      "release": "$1"
-    },
-    {
-      "reg": "^\\/node_modules\\/superagent\\/(test\\/support\\/blank\\.js)$",
-      "release": "$1"
     },
     {
       "reg": "^\\/README\\.md$",
@@ -54,20 +38,18 @@
   ],
   "paths": {
     "./lib/node/index.js": "./lib/client.js",
-    "emitter": "component-emitter",
-    "reduce": "reduce-component",
     "./test/support/server.js": "./test/support/blank.js"
   },
   "shim": {
-    "lib/client.js": {
+    "**/*.js": {
       "replace": [
         {
-          "from": "'emitter'",
-          "to": "'component-emitter'"
+          "from": "/\\brequire\\s*\\(\\s*('|\")emitter\\b/ig",
+          "to": "require($1component-emitter"
         },
         {
-          "from": "'reduce'",
-          "to": "'reduce-component'"
+          "from": "/\\brequire\\s*\\(\\s*('|\")reduce\\b/ig",
+          "to": "require($1reduce-component"
         }
       ]
     }
@@ -75,7 +57,7 @@
   "tags": [
     {
       "version": "1.6.1",
-      "__hash": "19da94e0a368b1b8138c03569d349e1ea0afd2fe"
+      "__hash": "126e30f1fecee210cbe6f4cfb302abfdddb886ad"
     }
   ]
 }

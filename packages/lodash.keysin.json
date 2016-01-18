@@ -24,8 +24,343 @@
   ],
   "tags": [
     {
+      "version": "3.0.0",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.0",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0",
+        "lodash.support@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "deef3ff5310a80cfdaec411695e34dfe79ec202f"
+    },
+    {
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.1",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "406b194f26e08ee219411684c9502be0551f0925"
+    },
+    {
+      "version": "3.0.2",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.2",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "d6ca3871972e22011cc5c873741a00f222c2a92b"
+    },
+    {
+      "version": "3.0.3",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.3",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "745128fb31b31a9529db2b090fad46375b9be98d"
+    },
+    {
+      "version": "3.0.4",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.4",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "e94f92aab935c2add53748f2a2cb09be40c3bea1"
+    },
+    {
+      "version": "3.0.5",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.5",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "ee6454ad69f0988d0b4caf501b5a6a305624f609"
+    },
+    {
+      "version": "3.0.6",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.6",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "561832b9a497d3f275d09107f2c4c4afe13bd2a8"
+    },
+    {
+      "version": "3.0.7",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.7",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "14923c167dfaf4d4a2ea4af51f933cbb86928a29"
+    },
+    {
       "version": "3.0.8",
-      "__hash": "5c55da768a38c28f1f02b8a8b167f8ce61e0cefd"
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash.isarguments@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "2c1cfc7fbfc0c0642faf2b1c05a0d522ca528b85"
     }
   ]
 }

@@ -60,6 +60,10 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/rc-upload\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/rc-upload\\/lib\\/(.*)$",
           "release": "lib/$1"
         },
@@ -76,7 +80,69 @@
           "release": false
         }
       ],
-      "__hash": "7dbd3e5a4cbf6e1be01e6f8fd1d068627efc1d1c"
+      "__hash": "96d4bc16911414255914d39adcb180de4e37d70a"
+    },
+    {
+      "version": "1.7.1",
+      "build": "rm package.json && npm install --prefix . rc-upload@1.7.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-upload\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-upload\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "a63da672bd270121f5964dbf2b7b3e24e506fcf8"
+    },
+    {
+      "version": "1.7.2",
+      "build": "rm package.json && npm install --prefix . rc-upload@1.7.2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-upload\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-upload\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "3900278795d024de564ba91ce311b529a7abf2f2"
     }
   ]
 }

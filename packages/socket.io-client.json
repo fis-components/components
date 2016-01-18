@@ -1,0 +1,52 @@
+{
+  "build": "rm package.json && npm install --prefix . socket.io-client@1.4.0",
+  "name": "socket.io-client",
+  "description": "[![Build Status](https://secure.travis-ci.org/socketio/socket.io-client.svg)](http://travis-ci.org/socketio/socket.io-client) ![NPM version](https://badge.fury.io/js/socket.io-client.svg) ![Downloads](http://img.shields.io/npm/dm/socket.io-client.svg?styl",
+  "repos": "https://github.com/Automattic/socket.io-client.git",
+  "main": "socket.io.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/socket\\.io-client\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/socket\\.io-client\\/(socket\\.io\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.4.0",
+      "__hash": "e61b3644e6cad363786bdae120cb6038ffdab04d"
+    },
+    {
+      "version": "1.4.1",
+      "build": "rm package.json && npm install --prefix . socket.io-client@1.4.1",
+      "__hash": "b1ea8f27008a121f97793bae69f44c96fdf4cae0"
+    },
+    {
+      "version": "1.4.2",
+      "build": "rm package.json && npm install --prefix . socket.io-client@1.4.2",
+      "__hash": "130a9bd4b89295417ad5d4d7f0ebc293671d50b5"
+    }
+  ]
+}

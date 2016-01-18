@@ -35,14 +35,39 @@
       "__hash": "c4c7d9d510603c7099e0e5b2907e9ab988a1b716"
     },
     {
-      "version": "2.0.0",
       "build": "rm package.json && npm install --prefix . warning@2.0.0",
+      "version": "2.0.0",
       "__hash": "9fbe60f7b70082b077d7fdeec02f355ecfb4f825"
     },
     {
       "version": "2.1.0",
       "build": "rm package.json && npm install --prefix . warning@2.1.0",
-      "__hash": "ba6efd7766bb08de9b3c54df12c316f7f207d8d3"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/warning\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/warning\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

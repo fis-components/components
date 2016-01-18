@@ -1,38 +1,38 @@
 {
-  "main": "bootstrap.js",
-  "mapping": [{
-      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-      "release": false
-    }, {
-      "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/umd\\/(.*)$",
-      "release": "$1"
-    }, {
-      "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/(.*)$",
-      "release": "$1"
-    }, {
-      "reg": "^\\/node_modules\\/bootstrap\\/dist\\/(.*)$",
-      "release": "$1"
-    },
-
-    {
-      "reg": "^\\/README\\.md$",
-      "release": "$&"
-    }, {
-      "reg": "^\\/LICENSE\\.md$",
-      "release": "$&"
-    }, {
-      "reg": "\\.*",
-      "release": false
-    }
-  ],
-  "dependencies": [
-    "jquery@>=1.9.1"
-  ],
-  "paths": {
-    "dist": "."
-  },
   "tags": {
     ">=3.0.0 < 4.0.0": {
+      "main": "bootstrap.js",
+      "mapping": [{
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        }, {
+          "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/umd\\/(.*)$",
+          "release": "$1"
+        }, {
+          "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/(.*)$",
+          "release": "$1"
+        }, {
+          "reg": "^\\/node_modules\\/bootstrap\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        }, {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        }, {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "dependencies": [
+        "jquery@>=1.9.1"
+      ],
+      "paths": {
+        "dist": "."
+      },
       "shim": {
         "bootstrap.js": {
           "content": "require('./alert.js');\nrequire('./button.js');\nrequire('./carousel.js');\nrequire('./collapse.js');\nrequire('./dropdown.js');\nrequire('./modal.js');\nrequire('./tooltip.js');\nrequire('./popover.js');\nrequire('./scrollspy.js');\nrequire('./tab.js');\nrequire('./affix.js');",
@@ -151,9 +151,42 @@
     },
 
     ">=4.0.0-alpha.1": {
+      "main": "bootstrap.js",
+      "mapping": [{
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        }, {
+          "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/umd\\/(.*)$",
+          "release": "$1"
+        }, {
+          "reg": "^\\/node_modules\\/bootstrap\\/dist\\/js\\/(.*)$",
+          "release": "$1"
+        }, {
+          "reg": "^\\/node_modules\\/bootstrap\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        }, {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        }, {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "dependencies": [
+        "jquery@>=1.9.1"
+      ],
+      "paths": {
+        "dist": "."
+      },
+      "jspm": null,
       "shim": {
         "bootstrap.js": {
-          "content": "require('./npm.js');"
+          "content": "require('./util.js');\nrequire('./alert.js');\nrequire('./button.js');\nrequire('./carousel.js');\nrequire('./collapse.js');\nrequire('./dropdown.js');\nrequire('./modal.js');\nrequire('./scrollspy.js');\nrequire('./tab.js');\nrequire('./tooltip.js');\nrequire('./popover.js')"
         },
         "alert.js": {
           "deps": [

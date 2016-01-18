@@ -165,10 +165,23 @@
     {
       "version": "0.19.0",
       "build": "rm package.json && npm install --prefix . rc-tree@0.19.0",
+      "dependencies": [
+        "object-assign@4.x",
+        "rc-animate@2.x",
+        "rc-util@3.x"
+      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-tree\\/lib\\/(.*)$",
@@ -191,15 +204,28 @@
           "release": false
         }
       ],
-      "__hash": "de5df88313c0dedd6fb7c8a6fa2c8ba338882a42"
+      "__hash": "3bc5e252c0062283a02f02c16d3e513cace97aea"
     },
     {
       "version": "0.19.1",
       "build": "rm package.json && npm install --prefix . rc-tree@0.19.1",
+      "dependencies": [
+        "object-assign@4.x",
+        "rc-animate@2.x",
+        "rc-util@3.x"
+      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-tree\\/lib\\/(.*)$",
@@ -222,7 +248,7 @@
           "release": false
         }
       ],
-      "__hash": "179ed79ad94ae82532e21ebc2dc7fddee9d3dce2"
+      "__hash": "f320ac6117f5e87793895efbb20729f7bf606706"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree@0.20.0",
@@ -248,6 +274,123 @@
       "build": "rm package.json && npm install --prefix . rc-tree@0.20.4",
       "version": "0.20.4",
       "__hash": "cbe2015c6d6a0923e7a4272529f5b538423de082"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . rc-tree@0.25.4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.25.4",
+      "__hash": "adb4c4b35a8bb225f11330067406ef3961db9016"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . rc-tree@0.25.5",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.25.5",
+      "__hash": "8ec4d815f7f539b466750f393af33ab815cc5ea9"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . rc-tree@0.25.6",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.25.6",
+      "__hash": "97069507995c7939b3d8c268899b8629d2fd99e4"
     }
   ]
 }

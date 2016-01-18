@@ -27,6 +27,82 @@
   },
   "tags": [
     {
+      "version": "0.14.0",
+      "build": "rm package.json && npm install --prefix . react-addons-update@0.14.0",
+      "description": "This package provides the React updates add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "629205a8b013d6146199c57605c901401cf716ec"
+    },
+    {
+      "version": "0.14.1",
+      "build": "rm package.json && npm install --prefix . react-addons-update@0.14.1",
+      "description": "This package provides the React updates add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "0e2458a050e581018e5bc70c85407cc40e463ad0"
+    },
+    {
       "build": "rm package.json && npm install --prefix . react-addons-update@0.14.2",
       "dependencies": [
         "react@^0.14.2"
@@ -35,8 +111,79 @@
       "__hash": "d92b32a5a71c697ac5be88ff7d99c9d3b312a692"
     },
     {
+      "version": "0.14.2",
+      "build": "rm package.json && npm install --prefix . react-addons-update@0.14.2",
+      "description": "This package provides the React updates add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "7e6d9c5bf0e1b5924dde9a1ed091b6ebb2b98b11"
+    },
+    {
       "version": "v0.14.3",
       "__hash": "2342f082deb5720a0c67a4beb2c791da47bc3877"
+    },
+    {
+      "version": "0.14.3",
+      "description": "This package provides the React updates add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "69337862e2f90c259be80921e2b735c6467401fa"
     },
     {
       "version": "0.14.4",
@@ -53,11 +200,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-update\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-update\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -73,8 +220,7 @@
           "release": false
         }
       ],
-      "shim": null,
-      "__hash": "fc41d000cb12009947571a61c2b6b250841f18b4"
+      "__hash": "fa3a2a1a8466c87033f0d0ebcf964ecad12b35a1"
     },
     {
       "version": "0.14.5",
@@ -91,11 +237,11 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-update\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/react-addons-update\\/(index\\.js)$",
           "release": "$1"
         },
         {
@@ -111,8 +257,44 @@
           "release": false
         }
       ],
-      "shim": null,
-      "__hash": "44c253a42409b18ce433eaf533ffb8b34331c85c"
+      "__hash": "52d69a8bc4ada6bbbce51195b248c531f67ac199"
+    },
+    {
+      "version": "0.14.6",
+      "build": "rm package.json && npm install --prefix . react-addons-update@0.14.6",
+      "description": "This package provides the React updates add-on.",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.6"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-update\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "90ec5754620da47ead7756e9c26cf1e80912b607"
     }
   ]
 }

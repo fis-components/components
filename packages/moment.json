@@ -1,47 +1,92 @@
 {
-  "repos": "https://github.com/moment/moment.git",
-  "description": "Parse, validate, manipulate, and display dates in javascript. http://momentjs.com",
+  "build": "rm package.json && npm install --prefix . moment@2.0.0",
   "name": "moment",
+  "description": "Parse, manipulate, and display dates.",
+  "repos": "https://github.com/timrwood/moment.git",
   "main": "moment.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
   "mapping": [
     {
-      "reg": "^\\/moment\\.js$",
-      "release": "$&"
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
     },
     {
-      "reg": "^\\/locale\\/.*$",
-      "release": "$&"
+      "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+      "release": "$1"
     },
     {
       "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
-  "umd2commonjs": false,
   "tags": [
     {
-      "version": "2.10.6",
-      "build": "rm package.json && npm install --prefix . moment@2.10.6",
-      "description": "Parse, validate, manipulate, and display dates",
+      "version": "2.0.0",
+      "__hash": "f192709a2031da2f2627bb62ffaa5253f64a5b8e"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.1.0",
+      "version": "2.1.0",
+      "__hash": "92bc141534d8ba21aa331abbce4e5ce05f1e10f2"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.2.1",
+      "repos": "https://github.com/moment/moment.git",
+      "version": "2.2.1",
+      "__hash": "5d3f862f558ec9d342c48cc5bf3503241a758874"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.3.0",
+      "repos": "https://github.com/moment/moment.git",
+      "version": "2.3.0",
+      "__hash": "d50246d8bada120c0c98bfdcbc064b4c7ba294ef"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.3.1",
+      "repos": "https://github.com/moment/moment.git",
+      "version": "2.3.1",
+      "__hash": "d117404c5814581db10f850bef04ff70093cc547"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.4.0",
+      "repos": "https://github.com/moment/moment.git",
+      "version": "2.4.0",
+      "__hash": "d49c0828d9ac5868b7aeaf8e80600e08fa3f825a"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.5.0",
+      "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
-      "tag": "master",
-      "reposType": "npm",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/moment\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
           "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/lang\\/(.*)$",
+          "release": "lang/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -56,27 +101,623 @@
           "release": false
         }
       ],
-      "__hash": "29e7f3d0a046438a2f8a2abdc3db7c7b9e0f86b7"
+      "version": "2.5.0",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "ced3de93ddddf2878a078253164c3ebdece9ced7"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.5.1",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/lang\\/(.*)$",
+          "release": "lang/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.5.1",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "50830204ca9d85a02773fb9f7c8d7fb926bb4cf4"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.6.0",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/lang\\/(.*)$",
+          "release": "lang/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.6.0",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "0483646d88eb075350a756a98a5a39b8bddcfc17"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.7.0",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/lang\\/(.*)$",
+          "release": "lang/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.7.0",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "2629c508a3d4b6db25c62d53173cece679fd695f"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.8.1",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.8.1",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "a0313719188a3cfab7879128d504a3da25b46671"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.8.2",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.8.2",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "6baf09ad6ada5e2389a72cbb4cf2c29dc9d2e100"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.8.3",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.8.3",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "a71ec48c460b4c5ae0ebb755e27f61dd9a6f6288"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.8.4",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.8.4",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "134013ad8baf50294d8f0e8e2679a0e0af5626db"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.9.0",
+      "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.9.0",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "29a2e92f41283d4109a6452f82319c93dc5d5214"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.10.2",
+      "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.10.2",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "5d11f8ce14acf5a5b61d9d29dda31b4b67af5dc9"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.10.3",
+      "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.10.3",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "932e3e72927202dfff8c5f31a62144862a9c8a82"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . moment@2.10.5",
+      "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.10.5",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "c0f3bbb690ece9a7838db6281e9d97228c678ac8"
+    },
+    {
+      "version": "2.10.6",
+      "build": "rm package.json && npm install --prefix . moment@2.10.6",
+      "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "e433241a41c8d28379f2b80a60cb4068078cdc03"
     },
     {
       "version": "2.11.0",
       "build": "rm package.json && npm install --prefix . moment@2.11.0",
       "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
       "main": "./moment.js",
-      "tag": "master",
-      "reposType": "npm",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/moment\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/moment\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/moment\\/(.*\\.(?:js|css))$",
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
           "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -91,7 +732,67 @@
           "release": false
         }
       ],
-      "__hash": "653c73be480f80d3b806db01ce05bea761bd6240"
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "3e81b82381a8e91315a5bb962e568abc996924af"
+    },
+    {
+      "version": "2.11.1",
+      "build": "rm package.json && npm install --prefix . moment@2.11.1",
+      "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
+      "main": "./moment.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "84efd7b6f8f1483857637d7747121de7ad5c6715"
     }
   ]
 }

@@ -41,10 +41,19 @@
     {
       "version": "1.3.5",
       "build": "rm package.json && npm install --prefix . rc-pagination@1.3.5",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-pagination\\/lib\\/(.*)$",
@@ -67,7 +76,87 @@
           "release": false
         }
       ],
-      "__hash": "817882de3838cdddb54eeda590d8afa21658bd7c"
+      "__hash": "0dce5a0ae0d486b9c4a5ed12c4c771501ace582e"
+    },
+    {
+      "version": "1.3.6",
+      "build": "rm package.json && npm install --prefix . rc-pagination@1.3.6",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "6a2b696fcd20a6e52c78d0176cffbb67f863e46e"
+    },
+    {
+      "version": "1.3.7",
+      "build": "rm package.json && npm install --prefix . rc-pagination@1.3.7",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-pagination\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "85c029ec552b2b32372a3d817430c608071624d0"
     }
   ]
 }

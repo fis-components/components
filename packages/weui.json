@@ -1,0 +1,87 @@
+{
+  "build": "rm package.json && npm install --prefix . weui@0.1.0",
+  "name": "weui",
+  "description": "为微信 Web 服务量身设计",
+  "repos": "https://github.com/weui/weui.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/weui\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.1.0",
+      "__hash": "403f55ce84db06445ac734248d45d1e6d4405862"
+    },
+    {
+      "version": "0.2.0",
+      "build": "rm package.json && npm install --prefix . weui@0.2.0",
+      "description": "wechat mobile ui",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "__hash": "bcb0c3b114d4d757b489ae6bbb4d0e8a934d1a4f"
+    },
+    {
+      "version": "0.2.2",
+      "build": "rm package.json && npm install --prefix . weui@0.2.2",
+      "description": "wechat mobile ui",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "__hash": "92e24d6fe497a6f7016cb744f2c8bd2405140436"
+    },
+    {
+      "version": "0.2.3",
+      "build": "rm package.json && npm install --prefix . weui@0.2.3",
+      "main": "style/weui.css",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/weui\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/weui\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "8bca50e4b902e142f8976d6fc6d6ac597b8480aa"
+    }
+  ]
+}

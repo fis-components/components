@@ -50,8 +50,16 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/rc-switch\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/rc-switch\\/lib\\/(.*)$",
           "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-switch\\/assets\\/(.*)$",
+          "release": "assets/$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-switch\\/assets\\/(.*)$",
@@ -70,7 +78,7 @@
           "release": false
         }
       ],
-      "__hash": "0f1c339ea6d098ae18a83fa1b791575d61e2a7cd"
+      "__hash": "e174a027c1d8e54ec5dee4543bbb2de4ae4007d8"
     }
   ]
 }

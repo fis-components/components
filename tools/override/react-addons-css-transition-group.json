@@ -1,0 +1,7 @@
+{
+  "shim": {
+    "index.js": {
+      "content": "module.exports = require('react').addons.CSSTransitionGroup;"
+    }
+  }
+}

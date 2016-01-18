@@ -36,8 +36,6 @@
   ],
   "tags": [
     {
-      "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . fit-number@1.0.2",
       "name": "fit-number",
       "description": "数字选择器",
       "dependencies": [
@@ -46,6 +44,7 @@
         "jquery@^2.1.4",
         "lodash@^3.10.1"
       ],
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -76,14 +75,13 @@
           "release": false
         }
       ],
+      "version": "1.0.2",
       "paths": {
         "dist": "."
       },
       "__hash": "9d589d69170b5fc228c58d83a5017e62dfd809c0"
     },
     {
-      "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . fit-number@1.0.4",
       "name": "fit-number",
       "description": "数字选择器",
       "dependencies": [
@@ -92,6 +90,7 @@
         "jquery@^2.1.4",
         "lodash@^3.10.1"
       ],
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.4",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -122,10 +121,156 @@
           "release": false
         }
       ],
+      "version": "1.0.4",
       "paths": {
         "dist": "."
       },
       "__hash": "a5e0df381cf1e185eb3bcc2b8b324a980f36fe16"
+    },
+    {
+      "name": "fit-number",
+      "description": "数字选择器",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-input@^1.1.11",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.7",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/(?:test|build|dist\\/cdn)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.0.7",
+      "__hash": "6d6fc07ee9b082217d436cbadb76f991b676cba3"
+    },
+    {
+      "version": "1.0.8",
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.8",
+      "name": "fit-number",
+      "description": "数字选择器",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "92d11682283af93c2e05fb894600b3cf75bbd92f"
+    },
+    {
+      "version": "1.0.9",
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.9",
+      "name": "fit-number",
+      "description": "数字选择器",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "a3794da7ba95400b16c8d2e883bde77ae2f98571"
+    },
+    {
+      "version": "1.0.10",
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.10",
+      "name": "fit-number",
+      "description": "数字选择器",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "70e74587c5ad850bd712aab5447eb680604ceeda"
     }
   ]
 }

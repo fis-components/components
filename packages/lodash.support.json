@@ -1,0 +1,65 @@
+{
+  "build": "rm package.json && npm install --prefix . lodash.support@3.0.0",
+  "name": "lodash.support",
+  "description": "The modern build of lodash’s `_.support` as a module.",
+  "repos": "https://github.com/lodash/lodash",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\.support\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\.support\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "3.0.0",
+      "__hash": "f8aab60fcea9d13d8a3f52db15e9ee5f1818f328"
+    },
+    {
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . lodash.support@3.0.1",
+      "__hash": "ff6a1fd4fe37935ba3e3a3fe04c39ff061a36730"
+    },
+    {
+      "version": "3.0.2",
+      "build": "rm package.json && npm install --prefix . lodash.support@3.0.2",
+      "repos": "https://github.com/lodash/lodash.git",
+      "__hash": "8f0afe94330b5d8db86179820a4a41525520df41"
+    },
+    {
+      "version": "3.0.3",
+      "build": "rm package.json && npm install --prefix . lodash.support@3.0.3",
+      "repos": "https://github.com/lodash/lodash.git",
+      "__hash": "f2a8d7cb4995d65fcbfb6bb648f2a82171d35e08"
+    },
+    {
+      "version": "3.0.4",
+      "build": "rm package.json && npm install --prefix . lodash.support@3.0.4",
+      "repos": "https://github.com/lodash/lodash.git",
+      "__hash": "7c0414067e912d94f293cef43d3bd963959b9656"
+    }
+  ]
+}

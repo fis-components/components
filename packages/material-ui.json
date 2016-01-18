@@ -1,20 +1,34 @@
 {
-  "repos": "https://github.com/callemall/material-ui.git",
+  "build": "rm package.json && npm install --prefix . material-ui@0.14.1",
   "name": "material-ui",
-  "main": "lib/index.js",
-  "build": "rm package.json && npm install --prefix . material-ui@0.14.0-rc1",
+  "description": "Material Design UI components built with React",
+  "repos": "https://github.com/callemall/material-ui.git",
+  "main": "lib/index",
+  "tag": "master",
+  "reposType": "npm",
   "dependencies": [
     "inline-style-prefixer@^0.5.2",
+    "lodash.merge@^3.3.2",
     "lodash.throttle@~3.0.4",
-    "react-addons-transition-group@^0.14.0",
-    "react-addons-update@^0.14.0",
     "react-addons-create-fragment@^0.14.0",
     "react-addons-pure-render-mixin@^0.14.0",
-    "warning@^2.1.0"
+    "react-addons-transition-group@^0.14.0",
+    "react-addons-update@^0.14.0",
+    "warning@^2.1.0",
+    "react@^0.14.0",
+    "react-dom@^0.14.0"
   ],
   "mapping": [
     {
-      "reg": "^\\/node_modules\\/material\\-ui\\/lib\\/(.*)$",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/material-ui\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/material-ui\\/lib\\/(.*)$",
       "release": "lib/$1"
     },
     {
@@ -22,19 +36,18 @@
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "v0.14.0-rc1",
-      "__hash": "2dc34a1b8acaa3ee5f8d0840c2339552ebf2cfc9"
-    },
-    {
-      "version": "v0.13.4",
-      "build": "rm package.json && npm install --prefix . material-ui@0.13.4",
-      "__hash": "42b5585dd13cd8cd53361fbd73ad7436d6d8045f"
+      "version": "0.14.1",
+      "__hash": "23f9eae7d2000ab9c05f653c9c4b0c4ac9b38014"
     }
   ]
 }

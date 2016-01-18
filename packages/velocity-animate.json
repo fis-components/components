@@ -37,34 +37,112 @@
       "__hash": "44f17fea58b700bb44e74f9e3431395d96287952"
     },
     {
-      "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.0.1",
+      "version": "1.0.1",
       "__hash": "e245aabd7aa588d4e30b9e0a5a4e9b153ad702ae"
     },
     {
-      "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.1.0",
+      "version": "1.1.0",
       "__hash": "edf8d55239e4a6a19d093b6aeee750cb740e2969"
     },
     {
-      "version": "1.2.0",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.2.0",
+      "version": "1.2.0",
       "__hash": "1ea6b0800da8b08846ba13ad1f5a8587dbbcdea0"
     },
     {
-      "version": "1.2.1",
       "build": "rm package.json && npm install --prefix . velocity-animate@1.2.1",
+      "version": "1.2.1",
       "__hash": "0ae1b7a5bebf910e0d63488871f5e4f478b18e81"
     },
     {
-      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.2",
       "version": "1.2.2",
-      "__hash": "0fc3596d35ca363f9785c8a2db9aab6bedf414d1"
+      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.2",
+      "repos": "https://github.com/julianshapiro/velocity",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.min\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.ui\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.ui\\.min\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
-      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.3",
       "version": "1.2.3",
-      "__hash": "7e06a4c192ed23289c7033ecb6adefc187204cbd"
+      "build": "rm package.json && npm install --prefix . velocity-animate@1.2.3",
+      "repos": "https://github.com/julianshapiro/velocity",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.min\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.ui\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/velocity-animate\\/(velocity\\.ui\\.min\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

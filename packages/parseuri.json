@@ -1,0 +1,42 @@
+{
+  "build": "rm package.json && npm install --prefix . parseuri@0.0.4",
+  "name": "parseuri",
+  "description": "Method that parses a URI and returns an array of its components",
+  "repos": "https://github.com/get/parseuri.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/parseuri\\/(?:test|build|dist\\/cdn)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/parseuri\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "0.0.4",
+      "__hash": "5f121a8da1a11ad002d72a5e4b8738bd89c0a091"
+    }
+  ]
+}
