@@ -7,19 +7,19 @@
   "tag": "master",
   "reposType": "npm",
   "dependencies": [],
+  "hook": ".hook.js",
   "shim": {
     ".hook.js": {
       "content": "var path = require('path');\n\nmodule.exports = function(json, files) {\n  var hasAddons = false;\n\n  Object.keys(files).every(function(subpath) {\n    var cName = path.basename(path.dirname(subpath));\n\n    // some thing like `react-addons-create-fragment`\n    if (cName.substring(0, 13) === 'react-addons-') {\n      hasAddons = true;\n      return false;\n    }\n\n    return true;\n  });\n\n  // 自动切换到 react-with-addons 如果依赖列表中有 react-addons 的话。\n  // 实在不想再把 react 给拆了。\n  if (hasAddons) {\n    json.main = 'react-with-addons.js';\n  }\n};"
     }
   },
-  "hook": ".hook.js",
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/react\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+      "reg": "^\\/node_modules\\/react\\/(?:test|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
@@ -44,149 +44,38 @@
   },
   "tags": [
     {
-      "hook": null,
       "version": "0.14.0",
-      "__hash": "b8d5a6556a00a7ec2d1747a5895e46cc9e08affc"
+      "__hash": "78d08d9f6ece7672dd8a517ef8a896a8ab5dee71"
     },
     {
-      "build": "rm package.json && npm install --prefix . react@0.14.1",
-      "hook": null,
       "version": "0.14.1",
-      "__hash": "302e74f01bcf8fc3b3475e4825747c54dd740e31"
+      "build": "rm package.json && npm install --prefix . react@0.14.1",
+      "__hash": "903227f1878a6a23a36c6e5306877891ea8c51ef"
     },
     {
-      "build": "rm package.json && npm install --prefix . react@0.14.2",
-      "hook": null,
       "version": "0.14.2",
-      "__hash": "32aceadaedadb4e9266897bd39e554b85ce49852"
+      "build": "rm package.json && npm install --prefix . react@0.14.2",
+      "__hash": "f8f0328c8315350c0fa2fd6366f6916642cedb0e"
     },
     {
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "hook": null,
-      "__hash": "88a73dc82f4edeff25280a36aa3f9f14a988cb5f"
+      "__hash": "ee4f012d2818d0f0a92a23a185419ca558da3289"
     },
     {
       "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react@0.14.4",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "hook": null,
-      "__hash": "ae83457f0de852f7eca6d5a7363d0dec52ead8cf"
+      "__hash": "1d01398019a75514b0bc5ea95b4495d061f4da92"
     },
     {
       "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react@0.14.5",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "hook": null,
-      "__hash": "6a213ac1518f1f52374fcb9000e593d7d4f8b8cf"
+      "__hash": "5f6ff00a882c75ff5e58d7d0f46708897b48460f"
     },
     {
       "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react@0.14.6",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "hook": null,
-      "__hash": "09ccb594d839f2a867896b08651bb2d5c2fe2e85"
+      "__hash": "1005bf6d4dda378a2155b66344d35d28ad32cbdc"
     }
   ]
 }

@@ -33,6 +33,114 @@
     {
       "version": "v1.4.0",
       "__hash": "8aa3b522f9216a02edc34b4402a7756bb516f900"
+    },
+    {
+      "version": "1.5.2",
+      "build": "rm package.json && npm install --prefix . emojione@1.5.2",
+      "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
+      "repos": "https://github.com/Ranks/emojione.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/emojione\\/lib\\/js\\/emojione\\.js$",
+          "release": "emojione.js"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/emojione\\.css$",
+          "release": "emojione.css"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/(.*)$",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
+          "release": "/assets/png/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^.*$",
+          "release": false
+        }
+      ],
+      "__hash": "399eb5b4fe02aa3f966176a4483a7f20e734d9e4"
+    },
+    {
+      "version": "2.0.0",
+      "build": "rm package.json && npm install --prefix . emojione@2.0.0",
+      "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
+      "repos": "https://github.com/Ranks/emojione.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/emojione\\/lib\\/js\\/emojione\\.js$",
+          "release": "emojione.js"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/emojione\\.css$",
+          "release": "emojione.css"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/(.*)$",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
+          "release": "/assets/png/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^.*$",
+          "release": false
+        }
+      ],
+      "__hash": "789be7b5a0dd0067658a545f54eae3775c5bf8d6"
+    },
+    {
+      "version": "2.0.1",
+      "build": "rm package.json && npm install --prefix . emojione@2.0.1",
+      "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
+      "repos": "https://github.com/Ranks/emojione.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/emojione\\/lib\\/js\\/emojione\\.js$",
+          "release": "emojione.js"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/emojione\\.css$",
+          "release": "emojione.css"
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/css\\/(.*)$",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
+          "release": "/assets/png/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^.*$",
+          "release": false
+        }
+      ],
+      "__hash": "2280cfcc52a2c4504ad05ebcbf5125cba377b335"
     }
   ]
 }
