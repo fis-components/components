@@ -28,8 +28,6 @@
   ],
   "tags": [
     {
-      "version": "0.7.1",
-      "build": "rm package.json && npm install --prefix . rc-time-picker@0.7.1",
       "dependencies": [
         "classnames@~2.2.0",
         "gregorian-calendar@4.x",
@@ -37,6 +35,7 @@
         "rc-trigger@1.x",
         "rc-util@2.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-time-picker@0.7.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -71,11 +70,10 @@
           "release": false
         }
       ],
+      "version": "0.7.1",
       "__hash": "c1c01b03f133e6c60e16defb65a788711172b705"
     },
     {
-      "version": "0.7.2",
-      "build": "rm package.json && npm install --prefix . rc-time-picker@0.7.2",
       "dependencies": [
         "classnames@~2.2.0",
         "gregorian-calendar@4.x",
@@ -83,6 +81,7 @@
         "rc-trigger@1.x",
         "rc-util@2.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-time-picker@0.7.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -117,6 +116,7 @@
           "release": false
         }
       ],
+      "version": "0.7.2",
       "__hash": "d21be9572e9495ef1818b51666387787115cd31c"
     },
     {
@@ -178,11 +178,20 @@
       "__hash": "b6841cf0365c278141545cb1455b0159ab574ec1"
     },
     {
+      "version": "1.0.0",
       "build": "rm package.json && npm install --prefix . rc-time-picker@1.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/rc-time-picker\\/lib\\/(.*)$",
@@ -205,8 +214,7 @@
           "release": false
         }
       ],
-      "version": "1.0.0",
-      "__hash": "f7ad6ff16846f025920b21d3ccc1fd2b1ecc1f22"
+      "__hash": "73d6cbadadaee3dd21d3aba647f7f926e7ed611f"
     }
   ]
 }
