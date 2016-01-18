@@ -14,7 +14,7 @@
     },
     {
       "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
-      "release": "$&"
+      "release": "/assets/png/$1"
     },
     {
       "reg": "^\\/README\\.md$",

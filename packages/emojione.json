@@ -57,7 +57,7 @@
         },
         {
           "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
-          "release": "$&"
+          "release": "/assets/png/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -67,8 +67,7 @@
           "reg": "^.*$",
           "release": false
         }
-      ],
-      "__hash": "d02abbc27dc7124f670b4a2195b76dc3b248ba99"
+      ]
     },
     {
       "version": "2.0.0",
@@ -93,7 +92,7 @@
         },
         {
           "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
-          "release": "$&"
+          "release": "/assets/png/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -103,8 +102,7 @@
           "reg": "^.*$",
           "release": false
         }
-      ],
-      "__hash": "ec73e9778f3ef690f7c524ba8fc756d8f9058f02"
+      ]
     },
     {
       "version": "2.0.1",
@@ -129,7 +127,7 @@
         },
         {
           "reg": "^\\/node_modules\\/emojione\\/assets\\/png\\/(.*)$",
-          "release": "$&"
+          "release": "/assets/png/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -139,8 +137,7 @@
           "reg": "^.*$",
           "release": false
         }
-      ],
-      "__hash": "148c38e542ccda40c33e8dd74822ea178891a37b"
+      ]
     }
   ]
 }
