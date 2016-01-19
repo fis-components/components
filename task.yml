@@ -10,7 +10,7 @@ sync:
     - fit-iframe
     - fit-tabs
     - animate.css@latest
-    - antd@latest
+    - antd@0.11.3
     - emojione
     - color@latest
     - fiten-chat@latest
