@@ -16,3 +16,4 @@ sync:
     - fiten-chat@latest
     - vue@latest
     - fit-layout-global
+    - react-infinite
