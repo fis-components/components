@@ -120,7 +120,8 @@
         "commonmark@^0.22.0",
         "commonmark-react-renderer@^2.2.0",
         "react@>=0.13.3"
-      ]
+      ],
+      "__hash": "d575237d56928be08a85f5985ff634b406afa9d0"
     },
     {
       "version": "1.2.2",
