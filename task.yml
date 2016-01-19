@@ -6,5 +6,5 @@ sync:
     # - whatwg-fetch
     # - react@0.14.5
     # 每次只保留当前需要转换的组件。
-    - weui@*
-    - react-weui@*
+    - falcor@*
+    - react-markdown@*
