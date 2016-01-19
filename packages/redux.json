@@ -30,20 +30,18 @@
       "version": "3.0.5",
       "build": "rm package.json && npm install --prefix . redux@3.0.5",
       "description": "Predictable state container for JavaScript apps",
+      "main": "redux",
       "tag": "master",
       "reposType": "npm",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/lib\\/(.*)$",
-          "release": "lib/$1"
         },
         {
           "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
@@ -64,8 +62,7 @@
       ],
       "paths": {
         "dist": "."
-      },
-      "__hash": "e1a55da9aee1c4170a196728232a2d5f1d760af1"
+      }
     }
   ]
 }
