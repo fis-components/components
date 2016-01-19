@@ -17,3 +17,6 @@ sync:
     - vue@latest
     - fit-layout-global
     - react-infinite
+    - react@0.14.5
+    - falcor@*
+    - react-markdown@*
