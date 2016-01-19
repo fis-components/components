@@ -131,7 +131,8 @@
         "commonmark@^0.22.0",
         "commonmark-react-renderer@^2.2.0",
         "react@>=0.13.3"
-      ]
+      ],
+      "__hash": "b8b8a2f7d7d62411d4d298fd193c6c78cae1e96b"
     }
   ]
 }
