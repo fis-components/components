@@ -16,3 +16,4 @@ sync:
     - fiten-chat@latest
     - vue@latest
     - fit-table@latest
+    - fit-layout-global@latest
