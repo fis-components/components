@@ -577,7 +577,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "8ae78b241d0c98cc05f5496e15798d135b51b90c"
     },
     {
       "dependencies": [
