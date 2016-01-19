@@ -44,7 +44,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . react-markdown@1.0.1"
+      "build": "rm package.json && npm install --prefix . react-markdown@1.0.1",
+      "__hash": "c40325fec4d87c4e425b963e0300d8838da04499"
     },
     {
       "version": "1.0.3",
