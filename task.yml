@@ -14,3 +14,4 @@ sync:
     - emojione
     - color@latest
     - fiten-chat@latest
+    - vue@latest
