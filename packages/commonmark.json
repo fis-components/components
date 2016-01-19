@@ -1,0 +1,44 @@
+{
+  "build": "rm package.json && npm install --prefix . commonmark@0.19.0",
+  "name": "commonmark",
+  "description": "a strongly specified, highly compatible variant of Markdown",
+  "repos": "https://github.com/jgm/commonmark.js.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/commonmark\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/commonmark\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "paths": {
+    "dist": "."
+  },
+  "tags": [
+    {
+      "version": "0.19.0"
+    }
+  ]
+}
