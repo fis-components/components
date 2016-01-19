@@ -13,3 +13,4 @@ sync:
     - antd@latest
     - emojione
     - color@latest
+    - fiten-chat@latest
