@@ -15,4 +15,4 @@ sync:
     - color@latest
     - fiten-chat@latest
     - vue@latest
-    - fit-layout-global@latest
+    - fit-layout-global
