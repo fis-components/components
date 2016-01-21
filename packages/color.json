@@ -47,7 +47,8 @@
     {
       "version": "0.10.1",
       "build": "rm package.json && npm install --prefix . color@0.10.1",
-      "repos": "https://github.com/harthur/color.git"
+      "repos": "https://github.com/harthur/color.git",
+      "__hash": "4d5c4a64095fdd90a3388c14bd41d954a81d6c42"
     },
     {
       "version": "0.11.0",
