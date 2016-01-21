@@ -40,7 +40,8 @@
     },
     {
       "version": "0.0.3",
-      "build": "rm package.json && npm install --prefix . fit-tree@0.0.3"
+      "build": "rm package.json && npm install --prefix . fit-tree@0.0.3",
+      "__hash": "e9ca384fbcde98acc1925b235cc742483039bdc7"
     }
   ]
 }
