@@ -47,7 +47,8 @@
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.4"
+      "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.4",
+      "__hash": "c4e59c21186e102945ae391c56a330837c54fcdf"
     }
   ]
 }
