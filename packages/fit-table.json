@@ -1315,8 +1315,6 @@
       "__hash": "1c4e01241aed99bd8426c9c69f086c4ed3e8c71e"
     },
     {
-      "version": "1.1.53",
-      "build": "rm package.json && npm install --prefix . fit-table@1.1.53",
       "name": "fit-table",
       "description": "表格",
       "repos": "https://github.com/tb-component/pc-table.git",
@@ -1335,6 +1333,7 @@
         "fit-modal@^1.1.10",
         "fit-timepicker@^0.2.25"
       ],
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.53",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -1361,7 +1360,57 @@
           "release": false
         }
       ],
+      "version": "1.1.53",
       "__hash": "ddd5bb44b5ebc7fc87edf20bc91c610196018dcf"
+    },
+    {
+      "version": "1.1.55",
+      "build": "rm package.json && npm install --prefix . fit-table@1.1.55",
+      "name": "fit-table",
+      "description": "表格",
+      "repos": "https://github.com/tb-component/pc-table.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "fit-button@^1.2.14",
+        "fit-checkbox@^1.1.13",
+        "fit-input@^1.1.16",
+        "fit-pagination@^1.1.11",
+        "fit-radio@^1.1.20",
+        "fit-style@^1.1.11",
+        "fit-modal@^1.1.11",
+        "fit-timepicker@^0.2.26",
+        "fit-datepicker@^0.2.28"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-table\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

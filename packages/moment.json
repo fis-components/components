@@ -652,7 +652,6 @@
       "build": "rm package.json && npm install --prefix . moment@2.10.6",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
-      "main": "./moment.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -693,15 +692,13 @@
           ]
         }
       },
-      "paths": {},
-      "__hash": "e433241a41c8d28379f2b80a60cb4068078cdc03"
+      "paths": {}
     },
     {
       "version": "2.11.0",
       "build": "rm package.json && npm install --prefix . moment@2.11.0",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
-      "main": "./moment.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -742,15 +739,13 @@
           ]
         }
       },
-      "paths": {},
-      "__hash": "3e81b82381a8e91315a5bb962e568abc996924af"
+      "paths": {}
     },
     {
       "version": "2.11.1",
       "build": "rm package.json && npm install --prefix . moment@2.11.1",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
-      "main": "./moment.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -791,8 +786,7 @@
           ]
         }
       },
-      "paths": {},
-      "__hash": "84efd7b6f8f1483857637d7747121de7ad5c6715"
+      "paths": {}
     }
   ]
 }

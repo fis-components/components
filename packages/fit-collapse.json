@@ -294,10 +294,8 @@
       "__hash": "66d7650708f65b8daf114afd7c2cb77770b40d72"
     },
     {
-      "version": "0.2.9",
-      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.9",
       "main": "lib/index.js",
-      "dependencies": [],
+      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.9",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -324,6 +322,8 @@
           "release": false
         }
       ],
+      "version": "0.2.9",
+      "dependencies": [],
       "__hash": "617992aa3f76fe6fbce7ed473a2528a56d6b1f7b"
     },
     {
@@ -337,7 +337,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -356,8 +356,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "4c7ef74a5f30582aa88c8174a9c3f98aff76beaa"
+      ]
     },
     {
       "version": "0.2.11",
@@ -370,7 +369,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -389,8 +388,39 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "d30e4e9dbdb6713f8f670b4972cdd0602b671a72"
+      ]
+    },
+    {
+      "version": "0.2.12",
+      "build": "rm package.json && npm install --prefix . fit-collapse@0.2.12",
+      "main": "lib/index.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-collapse\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-collapse\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
