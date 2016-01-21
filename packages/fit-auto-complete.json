@@ -44,7 +44,8 @@
     },
     {
       "version": "0.2.13",
-      "build": "rm package.json && npm install --prefix . fit-auto-complete@0.2.13"
+      "build": "rm package.json && npm install --prefix . fit-auto-complete@0.2.13",
+      "__hash": "fe86e9a1fd332bbaccc79afb74321439c577b2f0"
     },
     {
       "version": "0.2.14",
