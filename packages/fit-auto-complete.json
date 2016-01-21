@@ -54,7 +54,8 @@
         "classnames@^2.2.3",
         "fit-input@^1.1.15",
         "jquery@^2.2.0"
-      ]
+      ],
+      "__hash": "fdf5f2f287fc022325a2540535163ee76f4f0d2d"
     }
   ]
 }
