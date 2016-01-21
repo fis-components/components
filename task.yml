@@ -34,3 +34,5 @@ sync:
     - fit-tree
     - fit-upload
     - color
+    - fiten-chat
+    - fiten-chat-box
