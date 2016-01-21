@@ -35,4 +35,4 @@ sync:
     - fit-upload
     - color
     - fiten-chat
-    - fiten-chat-box
+    - fiten-chat-box@latest
