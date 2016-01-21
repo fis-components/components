@@ -267,7 +267,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "79bc186cea1b179a469802a1547e1ce97c0c0cc2"
     }
   ]
 }
