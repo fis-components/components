@@ -6,17 +6,30 @@ sync:
     # - whatwg-fetch
     # - react@0.14.5	
     # 不要删除现有的，免得冲突 merge 不了。工具会自动 diff 只处理本次更新的部分。
-    - fiten-scale
+    - fit-auto-complete
+    - fit-button
+    - fit-checkbox
+    - fit-collapse
+    - fit-datepicker
     - fit-iframe
-    - fit-tabs
-    - animate.css@latest
-    - antd@0.11.3
-    - emojione
-    - color@latest
-    - fiten-chat@latest
-    - vue@latest
+    - fit-image
+    - fit-input
+    - fit-json-tree
+    - fit-layout
     - fit-layout-global
-    - react-infinite
-    - react@0.14.5
-    - falcor@*
-    - react-markdown@*
+    - fit-menu
+    - fit-message
+    - fit-modal
+    - fit-number
+    - fit-pagination
+    - fit-phone
+    - fit-radio
+    - fit-render-to
+    - fit-select
+    - fit-style
+    - fit-switch
+    - fit-table
+    - fit-tabs
+    - fit-timepicker
+    - fit-tree
+    - fit-upload
