@@ -1,0 +1,44 @@
+{
+  "build": "rm package.json && npm install --prefix . react-list@0.7.11",
+  "name": "react-list",
+  "description": "A versatile infinite scroll [React] component.",
+  "repos": "https://github.com/orgsync/react-list.git",
+  "main": "react-list.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "react@>= 0.14.0 < 0.15.0",
+    "react-dom@>= 0.14.0 < 0.15.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-list\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-list\\/(react-list\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.7.11"
+    }
+  ]
+}

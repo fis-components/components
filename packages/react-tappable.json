@@ -1,0 +1,46 @@
+{
+  "build": "rm package.json && npm install --prefix . react-tappable@0.8.0",
+  "name": "react-tappable",
+  "description": "Touch / Tappable Event Handling Component for React",
+  "repos": "https://github.com/JedWatson/react-tappable.git",
+  "main": "react-tappable",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "react-dom@^0.14.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-tappable\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-tappable\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "paths": {
+    "dist": "."
+  },
+  "tags": [
+    {
+      "version": "0.8.0"
+    }
+  ]
+}

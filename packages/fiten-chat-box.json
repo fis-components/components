@@ -1,13 +1,18 @@
 {
-  "build": "rm package.json && npm install --prefix . fiten-chat@1.0.2",
-  "name": "fiten-chat",
-  "description": "聊天",
+  "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.3",
+  "name": "fiten-chat-box",
+  "description": "聊天盒子",
   "repos": "https://github.com/2betop/placeholder.git",
   "main": "lib/index.js",
   "tag": "master",
   "reposType": "npm",
   "dependencies": [
-    "classnames@^2.2.3"
+    "classnames@^2.2.3",
+    "lodash@^4.0.0",
+    "react@^0.14.6",
+    "react-dom@^0.14.6",
+    "react-list@^0.7.11",
+    "react-tappable@^0.8.0"
   ],
   "mapping": [
     {
@@ -15,11 +20,11 @@
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/fiten-chat\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "reg": "^\\/node_modules\\/fiten-chat-box\\/(?:test|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/fiten-chat\\/lib\\/(.*)$",
+      "reg": "^\\/node_modules\\/fiten-chat-box\\/lib\\/(.*)$",
       "release": "lib/$1"
     },
     {
@@ -37,12 +42,11 @@
   ],
   "tags": [
     {
-      "version": "1.0.2",
-      "__hash": "9597019c3077abb5ff2d4df2036f64dd361f6a91"
+      "version": "1.0.3"
     },
     {
-      "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . fiten-chat@1.0.3"
+      "version": "1.0.4",
+      "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.4"
     }
   ]
 }
