@@ -46,9 +46,22 @@
       "__hash": "9388346cec704b9f15925ee7fc549820f16cd51c"
     },
     {
-      "version": "1.0.4",
       "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.4",
+      "version": "1.0.4",
       "__hash": "c4e59c21186e102945ae391c56a330837c54fcdf"
+    },
+    {
+      "version": "1.0.5",
+      "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.5",
+      "dependencies": [
+        "classnames@^2.2.3",
+        "jquery@^2.2.0",
+        "lodash@^4.0.0",
+        "react@^0.14.6",
+        "react-dom@^0.14.6",
+        "react-list@^0.7.11",
+        "react-tappable@^0.8.0"
+      ]
     }
   ]
 }
