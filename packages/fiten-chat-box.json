@@ -89,7 +89,8 @@
         "react-dom@^0.14.6",
         "react-list@^0.7.11",
         "react-tappable@^0.8.0"
-      ]
+      ],
+      "__hash": "35447071add0402900b7ee9180c35797055ac8aa"
     }
   ]
 }
