@@ -93,7 +93,6 @@
       "__hash": "35447071add0402900b7ee9180c35797055ac8aa"
     },
     {
-      "version": "1.0.8",
       "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.8",
       "dependencies": [
         "classnames@^2.2.3",
@@ -104,7 +103,22 @@
         "react-list@^0.7.11",
         "react-tappable@^0.8.0"
       ],
+      "version": "1.0.8",
       "__hash": "9a0998e987ebc0076ca1f06c375a69ee2138e97f"
+    },
+    {
+      "version": "1.0.9",
+      "build": "rm package.json && npm install --prefix . fiten-chat-box@1.0.9",
+      "repos": "https://github.com/tb-component/mobile-scale.git",
+      "dependencies": [
+        "classnames@^2.2.3",
+        "jquery@^2.2.0",
+        "lodash@^4.0.0",
+        "react@^0.14.6",
+        "react-dom@^0.14.6",
+        "react-list@^0.7.11",
+        "react-tappable@^0.8.0"
+      ]
     }
   ]
 }
