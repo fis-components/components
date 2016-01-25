@@ -44,7 +44,8 @@
     },
     {
       "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . fit-image@1.0.3"
+      "build": "rm package.json && npm install --prefix . fit-image@1.0.3",
+      "__hash": "65528a6698925e2c849da286691757b184a677ce"
     }
   ]
 }
