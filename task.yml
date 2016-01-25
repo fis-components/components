@@ -36,3 +36,4 @@ sync:
     - fit-tree@latest
     - fiten-chat-box@latest
     - fiten-chat@latest
+    - react-tap-event-plugin@latest
