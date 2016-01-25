@@ -107,7 +107,8 @@
         "./asap.js": "./browser-asap.js",
         "./raw.js": "./browser-raw.js",
         "./test/domain.js": "./test/browser-domain.js"
-      }
+      },
+      "__hash": "5159ffe3c0657fade3c8d18d8d5d81f86aa7964d"
     }
   ]
 }
