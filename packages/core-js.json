@@ -43,17 +43,549 @@
   ],
   "tags": [
     {
+      "version": "1.0.0",
+      "build": "rm package.json && npm install --prefix . core-js@1.0.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . core-js@1.0.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "build": "rm package.json && npm install --prefix . core-js@1.1.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.1",
+      "build": "rm package.json && npm install --prefix . core-js@1.1.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.2",
+      "build": "rm package.json && npm install --prefix . core-js@1.1.2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.3",
+      "build": "rm package.json && npm install --prefix . core-js@1.1.3",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.4",
+      "build": "rm package.json && npm install --prefix . core-js@1.1.4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "build": "rm package.json && npm install --prefix . core-js@1.2.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.1",
+      "build": "rm package.json && npm install --prefix . core-js@1.2.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.2",
+      "build": "rm package.json && npm install --prefix . core-js@1.2.2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.3",
+      "build": "rm package.json && npm install --prefix . core-js@1.2.3",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.4",
+      "build": "rm package.json && npm install --prefix . core-js@1.2.4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.5",
+      "build": "rm package.json && npm install --prefix . core-js@1.2.5",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.6",
+      "build": "rm package.json && npm install --prefix . core-js@1.2.6",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/(shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/core-js\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "2.0.0",
       "__hash": "a5499d5a3823286dfdb8a480846d2e4aa0174d96"
     },
     {
-      "version": "2.0.1",
       "build": "rm package.json && npm install --prefix . core-js@2.0.1",
+      "version": "2.0.1",
       "__hash": "9fc361c7af689d908de549308a9b596b3d312145"
     },
     {
-      "version": "2.0.2",
       "build": "rm package.json && npm install --prefix . core-js@2.0.2",
+      "version": "2.0.2",
       "__hash": "9e2ec708202215f6a29a12b65382418ab1caad17"
     }
   ]

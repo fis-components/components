@@ -1,0 +1,44 @@
+{
+  "build": "rm package.json && npm install --prefix . react-tap-event-plugin@0.2.1",
+  "name": "react-tap-event-plugin",
+  "description": "Facebook's TapEventPlugin, temporarily available on npm until its made public in their repo",
+  "repos": "https://github.com/zilverline/react-tap-event-plugin.git",
+  "main": "src/injectTapEventPlugin.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "fbjs@^0.2.1",
+    "react@^0.14.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-tap-event-plugin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-tap-event-plugin\\/src\\/(.*)$",
+      "release": "src/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.1"
+    }
+  ]
+}
