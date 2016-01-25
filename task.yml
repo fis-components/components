@@ -38,3 +38,4 @@ sync:
     - fiten-chat@latest
     - material-ui@0.14.2
     - platform
+    - react-with-tap-event-plugin
