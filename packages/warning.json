@@ -62,7 +62,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "17691e76faf1983fa9ea6c619eceed861ea1c60b"
     },
     {
       "build": "rm package.json && npm install --prefix . warning@2.1.0",
