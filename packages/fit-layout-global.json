@@ -379,14 +379,13 @@
       "__hash": "1652fa85dd00d42275f0359a326947bc235cf40f"
     },
     {
-      "version": "0.2.10",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.2.10",
       "main": "lib/index.js",
       "dependencies": [
         "jquery@^2.1.4",
         "redux@^3.0.5",
         "fit-style@^1.1.10"
       ],
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.2.10",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -413,13 +412,13 @@
           "release": false
         }
       ],
+      "version": "0.2.10",
       "__hash": "e5a943936b4386daa66216446701315abbaf9335"
     },
     {
-      "version": "0.2.11",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.2.11",
       "main": "lib/index.js",
       "dependencies": [],
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.2.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -446,11 +445,10 @@
           "release": false
         }
       ],
+      "version": "0.2.11",
       "__hash": "c045ab607ca93cf03dab34e4065d392009dd5727"
     },
     {
-      "version": "0.2.12",
-      "build": "rm package.json && npm install --prefix . fit-layout-global@0.2.12",
       "repos": "https://github.com/tb-component/pc-layout-global.git",
       "main": "lib/index.js",
       "dependencies": [
@@ -458,6 +456,7 @@
         "redux@^3.0.5",
         "fit-style@^1.1.10"
       ],
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.2.12",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -484,7 +483,45 @@
           "release": false
         }
       ],
+      "version": "0.2.12",
       "__hash": "7c647723bec881a75d19d7218266a88ca3fd4a8c"
+    },
+    {
+      "version": "0.2.14",
+      "build": "rm package.json && npm install --prefix . fit-layout-global@0.2.14",
+      "repos": "https://github.com/tb-component/pc-layout-global.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "jquery@^2.1.4",
+        "redux@^3.0.5",
+        "fit-style@^1.1.12"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-layout-global\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

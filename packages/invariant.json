@@ -20,17 +20,92 @@
   "tags": [
     {
       "version": "2.0.0",
-      "__hash": "5f4731171177536ea27c9245fe4b24358d065193"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
-      "build": "rm package.json && npm install --prefix . invariant@2.1.0",
       "version": "2.1.0",
-      "__hash": "29b51835db314ca8d77ebc1852444991ea321649"
+      "build": "rm package.json && npm install --prefix . invariant@2.1.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
-      "build": "rm package.json && npm install --prefix . invariant@2.1.1",
       "version": "2.1.1",
-      "__hash": "71be74d17ccf5c2423f1377bc1716e0e31022a6b"
+      "build": "rm package.json && npm install --prefix . invariant@2.1.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "2.1.2",
@@ -41,6 +116,10 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/invariant\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
           "release": "$1"
         },
@@ -56,8 +135,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "30fdd529c748b4be8549ec64264707b2f4c55524"
+      ]
     },
     {
       "version": "2.1.3",
@@ -68,6 +146,10 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/invariant\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
           "release": "$1"
         },
@@ -83,8 +165,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "13141f06593463aa3abdd1381ced1d7c5feab6e1"
+      ]
     },
     {
       "version": "2.2.0",
@@ -95,6 +176,10 @@
           "release": false
         },
         {
+          "reg": "^\\/node_modules\\/invariant\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
           "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
           "release": "$1"
         },
@@ -110,8 +195,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "b35403e178a377162fe1b17896d61b5f23fe4b71"
+      ]
     }
   ]
 }

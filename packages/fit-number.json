@@ -273,8 +273,6 @@
       "__hash": "70e74587c5ad850bd712aab5447eb680604ceeda"
     },
     {
-      "version": "1.0.12",
-      "build": "rm package.json && npm install --prefix . fit-number@1.0.12",
       "name": "fit-number",
       "description": "数字选择器",
       "main": "lib/index.js",
@@ -284,6 +282,7 @@
         "jquery@^2.1.4",
         "lodash@^3.10.1"
       ],
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.12",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -310,11 +309,10 @@
           "release": false
         }
       ],
+      "version": "1.0.12",
       "__hash": "e3e34c003045f9934ff52656597334b024ca4bd4"
     },
     {
-      "version": "1.0.13",
-      "build": "rm package.json && npm install --prefix . fit-number@1.0.13",
       "name": "fit-number",
       "description": "数字选择器",
       "main": "lib/index.js",
@@ -324,6 +322,7 @@
         "jquery@^2.1.4",
         "lodash@^3.10.1"
       ],
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.13",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -350,11 +349,10 @@
           "release": false
         }
       ],
+      "version": "1.0.13",
       "__hash": "affbb1282f05faea224e9a059312a28b35c9278f"
     },
     {
-      "version": "1.0.14",
-      "build": "rm package.json && npm install --prefix . fit-number@1.0.14",
       "name": "fit-number",
       "description": "数字选择器",
       "repos": "https://github.com/tb-component/pc-number.git",
@@ -365,6 +363,7 @@
         "jquery@^2.1.4",
         "lodash@^3.10.1"
       ],
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.14",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -391,7 +390,48 @@
           "release": false
         }
       ],
+      "version": "1.0.14",
       "__hash": "7939aa9576a39ba42f2bee903c1a8852ad03a4a5"
+    },
+    {
+      "version": "1.0.15",
+      "build": "rm package.json && npm install --prefix . fit-number@1.0.15",
+      "name": "fit-number",
+      "description": "数字选择器",
+      "repos": "https://github.com/tb-component/pc-number.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-input@^1.1.17",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-number\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

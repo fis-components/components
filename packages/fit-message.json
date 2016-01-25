@@ -335,14 +335,13 @@
       "__hash": "55bbe1e8d409c49528b25cfec9f8e3a038c14eae"
     },
     {
-      "version": "1.1.10",
-      "build": "rm package.json && npm install --prefix . fit-message@1.1.10",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.5",
         "react-dom@^0.14.5"
       ],
+      "build": "rm package.json && npm install --prefix . fit-message@1.1.10",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -369,17 +368,17 @@
           "release": false
         }
       ],
+      "version": "1.1.10",
       "__hash": "ea04e57d26c2e6bff21fc2f2d84872b278ba6cd1"
     },
     {
-      "version": "1.1.11",
-      "build": "rm package.json && npm install --prefix . fit-message@1.1.11",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.5",
         "react-dom@^0.14.5"
       ],
+      "build": "rm package.json && npm install --prefix . fit-message@1.1.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -406,11 +405,50 @@
           "release": false
         }
       ],
+      "version": "1.1.11",
       "__hash": "219c1035604218a78dfb273e95f00f92d65f1eee"
     },
     {
-      "version": "1.1.12",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.5",
+        "react-dom@^0.14.5"
+      ],
       "build": "rm package.json && npm install --prefix . fit-message@1.1.12",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-message\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.12",
+      "__hash": "4478bdc6d768ac764e5e1b203782e2227c822992"
+    },
+    {
+      "version": "1.1.13",
+      "build": "rm package.json && npm install --prefix . fit-message@1.1.13",
+      "repos": "https://github.com/tb-component/pc-message.git",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -442,8 +480,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "4478bdc6d768ac764e5e1b203782e2227c822992"
+      ]
     }
   ]
 }

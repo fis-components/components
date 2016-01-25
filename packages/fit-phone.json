@@ -37,6 +37,11 @@
     {
       "version": "1.0.2",
       "__hash": "2b1122e329865bc33577c4e74a6c737dd4c82ba9"
+    },
+    {
+      "version": "1.0.3",
+      "build": "rm package.json && npm install --prefix . fit-phone@1.0.3",
+      "repos": "https://github.com/tb-component/pc-phone.git"
     }
   ]
 }

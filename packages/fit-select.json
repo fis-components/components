@@ -249,8 +249,6 @@
       "__hash": "5e6f8161f44a0f38b6fd7a3edf6ffcec67d51a7e"
     },
     {
-      "version": "1.1.9",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.9",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -260,6 +258,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.9",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -286,11 +285,10 @@
           "release": false
         }
       ],
+      "version": "1.1.9",
       "__hash": "2723c708064e54ba1af22c9677d8a5bd93d836ad"
     },
     {
-      "version": "1.1.10",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.10",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -300,6 +298,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.10",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -326,11 +325,10 @@
           "release": false
         }
       ],
+      "version": "1.1.10",
       "__hash": "9071795877658a7e17af200efadce0a812b4a454"
     },
     {
-      "version": "1.1.11",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.11",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -340,6 +338,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.10"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -366,7 +365,48 @@
           "release": false
         }
       ],
+      "version": "1.1.11",
       "__hash": "ac99d540a232358cbedbf837d26c8083dd3945c7"
+    },
+    {
+      "version": "1.1.12",
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.12",
+      "repos": "https://github.com/tb-component/pc-select.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3",
+        "react-dom@^0.14.3",
+        "fit-style@^1.1.12"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

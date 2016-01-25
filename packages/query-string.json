@@ -36,14 +36,39 @@
       "__hash": "8230df0f23ebbe60beb6379044012ab1c812672b"
     },
     {
-      "version": "2.4.2",
       "build": "rm package.json && npm install --prefix . query-string@2.4.2",
+      "version": "2.4.2",
       "__hash": "3ee6de728c69df982776afde13c3816887281a50"
     },
     {
       "version": "3.0.0",
       "build": "rm package.json && npm install --prefix . query-string@3.0.0",
-      "__hash": "e03224a075a6762382cdb5ed1baa539ac6e4c21b"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/query-string\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/query-string\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

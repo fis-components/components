@@ -27,8 +27,47 @@
       "__hash": "dfe0dc623be1a1e9132e0490b6cecfd65f68ff09"
     },
     {
-      "version": "3.0.5",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.0.5",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "3.0.5",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "fcc17290d32baeb47c51eaac5f63cac9bdcd5609"
+    },
+    {
+      "version": "3.0.6",
+      "build": "rm package.json && npm install --prefix . redux@3.0.6",
       "description": "Predictable state container for JavaScript apps",
       "main": "redux",
       "tag": "master",
@@ -62,8 +101,7 @@
       ],
       "paths": {
         "dist": "."
-      },
-      "__hash": "fcc17290d32baeb47c51eaac5f63cac9bdcd5609"
+      }
     }
   ]
 }

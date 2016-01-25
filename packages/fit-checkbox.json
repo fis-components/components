@@ -752,8 +752,6 @@
       "__hash": "a3e10172f94661cec58374fd2edd724935e3a16c"
     },
     {
-      "version": "1.1.11",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.11",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -761,6 +759,7 @@
         "lodash@^3.10.1",
         "react@^0.14.3"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -787,11 +786,10 @@
           "release": false
         }
       ],
+      "version": "1.1.11",
       "__hash": "3b52ea7d96e828ab5f14b2d4322f0ec748247877"
     },
     {
-      "version": "1.1.12",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.12",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -799,6 +797,7 @@
         "lodash@^3.10.1",
         "react@^0.14.3"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.12",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -825,11 +824,10 @@
           "release": false
         }
       ],
+      "version": "1.1.12",
       "__hash": "f4b34117fe4d95962147dac7b5d92a93e674a359"
     },
     {
-      "version": "1.1.13",
-      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.13",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
@@ -837,6 +835,7 @@
         "lodash@^3.10.1",
         "react@^0.14.3"
       ],
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.13",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -863,7 +862,46 @@
           "release": false
         }
       ],
+      "version": "1.1.13",
       "__hash": "f5db4f15b7282fc3f244c2c2912481487a446231"
+    },
+    {
+      "version": "1.1.14",
+      "build": "rm package.json && npm install --prefix . fit-checkbox@1.1.14",
+      "repos": "https://github.com/tb-component/pc-checkbox.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.12",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-checkbox\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

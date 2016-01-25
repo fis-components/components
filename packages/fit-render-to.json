@@ -40,6 +40,11 @@
     {
       "version": "1.0.1",
       "__hash": "79c772de4d4cdd54117e11ed55756084ded6a0f2"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . fit-render-to@1.0.2",
+      "repos": "https://github.com/tb-component/pc-render-to.git"
     }
   ]
 }

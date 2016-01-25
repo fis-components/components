@@ -406,13 +406,12 @@
       "__hash": "d6d8206f6a4601044792b12b00cd5b16bae67141"
     },
     {
-      "version": "1.1.9",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.1.9",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-menu@1.1.9",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -439,16 +438,16 @@
           "release": false
         }
       ],
+      "version": "1.1.9",
       "__hash": "40e6e23b011af50a87e624f214882110bbe40841"
     },
     {
-      "version": "1.1.10",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.1.10",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.1.9"
       ],
+      "build": "rm package.json && npm install --prefix . fit-menu@1.1.10",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -475,16 +474,16 @@
           "release": false
         }
       ],
+      "version": "1.1.10",
       "__hash": "695817bf860d632319a2663219f429d248ca2d3b"
     },
     {
-      "version": "1.1.11",
-      "build": "rm package.json && npm install --prefix . fit-menu@1.1.11",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.1.10"
       ],
+      "build": "rm package.json && npm install --prefix . fit-menu@1.1.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -511,7 +510,45 @@
           "release": false
         }
       ],
+      "version": "1.1.11",
       "__hash": "dd81343d44154725f239c3db6f13bd875aa5d50c"
+    },
+    {
+      "version": "1.1.12",
+      "build": "rm package.json && npm install --prefix . fit-menu@1.1.12",
+      "repos": "https://github.com/tb-component/pc-menu.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.12",
+        "react-router@^2.0.0-rc5"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-menu\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-menu\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
