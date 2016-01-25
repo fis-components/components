@@ -124,7 +124,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "077211a55af259291eefaa3fca02ea7c540f3c0b"
     },
     {
       "build": "rm package.json && npm install --prefix . inline-style-prefixer@0.5.4",
