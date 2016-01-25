@@ -156,7 +156,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "698f3bb7352f087645206988439aca0e813a0fae"
     },
     {
       "version": "1.1.1",
