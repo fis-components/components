@@ -66,7 +66,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "c93cf345c1b4fd8fc549f6b7fde3d4f0e506c2d1"
     },
     {
       "build": "rm package.json && npm install --prefix . whatwg-fetch@0.10.1",
