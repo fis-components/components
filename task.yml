@@ -31,7 +31,7 @@ sync:
     - fit-table
     - fit-tabs
     - fit-timepicker
-    - fit-tree
+    - fit-tree@0.0.8
     - fit-upload
     - color
     - fiten-chat
