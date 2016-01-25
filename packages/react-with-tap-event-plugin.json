@@ -1,0 +1,45 @@
+{
+  "build": "rm package.json && npm install --prefix . react-with-tap-event-plugin@0.14.6",
+  "name": "react-with-tap-event-plugin",
+  "description": "React with tap event plugin",
+  "repos": "https://github.com/2betop/placeholder.git",
+  "main": "react-with-tap.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-with-tap-event-plugin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-with-tap-event-plugin\\/(react-with-tap\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/react-with-tap-event-plugin\\/(react-with-addons-and-tap\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.14.6"
+    }
+  ]
+}
