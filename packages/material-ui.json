@@ -50,6 +50,7 @@
       "__hash": "23f9eae7d2000ab9c05f653c9c4b0c4ac9b38014"
     },
     {
+      
       "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . material-ui@0.14.2",
       "mapping": [
