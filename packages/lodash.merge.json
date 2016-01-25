@@ -51,7 +51,6 @@
       "__hash": "a81adf8d165cecf0fe5b8d8790ded8dcbda85ce7"
     },
     {
-      "version": "3.3.1",
       "build": "rm package.json && npm install --prefix . lodash.merge@3.3.1",
       "dependencies": [
         "lodash._arraycopy@^3.0.0",
@@ -64,6 +63,7 @@
         "lodash.keys@^3.0.0",
         "lodash.toplainobject@^3.0.0"
       ],
+      "version": "3.3.1",
       "__hash": "3492c955da43a268bc7486183e752153cf0a8d34"
     },
     {
@@ -80,7 +80,32 @@
         "lodash.keys@^3.0.0",
         "lodash.toplainobject@^3.0.0"
       ],
-      "__hash": "9a249ac3dc355c5b9548cf1b6757e607b5bd6bd9"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.merge\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.merge\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

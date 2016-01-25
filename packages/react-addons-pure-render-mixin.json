@@ -42,7 +42,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -61,8 +61,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "53653cc139d8223537af1a9f0cfb506b1b72a753"
+      ]
     },
     {
       "version": "0.14.1",
@@ -72,7 +71,7 @@
       "tag": "master",
       "reposType": "npm",
       "dependencies": [
-        "react@^0.14.1"
+        "react@^0.14.0"
       ],
       "mapping": [
         {
@@ -80,7 +79,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -99,8 +98,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "6efc75c8373bd2e81d1ef4dfe0dda8818a05ad1d"
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.2",
@@ -118,7 +116,7 @@
       "tag": "master",
       "reposType": "npm",
       "dependencies": [
-        "react@^0.14.2"
+        "react@^0.14.1"
       ],
       "mapping": [
         {
@@ -126,7 +124,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -145,8 +143,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "b55e1c9ae6215a0c0356967a520e7924005b5917"
+      ]
     },
     {
       "version": "v0.14.3",
@@ -154,6 +151,43 @@
     },
     {
       "version": "0.14.3",
+      "description": "This package provides the React PureRenderMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "repos": "https://github.com/2betop/placeholder.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "react@^0.14.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.14.4",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.4",
       "description": "This package provides the React PureRenderMixin add-on.",
       "tag": "master",
       "reposType": "npm",
@@ -163,7 +197,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -182,12 +216,11 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "85f81badb10578df84556af0623e5adcb14f9e38"
+      ]
     },
     {
-      "version": "0.14.4",
-      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.4",
+      "version": "0.14.5",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.5",
       "description": "This package provides the React PureRenderMixin add-on.",
       "tag": "master",
       "reposType": "npm",
@@ -200,7 +233,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -219,12 +252,11 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "fa3c5c76f387cb18030577ed60047ff2beccbd18"
+      ]
     },
     {
-      "version": "0.14.5",
-      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.5",
+      "version": "0.14.6",
+      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.6",
       "description": "This package provides the React PureRenderMixin add-on.",
       "tag": "master",
       "reposType": "npm",
@@ -237,7 +269,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -256,45 +288,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "a893c2de7e5507daf29ae4bc256e3a2d1c31e0ba"
-    },
-    {
-      "version": "0.14.6",
-      "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.6",
-      "description": "This package provides the React PureRenderMixin add-on.",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [
-        "react@^0.14.6"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-addons-pure-render-mixin\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "__hash": "62d45f1705f6935aa407c2b766dbf512dd26913f"
+      ]
     }
   ]
 }

@@ -40,7 +40,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -59,8 +59,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "deef3ff5310a80cfdaec411695e34dfe79ec202f"
+      ]
     },
     {
       "version": "3.0.1",
@@ -78,7 +77,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -97,8 +96,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "406b194f26e08ee219411684c9502be0551f0925"
+      ]
     },
     {
       "version": "3.0.2",
@@ -116,7 +114,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -135,8 +133,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "d6ca3871972e22011cc5c873741a00f222c2a92b"
+      ]
     },
     {
       "version": "3.0.3",
@@ -154,7 +151,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -173,8 +170,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "745128fb31b31a9529db2b090fad46375b9be98d"
+      ]
     },
     {
       "version": "3.0.4",
@@ -192,7 +188,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -211,8 +207,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "e94f92aab935c2add53748f2a2cb09be40c3bea1"
+      ]
     },
     {
       "version": "3.0.5",
@@ -230,7 +225,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -249,13 +244,13 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "ee6454ad69f0988d0b4caf501b5a6a305624f609"
+      ]
     },
     {
       "version": "3.0.6",
       "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.6",
       "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "repos": "https://github.com/lodash/lodash",
       "reposType": "npm",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
@@ -267,7 +262,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -286,8 +281,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "561832b9a497d3f275d09107f2c4c4afe13bd2a8"
+      ]
     },
     {
       "version": "3.0.7",
@@ -304,7 +298,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -323,8 +317,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "14923c167dfaf4d4a2ea4af51f933cbb86928a29"
+      ]
     },
     {
       "version": "3.0.8",
@@ -340,7 +333,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -359,8 +352,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "2c1cfc7fbfc0c0642faf2b1c05a0d522ca528b85"
+      ]
     }
   ]
 }

@@ -36,12 +36,62 @@
   "tags": [
     {
       "version": "3.6.0",
-      "__hash": "b7d440e0bca05d744867c21418081988054f339e"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.restparam\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.restparam\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "3.6.1",
       "build": "rm package.json && npm install --prefix . lodash.restparam@3.6.1",
-      "__hash": "57f99d069ee36504a115e690cdc58aee963f8102"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.restparam\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.restparam\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

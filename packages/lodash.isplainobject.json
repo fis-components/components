@@ -41,7 +41,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -60,8 +60,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "66772cb8aa46ebf40309ebd9741afbd74a3117cd"
+      ]
     },
     {
       "version": "3.0.1",
@@ -80,7 +79,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -99,8 +98,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "87271d1a976359d46bdf5fe1b3f2a476bdfc0c3b"
+      ]
     },
     {
       "version": "3.0.2",
@@ -119,7 +117,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -138,17 +136,16 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "5d251b443634ba5492c86630a30e3b7dbb75429a"
+      ]
     },
     {
       "version": "3.1.0",
       "build": "rm package.json && npm install --prefix . lodash.isplainobject@3.1.0",
       "description": "The modern build of lodash’s `_.isPlainObject` as a module.",
+      "repos": "https://github.com/lodash/lodash",
       "reposType": "npm",
       "dependencies": [
         "lodash._basefor@^3.0.0",
-        "lodash._getnative@^3.0.0",
         "lodash.keysin@^3.0.0"
       ],
       "mapping": [
@@ -157,7 +154,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -176,20 +173,23 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "86afd8bb04dad2ea8e6058e27f38bc37d9e91892"
+      ]
     },
     {
       "version": "3.2.0",
       "description": "The modern build of lodash’s `_.isPlainObject` as a module.",
       "reposType": "npm",
+      "dependencies": [
+        "lodash._basefor@^3.0.0",
+        "lodash.keysin@^3.0.0"
+      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/lodash\\.isplainobject\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -208,8 +208,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "34443576fffc48ad06fa5ed83e81c0f0d8730946"
+      ]
     }
   ]
 }

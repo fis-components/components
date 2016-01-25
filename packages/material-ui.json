@@ -46,8 +46,93 @@
   ],
   "tags": [
     {
+      "version": "0.14.0",
+      "build": "rm package.json && npm install --prefix . material-ui@0.14.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "0.14.1",
-      "__hash": "23f9eae7d2000ab9c05f653c9c4b0c4ac9b38014"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.14.2",
+      "build": "rm package.json && npm install --prefix . material-ui@0.14.2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

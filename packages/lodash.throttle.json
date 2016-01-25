@@ -24,7 +24,34 @@
   "tags": [
     {
       "version": "3.0.4",
-      "__hash": "f8a14a91418c805a44d530f4b43b1ccb2a0eaeed"
+      "description": "The modern build of lodash’s `_.throttle` as a module.",
+      "reposType": "npm",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.throttle\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.throttle\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

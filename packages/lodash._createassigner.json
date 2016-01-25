@@ -39,33 +39,127 @@
   "tags": [
     {
       "version": "3.0.0",
-      "__hash": "1e9b6bfeba4760bf9cc79631fe3bd3135ed29b08"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "3.0.1",
       "build": "rm package.json && npm install --prefix . lodash._createassigner@3.0.1",
-      "__hash": "d3b786cf8493f02de6ed4fe4d0f0642344f496e9"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "3.1.0",
       "build": "rm package.json && npm install --prefix . lodash._createassigner@3.1.0",
-      "dependencies": [
-        "lodash._bindcallback@^3.0.0",
-        "lodash._isiterateecall@^3.0.0",
-        "lodash.restparam@^3.0.0"
-      ],
-      "__hash": "d3e31f8f10c2416473e3e1c61f66e417b21cb912"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "version": "3.1.1",
       "build": "rm package.json && npm install --prefix . lodash._createassigner@3.1.1",
-      "repos": "https://github.com/lodash/lodash.git",
       "dependencies": [
         "lodash._bindcallback@^3.0.0",
         "lodash._isiterateecall@^3.0.0",
         "lodash.restparam@^3.0.0"
       ],
-      "__hash": "4d5c0ff866c4ca2c5139a4287676f85fe0fe3c9d"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\._createassigner\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
