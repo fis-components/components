@@ -37,3 +37,4 @@ sync:
     - fiten-chat-box@latest
     - fiten-chat@latest
     - material-ui@0.14.2
+    - platform
