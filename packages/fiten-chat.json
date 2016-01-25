@@ -48,7 +48,8 @@
     {
       "version": "1.0.4",
       "build": "rm package.json && npm install --prefix . fiten-chat@1.0.4",
-      "repos": "https://github.com/tb-component/mobile-chat.git"
+      "repos": "https://github.com/tb-component/mobile-chat.git",
+      "__hash": "cec396e74e0c1c79a0bcab4bcd42fb20f85da6d0"
     }
   ]
 }
