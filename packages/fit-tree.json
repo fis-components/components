@@ -44,12 +44,19 @@
       "__hash": "e9ca384fbcde98acc1925b235cc742483039bdc7"
     },
     {
-      "version": "0.0.8",
       "build": "rm package.json && npm install --prefix . fit-tree@0.0.8",
       "dependencies": [
         "classnames@^2.2.3"
       ],
+      "version": "0.0.8",
       "__hash": "ace41f1ea3653979ccbbb7991a8cc8c340c4ce2a"
+    },
+    {
+      "version": "0.0.9",
+      "build": "rm package.json && npm install --prefix . fit-tree@0.0.9",
+      "dependencies": [
+        "classnames@^2.2.3"
+      ]
     }
   ]
 }
