@@ -31,9 +31,8 @@ sync:
     - fit-table@latest
     - fit-tabs@latest
     - fit-timepicker@latest
-    - fit-tree@latest
     - fit-upload@latest
     - color
-    - fiten-chat@latest
+    - fit-tree@latest
     - fiten-chat-box@latest
-@latest@latest@latest@latest
+    - fiten-chat@latest
