@@ -56,7 +56,8 @@
       "build": "rm package.json && npm install --prefix . fit-tree@0.0.9",
       "dependencies": [
         "classnames@^2.2.3"
-      ]
+      ],
+      "__hash": "72cf29cfb939622e3194184fb638b3d2cc484d0d"
     }
   ]
 }
