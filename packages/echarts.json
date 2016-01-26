@@ -5,6 +5,7 @@
   "dependencies": [
     "zrender"
   ],
+  "umd2commonjs": true,
   "mapping": [
     {
       "reg": "\\.min\\.(js|css)$",
@@ -35,6 +36,9 @@
     {
       "version": "2.2.7",
       "__hash": "01bc77731c5bf88af93b3d4e3211caa55dc96ee5"
+    },
+    {
+      "version": "3.0.2"
     }
   ]
 }

@@ -6,6 +6,7 @@
   "repos": "https://github.com/ecomfe/zrender.git",
   "name": "zrender",
   "main": "zrender.js",
+  "umd2commonjs": true,
   "mapping": [
     {
       "reg": "\\.min\\.(js|css)$",
@@ -32,6 +33,9 @@
     {
       "version": "2.1.1",
       "__hash": "8efe8edd788322f78a13ca9ae7061d0c782e23cb"
+    },
+    {
+      "version": "3.0.1"
     }
   ]
 }
