@@ -8,3 +8,4 @@ sync:
     # 每次只保留当前需要转换的组件。
     - commonmark-react-renderer@*
     - react-json-pretty@*
+    - react-css-modules@*
