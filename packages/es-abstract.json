@@ -121,7 +121,8 @@
         "is-callable@^1.1.0",
         "es-to-primitive@^1.0.0",
         "is-regex@^1.0.3"
-      ]
+      ],
+      "__hash": "e9fe3c8800ce2a0531dffafcac287f852c2def50"
     }
   ]
 }
