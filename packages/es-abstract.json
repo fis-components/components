@@ -77,7 +77,8 @@
     },
     {
       "version": "1.4.0",
-      "build": "rm package.json && npm install --prefix . es-abstract@1.4.0"
+      "build": "rm package.json && npm install --prefix . es-abstract@1.4.0",
+      "__hash": "eeca0e3d6e259c9fea5e087db816563a2eb9436d"
     },
     {
       "version": "1.4.1",
