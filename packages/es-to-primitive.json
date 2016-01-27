@@ -66,7 +66,8 @@
         "is-callable@^1.1.1",
         "is-date-object@^1.0.1",
         "is-symbol@^1.0.1"
-      ]
+      ],
+      "__hash": "5feece378ba519b57f64597605b97657a934eaf4"
     },
     {
       "version": "1.1.1",
