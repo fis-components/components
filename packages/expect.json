@@ -48,7 +48,8 @@
     },
     {
       "version": "1.13.0",
-      "build": "rm package.json && npm install --prefix . expect@1.13.0"
+      "build": "rm package.json && npm install --prefix . expect@1.13.0",
+      "__hash": "56f9122b5aee51e70aa9f4b2724f1251b271b4e0"
     },
     {
       "version": "1.13.1",
