@@ -87,7 +87,8 @@
         "is-equal@^1.4.0",
         "is-regex@^1.0.3",
         "object-inspect@^1.0.2"
-      ]
+      ],
+      "__hash": "fb5db573468dd3a24be65bb3a59bbb33da866864"
     }
   ]
 }
