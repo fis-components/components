@@ -88,7 +88,8 @@
         "is-callable@^1.1.0",
         "es-to-primitive@^1.0.0",
         "is-regex@^1.0.3"
-      ]
+      ],
+      "__hash": "7b32677f33ec568714ee99080216249737f91eae"
     },
     {
       "version": "1.4.2",
