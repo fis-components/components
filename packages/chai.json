@@ -82,7 +82,8 @@
     },
     {
       "version": "3.0.0",
-      "build": "rm package.json && npm install --prefix . chai@3.0.0"
+      "build": "rm package.json && npm install --prefix . chai@3.0.0",
+      "__hash": "0a1fd6d3a7315989e24aaaafd5c33635dc063bba"
     },
     {
       "version": "3.1.0",
