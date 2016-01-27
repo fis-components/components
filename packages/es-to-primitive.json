@@ -56,7 +56,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . es-to-primitive@1.0.1"
+      "build": "rm package.json && npm install --prefix . es-to-primitive@1.0.1",
+      "__hash": "3d6b33e86531b40c7aba28c3c79770ed6eb1d6c2"
     },
     {
       "version": "1.1.0",
