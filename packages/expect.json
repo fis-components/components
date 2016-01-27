@@ -77,7 +77,8 @@
         "is-equal@^1.4.0",
         "is-regex@^1.0.3",
         "object-inspect@^1.0.2"
-      ]
+      ],
+      "__hash": "d06ba829e3b673b9bb4bced4531733e0a7f6b441"
     },
     {
       "version": "1.13.4",
