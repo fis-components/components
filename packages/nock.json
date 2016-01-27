@@ -62,7 +62,8 @@
     },
     {
       "version": "7.0.1",
-      "build": "rm package.json && npm install --prefix . nock@7.0.1"
+      "build": "rm package.json && npm install --prefix . nock@7.0.1",
+      "__hash": "d15038cfc5e2574ec60e3786a1a6a027fbc00bc3"
     }
   ]
 }
