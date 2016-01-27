@@ -44,7 +44,8 @@
     },
     {
       "version": "1.0.8",
-      "build": "rm package.json && npm install --prefix . object-keys@1.0.8"
+      "build": "rm package.json && npm install --prefix . object-keys@1.0.8",
+      "__hash": "ec3610fa7568776960d7b2736f44db92932b9b12"
     },
     {
       "version": "1.0.9",
