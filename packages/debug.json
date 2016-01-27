@@ -42,7 +42,36 @@
   "tags": [
     {
       "version": "2.2.0",
-      "__hash": "bf7e642f8f48cdba34ec7bb428843c9ca51a5730"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/debug\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/debug\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/debug\\/(debug\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,58 @@
+{
+  "build": "rm package.json && npm install --prefix . object.entries@1.0.3",
+  "name": "object.entries",
+  "description": "ES7 spec-compliant Object.entries shim.",
+  "repos": "https://github.com/es-shims/Object.entries.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "define-properties@^1.1.1",
+    "es-abstract@^1.3.2",
+    "has@^1.0.1",
+    "function-bind@^1.0.2"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/object\\.entries\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/object\\.entries\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/object\\.entries\\/(implementation\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/object\\.entries\\/(polyfill\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/object\\.entries\\/(shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.3"
+    }
+  ]
+}

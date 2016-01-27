@@ -1,0 +1,51 @@
+{
+  "build": "rm package.json && npm install --prefix . redux-mock-store@0.0.4",
+  "name": "redux-mock-store",
+  "description": "[![Circle CI](https://circleci.com/gh/arnaudbenard/redux-mock-store/tree/master.svg?style=svg)](https://circleci.com/gh/arnaudbenard/redux-mock-store/tree/master)",
+  "repos": "https://github.com/arnaudbenard/redux-mock-store.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "expect@^1.12.2"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux-mock-store\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux-mock-store\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.0.4"
+    },
+    {
+      "version": "0.0.5",
+      "build": "rm package.json && npm install --prefix . redux-mock-store@0.0.5"
+    },
+    {
+      "version": "0.0.6",
+      "build": "rm package.json && npm install --prefix . redux-mock-store@0.0.6"
+    }
+  ]
+}
