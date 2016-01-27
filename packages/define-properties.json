@@ -43,7 +43,8 @@
     },
     {
       "version": "1.1.2",
-      "build": "rm package.json && npm install --prefix . define-properties@1.1.2"
+      "build": "rm package.json && npm install --prefix . define-properties@1.1.2",
+      "__hash": "56df77d48815f4439320e2dfbf2714e116ab2d67"
     }
   ]
 }
