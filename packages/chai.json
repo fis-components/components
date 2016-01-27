@@ -136,7 +136,8 @@
         "assertion-error@^1.0.1",
         "deep-eql@^0.1.3",
         "type-detect@^1.0.0"
-      ]
+      ],
+      "__hash": "b711e2e6bf324f98a6d2714e75120c2cb668caf6"
     }
   ]
 }
