@@ -40,7 +40,8 @@
     },
     {
       "version": "0.3.1",
-      "build": "rm package.json && npm install --prefix . propagate@0.3.1"
+      "build": "rm package.json && npm install --prefix . propagate@0.3.1",
+      "__hash": "60b8da3109ebfe6a0e65e5b9ad4af9c319e544cd"
     }
   ]
 }
