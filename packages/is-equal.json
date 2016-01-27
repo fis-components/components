@@ -62,7 +62,8 @@
         "is-regex@^1.0.3",
         "is-string@^1.0.4",
         "is-symbol@^1.0.1"
-      ]
+      ],
+      "__hash": "61fc83bce40ac301632eb5946a2a5699577a3bd5"
     },
     {
       "version": "1.4.0",
