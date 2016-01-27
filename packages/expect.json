@@ -57,7 +57,8 @@
       "dependencies": [
         "is-regexp@^1.0.0",
         "object-inspect@^1.0.2"
-      ]
+      ],
+      "__hash": "4eb5f726acd8fac98c4b95fe76a703674d0a8aef"
     },
     {
       "version": "1.13.2",
