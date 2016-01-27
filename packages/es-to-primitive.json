@@ -76,7 +76,8 @@
         "is-callable@^1.1.1",
         "is-date-object@^1.0.1",
         "is-symbol@^1.0.1"
-      ]
+      ],
+      "__hash": "394aff68d54bd18659c671a9b1a85ca3ff287527"
     }
   ]
 }
