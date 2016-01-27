@@ -42,7 +42,8 @@
     },
     {
       "version": "0.0.5",
-      "build": "rm package.json && npm install --prefix . redux-mock-store@0.0.5"
+      "build": "rm package.json && npm install --prefix . redux-mock-store@0.0.5",
+      "__hash": "df31e98801a7edc85f783629b70470c553592e4c"
     },
     {
       "version": "0.0.6",
