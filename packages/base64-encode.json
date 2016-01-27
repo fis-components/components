@@ -1,0 +1,41 @@
+{
+  "build": "rm package.json && npm install --prefix . base64-encode@1.0.1",
+  "name": "base64-encode",
+  "description": "Encode base-64 strings with JavaScript",
+  "repos": "https://github.com/ForbesLindesay/base64-encode.git",
+  "main": "server.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/base64-encode\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/base64-encode\\/(server\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.1"
+    }
+  ]
+}
