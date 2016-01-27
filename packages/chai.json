@@ -114,7 +114,8 @@
         "assertion-error@^1.0.1",
         "deep-eql@^0.1.3",
         "type-detect@^1.0.0"
-      ]
+      ],
+      "__hash": "be03a1ad58cdc04b8ad099a3c06eb103fa46630d"
     },
     {
       "version": "3.4.0",
