@@ -40,7 +40,8 @@
     },
     {
       "version": "1.1.2",
-      "build": "rm package.json && npm install --prefix . is-callable@1.1.2"
+      "build": "rm package.json && npm install --prefix . is-callable@1.1.2",
+      "__hash": "3a37a5c9bcd7730764dd51cd1191c56cc10356e1"
     }
   ]
 }
