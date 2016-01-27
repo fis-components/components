@@ -42,3 +42,5 @@ sync:
     - vue-router
     - base64-encode
     - base64-decode
+    - redux-mock-store
+    - nock
