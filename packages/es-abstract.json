@@ -110,7 +110,8 @@
         "is-callable@^1.1.0",
         "es-to-primitive@^1.0.0",
         "is-regex@^1.0.3"
-      ]
+      ],
+      "__hash": "6adb15e03823a65d0d462351ee1e53965153c8f2"
     },
     {
       "version": "1.5.0",
