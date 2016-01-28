@@ -39,6 +39,10 @@
   ],
   "tags": [
     {
+      "version": "0.1.1",
+      "build": "rm package.json && npm install --prefix . type-detect@0.1.1"
+    },
+    {
       "version": "1.0.0",
       "__hash": "d6a08c8e89ffb56f45b31eec11f2233e012b9724"
     }
