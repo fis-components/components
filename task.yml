@@ -9,4 +9,4 @@ sync:
     - fit-table@1.1.59
     - assertion-error@1.0.1
     - type-detect@0.1.1
-    - react-onclickout@lasted
+    - react-onclickout@latest
