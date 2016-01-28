@@ -44,3 +44,4 @@ sync:
     - base64-decode
     - redux-mock-store
     - nock
+    - assertion-error
