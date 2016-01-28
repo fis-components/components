@@ -40,7 +40,6 @@
   },
   "tags": [
     {
-      "version": "0.14.0",
       "dependencies": [
         "react@^0.14.6"
       ],
@@ -69,7 +68,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "0.14.0"
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.1",
@@ -137,9 +137,10 @@
       "__hash": "b767a7a192eda2baed069e971d2a7ee476f86403"
     },
     {
+      "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
       "dependencies": [
-        "react@^0.14.2"
+        "react@^0.14.3"
       ],
       "mapping": [
         {
@@ -166,9 +167,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "0.14.3",
-      "__hash": "c7e16611979fa29a234be7488f7670460840840b"
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.4",
@@ -239,7 +238,6 @@
       "__hash": "fd7cca66b9066bb41c27f0d121f6d0435d2c463d"
     },
     {
-      "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.6",
       "dependencies": [
         "react@^0.14.5"
@@ -269,7 +267,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "0.14.6"
     }
   ]
 }
