@@ -11,3 +11,4 @@ sync:
     - type-detect@0.1.1
     - react-onclickout@latest
     - zrender@latest
+    - fit-button@latest
