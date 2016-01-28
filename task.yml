@@ -38,3 +38,4 @@ sync:
     - react-markdown@latest
     - react-json-pretty@latest
     - react-css-modules@latest
+    - flux@latest
