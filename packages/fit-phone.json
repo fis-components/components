@@ -47,7 +47,8 @@
     {
       "version": "1.0.4",
       "build": "rm package.json && npm install --prefix . fit-phone@1.0.4",
-      "repos": "https://github.com/tb-component/pc-phone.git"
+      "repos": "https://github.com/tb-component/pc-phone.git",
+      "__hash": "89991693abfb88889ee463a16425218935ad8ff8"
     }
   ]
 }
