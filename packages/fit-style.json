@@ -791,8 +791,42 @@
       "__hash": "289ae08d7a819aad20a91c231a8097d7125b8674"
     },
     {
-      "version": "1.1.12",
+      "description": "",
+      "repos": "https://github.com/tb-component/pc-style.git",
+      "main": "lib/index.js",
       "build": "rm package.json && npm install --prefix . fit-style@1.1.12",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-style\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.12",
+      "__hash": "f9954b89bda1d8cbd68d5b59f98c603138e84484"
+    },
+    {
+      "version": "1.1.13",
+      "build": "rm package.json && npm install --prefix . fit-style@1.1.13",
       "repos": "https://github.com/tb-component/pc-style.git",
       "main": "lib/index.js",
       "mapping": [
@@ -820,8 +854,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "f9954b89bda1d8cbd68d5b59f98c603138e84484"
+      ]
     }
   ]
 }

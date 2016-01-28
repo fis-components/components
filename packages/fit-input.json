@@ -655,13 +655,53 @@
       "__hash": "037046540cbd32daccdf77c973e466d6919ac2dc"
     },
     {
-      "version": "1.1.17",
-      "build": "rm package.json && npm install --prefix . fit-input@1.1.17",
       "repos": "https://github.com/tb-component/pc-input.git",
       "main": "lib/index.js",
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.1.12",
+        "jquery@^2.1.4",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.17",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-input\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.17",
+      "__hash": "5c715c053b317c36d627416f3dc73f66908d2e58"
+    },
+    {
+      "version": "1.1.18",
+      "build": "rm package.json && npm install --prefix . fit-input@1.1.18",
+      "repos": "https://github.com/tb-component/pc-input.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.13",
         "jquery@^2.1.4",
         "lodash@^3.10.1",
         "react@^0.14.3"
@@ -691,8 +731,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "5c715c053b317c36d627416f3dc73f66908d2e58"
+      ]
     }
   ]
 }

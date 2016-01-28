@@ -39,9 +39,13 @@
       "__hash": "861a1c273554a77b43ae7a7060d169957927a68a"
     },
     {
-      "version": "0.0.4",
       "build": "rm package.json && npm install --prefix . fit-iframe@0.0.4",
+      "version": "0.0.4",
       "__hash": "6ecc6abc5812d5f2cfcb6053a7f966f2bc7c071b"
+    },
+    {
+      "version": "0.0.5",
+      "build": "rm package.json && npm install --prefix . fit-iframe@0.0.5"
     }
   ]
 }

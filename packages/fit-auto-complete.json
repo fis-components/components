@@ -58,7 +58,6 @@
       "__hash": "fdf5f2f287fc022325a2540535163ee76f4f0d2d"
     },
     {
-      "version": "0.2.15",
       "build": "rm package.json && npm install --prefix . fit-auto-complete@0.2.15",
       "repos": "https://github.com/tb-component/pc-autocomplete.git",
       "dependencies": [
@@ -66,7 +65,18 @@
         "fit-input@^1.1.17",
         "jquery@^2.2.0"
       ],
+      "version": "0.2.15",
       "__hash": "ee465d452a0225fe78d8bd12afdf9b5143a53be0"
+    },
+    {
+      "version": "0.2.16",
+      "build": "rm package.json && npm install --prefix . fit-auto-complete@0.2.16",
+      "repos": "https://github.com/tb-component/pc-autocomplete.git",
+      "dependencies": [
+        "classnames@^2.2.3",
+        "fit-input@^1.1.18",
+        "jquery@^2.2.0"
+      ]
     }
   ]
 }

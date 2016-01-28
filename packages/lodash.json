@@ -117,8 +117,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "94a7a88d070fbf1e748a34842ba7c7825611994b"
+      "umd2commonjs": null
     },
     {
       "repos": "https://github.com/lodash/lodash.git",

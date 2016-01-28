@@ -384,8 +384,6 @@
       "__hash": "c6438a725fe9b565774d1e79220874c2e9b5f037"
     },
     {
-      "version": "1.1.12",
-      "build": "rm package.json && npm install --prefix . fit-pagination@1.1.12",
       "name": "fit-pagination",
       "description": "分页",
       "repos": "https://github.com/tb-component/pc-pagination.git",
@@ -395,6 +393,7 @@
         "react@^0.14.3",
         "fit-style@^1.1.12"
       ],
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.1.12",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -421,7 +420,47 @@
           "release": false
         }
       ],
+      "version": "1.1.12",
       "__hash": "9d94912d60f70bd9536eff717104591cac0575eb"
+    },
+    {
+      "version": "1.1.13",
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.1.13",
+      "name": "fit-pagination",
+      "description": "分页",
+      "repos": "https://github.com/tb-component/pc-pagination.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-style@^1.1.13"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-pagination\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-pagination\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

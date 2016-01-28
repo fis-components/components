@@ -42,10 +42,15 @@
       "__hash": "79c772de4d4cdd54117e11ed55756084ded6a0f2"
     },
     {
-      "version": "1.0.2",
       "build": "rm package.json && npm install --prefix . fit-render-to@1.0.2",
       "repos": "https://github.com/tb-component/pc-render-to.git",
+      "version": "1.0.2",
       "__hash": "60d05ce8dc4ff85c354bc76003a18f89204844d9"
+    },
+    {
+      "version": "1.0.3",
+      "build": "rm package.json && npm install --prefix . fit-render-to@1.0.3",
+      "repos": "https://github.com/tb-component/pc-render-to.git"
     }
   ]
 }

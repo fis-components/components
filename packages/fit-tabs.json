@@ -369,8 +369,47 @@
       "__hash": "a7981b33d27943bdff400fd2ce802063fb76d605"
     },
     {
-      "version": "0.2.13",
+      "name": "fit-tabs",
+      "description": "tabs",
+      "repos": "https://github.com/tb-component/pc-tabs.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.3",
+        "jquery@^2.2.0"
+      ],
       "build": "rm package.json && npm install --prefix . fit-tabs@0.2.13",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-tabs\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.2.13",
+      "__hash": "4b2e40e15b540a48a01fc566e0f1a8094f745df0"
+    },
+    {
+      "version": "0.2.14",
+      "build": "rm package.json && npm install --prefix . fit-tabs@0.2.14",
       "name": "fit-tabs",
       "description": "tabs",
       "repos": "https://github.com/tb-component/pc-tabs.git",
@@ -404,8 +443,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "4b2e40e15b540a48a01fc566e0f1a8094f745df0"
+      ]
     }
   ]
 }

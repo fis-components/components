@@ -102,7 +102,6 @@
       "__hash": "1638868be63443267d4782d890a59040302c98b3"
     },
     {
-      "version": "0.0.10",
       "build": "rm package.json && npm install --prefix . fit-json-tree@0.0.10",
       "dependencies": [
         "fit-tree@^0.0.9"
@@ -133,7 +132,41 @@
           "release": false
         }
       ],
+      "version": "0.0.10",
       "__hash": "290a19fe8703a19868827acbfeab69f098238e9d"
+    },
+    {
+      "version": "0.0.12",
+      "build": "rm package.json && npm install --prefix . fit-json-tree@0.0.12",
+      "dependencies": [
+        "fit-tree@^0.0.11"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-json-tree\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-json-tree\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

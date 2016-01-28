@@ -475,8 +475,6 @@
       "__hash": "2f60997e34b8003fa1458dbd616b9b79521c38b1"
     },
     {
-      "version": "1.1.23",
-      "build": "rm package.json && npm install --prefix . fit-radio@1.1.23",
       "name": "fit-radio",
       "description": "单选框",
       "repos": "https://github.com/tb-component/pc-radio.git",
@@ -486,6 +484,50 @@
         "react@^0.14.3",
         "fit-button@^1.2.15",
         "fit-style@^1.1.12",
+        "lodash@^3.10.1"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-radio@1.1.23",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.23",
+      "__hash": "f4671851cc0331d64347958d61fff792eb8f4918"
+    },
+    {
+      "version": "1.1.25",
+      "build": "rm package.json && npm install --prefix . fit-radio@1.1.25",
+      "name": "fit-radio",
+      "description": "单选框",
+      "repos": "https://github.com/tb-component/pc-radio.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-button@^1.2.19",
+        "fit-style@^1.1.13",
         "lodash@^3.10.1"
       ],
       "mapping": [
@@ -513,8 +555,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "f4671851cc0331d64347958d61fff792eb8f4918"
+      ]
     }
   ]
 }

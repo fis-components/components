@@ -467,8 +467,6 @@
       "__hash": "c8cd775ef42c318e46589c14d3ed85ef38051d69"
     },
     {
-      "version": "1.1.15",
-      "build": "rm package.json && npm install --prefix . fit-switch@1.1.15",
       "name": "fit-switch",
       "description": "开关",
       "repos": "https://github.com/tb-component/pc-switch.git",
@@ -476,6 +474,49 @@
       "dependencies": [
         "classnames@^2.2.1",
         "fit-style@^1.1.12",
+        "lodash@^3.10.1",
+        "react@^0.14.3"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.15",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-switch\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.15",
+      "__hash": "e58e5f8061db9f758220c8e1a996611d24331949"
+    },
+    {
+      "version": "1.1.16",
+      "build": "rm package.json && npm install --prefix . fit-switch@1.1.16",
+      "name": "fit-switch",
+      "description": "开关",
+      "repos": "https://github.com/tb-component/pc-switch.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "fit-style@^1.1.13",
         "lodash@^3.10.1",
         "react@^0.14.3"
       ],
@@ -504,8 +545,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "e58e5f8061db9f758220c8e1a996611d24331949"
+      ]
     }
   ]
 }
