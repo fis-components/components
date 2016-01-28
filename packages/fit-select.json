@@ -447,7 +447,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "70869ff37943f04e50635c5a692da2daea6cf056"
     }
   ]
 }
