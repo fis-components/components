@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . assertion-error@1.0.1"
+      "build": "rm package.json && npm install --prefix . assertion-error@1.0.1",
+      "__hash": "91b5f8f9ce011b308b8b451654e60012566bec05"
     }
   ]
 }
