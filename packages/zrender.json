@@ -35,6 +35,48 @@
       "__hash": "e2962fdf1acf5e99dadfb2dd10d0792a0ddbd8ab"
     },
     {
+      "version": "3.0.0",
+      "build": "rm package.json && npm install --prefix . zrender@3.0.0",
+      "description": "A lightweight canvas library.",
+      "main": "build/zrender.min.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/zrender\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/zrender\\/build\\/(.*)$",
+          "release": "build/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/zrender\\/src\\/(.*)$",
+          "release": "src/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "protocol": null,
+      "github": null,
+      "umd2commonjs": null
+    },
+    {
       "version": "3.0.1",
       "__hash": "227b9c96224f9250ab030a218855013a0c508e0e"
     }
