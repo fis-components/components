@@ -45,7 +45,8 @@
     },
     {
       "version": "0.0.5",
-      "build": "rm package.json && npm install --prefix . fit-upload@0.0.5"
+      "build": "rm package.json && npm install --prefix . fit-upload@0.0.5",
+      "__hash": "cb7734316f47d9833ae520341453e44fdf149b0f"
     }
   ]
 }
