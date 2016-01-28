@@ -443,7 +443,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "6cd401345a17bd5893b0b7ae36e07bfd3112bd76"
     }
   ]
 }
