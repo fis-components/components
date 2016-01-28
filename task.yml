@@ -10,3 +10,4 @@ sync:
     - assertion-error@1.0.1
     - type-detect@0.1.1
     - react-onclickout@latest
+    - zrender@latest
