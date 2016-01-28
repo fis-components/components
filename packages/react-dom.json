@@ -69,7 +69,8 @@
           "release": false
         }
       ],
-      "version": "0.14.0"
+      "version": "0.14.0",
+      "__hash": "f42cdbeaf12d0e0f89b6d20d222c8e80f6b8b842"
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.1",
