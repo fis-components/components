@@ -6,7 +6,7 @@ sync:
     # - whatwg-fetch
     # - react@0.14.5	
     # 不要删除现有的，免得冲突 merge 不了。工具会自动 diff 只处理本次更新的部分。
-    - fit-table@1.1.59
+    - fit-table@latest
     - assertion-error@1.0.1
     - type-detect@0.1.1
     - react-onclickout@latest
