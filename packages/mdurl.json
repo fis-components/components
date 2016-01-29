@@ -51,7 +51,8 @@
   "main": "index.js",
   "tags": [
     {
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "__hash": "9fcb0c3f6ce2ca3ffcaf308ef53317de7c49f2d2"
     },
     {
       "version": "1.0.1",
