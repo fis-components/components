@@ -56,7 +56,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . mdurl@1.0.1"
+      "build": "rm package.json && npm install --prefix . mdurl@1.0.1",
+      "__hash": "39323a3e0f42887a2dfe1987bd87a93fb3d62279"
     }
   ]
 }
