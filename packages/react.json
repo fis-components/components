@@ -44,37 +44,41 @@
   },
   "tags": [
     {
+      "version": "0.13.3",
+      "build": "rm package.json && npm install --prefix . react@0.13.3"
+    },
+    {
       "version": "0.14.0",
       "__hash": "78d08d9f6ece7672dd8a517ef8a896a8ab5dee71"
     },
     {
-      "version": "0.14.1",
       "build": "rm package.json && npm install --prefix . react@0.14.1",
+      "version": "0.14.1",
       "__hash": "903227f1878a6a23a36c6e5306877891ea8c51ef"
     },
     {
-      "version": "0.14.2",
       "build": "rm package.json && npm install --prefix . react@0.14.2",
+      "version": "0.14.2",
       "__hash": "f8f0328c8315350c0fa2fd6366f6916642cedb0e"
     },
     {
-      "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react@0.14.3",
+      "version": "0.14.3",
       "__hash": "ee4f012d2818d0f0a92a23a185419ca558da3289"
     },
     {
-      "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react@0.14.4",
+      "version": "0.14.4",
       "__hash": "1d01398019a75514b0bc5ea95b4495d061f4da92"
     },
     {
-      "version": "0.14.5",
       "build": "rm package.json && npm install --prefix . react@0.14.5",
+      "version": "0.14.5",
       "__hash": "5f6ff00a882c75ff5e58d7d0f46708897b48460f"
     },
     {
-      "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react@0.14.6",
+      "version": "0.14.6",
       "__hash": "1005bf6d4dda378a2155b66344d35d28ad32cbdc"
     }
   ]

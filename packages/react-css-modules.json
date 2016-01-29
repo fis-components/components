@@ -1,0 +1,46 @@
+{
+  "build": "rm package.json && npm install --prefix . react-css-modules@3.6.8",
+  "name": "react-css-modules",
+  "description": "Seamless mapping of class names to CSS modules inside of React components.",
+  "repos": "https://github.com/gajus/react-css-modules.git",
+  "main": "index",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "lodash@^4.0.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-css-modules\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-css-modules\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "paths": {
+    "dist": "."
+  },
+  "tags": [
+    {
+      "version": "3.6.8"
+    }
+  ]
+}

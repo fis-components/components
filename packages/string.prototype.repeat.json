@@ -1,0 +1,45 @@
+{
+  "build": "rm package.json && npm install --prefix . string.prototype.repeat@0.2.0",
+  "name": "string.prototype.repeat",
+  "description": "A robust & optimized `String.prototype.repeat` polyfill, based on the ECMAScript 6 specification.",
+  "repos": "https://github.com/mathiasbynens/String.prototype.repeat.git",
+  "main": "repeat.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/string\\.prototype\\.repeat\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/string\\.prototype\\.repeat\\/(LICENSE-MIT\\.txt)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/string\\.prototype\\.repeat\\/(repeat\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.0"
+    }
+  ]
+}

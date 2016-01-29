@@ -43,22 +43,21 @@
       "__hash": "0cd4c38d1657dae91bde66208c67649f513cde20"
     },
     {
-      "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . react-markdown@1.0.1",
+      "version": "1.0.1",
       "__hash": "c40325fec4d87c4e425b963e0300d8838da04499"
     },
     {
-      "version": "1.0.3",
       "build": "rm package.json && npm install --prefix . react-markdown@1.0.3",
+      "version": "1.0.3",
       "__hash": "652ffc3533c15ce7d18dce650adc0e01ced7b30f"
     },
     {
-      "version": "1.0.5",
       "build": "rm package.json && npm install --prefix . react-markdown@1.0.5",
+      "version": "1.0.5",
       "__hash": "5a5d308b3690a525dc3e16ccd9a0215c12f4a190"
     },
     {
-      "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . react-markdown@1.1.0",
       "repos": "https://github.com/rexxars/react-markdown.git",
       "dependencies": [
@@ -66,10 +65,10 @@
         "commonmark-react-renderer@^2.0.0",
         "react@>=0.13.3"
       ],
+      "version": "1.1.0",
       "__hash": "8ae0193fe831a4273a5c18c246c5ee7124adeffb"
     },
     {
-      "version": "1.1.1",
       "build": "rm package.json && npm install --prefix . react-markdown@1.1.1",
       "repos": "https://github.com/rexxars/react-markdown.git",
       "dependencies": [
@@ -77,10 +76,10 @@
         "commonmark-react-renderer@^2.1.0",
         "react@>=0.13.3"
       ],
+      "version": "1.1.1",
       "__hash": "08c35bfaac291c3afe73572374e635c436d11150"
     },
     {
-      "version": "1.1.3",
       "build": "rm package.json && npm install --prefix . react-markdown@1.1.3",
       "repos": "https://github.com/rexxars/react-markdown.git",
       "dependencies": [
@@ -88,10 +87,10 @@
         "commonmark-react-renderer@^2.1.0",
         "react@>=0.13.3"
       ],
+      "version": "1.1.3",
       "__hash": "dfe1fdea9a55072a644b9a62310e12c9ad99b5a6"
     },
     {
-      "version": "1.1.4",
       "build": "rm package.json && npm install --prefix . react-markdown@1.1.4",
       "repos": "https://github.com/rexxars/react-markdown.git",
       "dependencies": [
@@ -99,10 +98,10 @@
         "commonmark-react-renderer@^2.1.0",
         "react@>=0.13.3"
       ],
+      "version": "1.1.4",
       "__hash": "6ef65ac2d0c13d4207f59ad7a361a0c398ac663e"
     },
     {
-      "version": "1.2.0",
       "build": "rm package.json && npm install --prefix . react-markdown@1.2.0",
       "repos": "https://github.com/rexxars/react-markdown.git",
       "dependencies": [
@@ -110,10 +109,10 @@
         "commonmark-react-renderer@^2.1.0",
         "react@>=0.13.3"
       ],
+      "version": "1.2.0",
       "__hash": "1a56fd6bb70f8e9cb274cecb80445b65bf8a90ab"
     },
     {
-      "version": "1.2.1",
       "build": "rm package.json && npm install --prefix . react-markdown@1.2.1",
       "repos": "https://github.com/rexxars/react-markdown.git",
       "dependencies": [
@@ -121,10 +120,10 @@
         "commonmark-react-renderer@^2.2.0",
         "react@>=0.13.3"
       ],
+      "version": "1.2.1",
       "__hash": "d575237d56928be08a85f5985ff634b406afa9d0"
     },
     {
-      "version": "1.2.2",
       "build": "rm package.json && npm install --prefix . react-markdown@1.2.2",
       "repos": "https://github.com/rexxars/react-markdown.git",
       "dependencies": [
@@ -132,7 +131,18 @@
         "commonmark-react-renderer@^2.2.0",
         "react@>=0.13.3"
       ],
+      "version": "1.2.2",
       "__hash": "b8b8a2f7d7d62411d4d298fd193c6c78cae1e96b"
+    },
+    {
+      "version": "1.2.4",
+      "build": "rm package.json && npm install --prefix . react-markdown@1.2.4",
+      "repos": "https://github.com/rexxars/react-markdown.git",
+      "dependencies": [
+        "commonmark@0.22.0",
+        "commonmark-react-renderer@2.2.0",
+        "react@>=0.13.3"
+      ]
     }
   ]
 }

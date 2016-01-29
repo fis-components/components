@@ -40,6 +40,15 @@
     {
       "version": "0.19.0",
       "__hash": "ab74f3dcd53acdebea1f6c60d8625459386d5df3"
+    },
+    {
+      "version": "0.22.0",
+      "build": "rm package.json && npm install --prefix . commonmark@0.22.0",
+      "dependencies": [
+        "entities@~ 1.1.1",
+        "mdurl@~ 1.0.0",
+        "string.prototype.repeat@^0.2.0"
+      ]
     }
   ]
 }

@@ -37,8 +37,60 @@
   ],
   "tags": [
     {
+      "version": "1.0.0",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@1.0.0"
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@1.0.1"
+    },
+    {
       "version": "1.0.2",
       "__hash": "724df539b53f15d7ac958c869244b7cfb28a1458"
+    },
+    {
+      "version": "2.0.0",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.0.0"
+    },
+    {
+      "version": "2.0.1",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.0.1",
+      "repos": "https://github.com/rexxars/commonmark-react-renderer.git",
+      "dependencies": [
+        "react@>=0.14.0"
+      ]
+    },
+    {
+      "version": "2.0.2",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.0.2",
+      "repos": "https://github.com/rexxars/commonmark-react-renderer.git",
+      "dependencies": [
+        "react@>=0.13.3"
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.1.0",
+      "repos": "https://github.com/rexxars/commonmark-react-renderer.git",
+      "dependencies": [
+        "react@>=0.13.3"
+      ]
+    },
+    {
+      "version": "2.2.0",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.2.0",
+      "repos": "https://github.com/rexxars/commonmark-react-renderer.git",
+      "dependencies": [
+        "react@>=0.13.3"
+      ]
+    },
+    {
+      "version": "2.2.2",
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.2.2",
+      "repos": "https://github.com/rexxars/commonmark-react-renderer.git",
+      "dependencies": [
+        "react@>=0.13.3"
+      ]
     }
   ]
 }

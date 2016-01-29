@@ -1,0 +1,61 @@
+{
+  "build": "rm package.json && npm install --prefix . entities@1.1.1",
+  "name": "entities",
+  "description": "Encode & decode XML/HTML entities with ease",
+  "repos": "https://github.com/fb55/node-entities.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/entities\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/entities\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/entities\\/(maps\\/xml\\.json)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/entities\\/(maps\\/entities\\.json)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/entities\\/(maps\\/legacy\\.json)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/entities\\/(maps\\/decode\\.json)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/entities\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.1.1"
+    }
+  ]
+}
