@@ -38,7 +38,8 @@
   "tags": [
     {
       "version": "1.0.0",
-      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@1.0.0"
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@1.0.0",
+      "__hash": "e9ab9fe488f76e1ced5e87229030a1a5b4fe0049"
     },
     {
       "version": "1.0.1",
