@@ -88,7 +88,8 @@
       "repos": "https://github.com/rexxars/commonmark-react-renderer.git",
       "dependencies": [
         "react@>=0.13.3"
-      ]
+      ],
+      "__hash": "1da04b0fe6bfd85235357f9c0e54ad0c6ac8f16c"
     },
     {
       "version": "2.2.2",
