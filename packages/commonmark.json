@@ -48,7 +48,8 @@
         "entities@~ 1.1.1",
         "mdurl@~ 1.0.0",
         "string.prototype.repeat@^0.2.0"
-      ]
+      ],
+      "__hash": "93ef8b118bb696cfcd6d851937a4c98eb208df3e"
     }
   ]
 }
