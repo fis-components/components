@@ -52,7 +52,8 @@
     },
     {
       "version": "2.0.0",
-      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.0.0"
+      "build": "rm package.json && npm install --prefix . commonmark-react-renderer@2.0.0",
+      "__hash": "3e718a0382f380924b63469356aa9cd75b67fc70"
     },
     {
       "version": "2.0.1",
