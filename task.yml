@@ -33,7 +33,6 @@ sync:
     - fit-timepicker@latest
     - fit-upload@latest
     - fit-tree@latest
-    - assertion-erro@1.0.1
     - commonmark-react-renderer@*
     - react-markdown@latest
     - react-json-pretty@latest
