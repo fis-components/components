@@ -220,7 +220,8 @@
       "version": "0.14.4",
       "description": "This package provides the React updates add-on.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "4bbaaa3259c46b0eec6b54a73b7b8e5cb7674ace"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-update@0.14.5",
