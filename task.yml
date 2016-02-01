@@ -39,3 +39,4 @@ sync:
     - react-css-modules@latest
     - flux@latest
     - zrender@3.0.1
+    - react-alert@latest
