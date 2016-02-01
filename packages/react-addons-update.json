@@ -145,7 +145,8 @@
       "version": "0.14.2",
       "description": "This package provides the React updates add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "ef77b13275debc4b57e25413a1e6098346ebc8f6"
     },
     {
       "version": "v0.14.3",
