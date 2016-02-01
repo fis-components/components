@@ -257,7 +257,8 @@
       "version": "0.14.5",
       "description": "This package provides the React updates add-on.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "fe2187b06cac731f924024db04c4b2eee6d2acac"
     },
     {
       "version": "0.14.6",
