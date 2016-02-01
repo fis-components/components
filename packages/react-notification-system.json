@@ -69,7 +69,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "7b3599406eab6fcea45e0b88cc35fc6cc02af052"
     }
   ]
 }
