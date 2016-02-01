@@ -40,7 +40,8 @@
     },
     {
       "version": "1.3.19",
-      "build": "rm package.json && npm install --prefix . store@1.3.19"
+      "build": "rm package.json && npm install --prefix . store@1.3.19",
+      "__hash": "cc69758d13e8fa981a8be1af1df915a1c23c8896"
     },
     {
       "version": "1.3.20",
