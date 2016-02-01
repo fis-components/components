@@ -44,8 +44,8 @@
   },
   "tags": [
     {
-      "version": "0.13.3",
       "build": "rm package.json && npm install --prefix . react@0.13.3",
+      "version": "0.13.3",
       "__hash": "93d256c321d90972a6ef77aed2e23353d853e3eb"
     },
     {
@@ -81,6 +81,10 @@
       "build": "rm package.json && npm install --prefix . react@0.14.6",
       "version": "0.14.6",
       "__hash": "1005bf6d4dda378a2155b66344d35d28ad32cbdc"
+    },
+    {
+      "version": "0.14.7",
+      "build": "rm package.json && npm install --prefix . react@0.14.7"
     }
   ]
 }
