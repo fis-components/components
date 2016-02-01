@@ -46,7 +46,8 @@
     {
       "version": "1.3.20",
       "build": "rm package.json && npm install --prefix . store@1.3.20",
-      "main": "store.js"
+      "main": "store.js",
+      "__hash": "00b15eff315a3a506323ee863d1271cbbda0ce22"
     }
   ]
 }
