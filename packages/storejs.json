@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.7",
-      "build": "rm package.json && npm install --prefix . storejs@1.0.7"
+      "build": "rm package.json && npm install --prefix . storejs@1.0.7",
+      "__hash": "d858d52cfa6fd23d81b7742b2c9076df692a1eb3"
     },
     {
       "version": "1.0.8",
