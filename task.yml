@@ -40,3 +40,4 @@ sync:
     - flux@latest
     - zrender@3.0.1
     - react-toastr@latest
+    - react-notification-system@latest
