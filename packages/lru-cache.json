@@ -50,7 +50,8 @@
     },
     {
       "version": "2.7.2",
-      "build": "rm package.json && npm install --prefix . lru-cache@2.7.2"
+      "build": "rm package.json && npm install --prefix . lru-cache@2.7.2",
+      "__hash": "5408fc57a67deeede9d8b6fb80d048062ea8c689"
     },
     {
       "version": "2.7.3",
