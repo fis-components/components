@@ -45,7 +45,8 @@
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . is-property@1.0.2"
+      "build": "rm package.json && npm install --prefix . is-property@1.0.2",
+      "__hash": "707fd799359c187f251f6c62b4c5329452f771c4"
     }
   ]
 }
