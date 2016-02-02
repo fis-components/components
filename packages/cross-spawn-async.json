@@ -47,7 +47,8 @@
     },
     {
       "version": "2.0.1",
-      "build": "rm package.json && npm install --prefix . cross-spawn-async@2.0.1"
+      "build": "rm package.json && npm install --prefix . cross-spawn-async@2.0.1",
+      "__hash": "f121f0f8e31269d4cfdcb83927576f5ac376a1a0"
     },
     {
       "version": "2.1.0",
