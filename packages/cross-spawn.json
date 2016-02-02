@@ -97,7 +97,8 @@
       "dependencies": [
         "cross-spawn-async@^2.0.0",
         "spawn-sync@^1.0.15"
-      ]
+      ],
+      "__hash": "8e63a020b474a0ea13cd1f5d52ffe64ee1e49cba"
     }
   ]
 }
