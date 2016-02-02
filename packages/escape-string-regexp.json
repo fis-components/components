@@ -44,7 +44,8 @@
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . escape-string-regexp@1.0.4"
+      "build": "rm package.json && npm install --prefix . escape-string-regexp@1.0.4",
+      "__hash": "1de049e894eb11dba92f56d198cb46d07bcadd0b"
     }
   ]
 }
