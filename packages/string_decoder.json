@@ -1,0 +1,49 @@
+{
+  "build": "rm package.json && npm install --prefix . string_decoder@0.10.24",
+  "name": "string_decoder",
+  "description": "The string_decoder module from Node core",
+  "repos": "https://github.com/rvagg/string_decoder.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/string_decoder\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/string_decoder\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.10.24"
+    },
+    {
+      "version": "0.10.25",
+      "build": "rm package.json && npm install --prefix . string_decoder@0.10.25"
+    },
+    {
+      "version": "0.10.31",
+      "build": "rm package.json && npm install --prefix . string_decoder@0.10.31"
+    }
+  ]
+}

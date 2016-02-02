@@ -1,0 +1,127 @@
+{
+  "build": "rm package.json && npm install --prefix . minimatch@0.2.0",
+  "name": "minimatch",
+  "description": "a glob matcher in javascript",
+  "repos": "https://github.com/isaacs/minimatch.git",
+  "main": "minimatch.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "lru-cache@~1.0.5"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/minimatch\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/minimatch\\/(minimatch\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.0"
+    },
+    {
+      "version": "0.2.2",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.2"
+    },
+    {
+      "version": "0.2.3",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.3"
+    },
+    {
+      "version": "0.2.4",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.4"
+    },
+    {
+      "version": "0.2.5",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.5"
+    },
+    {
+      "version": "0.2.6",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.6",
+      "dependencies": [
+        "lru-cache@~1"
+      ]
+    },
+    {
+      "version": "0.2.7",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.7",
+      "dependencies": [
+        "lru-cache@~2.0.0"
+      ]
+    },
+    {
+      "version": "0.2.8",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.8",
+      "dependencies": [
+        "lru-cache@~2.0.0"
+      ]
+    },
+    {
+      "version": "0.2.9",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.9",
+      "dependencies": [
+        "lru-cache@~2.0.0"
+      ]
+    },
+    {
+      "version": "0.2.10",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.10",
+      "dependencies": [
+        "lru-cache@~2.0.0",
+        "sigmund@~1.0.0"
+      ]
+    },
+    {
+      "version": "0.2.11",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.11",
+      "dependencies": [
+        "lru-cache@~2.0.0",
+        "sigmund@~1.0.0"
+      ]
+    },
+    {
+      "version": "0.2.12",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.12",
+      "dependencies": [
+        "lru-cache@2",
+        "sigmund@~1.0.0"
+      ]
+    },
+    {
+      "version": "0.2.13",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.13",
+      "dependencies": [
+        "lru-cache@2",
+        "sigmund@~1.0.0"
+      ]
+    },
+    {
+      "version": "0.2.14",
+      "build": "rm package.json && npm install --prefix . minimatch@0.2.14",
+      "dependencies": [
+        "lru-cache@2",
+        "sigmund@~1.0.0"
+      ]
+    }
+  ]
+}

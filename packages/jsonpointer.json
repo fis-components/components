@@ -1,0 +1,41 @@
+{
+  "build": "rm package.json && npm install --prefix . jsonpointer@1.1.0",
+  "name": "jsonpointer",
+  "description": "Simple JSON Addressing.",
+  "repos": "https://github.com/janl/node-jsonpointer.git",
+  "main": "jsonpointer",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/jsonpointer\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/jsonpointer\\/(jsonpointer\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.1.0"
+    }
+  ]
+}

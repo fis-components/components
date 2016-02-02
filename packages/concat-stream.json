@@ -1,0 +1,66 @@
+{
+  "build": "rm package.json && npm install --prefix . concat-stream@1.4.7",
+  "name": "concat-stream",
+  "description": "writable stream that concatenates strings or binary data and calls a callback with the result",
+  "repos": "https://github.com/maxogden/concat-stream.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "inherits@~2.0.1",
+    "typedarray@~0.0.5",
+    "readable-stream@~1.1.9"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/concat-stream\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/concat-stream\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.4.7"
+    },
+    {
+      "version": "1.4.8",
+      "build": "rm package.json && npm install --prefix . concat-stream@1.4.8"
+    },
+    {
+      "version": "1.4.10",
+      "build": "rm package.json && npm install --prefix . concat-stream@1.4.10"
+    },
+    {
+      "version": "1.5.0",
+      "build": "rm package.json && npm install --prefix . concat-stream@1.5.0"
+    },
+    {
+      "version": "1.5.1",
+      "build": "rm package.json && npm install --prefix . concat-stream@1.5.1",
+      "dependencies": [
+        "inherits@~2.0.1",
+        "typedarray@~0.0.5",
+        "readable-stream@~2.0.0"
+      ]
+    }
+  ]
+}

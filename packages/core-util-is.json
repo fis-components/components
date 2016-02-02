@@ -1,0 +1,49 @@
+{
+  "build": "rm package.json && npm install --prefix . core-util-is@1.0.0",
+  "name": "core-util-is",
+  "description": "The `util.is*` functions introduced in Node v0.12.",
+  "repos": "https://github.com/isaacs/core-util-is",
+  "main": "lib/util.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/core-util-is\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/core-util-is\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.0"
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . core-util-is@1.0.1"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . core-util-is@1.0.2"
+    }
+  ]
+}

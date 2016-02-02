@@ -1,0 +1,46 @@
+{
+  "build": "rm package.json && npm install --prefix . chalk@1.1.1",
+  "name": "chalk",
+  "description": "Terminal string styling done right. Much color.",
+  "repos": "https://github.com/chalk/chalk.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "ansi-styles@^2.1.0",
+    "escape-string-regexp@^1.0.2",
+    "has-ansi@^2.0.0",
+    "strip-ansi@^3.0.0",
+    "supports-color@^2.0.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/chalk\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/chalk\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.1.1"
+    }
+  ]
+}

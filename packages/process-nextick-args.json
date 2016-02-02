@@ -1,0 +1,65 @@
+{
+  "build": "rm package.json && npm install --prefix . process-nextick-args@1.0.0",
+  "name": "process-nextick-args",
+  "description": "process.nextTick but always with args",
+  "repos": "https://github.com/calvinmetcalf/process-nextick-args.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/process-nextick-args\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/process-nextick-args\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.0"
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . process-nextick-args@1.0.1"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . process-nextick-args@1.0.2"
+    },
+    {
+      "version": "1.0.3",
+      "build": "rm package.json && npm install --prefix . process-nextick-args@1.0.3"
+    },
+    {
+      "version": "1.0.4",
+      "build": "rm package.json && npm install --prefix . process-nextick-args@1.0.4"
+    },
+    {
+      "version": "1.0.5",
+      "build": "rm package.json && npm install --prefix . process-nextick-args@1.0.5"
+    },
+    {
+      "version": "1.0.6",
+      "build": "rm package.json && npm install --prefix . process-nextick-args@1.0.6"
+    }
+  ]
+}

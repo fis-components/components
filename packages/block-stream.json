@@ -1,0 +1,66 @@
+{
+  "build": "rm package.json && npm install --prefix . block-stream@0.0.3",
+  "name": "block-stream",
+  "description": "a stream of blocks",
+  "repos": "https://github.com/isaacs/block-stream.git",
+  "main": "block-stream.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "inherits@~1.0.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/block-stream\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/block-stream\\/(block-stream\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.0.3"
+    },
+    {
+      "version": "0.0.4",
+      "build": "rm package.json && npm install --prefix . block-stream@0.0.4"
+    },
+    {
+      "version": "0.0.5",
+      "build": "rm package.json && npm install --prefix . block-stream@0.0.5"
+    },
+    {
+      "version": "0.0.6",
+      "build": "rm package.json && npm install --prefix . block-stream@0.0.6"
+    },
+    {
+      "version": "0.0.7",
+      "build": "rm package.json && npm install --prefix . block-stream@0.0.7"
+    },
+    {
+      "version": "0.0.8",
+      "build": "rm package.json && npm install --prefix . block-stream@0.0.8",
+      "dependencies": [
+        "inherits@~2.0.0"
+      ]
+    }
+  ]
+}

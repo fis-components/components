@@ -1,0 +1,66 @@
+{
+  "build": "rm package.json && npm install --prefix . rc@0.5.1",
+  "name": "rc",
+  "description": "hardwired configuration loader",
+  "repos": "https://github.com/dominictarr/rc.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "minimist@~0.0.7",
+    "deep-extend@~0.2.5",
+    "strip-json-comments@0.1.x",
+    "ini@~1.1.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/rc\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/rc\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/rc\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.5.1"
+    },
+    {
+      "version": "0.5.2",
+      "build": "rm package.json && npm install --prefix . rc@0.5.2"
+    },
+    {
+      "version": "0.5.3",
+      "build": "rm package.json && npm install --prefix . rc@0.5.3"
+    },
+    {
+      "version": "0.5.4",
+      "build": "rm package.json && npm install --prefix . rc@0.5.4"
+    },
+    {
+      "version": "0.5.5",
+      "build": "rm package.json && npm install --prefix . rc@0.5.5"
+    }
+  ]
+}

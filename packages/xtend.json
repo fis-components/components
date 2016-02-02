@@ -1,0 +1,45 @@
+{
+  "build": "rm package.json && npm install --prefix . xtend@4.0.0",
+  "name": "xtend",
+  "description": "extend like a boss",
+  "repos": "https://github.com/Raynos/xtend.git",
+  "main": "immutable",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/xtend\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/xtend\\/(immutable\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "4.0.0"
+    },
+    {
+      "version": "4.0.1",
+      "build": "rm package.json && npm install --prefix . xtend@4.0.1"
+    }
+  ]
+}

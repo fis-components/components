@@ -41,7 +41,7 @@
     {
       "version": "0.5.1",
       "build": "rm package.json && npm install --prefix . mkdirp@0.5.1",
-      "__hash": "043c1b6b9eb4b3be9873fd1ed762f6e3cde367c7"
+      "main": "index.js"
     }
   ]
 }

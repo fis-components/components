@@ -1,0 +1,57 @@
+{
+  "build": "rm package.json && npm install --prefix . strip-json-comments@0.1.0",
+  "name": "strip-json-comments",
+  "description": "Strip comments from JSON. Lets you use comments in your JSON files!",
+  "repos": "https://github.com/sindresorhus/strip-json-comments",
+  "main": "strip-json-comments",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/strip-json-comments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/strip-json-comments\\/(strip-json-comments\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/strip-json-comments\\/(cli\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.1.0"
+    },
+    {
+      "version": "0.1.1",
+      "build": "rm package.json && npm install --prefix . strip-json-comments@0.1.1"
+    },
+    {
+      "version": "0.1.2",
+      "build": "rm package.json && npm install --prefix . strip-json-comments@0.1.2"
+    },
+    {
+      "version": "0.1.3",
+      "build": "rm package.json && npm install --prefix . strip-json-comments@0.1.3"
+    }
+  ]
+}

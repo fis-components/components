@@ -35,8 +35,15 @@
   ],
   "tags": [
     {
+      "version": "5.0.0",
+      "build": "rm package.json && npm install --prefix . json-stringify-safe@5.0.0",
+      "description": "Like JSON.stringify, but doesn't blow up on circular refs",
+      "repos": "https://github.com/isaacs/json-stringify-safe"
+    },
+    {
       "version": "5.0.1",
-      "__hash": "79233da6f40952f0d80194048231aea762b4e10b"
+      "description": "Like JSON.stringify, but doesn't blow up on circular refs",
+      "repos": "https://github.com/isaacs/json-stringify-safe"
     }
   ]
 }

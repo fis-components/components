@@ -1,0 +1,48 @@
+{
+  "build": "rm package.json && npm install --prefix . escape-string-regexp@1.0.2",
+  "name": "escape-string-regexp",
+  "description": "Escape RegExp special characters",
+  "repos": "https://github.com/sindresorhus/escape-string-regexp",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/escape-string-regexp\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/escape-string-regexp\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.2"
+    },
+    {
+      "version": "1.0.3",
+      "build": "rm package.json && npm install --prefix . escape-string-regexp@1.0.3"
+    },
+    {
+      "version": "1.0.4",
+      "build": "rm package.json && npm install --prefix . escape-string-regexp@1.0.4"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "build": "rm package.json && npm install --prefix . request@2.61.0",
+  "name": "request",
+  "description": "Simplified HTTP request client.",
+  "repos": "https://github.com/request/request.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "bl@~1.0.0",
+    "caseless@~0.11.0",
+    "extend@~3.0.0",
+    "forever-agent@~0.6.0",
+    "form-data@~1.0.0-rc1",
+    "json-stringify-safe@~5.0.0",
+    "mime-types@~2.1.2",
+    "node-uuid@~1.4.0",
+    "qs@~4.0.0",
+    "tunnel-agent@~0.4.0",
+    "tough-cookie@>=0.12.0",
+    "http-signature@~0.11.0",
+    "oauth-sign@~0.8.0",
+    "hawk@~3.1.0",
+    "aws-sign2@~0.5.0",
+    "stringstream@~0.0.4",
+    "combined-stream@~1.0.1",
+    "isstream@~0.1.1",
+    "har-validator@^1.6.1"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/request\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/request\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/request\\/(request\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/request\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.61.0"
+    },
+    {
+      "version": "2.62.0",
+      "build": "rm package.json && npm install --prefix . request@2.62.0"
+    },
+    {
+      "version": "2.63.0",
+      "build": "rm package.json && npm install --prefix . request@2.63.0",
+      "dependencies": [
+        "bl@~1.0.0",
+        "caseless@~0.11.0",
+        "extend@~3.0.0",
+        "forever-agent@~0.6.0",
+        "form-data@~1.0.0-rc1",
+        "json-stringify-safe@~5.0.0",
+        "mime-types@~2.1.2",
+        "node-uuid@~1.4.0",
+        "qs@~5.1.0",
+        "tunnel-agent@~0.4.0",
+        "tough-cookie@>=0.12.0",
+        "http-signature@~0.11.0",
+        "oauth-sign@~0.8.0",
+        "hawk@~3.1.0",
+        "aws-sign2@~0.5.0",
+        "stringstream@~0.0.4",
+        "combined-stream@~1.0.1",
+        "isstream@~0.1.1",
+        "har-validator@^1.6.1"
+      ]
+    },
+    {
+      "version": "2.64.0",
+      "build": "rm package.json && npm install --prefix . request@2.64.0",
+      "dependencies": [
+        "bl@~1.0.0",
+        "caseless@~0.11.0",
+        "extend@~3.0.0",
+        "forever-agent@~0.6.0",
+        "form-data@~1.0.0-rc1",
+        "json-stringify-safe@~5.0.0",
+        "mime-types@~2.1.2",
+        "node-uuid@~1.4.0",
+        "qs@~5.1.0",
+        "tunnel-agent@~0.4.0",
+        "tough-cookie@>=0.12.0",
+        "http-signature@~0.11.0",
+        "oauth-sign@~0.8.0",
+        "hawk@~3.1.0",
+        "aws-sign2@~0.5.0",
+        "stringstream@~0.0.4",
+        "combined-stream@~1.0.1",
+        "isstream@~0.1.1",
+        "har-validator@^1.6.1"
+      ]
+    },
+    {
+      "version": "2.65.0",
+      "build": "rm package.json && npm install --prefix . request@2.65.0",
+      "dependencies": [
+        "bl@~1.0.0",
+        "caseless@~0.11.0",
+        "extend@~3.0.0",
+        "forever-agent@~0.6.0",
+        "form-data@~1.0.0-rc1",
+        "json-stringify-safe@~5.0.0",
+        "mime-types@~2.1.2",
+        "node-uuid@~1.4.0",
+        "qs@~5.1.0",
+        "tunnel-agent@~0.4.0",
+        "tough-cookie@>=0.12.0",
+        "http-signature@~0.11.0",
+        "oauth-sign@~0.8.0",
+        "hawk@~3.1.0",
+        "aws-sign2@~0.5.0",
+        "stringstream@~0.0.4",
+        "combined-stream@~1.0.1",
+        "isstream@~0.1.1",
+        "har-validator@^1.6.1"
+      ]
+    },
+    {
+      "version": "2.66.0",
+      "build": "rm package.json && npm install --prefix . request@2.66.0",
+      "dependencies": [
+        "bl@~1.0.0",
+        "caseless@~0.11.0",
+        "extend@~3.0.0",
+        "forever-agent@~0.6.1",
+        "form-data@~1.0.0-rc3",
+        "json-stringify-safe@~5.0.1",
+        "mime-types@~2.1.7",
+        "node-uuid@~1.4.3",
+        "qs@~5.2.0",
+        "tunnel-agent@~0.4.1",
+        "tough-cookie@~2.2.0",
+        "http-signature@~0.11.0",
+        "oauth-sign@~0.8.0",
+        "hawk@~3.1.0",
+        "aws-sign2@~0.6.0",
+        "stringstream@~0.0.4",
+        "combined-stream@~1.0.5",
+        "isstream@~0.1.2",
+        "har-validator@~2.0.2"
+      ]
+    },
+    {
+      "version": "2.67.0",
+      "build": "rm package.json && npm install --prefix . request@2.67.0",
+      "dependencies": [
+        "bl@~1.0.0",
+        "caseless@~0.11.0",
+        "extend@~3.0.0",
+        "forever-agent@~0.6.1",
+        "form-data@~1.0.0-rc3",
+        "json-stringify-safe@~5.0.1",
+        "mime-types@~2.1.7",
+        "node-uuid@~1.4.7",
+        "qs@~5.2.0",
+        "tunnel-agent@~0.4.1",
+        "tough-cookie@~2.2.0",
+        "http-signature@~1.0.2",
+        "oauth-sign@~0.8.0",
+        "hawk@~3.1.0",
+        "aws-sign2@~0.6.0",
+        "stringstream@~0.0.4",
+        "combined-stream@~1.0.5",
+        "isstream@~0.1.2",
+        "is-typedarray@~1.0.0",
+        "har-validator@~2.0.2"
+      ]
+    },
+    {
+      "version": "2.68.0",
+      "build": "rm package.json && npm install --prefix . request@2.68.0",
+      "dependencies": [
+        "bl@~1.0.0",
+        "caseless@~0.11.0",
+        "extend@~3.0.0",
+        "forever-agent@~0.6.1",
+        "form-data@~1.0.0-rc3",
+        "json-stringify-safe@~5.0.1",
+        "mime-types@~2.1.7",
+        "node-uuid@~1.4.7",
+        "qs@~5.2.0",
+        "tunnel-agent@~0.4.1",
+        "tough-cookie@~2.2.0",
+        "http-signature@~1.1.0",
+        "oauth-sign@~0.8.0",
+        "hawk@~3.1.0",
+        "aws-sign2@~0.6.0",
+        "stringstream@~0.0.4",
+        "combined-stream@~1.0.5",
+        "isstream@~0.1.2",
+        "is-typedarray@~1.0.0",
+        "har-validator@~2.0.2"
+      ]
+    },
+    {
+      "version": "2.69.0",
+      "build": "rm package.json && npm install --prefix . request@2.69.0",
+      "dependencies": [
+        "aws-sign2@~0.6.0",
+        "bl@~1.0.0",
+        "caseless@~0.11.0",
+        "combined-stream@~1.0.5",
+        "extend@~3.0.0",
+        "forever-agent@~0.6.1",
+        "form-data@~1.0.0-rc3",
+        "har-validator@~2.0.6",
+        "hawk@~3.1.0",
+        "http-signature@~1.1.0",
+        "is-typedarray@~1.0.0",
+        "isstream@~0.1.2",
+        "json-stringify-safe@~5.0.1",
+        "mime-types@~2.1.7",
+        "node-uuid@~1.4.7",
+        "oauth-sign@~0.8.0",
+        "qs@~6.0.2",
+        "stringstream@~0.0.4",
+        "tough-cookie@~2.2.0",
+        "tunnel-agent@~0.4.1"
+      ]
+    }
+  ]
+}
