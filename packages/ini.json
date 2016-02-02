@@ -45,7 +45,8 @@
     },
     {
       "version": "1.3.0",
-      "build": "rm package.json && npm install --prefix . ini@1.3.0"
+      "build": "rm package.json && npm install --prefix . ini@1.3.0",
+      "__hash": "9ad89e8c8144beff680b6e86910851a52db1a11f"
     },
     {
       "version": "1.3.1",
