@@ -42,7 +42,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . bl@1.0.1"
+      "build": "rm package.json && npm install --prefix . bl@1.0.1",
+      "__hash": "ee8a13cbf03d289235f26d6ac3a9a9fe1b541741"
     }
   ]
 }
