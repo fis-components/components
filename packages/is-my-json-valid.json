@@ -70,7 +70,8 @@
     {
       "version": "2.12.2",
       "build": "rm package.json && npm install --prefix . is-my-json-valid@2.12.2",
-      "repos": "https://github.com/mafintosh/is-my-json-valid.git"
+      "repos": "https://github.com/mafintosh/is-my-json-valid.git",
+      "__hash": "2135ee6a281ccc102c65a38f32d388a80b54fadd"
     },
     {
       "version": "2.12.3",
