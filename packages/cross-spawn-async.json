@@ -128,7 +128,8 @@
       "dependencies": [
         "lru-cache@^4.0.0",
         "which@1.2.1"
-      ]
+      ],
+      "__hash": "54a5a1a885dd8e819f4226f8366c76bd3b9d4c72"
     }
   ]
 }
