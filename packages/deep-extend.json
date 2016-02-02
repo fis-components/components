@@ -65,7 +65,8 @@
     },
     {
       "version": "0.2.11",
-      "build": "rm package.json && npm install --prefix . deep-extend@0.2.11"
+      "build": "rm package.json && npm install --prefix . deep-extend@0.2.11",
+      "__hash": "6744c89bd2d51707fc63dcbb20809f2c81c60fbf"
     }
   ]
 }
