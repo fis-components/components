@@ -42,7 +42,8 @@
     },
     {
       "version": "0.0.4",
-      "build": "rm package.json && npm install --prefix . block-stream@0.0.4"
+      "build": "rm package.json && npm install --prefix . block-stream@0.0.4",
+      "__hash": "e5f33db6c9da825cdb4d3e9645a198a7e7c7a8db"
     },
     {
       "version": "0.0.5",
