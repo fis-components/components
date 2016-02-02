@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . core-util-is@1.0.1"
+      "build": "rm package.json && npm install --prefix . core-util-is@1.0.1",
+      "__hash": "925036fb7dff54effc91d3a67481b6eec9d352cf"
     },
     {
       "version": "1.0.2",
