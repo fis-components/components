@@ -42,3 +42,4 @@ sync:
     - react-toastr@latest
     - react-notification-system@latest
     - storejs
+    - store2
