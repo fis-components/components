@@ -52,7 +52,8 @@
       "dependencies": [
         "cross-spawn-async@^2.0.0",
         "spawn-sync@1.0.13"
-      ]
+      ],
+      "__hash": "29c2b5c714f7cdd8faf5ba8488829ea3cccc6413"
     },
     {
       "version": "2.1.1",
