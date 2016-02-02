@@ -40,7 +40,8 @@
     },
     {
       "version": "0.3.1",
-      "build": "rm package.json && npm install --prefix . ansi@0.3.1"
+      "build": "rm package.json && npm install --prefix . ansi@0.3.1",
+      "__hash": "814d4eb87787b340375660cec3cedfdd48033be4"
     }
   ]
 }
