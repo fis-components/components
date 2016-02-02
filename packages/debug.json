@@ -70,7 +70,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "4aed3d90572258c85fb52508889c79ce37d2942b"
     },
     {
       "version": "0.7.3",
