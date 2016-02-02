@@ -64,7 +64,8 @@
         "inherits@~2.0.1",
         "typedarray@~0.0.5",
         "readable-stream@~2.0.0"
-      ]
+      ],
+      "__hash": "f3144b3f8283ae6a5c4b5ae088b0f9092cf30da9"
     }
   ]
 }
