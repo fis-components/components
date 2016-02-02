@@ -55,7 +55,8 @@
     },
     {
       "version": "1.4.2",
-      "build": "rm package.json && npm install --prefix . async@1.4.2"
+      "build": "rm package.json && npm install --prefix . async@1.4.2",
+      "__hash": "cc11c81ab019ef4fdca1986ca53e41b011be48c0"
     },
     {
       "version": "1.5.0",
