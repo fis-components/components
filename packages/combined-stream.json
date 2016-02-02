@@ -52,7 +52,8 @@
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . combined-stream@1.0.4"
+      "build": "rm package.json && npm install --prefix . combined-stream@1.0.4",
+      "__hash": "9f83f72a9b197f0e8f72adce64c215400f0d3165"
     },
     {
       "version": "1.0.5",
