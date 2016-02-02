@@ -74,7 +74,8 @@
     },
     {
       "version": "1.0.8",
-      "build": "rm package.json && npm install --prefix . fstream@1.0.8"
+      "build": "rm package.json && npm install --prefix . fstream@1.0.8",
+      "__hash": "b33f220aa3b86e7ec51d7f200e33f3233dcd922d"
     }
   ]
 }
