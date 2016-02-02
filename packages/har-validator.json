@@ -46,7 +46,8 @@
     },
     {
       "version": "1.7.0",
-      "build": "rm package.json && npm install --prefix . har-validator@1.7.0"
+      "build": "rm package.json && npm install --prefix . har-validator@1.7.0",
+      "__hash": "14b80c9401dfc35691abd19481351cff465298ef"
     },
     {
       "version": "1.7.1",
