@@ -40,7 +40,8 @@
     },
     {
       "version": "0.1.2",
-      "build": "rm package.json && npm install --prefix . isstream@0.1.2"
+      "build": "rm package.json && npm install --prefix . isstream@0.1.2",
+      "__hash": "e46667d93eebe971e7508199f160d3589d039f04"
     }
   ]
 }
