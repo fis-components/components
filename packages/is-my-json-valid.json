@@ -64,7 +64,8 @@
     },
     {
       "version": "2.12.1",
-      "build": "rm package.json && npm install --prefix . is-my-json-valid@2.12.1"
+      "build": "rm package.json && npm install --prefix . is-my-json-valid@2.12.1",
+      "__hash": "20b2cb1ba8df511441f7e5a47ec86292004e7a23"
     },
     {
       "version": "2.12.2",
