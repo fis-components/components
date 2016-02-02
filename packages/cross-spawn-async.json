@@ -110,7 +110,8 @@
       "dependencies": [
         "lru-cache@^4.0.0",
         "which@^1.2.0"
-      ]
+      ],
+      "__hash": "fb20afb593c97a981034a4c3a796253ac383b028"
     },
     {
       "version": "2.1.7",
