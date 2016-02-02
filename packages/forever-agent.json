@@ -40,7 +40,8 @@
     },
     {
       "version": "0.6.1",
-      "build": "rm package.json && npm install --prefix . forever-agent@0.6.1"
+      "build": "rm package.json && npm install --prefix . forever-agent@0.6.1",
+      "__hash": "8de86a9a85110071068fc69d185acdc54133b90c"
     }
   ]
 }
