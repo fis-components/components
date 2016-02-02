@@ -40,7 +40,8 @@
     },
     {
       "version": "1.3.0",
-      "build": "rm package.json && npm install --prefix . async@1.3.0"
+      "build": "rm package.json && npm install --prefix . async@1.3.0",
+      "__hash": "0fd15a7e9335e475250deaf1fbe09e75be7b481d"
     },
     {
       "version": "1.4.0",
