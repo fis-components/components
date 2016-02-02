@@ -40,7 +40,8 @@
     },
     {
       "version": "1.2.1",
-      "build": "rm package.json && npm install --prefix . graceful-fs@1.2.1"
+      "build": "rm package.json && npm install --prefix . graceful-fs@1.2.1",
+      "__hash": "321f6c5daf71556a9334b47ab1b7b11636017ef3"
     },
     {
       "version": "1.2.2",
