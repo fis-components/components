@@ -40,7 +40,8 @@
     },
     {
       "version": "0.2.6",
-      "build": "rm package.json && npm install --prefix . deep-extend@0.2.6"
+      "build": "rm package.json && npm install --prefix . deep-extend@0.2.6",
+      "__hash": "c4b0c2564dc02fd2a84d0bb0bb2477fb24ba5164"
     },
     {
       "version": "0.2.7",
