@@ -1,0 +1,45 @@
+{
+  "build": "rm package.json && npm install --prefix . fiten-reset@1.0.1",
+  "name": "fiten-reset",
+  "description": "样式重置",
+  "repos": "https://github.com/tb-component/mobile-reset.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fiten-reset\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fiten-reset\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.1"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . fiten-reset@1.0.2"
+    }
+  ]
+}
