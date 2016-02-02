@@ -50,7 +50,8 @@
     },
     {
       "version": "0.1.3",
-      "build": "rm package.json && npm install --prefix . is-relative@0.1.3"
+      "build": "rm package.json && npm install --prefix . is-relative@0.1.3",
+      "__hash": "fb2366159f981556ea453086700853acf4b49c30"
     }
   ]
 }
