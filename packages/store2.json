@@ -48,7 +48,8 @@
     },
     {
       "version": "2.3.2",
-      "build": "rm package.json && npm install --prefix . store2@2.3.2"
+      "build": "rm package.json && npm install --prefix . store2@2.3.2",
+      "__hash": "8ad8c2484dbc9b1e00655f85dc75b70a886eba20"
     }
   ]
 }
