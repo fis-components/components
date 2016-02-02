@@ -45,7 +45,8 @@
     },
     {
       "version": "3.1.2",
-      "build": "rm package.json && npm install --prefix . hawk@3.1.2"
+      "build": "rm package.json && npm install --prefix . hawk@3.1.2",
+      "__hash": "e2c0d9a4707453f5ce1843179dd8634fc033d462"
     },
     {
       "version": "3.1.3",
