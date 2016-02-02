@@ -42,4 +42,4 @@ sync:
     - react-toastr@latest
     - react-notification-system@latest
     - storejs
-    - store2
+    - store2@2.3.2
