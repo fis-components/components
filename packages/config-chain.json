@@ -43,7 +43,8 @@
     },
     {
       "version": "1.1.9",
-      "build": "rm package.json && npm install --prefix . config-chain@1.1.9"
+      "build": "rm package.json && npm install --prefix . config-chain@1.1.9",
+      "__hash": "7665da74925046f219a467632481eb234f63d923"
     },
     {
       "version": "1.1.10",
