@@ -46,7 +46,8 @@
     {
       "version": "1.2.2",
       "build": "rm package.json && npm install --prefix . graceful-fs@1.2.2",
-      "description": "A drop-in replacement for fs, making various improvements."
+      "description": "A drop-in replacement for fs, making various improvements.",
+      "__hash": "36a81e74255904e3a4129f0d02c09b145372c51b"
     },
     {
       "version": "1.2.3",
