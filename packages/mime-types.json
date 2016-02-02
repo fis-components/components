@@ -49,7 +49,8 @@
     },
     {
       "version": "2.1.3",
-      "build": "rm package.json && npm install --prefix . mime-types@2.1.3"
+      "build": "rm package.json && npm install --prefix . mime-types@2.1.3",
+      "__hash": "fa4ae371786627f63e5f1f9f9893d936ef4ae634"
     },
     {
       "version": "2.1.4",
