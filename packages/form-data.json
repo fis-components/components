@@ -44,7 +44,8 @@
     },
     {
       "version": "1.0.0-rc2",
-      "build": "rm package.json && npm install --prefix . form-data@1.0.0-rc2"
+      "build": "rm package.json && npm install --prefix . form-data@1.0.0-rc2",
+      "__hash": "c73ced0bf36528ebe4415ed7bad188b4a5a53bc3"
     },
     {
       "version": "1.0.0-rc3",
