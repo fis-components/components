@@ -54,7 +54,8 @@
     },
     {
       "version": "1.5.0",
-      "build": "rm package.json && npm install --prefix . concat-stream@1.5.0"
+      "build": "rm package.json && npm install --prefix . concat-stream@1.5.0",
+      "__hash": "6f307b2fb062d9940db4d329b8492d7a285b6695"
     },
     {
       "version": "1.5.1",
