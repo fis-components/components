@@ -82,7 +82,8 @@
         "generate-object-property@^1.1.0",
         "jsonpointer@2.0.0",
         "xtend@^4.0.0"
-      ]
+      ],
+      "__hash": "db643382369e95def0a510fb1ffea6eb7476deb0"
     },
     {
       "version": "2.12.4",
