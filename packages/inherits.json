@@ -40,7 +40,8 @@
     },
     {
       "version": "2.0.1",
-      "build": "rm package.json && npm install --prefix . inherits@2.0.1"
+      "build": "rm package.json && npm install --prefix . inherits@2.0.1",
+      "__hash": "1d23f6e27238a1f54cf828334151f536c7c18433"
     }
   ]
 }
