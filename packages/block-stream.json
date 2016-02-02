@@ -65,7 +65,8 @@
       "build": "rm package.json && npm install --prefix . block-stream@0.0.8",
       "dependencies": [
         "inherits@~2.0.0"
-      ]
+      ],
+      "__hash": "d1cdcf03e7d5becba94f596aaa64149454905f53"
     }
   ]
 }
