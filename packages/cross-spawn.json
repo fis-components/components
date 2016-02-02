@@ -43,7 +43,8 @@
     },
     {
       "version": "2.0.1",
-      "build": "rm package.json && npm install --prefix . cross-spawn@2.0.1"
+      "build": "rm package.json && npm install --prefix . cross-spawn@2.0.1",
+      "__hash": "5daf45569738f6da93c73482b5eb0ba8c20a1bdb"
     },
     {
       "version": "2.1.0",
