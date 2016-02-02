@@ -47,7 +47,8 @@
     },
     {
       "version": "1.2.0",
-      "build": "rm package.json && npm install --prefix . generate-object-property@1.2.0"
+      "build": "rm package.json && npm install --prefix . generate-object-property@1.2.0",
+      "__hash": "4f55cc63d33566112fa9e141239c5459327600dc"
     }
   ]
 }
