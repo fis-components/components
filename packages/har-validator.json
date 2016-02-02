@@ -54,7 +54,8 @@
       "build": "rm package.json && npm install --prefix . har-validator@1.7.1",
       "dependencies": [
         "is-my-json-valid@^2.10.1"
-      ]
+      ],
+      "__hash": "1507b4327aeb15be8d74266a3cf19f949e450e46"
     },
     {
       "version": "1.8.0",
