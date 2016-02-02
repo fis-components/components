@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.4",
-      "build": "rm package.json && npm install --prefix . abbrev@1.0.4"
+      "build": "rm package.json && npm install --prefix . abbrev@1.0.4",
+      "__hash": "0474b3ebd0e85c7b6cc399a763180083a9ba0bb4"
     },
     {
       "version": "1.0.5",
