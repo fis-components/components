@@ -44,7 +44,8 @@
     {
       "version": "5.0.1",
       "description": "Like JSON.stringify, but doesn't blow up on circular refs",
-      "repos": "https://github.com/isaacs/json-stringify-safe"
+      "repos": "https://github.com/isaacs/json-stringify-safe",
+      "__hash": "4e5aa430524641027373466be7107dfa8681488a"
     }
   ]
 }
