@@ -44,4 +44,4 @@ sync:
     - react-notification-system@latest
     - storejs
     - store2@2.3.2
-    - fiten-reset
+    - fiten-reset@latest
