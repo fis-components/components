@@ -1,0 +1,56 @@
+{
+  "build": "rm package.json && npm install --prefix . fit-scroll-listen@0.0.10",
+  "name": "fit-scroll-listen",
+  "description": "scroll listen",
+  "repos": "https://github.com/tb-component/pc-scroll-listen.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "classnames@^2.2.3",
+    "jquery@^2.2.0",
+    "lodash@^3.10.1",
+    "react@^0.14.6",
+    "react-dom@^0.14.6",
+    "redux@^3.1.6"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fit-scroll-listen\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/fit-scroll-listen\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.0.10"
+    },
+    {
+      "version": "0.0.11",
+      "build": "rm package.json && npm install --prefix . fit-scroll-listen@0.0.11"
+    },
+    {
+      "version": "0.0.12",
+      "build": "rm package.json && npm install --prefix . fit-scroll-listen@0.0.12"
+    }
+  ]
+}
