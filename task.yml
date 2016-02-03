@@ -46,4 +46,4 @@ sync:
     - store2@2.3.2
     - fiten-reset@latest
     - react-cropper
-    - formsy-material-ui@latest
+    - formsy-material-ui
