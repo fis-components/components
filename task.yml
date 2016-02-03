@@ -24,7 +24,7 @@ sync:
     - fit-pagination
     - fit-phone
     - fit-radio
-    - fit-render-listen@0.0.13
+    - fit-render-to
     - fit-select
     - fit-style
     - fit-switch
@@ -33,7 +33,7 @@ sync:
     - fit-timepicker
     - fit-upload
     - fit-tree
-    - fit-scroll-listen
+    - fit-scroll-listen@0.0.13
     - commonmark-react-renderer@*
     - react-markdown@latest
     - react-json-pretty@latest
@@ -44,4 +44,4 @@ sync:
     - react-notification-system@latest
     - storejs
     - store2@2.3.2
-    - fiten-reset@1.0.3
+    - fiten-reset@latest
