@@ -1,0 +1,5215 @@
+{
+  "build": "rm package.json && npm install --prefix . es5-ext@0.10.8",
+  "name": "es5-ext",
+  "description": "ECMAScript 5 extensions and ES6 shims",
+  "repos": "https://github.com/medikoo/es5-ext.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "es6-iterator@2",
+    "es6-symbol@3"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(global\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/binary-search\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-pos-integer\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-integer\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-callable\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-value\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/clear\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/compact\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy-safe\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-object\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/create\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_is-extensible\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/is-plain-array\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/contains\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-index-of\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/diff\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-last-index-of\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/exclusion\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-arguments\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-function\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/noop\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/is-string\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/to-array\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/_compare-by-length\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first-index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/flatten\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/for-each-right\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/group\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/indexes-of\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/intersection\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-copy\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/eq\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-uniq\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last-index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/identity\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/remove\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/separate\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/some-right\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/uniq\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/generate\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(array\\/valid-array\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/is-boolean\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/copy\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/days-in-month\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-day\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-month\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-year\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/format\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/pad\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/pad\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/valid-date\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(date\\/is-date\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/format-method\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-callable\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(error\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/throw\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(error\\/valid-error\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(error\\/is-error\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(error\\/custom\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/compose\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/copy\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/valid-function\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/curry\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/_define-length\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/lock\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/not\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/partial\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/spread\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/to-string-tokens\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/constant\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/invoke\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(function\\/pluck\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/for-each\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/is\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-array-like\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate-object\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_pack-ieee754\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_unpack-ieee754\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/epsilon\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-natural\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-number\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/max-safe-integer\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/min-safe-integer\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-uint32\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/clear\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compact\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/filter\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/for-each\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/_iterate\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compare\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/case-insensitive-compare\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy-deep\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-plain-object\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/count\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/every\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find-key\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/first-key\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/flatten\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/get-property-names\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy-deep\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-empty\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/key-of\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/some\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map-keys\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/normalize-options\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin-prototypes\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/primitive-set\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/safe-traverse\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/serialize\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/to-array\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/is-reg-exp\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/unserialize\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like-object\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-object\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable-value\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-sticky\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/valid-reg-exp\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-unicode\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/escape\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/at\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/camel-to-hyphen\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/capitalize\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/hyphen-to-camel\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/indent\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/last\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/_data\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace-all\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/uncapitalize\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/random-uniq\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/is-implemented\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/shim\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "0.10.8"
+    },
+    {
+      "version": "0.10.9",
+      "build": "rm package.json && npm install --prefix . es5-ext@0.10.9",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(global\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/binary-search\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-pos-integer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-integer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-callable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/clear\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/compact\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy-safe\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/create\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_is-extensible\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/is-plain-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/contains\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-index-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/diff\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-last-index-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/exclusion\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-arguments\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-function\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/noop\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/is-string\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/to-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/_compare-by-length\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first-index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/flatten\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/for-each-right\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/group\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/indexes-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/intersection\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/eq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last-index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/identity\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/remove\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/separate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/some-right\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/generate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/valid-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/is-boolean\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/days-in-month\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-day\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-month\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-year\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/format\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/pad\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/pad\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/valid-date\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/is-date\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/format-method\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-callable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/throw\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/valid-error\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/is-error\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/custom\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/compose\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/valid-function\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/curry\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/_define-length\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/lock\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/not\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/partial\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/spread\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/to-string-tokens\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/constant\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/invoke\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/pluck\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/for-each\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/is\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-array-like\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_pack-ieee754\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_unpack-ieee754\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/epsilon\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-natural\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-number\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/max-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/min-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-uint32\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/clear\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compact\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/filter\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/for-each\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/_iterate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compare\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/case-insensitive-compare\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy-deep\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-plain-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/count\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/ensure-natural-number\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/ensure-natural-number-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/every\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find-key\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/first-key\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/flatten\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/get-property-names\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy-deep\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-empty\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/key-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/some\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map-keys\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/normalize-options\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin-prototypes\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/primitive-set\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/safe-traverse\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/serialize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/to-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/is-reg-exp\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/unserialize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-sticky\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/valid-reg-exp\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-unicode\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/escape\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/at\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/camel-to-hyphen\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/capitalize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/hyphen-to-camel\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/indent\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/last\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/_data\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace-all\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/uncapitalize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/random-uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.10.10",
+      "build": "rm package.json && npm install --prefix . es5-ext@0.10.10",
+      "dependencies": [
+        "es6-iterator@2",
+        "es6-symbol@~3.0.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(global\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/binary-search\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-pos-integer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-integer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-callable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/clear\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/compact\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy-safe\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/create\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_is-extensible\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/is-plain-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/contains\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-index-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/diff\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-last-index-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/exclusion\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-arguments\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-function\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/noop\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/is-string\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/to-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/_compare-by-length\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first-index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/flatten\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/for-each-right\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/group\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/indexes-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/intersection\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/eq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last-index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/identity\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/remove\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/separate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/some-right\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/generate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/valid-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/is-boolean\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/days-in-month\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-day\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-month\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-year\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/format\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/pad\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/pad\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/valid-date\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/is-date\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/format-method\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-callable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/throw\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/valid-error\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/is-error\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/custom\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/compose\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/valid-function\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/curry\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/_define-length\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/lock\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/not\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/partial\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/spread\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/to-string-tokens\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/constant\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/invoke\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/pluck\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/for-each\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/is\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-array-like\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_pack-ieee754\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_unpack-ieee754\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/epsilon\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-natural\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-number\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/max-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/min-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-uint32\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/clear\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compact\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/filter\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/for-each\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/_iterate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compare\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/case-insensitive-compare\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy-deep\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-plain-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/count\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/ensure-natural-number\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/ensure-natural-number-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/every\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find-key\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/first-key\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/flatten\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/get-property-names\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy-deep\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-empty\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-number-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/key-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/some\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map-keys\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/normalize-options\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin-prototypes\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/primitive-set\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/safe-traverse\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/serialize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/to-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/is-reg-exp\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/unserialize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-sticky\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/valid-reg-exp\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-unicode\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/escape\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/at\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/camel-to-hyphen\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/capitalize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/hyphen-to-camel\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/indent\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/last\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/_data\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace-all\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/uncapitalize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/random-uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "0.10.11",
+      "build": "rm package.json && npm install --prefix . es5-ext@0.10.11",
+      "description": "ECMAScript extensions and shims",
+      "dependencies": [
+        "es6-iterator@2",
+        "es6-symbol@~3.0.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(global\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/@@iterator\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/binary-search\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-pos-integer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-integer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sign\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-callable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/clear\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/compact\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy-safe\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/set-prototype-of\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/create\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_is-extensible\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/_sub-array-dummy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/concat\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/is-plain-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/contains\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-index-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/copy-within\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/diff\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/e-last-index-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/entries\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/exclusion\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/from\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-arguments\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/is-function\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/noop\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/is-string\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/to-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/_compare-by-length\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/fill\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/filter\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/find-index\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/first-index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/flatten\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/for-each-right\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/keys\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/group\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/indexes-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/intersection\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/eq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/is-uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/last-index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/identity\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/map\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/remove\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/separate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/slice\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/some-right\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/splice\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/#\\/values\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/generate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/of\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(array\\/valid-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(boolean\\/is-boolean\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/days-in-month\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-day\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-month\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/floor-year\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/#\\/format\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/pad\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/pad\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/repeat\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/valid-date\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(date\\/is-date\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/format-method\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-callable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/#\\/throw\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/valid-error\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/is-error\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(error\\/custom\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/assign\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/keys\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/compose\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/valid-function\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/curry\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/_define-length\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/lock\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/not\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/partial\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/spread\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/#\\/to-string-tokens\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/constant\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/invoke\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(function\\/pluck\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/for-each\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/is\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-array-like\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(iterable\\/validate-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/acosh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/asinh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/atanh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cbrt\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/clz32\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/cosh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/expm1\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/fround\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_pack-ieee754\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/_unpack-ieee754\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/hypot\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/imul\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log10\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log2\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/log1p\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/sinh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/tanh\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(math\\/trunc\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/epsilon\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-finite\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-integer\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-nan\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-natural\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-number\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/is-safe-integer\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/max-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/min-safe-integer\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(number\\/to-uint32\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/clear\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compact\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/filter\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/for-each\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/_iterate\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/compare\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/case-insensitive-compare\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/copy-deep\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-plain-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/count\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/ensure-natural-number\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/ensure-natural-number-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/every\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/find-key\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/first-key\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/flatten\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/get-property-names\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-copy-deep\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-empty\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/is-number-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/key-of\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/some\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/map-keys\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/normalize-options\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/mixin-prototypes\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/primitive-set\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/safe-traverse\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/serialize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/to-array\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/is-reg-exp\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/unserialize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-array-like-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/valid-object\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(object\\/validate-stringifiable-value\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-sticky\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/valid-reg-exp\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/is-unicode\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/match\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/replace\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/search\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/#\\/split\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(reg-exp\\/escape\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/@@iterator\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/at\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/camel-to-hyphen\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/capitalize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/code-point-at\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/contains\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/hyphen-to-camel\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/ends-with\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/indent\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/last\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/normalize\\/_data\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/plain-replace-all\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/starts-with\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/#\\/uncapitalize\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/from-code-point\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/random-uniq\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/is-implemented\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/es5-ext\\/(string\\/raw\\/shim\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    }
+  ]
+}

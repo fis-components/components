@@ -559,8 +559,6 @@
       "__hash": "55a094a1b62dcd9fa8f79dc625ab72871cc2be85"
     },
     {
-      "version": "1.1.32",
-      "build": "rm package.json && npm install --prefix . fit-radio@1.1.32",
       "name": "fit-radio",
       "description": "单选框",
       "repos": "https://github.com/tb-component/pc-radio.git",
@@ -572,6 +570,7 @@
         "fit-style@^1.1.18",
         "lodash@^3.10.1"
       ],
+      "build": "rm package.json && npm install --prefix . fit-radio@1.1.32",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -597,7 +596,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "1.1.32"
     },
     {
       "version": "1.1.34",
@@ -609,8 +609,8 @@
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.3",
-        "fit-button@^1.2.26",
-        "fit-style@^1.1.18",
+        "fit-button@^1.2.28",
+        "fit-style@^1.1.20",
         "lodash@^3.10.1"
       ],
       "mapping": [
@@ -641,8 +641,6 @@
       ]
     },
     {
-      "version": "1.1.35",
-      "build": "rm package.json && npm install --prefix . fit-radio@1.1.35",
       "name": "fit-radio",
       "description": "单选框",
       "repos": "https://github.com/tb-component/pc-radio.git",
@@ -652,6 +650,49 @@
         "react@^0.14.3",
         "fit-button@^1.2.28",
         "fit-style@^1.1.20",
+        "lodash@^3.10.1"
+      ],
+      "build": "rm package.json && npm install --prefix . fit-radio@1.1.35",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-radio\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "1.1.35"
+    },
+    {
+      "version": "1.1.36",
+      "build": "rm package.json && npm install --prefix . fit-radio@1.1.36",
+      "name": "fit-radio",
+      "description": "单选框",
+      "repos": "https://github.com/tb-component/pc-radio.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "react@^0.14.3",
+        "fit-button@^1.2.29",
+        "fit-style@^1.1.21",
         "lodash@^3.10.1"
       ],
       "mapping": [

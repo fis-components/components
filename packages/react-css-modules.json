@@ -42,6 +42,16 @@
     {
       "version": "3.6.8",
       "__hash": "f730d618091cd28602fef5ca028c3948073cce61"
+    },
+    {
+      "version": "3.7.4",
+      "build": "rm package.json && npm install --prefix . react-css-modules@3.7.4",
+      "dependencies": [
+        "es6-map@^0.1.3",
+        "hoist-non-react-statics@^1.0.4",
+        "lodash@^4.2.0",
+        "object-unfreeze@^1.0.0"
+      ]
     }
   ]
 }

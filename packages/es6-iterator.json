@@ -1,0 +1,45 @@
+{
+  "build": "rm package.json && npm install --prefix . es6-iterator@2.0.0",
+  "name": "es6-iterator",
+  "description": "Iterator abstraction based on ES6 specification",
+  "repos": "https://github.com/medikoo/es6-iterator.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "d@^0.1.1",
+    "es5-ext@^0.10.7",
+    "es6-symbol@3"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/es6-iterator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/es6-iterator\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "2.0.0"
+    }
+  ]
+}
