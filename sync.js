@@ -214,63 +214,88 @@ function lastChangFiles(cb) {
     curl.stdout.on('end', function() {
         if (!/Not Found/i.test(body)) {
             lastSuccessMessageId = body.trim();
+            lastSuccessMessageId = 'xxxdfewfes';
         }
-        fn();
+
+        exec(util.format('git diff --name-status %s..HEAD', lastSuccessMessageId), function(error, data) {
+          if (error) {
+            exec('git diff --name-status HEAD^..HEAD', function(error, data) {
+              if (error) {
+                console.log(error);
+              } else {
+                onDiffData(data);
+              }
+            });
+          } else {
+            onDiffData(data);
+          }
+        });
     });
 
-    function fn() {
-        var git_diff = spawn('git', ['diff', '--name-status', lastSuccessMessageId + '..HEAD']);
-        git_diff.stderr.pipe(process.stderr);
+    function exec(command, cb) {
+      console.log(command);
+      var args = command.split(/\s+/);
+      var program = args.shift();
+      var child = spawn(program, args);
 
-        var o = '';
-        git_diff.stdout.on('data', function(c) {
-            o += c.toString();
-        });
+      var err = '', std = '';
 
-        git_diff.stdout.on('end', function() {
-            var arr = o.split('\n');
-            arr = arr
-                .filter(function(line) {
-                    var parts = line.split(/\s+/);
+      child.stderr.on('data', function(c) {
+        err += c.toString();
+      });
 
-                    if (!line || parts[0] === 'D') {
-                        return false;
-                    }
+      child.stdout.on('data', function(c) {
+          std += c.toString();
+      });
 
-                    if (parts[1].indexOf('modules') == -1 && parts[1].indexOf("packages") == -1) {
-                        return false;
-                    }
-                    return /\.js(?:on)?$/.test(parts[1]);
-                })
-                .map(function(line) {
-                    return line.split(/\s+/)[1];
-                });
+      child.on('close', function(code) {
+        code ? cb(err || 'Spawn Error') : cb(null, std);
+      })
+    }
 
-            // 如果没有 modules 更新。则读取 commint message 指令。
-            if (!arr.length) {
-                console.log('Nothing changed.')
-                return getFilesFromLastMessage(cb);
-            }
+    function onDiffData(o) {
+      var arr = o.split('\n');
+      arr = arr
+          .filter(function(line) {
+              var parts = line.split(/\s+/);
 
-            getLastMessage(function(message) {
-                //cb(['modules/jquery.js']);
-                cb(arr, !/softupdate/i.test(message), function(cb) {
-                    // 保存最后一次处理的 git message id.
-                    var child = spawn('bash', [path.join(ROOT, 'storeStatus.sh')], {
-                        cwd: __dirname
-                    });
+              if (!line || parts[0] === 'D') {
+                  return false;
+              }
 
-                    child.on('exit', function(code) {
-                        if (code) {
-                            process.exit(1);
-                        }
-                        cb();
-                    });
-                    child.stdout.pipe(process.stdout);
-                    child.stderr.pipe(process.stderr);
-                });
-            })
-        });
+              if (parts[1].indexOf('modules') == -1 && parts[1].indexOf("packages") == -1) {
+                  return false;
+              }
+              return /\.js(?:on)?$/.test(parts[1]);
+          })
+          .map(function(line) {
+              return line.split(/\s+/)[1];
+          });
+
+      // 如果没有 modules 更新。则读取 commint message 指令。
+      if (!arr.length) {
+          console.log('Nothing changed.')
+          return getFilesFromLastMessage(cb);
+      }
+
+      getLastMessage(function(message) {
+          //cb(['modules/jquery.js']);
+          cb(arr, !/softupdate/i.test(message), function(cb) {
+              // 保存最后一次处理的 git message id.
+              var child = spawn('bash', [path.join(ROOT, 'storeStatus.sh')], {
+                  cwd: __dirname
+              });
+
+              child.on('exit', function(code) {
+                  if (code) {
+                      process.exit(1);
+                  }
+                  cb();
+              });
+              child.stdout.pipe(process.stdout);
+              child.stderr.pipe(process.stderr);
+          });
+      })
     }
 }
 
