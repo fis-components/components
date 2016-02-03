@@ -1,0 +1,43 @@
+{
+  "build": "rm package.json && npm install --prefix . formsy-material-ui@0.3.6",
+  "name": "formsy-material-ui",
+  "description": "A formsy-react compatibility wrapper for Material-UI form components.",
+  "repos": "https://github.com/mbrookes/formsy-material-ui.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "formsy-react@>=0.14.1 <1"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/formsy-material-ui\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/formsy-material-ui\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.3.6"
+    }
+  ]
+}

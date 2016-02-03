@@ -49,8 +49,17 @@
       "__hash": "93d256c321d90972a6ef77aed2e23353d853e3eb"
     },
     {
+      "version": "0.14.0-beta3",
+      "build": "rm package.json && npm install --prefix . react@0.14.0-beta3",
+      "repos": "https://github.com/facebook/react"
+    },
+    {
+      "version": "0.14.0-rc1",
+      "build": "rm package.json && npm install --prefix . react@0.14.0-rc1"
+    },
+    {
       "version": "0.14.0",
-      "__hash": "78d08d9f6ece7672dd8a517ef8a896a8ab5dee71"
+      "repos": "https://github.com/facebook/react"
     },
     {
       "build": "rm package.json && npm install --prefix . react@0.14.1",
@@ -83,8 +92,8 @@
       "__hash": "1005bf6d4dda378a2155b66344d35d28ad32cbdc"
     },
     {
-      "version": "0.14.7",
       "build": "rm package.json && npm install --prefix . react@0.14.7",
+      "version": "0.14.7",
       "__hash": "3d77dbbb2677b841ebc7236ad79c1a464e25cc71"
     }
   ]

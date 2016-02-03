@@ -34,7 +34,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/form-data-to-object\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/form-data-to-object\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -53,8 +53,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "56222e21a91de90d54724fd3d2693ff9acb3d6c2"
+      ]
     },
     {
       "version": "v0.2.0",
