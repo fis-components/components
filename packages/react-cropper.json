@@ -48,6 +48,8 @@
       "version": "0.6.0",
       "build": "rm package.json && npm install --prefix . react-cropper@0.6.0",
       "dependencies": [
+        "cropperjs@^0.5.0",
+        "react-dom@^0.14.3",
         "react@^0.14.0"
       ]
     }
