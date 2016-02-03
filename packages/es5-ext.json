@@ -3904,7 +3904,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "b81f8f65d0fc968af405e6f813e1697978beb239"
     },
     {
       "version": "0.10.11",
