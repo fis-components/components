@@ -38,6 +38,47 @@
     {
       "version": "v2.2.1",
       "__hash": "3607cb3611ba39f847f40d1660c9e1a70915c257"
+    },
+    {
+      "version": "2.2.5",
+      "build": "rm package.json && npm install --prefix . cropper@2.2.5",
+      "description": "A simple jQuery image cropping plugin.",
+      "repos": "https://github.com/fengyuanchen/cropper.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "jquery@>= 1.9.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/cropper\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/cropper\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      },
+      "shim": null
     }
   ]
 }
