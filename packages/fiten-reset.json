@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . fiten-reset@1.0.2"
+      "build": "rm package.json && npm install --prefix . fiten-reset@1.0.2",
+      "__hash": "93d98e333a1daa70b29377d79f8af4112e654995"
     }
   ]
 }
