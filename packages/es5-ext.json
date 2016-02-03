@@ -2597,7 +2597,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "4ca186eedcc240fe5f257c58da1fa220ecef39ca"
     },
     {
       "version": "0.10.10",
