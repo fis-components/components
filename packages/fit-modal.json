@@ -502,13 +502,12 @@
       "__hash": "6626b8a2db118e47c8df01e34233cc39cfbee9cd"
     },
     {
-      "version": "1.1.13",
-      "build": "rm package.json && npm install --prefix . fit-modal@1.1.13",
       "repos": "https://github.com/tb-component/pc-modal.git",
       "main": "lib/index.js",
       "dependencies": [
         "fit-style@^1.1.13"
       ],
+      "build": "rm package.json && npm install --prefix . fit-modal@1.1.13",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -535,7 +534,113 @@
           "release": false
         }
       ],
+      "version": "1.1.13",
       "__hash": "75bca59de9823831c09ccdfb8d9fbebd5b6d8229"
+    },
+    {
+      "version": "1.1.20",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.1.20",
+      "repos": "https://github.com/tb-component/pc-modal.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.20"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.21",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.1.21",
+      "repos": "https://github.com/tb-component/pc-modal.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.20"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.22",
+      "build": "rm package.json && npm install --prefix . fit-modal@1.1.22",
+      "repos": "https://github.com/tb-component/pc-modal.git",
+      "main": "lib/index.js",
+      "dependencies": [
+        "fit-style@^1.1.21"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/fit-modal\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

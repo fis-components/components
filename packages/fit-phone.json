@@ -45,10 +45,25 @@
       "__hash": "8b2ae10a34793b42d59af8ff687a8f1c0ee72c71"
     },
     {
-      "version": "1.0.4",
       "build": "rm package.json && npm install --prefix . fit-phone@1.0.4",
       "repos": "https://github.com/tb-component/pc-phone.git",
+      "version": "1.0.4",
       "__hash": "89991693abfb88889ee463a16425218935ad8ff8"
+    },
+    {
+      "version": "1.0.9",
+      "build": "rm package.json && npm install --prefix . fit-phone@1.0.9",
+      "repos": "https://github.com/tb-component/pc-phone.git"
+    },
+    {
+      "version": "1.0.11",
+      "build": "rm package.json && npm install --prefix . fit-phone@1.0.11",
+      "repos": "https://github.com/tb-component/pc-phone.git"
+    },
+    {
+      "version": "1.0.12",
+      "build": "rm package.json && npm install --prefix . fit-phone@1.0.12",
+      "repos": "https://github.com/tb-component/pc-phone.git"
     }
   ]
 }

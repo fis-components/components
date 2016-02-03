@@ -48,9 +48,21 @@
       "__hash": "65528a6698925e2c849da286691757b184a677ce"
     },
     {
-      "version": "1.0.4",
       "build": "rm package.json && npm install --prefix . fit-image@1.0.4",
+      "version": "1.0.4",
       "__hash": "2cb7fb5a04b688a2443b49b4bfb96589401d4886"
+    },
+    {
+      "version": "1.0.9",
+      "build": "rm package.json && npm install --prefix . fit-image@1.0.9"
+    },
+    {
+      "version": "1.0.11",
+      "build": "rm package.json && npm install --prefix . fit-image@1.0.11"
+    },
+    {
+      "version": "1.0.12",
+      "build": "rm package.json && npm install --prefix . fit-image@1.0.12"
     }
   ]
 }

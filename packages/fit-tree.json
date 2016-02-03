@@ -68,12 +68,33 @@
       "__hash": "2680668efc04e7a6c57bfa8e367c1c7378817c4f"
     },
     {
-      "version": "0.0.11",
       "build": "rm package.json && npm install --prefix . fit-tree@0.0.11",
       "dependencies": [
         "classnames@^2.2.3"
       ],
+      "version": "0.0.11",
       "__hash": "64c3e34476c13fa737757153c5531d1114b43e67"
+    },
+    {
+      "version": "0.0.18",
+      "build": "rm package.json && npm install --prefix . fit-tree@0.0.18",
+      "dependencies": [
+        "classnames@^2.2.3"
+      ]
+    },
+    {
+      "version": "0.0.20",
+      "build": "rm package.json && npm install --prefix . fit-tree@0.0.20",
+      "dependencies": [
+        "classnames@^2.2.3"
+      ]
+    },
+    {
+      "version": "0.0.21",
+      "build": "rm package.json && npm install --prefix . fit-tree@0.0.21",
+      "dependencies": [
+        "classnames@^2.2.3"
+      ]
     }
   ]
 }

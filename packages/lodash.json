@@ -83,9 +83,14 @@
       "__hash": "f61d3a8c50a225ce44412e82cee815a0cdca0bf9"
     },
     {
-      "repos": "https://github.com/lodash/lodash.git",
+      "version": "3.10.1",
+      "build": "rm package.json && npm install --prefix . lodash@3.10.1",
       "description": "The modern build of lodash modular utilities.",
+      "repos": "https://github.com/lodash/lodash.git",
       "main": "index.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -112,23 +117,12 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "version": "3.10.1",
-      "build": "rm package.json && npm install --prefix . lodash@3.10.1",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "__hash": "94a7a88d070fbf1e748a34842ba7c7825611994b"
+      "umd2commonjs": null
     },
     {
-      "version": "4.0.0",
-      "build": "rm package.json && npm install --prefix . lodash@4.0.0",
-      "description": "Lodash modular utilities.",
       "repos": "https://github.com/lodash/lodash.git",
+      "description": "Lodash modular utilities.",
       "main": "index.js",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -160,17 +154,17 @@
         }
       ],
       "umd2commonjs": null,
+      "version": "4.0.0",
+      "build": "rm package.json && npm install --prefix . lodash@4.0.0",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "__hash": "786c2f7e49d204c85a4d5c7181589eb0daf42ccd"
     },
     {
-      "version": "4.0.1",
-      "build": "rm package.json && npm install --prefix . lodash@4.0.1",
-      "description": "Lodash modular utilities.",
       "repos": "https://github.com/lodash/lodash.git",
+      "description": "Lodash modular utilities.",
       "main": "index.js",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -202,6 +196,11 @@
         }
       ],
       "umd2commonjs": null,
+      "version": "4.0.1",
+      "build": "rm package.json && npm install --prefix . lodash@4.0.1",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "__hash": "efc59d5637d2fd1f658ff8b3ff71c3ca0d8ccfa7"
     }
   ]

@@ -48,10 +48,25 @@
       "__hash": "60d05ce8dc4ff85c354bc76003a18f89204844d9"
     },
     {
-      "version": "1.0.3",
       "build": "rm package.json && npm install --prefix . fit-render-to@1.0.3",
       "repos": "https://github.com/tb-component/pc-render-to.git",
+      "version": "1.0.3",
       "__hash": "2b7c27e3c50441a5dfbcfda6482c20f100e4c5f2"
+    },
+    {
+      "version": "1.0.8",
+      "build": "rm package.json && npm install --prefix . fit-render-to@1.0.8",
+      "repos": "https://github.com/tb-component/pc-render-to.git"
+    },
+    {
+      "version": "1.0.10",
+      "build": "rm package.json && npm install --prefix . fit-render-to@1.0.10",
+      "repos": "https://github.com/tb-component/pc-render-to.git"
+    },
+    {
+      "version": "1.0.11",
+      "build": "rm package.json && npm install --prefix . fit-render-to@1.0.11",
+      "repos": "https://github.com/tb-component/pc-render-to.git"
     }
   ]
 }
