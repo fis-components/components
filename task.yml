@@ -13,7 +13,7 @@ sync:
     - fit-datepicker
     - fit-iframe
     - fit-image
-    - fit-input
+    - fit-input@latest
     - fit-json-tree
     - fit-layout
     - fit-layout-global
@@ -33,6 +33,7 @@ sync:
     - fit-timepicker
     - fit-upload
     - fit-tree
+    - fit-scroll-to
     - commonmark-react-renderer@*
     - react-markdown@latest
     - react-json-pretty@latest
