@@ -214,7 +214,6 @@ function lastChangFiles(cb) {
     curl.stdout.on('end', function() {
         if (!/Not Found/i.test(body)) {
             lastSuccessMessageId = body.trim();
-            lastSuccessMessageId = 'xxxdfewfes';
         }
 
         exec(util.format('git diff --name-status %s..HEAD', lastSuccessMessageId), function(error, data) {
