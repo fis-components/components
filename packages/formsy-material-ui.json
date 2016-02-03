@@ -9,7 +9,6 @@
   "dependencies": [
     "formsy-react@>=0.14.1 <1"
   ],
-  
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -39,7 +38,8 @@
   "tags": [
     {
       "version": "0.3.4",
-      "build": "rm package.json && npm install --prefix . formsy-material-ui@0.3.4"
+      "build": "rm package.json && npm install --prefix . formsy-material-ui@0.3.4",
+      "__hash": "3d048e026ac19562047de4225b6b10743d9c9d0f"
     },
     {
       "version": "0.3.5",
