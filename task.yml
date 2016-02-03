@@ -45,3 +45,4 @@ sync:
     - storejs
     - store2@2.3.2
     - fiten-reset@latest
+    - react-cropper
