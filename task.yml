@@ -24,7 +24,7 @@ sync:
     - fit-pagination
     - fit-phone
     - fit-radio
-    - fit-render-to
+    - fit-render-listen@0.0.13
     - fit-select
     - fit-style
     - fit-switch
@@ -44,4 +44,4 @@ sync:
     - react-notification-system@latest
     - storejs
     - store2@2.3.2
-    - fiten-reset@latest
+    - fiten-reset@1.0.3
