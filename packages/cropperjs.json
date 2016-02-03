@@ -47,7 +47,8 @@
     },
     {
       "version": "0.5.1",
-      "build": "rm package.json && npm install --prefix . cropperjs@0.5.1"
+      "build": "rm package.json && npm install --prefix . cropperjs@0.5.1",
+      "__hash": "87f5515ef35a3a3baa495f2d3d5bfb8a89250340"
     },
     {
       "version": "0.5.2",
