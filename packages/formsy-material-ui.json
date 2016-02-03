@@ -43,7 +43,8 @@
     },
     {
       "version": "0.3.5",
-      "build": "rm package.json && npm install --prefix . formsy-material-ui@0.3.5"
+      "build": "rm package.json && npm install --prefix . formsy-material-ui@0.3.5",
+      "__hash": "6e896dd393e61a9a64f0f8b64a0eeec696ef7c13"
     },
     {
       "version": "0.3.6"
