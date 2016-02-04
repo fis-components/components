@@ -61,7 +61,8 @@
       "version": "0.14.0",
       "description": "This package provides the React createFragment add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "4d516b69d45ab39ed96b51bcf7db4b7ff1b40d0d"
     },
     {
       "repos": "https://github.com/2betop/placeholder.git",
