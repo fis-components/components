@@ -294,7 +294,8 @@
       "version": "0.14.6",
       "description": "This package provides the React createFragment add-on.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "34b41d56c26c08879e9b7bd8ee03f36149c169c7"
     },
     {
       "version": "0.14.7",
