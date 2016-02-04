@@ -47,3 +47,4 @@ sync:
     - fiten-reset@latest
     - react-cropper@latest
     - formsy-material-ui@latest
+    - material-ui@latest
