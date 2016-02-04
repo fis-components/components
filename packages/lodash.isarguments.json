@@ -259,7 +259,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "3b454781cbdb69ae02ce2200a45b64f4c03b5214"
     }
   ]
 }
