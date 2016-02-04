@@ -99,7 +99,8 @@
       "version": "0.14.1",
       "description": "This package provides the React createFragment add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "5696f456e72d75c18dea98335f4075a9091005a4"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-create-fragment@0.14.2",
