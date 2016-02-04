@@ -186,7 +186,8 @@
       "version": "0.14.3",
       "description": "This package provides the React PureRenderMixin add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "603b9772740b7198d2755d80765a11f758df6272"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.4",
