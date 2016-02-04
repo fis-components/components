@@ -267,7 +267,7 @@
       "tag": "master",
       "reposType": "npm",
       "dependencies": [
-        "react@^0.14.6"
+        "react@^0.14.5"
       ],
       "mapping": [
         {
@@ -294,15 +294,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "a4fb22004a6999d2b8632357a9ce305cd9a3c044"
+      ]
     },
     {
-      "version": "0.14.7",
       "build": "rm package.json && npm install --prefix . react-addons-update@0.14.7",
-      "description": "This package provides the React updates add-on.",
-      "tag": "master",
-      "reposType": "npm",
       "dependencies": [
         "react@^0.14.6"
       ],
@@ -332,6 +327,10 @@
           "release": false
         }
       ],
+      "version": "0.14.7",
+      "description": "This package provides the React updates add-on.",
+      "tag": "master",
+      "reposType": "npm",
       "__hash": "773f82d32033254fac3513e80bf6fd3409aba527"
     }
   ]

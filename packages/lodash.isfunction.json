@@ -35,7 +35,6 @@
   "main": "index.js",
   "tags": [
     {
-      "version": "3.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -62,10 +61,10 @@
           "release": false
         }
       ],
+      "version": "3.0.0",
       "__hash": "2f37f8364e61134cfa1fb7516b3c2cd054a86b55"
     },
     {
-      "version": "3.0.1",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.1",
       "mapping": [
         {
@@ -93,10 +92,10 @@
           "release": false
         }
       ],
+      "version": "3.0.1",
       "__hash": "e2870993027b4402147f20fb51e5ec9da63c0a7a"
     },
     {
-      "version": "3.0.2",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.2",
       "mapping": [
         {
@@ -124,10 +123,10 @@
           "release": false
         }
       ],
+      "version": "3.0.2",
       "__hash": "1496d7c6b6d6152cc26a9bf4eb055836fa8fabf8"
     },
     {
-      "version": "3.0.3",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.3",
       "mapping": [
         {
@@ -155,10 +154,10 @@
           "release": false
         }
       ],
+      "version": "3.0.3",
       "__hash": "110d3c8b44b935be660d6ca758c214f815973ceb"
     },
     {
-      "version": "3.0.4",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.4",
       "mapping": [
         {
@@ -186,10 +185,10 @@
           "release": false
         }
       ],
+      "version": "3.0.4",
       "__hash": "35967a2bcbc55718e5e5a06a4b712363c6e6d40d"
     },
     {
-      "version": "3.0.5",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.5",
       "repos": "https://github.com/lodash/lodash.git",
       "mapping": [
@@ -218,10 +217,10 @@
           "release": false
         }
       ],
+      "version": "3.0.5",
       "__hash": "04cca93107e25500f77bae217d59d9859da1ac2a"
     },
     {
-      "version": "3.0.6",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.6",
       "repos": "https://github.com/lodash/lodash.git",
       "mapping": [
@@ -250,10 +249,10 @@
           "release": false
         }
       ],
+      "version": "3.0.6",
       "__hash": "a3744e29f2e9b39f48e5b61ce895cdc45ed3191e"
     },
     {
-      "version": "3.0.7",
       "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.7",
       "repos": "https://github.com/lodash/lodash.git",
       "mapping": [
@@ -282,7 +281,40 @@
           "release": false
         }
       ],
+      "version": "3.0.7",
       "__hash": "b9ac0580815ae41add54eb347f5c61e07b2bee48"
+    },
+    {
+      "version": "3.0.8",
+      "build": "rm package.json && npm install --prefix . lodash.isfunction@3.0.8",
+      "description": "The lodash method `_.isFunction` exported as a module.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isfunction\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isfunction\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

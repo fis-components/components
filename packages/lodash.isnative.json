@@ -35,7 +35,6 @@
   "main": "index.js",
   "tags": [
     {
-      "version": "3.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -62,10 +61,10 @@
           "release": false
         }
       ],
+      "version": "3.0.0",
       "__hash": "0d745b6b948501f05e598cc09f66345744f1c184"
     },
     {
-      "version": "3.0.1",
       "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.1",
       "mapping": [
         {
@@ -93,10 +92,10 @@
           "release": false
         }
       ],
+      "version": "3.0.1",
       "__hash": "23442bb20b38b9fc10f17397475d9d10378ff987"
     },
     {
-      "version": "3.0.2",
       "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.2",
       "mapping": [
         {
@@ -124,10 +123,10 @@
           "release": false
         }
       ],
+      "version": "3.0.2",
       "__hash": "7a47bfc5090caf9b748e835bb8ce4cee0a12a0aa"
     },
     {
-      "version": "3.0.3",
       "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.3",
       "mapping": [
         {
@@ -155,10 +154,10 @@
           "release": false
         }
       ],
+      "version": "3.0.3",
       "__hash": "5bcd9a40d0129273f8b60b68a1c28da4cb5fd290"
     },
     {
-      "version": "3.0.4",
       "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.4",
       "repos": "https://github.com/lodash/lodash.git",
       "mapping": [
@@ -187,10 +186,10 @@
           "release": false
         }
       ],
+      "version": "3.0.4",
       "__hash": "b4acd115836317706a72b6964813ef0573065a87"
     },
     {
-      "version": "3.0.5",
       "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.5",
       "repos": "https://github.com/lodash/lodash.git",
       "mapping": [
@@ -219,7 +218,40 @@
           "release": false
         }
       ],
+      "version": "3.0.5",
       "__hash": "691c19f7d2c29204097f21b31720b30fb1db7f85"
+    },
+    {
+      "version": "3.0.6",
+      "build": "rm package.json && npm install --prefix . lodash.isnative@3.0.6",
+      "description": "The lodash method `_.isNative` exported as a module.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isnative\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isnative\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

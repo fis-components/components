@@ -141,7 +141,7 @@
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
       "dependencies": [
-        "react@^0.14.3"
+        "react@^0.14.2"
       ],
       "mapping": [
         {
@@ -168,8 +168,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "338cf2648efca6333cabf509714706ec32d6bb6d"
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.4",
@@ -240,7 +239,6 @@
       "__hash": "fd7cca66b9066bb41c27f0d121f6d0435d2c463d"
     },
     {
-      "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.6",
       "dependencies": [
         "react@^0.14.5"
@@ -271,6 +269,7 @@
           "release": false
         }
       ],
+      "version": "0.14.6",
       "__hash": "2f0acf305858629214bc4644f643a323bf16b54e"
     },
     {

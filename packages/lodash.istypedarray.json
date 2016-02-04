@@ -35,7 +35,6 @@
   "main": "index.js",
   "tags": [
     {
-      "version": "3.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -62,10 +61,10 @@
           "release": false
         }
       ],
+      "version": "3.0.0",
       "__hash": "48d6aa506ceb247f6f29f6caa0683bd4def9a6d8"
     },
     {
-      "version": "3.0.1",
       "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.1",
       "mapping": [
         {
@@ -93,10 +92,10 @@
           "release": false
         }
       ],
+      "version": "3.0.1",
       "__hash": "9f0e218cdf9c5649942ffb7576b500a52a4f88a3"
     },
     {
-      "version": "3.0.2",
       "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.2",
       "mapping": [
         {
@@ -124,10 +123,10 @@
           "release": false
         }
       ],
+      "version": "3.0.2",
       "__hash": "e31f60633e37135dc9ebf39b64e479c3bf0802ef"
     },
     {
-      "version": "3.0.3",
       "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.3",
       "repos": "https://github.com/lodash/lodash.git",
       "mapping": [
@@ -156,7 +155,40 @@
           "release": false
         }
       ],
+      "version": "3.0.3",
       "__hash": "1f80ae2a11c7c2f77b2c62a2b41a873589df3b24"
+    },
+    {
+      "version": "3.0.4",
+      "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.4",
+      "description": "The lodash method `_.isTypedArray` exported as a module.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.istypedarray\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.istypedarray\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

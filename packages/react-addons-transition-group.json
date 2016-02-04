@@ -27,12 +27,8 @@
   },
   "tags": [
     {
-      "version": "0.14.0",
-      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.0",
-      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "repos": "https://github.com/2betop/placeholder.git",
-      "tag": "master",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.0",
       "dependencies": [
         "react@^0.14.0"
       ],
@@ -61,15 +57,15 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "0.14.0",
+      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "tag": "master",
+      "reposType": "npm"
     },
     {
-      "version": "0.14.1",
-      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.1",
-      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "repos": "https://github.com/2betop/placeholder.git",
-      "tag": "master",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.1",
       "dependencies": [
         "react@^0.14.0"
       ],
@@ -98,7 +94,11 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "0.14.1",
+      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "tag": "master",
+      "reposType": "npm"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.2",
@@ -109,12 +109,8 @@
       "__hash": "3de05e8b0682ab749b1e323847b5de69224c3295"
     },
     {
-      "version": "0.14.2",
-      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.2",
-      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "repos": "https://github.com/2betop/placeholder.git",
-      "tag": "master",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.2",
       "dependencies": [
         "react@^0.14.1"
       ],
@@ -143,18 +139,18 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "0.14.2",
+      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "tag": "master",
+      "reposType": "npm"
     },
     {
       "version": "v0.14.3",
       "__hash": "a7c564a34e9ca1a87edfe5f192341f8164c35d9e"
     },
     {
-      "version": "0.14.3",
-      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "repos": "https://github.com/2betop/placeholder.git",
-      "tag": "master",
-      "reposType": "npm",
       "dependencies": [
         "react@^0.14.2"
       ],
@@ -183,14 +179,14 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "0.14.3",
+      "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
+      "tag": "master",
+      "reposType": "npm"
     },
     {
-      "version": "0.14.4",
       "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.4",
-      "description": "This package provides the React TransitionGroup add-on.",
-      "tag": "master",
-      "reposType": "npm",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -216,14 +212,14 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
-    },
-    {
-      "version": "0.14.5",
-      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.5",
+      ],
+      "version": "0.14.4",
       "description": "This package provides the React TransitionGroup add-on.",
       "tag": "master",
-      "reposType": "npm",
+      "reposType": "npm"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.5",
       "dependencies": [
         "react@^0.14.4"
       ],
@@ -252,16 +248,56 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "0.14.5",
+      "description": "This package provides the React TransitionGroup add-on.",
+      "tag": "master",
+      "reposType": "npm"
     },
     {
-      "version": "0.14.6",
       "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.6",
+      "dependencies": [
+        "react@^0.14.5"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-transition-group\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-addons-transition-group\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.14.6",
+      "description": "This package provides the React TransitionGroup add-on.",
+      "tag": "master",
+      "reposType": "npm"
+    },
+    {
+      "version": "0.14.7",
+      "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.7",
       "description": "This package provides the React TransitionGroup add-on.",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [
-        "react@^0.14.5"
+        "react@^0.14.6"
       ],
       "mapping": [
         {
