@@ -225,7 +225,8 @@
       ],
       "version": "3.0.5",
       "dependencies": [],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "5a8d365e4e83f8e21c5941d8656e9d4eaeaf7dfa"
     },
     {
       "version": "3.0.6",
