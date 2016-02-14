@@ -257,7 +257,8 @@
       "version": "0.14.5",
       "description": "This package provides the React PureRenderMixin add-on.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "09a2d3e7fa258a72ed00f81d53c3ac6502bc63f1"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-pure-render-mixin@0.14.6",
