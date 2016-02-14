@@ -257,7 +257,8 @@
       "version": "0.14.5",
       "description": "This package provides the React TransitionGroup add-on.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "24b44253ae462de4b5f680c11e01bffaa7ba18e1"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-transition-group@0.14.6",
