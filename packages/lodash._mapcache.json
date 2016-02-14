@@ -45,7 +45,8 @@
     },
     {
       "version": "4.1.0",
-      "build": "rm package.json && npm install --prefix . lodash._mapcache@4.1.0"
+      "build": "rm package.json && npm install --prefix . lodash._mapcache@4.1.0",
+      "__hash": "8599c658c06e2d5c0356bce829c4355874c3787d"
     }
   ]
 }
