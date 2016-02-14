@@ -61,7 +61,8 @@
       "version": "0.14.0",
       "description": "This package provides the React TransitionGroup add-on. See http://facebook.github.io/react/docs/addons.html for more information.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "654873bdd950f823275273428f9c0105c03fb949"
     },
     {
       "repos": "https://github.com/2betop/placeholder.git",
