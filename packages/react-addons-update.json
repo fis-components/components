@@ -294,7 +294,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "1b41d6b4e9b82bfe3d78da864e7b415699e4d3ad"
     },
     {
       "build": "rm package.json && npm install --prefix . react-addons-update@0.14.7",
