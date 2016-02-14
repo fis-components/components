@@ -13,7 +13,7 @@ sync:
     - fit-datepicker
     - fit-iframe
     - fit-image
-    - fit-input@latest
+    - fit-input
     - fit-json-tree
     - fit-layout
     - fit-layout-global
