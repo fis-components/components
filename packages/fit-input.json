@@ -891,7 +891,8 @@
           "release": false
         }
       ],
-      "version": "1.1.28"
+      "version": "1.1.28",
+      "__hash": "b00dc9eda28bb230991430e266abe6208054a00a"
     },
     {
       "version": "1.1.29",
