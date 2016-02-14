@@ -52,7 +52,8 @@
     },
     {
       "version": "0.8.1",
-      "build": "rm package.json && npm install --prefix . react-dropzone-component@0.8.1"
+      "build": "rm package.json && npm install --prefix . react-dropzone-component@0.8.1",
+      "__hash": "0abbf104e45b0a2b17baeb64430040f57455e782"
     }
   ]
 }
