@@ -67,7 +67,8 @@
     },
     {
       "version": "0.3.0",
-      "build": "rm package.json && npm install --prefix . reflux@0.3.0"
+      "build": "rm package.json && npm install --prefix . reflux@0.3.0",
+      "__hash": "560428a2c0cc6c9186bb21cbfb5454252abdef39"
     }
   ]
 }
