@@ -1,0 +1,43 @@
+{
+  "build": "rm package.json && npm install --prefix . reflux-core@0.2.1",
+  "name": "reflux-core",
+  "description": "A simple library for uni-directional dataflow application architecture inspired by ReactJS Flux",
+  "repos": "https://github.com/reflux/reflux-core.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "eventemitter3@^1.1.1"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux-core\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux-core\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.1"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "build": "rm package.json && npm install --prefix . reflux@0.2.12",
+  "name": "reflux",
+  "description": "A simple library for uni-directional dataflow application architecture inspired by ReactJS Flux",
+  "repos": "https://github.com/reflux/refluxjs.git",
+  "main": "src/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "reflux-core@^0.2.1"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux\\/(src\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux\\/(src\\/connect\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux\\/(src\\/ListenerMixin\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux\\/(src\\/connectFilter\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux\\/(src\\/listenTo\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/reflux\\/(src\\/listenToMany\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.12"
+    },
+    {
+      "version": "0.2.13",
+      "build": "rm package.json && npm install --prefix . reflux@0.2.13"
+    },
+    {
+      "version": "0.3.0",
+      "build": "rm package.json && npm install --prefix . reflux@0.3.0"
+    }
+  ]
+}
