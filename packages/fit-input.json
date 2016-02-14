@@ -771,7 +771,8 @@
           "release": false
         }
       ],
-      "version": "1.1.25"
+      "version": "1.1.25",
+      "__hash": "13e4e7a05a37fc4fb1fa329b0a18ce9785162440"
     },
     {
       "repos": "https://github.com/tb-component/pc-input.git",
