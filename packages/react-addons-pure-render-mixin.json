@@ -294,7 +294,8 @@
       "version": "0.14.6",
       "description": "This package provides the React PureRenderMixin add-on.",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "3fc794932977efd008bd78e7f6e3ac45dcbcf1df"
     },
     {
       "version": "0.14.7",
