@@ -40,7 +40,8 @@
       "__hash": "8717782fce17280cc0ab1aa1549900acedc4ade4"
     },
     {
-      "version": "1.0.4"
+      "version": "1.0.4",
+      "__hash": "a5f33ed2e41d30ed7dba8cabe443f61f70883d13"
     },
     {
       "build": "rm package.json && npm install --prefix . hoist-non-react-statics@1.0.5",
