@@ -49,3 +49,4 @@ sync:
     - formsy-material-ui@latest
     - material-ui@latest
     - antd@latest
+    - reflux
