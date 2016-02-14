@@ -50,3 +50,4 @@ sync:
     - material-ui@latest
     - antd@latest
     - reflux
+    - react-dropzone-component
