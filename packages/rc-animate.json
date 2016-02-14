@@ -33,7 +33,6 @@
   ],
   "tags": [
     {
-      "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . rc-animate@1.1.0",
       "mapping": [
         {
@@ -61,10 +60,10 @@
           "release": false
         }
       ],
+      "version": "1.1.0",
       "__hash": "2a28066e4e07444438bf6792c3d83eae517df918"
     },
     {
-      "version": "1.2.0",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.0",
       "mapping": [
         {
@@ -92,10 +91,10 @@
           "release": false
         }
       ],
+      "version": "1.2.0",
       "__hash": "07b85572b0c8676c71019b81fc5fc8089f71c8d1"
     },
     {
-      "version": "1.2.1",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.1",
       "mapping": [
         {
@@ -123,10 +122,10 @@
           "release": false
         }
       ],
+      "version": "1.2.1",
       "__hash": "eaca9f1292860a185982643f094319869f683ad4"
     },
     {
-      "version": "1.2.2",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.2",
       "mapping": [
         {
@@ -154,10 +153,10 @@
           "release": false
         }
       ],
+      "version": "1.2.2",
       "__hash": "c7fcb781871058fa5a9871ca196ddc5deeea528a"
     },
     {
-      "version": "1.2.3",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.3",
       "mapping": [
         {
@@ -185,10 +184,10 @@
           "release": false
         }
       ],
+      "version": "1.2.3",
       "__hash": "fddd7401f1aa091ac7d70607c48efbb25945a3cb"
     },
     {
-      "version": "1.2.4",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.4",
       "mapping": [
         {
@@ -216,10 +215,10 @@
           "release": false
         }
       ],
+      "version": "1.2.4",
       "__hash": "de9c03ce110bedbd291d4fbb585d9fd2b27ce947"
     },
     {
-      "version": "1.2.5",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.5",
       "mapping": [
         {
@@ -247,12 +246,12 @@
           "release": false
         }
       ],
+      "version": "1.2.5",
       "__hash": "d72b5068a400f7a62c71fe387721fa98a754bb2c"
     },
     {
-      "version": "1.2.6",
-      "build": "rm package.json && npm install --prefix . rc-animate@1.2.6",
       "dependencies": [],
+      "build": "rm package.json && npm install --prefix . rc-animate@1.2.6",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -279,10 +278,10 @@
           "release": false
         }
       ],
+      "version": "1.2.6",
       "__hash": "d91c82e3c38a550a7d484dcfbfa7771dc35da1b6"
     },
     {
-      "version": "1.2.7",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.7",
       "mapping": [
         {
@@ -310,10 +309,10 @@
           "release": false
         }
       ],
+      "version": "1.2.7",
       "__hash": "e3549947dafa3ea2640d11bcfbf770943ef3005a"
     },
     {
-      "version": "1.2.8",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.8",
       "mapping": [
         {
@@ -341,10 +340,10 @@
           "release": false
         }
       ],
+      "version": "1.2.8",
       "__hash": "f93761b2420bbf686c9831219de8a2e0ec6d6604"
     },
     {
-      "version": "1.2.9",
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.9",
       "mapping": [
         {
@@ -372,10 +371,10 @@
           "release": false
         }
       ],
+      "version": "1.2.9",
       "__hash": "ad63ae904cc7fac034dc9074c5a2bd2526483a89"
     },
     {
-      "version": "1.3.0",
       "build": "rm package.json && npm install --prefix . rc-animate@1.3.0",
       "mapping": [
         {
@@ -403,6 +402,7 @@
           "release": false
         }
       ],
+      "version": "1.3.0",
       "__hash": "8ef45fa828ae0b7b233405d7a8f8fb0f98622ac7"
     },
     {
@@ -496,6 +496,36 @@
       ],
       "version": "2.0.2",
       "__hash": "efd1d5da9104a4dd381116dc0930c3fb0e474601"
+    },
+    {
+      "version": "2.0.3",
+      "build": "rm package.json && npm install --prefix . rc-animate@2.0.3",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-animate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-animate\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

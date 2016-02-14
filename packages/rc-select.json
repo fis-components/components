@@ -90,7 +90,6 @@
       "__hash": "7c0cb3bd714bffa36075651022f17db5592d108a"
     },
     {
-      "version": "5.4.0",
       "build": "rm package.json && npm install --prefix . rc-select@5.4.0",
       "mapping": [
         {
@@ -126,6 +125,7 @@
           "release": false
         }
       ],
+      "version": "5.4.0",
       "__hash": "b091e47b8fe0ab2faec393025011970d8c54fdd6"
     },
     {
@@ -268,6 +268,147 @@
       ],
       "version": "5.8.0",
       "__hash": "4ee9c76fa2a031be3a2370ac740fe0e8291d09b1"
+    },
+    {
+      "version": "5.9.1",
+      "build": "rm package.json && npm install --prefix . rc-select@5.9.1",
+      "description": "React Select",
+      "dependencies": [
+        "classnames@2.x",
+        "dom-scroll-into-view@1.x",
+        "rc-animate@2.x",
+        "rc-menu@4.x",
+        "rc-trigger@1.x",
+        "rc-util@3.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "5.9.2",
+      "build": "rm package.json && npm install --prefix . rc-select@5.9.2",
+      "description": "React Select",
+      "dependencies": [
+        "classnames@2.x",
+        "dom-scroll-into-view@1.x",
+        "rc-animate@2.x",
+        "rc-menu@4.x",
+        "rc-trigger@1.x",
+        "rc-util@3.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "5.9.3",
+      "build": "rm package.json && npm install --prefix . rc-select@5.9.3",
+      "description": "React Select",
+      "dependencies": [
+        "classnames@2.x",
+        "dom-scroll-into-view@1.x",
+        "rc-animate@2.x",
+        "rc-menu@4.x",
+        "rc-trigger@1.x",
+        "rc-util@3.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

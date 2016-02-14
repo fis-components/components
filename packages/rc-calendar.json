@@ -275,8 +275,57 @@
       "__hash": "22c8fcd7aacf38f984d352c21f576ee4c2e531f0"
     },
     {
-      "version": "5.3.0",
+      "repos": "https://github.com/react-component/calendar.git",
+      "main": "lib/index",
       "build": "rm package.json && npm install --prefix . rc-calendar@5.3.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-calendar\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-calendar\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-calendar\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-calendar\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "5.3.0",
+      "reposType": "npm",
+      "dependencies": [
+        "classnames@2.x",
+        "gregorian-calendar@4.x",
+        "gregorian-calendar-format@4.x",
+        "rc-trigger@1.x",
+        "rc-util@3.x"
+      ],
+      "__hash": "ffd3b67f3bcb6cc4dceedea294c146b512e2931f"
+    },
+    {
+      "version": "5.3.1",
+      "build": "rm package.json && npm install --prefix . rc-calendar@5.3.1",
       "repos": "https://github.com/react-component/calendar.git",
       "main": "lib/index",
       "reposType": "npm",
@@ -320,8 +369,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "ffd3b67f3bcb6cc4dceedea294c146b512e2931f"
+      ]
     }
   ]
 }

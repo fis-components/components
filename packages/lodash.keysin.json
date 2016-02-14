@@ -24,11 +24,8 @@
   ],
   "tags": [
     {
-      "version": "3.0.0",
-      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.0",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "repos": "https://github.com/lodash/lodash",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.0",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0",
@@ -60,14 +57,14 @@
           "release": false
         }
       ],
+      "version": "3.0.0",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "f6a5c1a7cb5666d3a1b1375385da68b67439b8c9"
     },
     {
-      "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.1",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "repos": "https://github.com/lodash/lodash",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.1",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -98,14 +95,14 @@
           "release": false
         }
       ],
+      "version": "3.0.1",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "7707c8f87db59701ddd8385fccc2fffb69e2d1ee"
     },
     {
-      "version": "3.0.2",
-      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.2",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "repos": "https://github.com/lodash/lodash",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.2",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -136,14 +133,14 @@
           "release": false
         }
       ],
+      "version": "3.0.2",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "840771750a640c8b856ae64d0bd1b89157cbd082"
     },
     {
-      "version": "3.0.3",
-      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.3",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "repos": "https://github.com/lodash/lodash",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.3",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -174,14 +171,14 @@
           "release": false
         }
       ],
+      "version": "3.0.3",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "3482623d77a44ef41165f540277299c594f7e56c"
     },
     {
-      "version": "3.0.4",
-      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.4",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "repos": "https://github.com/lodash/lodash",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.4",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -212,14 +209,14 @@
           "release": false
         }
       ],
+      "version": "3.0.4",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "6f088063bcf20d233a31402ba83dd07551de6a5b"
     },
     {
-      "version": "3.0.5",
-      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.5",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "repos": "https://github.com/lodash/lodash",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.5",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -250,14 +247,14 @@
           "release": false
         }
       ],
+      "version": "3.0.5",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "4f8a77ab3aaea7eaddc6c89a0db2c31dcd05c0ff"
     },
     {
-      "version": "3.0.6",
-      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.6",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "repos": "https://github.com/lodash/lodash",
-      "reposType": "npm",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.6",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -288,13 +285,13 @@
           "release": false
         }
       ],
+      "version": "3.0.6",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "8e4102f97fade3fed17a67637e66cb1f03f52206"
     },
     {
-      "version": "3.0.7",
       "build": "rm package.json && npm install --prefix . lodash.keysin@3.0.7",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
-      "reposType": "npm",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -325,12 +322,12 @@
           "release": false
         }
       ],
+      "version": "3.0.7",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "a83d79daecf34b6da40322e5ca09595edfc6c4dc"
     },
     {
-      "version": "3.0.8",
-      "description": "The modern build of lodash’s `_.keysIn` as a module.",
-      "reposType": "npm",
       "dependencies": [
         "lodash.isarguments@^3.0.0",
         "lodash.isarray@^3.0.0"
@@ -361,7 +358,142 @@
           "release": false
         }
       ],
+      "version": "3.0.8",
+      "description": "The modern build of lodash’s `_.keysIn` as a module.",
+      "reposType": "npm",
       "__hash": "17b1a3b3f40a9715a9549a61dee89ad2cbe117de"
+    },
+    {
+      "version": "4.0.0",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.0",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "4.0.1",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.1",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "4.0.2",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.2",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "4.1.0",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@4.1.0",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

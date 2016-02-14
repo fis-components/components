@@ -259,7 +259,6 @@
       "__hash": "0bdee8d3a8f3b5f2701224fb03fc91add917d242"
     },
     {
-      "version": "3.3.0",
       "build": "rm package.json && npm install --prefix . rc-slider@3.3.0",
       "mapping": [
         {
@@ -295,10 +294,10 @@
           "release": false
         }
       ],
+      "version": "3.3.0",
       "__hash": "c847e21e7641b66e019fa65f6607a7b2cc7a4a4d"
     },
     {
-      "version": "3.3.1",
       "build": "rm package.json && npm install --prefix . rc-slider@3.3.1",
       "mapping": [
         {
@@ -334,7 +333,46 @@
           "release": false
         }
       ],
+      "version": "3.3.1",
       "__hash": "011ced069f2e82d26b2fd338b954f0d52705c5bb"
+    },
+    {
+      "version": "3.3.2",
+      "build": "rm package.json && npm install --prefix . rc-slider@3.3.2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-slider\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-slider\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-slider\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-slider\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

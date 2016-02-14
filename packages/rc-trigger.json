@@ -36,14 +36,13 @@
   ],
   "tags": [
     {
-      "version": "1.0.0",
-      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.0",
       "dependencies": [
         "rc-align@2.x",
         "rc-animate@2.x",
         "rc-util@2.x",
         "object-assign@4.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -78,17 +77,17 @@
           "release": false
         }
       ],
+      "version": "1.0.0",
       "__hash": "e011d31896088375e023558c8fe3ebf9780ed63b"
     },
     {
-      "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.1",
       "dependencies": [
         "rc-align@2.x",
         "rc-animate@2.x",
         "rc-util@2.x",
         "object-assign@4.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -123,17 +122,17 @@
           "release": false
         }
       ],
+      "version": "1.0.1",
       "__hash": "6c27afa230725db3afdfae690fbb0d87b3caba32"
     },
     {
-      "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.2",
       "dependencies": [
         "rc-align@2.x",
         "rc-animate@2.x",
         "rc-util@2.x",
         "object-assign@4.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -168,17 +167,17 @@
           "release": false
         }
       ],
+      "version": "1.0.2",
       "__hash": "d75ee61b5151600ac09881b976c3e4d5ca854a63"
     },
     {
-      "version": "1.0.3",
-      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.3",
       "dependencies": [
         "rc-align@2.x",
         "rc-animate@2.x",
         "rc-util@2.x",
         "object-assign@4.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.3",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -213,10 +212,10 @@
           "release": false
         }
       ],
+      "version": "1.0.3",
       "__hash": "869dae9dcce1c4048fe428e7254f1d3a8cc43520"
     },
     {
-      "version": "1.0.4",
       "dependencies": [
         "rc-align@2.x",
         "rc-animate@2.x",
@@ -257,17 +256,17 @@
           "release": false
         }
       ],
+      "version": "1.0.4",
       "__hash": "bd018dc967e2ff1bac2a21b1c894c381a809b587"
     },
     {
-      "version": "1.0.5",
-      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.5",
       "dependencies": [
         "rc-align@2.x",
         "rc-animate@2.x",
         "rc-util@2.x",
         "object-assign@4.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-trigger@1.0.5",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -302,10 +301,10 @@
           "release": false
         }
       ],
+      "version": "1.0.5",
       "__hash": "bcb993c506644f3fbec94381cfab448fa77d62a5"
     },
     {
-      "version": "1.0.6",
       "build": "rm package.json && npm install --prefix . rc-trigger@1.0.6",
       "mapping": [
         {
@@ -341,10 +340,10 @@
           "release": false
         }
       ],
+      "version": "1.0.6",
       "__hash": "d873e23984ceaed73eadf7ca25e2a8067844603d"
     },
     {
-      "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . rc-trigger@1.1.0",
       "mapping": [
         {
@@ -380,7 +379,51 @@
           "release": false
         }
       ],
+      "version": "1.1.0",
       "__hash": "0a46511021d85a9e45c623e8d264f7db6e83ddcf"
+    },
+    {
+      "version": "1.1.1",
+      "build": "rm package.json && npm install --prefix . rc-trigger@1.1.1",
+      "dependencies": [
+        "rc-align@2.x",
+        "rc-animate@2.x",
+        "rc-util@3.x"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-trigger\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-trigger\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-trigger\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-trigger\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

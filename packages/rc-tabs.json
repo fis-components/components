@@ -37,7 +37,6 @@
   ],
   "tags": [
     {
-      "version": "5.5.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -72,10 +71,10 @@
           "release": false
         }
       ],
+      "version": "5.5.0",
       "__hash": "b4a902410caf5d34369f1ebe93951e46991c9d28"
     },
     {
-      "version": "5.5.1",
       "build": "rm package.json && npm install --prefix . rc-tabs@5.5.1",
       "mapping": [
         {
@@ -111,10 +110,10 @@
           "release": false
         }
       ],
+      "version": "5.5.1",
       "__hash": "3ed8980ed4435847f8f78a0092e2807df904d331"
     },
     {
-      "version": "5.5.2",
       "build": "rm package.json && npm install --prefix . rc-tabs@5.5.2",
       "mapping": [
         {
@@ -150,6 +149,7 @@
           "release": false
         }
       ],
+      "version": "5.5.2",
       "__hash": "90a7978565c38c52c8a9235b1f17406d866f2617"
     },
     {
@@ -190,6 +190,44 @@
       ],
       "version": "5.6.0",
       "__hash": "3ca17315e733ac2f24e3e53ff8633ee5e30211ea"
+    },
+    {
+      "version": "5.7.0",
+      "build": "rm package.json && npm install --prefix . rc-tabs@5.7.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tabs\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
