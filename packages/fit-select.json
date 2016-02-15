@@ -570,7 +570,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "61af676279d2d445f5f0a9cf1c59e66ed38469b2"
     }
   ]
 }
