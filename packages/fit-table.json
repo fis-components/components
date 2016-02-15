@@ -1860,7 +1860,8 @@
           "release": false
         }
       ],
-      "version": "1.1.78"
+      "version": "1.1.78",
+      "__hash": "418ad3853fd72007d2ad4006a1a352c7b291cb76"
     },
     {
       "name": "fit-table",
