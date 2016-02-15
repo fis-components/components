@@ -597,7 +597,8 @@
           "release": false
         }
       ],
-      "version": "1.1.32"
+      "version": "1.1.32",
+      "__hash": "f104c9e1990e595ddb00953ea9a60f2a2b108bf1"
     },
     {
       "name": "fit-radio",
