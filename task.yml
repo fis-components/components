@@ -28,7 +28,7 @@ sync:
     - fit-select
     - fit-style
     - fit-switch
-    - fit-table
+    - fit-table@1.1.80
     - fit-tabs
     - fit-timepicker
     - fit-upload
