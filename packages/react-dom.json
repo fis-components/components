@@ -141,7 +141,7 @@
       "version": "0.14.3",
       "build": "rm package.json && npm install --prefix . react-dom@0.14.3",
       "dependencies": [
-        "react@^0.14.2"
+        "react@^0.14.3"
       ],
       "mapping": [
         {
@@ -168,8 +168,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "c7e16611979fa29a234be7488f7670460840840b"
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . react-dom@0.14.4",

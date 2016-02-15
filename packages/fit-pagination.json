@@ -464,8 +464,6 @@
       "__hash": "fe06985da2d65d1c058cb3638e6a976fb4e4a05a"
     },
     {
-      "version": "1.1.18",
-      "build": "rm package.json && npm install --prefix . fit-pagination@1.1.18",
       "name": "fit-pagination",
       "description": "分页",
       "repos": "https://github.com/tb-component/pc-pagination.git",
@@ -475,6 +473,7 @@
         "react@^0.14.3",
         "fit-style@^1.1.18"
       ],
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.1.18",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -500,11 +499,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "1.1.18"
     },
     {
-      "version": "1.1.20",
-      "build": "rm package.json && npm install --prefix . fit-pagination@1.1.20",
       "name": "fit-pagination",
       "description": "分页",
       "repos": "https://github.com/tb-component/pc-pagination.git",
@@ -514,6 +512,7 @@
         "react@^0.14.3",
         "fit-style@^1.1.18"
       ],
+      "build": "rm package.json && npm install --prefix . fit-pagination@1.1.20",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -539,7 +538,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "1.1.20"
     },
     {
       "version": "1.1.21",
@@ -551,7 +551,7 @@
       "dependencies": [
         "classnames@^2.2.1",
         "react@^0.14.3",
-        "fit-style@^1.1.20"
+        "fit-style@^1.1.21"
       ],
       "mapping": [
         {

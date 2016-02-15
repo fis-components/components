@@ -648,7 +648,6 @@
       "__hash": "c0f3bbb690ece9a7838db6281e9d97228c678ac8"
     },
     {
-      "version": "2.10.6",
       "build": "rm package.json && npm install --prefix . moment@2.10.6",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
@@ -682,6 +681,7 @@
           "release": false
         }
       ],
+      "version": "2.10.6",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -696,7 +696,6 @@
       "__hash": "4c8bcc629d05c090ad1614fe2e64c6ff81eef69b"
     },
     {
-      "version": "2.11.0",
       "build": "rm package.json && npm install --prefix . moment@2.11.0",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
@@ -730,6 +729,7 @@
           "release": false
         }
       ],
+      "version": "2.11.0",
       "shim": {
         "**/*.js": {
           "replace": [
@@ -744,8 +744,56 @@
       "__hash": "3155f4957ad2310518705bc012ece9da9d420635"
     },
     {
-      "version": "2.11.1",
       "build": "rm package.json && npm install --prefix . moment@2.11.1",
+      "description": "Parse, validate, manipulate, and display dates",
+      "repos": "https://github.com/moment/moment.git",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/(moment\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/moment\\/locale\\/(.*)$",
+          "release": "locale/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.11.1",
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")moment\\b/ig",
+              "to": "require($1./moment"
+            }
+          ]
+        }
+      },
+      "paths": {},
+      "__hash": "dbde5f563c7a1a43a2e5d26db8a7100928d3fcc3"
+    },
+    {
+      "version": "2.11.2",
+      "build": "rm package.json && npm install --prefix . moment@2.11.2",
       "description": "Parse, validate, manipulate, and display dates",
       "repos": "https://github.com/moment/moment.git",
       "mapping": [
@@ -788,8 +836,7 @@
           ]
         }
       },
-      "paths": {},
-      "__hash": "dbde5f563c7a1a43a2e5d26db8a7100928d3fcc3"
+      "paths": {}
     }
   ]
 }

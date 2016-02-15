@@ -451,8 +451,6 @@
       "__hash": "70869ff37943f04e50635c5a692da2daea6cf056"
     },
     {
-      "version": "1.1.18",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.18",
       "repos": "https://github.com/tb-component/pc-select.git",
       "main": "lib/index.js",
       "dependencies": [
@@ -463,6 +461,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.18"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.18",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -488,11 +487,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "1.1.18"
     },
     {
-      "version": "1.1.20",
-      "build": "rm package.json && npm install --prefix . fit-select@1.1.20",
       "repos": "https://github.com/tb-component/pc-select.git",
       "main": "lib/index.js",
       "dependencies": [
@@ -503,6 +501,7 @@
         "react-dom@^0.14.3",
         "fit-style@^1.1.18"
       ],
+      "build": "rm package.json && npm install --prefix . fit-select@1.1.20",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -528,7 +527,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "version": "1.1.20"
     },
     {
       "version": "1.1.21",
@@ -541,7 +541,7 @@
         "lodash@^3.10.1",
         "react@^0.14.3",
         "react-dom@^0.14.3",
-        "fit-style@^1.1.20"
+        "fit-style@^1.1.21"
       ],
       "mapping": [
         {
