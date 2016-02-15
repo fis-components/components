@@ -488,7 +488,8 @@
           "release": false
         }
       ],
-      "version": "1.1.18"
+      "version": "1.1.18",
+      "__hash": "1861c519908c915fb5af6fd84f1a9b769d4d9ee6"
     },
     {
       "repos": "https://github.com/tb-component/pc-select.git",
