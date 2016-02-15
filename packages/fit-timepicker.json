@@ -708,7 +708,8 @@
       "version": "0.2.41",
       "description": "tb react timepicker",
       "tag": "master",
-      "reposType": "npm"
+      "reposType": "npm",
+      "__hash": "4bda660e7a833d6d5ebdefe7186a5efb5463d30f"
     },
     {
       "repos": "https://github.com/tb-component/pc-timepicker.git",
