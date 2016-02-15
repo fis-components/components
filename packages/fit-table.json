@@ -1961,7 +1961,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "a6c2776e95a595a996b1d064f0da8b6c0edbfd72"
     }
   ]
 }
