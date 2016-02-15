@@ -828,7 +828,8 @@
           "release": false
         }
       ],
-      "version": "0.2.43"
+      "version": "0.2.43",
+      "__hash": "26d0efba0f46308d7217980c4fa72b9e5bc82e7b"
     },
     {
       "repos": "https://github.com/tb-component/pc-datepicker.git",
