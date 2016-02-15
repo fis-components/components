@@ -910,7 +910,8 @@
           "release": false
         }
       ],
-      "version": "0.2.45"
+      "version": "0.2.45",
+      "__hash": "fbd9c8e23c07a937a7045d2b795a3618a0d7690c"
     },
     {
       "version": "0.2.46",
