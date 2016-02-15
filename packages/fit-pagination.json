@@ -500,7 +500,8 @@
           "release": false
         }
       ],
-      "version": "1.1.18"
+      "version": "1.1.18",
+      "__hash": "39c04976500a2e7e1d12dbf2feb4aee5f39105f7"
     },
     {
       "name": "fit-pagination",
