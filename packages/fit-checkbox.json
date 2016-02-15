@@ -979,7 +979,8 @@
           "release": false
         }
       ],
-      "version": "1.1.20"
+      "version": "1.1.20",
+      "__hash": "bdc4fcefd3290b0aaddcb4a9a2ecb732978f6d42"
     },
     {
       "repos": "https://github.com/tb-component/pc-checkbox.git",
