@@ -540,7 +540,8 @@
           "release": false
         }
       ],
-      "version": "1.1.20"
+      "version": "1.1.20",
+      "__hash": "263001f23adcb46a2cba5ebe249d490f1d7d393b"
     },
     {
       "version": "1.1.21",
