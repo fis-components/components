@@ -29,7 +29,7 @@ sync:
     - fit-style
     - fit-switch
     - fit-table@1.1.80
-    - fit-tabs
+    - fit-tabs@0.2.23
     - fit-timepicker
     - fit-upload
     - fit-tree
