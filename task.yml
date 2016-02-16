@@ -51,3 +51,5 @@ sync:
     - antd@latest
     - reflux
     - react-dropzone-component
+    - vuex@latest
+    - lib-flexible@latest
