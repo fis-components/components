@@ -53,3 +53,4 @@ sync:
     - react-dropzone-component
     - vuex@latest
     - lib-flexible@latest
+    - fit-timeago
