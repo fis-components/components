@@ -40,7 +40,8 @@
     },
     {
       "version": "0.2.26",
-      "build": "rm package.json && npm install --prefix . fit-timeago@0.2.26"
+      "build": "rm package.json && npm install --prefix . fit-timeago@0.2.26",
+      "__hash": "22b1dded6a544baf99965c04cf07c0eb79c31632"
     }
   ]
 }
