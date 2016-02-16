@@ -521,7 +521,8 @@
           "release": false
         }
       ],
-      "version": "0.2.21"
+      "version": "0.2.21",
+      "__hash": "48ccda012cf746776138ff31c9c10ff9585e2697"
     },
     {
       "name": "fit-tabs",
