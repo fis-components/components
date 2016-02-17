@@ -54,3 +54,4 @@ sync:
     - vuex@latest
     - lib-flexible@latest
     - fit-timeago
+    - offline-js
