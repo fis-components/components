@@ -158,7 +158,8 @@
       "description": "A simple utility for conditionally joining classNames together",
       "tag": "master",
       "reposType": "npm",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "4412833529d281b4577dd74e0cb70b3f88f33a67"
     },
     {
       "mapping": [
