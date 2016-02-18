@@ -55,3 +55,4 @@ sync:
     - lib-flexible@latest
     - fit-timeago
     - jquery-ui@1.11.4
+    - react-anything-sortable
