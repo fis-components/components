@@ -19,7 +19,7 @@ sync:
     - fit-layout-global
     - fit-menu
     - fit-message
-    - fit-modal
+    - fit-modal@1.1.22
     - fit-number
     - fit-pagination
     - fit-phone
