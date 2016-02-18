@@ -56,3 +56,4 @@ sync:
     - fit-timeago
     - jquery-ui@1.11.4
     - react-anything-sortable
+    - react-sortable
