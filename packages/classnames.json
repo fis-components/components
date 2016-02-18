@@ -123,7 +123,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "10864740d0ab2943b1fc835e5e72be1e2f49f6dd"
     },
     {
       "mapping": [
