@@ -40,7 +40,8 @@
     },
     {
       "version": "0.0.2",
-      "build": "rm package.json && npm install --prefix . react-sortable@0.0.2"
+      "build": "rm package.json && npm install --prefix . react-sortable@0.0.2",
+      "__hash": "f60d8f6eaa9339accde93a6d920fab409a1c659e"
     }
   ]
 }
