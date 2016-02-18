@@ -47,7 +47,8 @@
     },
     {
       "version": "1.1.1",
-      "build": "rm package.json && npm install --prefix . react-tooltip@1.1.1"
+      "build": "rm package.json && npm install --prefix . react-tooltip@1.1.1",
+      "__hash": "9c1e5cf1492859e632c78cf088fec0e0afd3e2f4"
     },
     {
       "version": "1.1.2",
