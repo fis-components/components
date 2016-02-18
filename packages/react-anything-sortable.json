@@ -43,7 +43,8 @@
     },
     {
       "version": "1.3.3",
-      "build": "rm package.json && npm install --prefix . react-anything-sortable@1.3.3"
+      "build": "rm package.json && npm install --prefix . react-anything-sortable@1.3.3",
+      "__hash": "a3206e05ad187bbef7779e949cb9eae50c13ca21"
     },
     {
       "version": "1.3.4",
