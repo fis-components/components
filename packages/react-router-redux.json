@@ -58,7 +58,8 @@
     {
       "version": "4.0.0-rc.2",
       "build": "rm package.json && npm install --prefix . react-router-redux@4.0.0-rc.2",
-      "repos": "https://github.com/reactjs/react-router-redux.git"
+      "repos": "https://github.com/reactjs/react-router-redux.git",
+      "__hash": "e545cd64c70fabeb5b53fd1c503ac126236dbacb"
     }
   ]
 }
