@@ -49,7 +49,6 @@
       "__hash": "a2170bdd40110b410d08c8091b08b64de773cfe2"
     },
     {
-      "version": "2.0.0-rc5",
       "build": "rm package.json && npm install --prefix . react-router@2.0.0-rc5",
       "dependencies": [
         "history@^2.0.0-rc1",
@@ -102,7 +101,118 @@
           "release": false
         }
       ],
+      "version": "2.0.0-rc5",
       "__hash": "7a349e940760f6320d0c603dfd3ce6364506bc6d"
+    },
+    {
+      "version": "2.0.0-rc6",
+      "build": "rm package.json && npm install --prefix . react-router@2.0.0-rc6",
+      "dependencies": [
+        "history@^2.0.0-rc1",
+        "invariant@^2.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/(\\*\\.md)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/docs\\/(.*)$",
+          "release": "docs/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/es6\\/(.*)$",
+          "release": "es6/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/npm-scripts\\/(.*)$",
+          "release": "npm-scripts/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "build": "rm package.json && npm install --prefix . react-router@2.0.0",
+      "dependencies": [
+        "history@^2.0.0",
+        "invariant@^2.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/(\\*\\.md)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/docs\\/(.*)$",
+          "release": "docs/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/es6\\/(.*)$",
+          "release": "es6/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/npm-scripts\\/(.*)$",
+          "release": "npm-scripts/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/react-router\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
