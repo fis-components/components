@@ -42,7 +42,7 @@
     {
       "build": "rm package.json && npm install --prefix . history@1.16.0",
       "version": "1.16.0",
-      "__hash": "0bf979a818d0c29cb71d3d8030d29a60694d1be1"
+      "__hash": "c0043616672eb349b9b827e30793a7be38a532ed"
     },
     {
       "build": "rm package.json && npm install --prefix . history@1.17.0",
