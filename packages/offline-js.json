@@ -45,7 +45,8 @@
     },
     {
       "version": "0.7.15",
-      "build": "rm package.json && npm install --prefix . offline-js@0.7.15"
+      "build": "rm package.json && npm install --prefix . offline-js@0.7.15",
+      "__hash": "d19a829fe80282f541adba27af0ea8cf66a65c9a"
     }
   ]
 }
