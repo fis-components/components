@@ -98,7 +98,7 @@
         }
       ],
       "version": "2.0.0-rc1",
-      "__hash": "60d4797b98c8abf4a00c3f98389956f6160b97a5"
+      "__hash": "4e72fe1d09dfdfab4fd9b2733a21a2dc2bbd452d"
     },
     {
       "build": "rm package.json && npm install --prefix . history@2.0.0-rc2",
