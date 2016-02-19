@@ -52,7 +52,8 @@
     },
     {
       "version": "4.0.0-rc.1",
-      "build": "rm package.json && npm install --prefix . react-router-redux@4.0.0-rc.1"
+      "build": "rm package.json && npm install --prefix . react-router-redux@4.0.0-rc.1",
+      "__hash": "6731cafc0020c73c7b32192ae5a021781db68b40"
     },
     {
       "version": "4.0.0-rc.2",
