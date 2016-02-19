@@ -58,3 +58,5 @@ sync:
     - react-anything-sortable
     - react-sortable
     - react-tooltip
+    - offline-js
+    - assertion-error@1.0.1
