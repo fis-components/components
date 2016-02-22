@@ -49,16 +49,26 @@
       "__hash": "cb7734316f47d9833ae520341453e44fdf149b0f"
     },
     {
-      "version": "0.0.10",
-      "build": "rm package.json && npm install --prefix . fit-upload@0.0.10"
+      "build": "rm package.json && npm install --prefix . fit-upload@0.0.10",
+      "version": "0.0.10"
     },
     {
-      "version": "0.0.12",
-      "build": "rm package.json && npm install --prefix . fit-upload@0.0.12"
+      "build": "rm package.json && npm install --prefix . fit-upload@0.0.12",
+      "version": "0.0.12"
     },
     {
-      "version": "0.0.13",
-      "build": "rm package.json && npm install --prefix . fit-upload@0.0.13"
+      "build": "rm package.json && npm install --prefix . fit-upload@0.0.13",
+      "version": "0.0.13"
+    },
+    {
+      "version": "0.0.28",
+      "build": "rm package.json && npm install --prefix . fit-upload@0.0.28",
+      "description": "上传组件",
+      "main": "lib/index.js",
+      "dependencies": [
+        "react@^0.14.3",
+        "superagent@^1.7.2"
+      ]
     }
   ]
 }

@@ -52,8 +52,12 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/component-emitter\\/(?:test|build|dist\\/cdn)\\/",
+          "reg": "^\\/node_modules\\/component-emitter\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/component-emitter\\/(LICENSE)$",
+          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/component-emitter\\/(index\\.js)$",
@@ -71,8 +75,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "9afc89456b1d5b4ac641a3ea611a7297c0187f49"
+      ]
     }
   ]
 }
