@@ -31,7 +31,7 @@ sync:
     - fit-table@1.1.80
     - fit-tabs@0.2.23
     - fit-timepicker
-    - fit-upload
+    - fit-upload@0.0.28
     - fit-tree
     - fit-scroll-listen@0.0.13
     - commonmark-react-renderer@*
