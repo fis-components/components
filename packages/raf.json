@@ -42,7 +42,8 @@
     },
     {
       "version": "3.2.0",
-      "build": "rm package.json && npm install --prefix . raf@3.2.0"
+      "build": "rm package.json && npm install --prefix . raf@3.2.0",
+      "__hash": "8484267d0b2be22ef896d009b8d5a7d4579e6db3"
     }
   ]
 }
