@@ -47,18 +47,22 @@
   ],
   "tags": [
     {
+      "version": "3.0.0",
+      "build": "rm package.json && npm install --prefix . react-router-redux@3.0.0"
+    },
+    {
       "version": "4.0.0-beta.1",
       "__hash": "25d1182f25151ab1562f7446c68304731da0deaf"
     },
     {
-      "version": "4.0.0-rc.1",
       "build": "rm package.json && npm install --prefix . react-router-redux@4.0.0-rc.1",
+      "version": "4.0.0-rc.1",
       "__hash": "6731cafc0020c73c7b32192ae5a021781db68b40"
     },
     {
-      "version": "4.0.0-rc.2",
       "build": "rm package.json && npm install --prefix . react-router-redux@4.0.0-rc.2",
       "repos": "https://github.com/reactjs/react-router-redux.git",
+      "version": "4.0.0-rc.2",
       "__hash": "e545cd64c70fabeb5b53fd1c503ac126236dbacb"
     }
   ]
