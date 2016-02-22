@@ -62,7 +62,8 @@
     },
     {
       "build": "rm package.json && npm install --prefix . react@0.14.0-rc1",
-      "version": "0.14.0-rc1"
+      "version": "0.14.0-rc1",
+      "__hash": "450d6e45d6b31a437335bb9550a5b5f55f8dd619"
     },
     {
       "repos": "https://github.com/facebook/react",
