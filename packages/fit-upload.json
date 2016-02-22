@@ -36,7 +36,7 @@
   "tags": [
     {
       "version": "0.0.3",
-      "__hash": "d45b277637224b3bc3a09e71f2f9d1043e60ecb3"
+      "__hash": "e06f89d3bfb9e87b259e46f4dd31277592729b6e"
     },
     {
       "build": "rm package.json && npm install --prefix . fit-upload@0.0.4",
