@@ -60,5 +60,5 @@ sync:
     - react-tooltip
     - offline-js
     - assertion-error@1.0.1
-    - react-router-redux
+    - react-router-redux@^3.0.0
     - react-router
