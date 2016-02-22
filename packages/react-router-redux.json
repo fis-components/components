@@ -48,7 +48,8 @@
   "tags": [
     {
       "version": "3.0.0",
-      "build": "rm package.json && npm install --prefix . react-router-redux@3.0.0"
+      "build": "rm package.json && npm install --prefix . react-router-redux@3.0.0",
+      "__hash": "91baa2be6a0694d512533ba321858c0967e510ba"
     },
     {
       "version": "4.0.0-beta.1",
