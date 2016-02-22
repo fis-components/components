@@ -57,7 +57,8 @@
     {
       "build": "rm package.json && npm install --prefix . react@0.14.0-beta3",
       "repos": "https://github.com/facebook/react",
-      "version": "0.14.0-beta3"
+      "version": "0.14.0-beta3",
+      "__hash": "df0c222a4fab8a03ed04044be0a63961bcf9fb6f"
     },
     {
       "build": "rm package.json && npm install --prefix . react@0.14.0-rc1",
