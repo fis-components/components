@@ -60,7 +60,8 @@
     },
     {
       "build": "rm package.json && npm install --prefix . fit-upload@0.0.13",
-      "version": "0.0.13"
+      "version": "0.0.13",
+      "__hash": "a7b1ca3a2a0ea400939cacacecb853e0ae062d6b"
     },
     {
       "version": "0.0.28",
