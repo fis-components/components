@@ -49,7 +49,8 @@
     },
     {
       "version": "0.4.2",
-      "build": "rm package.json && npm install --prefix . react-motion@0.4.2"
+      "build": "rm package.json && npm install --prefix . react-motion@0.4.2",
+      "__hash": "8126f94b3f01ec2596b18c7d4c74e46052ee6925"
     }
   ]
 }
