@@ -35,7 +35,7 @@
   "tags": [
     {
       "version": "1.1.2",
-      "__hash": "79344f0630290aac7f564241a7c070db4c7d4f2a"
+      "__hash": "2902a683ce3fd2a97bcb836b40888fe9b2949b38"
     },
     {
       "build": "rm package.json && npm install --prefix . component-emitter@1.1.3",
