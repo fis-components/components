@@ -62,3 +62,4 @@ sync:
     - assertion-error@1.0.1
     - react-router-redux@^3.0.0
     - react-router
+    - react-motion
