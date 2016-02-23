@@ -106,6 +106,7 @@
       ],
       "__hash": "371e61475003da67118138435c469e9c07cd9d2a"
     },
+
     {
       "version": "2.0.2",
       "build": "rm package.json && npm install --prefix . react-dnd@2.0.2",
