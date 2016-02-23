@@ -37,7 +37,7 @@
     {
       "build": "rm package.json && npm install --prefix . dnd-core@1.2.1",
       "version": "1.2.1",
-      "__hash": "2a7e353799b3841703ba12e4d681780879fec2b5"
+      "__hash": "fdf15c49dd4d5d46f228a9e18a917171c99399f6"
     },
     {
       "build": "rm package.json && npm install --prefix . dnd-core@1.2.2",
