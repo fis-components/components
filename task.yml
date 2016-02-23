@@ -63,3 +63,4 @@ sync:
     - react-router-redux@^3.0.0
     - react-router
     - react-motion
+    - react-dnd@2.1.2
