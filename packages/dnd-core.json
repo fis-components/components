@@ -32,7 +32,7 @@
   "tags": [
     {
       "version": "1.2.0",
-      "__hash": "3b2caf74655175972b359d2ba4e0f32fe153d382"
+      "__hash": "27db0d35c0d4ae17982b29ca234080279957b490"
     },
     {
       "build": "rm package.json && npm install --prefix . dnd-core@1.2.1",
