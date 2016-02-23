@@ -121,51 +121,13 @@
       "__hash": "8c669d9c28c10bdebe18771f6367224f2913aeed"
     },
     {
-      "repos": "https://github.com/lodash/lodash.git",
-      "description": "Lodash modular utilities.",
-      "main": "index.js",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "umd2commonjs": null,
       "version": "4.0.0",
       "build": "rm package.json && npm install --prefix . lodash@4.0.0",
+      "description": "Lodash modular utilities.",
+      "repos": "https://github.com/lodash/lodash.git",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
-      "__hash": "01b2f143d7789e1f243a2e4bdbd3c1d1d5f3eb78"
-    },
-    {
-      "repos": "https://github.com/lodash/lodash.git",
-      "description": "Lodash modular utilities.",
-      "main": "index.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -176,11 +138,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(index\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
           "release": "$1"
         },
         {
@@ -196,13 +154,80 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
+      "umd2commonjs": null
+    },
+    {
       "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . lodash@4.0.1",
+      "description": "Lodash modular utilities.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "main": "index.js",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
-      "__hash": "36e310e260edc51557ab8e784114e27e0742ff9e"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "umd2commonjs": null
+    },
+    {
+      "version": "4.1.0",
+      "build": "rm package.json && npm install --prefix . lodash@4.1.0",
+      "description": "Lodash modular utilities.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "umd2commonjs": null
     },
     {
       "version": "4.2.0",
@@ -222,7 +247,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
           "release": "$1"
         },
         {
@@ -238,8 +263,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "7060eaf750537cdee738602c233d58b8dd8e8ff7"
+      "umd2commonjs": null
     },
     {
       "version": "4.2.1",
@@ -259,7 +283,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
           "release": "$1"
         },
         {
@@ -275,8 +299,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "876eb637725d899a29621c8b93658fddffc35c4a"
+      "umd2commonjs": null
     },
     {
       "version": "4.3.0",
@@ -296,7 +319,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
           "release": "$1"
         },
         {
@@ -312,8 +335,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "7a61182eafbcbfa037bb3213a0f0db6c62585eb5"
+      "umd2commonjs": null
     },
     {
       "version": "4.4.0",
@@ -333,7 +355,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
           "release": "$1"
         },
         {
@@ -349,8 +371,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "1e726af3d7e1e03614ed188316f9beb3d2673304"
+      "umd2commonjs": null
     },
     {
       "version": "4.5.0",
@@ -370,7 +391,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
           "release": "$1"
         },
         {
@@ -386,8 +407,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "ad0407ce6f716d3e92e75559bfba16778559a7bc"
+      "umd2commonjs": null
     },
     {
       "version": "4.5.1",
@@ -407,7 +427,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/lodash\\/(lodash\\.js)$",
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
           "release": "$1"
         },
         {
@@ -423,8 +443,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "01a0c5cc13e5e66748f477ba167fa870aa2ff3d7"
+      "umd2commonjs": null
     }
   ]
 }
