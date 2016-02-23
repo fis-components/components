@@ -80,7 +80,7 @@
       "reposType": "npm",
       "version": "3.10.0",
       "build": "rm package.json && npm install --prefix . lodash@3.10.0",
-      "__hash": "f61d3a8c50a225ce44412e82cee815a0cdca0bf9"
+      "__hash": "f8370e91a93d76ae15b14023bcf52056a1706a33"
     },
     {
       "repos": "https://github.com/lodash/lodash.git",
