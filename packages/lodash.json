@@ -17,6 +17,7 @@
       "release": false
     }
   ],
+
   "umd2commonjs": false,
   "tags": [
     {

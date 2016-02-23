@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "tag": "master",
   "reposType": "npm",
+
   "dependencies": [
     "disposables@^1.0.1",
     "dnd-core@^1.2.2",
