@@ -52,17 +52,126 @@
   "tags": [
     {
       "version": "2.0.1",
-      "__hash": "f1fec4e21b82d212daf4cead26a87496ed8ec727"
-    },
-    {
-      "build": "rm package.json && npm install --prefix . asap@2.0.2",
+      "main": "./browser-asap.js",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(browser-asap\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(raw\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(browser-raw\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "paths": {
         "./asap.js": "./browser-asap.js",
         "./raw.js": "./browser-raw.js",
         "./test/domain.js": "./test/browser-domain.js"
       },
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/asap(?:\\.js)?\\b/ig",
+              "to": "require($1./browser-asap.js"
+            },
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/raw(?:\\.js)?\\b/ig",
+              "to": "require($1./browser-raw.js"
+            },
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/test\\/domain(?:\\.js)?\\b/ig",
+              "to": "require($1./test/browser-domain.js"
+            }
+          ]
+        }
+      }
+    },
+    {
       "version": "2.0.2",
-      "__hash": "979196f736cd21d6e9faca675dd72021a35c10a1"
+      "build": "rm package.json && npm install --prefix . asap@2.0.2",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(asap\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(raw\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(browser-asap\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/asap\\/(browser-raw\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/asap(?:\\.js)?\\b/ig",
+              "to": "require($1./browser-asap.js"
+            },
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/raw(?:\\.js)?\\b/ig",
+              "to": "require($1./browser-raw.js"
+            },
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/test\\/domain(?:\\.js)?\\b/ig",
+              "to": "require($1./test/browser-domain.js"
+            }
+          ]
+        }
+      }
     },
     {
       "version": "2.0.3",
@@ -108,7 +217,24 @@
         "./raw.js": "./browser-raw.js",
         "./test/domain.js": "./test/browser-domain.js"
       },
-      "__hash": "5159ffe3c0657fade3c8d18d8d5d81f86aa7964d"
+      "shim": {
+        "**/*.js": {
+          "replace": [
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/asap(?:\\.js)?\\b/ig",
+              "to": "require($1./browser-asap.js"
+            },
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/raw(?:\\.js)?\\b/ig",
+              "to": "require($1./browser-raw.js"
+            },
+            {
+              "from": "/\\brequire\\s*\\(\\s*('|\")\\.\\/test\\/domain(?:\\.js)?\\b/ig",
+              "to": "require($1./test/browser-domain.js"
+            }
+          ]
+        }
+      }
     }
   ]
 }

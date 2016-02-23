@@ -174,14 +174,14 @@ while (args.length) {
           item.main && startFiles.push(item.main);
 
           Object.keys(item.paths).forEach(function(key) {
-            if (/^[^\.\/]+/.test(key)) {
-              item.shim = item.shim || {};
-              if (!item.shim['**/*.js']) {
-                item.shim['**/*.js'] = {
-                  replace: []
-                };
-              }
+            item.shim = item.shim || {};
+            if (!item.shim['**/*.js']) {
+              item.shim['**/*.js'] = {
+                replace: []
+              };
+            };
 
+            if (/^[^\.\/]+/.test(key)) {
               item.shim['**/*.js'].replace.push(
                 {
                   from: '/\\brequire\\s*\\(\\s*(\'|")' + escapeReg(key) + '\\b/ig',
@@ -191,6 +191,15 @@ while (args.length) {
               delete item.paths[key];
             } else {
               startFiles.push(item.paths[key]);
+
+
+
+              item.shim['**/*.js'].replace.push(
+                {
+                  from: '/\\brequire\\s*\\(\\s*(\'|")' + escapeReg(key.replace(/\.js$/, '')) + '(?:\\.js)?\\b/ig',
+                  to: 'require($1' + item.paths[key]
+                }
+              );
             }
           });
 
