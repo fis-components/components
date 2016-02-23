@@ -271,13 +271,25 @@ while (args.length) {
         }
       } else if (json.jspm) {
         convertFromJspm(json, item, pkgName, pkgPath);
-      } else if (test('-d', path.join(pkgPath, 'dist'))) {
+      } else if (test('-d', path.join(pkgPath, 'dist')) && !item.ignoreDIST) {
         var main = item.main.replace(/^\.\//, '').replace(/\/$/, '/index');
 
         if (!/^dist/.test(main)) {
-          test('-f', path.join(pkgPath, 'dist', item.name + '.js')) && (main = 'dist/' + item.name);
-          test('-f', path.join(pkgPath, 'dist', 'index.js')) && (main = 'dist/index');
-          test('-f', path.join(pkgPath, main.replace(/^lib/, 'dist'))) && (main = main.replace(/^lib/, 'dist'))
+          if (test('-f', path.join(pkgPath, 'dist', item.name + '.js'))) {
+            main = 'dist/' + item.name;
+          } else if (test('-f', path.join(pkgPath, 'dist', 'index.js'))) {
+            main = 'dist/index';
+          } else if (test('-f', path.join(pkgPath, main.replace(/^lib/, 'dist')))) {
+            main = main.replace(/^lib/, 'dist')
+          } else {
+            main = find(path.join(pkgPath, 'dist'))
+              .filter(function(filepath) {
+                return filepath.match(/\.js$/);
+              })
+              .map(function(filepath) {
+                return filepath.substring(pkgPath.length + 1);
+              })[0];
+          }
         }
 
         item.mapping.push({
@@ -443,6 +455,7 @@ while (args.length) {
     }
 
     delete item.files;
+    delete item.ignoreDIST;
     items.push(item);
   });
 
