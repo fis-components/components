@@ -275,7 +275,8 @@
           "release": false
         }
       ],
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "876eb637725d899a29621c8b93658fddffc35c4a"
     },
     {
       "version": "4.3.0",
