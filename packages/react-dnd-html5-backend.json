@@ -35,7 +35,7 @@
     {
       "build": "rm package.json && npm install --prefix . react-dnd-html5-backend@2.0.0",
       "version": "2.0.0",
-      "__hash": "fce2c737047bc80ddbd15c779c0c4d1e015ca0d1"
+      "__hash": "e617f069f8e7e4c5b291ea7061f35432d2e3e378"
     },
     {
       "version": "2.1.0",
