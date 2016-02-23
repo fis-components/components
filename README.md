@@ -6,7 +6,7 @@ FIS 组件生态   [![Build Status](https://travis-ci.org/fis-components/compone
 
 [Demo](https://github.com/fex-team/fis-components-demo)
 
-fis3 已经原生支持使用npm的node_modules来管理模块，[快使用node_modules](https://github.com/fex-team/fis3-hook-node_modules)
+#### fis3 已经原生支持使用npm的node_modules来管理模块，[快使用node_modules](https://github.com/fex-team/fis3-hook-node_modules)
 
 ## 背景
 
