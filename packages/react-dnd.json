@@ -43,7 +43,7 @@
     {
       "build": "rm package.json && npm install --prefix . react-dnd@2.0.2",
       "version": "2.0.2",
-      "__hash": "6fdef700721c0f1abf33b9db8289301931aa36ea"
+      "__hash": "99b0e7fb035744ac0d0d007c570f18be3a3c9f9c"
     },
     {
       "version": "2.1.2",
