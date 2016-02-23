@@ -5,7 +5,6 @@
   "main": "lib/index.js",
   "tag": "master",
   "reposType": "npm",
-
   "dependencies": [
     "disposables@^1.0.1",
     "dnd-core@^1.2.2",
@@ -107,7 +106,6 @@
       ],
       "__hash": "371e61475003da67118138435c469e9c07cd9d2a"
     },
-
     {
       "version": "2.0.2",
       "build": "rm package.json && npm install --prefix . react-dnd@2.0.2",
@@ -143,7 +141,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "1f73edae261d8d4603f35562d9f1470d2322991b"
     },
     {
       "version": "2.1.0",
