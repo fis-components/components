@@ -117,7 +117,8 @@
       "build": "rm package.json && npm install --prefix . lodash@3.10.1",
       "tag": "master",
       "reposType": "npm",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "8c669d9c28c10bdebe18771f6367224f2913aeed"
     },
     {
       "repos": "https://github.com/lodash/lodash.git",
