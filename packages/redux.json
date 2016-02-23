@@ -105,13 +105,8 @@
       "__hash": "92e8337b0b28636fbf826759a1a7e7c59b24230f"
     },
     {
-      "version": "3.1.0",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.0",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -138,18 +133,18 @@
           "release": false
         }
       ],
+      "version": "3.1.0",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.1.1",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.1",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -176,18 +171,18 @@
           "release": false
         }
       ],
+      "version": "3.1.1",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.1.2",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.2",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -214,18 +209,18 @@
           "release": false
         }
       ],
+      "version": "3.1.2",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.1.3",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.3",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -252,18 +247,18 @@
           "release": false
         }
       ],
+      "version": "3.1.3",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.1.4",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.4",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -290,18 +285,18 @@
           "release": false
         }
       ],
+      "version": "3.1.4",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.1.5",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.5",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -328,18 +323,18 @@
           "release": false
         }
       ],
+      "version": "3.1.5",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.1.6",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.6",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -366,18 +361,18 @@
           "release": false
         }
       ],
+      "version": "3.1.6",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.1.7",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.1.7",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -404,13 +399,94 @@
           "release": false
         }
       ],
+      "version": "3.1.7",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "3.2.0",
+      "main": "redux",
       "build": "rm package.json && npm install --prefix . redux@3.2.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "3.2.0",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "main": "redux",
+      "build": "rm package.json && npm install --prefix . redux@3.2.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "3.2.1",
+      "description": "Predictable state container for JavaScript apps",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "3.3.0",
+      "build": "rm package.json && npm install --prefix . redux@3.3.0",
       "description": "Predictable state container for JavaScript apps",
       "main": "redux",
       "tag": "master",
@@ -447,8 +523,8 @@
       }
     },
     {
-      "version": "3.2.1",
-      "build": "rm package.json && npm install --prefix . redux@3.2.1",
+      "version": "3.3.1",
+      "build": "rm package.json && npm install --prefix . redux@3.3.1",
       "description": "Predictable state container for JavaScript apps",
       "main": "redux",
       "tag": "master",

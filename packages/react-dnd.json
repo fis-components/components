@@ -33,22 +33,11 @@
   "tags": [
     {
       "version": "2.0.0",
-      "__hash": "665904988149b0c208005a0eee8d982a81b3911a"
-    },
-    {
-      "build": "rm package.json && npm install --prefix . react-dnd@2.0.1",
-      "version": "2.0.1",
-      "__hash": "d4178282abda0f407dd15daf8b2d42e9418dcf93"
-    },
-    {
-      "build": "rm package.json && npm install --prefix . react-dnd@2.0.2",
-      "version": "2.0.2",
-      "__hash": "99b0e7fb035744ac0d0d007c570f18be3a3c9f9c"
-    },
-    {
-      "version": "2.1.2",
-      "build": "rm package.json && npm install --prefix . react-dnd@2.1.2",
       "dependencies": [
+        "disposables@^1.0.1",
+        "dnd-core@^2.0.1",
+        "invariant@^2.1.0",
+        "lodash@^4.2.0",
         "react@^0.14.0"
       ],
       "mapping": [
@@ -61,8 +50,8 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/react-dnd\\/dist\\/(.*)$",
-          "release": "$1"
+          "reg": "^\\/node_modules\\/react-dnd\\/lib\\/(.*)$",
+          "release": "lib/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -76,11 +65,192 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "2.0.1",
+      "build": "rm package.json && npm install --prefix . react-dnd@2.0.1",
+      "dependencies": [
+        "disposables@^1.0.1",
+        "dnd-core@^1.2.2",
+        "invariant@^2.1.0",
+        "lodash@^3.10.1",
+        "react@^0.14.0"
       ],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "6bed45fb41042ddc0dd8db337c1343b1a30354c1"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.0.2",
+      "build": "rm package.json && npm install --prefix . react-dnd@2.0.2",
+      "dependencies": [
+        "disposables@^1.0.1",
+        "dnd-core@^1.2.2",
+        "invariant@^2.1.0",
+        "lodash@^3.10.1",
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . react-dnd@2.1.0",
+      "dependencies": [
+        "disposables@^1.0.1",
+        "dnd-core@^1.2.2",
+        "invariant@^2.1.0",
+        "lodash@^3.10.1",
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.1.1",
+      "build": "rm package.json && npm install --prefix . react-dnd@2.1.1",
+      "dependencies": [
+        "disposables@^1.0.1",
+        "dnd-core@^2.0.1",
+        "invariant@^2.1.0",
+        "lodash@^4.2.0",
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.1.2",
+      "build": "rm package.json && npm install --prefix . react-dnd@2.1.2",
+      "dependencies": [
+        "disposables@^1.0.1",
+        "dnd-core@^2.0.1",
+        "invariant@^2.1.0",
+        "lodash@^4.2.0",
+        "react@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-dnd\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
