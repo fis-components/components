@@ -17,7 +17,6 @@
       "release": false
     }
   ],
-
   "umd2commonjs": false,
   "tags": [
     {
@@ -193,7 +192,8 @@
           "release": false
         }
       ],
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "5d56c602331a3cef4e14680b52f3462a60c8ea07"
     },
     {
       "version": "4.1.0",
