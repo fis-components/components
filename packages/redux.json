@@ -102,7 +102,7 @@
       "paths": {
         "dist": "."
       },
-      "__hash": "92e8337b0b28636fbf826759a1a7e7c59b24230f"
+      "__hash": "2fffe266b1e19efc6a118682b78daf121837b9b9"
     },
     {
       "main": "redux",
