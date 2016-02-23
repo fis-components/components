@@ -218,7 +218,8 @@
       "dependencies": [],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "b22d5c46d98b9880b899aa47aaca2ea3a6f5dc91"
     },
     {
       "main": "redux",
