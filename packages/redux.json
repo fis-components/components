@@ -491,7 +491,8 @@
       "dependencies": [],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "a0f25f2e26447651e754b5ad4b89b2d168cb893c"
     },
     {
       "version": "3.3.0",
