@@ -31,7 +31,7 @@
   "tags": [
     {
       "version": "4.0.0",
-      "__hash": "f8d2c97bb9ed8f3b74a65045d82a9129b73b132f"
+      "__hash": "b1334e452f3ff1b94b904f9ad597efa600289de0"
     },
     {
       "build": "rm package.json && npm install --prefix . gregorian-calendar@4.0.1",
