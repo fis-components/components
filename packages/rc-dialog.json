@@ -114,7 +114,7 @@
         }
       ],
       "version": "5.3.0",
-      "__hash": "19e44b4d0da4c79e0c149cecf245f291b8a867b3"
+      "__hash": "6e57dbea20c7fd7bc20d9cc0aee97faf204ccc3e"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.1",
