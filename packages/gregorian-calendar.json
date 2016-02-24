@@ -127,7 +127,7 @@
       ],
       "version": "4.0.3",
       "dependencies": [],
-      "__hash": "8f9945d971438c7feeaba078db62c99810884093"
+      "__hash": "4316e731fbb382bf2c50682dc7bce7feb0ee4108"
     },
     {
       "build": "rm package.json && npm install --prefix . gregorian-calendar@4.0.4",
