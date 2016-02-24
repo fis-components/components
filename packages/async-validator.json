@@ -545,7 +545,7 @@
       ],
       "version": "1.3.2",
       "dependencies": [],
-      "__hash": "23faef0421116f97899addb4d3d366b4d4885100"
+      "__hash": "1297fdeeccb3de069b08f51e9a466d16924bd277"
     },
     {
       "build": "rm package.json && npm install --prefix . async-validator@1.3.3",
