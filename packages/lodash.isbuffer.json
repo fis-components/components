@@ -37,7 +37,8 @@
   "main": "index.js",
   "tags": [
     {
-      "version": "4.3.0"
+      "version": "4.3.0",
+      "__hash": "1c5fbc449fcdd1481bd5198ed14faf13d12d0c93"
     },
     {
       "version": "4.3.1",
