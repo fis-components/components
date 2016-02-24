@@ -272,7 +272,7 @@
         "rc-trigger@1.x",
         "rc-util@3.x"
       ],
-      "__hash": "22c8fcd7aacf38f984d352c21f576ee4c2e531f0"
+      "__hash": "8c3ee1595b77720393f4dd934da645219cfcaae7"
     },
     {
       "repos": "https://github.com/react-component/calendar.git",
