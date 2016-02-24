@@ -92,7 +92,8 @@
         "async-validator@1.x",
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
-      ]
+      ],
+      "__hash": "af51f1b78c4ef118043ec83fa249f3a9147fadd8"
     }
   ]
 }
