@@ -43,7 +43,7 @@
     {
       "build": "rm package.json && npm install --prefix . lodash._stack@4.0.2",
       "version": "4.0.2",
-      "__hash": "0d06276c5a8a0956710b58d42209a6c6cfa7df36"
+      "__hash": "d9d2839ab9ec8b552324d93ae5ffefad92b655a3"
     },
     {
       "version": "4.1.0",
