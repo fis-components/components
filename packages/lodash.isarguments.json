@@ -59,7 +59,7 @@
       "version": "3.0.0",
       "dependencies": [],
       "main": "index.js",
-      "__hash": "f06428462149cada51175ca00d48e64742c83ebe"
+      "__hash": "df752d38780c9e25da2c05fea6883c4079c4ba9b"
     },
     {
       "repos": "https://github.com/lodash/lodash",
