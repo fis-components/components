@@ -34,7 +34,7 @@
   "tags": [
     {
       "version": "0.11.0",
-      "__hash": "d94123e14cbcee2cc4c8fb53a95b07ebfdc111b8"
+      "__hash": "dc9aba8ff6cc410ddd41f6ae7c0a5d471d3d9ab4"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.2",
