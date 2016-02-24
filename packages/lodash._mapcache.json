@@ -53,7 +53,8 @@
       "build": "rm package.json && npm install --prefix . lodash._mapcache@4.1.1",
       "dependencies": [
         "lodash._root@^3.0.0"
-      ]
+      ],
+      "__hash": "a279ffd2798624bc3308fbf5b5dec456c8005966"
     },
     {
       "version": "4.1.2",
