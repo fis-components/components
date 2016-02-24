@@ -75,7 +75,7 @@
         }
       ],
       "version": "5.2.2",
-      "__hash": "4b11ac49a14f2f7eff783514f00e1c672fb3336e"
+      "__hash": "073e26892bec067077d58bea91c13c4b052647be"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.0",
