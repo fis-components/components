@@ -56,7 +56,7 @@
     },
     {
       "version": "1.0.4",
-      "__hash": "a5f33ed2e41d30ed7dba8cabe443f61f70883d13"
+      "__hash": "a1fd0a22d8933e04d778022d084f424d2fc16aff"
     },
     {
       "build": "rm package.json && npm install --prefix . hoist-non-react-statics@1.0.5",
