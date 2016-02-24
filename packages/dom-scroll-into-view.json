@@ -74,7 +74,7 @@
       "version": "1.0.0",
       "dependencies": [],
       "main": "index.js",
-      "__hash": "27b225031f36f97806fb3ce93940f3dffdcb37e7"
+      "__hash": "06df24ec40c9a875c1219544e22529899875a8d5"
     },
     {
       "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.0.1",
