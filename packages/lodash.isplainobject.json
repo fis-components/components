@@ -247,7 +247,7 @@
       "version": "4.0.0",
       "description": "The lodash method `_.isPlainObject` exported as a module.",
       "reposType": "npm",
-      "__hash": "3b66fdbc7ddbf5df5f51bf51a023b6631acf0a2a"
+      "__hash": "fb1f848e20334b61529c10b5b15fea821328f3f5"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.isplainobject@4.0.1",
