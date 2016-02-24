@@ -69,7 +69,8 @@
         "lodash.keys@^4.0.0",
         "lodash.keysin@^4.0.0",
         "lodash.rest@^4.0.0"
-      ]
+      ],
+      "__hash": "d6206d19b5f2335e898ee71c51b04490a924ffdc"
     },
     {
       "version": "4.2.0",
