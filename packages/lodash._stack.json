@@ -38,7 +38,7 @@
   "tags": [
     {
       "version": "4.0.1",
-      "__hash": "b2980eb55b68c35dcfa22fe15f9fc67a9ebd4e90"
+      "__hash": "b8339129ebbd66a2936a61aa39853e9041f6a924"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash._stack@4.0.2",
