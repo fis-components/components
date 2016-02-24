@@ -127,7 +127,7 @@
       "version": "3.0.2",
       "dependencies": [],
       "main": "index.js",
-      "__hash": "b2593fdeb98e3c3ddfca111fe5d94eab5fb825a2"
+      "__hash": "adc3e1468e062dbdbf90c3d42337ecc71c78ad25"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.3",
