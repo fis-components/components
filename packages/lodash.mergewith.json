@@ -95,7 +95,8 @@
         "lodash.isplainobject@^4.0.0",
         "lodash.keysin@^4.0.0",
         "lodash.rest@^4.0.0"
-      ]
+      ],
+      "__hash": "9af420b72470392ff22cc72a2dc9a403ddbad7bd"
     }
   ]
 }
