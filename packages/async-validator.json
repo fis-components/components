@@ -704,7 +704,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "bf2097755077c8df3e7e95a70a3a9a927e558c2c"
     },
     {
       "version": "1.4.1",
