@@ -54,7 +54,7 @@
     {
       "build": "rm package.json && npm install --prefix . lodash.mergewith@4.1.0",
       "version": "4.1.0",
-      "__hash": "e0c3bc0bcf20b3d95f805c540080dcbdb770b6ad"
+      "__hash": "410c241e05b4ea23b5487c605b034fe0d082d085"
     },
     {
       "version": "4.1.1",
