@@ -61,7 +61,7 @@
       "version": "3.0.0",
       "description": "The modern build of lodash’s `_.isPlainObject` as a module.",
       "reposType": "npm",
-      "__hash": "cac830fa5777e2aa15ae28bc65e5f807adbb8e2b"
+      "__hash": "4824e11b38bc9546d9021863d0e2cbf62f61f9d9"
     },
     {
       "repos": "https://github.com/lodash/lodash",
