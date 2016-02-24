@@ -31,12 +31,12 @@
   "tags": [
     {
       "version": "3.6.0",
-      "__hash": "1cf172a7450f7cf13cbaa4b942e5ae2665c216a0"
+      "__hash": "587e14cb82ceebcac3f45f1d392b8c7272be762b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.6.1",
       "version": "3.6.1",
-      "__hash": "2c0ebc65d55d3545bb9a047125b512629f3a60da"
+      "__hash": "0b5b7637694b280af4dd212ba7678a93a9dff53c"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.6.2",
@@ -76,7 +76,7 @@
       ],
       "version": "3.6.2",
       "dependencies": [],
-      "__hash": "36d0b597182c2b5280f97266d49858761aa74f6e"
+      "__hash": "4f069209bfecafefc2b11f528040a455b1a5aac7"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.6.3",
@@ -116,7 +116,7 @@
       ],
       "version": "3.6.3",
       "dependencies": [],
-      "__hash": "b6d77ed79ca0c7122b311e79cf3b48df1f847889"
+      "__hash": "a9599bbf0dcba8ae4998f039dee8b38e8ee27896"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.7.1",
@@ -156,7 +156,7 @@
       ],
       "version": "3.7.1",
       "dependencies": [],
-      "__hash": "6f4b50aec5a9c52185e6ef5f2053e642c079fde1"
+      "__hash": "af12a36019989d08a5a793b20ac5c9ba154cbf73"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.9.0",

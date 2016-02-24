@@ -34,7 +34,7 @@
   "tags": [
     {
       "version": "0.11.0",
-      "__hash": "d94123e14cbcee2cc4c8fb53a95b07ebfdc111b8"
+      "__hash": "dc9aba8ff6cc410ddd41f6ae7c0a5d471d3d9ab4"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.2",
@@ -73,7 +73,7 @@
         }
       ],
       "version": "0.11.2",
-      "__hash": "1f949ae0ed67a1130cd5947b9cb61d359a2f38a0"
+      "__hash": "6ffaf29db2a4bb08b59d3e8db8675e711a639f3b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.3",
@@ -112,7 +112,7 @@
         }
       ],
       "version": "0.11.3",
-      "__hash": "e2eee8b5b4adb54e916b2f9aefd48047c9f152a9"
+      "__hash": "ab479f124c29610733898f54ce54b8ce4a4d56e2"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.4",
@@ -151,7 +151,7 @@
         }
       ],
       "version": "0.11.4",
-      "__hash": "bbb11e97104d2ea300d85fe4d35158e0a6166ab6"
+      "__hash": "b55dc093806f3f60ca0d4c7be4fe79465ce70d3c"
     },
     {
       "version": "0.11.5",
@@ -189,7 +189,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "3e7bd1890c11aa2d671c30a89548a30322aea3ef"
     }
   ]
 }

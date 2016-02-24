@@ -31,12 +31,12 @@
   "tags": [
     {
       "version": "1.3.4-beta",
-      "__hash": "cbcd97c023ea4f43ebd5178c7a186088c6417033"
+      "__hash": "cfc51024c197741685f144ffa5863772826dcd6f"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-pagination@1.3.4",
       "version": "1.3.4",
-      "__hash": "f752909ea7ea50544ad9e9612aef390006a835b0"
+      "__hash": "cda27944b5a32c4316b44230e38347c78f280ee2"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-pagination@1.3.5",
@@ -76,7 +76,7 @@
       ],
       "version": "1.3.5",
       "dependencies": [],
-      "__hash": "0dce5a0ae0d486b9c4a5ed12c4c771501ace582e"
+      "__hash": "4ded3f88d9b25b0411b4317433fd3b069cb8415e"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-pagination@1.3.6",
@@ -116,7 +116,7 @@
       ],
       "version": "1.3.6",
       "dependencies": [],
-      "__hash": "6a2b696fcd20a6e52c78d0176cffbb67f863e46e"
+      "__hash": "c4936e31437f476cb86150ecb98df939207afb6c"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-pagination@1.3.7",
@@ -156,7 +156,7 @@
       ],
       "version": "1.3.7",
       "dependencies": [],
-      "__hash": "85c029ec552b2b32372a3d817430c608071624d0"
+      "__hash": "097a294624262ab381cbfdc7677265d704c0a577"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-pagination@1.4.0",
@@ -196,7 +196,7 @@
       ],
       "version": "1.4.0",
       "dependencies": [],
-      "__hash": "8c8dc6232d46b0f701dadacc84e447bfdc2a4de7"
+      "__hash": "2797133cd4dc196f3019905d23f58ab8d9636978"
     },
     {
       "version": "1.4.1",
@@ -235,7 +235,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "74cceb26615fcd1b55d6644ddfbd85cad22a9595"
     },
     {
       "version": "1.4.2",
@@ -274,7 +275,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "45f924419fe1e9cf457adf975cc31d62e7208dcf"
     }
   ]
 }

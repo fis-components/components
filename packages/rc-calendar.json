@@ -321,7 +321,7 @@
         "rc-trigger@1.x",
         "rc-util@3.x"
       ],
-      "__hash": "ffd3b67f3bcb6cc4dceedea294c146b512e2931f"
+      "__hash": "c0efe83fb9e56fe71d33d930b5eb26fd9257154c"
     },
     {
       "repos": "https://github.com/react-component/calendar.git",
@@ -370,7 +370,7 @@
         "rc-trigger@1.x",
         "rc-util@3.x"
       ],
-      "__hash": "4f73abbfb933621cf6bc66785542e56a7d7ab069"
+      "__hash": "582befbd0cd52babe3000effbaf82e8754355fd8"
     },
     {
       "version": "5.4.0",
@@ -420,7 +420,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "89efc1e71f9d9c470b6ed1878d4362c5c4856b13"
     },
     {
       "version": "5.4.1",
@@ -470,7 +471,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "a55c22095e86a578a22f1e6edf84e80d25c4eac5"
     },
     {
       "version": "5.4.2",
@@ -520,7 +522,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "48b9039f63394ca2af833295c2c9eb458a6a83fc"
     }
   ]
 }

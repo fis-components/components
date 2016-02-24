@@ -44,17 +44,17 @@
   "tags": [
     {
       "version": "0.5.0",
-      "__hash": "855ce203adabcb8ead8e98582a31b5863f7ac928"
+      "__hash": "48313942a33b43497bbf220f371ee6ce828de66b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-cascader@0.5.1",
       "version": "0.5.1",
-      "__hash": "03e6f29080b928a34e8d7ec1c4f2b4972bdc7aa8"
+      "__hash": "6a06e88a7927428574173a983a8d02a00af099a9"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-cascader@0.6.0",
       "version": "0.6.0",
-      "__hash": "682bdb258c0ead8a47323eadad0f9020c56a2831"
+      "__hash": "06c020ddd1554ddcb0f6126c9cb5904717f49549"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-cascader@0.8.1",
@@ -97,7 +97,7 @@
         }
       ],
       "version": "0.8.1",
-      "__hash": "64e3f5d0e13285a00dc91ccbc08460c7adf62196"
+      "__hash": "bcea8be5e27f8efcd06a1eb94c33183c0f0381aa"
     },
     {
       "version": "0.9.0",
@@ -139,7 +139,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "acb2f879c6ecd049b17b1c770a9aa7e61926a37f"
     },
     {
       "version": "0.9.1",
@@ -181,7 +182,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "ce144a357d6dab1511b04128c4ad7c9abd5c91c5"
     }
   ]
 }

@@ -34,7 +34,7 @@
   "tags": [
     {
       "version": "2.4.0",
-      "__hash": "b351fd1f7e07173fa3f79cca6bb8110842ad04c5"
+      "__hash": "1517aefffceab82a52785ec15a07b6ab57219667"
     },
     {
       "dependencies": [
@@ -76,7 +76,7 @@
         }
       ],
       "version": "2.4.1",
-      "__hash": "2a789910fca98cf77ff292a2a97a7f473a3b9b6c"
+      "__hash": "cd52c1b34754a506ba54642a95c9982a3f279562"
     },
     {
       "dependencies": [],
@@ -116,7 +116,7 @@
         }
       ],
       "version": "2.4.2",
-      "__hash": "cef5f1655fef56686bfca2a90308fe99850a8b83"
+      "__hash": "80897c33b99a3a359aa6331dd9a2a3398eb859d1"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-input-number@2.4.3",
@@ -155,7 +155,7 @@
         }
       ],
       "version": "2.4.3",
-      "__hash": "604b8c08e35618361ca32886ca6062cb1ed332e1"
+      "__hash": "210941bd5b89faba5590f4b427335895c61355a5"
     },
     {
       "version": "2.4.4",
@@ -193,7 +193,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "a400f5162ae70102bd2fbb58f9d394b322a4c4c6"
     },
     {
       "version": "2.4.5",
@@ -231,7 +232,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "cf58d3d601c8e4d94ee154d62f1e98a165fb4c48"
     }
   ]
 }
