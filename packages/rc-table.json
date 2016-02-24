@@ -156,7 +156,7 @@
       ],
       "version": "3.7.1",
       "dependencies": [],
-      "__hash": "6f4b50aec5a9c52185e6ef5f2053e642c079fde1"
+      "__hash": "af12a36019989d08a5a793b20ac5c9ba154cbf73"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.9.0",
