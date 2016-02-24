@@ -226,7 +226,7 @@
       "version": "3.0.5",
       "dependencies": [],
       "main": "index.js",
-      "__hash": "5a8d365e4e83f8e21c5941d8656e9d4eaeaf7dfa"
+      "__hash": "2f510234c30529e21966879f789f9252ebde64ac"
     },
     {
       "description": "The lodash method `_.isArguments` exported as a module.",
