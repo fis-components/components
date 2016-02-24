@@ -73,7 +73,7 @@
         }
       ],
       "version": "0.11.2",
-      "__hash": "1f949ae0ed67a1130cd5947b9cb61d359a2f38a0"
+      "__hash": "6ffaf29db2a4bb08b59d3e8db8675e711a639f3b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-queue-anim@0.11.3",
