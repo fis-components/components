@@ -44,7 +44,7 @@
   "tags": [
     {
       "version": "0.5.0",
-      "__hash": "855ce203adabcb8ead8e98582a31b5863f7ac928"
+      "__hash": "48313942a33b43497bbf220f371ee6ce828de66b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-cascader@0.5.1",
