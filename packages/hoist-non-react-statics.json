@@ -46,7 +46,8 @@
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . hoist-non-react-statics@1.0.2"
+      "build": "rm package.json && npm install --prefix . hoist-non-react-statics@1.0.2",
+      "__hash": "fa1befcead4a99f75cf850a861fa0b78c236f77b"
     },
     {
       "build": "rm package.json && npm install --prefix . hoist-non-react-statics@1.0.3",
