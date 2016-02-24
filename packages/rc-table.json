@@ -76,7 +76,7 @@
       ],
       "version": "3.6.2",
       "dependencies": [],
-      "__hash": "36d0b597182c2b5280f97266d49858761aa74f6e"
+      "__hash": "4f069209bfecafefc2b11f528040a455b1a5aac7"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.6.3",
