@@ -98,7 +98,7 @@
       "version": "3.0.1",
       "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "reposType": "npm",
-      "__hash": "7707c8f87db59701ddd8385fccc2fffb69e2d1ee"
+      "__hash": "d822df237a716f76e76992541ed67f147a169b73"
     },
     {
       "repos": "https://github.com/lodash/lodash",
