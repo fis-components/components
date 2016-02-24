@@ -609,7 +609,7 @@
       ],
       "version": "1.3.4",
       "dependencies": [],
-      "__hash": "861c1722067e676d41f0cf40459404e6360dff9f"
+      "__hash": "68b1a305fc7a5463766b5aa6a129bb8fa7d89be4"
     },
     {
       "build": "rm package.json && npm install --prefix . async-validator@1.3.5",
