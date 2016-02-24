@@ -480,7 +480,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "e0d31faaae041cd6062b993efe6a83a3acd4545b"
     },
     {
       "build": "rm package.json && npm install --prefix . async-validator@1.3.1",
