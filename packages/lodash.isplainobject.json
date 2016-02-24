@@ -213,7 +213,7 @@
       "version": "3.2.0",
       "description": "The modern build of lodash’s `_.isPlainObject` as a module.",
       "reposType": "npm",
-      "__hash": "3663c89b5c3f4cad20bfcc7083b7e63a80af279d"
+      "__hash": "58e680fe8f6d184ae403c32d8b8e98a69a7c054c"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.isplainobject@4.0.0",
