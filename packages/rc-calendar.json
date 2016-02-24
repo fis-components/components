@@ -174,7 +174,7 @@
         "rc-trigger@1.x",
         "rc-util@3.x"
       ],
-      "__hash": "74920dd792f200331988bc1f5afb03ef1f8d3354"
+      "__hash": "ccffc44d919d9db7c12362fc8374aeda51d21d08"
     },
     {
       "repos": "https://github.com/react-component/calendar.git",
