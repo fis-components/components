@@ -50,7 +50,7 @@
     {
       "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.3",
       "version": "4.0.3",
-      "__hash": "613b7eaae0c7742bbc4f9681bb9965badb3681f1"
+      "__hash": "bbdbeb1fa42fa86604b7bca927ed734b0e44735a"
     },
     {
       "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.0.4",
