@@ -240,7 +240,7 @@
       "dependencies": [
         "object-assign@^4.0.1"
       ],
-      "__hash": "274ef897101cb008bf405feb9de0d6ffbac3bde4"
+      "__hash": "19e53f6237a0606f04201c6e062d8f22438ecdea"
     },
     {
       "version": "3.10.1",
