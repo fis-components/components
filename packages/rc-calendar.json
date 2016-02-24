@@ -471,7 +471,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "a55c22095e86a578a22f1e6edf84e80d25c4eac5"
     },
     {
       "version": "5.4.2",
