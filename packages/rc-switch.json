@@ -39,7 +39,7 @@
     {
       "build": "rm package.json && npm install --prefix . rc-switch@1.3.0",
       "version": "1.3.0",
-      "__hash": "c1a961b47a4d2c6443bf1cdef9b841958f8e0047"
+      "__hash": "6e926c7293ad7ba32c747b3282b55655034cf2ef"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-switch@1.3.1",
