@@ -156,7 +156,7 @@
       ],
       "version": "1.3.7",
       "dependencies": [],
-      "__hash": "85c029ec552b2b32372a3d817430c608071624d0"
+      "__hash": "097a294624262ab381cbfdc7677265d704c0a577"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-pagination@1.4.0",
