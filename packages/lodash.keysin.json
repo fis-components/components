@@ -361,7 +361,7 @@
       "version": "3.0.8",
       "description": "The modern build of lodash’s `_.keysIn` as a module.",
       "reposType": "npm",
-      "__hash": "17b1a3b3f40a9715a9549a61dee89ad2cbe117de"
+      "__hash": "7ff3694e04b1206a1ad76daa06abf43246227871"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.0",
