@@ -216,7 +216,7 @@
         }
       ],
       "version": "0.10.5",
-      "__hash": "b2ea156e7186f8e7bea31f129d7e388d82b83c39"
+      "__hash": "4421c4c612afa978725f6330c514d0c514bcff62"
     },
     {
       "build": "rm package.json && npm install --prefix . antd@0.11.0-beta1",
