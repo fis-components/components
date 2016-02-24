@@ -198,7 +198,7 @@
       "dependencies": [
         "object-assign@^4.0.1"
       ],
-      "__hash": "9ae96c5968af44af5ef0b71d0f4fc0c136d9baeb"
+      "__hash": "6140cfaf38d18c72165de36bc7749cdc0519b8ee"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.9.1",
