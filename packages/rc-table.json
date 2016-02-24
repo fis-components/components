@@ -31,7 +31,7 @@
   "tags": [
     {
       "version": "3.6.0",
-      "__hash": "1cf172a7450f7cf13cbaa4b942e5ae2665c216a0"
+      "__hash": "587e14cb82ceebcac3f45f1d392b8c7272be762b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.6.1",
