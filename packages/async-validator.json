@@ -800,7 +800,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "ae0f101841bf8de547b5511cae6bfd13249b53f1"
     }
   ]
 }
