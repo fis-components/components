@@ -294,7 +294,7 @@
       ],
       "version": "3.0.6",
       "main": "index.js",
-      "__hash": "cbaa4fbc7b08d9c44dd56ad7eaf27698d2fe0ce9"
+      "__hash": "3a1ab945ba35aeba0377d4e7411b280bb304a6b2"
     },
     {
       "repos": "https://github.com/lodash/lodash",
