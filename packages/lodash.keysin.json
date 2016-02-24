@@ -364,10 +364,7 @@
       "__hash": "17b1a3b3f40a9715a9549a61dee89ad2cbe117de"
     },
     {
-      "version": "4.0.0",
       "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.0",
-      "description": "The lodash method `_.keysIn` exported as a module.",
-      "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
@@ -395,13 +392,13 @@
           "release": false
         }
       ],
+      "version": "4.0.0",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
       "__hash": "02c1de34183e918d9cde4501f8002852267b6581"
     },
     {
-      "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.1",
-      "description": "The lodash method `_.keysIn` exported as a module.",
-      "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
@@ -429,13 +426,13 @@
           "release": false
         }
       ],
+      "version": "4.0.1",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
       "__hash": "5cba291d6ad7793bbd4526d3f26e26f4897680b5"
     },
     {
-      "version": "4.0.2",
       "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.2",
-      "description": "The lodash method `_.keysIn` exported as a module.",
-      "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
@@ -463,13 +460,13 @@
           "release": false
         }
       ],
+      "version": "4.0.2",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
       "__hash": "f9e1e9ce2da9a08fdfee6eeb45802143d3fd5115"
     },
     {
-      "version": "4.1.0",
       "build": "rm package.json && npm install --prefix . lodash.keysin@4.1.0",
-      "description": "The lodash method `_.keysIn` exported as a module.",
-      "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
@@ -497,7 +494,45 @@
           "release": false
         }
       ],
+      "version": "4.1.0",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
       "__hash": "6bdb50d70c6015a3768ca16244f35e1602974834"
+    },
+    {
+      "version": "4.1.1",
+      "build": "rm package.json && npm install --prefix . lodash.keysin@4.1.1",
+      "description": "The lodash method `_.keysIn` exported as a module.",
+      "reposType": "npm",
+      "dependencies": [
+        "lodash._root@^3.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keysin\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
