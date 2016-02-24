@@ -44,6 +44,51 @@
     {
       "version": "0.12.1",
       "__hash": "2405b82fa4efebb963d6440c1641cab692fae3b9"
+    },
+    {
+      "version": "0.13.0",
+      "build": "rm package.json && npm install --prefix . rc-form@0.13.0",
+      "dependencies": [
+        "async-validator@1.x",
+        "dom-scroll-into-view@1.x",
+        "hoist-non-react-statics@1.x"
+      ]
+    },
+    {
+      "version": "0.13.2",
+      "build": "rm package.json && npm install --prefix . rc-form@0.13.2",
+      "dependencies": [
+        "async-validator@1.x",
+        "dom-scroll-into-view@1.x",
+        "hoist-non-react-statics@1.x"
+      ]
+    },
+    {
+      "version": "0.13.3",
+      "build": "rm package.json && npm install --prefix . rc-form@0.13.3",
+      "dependencies": [
+        "async-validator@1.x",
+        "dom-scroll-into-view@1.x",
+        "hoist-non-react-statics@1.x"
+      ]
+    },
+    {
+      "version": "0.13.4",
+      "build": "rm package.json && npm install --prefix . rc-form@0.13.4",
+      "dependencies": [
+        "async-validator@1.x",
+        "dom-scroll-into-view@1.x",
+        "hoist-non-react-statics@1.x"
+      ]
+    },
+    {
+      "version": "0.13.5",
+      "build": "rm package.json && npm install --prefix . rc-form@0.13.5",
+      "dependencies": [
+        "async-validator@1.x",
+        "dom-scroll-into-view@1.x",
+        "hoist-non-react-statics@1.x"
+      ]
     }
   ]
 }

@@ -229,8 +229,42 @@
       "__hash": "5a8d365e4e83f8e21c5941d8656e9d4eaeaf7dfa"
     },
     {
-      "version": "3.0.6",
+      "description": "The lodash method `_.isArguments` exported as a module.",
       "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.6",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.isarguments\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "3.0.6",
+      "dependencies": [],
+      "main": "index.js",
+      "__hash": "3b454781cbdb69ae02ce2200a45b64f4c03b5214"
+    },
+    {
+      "version": "3.0.7",
+      "build": "rm package.json && npm install --prefix . lodash.isarguments@3.0.7",
       "description": "The lodash method `_.isArguments` exported as a module.",
       "dependencies": [],
       "mapping": [
@@ -259,8 +293,7 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "3b454781cbdb69ae02ce2200a45b64f4c03b5214"
+      "main": "index.js"
     }
   ]
 }

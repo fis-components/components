@@ -117,7 +117,6 @@
       "__hash": "19e44b4d0da4c79e0c149cecf245f291b8a867b3"
     },
     {
-      "version": "5.3.1",
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.1",
       "mapping": [
         {
@@ -153,12 +152,58 @@
           "release": false
         }
       ],
+      "version": "5.3.1",
       "__hash": "57920aa90554de0e2271ed19a0c1ce4d52a70c06"
     },
     {
-      "version": "5.3.2",
-      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.2",
       "dependencies": [
+        "rc-align@2.x",
+        "rc-animate@2.x",
+        "rc-util@3.x"
+      ],
+      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.2",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "5.3.2",
+      "__hash": "4f67b1c53c514cee3b7f7672a3bd96f13652de0e"
+    },
+    {
+      "version": "5.3.3",
+      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.3",
+      "dependencies": [
+        "classnames@2.x",
         "rc-align@2.x",
         "rc-animate@2.x",
         "rc-util@3.x"
@@ -196,8 +241,51 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "5.3.4",
+      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.4",
+      "dependencies": [
+        "classnames@2.x",
+        "rc-align@2.x",
+        "rc-animate@2.x",
+        "rc-util@3.x"
       ],
-      "__hash": "4f67b1c53c514cee3b7f7672a3bd96f13652de0e"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

@@ -217,7 +217,6 @@
       "__hash": "73d6cbadadaee3dd21d3aba647f7f926e7ed611f"
     },
     {
-      "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . rc-time-picker@1.1.0",
       "mapping": [
         {
@@ -253,10 +252,10 @@
           "release": false
         }
       ],
+      "version": "1.1.0",
       "__hash": "daea4ca3335af4db5ce1cc71f44c264a5afb397b"
     },
     {
-      "version": "1.1.1",
       "build": "rm package.json && npm install --prefix . rc-time-picker@1.1.1",
       "mapping": [
         {
@@ -292,7 +291,46 @@
           "release": false
         }
       ],
+      "version": "1.1.1",
       "__hash": "7522d7bbc0578249944a039aa3b42635ad91fb67"
+    },
+    {
+      "version": "1.1.3",
+      "build": "rm package.json && npm install --prefix . rc-time-picker@1.1.3",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-time-picker\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

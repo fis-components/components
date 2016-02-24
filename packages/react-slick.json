@@ -41,48 +41,47 @@
   ],
   "tags": [
     {
+      "main": "react-slick",
+      "dependencies": [
+        "react-dom@^0.14.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-slick\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-slick\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "0.9.1",
-      "main": "react-slick",
-      "dependencies": [
-        "react-dom@^0.14.0"
-      ],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-slick\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/react-slick\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "0.9.2",
+      "main": "react-slick",
+      "dependencies": [
+        "react-dom@^0.14.0"
+      ],
       "build": "rm package.json && npm install --prefix . react-slick@0.9.2",
-      "main": "react-slick",
-      "dependencies": [
-        "react-dom@^0.14.0"
-      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -109,16 +108,54 @@
           "release": false
         }
       ],
+      "version": "0.9.2",
       "paths": {
         "dist": "."
       }
     },
     {
-      "version": "0.9.3",
-      "build": "rm package.json && npm install --prefix . react-slick@0.9.3",
       "main": "react-slick",
       "dependencies": [
         "react-dom@^0.14.0"
+      ],
+      "build": "rm package.json && npm install --prefix . react-slick@0.9.3",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-slick\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/react-slick\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.9.3",
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "0.10.0",
+      "build": "rm package.json && npm install --prefix . react-slick@0.10.0",
+      "main": "react-slick",
+      "dependencies": [
+        "react@^0.13.0 || ^0.14.0"
       ],
       "mapping": [
         {

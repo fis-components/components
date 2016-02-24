@@ -84,7 +84,6 @@
       "__hash": "cf7f1304d4a0cfa52259c6bfe084a0c0ca728d17"
     },
     {
-      "version": "4.1.0",
       "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.1.0",
       "mapping": [
         {
@@ -112,7 +111,38 @@
           "release": false
         }
       ],
+      "version": "4.1.0",
       "__hash": "5a8680a2c9c67fb733c90ea8cadb9d8bf1d6b356"
+    },
+    {
+      "version": "4.1.1",
+      "build": "rm package.json && npm install --prefix . gregorian-calendar-format@4.1.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/gregorian-calendar-format\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/gregorian-calendar-format\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
