@@ -54,7 +54,7 @@
     {
       "build": "rm package.json && npm install --prefix . rc-cascader@0.6.0",
       "version": "0.6.0",
-      "__hash": "682bdb258c0ead8a47323eadad0f9020c56a2831"
+      "__hash": "06c020ddd1554ddcb0f6126c9cb5904717f49549"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-cascader@0.8.1",
