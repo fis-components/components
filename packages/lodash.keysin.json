@@ -429,7 +429,7 @@
       "version": "4.0.1",
       "description": "The lodash method `_.keysIn` exported as a module.",
       "reposType": "npm",
-      "__hash": "5cba291d6ad7793bbd4526d3f26e26f4897680b5"
+      "__hash": "8834accef99bcaaaa476c274bcc0e1156ba9be51"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.keysin@4.0.2",
