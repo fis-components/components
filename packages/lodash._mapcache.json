@@ -36,7 +36,7 @@
   "tags": [
     {
       "version": "4.0.0",
-      "__hash": "28d6018e8be9148ccbd911d90b06d6808bde4865"
+      "__hash": "7130fcbf989e7d9b172ba4fc87c13ad8bb67ad56"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash._mapcache@4.0.1",
