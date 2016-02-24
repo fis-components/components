@@ -221,7 +221,7 @@
     {
       "build": "rm package.json && npm install --prefix . antd@0.11.0-beta1",
       "version": "0.11.0-beta1",
-      "__hash": "e8c7ecfc2cd8341c59507fc8f127040af53ac70c"
+      "__hash": "6457d9c5818e5821ba2db13756b90480273255dc"
     },
     {
       "dependencies": [
