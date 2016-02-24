@@ -36,7 +36,8 @@
   "tags": [
     {
       "version": "1.0.0",
-      "build": "rm package.json && npm install --prefix . hoist-non-react-statics@1.0.0"
+      "build": "rm package.json && npm install --prefix . hoist-non-react-statics@1.0.0",
+      "__hash": "cf206514737f33977e45c820f304831b2075e296"
     },
     {
       "version": "1.0.1",
