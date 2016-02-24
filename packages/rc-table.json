@@ -36,7 +36,7 @@
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.6.1",
       "version": "3.6.1",
-      "__hash": "2c0ebc65d55d3545bb9a047125b512629f3a60da"
+      "__hash": "0b5b7637694b280af4dd212ba7678a93a9dff53c"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.6.2",
