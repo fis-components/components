@@ -64,3 +64,4 @@ sync:
     - react-router
     - react-motion
     - react-dnd@2.1.2
+    - lodash.mergewith
