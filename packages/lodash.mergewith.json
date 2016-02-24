@@ -84,7 +84,8 @@
         "lodash.keys@^4.0.0",
         "lodash.keysin@^4.0.0",
         "lodash.rest@^4.0.0"
-      ]
+      ],
+      "__hash": "409c601f738c08b906667d8bda88e6b666451fa9"
     },
     {
       "version": "4.3.0",
