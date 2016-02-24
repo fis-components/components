@@ -399,7 +399,7 @@
       ],
       "version": "3.1.1",
       "main": "index.js",
-      "__hash": "dcba68fea82ded44535ef808db1bd8ed20e87eb0"
+      "__hash": "12302aec13e60dfee285a559363c56c6f1b2be60"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.keys@3.1.2",
