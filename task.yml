@@ -64,3 +64,4 @@ sync:
     - react-router
     - react-motion
     - react-dnd@2.1.2
+    - rc-cascader@~0.9.0
