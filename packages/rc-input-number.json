@@ -116,7 +116,7 @@
         }
       ],
       "version": "2.4.2",
-      "__hash": "cef5f1655fef56686bfca2a90308fe99850a8b83"
+      "__hash": "80897c33b99a3a359aa6331dd9a2a3398eb859d1"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-input-number@2.4.3",
