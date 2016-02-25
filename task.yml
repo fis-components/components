@@ -65,3 +65,4 @@ sync:
     - react-motion
     - react-dnd@2.1.2
     - lodash.mergewith
+    - lodash.find
