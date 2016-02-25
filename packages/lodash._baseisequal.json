@@ -63,7 +63,8 @@
         "lodash._root@^3.0.0",
         "lodash._stack@^4.0.0",
         "lodash.keys@^4.0.0"
-      ]
+      ],
+      "__hash": "4c31d63928b71106bc47e86031ed2e12f4f9f7de"
     }
   ]
 }
