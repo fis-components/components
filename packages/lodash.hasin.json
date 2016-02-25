@@ -43,7 +43,8 @@
     },
     {
       "version": "4.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.hasin@4.0.1"
+      "build": "rm package.json && npm install --prefix . lodash.hasin@4.0.1",
+      "__hash": "bb771dfe54a1828dc95eeb47a7d2fad248b67230"
     },
     {
       "version": "4.0.2",
