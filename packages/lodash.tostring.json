@@ -55,7 +55,8 @@
     },
     {
       "version": "4.1.1",
-      "build": "rm package.json && npm install --prefix . lodash.tostring@4.1.1"
+      "build": "rm package.json && npm install --prefix . lodash.tostring@4.1.1",
+      "__hash": "727b35f5a8d95826790b7a1c1019b3ea854eda81"
     }
   ]
 }
