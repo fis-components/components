@@ -1,0 +1,65 @@
+{
+  "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.0.1",
+  "name": "lodash._baseisequal",
+  "description": "The internal lodash function `baseIsEqual` exported as a module.",
+  "repos": "https://github.com/lodash/lodash.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "lodash._stack@^4.0.0",
+    "lodash.keys@^4.0.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\._baseisequal\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\._baseisequal\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "4.0.1"
+    },
+    {
+      "version": "4.0.2",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.0.2"
+    },
+    {
+      "version": "4.0.3",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.0.3"
+    },
+    {
+      "version": "4.1.0",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.1.0"
+    },
+    {
+      "version": "4.1.1",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.1.1",
+      "dependencies": [
+        "lodash._root@^3.0.0",
+        "lodash._stack@^4.0.0",
+        "lodash.keys@^4.0.0"
+      ]
+    }
+  ]
+}

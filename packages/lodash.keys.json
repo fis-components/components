@@ -434,10 +434,9 @@
       "__hash": "cb04e7d211dadace88520030a44e026c6ac4389e"
     },
     {
-      "version": "4.0.0",
-      "build": "rm package.json && npm install --prefix . lodash.keys@4.0.0",
       "description": "The lodash method `_.keys` exported as a module.",
       "dependencies": [],
+      "build": "rm package.json && npm install --prefix . lodash.keys@4.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -464,14 +463,14 @@
           "release": false
         }
       ],
+      "version": "4.0.0",
       "main": "index.js",
       "__hash": "a56ce2c63953e0786fddf4d2cead409c8b5f386c"
     },
     {
-      "version": "4.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.keys@4.0.1",
       "description": "The lodash method `_.keys` exported as a module.",
       "dependencies": [],
+      "build": "rm package.json && npm install --prefix . lodash.keys@4.0.1",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -498,14 +497,14 @@
           "release": false
         }
       ],
+      "version": "4.0.1",
       "main": "index.js",
       "__hash": "12a416f8a0ed676634b58cba9bd70aadbbec1706"
     },
     {
-      "version": "4.0.2",
-      "build": "rm package.json && npm install --prefix . lodash.keys@4.0.2",
       "description": "The lodash method `_.keys` exported as a module.",
       "dependencies": [],
+      "build": "rm package.json && npm install --prefix . lodash.keys@4.0.2",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -532,12 +531,47 @@
           "release": false
         }
       ],
+      "version": "4.0.2",
       "main": "index.js",
       "__hash": "101cf23a73be944c46ee4f9a19e592493412750e"
     },
     {
-      "version": "4.0.3",
+      "description": "The lodash method `_.keys` exported as a module.",
+      "dependencies": [],
       "build": "rm package.json && npm install --prefix . lodash.keys@4.0.3",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keys\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.keys\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "4.0.3",
+      "main": "index.js",
+      "__hash": "50f61c968935fb75c2a5770d162d626a19767a40"
+    },
+    {
+      "version": "4.0.4",
+      "build": "rm package.json && npm install --prefix . lodash.keys@4.0.4",
       "description": "The lodash method `_.keys` exported as a module.",
       "dependencies": [],
       "mapping": [
@@ -566,8 +600,7 @@
           "release": false
         }
       ],
-      "main": "index.js",
-      "__hash": "50f61c968935fb75c2a5770d162d626a19767a40"
+      "main": "index.js"
     }
   ]
 }

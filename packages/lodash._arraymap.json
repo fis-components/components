@@ -1,0 +1,41 @@
+{
+  "build": "rm package.json && npm install --prefix . lodash._arraymap@3.0.0",
+  "name": "lodash._arraymap",
+  "description": "The modern build of lodash’s internal `arrayMap` as a module.",
+  "repos": "https://github.com/lodash/lodash",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\._arraymap\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\._arraymap\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "3.0.0"
+    }
+  ]
+}
