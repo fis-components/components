@@ -43,7 +43,8 @@
     },
     {
       "version": "4.0.2",
-      "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.0.2"
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.0.2",
+      "__hash": "0370d0c9e116657f05eaf3c576435163ee440b6a"
     },
     {
       "version": "4.0.3",
