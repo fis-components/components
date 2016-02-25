@@ -46,7 +46,8 @@
       "build": "rm package.json && npm install --prefix . lodash.topairs@4.1.0",
       "dependencies": [
         "lodash.keys@^4.0.0"
-      ]
+      ],
+      "__hash": "d349a3600ed8eaa90201275746f72fbfa8e54b78"
     }
   ]
 }
