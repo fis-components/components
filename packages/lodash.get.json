@@ -63,7 +63,8 @@
       "build": "rm package.json && npm install --prefix . lodash.get@4.1.2",
       "dependencies": [
         "lodash.tostring@^4.0.0"
-      ]
+      ],
+      "__hash": "892458f10d7aa35aaa3eb368d888b991325a8f3b"
     }
   ]
 }
