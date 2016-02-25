@@ -72,7 +72,8 @@
       "dependencies": [
         "lodash._baseslice@^4.0.0",
         "lodash.tostring@^4.0.0"
-      ]
+      ],
+      "__hash": "ac2437f1a90955ceaf00e18a85c6093e449ad28e"
     }
   ]
 }
