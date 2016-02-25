@@ -600,7 +600,8 @@
           "release": false
         }
       ],
-      "main": "index.js"
+      "main": "index.js",
+      "__hash": "7ab45971e6d3431ba936bd02fc57adbf328fc295"
     }
   ]
 }
