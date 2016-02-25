@@ -40,7 +40,8 @@
     },
     {
       "version": "4.0.1",
-      "build": "rm package.json && npm install --prefix . lodash.tostring@4.0.1"
+      "build": "rm package.json && npm install --prefix . lodash.tostring@4.0.1",
+      "__hash": "14cfd8ed14bb4e1ecd5594b5acc28c5be148fa8d"
     },
     {
       "version": "4.0.2",
