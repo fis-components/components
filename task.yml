@@ -47,7 +47,7 @@ sync:
     - fiten-reset@latest
     - fit-cropper@latest
     - formsy-material-ui@latest
-    - material-ui@latest
+    - material-ui@~0.14.3
     - antd@0.12.4
     - reflux
     - react-dropzone-component
