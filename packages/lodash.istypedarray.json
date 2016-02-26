@@ -62,7 +62,7 @@
         }
       ],
       "version": "3.0.0",
-      "__hash": "48d6aa506ceb247f6f29f6caa0683bd4def9a6d8"
+      "__hash": "74623208d325b50a85e2a6430f1c52b2fcf0780c"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.1",
