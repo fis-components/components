@@ -159,7 +159,6 @@
       "__hash": "1f80ae2a11c7c2f77b2c62a2b41a873589df3b24"
     },
     {
-      "version": "3.0.4",
       "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.4",
       "description": "The lodash method `_.isTypedArray` exported as a module.",
       "repos": "https://github.com/lodash/lodash.git",
@@ -189,7 +188,40 @@
           "release": false
         }
       ],
+      "version": "3.0.4",
       "__hash": "041981618dd0023fef1f799b70698077400bc2e1"
+    },
+    {
+      "version": "3.0.5",
+      "build": "rm package.json && npm install --prefix . lodash.istypedarray@3.0.5",
+      "description": "The lodash method `_.isTypedArray` exported as a module.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.istypedarray\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\.istypedarray\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

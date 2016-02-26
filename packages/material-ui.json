@@ -81,11 +81,10 @@
       "__hash": "88a590df48fba7308c06cca41fa6c78263c21725"
     },
     {
-      "version": "0.14.4",
-      "build": "rm package.json && npm install --prefix . material-ui@0.14.4",
+      "version": "0.14.3",
+      "build": "rm package.json && npm install --prefix . material-ui@0.14.3",
       "dependencies": [
         "inline-style-prefixer@^0.6.6",
-        "lodash.flowright@^3.2.1",
         "lodash.merge@^3.3.2",
         "lodash.throttle@~3.0.4",
         "react-addons-create-fragment@^0.14.0",
@@ -121,8 +120,49 @@
           "reg": "\\.*",
           "release": false
         }
+      ]
+    },
+    {
+      "version": "0.14.4",
+      "build": "rm package.json && npm install --prefix . material-ui@0.14.4",
+      "dependencies": [
+        "inline-style-prefixer@^0.6.6",
+        "lodash.merge@^3.3.2",
+        "lodash.throttle@~3.0.4",
+        "react-addons-create-fragment@^0.14.0",
+        "react-addons-pure-render-mixin@^0.14.0",
+        "react-addons-transition-group@^0.14.0",
+        "react-addons-update@^0.14.0",
+        "warning@^2.1.0",
+        "react@^0.14.0",
+        "react-dom@^0.14.0"
       ],
-      "__hash": "3b698cc08a7f7b3427f29dd491c3a8519b154081"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/material-ui\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
