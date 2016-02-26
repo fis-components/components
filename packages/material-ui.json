@@ -47,7 +47,7 @@
   "tags": [
     {
       "version": "0.14.1",
-      "__hash": "23f9eae7d2000ab9c05f653c9c4b0c4ac9b38014"
+      "__hash": "265a24db8625b350ff99bdb8c321398a32616653"
     },
     {
       "build": "rm package.json && npm install --prefix . material-ui@0.14.2",
