@@ -45,7 +45,8 @@
     },
     {
       "version": "3.1.2",
-      "build": "rm package.json && npm install --prefix . lodash.range@3.1.2"
+      "build": "rm package.json && npm install --prefix . lodash.range@3.1.2",
+      "__hash": "2ad76ca201d8e4d3370d31b2f153dff3fc7e4320"
     }
   ]
 }
