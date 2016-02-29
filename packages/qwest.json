@@ -1,0 +1,52 @@
+{
+  "build": "rm package.json && npm install --prefix . qwest@4.0.0",
+  "name": "qwest",
+  "description": "Ajax library with XHR2, promises and request limit",
+  "repos": "https://github.com/pyrsmk/qwest.git",
+  "main": "src/qwest.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "jquery-param@^0.1.2",
+    "pinkyswear@^2.2.2"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/qwest\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/qwest\\/(src\\/qwest\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "4.0.0"
+    },
+    {
+      "version": "4.1.0",
+      "build": "rm package.json && npm install --prefix . qwest@4.1.0"
+    },
+    {
+      "version": "4.1.1",
+      "build": "rm package.json && npm install --prefix . qwest@4.1.1"
+    }
+  ]
+}
