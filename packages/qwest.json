@@ -48,7 +48,8 @@
     },
     {
       "version": "4.1.1",
-      "build": "rm package.json && npm install --prefix . qwest@4.1.1"
+      "build": "rm package.json && npm install --prefix . qwest@4.1.1",
+      "__hash": "595b80627ba4fab39cfedbff5edfcd9baf6e8ff6"
     }
   ]
 }
