@@ -67,3 +67,4 @@ sync:
     - lodash.mergewith
     - lodash.find
     - lodash.range
+    - qwest
