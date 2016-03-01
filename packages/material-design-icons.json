@@ -1,0 +1,41 @@
+{
+  "build": "rm package.json && npm install --prefix . material-design-icons@2.2.0",
+  "name": "material-design-icons",
+  "description": "Material Design icons by Google",
+  "repos": "https://github.com/google/material-design-icons.git",
+  "main": "iconfont/material-icons.css",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/material-design-icons\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/material-design-icons\\/iconfont\\/(.*)$",
+      "release": "iconfont/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.2.0"
+    }
+  ]
+}
