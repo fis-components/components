@@ -42,7 +42,8 @@
     },
     {
       "version": "2.0.0",
-      "build": "rm package.json && npm install --prefix . react-document-title@2.0.0"
+      "build": "rm package.json && npm install --prefix . react-document-title@2.0.0",
+      "__hash": "c5cbc7d36a89eca8070ef35d1084a0c3b8588b22"
     },
     {
       "version": "2.0.1",
