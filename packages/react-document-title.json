@@ -50,7 +50,8 @@
       "build": "rm package.json && npm install --prefix . react-document-title@2.0.1",
       "dependencies": [
         "react-side-effect@^1.0.0"
-      ]
+      ],
+      "__hash": "f03afacd4cb14c94c944f46f0cc934776c192104"
     }
   ]
 }
