@@ -68,3 +68,4 @@ sync:
     - lodash.find
     - lodash.range
     - qwest
+    - react-document-title
