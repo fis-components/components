@@ -69,3 +69,4 @@ sync:
     - lodash.range
     - qwest
     - react-document-title
+    - deep-assign@latest
