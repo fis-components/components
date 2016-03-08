@@ -114,7 +114,8 @@
         "lodash._baseisequal@^3.0.0",
         "lodash._bindcallback@^3.0.0",
         "lodash.isarray@^3.0.0"
-      ]
+      ],
+      "__hash": "76d924cef46f92fb23ff58236e8f0fe8cef45f91"
     },
     {
       "version": "3.3.1",
