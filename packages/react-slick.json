@@ -112,7 +112,8 @@
       "version": "0.9.2",
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "1b005fcfa954ff7617bfd19e94a59e9d00601232"
     },
     {
       "main": "react-slick",
