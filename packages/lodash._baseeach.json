@@ -54,7 +54,8 @@
       "repos": "https://github.com/lodash/lodash",
       "dependencies": [
         "lodash.keys@^3.0.0"
-      ]
+      ],
+      "__hash": "4cf7412e355dc3f731e06e350866d1dec016b3f0"
     },
     {
       "version": "3.0.2",
