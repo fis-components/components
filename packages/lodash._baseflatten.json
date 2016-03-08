@@ -53,7 +53,8 @@
     },
     {
       "version": "3.1.2",
-      "build": "rm package.json && npm install --prefix . lodash._baseflatten@3.1.2"
+      "build": "rm package.json && npm install --prefix . lodash._baseflatten@3.1.2",
+      "__hash": "71c70413fbfd9dadf3d78306b331f6aa2e6a2874"
     },
     {
       "version": "3.1.3",
