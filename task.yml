@@ -71,3 +71,4 @@ sync:
     - react-document-title
     - deep-assign@latest
     - validator
+    - react-slick
