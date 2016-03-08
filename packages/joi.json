@@ -840,7 +840,8 @@
         "topo@1.x.x",
         "isemail@1.x.x",
         "moment@2.x.x"
-      ]
+      ],
+      "__hash": "2b6866b6038e55dbe7f87508aafa39a2526db084"
     },
     {
       "version": "6.10.0",
