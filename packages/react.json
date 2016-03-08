@@ -57,7 +57,8 @@
     {
       "version": "0.13.2",
       "build": "rm package.json && npm install --prefix . react@0.13.2",
-      "repos": "https://github.com/facebook/react"
+      "repos": "https://github.com/facebook/react",
+      "__hash": "7eb684f341361343eca703109c0f7b2d104967b6"
     },
     {
       "build": "rm package.json && npm install --prefix . react@0.13.3",
