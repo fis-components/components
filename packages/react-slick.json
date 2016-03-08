@@ -74,7 +74,8 @@
       "version": "0.9.1",
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "3eaacbcc051f7d3baa22d5468e9bcda9f0ea9b66"
     },
     {
       "main": "react-slick",
