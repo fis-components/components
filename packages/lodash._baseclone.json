@@ -61,7 +61,8 @@
         "lodash.isarray@^3.0.0",
         "lodash.isnative@^3.0.0",
         "lodash.keys@^3.0.0"
-      ]
+      ],
+      "__hash": "04379309eee6fb4a1b30dd55c4938c0f7f6be72b"
     },
     {
       "version": "3.2.0",
