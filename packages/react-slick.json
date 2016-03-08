@@ -150,7 +150,8 @@
       "version": "0.9.3",
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "e0cf13066518d9fea60df495c3232f980a4771cb"
     },
     {
       "main": "react-slick",
