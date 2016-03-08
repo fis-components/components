@@ -55,7 +55,8 @@
       "dependencies": [
         "lodash._baseproperty@^3.0.0",
         "lodash._bindcallback@^3.0.0"
-      ]
+      ],
+      "__hash": "bdc5cfeb5409511da3781b7d6051b43c6fddee9c"
     },
     {
       "version": "3.1.1",
