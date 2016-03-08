@@ -46,7 +46,8 @@
     },
     {
       "version": "0.3.2",
-      "build": "rm package.json && npm install --prefix . joi-validation-strategy@0.3.2"
+      "build": "rm package.json && npm install --prefix . joi-validation-strategy@0.3.2",
+      "__hash": "c54ba53574a78f4fc18a508e14c8caf92254826d"
     },
     {
       "version": "0.3.3",
