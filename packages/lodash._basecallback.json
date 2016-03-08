@@ -63,7 +63,8 @@
       "build": "rm package.json && npm install --prefix . lodash._basecallback@3.1.1",
       "dependencies": [
         "lodash._bindcallback@^3.0.0"
-      ]
+      ],
+      "__hash": "c3a79acbf91ec53e8a97f47d3b7d881115e53fc2"
     },
     {
       "version": "3.1.2",
