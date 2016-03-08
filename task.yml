@@ -70,3 +70,4 @@ sync:
     - qwest
     - react-document-title
     - deep-assign@latest
+    - validator
