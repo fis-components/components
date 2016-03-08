@@ -45,7 +45,8 @@
       "version": "3.0.1",
       "build": "rm package.json && npm install --prefix . lodash._baseslice@3.0.1",
       "description": "The modern build of lodash’s internal `baseSlice` as a module.",
-      "repos": "https://github.com/lodash/lodash"
+      "repos": "https://github.com/lodash/lodash",
+      "__hash": "776e455b74fe048588d382d77e7888ccc505db16"
     },
     {
       "version": "3.0.2",
