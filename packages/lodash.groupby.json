@@ -1,0 +1,43 @@
+{
+  "build": "rm package.json && npm install --prefix . lodash.groupby@3.1.1",
+  "name": "lodash.groupby",
+  "description": "The modern build of lodash’s `_.groupBy` as a module.",
+  "repos": "https://github.com/lodash/lodash.git",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "lodash._createaggregator@^3.0.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\.groupby\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\.groupby\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "3.1.1"
+    }
+  ]
+}

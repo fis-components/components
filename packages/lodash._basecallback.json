@@ -1,0 +1,123 @@
+{
+  "build": "rm package.json && npm install --prefix . lodash._basecallback@3.0.0",
+  "name": "lodash._basecallback",
+  "description": "The modern build of lodash’s internal `baseCallback` as a module.",
+  "repos": "https://github.com/lodash/lodash",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "lodash._baseclone@^3.0.0",
+    "lodash._baseisequal@^3.0.0",
+    "lodash._baseproperty@^3.0.0",
+    "lodash._bindcallback@^3.0.0",
+    "lodash.keys@^3.0.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\._basecallback\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/lodash\\._basecallback\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "main": "index.js",
+  "tags": [
+    {
+      "version": "3.0.0"
+    },
+    {
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.0.1"
+    },
+    {
+      "version": "3.1.0",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.1.0",
+      "dependencies": [
+        "lodash._baseproperty@^3.0.0",
+        "lodash._bindcallback@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.1.1",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.1.1",
+      "dependencies": [
+        "lodash._bindcallback@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.1.2",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.1.2",
+      "dependencies": [
+        "lodash._baseisequal@^3.0.0",
+        "lodash._bindcallback@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.1.3",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.1.3",
+      "dependencies": [
+        "lodash._baseisequal@^3.0.0",
+        "lodash._bindcallback@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.2.0",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.2.0",
+      "dependencies": [
+        "lodash._baseisequal@^3.0.0",
+        "lodash._bindcallback@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.2.1",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.2.1",
+      "dependencies": [
+        "lodash._baseisequal@^3.0.0",
+        "lodash._bindcallback@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.3.0",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.3.0",
+      "repos": "https://github.com/lodash/lodash.git",
+      "dependencies": [
+        "lodash._baseisequal@^3.0.0",
+        "lodash._bindcallback@^3.0.0",
+        "lodash.isarray@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.3.1",
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.3.1",
+      "repos": "https://github.com/lodash/lodash.git",
+      "dependencies": [
+        "lodash._baseisequal@^3.0.0",
+        "lodash._bindcallback@^3.0.0",
+        "lodash.isarray@^3.0.0",
+        "lodash.pairs@^3.0.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "build": "rm package.json && npm install --prefix . joi-validation-strategy@0.3.1",
+  "name": "joi-validation-strategy",
+  "description": "Joi validation strategy for react-validation-mixin",
+  "repos": "https://github.com/jurassix/joi-validation-strategy.git",
+  "main": "lib/joiValidationStrategy.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "invariant@^2.1.1",
+    "lodash.get@^3.7.0",
+    "lodash.isempty@^3.0.4",
+    "lodash.set@^3.7.4",
+    "joi@>=5.1.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/joi-validation-strategy\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/joi-validation-strategy\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.3.1"
+    },
+    {
+      "version": "0.3.2",
+      "build": "rm package.json && npm install --prefix . joi-validation-strategy@0.3.2"
+    },
+    {
+      "version": "0.3.3",
+      "build": "rm package.json && npm install --prefix . joi-validation-strategy@0.3.3",
+      "dependencies": [
+        "he@^0.5.0",
+        "invariant@^2.1.1",
+        "lodash.compose@^2.4.1",
+        "lodash.get@^3.7.0",
+        "lodash.groupby@^3.1.1",
+        "lodash.isempty@^3.0.4",
+        "lodash.set@^3.7.4",
+        "joi@>=5.1.0"
+      ]
+    }
+  ]
+}

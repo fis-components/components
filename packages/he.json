@@ -1,0 +1,53 @@
+{
+  "build": "rm package.json && npm install --prefix . he@0.5.0",
+  "name": "he",
+  "description": "A robust HTML entities encoder/decoder with full Unicode support.",
+  "repos": "https://github.com/mathiasbynens/he.git",
+  "main": "he.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/he\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/he\\/(LICENSE-MIT\\.txt)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/he\\/(he\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/he\\/bin\\/(.*)$",
+      "release": "bin/$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/he\\/man\\/(.*)$",
+      "release": "man/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.5.0"
+    }
+  ]
+}

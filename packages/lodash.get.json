@@ -35,35 +35,45 @@
   "main": "index.js",
   "tags": [
     {
+      "version": "3.7.0",
+      "build": "rm package.json && npm install --prefix . lodash.get@3.7.0",
+      "description": "The modern build of lodash’s `_.get` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash._baseget@^3.0.0",
+        "lodash._topath@^3.0.0"
+      ]
+    },
+    {
       "version": "4.0.0",
       "__hash": "b8f8442c1b84bb4c27d99e45a62d22a901b27ff6"
     },
     {
-      "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . lodash.get@4.0.1",
+      "version": "4.0.1",
       "__hash": "e123eaee3798a667a4f42f282648baa7775f5bd2"
     },
     {
-      "version": "4.0.2",
       "build": "rm package.json && npm install --prefix . lodash.get@4.0.2",
+      "version": "4.0.2",
       "__hash": "a18d9504943463ec69b704795fcfacb8bd4a1264"
     },
     {
-      "version": "4.1.0",
       "build": "rm package.json && npm install --prefix . lodash.get@4.1.0",
+      "version": "4.1.0",
       "__hash": "a18acd5dcc9256f8ea9483f22127fce0a89c6db7"
     },
     {
-      "version": "4.1.1",
       "build": "rm package.json && npm install --prefix . lodash.get@4.1.1",
+      "version": "4.1.1",
       "__hash": "2bd742697c594293f859f489910f7bc9da9cfc35"
     },
     {
-      "version": "4.1.2",
       "build": "rm package.json && npm install --prefix . lodash.get@4.1.2",
       "dependencies": [
         "lodash.tostring@^4.0.0"
       ],
+      "version": "4.1.2",
       "__hash": "892458f10d7aa35aaa3eb368d888b991325a8f3b"
     }
   ]

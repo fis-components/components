@@ -35,6 +35,30 @@
   "main": "index.js",
   "tags": [
     {
+      "version": "3.0.0",
+      "build": "rm package.json && npm install --prefix . lodash._baseslice@3.0.0",
+      "description": "The modern build of lodash’s internal `baseSlice` as a module.",
+      "repos": "https://github.com/lodash/lodash"
+    },
+    {
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . lodash._baseslice@3.0.1",
+      "description": "The modern build of lodash’s internal `baseSlice` as a module.",
+      "repos": "https://github.com/lodash/lodash"
+    },
+    {
+      "version": "3.0.2",
+      "build": "rm package.json && npm install --prefix . lodash._baseslice@3.0.2",
+      "description": "The modern build of lodash’s internal `baseSlice` as a module.",
+      "repos": "https://github.com/lodash/lodash"
+    },
+    {
+      "version": "3.0.3",
+      "build": "rm package.json && npm install --prefix . lodash._baseslice@3.0.3",
+      "description": "The modern build of lodash’s internal `baseSlice` as a module.",
+      "repos": "https://github.com/lodash/lodash"
+    },
+    {
       "version": "4.0.0",
       "__hash": "bfc322f7ef2006b22d4e0e85c9acf13143afdc33"
     }

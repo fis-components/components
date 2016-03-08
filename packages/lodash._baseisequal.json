@@ -38,32 +38,118 @@
   "main": "index.js",
   "tags": [
     {
+      "version": "3.0.0",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.0",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.1",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.2",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.2",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.3",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.3",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.4",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.4",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.5",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.5",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.6",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.6",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.7",
+      "build": "rm package.json && npm install --prefix . lodash._baseisequal@3.0.7",
+      "description": "The modern build of lodash’s internal `baseIsEqual` as a module.",
+      "dependencies": [
+        "lodash.isarray@^3.0.0",
+        "lodash.istypedarray@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
       "version": "4.0.1",
       "__hash": "cb663d469284da6d5cde0952506dd2e1854bb9a0"
     },
     {
-      "version": "4.0.2",
       "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.0.2",
+      "version": "4.0.2",
       "__hash": "0370d0c9e116657f05eaf3c576435163ee440b6a"
     },
     {
-      "version": "4.0.3",
       "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.0.3",
+      "version": "4.0.3",
       "__hash": "8bd8fa76a4f1e551bcf2bd11ec2b97d14ff77daa"
     },
     {
-      "version": "4.1.0",
       "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.1.0",
+      "version": "4.1.0",
       "__hash": "6bfcd6d94e6a324ddffb57b76970f8b63f9aab8a"
     },
     {
-      "version": "4.1.1",
       "build": "rm package.json && npm install --prefix . lodash._baseisequal@4.1.1",
       "dependencies": [
         "lodash._root@^3.0.0",
         "lodash._stack@^4.0.0",
         "lodash.keys@^4.0.0"
       ],
+      "version": "4.1.1",
       "__hash": "4c31d63928b71106bc47e86031ed2e12f4f9f7de"
     }
   ]

@@ -37,23 +37,69 @@
   "main": "index.js",
   "tags": [
     {
+      "version": "3.0.0",
+      "build": "rm package.json && npm install --prefix . lodash._baseeach@3.0.0",
+      "description": "The modern build of lodash’s internal `baseEach` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash._basefor@^3.0.0",
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . lodash._baseeach@3.0.1",
+      "description": "The modern build of lodash’s internal `baseEach` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.2",
+      "build": "rm package.json && npm install --prefix . lodash._baseeach@3.0.2",
+      "description": "The modern build of lodash’s internal `baseEach` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.3",
+      "build": "rm package.json && npm install --prefix . lodash._baseeach@3.0.3",
+      "description": "The modern build of lodash’s internal `baseEach` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
+      "version": "3.0.4",
+      "build": "rm package.json && npm install --prefix . lodash._baseeach@3.0.4",
+      "description": "The modern build of lodash’s internal `baseEach` as a module.",
+      "repos": "https://github.com/lodash/lodash",
+      "dependencies": [
+        "lodash.keys@^3.0.0"
+      ]
+    },
+    {
       "version": "4.0.0",
       "__hash": "0b93eb35eb709aa2f87f6f957fc9f891e48b9468"
     },
     {
-      "version": "4.0.1",
       "build": "rm package.json && npm install --prefix . lodash._baseeach@4.0.1",
+      "version": "4.0.1",
       "__hash": "0ff6b1385de302350801824ca7e691f7a91c230b"
     },
     {
-      "version": "4.0.2",
       "build": "rm package.json && npm install --prefix . lodash._baseeach@4.0.2",
+      "version": "4.0.2",
       "__hash": "2f84e869c7ce19bf375ac2990248cbfb6099213b"
     },
     {
-      "version": "4.1.0",
       "build": "rm package.json && npm install --prefix . lodash._baseeach@4.1.0",
       "dependencies": [],
+      "version": "4.1.0",
       "__hash": "87e87386add99f3f86525eb3521eca81112a4a51"
     }
   ]
