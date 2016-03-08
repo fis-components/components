@@ -908,7 +908,8 @@
     },
     {
       "version": "7.3.0",
-      "build": "rm package.json && npm install --prefix . joi@7.3.0"
+      "build": "rm package.json && npm install --prefix . joi@7.3.0",
+      "__hash": "0850e29a9a9439d51f15118e85bcdcd4ef8a8937"
     },
     {
       "version": "8.0.0",
