@@ -188,7 +188,8 @@
       "version": "0.10.0",
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "2e8ef255690d5da9c89d3c6020ffe944f2d6aaac"
     },
     {
       "version": "0.11.0",
