@@ -103,7 +103,8 @@
         "lodash._basefor@^3.0.0",
         "lodash.isarray@^3.0.0",
         "lodash.keys@^3.0.0"
-      ]
+      ],
+      "__hash": "f768f1782c3add9bc91ba2afb39ae7f04df0e58f"
     }
   ]
 }
