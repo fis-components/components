@@ -45,7 +45,8 @@
     },
     {
       "version": "3.0.2",
-      "build": "rm package.json && npm install --prefix . hoek@3.0.2"
+      "build": "rm package.json && npm install --prefix . hoek@3.0.2",
+      "__hash": "6bfad96894a99f08c79a89d1c3e0deed319b1a5c"
     },
     {
       "version": "3.0.3",
