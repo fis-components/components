@@ -72,3 +72,5 @@ sync:
     - deep-assign@latest
     - validator
     - react-slick
+    - joi-validation-strategy
+    - react-validation-mixin
