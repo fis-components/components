@@ -44,9 +44,18 @@
   },
   "tags": [
     {
-      "build": "rm package.json && npm install --prefix . react@0.13.2",
+      "version": "0.13.0",
+      "build": "rm package.json && npm install --prefix . react@0.13.0"
+    },
+    {
+      "version": "0.13.1",
+      "build": "rm package.json && npm install --prefix . react@0.13.1",
+      "repos": "https://github.com/facebook/react"
+    },
+    {
       "version": "0.13.2",
-      "__hash": "b17af5059a4c226700f5ce4721f96428204a5e91"
+      "build": "rm package.json && npm install --prefix . react@0.13.2",
+      "repos": "https://github.com/facebook/react"
     },
     {
       "build": "rm package.json && npm install --prefix . react@0.13.3",
@@ -67,7 +76,7 @@
     },
     {
       "version": "0.14.0",
-      "__hash": "505ee4c9df1137029649a206a2195de0971a2cd7"
+      "repos": "https://github.com/facebook/react"
     },
     {
       "build": "rm package.json && npm install --prefix . react@0.14.1",
