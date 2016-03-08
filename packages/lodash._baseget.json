@@ -40,7 +40,8 @@
     },
     {
       "version": "3.7.1",
-      "build": "rm package.json && npm install --prefix . lodash._baseget@3.7.1"
+      "build": "rm package.json && npm install --prefix . lodash._baseget@3.7.1",
+      "__hash": "2cbadf2cb9d705906d9af103d133c1a611284334"
     },
     {
       "version": "3.7.2",
