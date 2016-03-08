@@ -65,7 +65,8 @@
     {
       "version": "3.1.4",
       "build": "rm package.json && npm install --prefix . lodash._baseflatten@3.1.4",
-      "repos": "https://github.com/lodash/lodash.git"
+      "repos": "https://github.com/lodash/lodash.git",
+      "__hash": "70bc3aabc79848c273ab4cdc542ce7cbc8e7bfd1"
     }
   ]
 }
