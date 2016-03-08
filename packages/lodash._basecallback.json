@@ -126,7 +126,8 @@
         "lodash._bindcallback@^3.0.0",
         "lodash.isarray@^3.0.0",
         "lodash.pairs@^3.0.0"
-      ]
+      ],
+      "__hash": "a06865456f0b9f13fbfa1c4d253b0d0358869692"
     }
   ]
 }
