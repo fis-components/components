@@ -796,7 +796,8 @@
         "topo@1.x.x",
         "isemail@1.x.x",
         "moment@2.x.x"
-      ]
+      ],
+      "__hash": "cf06c674d46b52d805c7082102a027c8892a0ea2"
     },
     {
       "version": "6.7.1",
