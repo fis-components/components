@@ -264,7 +264,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "5d3abacab46aee28d59664cfc12c003f9429d7f6"
     }
   ]
 }
