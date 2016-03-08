@@ -48,7 +48,8 @@
     },
     {
       "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash._baseclone@3.0.1"
+      "build": "rm package.json && npm install --prefix . lodash._baseclone@3.0.1",
+      "__hash": "919020dd22ac004558566efd8fcf0eff016785da"
     },
     {
       "version": "3.1.0",
