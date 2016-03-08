@@ -46,7 +46,8 @@
     },
     {
       "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.0.1"
+      "build": "rm package.json && npm install --prefix . lodash._basecallback@3.0.1",
+      "__hash": "85f21bec04cfb3ea14b1eed162d6425ea10f0b58"
     },
     {
       "version": "3.1.0",
