@@ -83,7 +83,8 @@
         "lodash._baseisequal@^3.0.0",
         "lodash._bindcallback@^3.0.0",
         "lodash.keys@^3.0.0"
-      ]
+      ],
+      "__hash": "3aee6a9a39fe761b6a3db35fc96043f9ea848ac2"
     },
     {
       "version": "3.2.0",
