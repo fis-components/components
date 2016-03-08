@@ -35,7 +35,8 @@
   "main": "lib/browser/index.js",
   "tags": [
     {
-      "version": "1.1.0"
+      "version": "1.1.0",
+      "__hash": "482762625d035357a2f0797ccbfeb61af0220c08"
     }
   ]
 }
