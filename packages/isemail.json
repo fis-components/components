@@ -40,7 +40,8 @@
     },
     {
       "version": "2.1.0",
-      "build": "rm package.json && npm install --prefix . isemail@2.1.0"
+      "build": "rm package.json && npm install --prefix . isemail@2.1.0",
+      "__hash": "fdcbbb2f83b4ca750f1dc62e97950b5053facc99"
     }
   ]
 }
