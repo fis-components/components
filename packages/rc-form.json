@@ -46,54 +46,72 @@
       "__hash": "ea77ce2b089be8430f3a52bbf3d0219aa22d4206"
     },
     {
-      "version": "0.13.0",
       "build": "rm package.json && npm install --prefix . rc-form@0.13.0",
       "dependencies": [
         "async-validator@1.x",
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
       ],
+      "version": "0.13.0",
       "__hash": "05113de31d7869f6bb023001bcf7a2b5ecc5ebe0"
     },
     {
-      "version": "0.13.2",
       "build": "rm package.json && npm install --prefix . rc-form@0.13.2",
       "dependencies": [
         "async-validator@1.x",
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
       ],
+      "version": "0.13.2",
       "__hash": "2fa0e38a7878bd12a68e55fa986ad8df9415eac2"
     },
     {
-      "version": "0.13.3",
       "build": "rm package.json && npm install --prefix . rc-form@0.13.3",
       "dependencies": [
         "async-validator@1.x",
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
       ],
+      "version": "0.13.3",
       "__hash": "77d5d208f8b70fef3386c28a2388bbfb07bdf0e7"
     },
     {
-      "version": "0.13.4",
       "build": "rm package.json && npm install --prefix . rc-form@0.13.4",
       "dependencies": [
         "async-validator@1.x",
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
       ],
+      "version": "0.13.4",
       "__hash": "eabc89b227f1e439b140b0e1fd1364b1cbc20069"
     },
     {
-      "version": "0.13.5",
       "build": "rm package.json && npm install --prefix . rc-form@0.13.5",
       "dependencies": [
         "async-validator@1.x",
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
       ],
+      "version": "0.13.5",
       "__hash": "af51f1b78c4ef118043ec83fa249f3a9147fadd8"
+    },
+    {
+      "version": "0.14.0",
+      "build": "rm package.json && npm install --prefix . rc-form@0.14.0",
+      "dependencies": [
+        "async-validator@1.x",
+        "dom-scroll-into-view@1.x",
+        "hoist-non-react-statics@1.x"
+      ]
+    },
+    {
+      "version": "0.14.1",
+      "build": "rm package.json && npm install --prefix . rc-form@0.14.1",
+      "dependencies": [
+        "async-validator@1.x",
+        "dom-scroll-into-view@1.x",
+        "hoist-non-react-statics@1.x"
+      ]
     }
   ]
 }

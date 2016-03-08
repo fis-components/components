@@ -200,14 +200,13 @@
       "__hash": "700bab9fd826464674d9d4abe6d3c656ad30c69a"
     },
     {
-      "version": "5.3.3",
-      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.3",
       "dependencies": [
         "classnames@2.x",
         "rc-align@2.x",
         "rc-animate@2.x",
         "rc-util@3.x"
       ],
+      "build": "rm package.json && npm install --prefix . rc-dialog@5.3.3",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -242,11 +241,57 @@
           "release": false
         }
       ],
+      "version": "5.3.3",
       "__hash": "3976c35b450ed59ca4a078b9aaf8f44acf7fd0ab"
     },
     {
-      "version": "5.3.4",
+      "dependencies": [
+        "classnames@2.x",
+        "rc-align@2.x",
+        "rc-animate@2.x",
+        "rc-util@3.x"
+      ],
       "build": "rm package.json && npm install --prefix . rc-dialog@5.3.4",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-dialog\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "5.3.4",
+      "__hash": "4f669bdffc726d5554009ff4004d37b2ba483f24"
+    },
+    {
+      "version": "5.4.0",
+      "build": "rm package.json && npm install --prefix . rc-dialog@5.4.0",
       "dependencies": [
         "classnames@2.x",
         "rc-align@2.x",
@@ -286,8 +331,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "4f669bdffc726d5554009ff4004d37b2ba483f24"
+      ]
     }
   ]
 }

@@ -57,7 +57,6 @@
       "__hash": "8982be034cb35a82647c951e5dc1e5dd96be6d9f"
     },
     {
-      "version": "1.1.1",
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.1.1",
       "dependencies": [
         "classnames@^2.2.1",
@@ -101,10 +100,10 @@
           "release": false
         }
       ],
+      "version": "1.1.1",
       "__hash": "bf86c1177fc06106990ef969a626c5f5d4151ab9"
     },
     {
-      "version": "1.1.2",
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.1.2",
       "dependencies": [
         "classnames@^2.2.1",
@@ -148,10 +147,10 @@
           "release": false
         }
       ],
+      "version": "1.1.2",
       "__hash": "5bee1d6a6115d0572a4ab26ccd2aa15f56ab383b"
     },
     {
-      "version": "1.1.3",
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.1.3",
       "dependencies": [
         "classnames@^2.2.1",
@@ -195,10 +194,10 @@
           "release": false
         }
       ],
+      "version": "1.1.3",
       "__hash": "3367d4a0370b6d15c2afd780d394aad12d1199a9"
     },
     {
-      "version": "1.1.4",
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.1.4",
       "dependencies": [
         "classnames@^2.2.1",
@@ -242,10 +241,10 @@
           "release": false
         }
       ],
+      "version": "1.1.4",
       "__hash": "f8d576a049ed095f0aecd3a61baaf19f94fe180b"
     },
     {
-      "version": "1.1.5",
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.1.5",
       "dependencies": [
         "classnames@^2.2.1",
@@ -289,7 +288,192 @@
           "release": false
         }
       ],
+      "version": "1.1.5",
       "__hash": "19591873a2b8d57449df54401bbadc3328b66ce4"
+    },
+    {
+      "version": "1.2.2",
+      "build": "rm package.json && npm install --prefix . rc-tree-select@1.2.2",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "object-assign@^4.0.1",
+        "rc-animate@^2.0.2",
+        "rc-tree@^1.1.0",
+        "rc-trigger@^1.0.6",
+        "rc-util@^3.1.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.3",
+      "build": "rm package.json && npm install --prefix . rc-tree-select@1.2.3",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "object-assign@^4.0.1",
+        "rc-animate@^2.0.2",
+        "rc-tree@^1.1.0",
+        "rc-trigger@^1.0.6",
+        "rc-util@^3.1.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.4",
+      "build": "rm package.json && npm install --prefix . rc-tree-select@1.2.4",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "object-assign@^4.0.1",
+        "rc-animate@^2.0.2",
+        "rc-tree@^1.1.0",
+        "rc-trigger@^1.0.6",
+        "rc-util@^3.1.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.2.5",
+      "build": "rm package.json && npm install --prefix . rc-tree-select@1.2.5",
+      "dependencies": [
+        "classnames@^2.2.1",
+        "object-assign@^4.0.1",
+        "rc-animate@^2.0.2",
+        "rc-tree@^1.1.0",
+        "rc-trigger@^1.0.6",
+        "rc-util@^3.1.2"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-tree-select\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

@@ -158,7 +158,6 @@
       "__hash": "210941bd5b89faba5590f4b427335895c61355a5"
     },
     {
-      "version": "2.4.4",
       "build": "rm package.json && npm install --prefix . rc-input-number@2.4.4",
       "mapping": [
         {
@@ -194,10 +193,10 @@
           "release": false
         }
       ],
+      "version": "2.4.4",
       "__hash": "a400f5162ae70102bd2fbb58f9d394b322a4c4c6"
     },
     {
-      "version": "2.4.5",
       "build": "rm package.json && npm install --prefix . rc-input-number@2.4.5",
       "mapping": [
         {
@@ -233,7 +232,84 @@
           "release": false
         }
       ],
+      "version": "2.4.5",
       "__hash": "cf58d3d601c8e4d94ee154d62f1e98a165fb4c48"
+    },
+    {
+      "version": "2.5.0",
+      "build": "rm package.json && npm install --prefix . rc-input-number@2.5.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.5.1",
+      "build": "rm package.json && npm install --prefix . rc-input-number@2.5.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-input-number\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
