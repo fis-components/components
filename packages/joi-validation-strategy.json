@@ -61,7 +61,8 @@
         "lodash.isempty@^3.0.4",
         "lodash.set@^3.7.4",
         "joi@>=5.1.0"
-      ]
+      ],
+      "__hash": "33f2971cc18c8c86438a424a3cedebb617babcbf"
     }
   ]
 }
