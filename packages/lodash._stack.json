@@ -54,7 +54,8 @@
     {
       "version": "4.1.1",
       "build": "rm package.json && npm install --prefix . lodash._stack@4.1.1",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "6777b455717ab976212609170dc366b9c5ea803e"
     }
   ]
 }
