@@ -48,7 +48,8 @@
     },
     {
       "version": "3.0.2",
-      "build": "rm package.json && npm install --prefix . lodash._baseassign@3.0.2"
+      "build": "rm package.json && npm install --prefix . lodash._baseassign@3.0.2",
+      "__hash": "f9a83da8342f24715362f64261b933dc8b0959e2"
     },
     {
       "version": "3.1.0",
