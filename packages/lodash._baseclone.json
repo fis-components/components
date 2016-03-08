@@ -119,7 +119,8 @@
       "build": "rm package.json && npm install --prefix . lodash._baseclone@4.5.1",
       "description": "The internal lodash function `baseClone` exported as a module.",
       "repos": "https://github.com/lodash/lodash.git",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "8df2c1bfbdf97e4e35a45ddcd08930631a433630"
     },
     {
       "version": "4.5.2",
