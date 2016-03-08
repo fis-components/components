@@ -44,7 +44,8 @@
       "dependencies": [
         "lodash._basefor@^3.0.0",
         "lodash.keys@^3.0.0"
-      ]
+      ],
+      "__hash": "62fa40d16c7195c8cc998bf9904ee24b9bf5e44a"
     },
     {
       "version": "3.0.1",
