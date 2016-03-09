@@ -533,7 +533,8 @@
           ]
         }
       },
-      "paths": {}
+      "paths": {},
+      "__hash": "5a7a26a0c624a8ae73715db55db2d813e3893caf"
     },
     {
       "build": "rm package.json && npm install --prefix . moment@2.8.4",
