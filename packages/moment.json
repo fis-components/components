@@ -613,7 +613,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "10f26d1f84c0d13fadeac42d14f9fd79e491094c"
     },
     {
       "version": "2.10.2",
