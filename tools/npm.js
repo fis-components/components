@@ -167,9 +167,9 @@ while (args.length) {
 
       var startFiles = [];
 
-      if (json.browser) {
-        if (typeof json.browser === 'object') {
-          item.paths = assign({}, json.browser);
+      if (item.browser) {
+        if (typeof item.browser === 'object') {
+          item.paths = assign({}, item.browser);
           item.main = item.paths[item.main] || item.main;
           item.main && startFiles.push(item.main);
 
@@ -205,7 +205,7 @@ while (args.length) {
 
           var ret = collect(pkgPath, startFiles);
           var deps = ret.deps = ret.deps.map(function(name) {
-            return json.browser[name] || name;
+            return item.browser[name] || name;
           });
 
           ret.enties.forEach(function(shorpath) {
@@ -256,7 +256,7 @@ while (args.length) {
           }));
         } else {
 
-          var main = json.browser.replace(/^\.\//, '').replace(/\/$/, '/index');
+          var main = item.browser.replace(/^\.\//, '').replace(/\/$/, '/index');
 
           if (!test('-f', path.join(pkgPath, main)) && test('-d', path.join(pkgPath, main))) {
             main = path.join(main, 'index');
@@ -276,10 +276,10 @@ while (args.length) {
             return ~ret.deps.indexOf(name);
           }));
 
-          item.main = json.browser;
+          item.main = item.browser;
         }
-      } else if (json.jspm) {
-        convertFromJspm(json, item, pkgName, pkgPath);
+      } else if (item.jspm) {
+        convertFromJspm(item, item, pkgName, pkgPath);
       } else if (test('-d', path.join(pkgPath, 'dist')) && !item.ignoreDIST) {
         var main = item.main.replace(/^\.\//, '').replace(/\/$/, '/index');
 
@@ -378,7 +378,7 @@ while (args.length) {
           main = path.join(main, 'index');
         }
 
-        // console.log(json, main)
+        // console.log(item, main)
         // console.log(main);
         startFiles.push(main);
         var ret = collect(pkgPath, startFiles);

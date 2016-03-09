@@ -1,15 +1,4 @@
 {
-  "build": "rm package.json && npm install --prefix . handsontable@0.23.0",
-  "name": "handsontable",
-  "description": "Spreadsheet-like data grid editor that provides copy/paste functionality compatible with Excel/Google Docs",
-  "repos": "https://github.com/handsontable/handsontable.git",
-  "tag": "master",
-  "reposType": "npm",
-  "dependencies": [
-    "moment@^2.9.0",
-    "pikaday@^1.3.2",
-    "zeroclipboard@^2.2.0"
-  ],
   "browser": null,
   "main": "handsontable.js",
   "mapping": [
@@ -44,11 +33,5 @@
   ],
   "paths": {
     "dist": "."
-  },
-  "tags": [
-    {
-      "version": "0.23.0",
-      "browser": null
-    }
-  ]
+  }
 }
