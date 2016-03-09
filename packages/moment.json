@@ -251,7 +251,8 @@
           "release": false
         }
       ],
-      "version": "2.5.0"
+      "version": "2.5.0",
+      "__hash": "74a003ba2bc9ea8a2db02bb9a637d848161c12b0"
     },
     {
       "build": "rm package.json && npm install --prefix . moment@2.5.1",
