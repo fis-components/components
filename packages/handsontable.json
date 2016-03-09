@@ -35,7 +35,8 @@
   "main": "./src/browser.js",
   "tags": [
     {
-      "version": "0.23.0"
+      "version": "0.23.0",
+      "__hash": "2ec8ce4e60a249fbb6afd53ac41d16564a379455"
     }
   ]
 }
