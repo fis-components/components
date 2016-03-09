@@ -51,7 +51,8 @@
     },
     {
       "version": "1.4.0",
-      "build": "rm package.json && npm install --prefix . pikaday@1.4.0"
+      "build": "rm package.json && npm install --prefix . pikaday@1.4.0",
+      "__hash": "3d4781d9e8d5374055a366d9b3cd0ebda32148c2"
     }
   ]
 }
