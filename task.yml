@@ -75,3 +75,4 @@ sync:
     - joi-validation-strategy
     - react-validation-mixin
     - handsontable@latest
+    - immutable@latest
