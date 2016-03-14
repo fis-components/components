@@ -1,0 +1,45 @@
+{
+  "build": "rm package.json && npm install --prefix . keycode@2.1.0",
+  "name": "keycode",
+  "description": "Convert between keyboard keycodes and keynames and vice versa.",
+  "repos": "https://github.com/timoxley/keycode.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/keycode\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/keycode\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.1.0"
+    },
+    {
+      "version": "2.1.1",
+      "build": "rm package.json && npm install --prefix . keycode@2.1.1"
+    }
+  ]
+}

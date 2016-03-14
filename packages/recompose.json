@@ -1,0 +1,193 @@
+{
+  "build": "rm package.json && npm install --prefix . recompose@0.15.0",
+  "name": "recompose",
+  "description": "A React utility belt for function components and higher-order components",
+  "repos": "https://github.com/acdlite/recompose.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "hoist-non-react-statics@^1.0.0",
+    "lodash@^4.0.0",
+    "react@^0.14.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(mapProps\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(createHelper\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(wrapDisplayName\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(getDisplayName\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(createElement\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(isReferentiallyTransparentFunctionComponent\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(isClassComponent\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(mapPropsOnChange\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(shallowEqual\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(withProps\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(withAttachedProps\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(defaultProps\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(renameProp\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(renameProps\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(flattenProp\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(withState\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(withReducer\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(branch\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(renderComponent\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(renderNothing\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(shouldUpdate\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(pure\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(onlyUpdateForKeys\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(onlyUpdateForPropTypes\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(withContext\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(getContext\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(doOnReceiveProps\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(lifecycle\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(toClass\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(setStatic\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(setPropTypes\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(setDisplayName\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(compose\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(createSink\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(componentFromProp\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(nest\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/recompose\\/(hoistStatics\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.15.0"
+    }
+  ]
+}

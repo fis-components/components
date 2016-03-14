@@ -125,6 +125,7 @@
       "build": "rm package.json && npm install --prefix . lodash@4.0.0",
       "description": "Lodash modular utilities.",
       "repos": "https://github.com/lodash/lodash.git",
+      "main": "index.js",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
@@ -154,8 +155,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "29e3990d0495fa8c4a67456c299ac32909843682"
+      "umd2commonjs": null
     },
     {
       "version": "4.0.1",
@@ -192,8 +192,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "5d56c602331a3cef4e14680b52f3462a60c8ea07"
+      "umd2commonjs": null
     },
     {
       "version": "4.1.0",
@@ -229,8 +228,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "6315f02b7d836a84d9d5a08b1023ce90ed175245"
+      "umd2commonjs": null
     },
     {
       "version": "4.2.0",
@@ -266,8 +264,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "2a64e8eb40d2323cadf759b5f2f0d6916e54f009"
+      "umd2commonjs": null
     },
     {
       "version": "4.2.1",
@@ -303,8 +300,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "2e36a1a075fa22b4362b02d704cc04f6e7c29e85"
+      "umd2commonjs": null
     },
     {
       "version": "4.3.0",
@@ -340,8 +336,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "b1d408d61359a1cf7c812d8b22d7c942e1eef6c8"
+      "umd2commonjs": null
     },
     {
       "version": "4.4.0",
@@ -377,8 +372,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "2d9cd2d25f543b2429d05874c6d713cdf848416d"
+      "umd2commonjs": null
     },
     {
       "version": "4.5.0",
@@ -414,8 +408,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "3dba3f4ba1135e3536c94eafb50a1454c1855806"
+      "umd2commonjs": null
     },
     {
       "version": "4.5.1",
@@ -451,8 +444,79 @@
           "release": false
         }
       ],
-      "umd2commonjs": null,
-      "__hash": "c949108c60f093ec3d5856273a57c2f701be7a1d"
+      "umd2commonjs": null
+    },
+    {
+      "version": "4.6.0",
+      "build": "rm package.json && npm install --prefix . lodash@4.6.0",
+      "description": "Lodash modular utilities.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "umd2commonjs": null
+    },
+    {
+      "version": "4.6.1",
+      "build": "rm package.json && npm install --prefix . lodash@4.6.1",
+      "description": "Lodash modular utilities.",
+      "repos": "https://github.com/lodash/lodash.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/lodash\\/(.*\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "umd2commonjs": null
     }
   ]
 }
