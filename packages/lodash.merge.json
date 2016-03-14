@@ -48,7 +48,7 @@
   "tags": [
     {
       "version": "3.3.0",
-      "__hash": "a81adf8d165cecf0fe5b8d8790ded8dcbda85ce7"
+      "__hash": "4b5fdc1230729791e66efbf36b58123dedfca1a2"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.merge@3.3.1",
