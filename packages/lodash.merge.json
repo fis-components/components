@@ -64,7 +64,7 @@
         "lodash.toplainobject@^3.0.0"
       ],
       "version": "3.3.1",
-      "__hash": "3492c955da43a268bc7486183e752153cf0a8d34"
+      "__hash": "63582bb82f1d61d754540fdf3737c1adb8849885"
     },
     {
       "build": "rm package.json && npm install --prefix . lodash.merge@3.3.2",
