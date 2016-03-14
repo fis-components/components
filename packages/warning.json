@@ -32,7 +32,7 @@
   "tags": [
     {
       "version": "1.0.2",
-      "__hash": "c4c7d9d510603c7099e0e5b2907e9ab988a1b716"
+      "__hash": "7bf25def543407b841b699e8014c30c9aa01bdb4"
     },
     {
       "build": "rm package.json && npm install --prefix . warning@2.0.0",
