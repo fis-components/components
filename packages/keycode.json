@@ -40,7 +40,8 @@
     },
     {
       "version": "2.1.1",
-      "build": "rm package.json && npm install --prefix . keycode@2.1.1"
+      "build": "rm package.json && npm install --prefix . keycode@2.1.1",
+      "__hash": "49c441cf60d101b628d4b7e338904a2718255962"
     }
   ]
 }
