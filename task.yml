@@ -76,4 +76,4 @@ sync:
     - react-validation-mixin
     - handsontable@latest
     - immutable@latest
-    material-ui@latest
+    - material-ui@latest
