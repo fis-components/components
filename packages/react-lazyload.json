@@ -48,7 +48,8 @@
     },
     {
       "version": "2.0.0-beta2",
-      "build": "rm package.json && npm install --prefix . react-lazyload@2.0.0-beta2"
+      "build": "rm package.json && npm install --prefix . react-lazyload@2.0.0-beta2",
+      "__hash": "731d7efbdf15ab1fb57b354385c0c90c614ce889"
     }
   ]
 }
