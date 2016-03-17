@@ -1,0 +1,52 @@
+{
+  "build": "rm package.json && npm install --prefix . react-lazyload@1.4.0",
+  "name": "react-lazyload",
+  "description": "Lazyload your Component, Image or anything matters the performance.",
+  "repos": "https://github.com/jasonslyvia/react-lazyload.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "react@^0.14.3",
+    "react-dom@^0.14.3"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-lazyload\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-lazyload\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.4.0"
+    },
+    {
+      "version": "2.0.0-beta1",
+      "build": "rm package.json && npm install --prefix . react-lazyload@2.0.0-beta1"
+    },
+    {
+      "version": "2.0.0-beta2",
+      "build": "rm package.json && npm install --prefix . react-lazyload@2.0.0-beta2"
+    }
+  ]
+}
