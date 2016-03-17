@@ -51,7 +51,7 @@
     {
       "build": "rm package.json && npm install --prefix . react-lazy-load@2.0.2",
       "version": "2.0.2",
-      "__hash": "0882f0f91ea62975f1bcbf611b92d3ae4d12bfd8"
+      "__hash": "c62a16906b73586a64e58198249df1323ac306a2"
     },
     {
       "version": "3.0.3",
