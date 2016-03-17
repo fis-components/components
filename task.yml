@@ -77,5 +77,4 @@ sync:
     - handsontable@latest
     - immutable@latest
     - material-ui@latest
-    - react-lazy-load
-    - react-lazyload
+    - eventlistener
