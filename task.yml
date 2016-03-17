@@ -78,3 +78,4 @@ sync:
     - immutable@latest
     - material-ui@latest
     - react-lazy-load
+    - react-lazyload
