@@ -79,3 +79,5 @@ sync:
     - material-ui@latest
     - eventlistener
     - rc-dialog
+    - rc-tabs
+    - rc-form
