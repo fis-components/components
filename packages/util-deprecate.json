@@ -31,6 +31,7 @@
   "tags": [
     {
       "version": "1.0.0",
+      "main": "node.js",
       "dependencies": [],
       "mapping": [
         {
@@ -42,7 +43,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(browser\\.js)$",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(node\\.js)$",
           "release": "$1"
         },
         {
@@ -60,7 +61,10 @@
       ]
     },
     {
+      "version": "1.0.1",
       "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1",
+      "main": "node.js",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -71,7 +75,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(browser\\.js)$",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(node\\.js)$",
           "release": "$1"
         },
         {
@@ -86,12 +90,13 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "1.0.1",
-      "dependencies": []
+      ]
     },
     {
+      "version": "1.0.2",
       "build": "rm package.json && npm install --prefix . util-deprecate@1.0.2",
+      "main": "node.js",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -102,7 +107,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(browser\\.js)$",
+          "reg": "^\\/node_modules\\/util-deprecate\\/(node\\.js)$",
           "release": "$1"
         },
         {
@@ -117,9 +122,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "1.0.2",
-      "dependencies": []
+      ]
     }
   ]
 }

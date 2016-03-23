@@ -406,13 +406,14 @@
       "__hash": "8ef45fa828ae0b7b233405d7a8f8fb0f98622ac7"
     },
     {
+      "version": "2.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-animate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-animate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -431,11 +432,10 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "2.0.0",
-      "__hash": "10761d0d844143f70ff7bd12004f3d9fd97cb143"
+      ]
     },
     {
+      "version": "2.0.1",
       "build": "rm package.json && npm install --prefix . rc-animate@2.0.1",
       "mapping": [
         {
@@ -443,7 +443,7 @@
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/rc-animate\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/rc-animate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -462,9 +462,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "version": "2.0.1",
-      "__hash": "8d7f0ebfaace1f5828fd1e40361b8e5ca27f4941"
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . rc-animate@2.0.2",
@@ -498,7 +496,6 @@
       "__hash": "efd1d5da9104a4dd381116dc0930c3fb0e474601"
     },
     {
-      "version": "2.0.3",
       "build": "rm package.json && npm install --prefix . rc-animate@2.0.3",
       "mapping": [
         {
@@ -526,6 +523,7 @@
           "release": false
         }
       ],
+      "version": "2.0.3",
       "__hash": "089725eaf4389c8795908f9df62f301da1cd1ef6"
     }
   ]
