@@ -365,7 +365,8 @@
       "version": "3.11.2",
       "dependencies": [
         "object-assign@^4.0.1"
-      ]
+      ],
+      "__hash": "2e1081e86a4a6f267ab262de9ceab4a2b003f523"
     },
     {
       "version": "3.11.3",
