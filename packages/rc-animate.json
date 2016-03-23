@@ -154,7 +154,7 @@
         }
       ],
       "version": "1.2.2",
-      "__hash": "c7fcb781871058fa5a9871ca196ddc5deeea528a"
+      "__hash": "008df0dbab8d249762bdb32134dc02634995de9b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.3",
