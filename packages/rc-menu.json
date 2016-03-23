@@ -1195,7 +1195,7 @@
         }
       ],
       "version": "4.9.0",
-      "__hash": "3dbb73de9d54d7e6d63e528c48eb13c92adc50b3"
+      "__hash": "0f1877789c37621d729a327ba86f44974eaec1e6"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-menu@4.10.2",
