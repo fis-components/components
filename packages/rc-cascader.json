@@ -186,8 +186,92 @@
       "__hash": "ce144a357d6dab1511b04128c4ad7c9abd5c91c5"
     },
     {
-      "version": "0.9.2",
       "build": "rm package.json && npm install --prefix . rc-cascader@0.9.2",
+      "dependencies": [
+        "array-tree-filter@^1.0.0",
+        "rc-trigger@^1.0.6"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.9.2"
+    },
+    {
+      "build": "rm package.json && npm install --prefix . rc-cascader@0.9.5",
+      "dependencies": [
+        "array-tree-filter@^1.0.0",
+        "rc-trigger@^1.0.6"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/(assets\\/\\*\\.css)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-cascader\\/assets\\/(.*)$",
+          "release": "assets/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.9.5"
+    },
+    {
+      "version": "0.9.6",
+      "build": "rm package.json && npm install --prefix . rc-cascader@0.9.6",
       "dependencies": [
         "array-tree-filter@^1.0.0",
         "rc-trigger@^1.0.6"
@@ -228,8 +312,8 @@
       ]
     },
     {
-      "version": "0.9.5",
-      "build": "rm package.json && npm install --prefix . rc-cascader@0.9.5",
+      "version": "0.9.7",
+      "build": "rm package.json && npm install --prefix . rc-cascader@0.9.7",
       "dependencies": [
         "array-tree-filter@^1.0.0",
         "rc-trigger@^1.0.6"

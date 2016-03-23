@@ -118,9 +118,7 @@
       "__hash": "a0707a9ac2b11b077c0be2aefe43beee93cebbee"
     },
     {
-      "version": "1.1.0",
       "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.1.0",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -147,8 +145,43 @@
           "release": false
         }
       ],
+      "version": "1.1.0",
+      "dependencies": [],
       "main": "index.js",
       "__hash": "c62829d6c93b04bfac70c4bd4ff332225a43ce52"
+    },
+    {
+      "version": "1.2.0",
+      "build": "rm package.json && npm install --prefix . dom-scroll-into-view@1.2.0",
+      "repos": "https://github.com/yiminghe/dom-scroll-into-view.git",
+      "main": "./lib/index",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/dom-scroll-into-view\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/dom-scroll-into-view\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

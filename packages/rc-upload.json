@@ -145,7 +145,6 @@
       "__hash": "3900278795d024de564ba91ce311b529a7abf2f2"
     },
     {
-      "version": "1.8.0",
       "build": "rm package.json && npm install --prefix . rc-upload@1.8.0",
       "mapping": [
         {
@@ -173,7 +172,38 @@
           "release": false
         }
       ],
+      "version": "1.8.0",
       "__hash": "700a6bd08b076ba96037f785b14fb0a98621c431"
+    },
+    {
+      "version": "1.8.1",
+      "build": "rm package.json && npm install --prefix . rc-upload@1.8.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-upload\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/rc-upload\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }
