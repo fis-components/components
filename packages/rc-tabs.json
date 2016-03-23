@@ -189,7 +189,7 @@
         }
       ],
       "version": "5.6.0",
-      "__hash": "3ca17315e733ac2f24e3e53ff8633ee5e30211ea"
+      "__hash": "7bc6746b84782d8b59418c29387d069dd01bdbee"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tabs@5.7.0",
