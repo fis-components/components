@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1"
+      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1",
+      "__hash": "97fc07f8156274fd407de50fd1af74173256b07b"
     },
     {
       "version": "1.0.2",
