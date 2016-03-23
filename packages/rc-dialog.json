@@ -417,7 +417,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "581ae8686223f2daed48eb2cdc8ad70ac977ea36"
     },
     {
       "version": "6.0.1",
