@@ -216,7 +216,7 @@
         }
       ],
       "version": "1.2.4",
-      "__hash": "de9c03ce110bedbd291d4fbb585d9fd2b27ce947"
+      "__hash": "42d4aec1e9aa75054c0889f362d24cc297999d51"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-animate@1.2.5",
