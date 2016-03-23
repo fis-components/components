@@ -142,7 +142,7 @@
         }
       ],
       "version": "1.7.2",
-      "__hash": "3900278795d024de564ba91ce311b529a7abf2f2"
+      "__hash": "45ec5b24ac0f71850c6e3a6d0b23d159b0a42047"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-upload@1.8.0",
