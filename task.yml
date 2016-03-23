@@ -48,7 +48,7 @@ sync:
     - fit-cropper@latest
     - formsy-material-ui@latest
     - material-ui@~0.14.3
-    - antd@0.12.8
+    - antd
     - reflux
     - react-dropzone-component
     - vuex@latest
