@@ -34,7 +34,7 @@
   "tags": [
     {
       "version": "1.4.0",
-      "__hash": "de571978836a4e0111cd7976f27b07152ddfde15"
+      "__hash": "82e49311200af2377ff4fc9cd37948cdfe893efa"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.2",
