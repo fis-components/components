@@ -102,7 +102,8 @@
         "async-validator@1.x",
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
-      ]
+      ],
+      "__hash": "91b59bfecdce26b2036d0ad4af5b17de00a11484"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-form@0.14.0",
