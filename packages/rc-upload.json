@@ -49,7 +49,7 @@
         }
       ],
       "version": "1.6.7-beta",
-      "__hash": "5a03bcb3d24be0d8c4e913884d598862fd40b9b4"
+      "__hash": "20e4a30037a8a9beb146a17ae8a6516c5c30918a"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-upload@1.7.0",
