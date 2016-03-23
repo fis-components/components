@@ -341,7 +341,7 @@
         }
       ],
       "version": "1.0.6",
-      "__hash": "d873e23984ceaed73eadf7ca25e2a8067844603d"
+      "__hash": "b1c27739367cfc73fb9623f5fabdf956f4464250"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-trigger@1.1.0",
