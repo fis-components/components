@@ -26,7 +26,7 @@
   "tags": [
     {
       "version": "0.1.0",
-      "__hash": "2c4c527e362eb1a1fa0fc47fdd9cf974cc395011"
+      "__hash": "4ebc9abddcb2528e5efeda83c72334a68274c706"
     },
     {
       "build": "rm package.json && npm install --prefix . object-assign@0.1.1",
