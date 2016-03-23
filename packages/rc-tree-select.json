@@ -101,7 +101,7 @@
         }
       ],
       "version": "1.1.1",
-      "__hash": "bf86c1177fc06106990ef969a626c5f5d4151ab9"
+      "__hash": "d6840ff5abf8de014cafcd387c24f7b7205e7381"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.1.2",
