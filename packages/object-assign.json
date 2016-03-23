@@ -81,7 +81,7 @@
     {
       "build": "rm package.json && npm install --prefix . object-assign@2.1.1",
       "version": "2.1.1",
-      "__hash": "e1fe5a58dd41374b4067906d843962afcd201cef"
+      "__hash": "713163a88ab2171fcab95a88e3aad7842d7a1dd0"
     },
     {
       "repos": "https://github.com/sindresorhus/object-assign",
