@@ -458,7 +458,8 @@
           "release": false
         }
       ],
-      "version": "5.10.0"
+      "version": "5.10.0",
+      "__hash": "42e752aaf40258075e66f48c773641561a29e7a3"
     },
     {
       "description": "React Select",
