@@ -225,7 +225,8 @@
           "release": false
         }
       ],
-      "version": "0.9.2"
+      "version": "0.9.2",
+      "__hash": "8cdc3330e3582c6fa3b9efea916a1079450cf561"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-cascader@0.9.5",
