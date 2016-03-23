@@ -78,3 +78,4 @@ sync:
     - immutable@latest
     - material-ui@latest
     - eventlistener
+    - rc-dialog
