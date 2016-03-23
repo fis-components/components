@@ -76,7 +76,7 @@
     {
       "build": "rm package.json && npm install --prefix . object-assign@2.0.0",
       "version": "2.0.0",
-      "__hash": "34727eca77e794b769ab9af32d8edc52fa7230e3"
+      "__hash": "12fe6d729b2f467e9501228aba22d66e0996eaf8"
     },
     {
       "build": "rm package.json && npm install --prefix . object-assign@2.1.1",
