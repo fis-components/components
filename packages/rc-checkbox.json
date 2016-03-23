@@ -210,7 +210,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "bf8d22e6ce40db3726f364f89370db25e203ec47"
     },
     {
       "version": "1.3.2",
