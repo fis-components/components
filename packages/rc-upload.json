@@ -80,7 +80,7 @@
         }
       ],
       "version": "1.7.0",
-      "__hash": "96d4bc16911414255914d39adcb180de4e37d70a"
+      "__hash": "b07fc8a5941ee61531ee869d90b98c5d8e6d8114"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-upload@1.7.1",
