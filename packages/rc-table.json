@@ -323,7 +323,8 @@
       "version": "3.11.1",
       "dependencies": [
         "object-assign@^4.0.1"
-      ]
+      ],
+      "__hash": "f02ed672c6d9620165d5e7e7956cd5785035efd3"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-table@3.11.2",
