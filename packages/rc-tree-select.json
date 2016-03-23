@@ -429,7 +429,8 @@
           "release": false
         }
       ],
-      "version": "1.2.4"
+      "version": "1.2.4",
+      "__hash": "602711d88cbdcd4c8968fa940bce89284bb81a1f"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.2.5",
