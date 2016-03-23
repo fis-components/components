@@ -44,7 +44,7 @@
   "tags": [
     {
       "version": "0.3.4",
-      "__hash": "9ce949a9baf4d584562c04716ffd151a332fdbc2"
+      "__hash": "b25a484e58df03d23c777103bb02f4fd3df0ebb1"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree-select@0.3.5",
