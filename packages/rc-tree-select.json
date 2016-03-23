@@ -49,7 +49,7 @@
     {
       "build": "rm package.json && npm install --prefix . rc-tree-select@0.3.5",
       "version": "0.3.5",
-      "__hash": "7733ca085bef35c536ddf729d1e8fdd1780713bc"
+      "__hash": "3e1e90388d7f5847e692d66ac242f8fc3d6de5b5"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree-select@0.3.6",
