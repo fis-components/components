@@ -112,7 +112,8 @@
         "dom-scroll-into-view@1.x",
         "hoist-non-react-statics@1.x"
       ],
-      "version": "0.14.0"
+      "version": "0.14.0",
+      "__hash": "609b29c7fee615583bb742c9e1f0f30c7f135ac2"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-form@0.14.1",
