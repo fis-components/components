@@ -39,7 +39,7 @@
     {
       "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.2",
       "version": "1.4.2",
-      "__hash": "dcfaec3595df89d35b0e340941f66011c3703e78"
+      "__hash": "7ff6891900659f0eac1db75fce2db0e8ff1228e7"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.3",
