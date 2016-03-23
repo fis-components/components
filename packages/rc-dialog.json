@@ -331,7 +331,8 @@
           "release": false
         }
       ],
-      "version": "5.4.0"
+      "version": "5.4.0",
+      "__hash": "74d07fe94bc5c0c0b05b654b25f1f53d84d07a96"
     },
     {
       "version": "6.0.0-beta.1",
