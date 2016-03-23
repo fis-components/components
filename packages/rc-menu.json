@@ -1273,7 +1273,7 @@
         }
       ],
       "version": "4.10.3",
-      "__hash": "3e664c29d6134b40d5a87efe1c8c1ab2eaf7089e"
+      "__hash": "54d57a5e721a90bce700bfe6a578f89b9b2f044b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-menu@4.10.4",
