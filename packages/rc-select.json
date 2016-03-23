@@ -87,7 +87,7 @@
     {
       "build": "rm package.json && npm install --prefix . rc-select@5.3.1",
       "version": "5.3.1",
-      "__hash": "7c0cb3bd714bffa36075651022f17db5592d108a"
+      "__hash": "17e6ee07edf86399963c79e36d4cacceb6f0bdc4"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-select@5.4.0",
