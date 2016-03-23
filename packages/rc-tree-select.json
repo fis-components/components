@@ -476,7 +476,8 @@
           "release": false
         }
       ],
-      "version": "1.2.5"
+      "version": "1.2.5",
+      "__hash": "c67c1b560cea18e424ae1e9900b5fae3b060deb1"
     },
     {
       "version": "1.4.1",
