@@ -242,7 +242,7 @@
         }
       ],
       "version": "1.1.4",
-      "__hash": "f8d576a049ed095f0aecd3a61baaf19f94fe180b"
+      "__hash": "b7e94ea966881476a5d96ec9fb1c3d84b148a1cf"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-tree-select@1.1.5",
