@@ -113,7 +113,8 @@
         }
       ],
       "version": "3.0.0",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "d9c8f82e72e97bdcb075cf498bc1b7cfc6047808"
     },
     {
       "version": "4.0.0",
