@@ -30,7 +30,7 @@
   "tags": [
     {
       "version": "1.6.6",
-      "__hash": "7910cc4d5faf729252c2bdc169d55e3130868d2e"
+      "__hash": "3dd22ec6d6b68f0dd2fe05673cc27c92e866985e"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-upload@1.6.7-beta",
