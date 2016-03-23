@@ -268,7 +268,8 @@
           "release": false
         }
       ],
-      "version": "0.9.5"
+      "version": "0.9.5",
+      "__hash": "f07e5040bbe1bb8a40ac5b3594b403fb08ab53a5"
     },
     {
       "version": "0.9.6",
