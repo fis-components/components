@@ -271,7 +271,8 @@
           "release": false
         }
       ],
-      "version": "2.5.0"
+      "version": "2.5.0",
+      "__hash": "151c71be82aa9a5afaf787db6fbf6cbd48dcc37b"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-input-number@2.5.1",
