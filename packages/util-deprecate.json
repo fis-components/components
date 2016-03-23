@@ -1,14 +1,19 @@
 {
+  "build": "rm package.json && npm install --prefix . util-deprecate@1.0.0",
   "name": "util-deprecate",
   "description": "The Node.js `util.deprecate()` function with browser support",
   "repos": "https://github.com/TooTallNate/util-deprecate.git",
   "main": "browser.js",
   "tag": "master",
   "reposType": "npm",
-  "build": "rm package.json && npm install --prefix . util-deprecate@1.0.0",
+  "dependencies": [],
   "mapping": [
     {
       "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
       "release": false
     },
     {
@@ -30,102 +35,15 @@
   ],
   "tags": [
     {
-      "version": "1.0.0",
-      "main": "node.js",
-      "dependencies": [],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(node\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "__hash": "c0bf23da56151dff4c0e32f239be11fb53e82245"
+      "version": "1.0.0"
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1",
-      "main": "node.js",
-      "dependencies": [],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(node\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "__hash": "ea69a7a49516c9c12ff3948d099d0041ad9666e7"
+      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.1"
     },
     {
       "version": "1.0.2",
-      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.2",
-      "main": "node.js",
-      "dependencies": [],
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/util-deprecate\\/(node\\.js)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "__hash": "927e03a0d0d78dfacb09262926433db832313061"
+      "build": "rm package.json && npm install --prefix . util-deprecate@1.0.2"
     }
   ]
 }

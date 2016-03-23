@@ -104,6 +104,7 @@ while (args.length) {
     }
 
     json.main && (item.main = json.main);
+    json.browser && (item.browser = json.browser);
     item.tag = 'master';
     item.reposType = 'npm';
     json.files && (item.files = json.files);
@@ -465,6 +466,7 @@ while (args.length) {
 
     delete item.files;
     delete item.ignoreDIST;
+    delete item.browser;
     items.push(item);
   });
 
