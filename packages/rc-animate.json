@@ -463,7 +463,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "f5f2fd18590a5b6e2a8d5cafa1502045779a27fe"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-animate@2.0.2",
