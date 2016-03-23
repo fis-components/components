@@ -1117,7 +1117,7 @@
         }
       ],
       "version": "4.8.3",
-      "__hash": "f95c7b87c8113cd32401656962206feed1b54477"
+      "__hash": "7eb51991270147f1c7b7105457479adcfa0e2c14"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-menu@4.8.4",
