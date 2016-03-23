@@ -78,7 +78,7 @@
         }
       ],
       "version": "1.4.3",
-      "__hash": "2163afc658ace2a457d6f4d6ce4918f06186ea35"
+      "__hash": "0f0da1a93e7efc44fb401529ed6e7fb0bfa2623c"
     },
     {
       "build": "rm package.json && npm install --prefix . rc-dropdown@1.4.4",
