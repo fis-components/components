@@ -49,7 +49,8 @@
   ],
   "tags": [
     {
-      "version": "3.2.1"
+      "version": "3.2.1",
+      "__hash": "6b78123e8ac446511b5cbdf5dca790b209197ab5"
     },
     {
       "version": "3.3.0",
