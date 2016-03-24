@@ -1,507 +1,62 @@
 {
-  "repos": "https://github.com/rackt/redux.git",
+  "build": "rm package.json && npm install --prefix . redux@3.2.1",
   "name": "redux",
-  "main": "redux.js",
-  "build": "rm package.json && npm install --prefix . redux@3.0.4",
+  "description": "Predictable state container for JavaScript apps",
+  "repos": "https://github.com/rackt/redux.git",
+  "main": "lib/index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "lodash@^4.2.1"
+  ],
   "mapping": [
     {
-      "reg": "\\bmin\\b",
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
       "release": false
     },
     {
-      "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
+      "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/redux\\/(es)$",
       "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
+      "release": "dist/$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/redux\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/redux\\/src\\/(.*)$",
+      "release": "src/$1"
     },
     {
       "reg": "^\\/README\\.md$",
       "release": "$&"
     },
     {
-      "reg": "^.*$",
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
       "release": false
     }
   ],
   "tags": [
     {
-      "version": "v3.0.4",
-      "__hash": "568049d576c5a9a20837564bee44ba33e92f2f6b"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.0.5",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.0.5",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "00095157612a5ef3761dfe77e2291f4d132a4a02"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.0.6",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.0.6",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "2fffe266b1e19efc6a118682b78daf121837b9b9"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.0",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.0",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "ff4ad8c7cd455abfcd664a0a28298ca6497ec4cf"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.1",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.1",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "2f9c03c384a6af89f4e1046c5d281757f9892c66"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.2",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.2",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "b22d5c46d98b9880b899aa47aaca2ea3a6f5dc91"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.3",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.3",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "06f236d73b8ade345de2fdd03e4a90a9da630e6f"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.4",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.4",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "b542430bbabc414ceef9b629cd1c9f8b235751b2"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.5",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.5",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "b066b570377eda4365c5565e9e0d9b5353b2ed3d"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.6",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.6",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "1216c7f7dd84163267078ba48a7febb93198c16d"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.1.7",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.1.7",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "4199df033173c285e2806a44483c945137cc658a"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.2.0",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.2.0",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "5e6dacbe201908f2d0921014085d3e3b9685ecd3"
-    },
-    {
-      "main": "redux",
-      "build": "rm package.json && npm install --prefix . redux@3.2.1",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/(?:test|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
-      "version": "3.2.1",
-      "description": "Predictable state container for JavaScript apps",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "a0f25f2e26447651e754b5ad4b89b2d168cb893c"
+      "version": "3.2.1"
     },
     {
       "version": "3.3.0",
       "build": "rm package.json && npm install --prefix . redux@3.3.0",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
+      "dependencies": [
+        "lodash@^4.2.0"
+      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -513,7 +68,15 @@
         },
         {
           "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
+          "release": "dist/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/src\\/(.*)$",
+          "release": "src/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -527,20 +90,14 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "0c14005a5df846c2c857a8535bd7e1047963cd05"
+      ]
     },
     {
       "version": "3.3.1",
       "build": "rm package.json && npm install --prefix . redux@3.3.1",
-      "description": "Predictable state container for JavaScript apps",
-      "main": "redux",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
+      "dependencies": [
+        "lodash@^4.2.0"
+      ],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -552,7 +109,19 @@
         },
         {
           "reg": "^\\/node_modules\\/redux\\/dist\\/(.*)$",
-          "release": "$1"
+          "release": "dist/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/es\\/(.*)$",
+          "release": "es/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/redux\\/src\\/(.*)$",
+          "release": "src/$1"
         },
         {
           "reg": "^\\/README\\.md$",
@@ -566,11 +135,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "4b0daaaa32ad7d7f6de454a88ff054eb6ef97a4c"
+      ]
     }
   ]
 }
