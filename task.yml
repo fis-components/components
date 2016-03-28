@@ -81,3 +81,4 @@ sync:
     - rc-dialog
     - rc-tabs
     - rc-form
+    - react-router-redux
