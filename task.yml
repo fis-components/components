@@ -82,3 +82,4 @@ sync:
     - rc-tabs
     - rc-form
     - react-router-redux
+    - react-router-component
