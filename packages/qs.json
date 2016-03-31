@@ -58,7 +58,8 @@
       "description": "A querystring parser that supports nesting and arrays, with a depth limit",
       "tag": "master",
       "reposType": "npm",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "e3014e9e5fb91e0324e523085204f443be48ec00"
     },
     {
       "version": "v5.0.0",
