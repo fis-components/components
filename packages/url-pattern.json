@@ -1,0 +1,41 @@
+{
+  "build": "rm package.json && npm install --prefix . url-pattern@0.10.2",
+  "name": "url-pattern",
+  "description": "easier than regex string matching patterns for urls, domains, filepaths and other strings. turn strings into data or data into strings.",
+  "repos": "https://github.com/snd/url-pattern.git",
+  "main": "lib/url-pattern",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/url-pattern\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/url-pattern\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.10.2"
+    }
+  ]
+}
