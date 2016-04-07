@@ -1,6 +1,8 @@
 FIS 组件生态   [![Build Status](https://travis-ci.org/fis-components/components.svg?branch=master)](https://travis-ci.org/fis-components/components)
 ===========
 
+## 建议直接使用 npm + [fis3-hook-node_modoules](https://github.com/fex-team/fis3-hook-node_modules) ，目前已基本文档。
+
 ![](./install.png)
 ![](./sample.png)
 
