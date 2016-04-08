@@ -83,3 +83,4 @@ sync:
     - rc-form
     - react-router-redux
     - react-router-component
+    - jquery-upload-file
