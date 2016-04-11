@@ -138,7 +138,7 @@
         },
         {
           "reg": "^\\/node_modules\\/zrender\\/lib\\/(.*)$",
-          "release": "lib/$1"
+          "release": "$1"
         },
         {
           "reg": "^\\/README\\.md$",
