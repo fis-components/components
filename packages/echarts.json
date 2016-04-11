@@ -81,7 +81,8 @@
         }
       ],
       "main": "index",
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "e7d4750c69eb8b9ebda8552917e5957952565b7e"
     }
   ]
 }
