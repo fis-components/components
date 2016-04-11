@@ -31,15 +31,15 @@
   "tags": [
     {
       "version": "2.1.10",
-      "__hash": "53e5a4b9f1fc06762a79bfbf0b7f1af3846d9865"
+      "__hash": "afab0bebd6f43ee8601f2e9b7e836767ce77ab03"
     },
     {
       "version": "2.2.7",
-      "__hash": "a483e165a791fca3186ae2b0658bb7ee877ca1cf"
+      "__hash": "f72b26ff16042e999799c997d491efea252e54b0"
     },
     {
       "version": "3.0.2",
-      "__hash": "875e16fe1aa3dcef95b667dae5298cd6400ede34"
+      "__hash": "f2a33ad29cc6aa9383c39082ca6e80dc3ad59fae"
     },
     {
       "version": "3.1.6",
@@ -81,7 +81,8 @@
         }
       ],
       "main": "index",
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "e7d4750c69eb8b9ebda8552917e5957952565b7e"
     }
   ]
 }

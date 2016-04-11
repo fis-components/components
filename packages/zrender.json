@@ -28,11 +28,11 @@
   "tags": [
     {
       "version": "2.0.6",
-      "__hash": "df16e610886d628521515697c222e7997cef4525"
+      "__hash": "d041927e4cf7f59296d1c16d9f3764851cb50404"
     },
     {
       "version": "2.1.1",
-      "__hash": "e2962fdf1acf5e99dadfb2dd10d0792a0ddbd8ab"
+      "__hash": "6efcee61dbbd52a746f432a7c280e8f56f9e765b"
     },
     {
       "protocol": null,
@@ -75,7 +75,7 @@
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
-      "__hash": "451f933fb9483f9f54c1ba29af8f57def3cbc4f7"
+      "__hash": "1f97ab67975610de97c46cb04e9f5447e4be6365"
     },
     {
       "protocol": null,
@@ -117,7 +117,8 @@
       "description": "A lightweight canvas library.",
       "tag": "master",
       "reposType": "npm",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "2464db08cc7ad41de07e3afdddeb5db740e881d8"
     },
     {
       "version": "3.0.7",
@@ -155,7 +156,8 @@
       ],
       "protocol": null,
       "github": null,
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "f38112689a97957e25babad630b2be3a3f55a661"
     }
   ]
 }
