@@ -40,6 +40,48 @@
     {
       "version": "3.0.2",
       "__hash": "875e16fe1aa3dcef95b667dae5298cd6400ede34"
+    },
+    {
+      "version": "3.1.6",
+      "build": "rm package.json && npm install --prefix . echarts@3.1.6",
+      "description": "A powerful charting and visualization library for browser",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "zrender@^3.0.7"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index",
+      "umd2commonjs": null
     }
   ]
 }

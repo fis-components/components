@@ -78,13 +78,10 @@
       "__hash": "451f933fb9483f9f54c1ba29af8f57def3cbc4f7"
     },
     {
-      "version": "3.0.1",
-      "build": "rm package.json && npm install --prefix . zrender@3.0.1",
-      "description": "A lightweight canvas library.",
+      "protocol": null,
+      "github": null,
       "main": "build/zrender.min.js",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
+      "umd2commonjs": null,
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -101,6 +98,47 @@
         {
           "reg": "^\\/node_modules\\/zrender\\/src\\/(.*)$",
           "release": "src/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . zrender@3.0.1",
+      "description": "A lightweight canvas library.",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": []
+    },
+    {
+      "version": "3.0.7",
+      "build": "rm package.json && npm install --prefix . zrender@3.0.7",
+      "description": "A lightweight canvas library.",
+      "main": "lib/zrender.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/zrender\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/zrender\\/lib\\/(.*)$",
+          "release": "lib/$1"
         },
         {
           "reg": "^\\/README\\.md$",
