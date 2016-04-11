@@ -117,7 +117,8 @@
       "description": "A lightweight canvas library.",
       "tag": "master",
       "reposType": "npm",
-      "dependencies": []
+      "dependencies": [],
+      "__hash": "2464db08cc7ad41de07e3afdddeb5db740e881d8"
     },
     {
       "version": "3.0.7",
