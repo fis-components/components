@@ -49,7 +49,8 @@
     {
       "version": "0.2.1",
       "build": "rm package.json && npm install --prefix . d3-sankey@0.2.1",
-      "repos": "https://github.com/d3/d3-sankey.git"
+      "repos": "https://github.com/d3/d3-sankey.git",
+      "__hash": "8ae25ca02ae4d78ca1ee43adce20794f88975414"
     }
   ]
 }
