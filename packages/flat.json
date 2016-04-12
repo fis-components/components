@@ -40,7 +40,8 @@
     },
     {
       "version": "1.6.1",
-      "build": "rm package.json && npm install --prefix . flat@1.6.1"
+      "build": "rm package.json && npm install --prefix . flat@1.6.1",
+      "__hash": "b85af1ca66be012a89109e82000694782c65c407"
     }
   ]
 }
