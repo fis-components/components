@@ -84,3 +84,4 @@ sync:
     - react-router-redux
     - react-router-component
     - json2csv@latest
+    - d3-sankey
