@@ -85,3 +85,4 @@ sync:
     - react-router-component
     - json2csv@latest
     - d3-sankey
+    - xlsx@latest
