@@ -1,5 +1,5 @@
 {
-  "main": "xlsx",
+  "main": "xlsx.core.min.js",
   "mapping": [
     {
       "reg": "__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
