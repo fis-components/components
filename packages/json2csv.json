@@ -1,0 +1,44 @@
+{
+  "build": "rm package.json && npm install --prefix . json2csv@3.2.0",
+  "name": "json2csv",
+  "description": "Convert JSON to CSV",
+  "repos": "https://github.com/zemirco/json2csv.git",
+  "main": "lib/json2csv.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "flat@^1.6.0",
+    "lodash.get@^3.7.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/json2csv\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/json2csv\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "3.2.0"
+    }
+  ]
+}
