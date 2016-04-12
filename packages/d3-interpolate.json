@@ -42,7 +42,8 @@
     },
     {
       "version": "0.2.1",
-      "build": "rm package.json && npm install --prefix . d3-interpolate@0.2.1"
+      "build": "rm package.json && npm install --prefix . d3-interpolate@0.2.1",
+      "__hash": "bce3c488a0e52c743c583afae53ae9a416d0dc24"
     }
   ]
 }
