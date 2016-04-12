@@ -43,7 +43,8 @@
     },
     {
       "version": "0.2.0",
-      "build": "rm package.json && npm install --prefix . d3-sankey@0.2.0"
+      "build": "rm package.json && npm install --prefix . d3-sankey@0.2.0",
+      "__hash": "65a210a3a97da88e7c54f8a04888a036b85d3b67"
     },
     {
       "version": "0.2.1",
