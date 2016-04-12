@@ -1,0 +1,44 @@
+{
+  "build": "rm package.json && npm install --prefix . xlsx@0.8.0",
+  "name": "xlsx",
+  "description": "Excel (XLSB/XLSX/XLSM/XLS/XML) and ODS spreadsheet parser and writer",
+  "repos": "https://github.com/SheetJS/js-xlsx.git",
+  "main": "xlsx",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/xlsx\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/xlsx\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "paths": {
+    "dist": "."
+  },
+  "tags": [
+    {
+      "version": "0.8.0"
+    }
+  ]
+}
