@@ -40,7 +40,8 @@
     },
     {
       "version": "0.4.1",
-      "build": "rm package.json && npm install --prefix . d3-arrays@0.4.1"
+      "build": "rm package.json && npm install --prefix . d3-arrays@0.4.1",
+      "__hash": "52f8e4c19d138c3f1fa708dad515dc21972908d0"
     }
   ]
 }
