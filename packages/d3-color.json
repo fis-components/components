@@ -45,7 +45,8 @@
     },
     {
       "version": "0.3.3",
-      "build": "rm package.json && npm install --prefix . d3-color@0.3.3"
+      "build": "rm package.json && npm install --prefix . d3-color@0.3.3",
+      "__hash": "95cdcc7a44eea5d689191dd8623723b0fd05df8f"
     },
     {
       "version": "0.3.4",
