@@ -136,7 +136,8 @@
     {
       "version": "2.5.0",
       "build": "rm package.json && npm install --prefix . immutable@2.5.0",
-      "main": "Immutable.js"
+      "main": "Immutable.js",
+      "__hash": "2d3103f6a58bbef050badcf764b6a27a09b1aa58"
     },
     {
       "version": "2.5.1",
