@@ -222,7 +222,8 @@
     },
     {
       "version": "3.6.1",
-      "build": "rm package.json && npm install --prefix . immutable@3.6.1"
+      "build": "rm package.json && npm install --prefix . immutable@3.6.1",
+      "__hash": "e568f2686c5f4ac6bd7a535401815c0443fe117b"
     },
     {
       "version": "3.6.2",
