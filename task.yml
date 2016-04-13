@@ -86,4 +86,5 @@ sync:
     - json2csv@latest
     - xlsx@latest
     - d3-sankey
+    - react-immutable-render-mixin
    
