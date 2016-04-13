@@ -124,7 +124,8 @@
     },
     {
       "version": "15.0.0-rc.2",
-      "build": "rm package.json && npm install --prefix . react@15.0.0-rc.2"
+      "build": "rm package.json && npm install --prefix . react@15.0.0-rc.2",
+      "__hash": "af8c91356533f1f8b540a1f2511d9e97488e759e"
     },
     {
       "version": "15.0.0",
