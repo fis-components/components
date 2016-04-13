@@ -118,9 +118,21 @@
       "__hash": "50a292f9883bf6c4bbbaca818084b850861cb1bd"
     },
     {
-      "version": "0.14.8",
       "build": "rm package.json && npm install --prefix . react@0.14.8",
+      "version": "0.14.8",
       "__hash": "bc6ba558956bd11084902027219568504a89349e"
+    },
+    {
+      "version": "15.0.0-rc.2",
+      "build": "rm package.json && npm install --prefix . react@15.0.0-rc.2"
+    },
+    {
+      "version": "15.0.0",
+      "build": "rm package.json && npm install --prefix . react@15.0.0"
+    },
+    {
+      "version": "15.0.1",
+      "build": "rm package.json && npm install --prefix . react@15.0.1"
     }
   ]
 }

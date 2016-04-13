@@ -38,6 +38,241 @@
   },
   "tags": [
     {
+      "version": "2.0.10",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.10"
+    },
+    {
+      "version": "2.0.11",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.11",
+      "repos": "https://github.com/facebook/immutable-js",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.0.12",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.12",
+      "repos": "https://github.com/facebook/immutable-js",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.0.13",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.13",
+      "repos": "https://github.com/facebook/immutable-js",
+      "main": "Immutable.dev.js"
+    },
+    {
+      "version": "2.0.14",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.14",
+      "repos": "https://github.com/facebook/immutable-js",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.0.15",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.15",
+      "repos": "https://github.com/facebook/immutable-js",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.0.16",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.16",
+      "repos": "https://github.com/facebook/immutable-js",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.0.17",
+      "build": "rm package.json && npm install --prefix . immutable@2.0.17",
+      "repos": "https://github.com/facebook/immutable-js",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . immutable@2.1.0",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.2.1",
+      "build": "rm package.json && npm install --prefix . immutable@2.2.1",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.2.2",
+      "build": "rm package.json && npm install --prefix . immutable@2.2.2",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.2.3",
+      "build": "rm package.json && npm install --prefix . immutable@2.2.3",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.3.0",
+      "build": "rm package.json && npm install --prefix . immutable@2.3.0",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.3.1",
+      "build": "rm package.json && npm install --prefix . immutable@2.3.1",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.3.2",
+      "build": "rm package.json && npm install --prefix . immutable@2.3.2",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.5.0",
+      "build": "rm package.json && npm install --prefix . immutable@2.5.0",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.5.1",
+      "build": "rm package.json && npm install --prefix . immutable@2.5.1",
+      "main": "Immutable.js"
+    },
+    {
+      "version": "2.6.0",
+      "build": "rm package.json && npm install --prefix . immutable@2.6.0"
+    },
+    {
+      "version": "2.6.1",
+      "build": "rm package.json && npm install --prefix . immutable@2.6.1"
+    },
+    {
+      "version": "2.6.2",
+      "build": "rm package.json && npm install --prefix . immutable@2.6.2"
+    },
+    {
+      "version": "3.0.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.0.0"
+    },
+    {
+      "version": "3.0.1",
+      "build": "rm package.json && npm install --prefix . immutable@3.0.1"
+    },
+    {
+      "version": "3.0.2",
+      "build": "rm package.json && npm install --prefix . immutable@3.0.2"
+    },
+    {
+      "version": "3.0.3",
+      "build": "rm package.json && npm install --prefix . immutable@3.0.3"
+    },
+    {
+      "version": "3.1.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.1.0"
+    },
+    {
+      "version": "3.2.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.2.0"
+    },
+    {
+      "version": "3.2.1",
+      "build": "rm package.json && npm install --prefix . immutable@3.2.1"
+    },
+    {
+      "version": "3.3.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.3.0"
+    },
+    {
+      "version": "3.4.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.4.0"
+    },
+    {
+      "version": "3.4.1",
+      "build": "rm package.json && npm install --prefix . immutable@3.4.1"
+    },
+    {
+      "version": "3.5.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.5.0"
+    },
+    {
+      "version": "3.6.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.6.0"
+    },
+    {
+      "version": "3.6.1",
+      "build": "rm package.json && npm install --prefix . immutable@3.6.1"
+    },
+    {
+      "version": "3.6.2",
+      "build": "rm package.json && npm install --prefix . immutable@3.6.2"
+    },
+    {
+      "version": "3.6.3",
+      "build": "rm package.json && npm install --prefix . immutable@3.6.3",
+      "main": "dist/immutable.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/immutable\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/immutable\\/(dist)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/immutable\\/(README\\.md)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/immutable\\/(LICENSE)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/immutable\\/(PATENTS)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/immutable\\/contrib\\/(.*)$",
+          "release": "contrib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": null
+    },
+    {
+      "version": "3.6.4",
+      "build": "rm package.json && npm install --prefix . immutable@3.6.4"
+    },
+    {
+      "version": "3.7.0",
+      "build": "rm package.json && npm install --prefix . immutable@3.7.0"
+    },
+    {
+      "version": "3.7.1",
+      "build": "rm package.json && npm install --prefix . immutable@3.7.1"
+    },
+    {
+      "version": "3.7.2",
+      "build": "rm package.json && npm install --prefix . immutable@3.7.2"
+    },
+    {
+      "version": "3.7.3",
+      "build": "rm package.json && npm install --prefix . immutable@3.7.3"
+    },
+    {
+      "version": "3.7.4",
+      "build": "rm package.json && npm install --prefix . immutable@3.7.4"
+    },
+    {
+      "version": "3.7.5",
+      "build": "rm package.json && npm install --prefix . immutable@3.7.5"
+    },
+    {
       "version": "3.7.6",
       "__hash": "80869e549a0a1e117139cc6d57dc8588fa04ffd1"
     }
