@@ -39,7 +39,8 @@
   "tags": [
     {
       "version": "2.0.10",
-      "build": "rm package.json && npm install --prefix . immutable@2.0.10"
+      "build": "rm package.json && npm install --prefix . immutable@2.0.10",
+      "__hash": "5949cb3f017532fc90ecc0da3517d9fda3caf4a9"
     },
     {
       "version": "2.0.11",
