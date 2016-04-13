@@ -74,7 +74,8 @@
       "version": "2.0.15",
       "build": "rm package.json && npm install --prefix . immutable@2.0.15",
       "repos": "https://github.com/facebook/immutable-js",
-      "main": "Immutable.js"
+      "main": "Immutable.js",
+      "__hash": "43d4174e99e5c2c845bec0163b8343cc4a15153f"
     },
     {
       "version": "2.0.16",
