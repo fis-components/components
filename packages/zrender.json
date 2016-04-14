@@ -265,7 +265,8 @@
       ],
       "protocol": null,
       "github": null,
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "49b04df257f903af22d32317fdd0ef854267ec18"
     },
     {
       "version": "3.0.6",
