@@ -87,4 +87,5 @@ sync:
     - xlsx@latest
     - d3-sankey
     - react-immutable-render-mixin
+    - zrender@3.x
    
