@@ -95,7 +95,8 @@
     },
     {
       "build": "rm package.json && npm install --prefix . xtend@4.0.1",
-      "version": "4.0.1"
+      "version": "4.0.1",
+      "__hash": "6feb4ba384edccb66525f860f628fb7f9a37688d"
     }
   ]
 }
