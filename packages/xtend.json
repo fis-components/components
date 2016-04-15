@@ -90,7 +90,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "8159796cb845ca69fa5204c6ac93ee3e2baa9589"
     },
     {
       "build": "rm package.json && npm install --prefix . xtend@4.0.1",
