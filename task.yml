@@ -90,5 +90,5 @@ sync:
     - zrender@3.x
     - xtend
     - keyMirror
- +	- scroll-behavior
+    - scroll-behavior
    
