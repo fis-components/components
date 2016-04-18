@@ -108,7 +108,7 @@
         }
       ],
       "version": "2.1.1",
-      "__hash": "652c0ac8a50d33e9bf212d3487cd8555da4db985"
+      "__hash": "629a666ec3867942de7c0f3bcd8cedb4f2427482"
     },
     {
       "build": "rm package.json && npm install --prefix . invariant@2.1.2",
