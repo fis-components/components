@@ -210,7 +210,8 @@
           "release": false
         }
       ],
-      "umd2commonjs": true
+      "umd2commonjs": true,
+      "__hash": "0ed8518bb8d018f1144ffa19877b447045e6106e"
     },
     {
       "version": "1.8.3",
