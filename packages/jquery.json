@@ -183,10 +183,11 @@
       "__hash": "629a1db0ad46cea57fcd19bce8fd4043f7ea54d2"
     },
     {
+      "version": "1.8.2",
+      "build": "rm package.json && npm install --prefix . jquery@1.8.2",
       "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
-      "build": "rm package.json && npm install --prefix . jquery@1.8.2",
       "mapping": [
         {
           "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
@@ -209,12 +210,42 @@
           "release": false
         }
       ],
-      "version": "1.8.2",
-      "__hash": "d4cc59dedcdb601e8350a6e60d49de269529e556"
+      "umd2commonjs": true
+    },
+    {
+      "version": "1.8.3",
+      "build": "rm package.json && npm install --prefix . jquery@1.8.3",
+      "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "umd2commonjs": true
     },
     {
       "version": "1.9.1",
       "build": "rm package.json && npm install --prefix . jquery@1.9.1",
+      "description": "jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)",
       "repos": "https://github.com/jquery/jquery",
       "tag": "",
       "mapping": [
@@ -239,8 +270,7 @@
           "release": false
         }
       ],
-      "umd2commonjs": true,
-      "__hash": "1e22b6a2df9c9a7616004d72f57b7966b2cb0d48"
+      "umd2commonjs": true
     },
     {
       "repos": "https://github.com/jquery/jquery",
@@ -386,6 +416,90 @@
       ],
       "version": "1.12.0",
       "__hash": "9d6872e14233eacbb99f824dd3187ae742e1013d"
+    },
+    {
+      "version": "1.12.1",
+      "build": "rm package.json && npm install --prefix . jquery@1.12.1",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.2",
+      "build": "rm package.json && npm install --prefix . jquery@1.12.2",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.3",
+      "build": "rm package.json && npm install --prefix . jquery@1.12.3",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "repos": "https://github.com/jquery/jquery",
@@ -560,6 +674,90 @@
       ],
       "version": "2.2.0",
       "__hash": "0a1d0b8c865614b26ac095d1ea768fac5e189410"
+    },
+    {
+      "version": "2.2.1",
+      "build": "rm package.json && npm install --prefix . jquery@2.2.1",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.2.2",
+      "build": "rm package.json && npm install --prefix . jquery@2.2.2",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.2.3",
+      "build": "rm package.json && npm install --prefix . jquery@2.2.3",
+      "repos": "https://github.com/jquery/jquery",
+      "tag": "",
+      "mapping": [
+        {
+          "reg": "^\\/node_modules\\/jquery(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^(?:\\/dist)?\\/jquery\\.js$",
+          "release": "jquery.js"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

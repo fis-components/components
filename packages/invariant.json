@@ -19,7 +19,6 @@
   ],
   "tags": [
     {
-      "version": "2.0.0",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -46,10 +45,10 @@
           "release": false
         }
       ],
+      "version": "2.0.0",
       "__hash": "81a44153d52e4262679125cf8feb9374684aa997"
     },
     {
-      "version": "2.1.0",
       "build": "rm package.json && npm install --prefix . invariant@2.1.0",
       "mapping": [
         {
@@ -77,10 +76,10 @@
           "release": false
         }
       ],
+      "version": "2.1.0",
       "__hash": "211f5b376a858854204bcf5da3007016607e769e"
     },
     {
-      "version": "2.1.1",
       "build": "rm package.json && npm install --prefix . invariant@2.1.1",
       "mapping": [
         {
@@ -108,10 +107,10 @@
           "release": false
         }
       ],
+      "version": "2.1.1",
       "__hash": "652c0ac8a50d33e9bf212d3487cd8555da4db985"
     },
     {
-      "version": "2.1.2",
       "build": "rm package.json && npm install --prefix . invariant@2.1.2",
       "mapping": [
         {
@@ -139,10 +138,10 @@
           "release": false
         }
       ],
+      "version": "2.1.2",
       "__hash": "0f962023a5ed22238a00b51bd6a86783af99dbf3"
     },
     {
-      "version": "2.1.3",
       "build": "rm package.json && npm install --prefix . invariant@2.1.3",
       "mapping": [
         {
@@ -170,10 +169,10 @@
           "release": false
         }
       ],
+      "version": "2.1.3",
       "__hash": "2ed8d9d31567bedde0e0daf6e2d42ed2cb06eaed"
     },
     {
-      "version": "2.2.0",
       "build": "rm package.json && npm install --prefix . invariant@2.2.0",
       "mapping": [
         {
@@ -201,7 +200,38 @@
           "release": false
         }
       ],
+      "version": "2.2.0",
       "__hash": "02f55b865f68939516e4227b926abccad4bde536"
+    },
+    {
+      "version": "2.2.1",
+      "build": "rm package.json && npm install --prefix . invariant@2.2.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/invariant\\/(browser\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

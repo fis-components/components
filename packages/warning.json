@@ -68,7 +68,6 @@
     {
       "version": "2.1.0",
       "build": "rm package.json && npm install --prefix . warning@2.1.0",
-      "main": "warning.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -77,10 +76,6 @@
         {
           "reg": "^\\/node_modules\\/warning\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/warning\\/(warning\\.js)$",
-          "release": "$1"
         },
         {
           "reg": "^\\/node_modules\\/warning\\/(browser\\.js)$",
@@ -98,8 +93,7 @@
           "reg": "\\.*",
           "release": false
         }
-      ],
-      "__hash": "50bfc2dd7d8f23135ec303ac66270a91a14345e0"
+      ]
     }
   ]
 }

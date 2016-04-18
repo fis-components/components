@@ -36,18 +36,513 @@
   ],
   "tags": [
     {
+      "version": "1.12.1",
+      "build": "rm package.json && npm install --prefix . history@1.12.1",
+      "description": "Manage browser history with JavaScript",
+      "repos": "https://github.com/mjackson/history.git",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(es6)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.2",
+      "build": "rm package.json && npm install --prefix . history@1.12.2",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "qs@^4.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.3",
+      "build": "rm package.json && npm install --prefix . history@1.12.3",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "qs@^4.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.4",
+      "build": "rm package.json && npm install --prefix . history@1.12.4",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "qs@^4.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.5",
+      "build": "rm package.json && npm install --prefix . history@1.12.5",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "qs@^4.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.12.6",
+      "build": "rm package.json && npm install --prefix . history@1.12.6",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "qs@^4.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.13.0",
+      "build": "rm package.json && npm install --prefix . history@1.13.0",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "qs@^4.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.13.1",
+      "build": "rm package.json && npm install --prefix . history@1.13.1",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "qs@^4.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/modules\\/(.*)$",
+          "release": "modules/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "1.14.0",
+      "build": "rm package.json && npm install --prefix . history@1.14.0",
+      "dependencies": [
+        "deep-equal@^1.0.0",
+        "invariant@^2.0.0",
+        "warning@^2.0.0"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
       "version": "1.15.0",
-      "__hash": "c606edcae4252012c41fcf1166aacc3be97c8f32"
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(\\*\\.md)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/docs\\/(.*)$",
+          "release": "docs/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/es6\\/(.*)$",
+          "release": "es6/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/npm-scripts\\/(.*)$",
+          "release": "npm-scripts/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
-      "build": "rm package.json && npm install --prefix . history@1.16.0",
       "version": "1.16.0",
-      "__hash": "c0043616672eb349b9b827e30793a7be38a532ed"
+      "build": "rm package.json && npm install --prefix . history@1.16.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(\\*\\.md)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/docs\\/(.*)$",
+          "release": "docs/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/es6\\/(.*)$",
+          "release": "es6/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/npm-scripts\\/(.*)$",
+          "release": "npm-scripts/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
-      "build": "rm package.json && npm install --prefix . history@1.17.0",
       "version": "1.17.0",
-      "__hash": "f932372ded814c1ef196cf148b99ced0a072898c"
+      "build": "rm package.json && npm install --prefix . history@1.17.0",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(\\*\\.md)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/docs\\/(.*)$",
+          "release": "docs/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/es6\\/(.*)$",
+          "release": "es6/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/npm-scripts\\/(.*)$",
+          "release": "npm-scripts/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     },
     {
       "build": "rm package.json && npm install --prefix . history@2.0.0-rc1",
@@ -152,7 +647,6 @@
       "__hash": "a1a3669e520019c7262f07f5fd05a3b729d07758"
     },
     {
-      "version": "2.0.0-rc3",
       "build": "rm package.json && npm install --prefix . history@2.0.0-rc3",
       "mapping": [
         {
@@ -200,10 +694,10 @@
           "release": false
         }
       ],
+      "version": "2.0.0-rc3",
       "__hash": "9d502a3ffbeedfa36899b61a17858e4e3619a783"
     },
     {
-      "version": "2.0.0",
       "build": "rm package.json && npm install --prefix . history@2.0.0",
       "mapping": [
         {
@@ -251,7 +745,98 @@
           "release": false
         }
       ],
+      "version": "2.0.0",
       "__hash": "db7866ea40d0f3aa09ce910921833326a786de5f"
+    },
+    {
+      "version": "2.0.1",
+      "build": "rm package.json && npm install --prefix . history@2.0.1",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(\\*\\.md)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(docs)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(npm-scripts)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/es6\\/(.*)$",
+          "release": "es6/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
+    },
+    {
+      "version": "2.0.2",
+      "build": "rm package.json && npm install --prefix . history@2.0.2",
+      "description": "Manage browser history with JavaScript",
+      "repos": "https://github.com/mjackson/history.git",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/es6\\/(.*)$",
+          "release": "es6/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/history\\/umd\\/(.*)$",
+          "release": "umd/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ]
     }
   ]
 }

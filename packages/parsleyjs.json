@@ -1,0 +1,54 @@
+{
+  "build": "rm package.json && npm install --prefix . parsleyjs@2.3.9",
+  "name": "parsleyjs",
+  "description": "Validate your forms, frontend, without writing a single line of javascript!",
+  "repos": "https://github.com/guillaumepotier/Parsley.js.git",
+  "main": "parsley.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "jquery@>=1.8.0"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/parsleyjs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/parsleyjs\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "paths": {
+    "dist": "."
+  },
+  "tags": [
+    {
+      "version": "2.3.9"
+    },
+    {
+      "version": "2.3.10",
+      "build": "rm package.json && npm install --prefix . parsleyjs@2.3.10"
+    },
+    {
+      "version": "2.3.11",
+      "build": "rm package.json && npm install --prefix . parsleyjs@2.3.11"
+    }
+  ]
+}

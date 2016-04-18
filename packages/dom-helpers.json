@@ -1,0 +1,169 @@
+{
+  "build": "rm package.json && npm install --prefix . dom-helpers@2.4.0",
+  "name": "dom-helpers",
+  "description": "tiny modular DOM lib for ie8+ ",
+  "repos": "https://github.com/jquense/dom-helpers.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(util\\/babelHelpers\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(style\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(util\\/camelizeStyle\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(util\\/camelize\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(util\\/hyphenateStyle\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(util\\/hyphenate\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(style\\/getComputedStyle\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(style\\/removeStyle\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(events\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(events\\/on\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(util\\/inDOM\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(events\\/off\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(events\\/filter\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/contains\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/querySelectorAll\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/matches\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/height\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/offset\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/isWindow\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(ownerDocument\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/width\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/offsetParent\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/position\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/scrollTop\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/scrollLeft\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/scrollParent\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(query\\/closest\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(activeElement\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(ownerWindow\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/(util\\/requestAnimationFrame\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/dom-helpers\\/style\\/(.*)$",
+      "release": "style/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "2.4.0"
+    }
+  ]
+}
