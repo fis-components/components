@@ -91,4 +91,5 @@ sync:
     - xtend
     - keyMirror
     - scroll-behavior
+    - Parsley.js
    
