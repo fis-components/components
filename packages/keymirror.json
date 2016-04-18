@@ -40,7 +40,8 @@
     },
     {
       "version": "0.1.1",
-      "build": "rm package.json && npm install --prefix . keymirror@0.1.1"
+      "build": "rm package.json && npm install --prefix . keymirror@0.1.1",
+      "__hash": "32d9436358fc7097681b415dac2e525fe980da03"
     }
   ]
 }
