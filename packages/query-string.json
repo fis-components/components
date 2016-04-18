@@ -33,7 +33,7 @@
   "tags": [
     {
       "version": "2.4.1",
-      "__hash": "8230df0f23ebbe60beb6379044012ab1c812672b"
+      "__hash": "b6bd190a828fc5f0fb90595b5b4625458ded13e5"
     },
     {
       "build": "rm package.json && npm install --prefix . query-string@2.4.2",
