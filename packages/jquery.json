@@ -272,7 +272,8 @@
           "release": false
         }
       ],
-      "umd2commonjs": true
+      "umd2commonjs": true,
+      "__hash": "4a587acb6e0d5e010165a13637ef97d807dd8123"
     },
     {
       "repos": "https://github.com/jquery/jquery",
