@@ -47,7 +47,8 @@
     },
     {
       "version": "0.3.4",
-      "build": "rm package.json && npm install --prefix . scroll-behavior@0.3.4"
+      "build": "rm package.json && npm install --prefix . scroll-behavior@0.3.4",
+      "__hash": "56407038b993201230a118b579f82b44a6aefb7e"
     },
     {
       "version": "0.4.0",
