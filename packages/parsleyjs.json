@@ -45,7 +45,8 @@
     },
     {
       "version": "2.3.10",
-      "build": "rm package.json && npm install --prefix . parsleyjs@2.3.10"
+      "build": "rm package.json && npm install --prefix . parsleyjs@2.3.10",
+      "__hash": "a8296db4f4b4d9dab0373f3d84db00ab037596c7"
     },
     {
       "version": "2.3.11",
