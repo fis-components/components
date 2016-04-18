@@ -504,7 +504,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "3cf87a6187756834308b9eff056a2c2cb62399b1"
     },
     {
       "repos": "https://github.com/jquery/jquery",
