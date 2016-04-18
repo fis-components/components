@@ -553,7 +553,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "9efd7c19d0b884c0a384c2cd9aaf97ef24e3d04e"
     },
     {
       "build": "rm package.json && npm install --prefix . history@2.0.0-rc1",
