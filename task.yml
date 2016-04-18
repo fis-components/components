@@ -89,4 +89,6 @@ sync:
     - react-immutable-render-mixin
     - zrender@3.x
     - xtend
+    - keyMirror
+ +	- scroll-behavior
    
