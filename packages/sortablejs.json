@@ -45,7 +45,8 @@
     },
     {
       "version": "1.4.2",
-      "build": "rm package.json && npm install --prefix . sortablejs@1.4.2"
+      "build": "rm package.json && npm install --prefix . sortablejs@1.4.2",
+      "__hash": "647114d203be70aae726f1c6fd0105f51584c21b"
     }
   ]
 }
