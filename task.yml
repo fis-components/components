@@ -92,4 +92,5 @@ sync:
     - keymirror
     - scroll-behavior
     - parsleyjs
+    - sortablejs
    
