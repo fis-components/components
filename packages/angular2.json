@@ -30,7 +30,8 @@
     },
     {
       "version": "2.0.0-beta.15",
-      "build": "rm package.json && npm install --prefix . angular2@2.0.0-beta.15"
+      "build": "rm package.json && npm install --prefix . angular2@2.0.0-beta.15",
+      "__hash": "5341b813bc8bbf6a8d4846d109e427eb9ddcf1d6"
     }
   ]
 }
