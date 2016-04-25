@@ -27,6 +27,10 @@
       "version": "2.0.0-alpha.46",
       "build": "rm package.json && npm install --prefix . angular2@2.0.0-alpha.46",
       "__hash": "43ab9b730f17e86e91eaf6c6377326a024dbdc51"
+    },
+    {
+      "version": "2.0.0-beta.15",
+      "build": "rm package.json && npm install --prefix . angular2@2.0.0-beta.15",
     }
   ]
 }
