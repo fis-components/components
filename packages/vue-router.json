@@ -97,7 +97,7 @@
       "build": "rm package.json && npm install --prefix . vue-router@0.7.9",
       "tag": "master",
       "reposType": "npm",
-      "__hash": "aca00d7c9661419e20d43d4ff48c2444eea80be5"
+      "__hash": "e9fa7b80491d7dc3f070c746ab585e2ed56ef8d1"
     },
     {
       "repos": "https://github.com/vuejs/vue-router.git",
