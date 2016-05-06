@@ -51,8 +51,8 @@ sync:
     - antd
     - reflux
     - react-dropzone-component
-    - vuex@latest
     - lib-flexible@latest
+    - vuex@latest
     - fit-timeago
     - jquery-ui@1.11.4
     - react-anything-sortable
