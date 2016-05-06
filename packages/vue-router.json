@@ -26,13 +26,9 @@
       "__hash": "75088b3e2c479026b4e5c18b43bcce36be0f2e4c"
     },
     {
-      "version": "0.7.8",
-      "build": "rm package.json && npm install --prefix . vue-router@0.7.8",
-      "description": "A router for Vue.js",
       "repos": "https://github.com/vuejs/vue-router.git",
+      "description": "A router for Vue.js",
       "main": "src/index.js",
-      "tag": "master",
-      "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
@@ -60,16 +56,16 @@
           "release": false
         }
       ],
+      "version": "0.7.8",
+      "build": "rm package.json && npm install --prefix . vue-router@0.7.8",
+      "tag": "master",
+      "reposType": "npm",
       "__hash": "6102c214c85560b15f241786347cafc0271387bf"
     },
     {
-      "version": "0.7.9",
-      "build": "rm package.json && npm install --prefix . vue-router@0.7.9",
-      "description": "A router for Vue.js",
       "repos": "https://github.com/vuejs/vue-router.git",
+      "description": "A router for Vue.js",
       "main": "src/index.js",
-      "tag": "master",
-      "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
@@ -97,16 +93,16 @@
           "release": false
         }
       ],
+      "version": "0.7.9",
+      "build": "rm package.json && npm install --prefix . vue-router@0.7.9",
+      "tag": "master",
+      "reposType": "npm",
       "__hash": "aca00d7c9661419e20d43d4ff48c2444eea80be5"
     },
     {
-      "version": "0.7.10",
-      "build": "rm package.json && npm install --prefix . vue-router@0.7.10",
-      "description": "A router for Vue.js",
       "repos": "https://github.com/vuejs/vue-router.git",
+      "description": "A router for Vue.js",
       "main": "src/index.js",
-      "tag": "master",
-      "reposType": "npm",
       "dependencies": [],
       "mapping": [
         {
@@ -134,7 +130,125 @@
           "release": false
         }
       ],
+      "version": "0.7.10",
+      "build": "rm package.json && npm install --prefix . vue-router@0.7.10",
+      "tag": "master",
+      "reposType": "npm",
       "__hash": "73c19019ed697875c19df70111d0eb2974e24b3f"
+    },
+    {
+      "version": "0.7.11",
+      "build": "rm package.json && npm install --prefix . vue-router@0.7.11",
+      "description": "A router for Vue.js",
+      "repos": "https://github.com/vuejs/vue-router.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-router\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-router\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "0.7.12",
+      "build": "rm package.json && npm install --prefix . vue-router@0.7.12",
+      "description": "A router for Vue.js",
+      "repos": "https://github.com/vuejs/vue-router.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-router\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-router\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "0.7.13",
+      "build": "rm package.json && npm install --prefix . vue-router@0.7.13",
+      "description": "A router for Vue.js",
+      "repos": "https://github.com/vuejs/vue-router.git",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-router\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-router\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
     }
   ]
 }
