@@ -134,7 +134,7 @@
       "build": "rm package.json && npm install --prefix . vue-router@0.7.10",
       "tag": "master",
       "reposType": "npm",
-      "__hash": "73c19019ed697875c19df70111d0eb2974e24b3f"
+      "__hash": "7fbcda60bfe4c0906b6b36661def71ab8d13c7f5"
     },
     {
       "version": "0.7.11",
