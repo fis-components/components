@@ -246,7 +246,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "6002169df8e1dd251dcb58d1d5b4e100a5e1e632"
     },
     {
       "version": "1.0.21-csp",
