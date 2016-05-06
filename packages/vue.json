@@ -128,7 +128,7 @@
       "paths": {
         "dist": "."
       },
-      "__hash": "eae439556de0da28244b8502aa79faa94c2a803b"
+      "__hash": "40ea3f71a6a22197c055c678aa7668ea67feff81"
     },
     {
       "repos": "https://github.com/vuejs/vue.git",
