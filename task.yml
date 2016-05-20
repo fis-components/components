@@ -48,7 +48,6 @@ sync:
     - fit-cropper@latest
     - formsy-material-ui@latest
     - material-ui@~0.14.3
-    - antd
     - reflux
     - react-dropzone-component
     - lib-flexible@latest
@@ -95,4 +94,6 @@ sync:
     - sortablejs
     - vue
     - vue-router
+    - antd
+    
    
