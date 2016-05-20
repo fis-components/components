@@ -1361,8 +1361,6 @@
       "__hash": "ffa35095abc820339cbfbc9d4ac600dc6f18a06a"
     },
     {
-      "version": "0.12.11-beta",
-      "build": "rm package.json && npm install --prefix . antd@0.12.11-beta",
       "dependencies": [
         "array-tree-filter@~1.0.0",
         "classnames@~2.2.0",
@@ -1402,6 +1400,7 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.11-beta",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -1436,11 +1435,10 @@
           "release": false
         }
       ],
+      "version": "0.12.11-beta",
       "__hash": "4bb9df1df214f9b69aa94e276c7f45c95dec77eb"
     },
     {
-      "version": "0.12.11",
-      "build": "rm package.json && npm install --prefix . antd@0.12.11",
       "dependencies": [
         "array-tree-filter@~1.0.0",
         "classnames@~2.2.0",
@@ -1480,6 +1478,7 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.11",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -1514,11 +1513,10 @@
           "release": false
         }
       ],
+      "version": "0.12.11",
       "__hash": "2257015178dcc970faf296357146f7059ede8208"
     },
     {
-      "version": "0.12.12",
-      "build": "rm package.json && npm install --prefix . antd@0.12.12",
       "dependencies": [
         "array-tree-filter@~1.0.0",
         "classnames@~2.2.0",
@@ -1558,6 +1556,7 @@
         "velocity-animate@~1.2.2",
         "warning@~2.1.0"
       ],
+      "build": "rm package.json && npm install --prefix . antd@0.12.12",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -1592,7 +1591,113 @@
           "release": false
         }
       ],
+      "version": "0.12.12",
       "__hash": "21ebbf4e1df734f3a8ecfca6fba73e1b6f844921"
+    },
+    {
+      "version": "1.0.0",
+      "build": "rm package.json && npm install --prefix . antd@1.0.0",
+      "main": "antd",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . antd@1.0.1",
+      "main": "antd",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.1.0",
+      "build": "rm package.json && npm install --prefix . antd@1.1.0",
+      "main": "antd",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/antd\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
     }
   ]
 }
