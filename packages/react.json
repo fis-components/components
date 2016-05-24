@@ -144,7 +144,8 @@
     },
     {
       "version": "15.1.0-alpha.1",
-      "build": "rm package.json && npm install --prefix . react@15.1.0-alpha.1"
+      "build": "rm package.json && npm install --prefix . react@15.1.0-alpha.1",
+      "__hash": "6231f5cb1c99ca665d0cc02f66b07aade96f0c3d"
     },
     {
       "version": "15.1.0",
