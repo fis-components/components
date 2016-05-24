@@ -95,5 +95,7 @@ sync:
     - vue
     - vue-router
     - antd
+    - react
+    - react-dom
     
    
