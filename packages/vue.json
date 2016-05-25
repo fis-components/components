@@ -487,7 +487,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "a4ff2d2f06126d2a581e6cd3f4ba7d8cc7853ec0"
     },
     {
       "version": "0.12.12",
