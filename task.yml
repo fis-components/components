@@ -63,6 +63,7 @@ sync:
     - react-router
     - react-motion
     - react-dnd@2.1.2
+    - react-dnd-text-dragpreview
     - lodash.mergewith
     - lodash.find
     - lodash.range
