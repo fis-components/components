@@ -643,7 +643,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "9b0b42b33fa8c0899fa68cc4256df2f9e3aba52f"
     },
     {
       "version": "0.12.16",
