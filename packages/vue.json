@@ -58,7 +58,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "19b16586341aaf042a2194e4817e81f0ad3addac"
     },
     {
       "version": "0.12.1",
