@@ -1,0 +1,53 @@
+{
+  "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.1",
+  "name": "react-dnd-text-dragpreview",
+  "description": "Textual drag preview for react-dnd drag and drop",
+  "repos": "https://github.com/jaketrent/react-dnd-text-dragpreview.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-dnd-text-dragpreview\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-dnd-text-dragpreview\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/react-dnd-text-dragpreview\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.1"
+    },
+    {
+      "version": "0.2.2",
+      "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.2"
+    },
+    {
+      "version": "0.2.3",
+      "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.3"
+    }
+  ]
+}
