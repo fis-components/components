@@ -44,7 +44,8 @@
     },
     {
       "version": "0.2.2",
-      "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.2"
+      "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.2",
+      "__hash": "b88405503d99d78da1f2b7c7f3fcef17b28a905b"
     },
     {
       "version": "0.2.3",
