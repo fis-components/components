@@ -51,7 +51,8 @@
     },
     {
       "version": "0.1.2",
-      "build": "rm package.json && npm install --prefix . vue-select@0.1.2"
+      "build": "rm package.json && npm install --prefix . vue-select@0.1.2",
+      "__hash": "cf3246e7d2930bb99148dea0ebd3cc071bc42467"
     }
   ]
 }
