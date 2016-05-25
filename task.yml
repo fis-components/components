@@ -94,6 +94,7 @@ sync:
     - sortablejs
     - vue
     - vue-router
+    - vue-select
     - antd
     - react
     - react-dom
