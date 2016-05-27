@@ -26,32 +26,149 @@
       "__hash": "832d2f4fa1437cdb0faf2c6584c37e2dbfba9d96"
     },
     {
-      "version": "v1.2.0",
       "dependencies": [
         "vue@>=0.12.0"
       ],
+      "version": "v1.2.0",
       "__hash": "79a1365a8250d1bc7eb211c842c8d7475cbcbc68"
     },
     {
-      "version": "v1.3.3",
       "dependencies": [
         "vue@>=0.12.0"
       ],
+      "version": "v1.3.3",
       "__hash": "f5337466b6fd064cbdb1f282acb408913a415dec"
     },
     {
-      "version": "v1.4.1",
       "dependencies": [
         "vue@>=0.12.0"
       ],
+      "version": "v1.4.1",
       "__hash": "627a56cfc1f02c3460e88daf94d50d2987a4c2ed"
     },
     {
-      "version": "v1.4.3",
       "dependencies": [
         "vue@>=0.12.0"
       ],
+      "version": "v1.4.3",
       "__hash": "4a3a28ec77b3a5f91318b5e5545270dfe8eb08db"
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . vue-validator@2.1.0",
+      "description": "Validator component for Vue.js",
+      "repos": "https://github.com/vuejs/vue-validator.git",
+      "main": "vue-validator.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "2.1.1",
+      "build": "rm package.json && npm install --prefix . vue-validator@2.1.1",
+      "description": "Validator component for Vue.js",
+      "repos": "https://github.com/vuejs/vue-validator.git",
+      "main": "vue-validator.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "2.1.2",
+      "build": "rm package.json && npm install --prefix . vue-validator@2.1.2",
+      "description": "Validator component for Vue.js",
+      "repos": "https://github.com/vuejs/vue-validator.git",
+      "main": "vue-validator.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
     }
   ]
 }
