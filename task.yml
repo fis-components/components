@@ -99,5 +99,6 @@ sync:
     - antd
     - react
     - react-dom
+    - vue-validator
     
    
