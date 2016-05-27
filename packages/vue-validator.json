@@ -44,7 +44,7 @@
         "vue@>=0.12.0"
       ],
       "version": "v1.4.1",
-      "__hash": "627a56cfc1f02c3460e88daf94d50d2987a4c2ed"
+      "__hash": "de71c732c4581bc072a7e63f54bbfb1d18bfe9ff"
     },
     {
       "dependencies": [
