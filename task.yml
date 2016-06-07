@@ -100,5 +100,6 @@ sync:
     - react
     - react-dom
     - vue-validator
+    - countUp.js@latest
     
    
