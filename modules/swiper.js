@@ -4,7 +4,7 @@ module.exports = (function() {
 
 	return [{
 		repos: "https://github.com/nolimits4web/Swiper.git",
-		version: "v3.1.0",
+		version: "v3.3.1",
 		description: "Most modern mobile touch slider with hardware accelerated transitions",
 		name: "Swiper",
 		main: "swiper.js",
