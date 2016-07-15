@@ -95,6 +95,7 @@ sync:
     - sortablejs
     - vue
     - vue-router
+    - vue-resource@0.9.3
     - vue-select
     - antd
     - react
