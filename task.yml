@@ -102,5 +102,5 @@ sync:
     - react-dom
     - vue-validator
     - countup.js@latest
-    
+    - echarts
    
