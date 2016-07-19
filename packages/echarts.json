@@ -167,7 +167,8 @@
         }
       ],
       "main": "index.js",
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "c25f520421faefb966b1406fca0698b2ba5ffc46"
     },
     {
       "version": "3.2.2",
