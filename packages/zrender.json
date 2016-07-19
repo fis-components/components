@@ -421,7 +421,8 @@
       ],
       "protocol": null,
       "github": null,
-      "umd2commonjs": null
+      "umd2commonjs": null,
+      "__hash": "cd455c09c3416ac4c3dbe1e39868b2574626ed52"
     }
   ]
 }
