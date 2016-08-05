@@ -40,7 +40,8 @@
     },
     {
       "version": "1.0.1",
-      "build": "rm package.json && npm install --prefix . vue-async-data@1.0.1"
+      "build": "rm package.json && npm install --prefix . vue-async-data@1.0.1",
+      "__hash": "ee0b5b8aa978a8e073c49bb0f6f367054a1c8888"
     },
     {
       "version": "1.0.2",
