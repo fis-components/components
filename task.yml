@@ -103,4 +103,5 @@ sync:
     - vue-validator
     - countup.js@latest
     - echarts
+    - vue-async-data
    
