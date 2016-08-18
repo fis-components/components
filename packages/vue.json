@@ -877,7 +877,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "d4e7e7e1d7d8388bf202c3fe187f28f1f3896b19"
     },
     {
       "version": "1.0.5",
