@@ -23,13 +23,8 @@
       "__hash": "f01c39bdb47dc6f17c748b6a582568273733149a"
     },
     {
-      "version": "0.12.0",
-      "build": "rm package.json && npm install --prefix . vue@0.12.0",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -56,19 +51,19 @@
           "release": false
         }
       ],
+      "version": "0.12.0",
+      "build": "rm package.json && npm install --prefix . vue@0.12.0",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "19b16586341aaf042a2194e4817e81f0ad3addac"
     },
     {
-      "version": "0.12.1",
-      "build": "rm package.json && npm install --prefix . vue@0.12.1",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -95,19 +90,19 @@
           "release": false
         }
       ],
+      "version": "0.12.1",
+      "build": "rm package.json && npm install --prefix . vue@0.12.1",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "87df5e5fb3f53a48492d92327257a2121eeee830"
     },
     {
-      "version": "0.12.2",
-      "build": "rm package.json && npm install --prefix . vue@0.12.2",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -134,19 +129,19 @@
           "release": false
         }
       ],
+      "version": "0.12.2",
+      "build": "rm package.json && npm install --prefix . vue@0.12.2",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "36b4785369f30e424dc920b1280e3d80f212e176"
     },
     {
-      "version": "0.12.3",
-      "build": "rm package.json && npm install --prefix . vue@0.12.3",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -173,19 +168,19 @@
           "release": false
         }
       ],
+      "version": "0.12.3",
+      "build": "rm package.json && npm install --prefix . vue@0.12.3",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "f9e4b64d3989c8339838894ccc5ab33bc111f9de"
     },
     {
-      "version": "0.12.4",
-      "build": "rm package.json && npm install --prefix . vue@0.12.4",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -212,19 +207,19 @@
           "release": false
         }
       ],
+      "version": "0.12.4",
+      "build": "rm package.json && npm install --prefix . vue@0.12.4",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "356c0f774adf4df4e2365665825ed27722cd7edd"
     },
     {
-      "version": "0.12.5",
-      "build": "rm package.json && npm install --prefix . vue@0.12.5",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -251,19 +246,19 @@
           "release": false
         }
       ],
+      "version": "0.12.5",
+      "build": "rm package.json && npm install --prefix . vue@0.12.5",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "c9aa9f5685dd06b1d0eda077612e34e2e9bcc652"
     },
     {
-      "version": "0.12.6",
-      "build": "rm package.json && npm install --prefix . vue@0.12.6",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -290,19 +285,19 @@
           "release": false
         }
       ],
+      "version": "0.12.6",
+      "build": "rm package.json && npm install --prefix . vue@0.12.6",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "a4367a52b1ebe31fb5648940e60909e1016b3363"
     },
     {
-      "version": "0.12.7",
-      "build": "rm package.json && npm install --prefix . vue@0.12.7",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -329,19 +324,19 @@
           "release": false
         }
       ],
+      "version": "0.12.7",
+      "build": "rm package.json && npm install --prefix . vue@0.12.7",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "91bba06ce17cfdae557297477a2e30b0d9327342"
     },
     {
-      "version": "0.12.8",
-      "build": "rm package.json && npm install --prefix . vue@0.12.8",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -368,19 +363,19 @@
           "release": false
         }
       ],
+      "version": "0.12.8",
+      "build": "rm package.json && npm install --prefix . vue@0.12.8",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "f7777a6de215364fc0568a09005479fe31632000"
     },
     {
-      "version": "0.12.9",
-      "build": "rm package.json && npm install --prefix . vue@0.12.9",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -407,19 +402,19 @@
           "release": false
         }
       ],
+      "version": "0.12.9",
+      "build": "rm package.json && npm install --prefix . vue@0.12.9",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "5000288470ddc86b6f6cbaafc4fcc7ba24a35916"
     },
     {
-      "version": "0.12.10",
-      "build": "rm package.json && npm install --prefix . vue@0.12.10",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -446,19 +441,19 @@
           "release": false
         }
       ],
+      "version": "0.12.10",
+      "build": "rm package.json && npm install --prefix . vue@0.12.10",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "074eba522204e3f9bace9a1264d92fd9b2f57751"
     },
     {
-      "version": "0.12.11",
-      "build": "rm package.json && npm install --prefix . vue@0.12.11",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -485,19 +480,19 @@
           "release": false
         }
       ],
+      "version": "0.12.11",
+      "build": "rm package.json && npm install --prefix . vue@0.12.11",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "a4ff2d2f06126d2a581e6cd3f4ba7d8cc7853ec0"
     },
     {
-      "version": "0.12.12",
-      "build": "rm package.json && npm install --prefix . vue@0.12.12",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -524,19 +519,19 @@
           "release": false
         }
       ],
+      "version": "0.12.12",
+      "build": "rm package.json && npm install --prefix . vue@0.12.12",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "9506766c5928f2acf41048bec3ed009a8cde90a2"
     },
     {
-      "version": "0.12.13",
-      "build": "rm package.json && npm install --prefix . vue@0.12.13",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -563,19 +558,19 @@
           "release": false
         }
       ],
+      "version": "0.12.13",
+      "build": "rm package.json && npm install --prefix . vue@0.12.13",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "8dea171e6bdbfe329d4c9b66c5a1ca5230e2221d"
     },
     {
-      "version": "0.12.14",
-      "build": "rm package.json && npm install --prefix . vue@0.12.14",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -602,19 +597,19 @@
           "release": false
         }
       ],
+      "version": "0.12.14",
+      "build": "rm package.json && npm install --prefix . vue@0.12.14",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "4dfa8789e292c2e21173c7c10c9926a984515bf3"
     },
     {
-      "version": "0.12.15",
-      "build": "rm package.json && npm install --prefix . vue@0.12.15",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -641,19 +636,19 @@
           "release": false
         }
       ],
+      "version": "0.12.15",
+      "build": "rm package.json && npm install --prefix . vue@0.12.15",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "9b0b42b33fa8c0899fa68cc4256df2f9e3aba52f"
     },
     {
-      "version": "0.12.16",
-      "build": "rm package.json && npm install --prefix . vue@0.12.16",
       "repos": "https://github.com/yyx990803/vue.git",
       "main": "vue",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -680,6 +675,11 @@
           "release": false
         }
       ],
+      "version": "0.12.16",
+      "build": "rm package.json && npm install --prefix . vue@0.12.16",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
@@ -967,6 +967,123 @@
         "dist": "."
       },
       "__hash": "6f419faf33e3a72e85baa82c3ecf89dcc1856da9"
+    },
+    {
+      "version": "2.0.0-beta.8",
+      "build": "rm package.json && npm install --prefix . vue@2.0.0-beta.8",
+      "description": "Reactive, component-oriented view layer for modern web interfaces.",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "2.0.0-rc.1",
+      "build": "rm package.json && npm install --prefix . vue@2.0.0-rc.1",
+      "description": "Reactive, component-oriented view layer for modern web interfaces.",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "2.0.0-rc.2",
+      "build": "rm package.json && npm install --prefix . vue@2.0.0-rc.2",
+      "description": "Reactive, component-oriented view layer for modern web interfaces.",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
     }
   ]
 }
