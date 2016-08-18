@@ -1840,7 +1840,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "4a16fc10f9173e34ea1f6af90a1dbf83b5b84a29"
     },
     {
       "repos": "https://github.com/vuejs/vue.git",
