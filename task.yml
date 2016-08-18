@@ -103,5 +103,5 @@ sync:
     - countup.js@latest
     - echarts
     - vue-async-data
-    - vue
+    - vue@1.x
    
