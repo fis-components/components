@@ -1037,7 +1037,8 @@
       ],
       "paths": {
         "dist": "."
-      }
+      },
+      "__hash": "a249ca4efc07be22aea3342330295ff87d944fbe"
     },
     {
       "version": "1.0.9",
