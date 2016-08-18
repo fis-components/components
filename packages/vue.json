@@ -686,20 +686,20 @@
       "__hash": "bddb969b680a74011c00e5d83eb45d572c82bcae"
     },
     {
-      "version": "v1.0.11",
-      "__hash": "3cb64d09e71400ba5952e5065f691571a1bee223"
-    },
-    {
+      "version": "1.0.0",
+      "build": "rm package.json && npm install --prefix . vue@1.0.0",
       "repos": "https://github.com/vuejs/vue.git",
-      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
-      "main": "vue.common.js",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
           "release": false
         },
         {
-          "reg": "^\\/node_modules\\/vue\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
           "release": false
         },
         {
@@ -719,15 +719,516 @@
           "release": false
         }
       ],
-      "version": "1.0.13",
-      "build": "rm package.json && npm install --prefix . vue@1.0.13",
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.1",
+      "build": "rm package.json && npm install --prefix . vue@1.0.1",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "paths": {
         "dist": "."
-      },
-      "__hash": "71a4a9d0e269bf4578543484626a5acde0fb39af"
+      }
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . vue@1.0.2",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.3",
+      "build": "rm package.json && npm install --prefix . vue@1.0.3",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.4",
+      "build": "rm package.json && npm install --prefix . vue@1.0.4",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.5",
+      "build": "rm package.json && npm install --prefix . vue@1.0.5",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.6",
+      "build": "rm package.json && npm install --prefix . vue@1.0.6",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.7",
+      "build": "rm package.json && npm install --prefix . vue@1.0.7",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.8",
+      "build": "rm package.json && npm install --prefix . vue@1.0.8",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.9",
+      "build": "rm package.json && npm install --prefix . vue@1.0.9",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.10",
+      "build": "rm package.json && npm install --prefix . vue@1.0.10",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.11",
+      "build": "rm package.json && npm install --prefix . vue@1.0.11",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "v1.0.11",
+      "__hash": "3cb64d09e71400ba5952e5065f691571a1bee223"
+    },
+    {
+      "version": "1.0.12",
+      "build": "rm package.json && npm install --prefix . vue@1.0.12",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.13",
+      "build": "rm package.json && npm install --prefix . vue@1.0.13",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
     },
     {
       "repos": "https://github.com/vuejs/vue.git",
@@ -770,48 +1271,14 @@
       "__hash": "40ea3f71a6a22197c055c678aa7668ea67feff81"
     },
     {
-      "repos": "https://github.com/vuejs/vue.git",
-      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
-      "mapping": [
-        {
-          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/vue\\/(?:test|build|dist\\/cdn|lib\\/node)\\/",
-          "release": false
-        },
-        {
-          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
-          "release": "$1"
-        },
-        {
-          "reg": "^\\/README\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "^\\/LICENSE\\.md$",
-          "release": "$&"
-        },
-        {
-          "reg": "\\.*",
-          "release": false
-        }
-      ],
       "version": "1.0.14",
       "build": "rm package.json && npm install --prefix . vue@1.0.14",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
-      "paths": {
-        "dist": "."
-      },
-      "__hash": "97f6672682581a1b87303fe1a9df28e0ac58ed81"
-    },
-    {
-      "repos": "https://github.com/vuejs/vue.git",
-      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
-      "main": "vue.common.js",
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -838,15 +1305,203 @@
           "release": false
         }
       ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
       "version": "1.0.15",
       "build": "rm package.json && npm install --prefix . vue@1.0.15",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
       "tag": "master",
       "reposType": "npm",
       "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "paths": {
         "dist": "."
-      },
-      "__hash": "01259b2823ebc650e37c126a2e2af1721621406c"
+      }
+    },
+    {
+      "version": "1.0.16",
+      "build": "rm package.json && npm install --prefix . vue@1.0.16",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.17",
+      "build": "rm package.json && npm install --prefix . vue@1.0.17",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.18",
+      "build": "rm package.json && npm install --prefix . vue@1.0.18",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.19",
+      "build": "rm package.json && npm install --prefix . vue@1.0.19",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
     },
     {
       "repos": "https://github.com/vuejs/vue.git",
@@ -969,9 +1624,9 @@
       "__hash": "6f419faf33e3a72e85baa82c3ecf89dcc1856da9"
     },
     {
-      "version": "2.0.0-beta.8",
-      "build": "rm package.json && npm install --prefix . vue@2.0.0-beta.8",
-      "description": "Reactive, component-oriented view layer for modern web interfaces.",
+      "version": "1.0.22",
+      "build": "rm package.json && npm install --prefix . vue@1.0.22",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
       "repos": "https://github.com/vuejs/vue.git",
       "main": "vue.common.js",
       "tag": "master",
@@ -1003,20 +1658,210 @@
           "release": false
         }
       ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.23",
+      "build": "rm package.json && npm install --prefix . vue@1.0.23",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.24",
+      "build": "rm package.json && npm install --prefix . vue@1.0.24",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.25",
+      "build": "rm package.json && npm install --prefix . vue@1.0.25",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "version": "1.0.26",
+      "build": "rm package.json && npm install --prefix . vue@1.0.26",
+      "description": "Simple, Fast & Composable MVVM for building interactive interfaces",
+      "repos": "https://github.com/vuejs/vue.git",
+      "main": "vue.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      }
+    },
+    {
+      "repos": "https://github.com/vuejs/vue.git",
+      "description": "Reactive, component-oriented view layer for modern web interfaces.",
+      "main": "vue.common.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "2.0.0-beta.8",
+      "build": "rm package.json && npm install --prefix . vue@2.0.0-beta.8",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "8bd152b314f76e57a0ab07f362114b22e084823d"
     },
     {
-      "version": "2.0.0-rc.1",
-      "build": "rm package.json && npm install --prefix . vue@2.0.0-rc.1",
-      "description": "Reactive, component-oriented view layer for modern web interfaces.",
       "repos": "https://github.com/vuejs/vue.git",
+      "description": "Reactive, component-oriented view layer for modern web interfaces.",
       "main": "vue.common.js",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -1043,20 +1888,20 @@
           "release": false
         }
       ],
+      "version": "2.0.0-rc.1",
+      "build": "rm package.json && npm install --prefix . vue@2.0.0-rc.1",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
       "__hash": "094e03e00538310acb5f43d3b7c7814c5df5fdc0"
     },
     {
-      "version": "2.0.0-rc.2",
-      "build": "rm package.json && npm install --prefix . vue@2.0.0-rc.2",
-      "description": "Reactive, component-oriented view layer for modern web interfaces.",
       "repos": "https://github.com/vuejs/vue.git",
+      "description": "Reactive, component-oriented view layer for modern web interfaces.",
       "main": "vue.common.js",
-      "tag": "master",
-      "reposType": "npm",
-      "dependencies": [],
       "mapping": [
         {
           "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
@@ -1083,6 +1928,11 @@
           "release": false
         }
       ],
+      "version": "2.0.0-rc.2",
+      "build": "rm package.json && npm install --prefix . vue@2.0.0-rc.2",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
       "paths": {
         "dist": "."
       },
