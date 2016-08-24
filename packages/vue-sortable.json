@@ -42,7 +42,8 @@
     },
     {
       "version": "0.1.2",
-      "build": "rm package.json && npm install --prefix . vue-sortable@0.1.2"
+      "build": "rm package.json && npm install --prefix . vue-sortable@0.1.2",
+      "__hash": "5343b2545dbcd07c8fcd839308f508f8b6e68080"
     },
     {
       "version": "0.1.3",
