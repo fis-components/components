@@ -67,7 +67,8 @@
           "reg": "\\.*",
           "release": false
         }
-      ]
+      ],
+      "__hash": "51018abddd6651d1b793a56c5811074a57d930b5"
     },
     {
       "repos": "https://github.com/github/fetch",
