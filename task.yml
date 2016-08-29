@@ -105,4 +105,5 @@ sync:
     - vue-async-data
     - vue@1.x
     - vue-sortable
+    - react-fetch
    
