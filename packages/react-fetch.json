@@ -49,7 +49,8 @@
       "build": "rm package.json && npm install --prefix . react-fetch@0.0.8",
       "dependencies": [
         "isomorphic-fetch@^2.1.0"
-      ]
+      ],
+      "__hash": "4c361d1d9611887b58b75323793d6d1ab35bebea"
     },
     {
       "version": "0.0.9",
