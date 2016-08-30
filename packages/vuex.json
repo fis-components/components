@@ -43,8 +43,43 @@
       "__hash": "d2ca48bbd37caf7cf78e885c1604f35b9a9f6a92"
     },
     {
-      "version": "0.6.3",
       "build": "rm package.json && npm install --prefix . vuex@0.6.3",
+      "main": "vuex.js",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vuex\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vuex\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.6.3",
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "ae07c51272edc94a4a3cd9115ce7970d1ae76b9f"
+    },
+    {
+      "version": "1.0.0-rc.2",
+      "build": "rm package.json && npm install --prefix . vuex@1.0.0-rc.2",
       "main": "vuex.js",
       "mapping": [
         {
@@ -74,8 +109,7 @@
       ],
       "paths": {
         "dist": "."
-      },
-      "__hash": "ae07c51272edc94a4a3cd9115ce7970d1ae76b9f"
+      }
     }
   ]
 }
