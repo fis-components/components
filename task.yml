@@ -107,4 +107,5 @@ sync:
     - vue-sortable
     - react-fetch
     - vuex@1.0.0-rc.2
+    - vue-touch
     
