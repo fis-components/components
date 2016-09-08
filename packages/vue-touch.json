@@ -47,7 +47,8 @@
     },
     {
       "version": "1.1.0",
-      "build": "rm package.json && npm install --prefix . vue-touch@1.1.0"
+      "build": "rm package.json && npm install --prefix . vue-touch@1.1.0",
+      "__hash": "d4993da8dcc024e88f6c4aa53d9979f83e4d5ae9"
     }
   ]
 }
