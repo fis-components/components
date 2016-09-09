@@ -108,8 +108,3 @@ sync:
     - react-fetch
     - vuex@1.0.0-rc.2
     - vue-touch
-    - karma
-    - karma-jasmine
-    - karma-chrome-launcher
-    - karma-coverage
-    - karma-junit-reporter
