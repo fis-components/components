@@ -51,7 +51,6 @@ sync:
     - reflux
     - react-dropzone-component
     - lib-flexible@latest
-    - vuex@latest
     - fit-timeago
     - jquery-ui@1.11.4
     - react-anything-sortable
@@ -103,8 +102,8 @@ sync:
     - countup.js@latest
     - echarts
     - vue-async-data
-    - vue@1.x
+    - vue@latest
     - vue-sortable
     - react-fetch
-    - vuex@1.0.0-rc.2
+    - vuex@latest
     - vue-touch
