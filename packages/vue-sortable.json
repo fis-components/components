@@ -1,0 +1,55 @@
+{
+  "build": "rm package.json && npm install --prefix . vue-sortable@0.1.0",
+  "name": "vue-sortable",
+  "description": "A Vue.js project",
+  "repos": "https://github.com/2betop/placeholder.git",
+  "main": "vue-sortable.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "sortablejs@^1.4.2"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/vue-sortable\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/vue-sortable\\/(vue-sortable\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.1.0",
+      "__hash": "d2eb8deeea5a01b0effa34327d90c8bab3a2dfdd"
+    },
+    {
+      "version": "0.1.2",
+      "build": "rm package.json && npm install --prefix . vue-sortable@0.1.2",
+      "__hash": "5343b2545dbcd07c8fcd839308f508f8b6e68080"
+    },
+    {
+      "version": "0.1.3",
+      "build": "rm package.json && npm install --prefix . vue-sortable@0.1.3",
+      "repos": "https://github.com/sagalbot/vue-sortable.git",
+      "__hash": "f5082ee8dc2db9b2715dd4e096a0c51525dc59aa"
+    }
+  ]
+}

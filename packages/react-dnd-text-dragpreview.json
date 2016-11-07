@@ -1,0 +1,56 @@
+{
+  "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.1",
+  "name": "react-dnd-text-dragpreview",
+  "description": "Textual drag preview for react-dnd drag and drop",
+  "repos": "https://github.com/jaketrent/react-dnd-text-dragpreview.git",
+  "main": "index.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-dnd-text-dragpreview\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-dnd-text-dragpreview\\/(index\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/node_modules\\/react-dnd-text-dragpreview\\/lib\\/(.*)$",
+      "release": "lib/$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "0.2.1",
+      "__hash": "935d40ef3679d8f76c31c2666f93a1a4a806aa0e"
+    },
+    {
+      "version": "0.2.2",
+      "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.2",
+      "__hash": "b88405503d99d78da1f2b7c7f3fcef17b28a905b"
+    },
+    {
+      "version": "0.2.3",
+      "build": "rm package.json && npm install --prefix . react-dnd-text-dragpreview@0.2.3",
+      "__hash": "4d9a0784e96fd8e56e1d71e0c8aac9498dc7cc90"
+    }
+  ]
+}

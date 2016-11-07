@@ -1,0 +1,64 @@
+{
+  "build": "rm package.json && npm install --prefix . react-fetch@0.0.7",
+  "name": "react-fetch",
+  "description": "A component that fetches data from an api",
+  "repos": "https://github.com/zackify/react-fetch.git",
+  "main": "react-fetch",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "isomorphic-fetch@^2.1.0",
+    "react@^0.13.3"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-fetch\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/react-fetch\\/dist\\/(.*)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "paths": {
+    "dist": "."
+  },
+  "tags": [
+    {
+      "version": "0.0.7",
+      "__hash": "7fd27b66fff620cf49079a79be5892bf349b0daf"
+    },
+    {
+      "version": "0.0.8",
+      "build": "rm package.json && npm install --prefix . react-fetch@0.0.8",
+      "dependencies": [
+        "isomorphic-fetch@^2.1.0"
+      ],
+      "__hash": "4c361d1d9611887b58b75323793d6d1ab35bebea"
+    },
+    {
+      "version": "0.0.9",
+      "build": "rm package.json && npm install --prefix . react-fetch@0.0.9",
+      "dependencies": [
+        "isomorphic-fetch@^2.1.0"
+      ],
+      "__hash": "34fa8a9d60780e5842548f74dd20f068bd648f9e"
+    }
+  ]
+}

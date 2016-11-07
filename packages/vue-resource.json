@@ -23,15 +23,55 @@
   "tags": [
     {
       "version": "0.1.13",
-      "__hash": "dd7c94641891f71ebb6a997ab07f735f91927449"
+      "__hash": "2a4b6a49fc352baf8d560b36e40b978f3c8a5f9e"
     },
     {
       "version": "0.1.15",
-      "__hash": "99d1aaccc67cbf3ae85daa84e479c67408d4acdc"
+      "__hash": "582f4b8563c0cc2a9aa52d1f956c22df45642971"
     },
     {
       "version": "0.1.17",
-      "__hash": "ce35b513bb8b996a6dbdb3a792e240157448c9d9"
+      "__hash": "31023c23cf8777903817ee75267c9bed35ccb6d3"
+    },
+    {
+      "version": "0.9.3",
+      "build": "rm package.json && npm install --prefix . vue-resource@0.9.3",
+      "description": "A web request service for Vue.js",
+      "repos": "https://github.com/vuejs/vue-resource.git",
+      "main": "vue-resource.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-resource\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-resource\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "076cf2ce01ed4ef679d5bb8b7ebfd63e27932038"
     }
   ]
 }

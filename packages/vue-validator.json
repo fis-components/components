@@ -23,35 +23,155 @@
   "tags": [
     {
       "version": "v1.0.7",
-      "__hash": "832d2f4fa1437cdb0faf2c6584c37e2dbfba9d96"
+      "__hash": "4b4e72b89b2807f5d43bfab529b01c3f58cd6282"
     },
     {
+      "dependencies": [
+        "vue@>=0.12.0"
+      ],
       "version": "v1.2.0",
+      "__hash": "ee3b6466932a05bcb6bd1288c733d6b46c5780d3"
+    },
+    {
       "dependencies": [
         "vue@>=0.12.0"
       ],
-      "__hash": "79a1365a8250d1bc7eb211c842c8d7475cbcbc68"
-    },
-    {
       "version": "v1.3.3",
+      "__hash": "ba2eb6dfd40f5ab8aed08c625bc1b49ec2c3d2a3"
+    },
+    {
       "dependencies": [
         "vue@>=0.12.0"
       ],
-      "__hash": "f5337466b6fd064cbdb1f282acb408913a415dec"
-    },
-    {
       "version": "v1.4.1",
-      "dependencies": [
-        "vue@>=0.12.0"
-      ],
-      "__hash": "627a56cfc1f02c3460e88daf94d50d2987a4c2ed"
+      "__hash": "de71c732c4581bc072a7e63f54bbfb1d18bfe9ff"
     },
     {
-      "version": "v1.4.3",
       "dependencies": [
         "vue@>=0.12.0"
       ],
-      "__hash": "4a3a28ec77b3a5f91318b5e5545270dfe8eb08db"
+      "version": "v1.4.3",
+      "__hash": "235e5ab767cd2dc6492fd15661ebe289239d2466"
+    },
+    {
+      "version": "2.1.0",
+      "build": "rm package.json && npm install --prefix . vue-validator@2.1.0",
+      "description": "Validator component for Vue.js",
+      "repos": "https://github.com/vuejs/vue-validator.git",
+      "main": "vue-validator.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "dac193ce8a1a5dcab8159deadec07ae8748dfc00"
+    },
+    {
+      "version": "2.1.1",
+      "build": "rm package.json && npm install --prefix . vue-validator@2.1.1",
+      "description": "Validator component for Vue.js",
+      "repos": "https://github.com/vuejs/vue-validator.git",
+      "main": "vue-validator.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "dacddf94bc17fd6d4f43c5852d53643525f9eb1b"
+    },
+    {
+      "version": "2.1.2",
+      "build": "rm package.json && npm install --prefix . vue-validator@2.1.2",
+      "description": "Validator component for Vue.js",
+      "repos": "https://github.com/vuejs/vue-validator.git",
+      "main": "vue-validator.common.js",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/vue-validator\\/dist\\/(.*)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "paths": {
+        "dist": "."
+      },
+      "__hash": "261d8afb36986f12038e93987fe726d3a7ee5a22"
     }
   ]
 }

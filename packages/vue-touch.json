@@ -1,0 +1,54 @@
+{
+  "build": "rm package.json && npm install --prefix . vue-touch@1.0.1",
+  "name": "vue-touch",
+  "description": "Hammer.js based touch events plugin for Vue.js",
+  "repos": "https://github.com/vuejs/vue-touch.git",
+  "main": "vue-touch.js",
+  "tag": "master",
+  "reposType": "npm",
+  "dependencies": [
+    "hammerjs@^2.0.6"
+  ],
+  "mapping": [
+    {
+      "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/vue-touch\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+      "release": false
+    },
+    {
+      "reg": "^\\/node_modules\\/vue-touch\\/(vue-touch\\.js)$",
+      "release": "$1"
+    },
+    {
+      "reg": "^\\/README\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "^\\/LICENSE\\.md$",
+      "release": "$&"
+    },
+    {
+      "reg": "\\.*",
+      "release": false
+    }
+  ],
+  "tags": [
+    {
+      "version": "1.0.1",
+      "__hash": "d3f3a057a459f7254f5e161e6281b5266514b79f"
+    },
+    {
+      "version": "1.0.2",
+      "build": "rm package.json && npm install --prefix . vue-touch@1.0.2",
+      "__hash": "a2e3d99a1be942ba40396083bfddeeb93288d410"
+    },
+    {
+      "version": "1.1.0",
+      "build": "rm package.json && npm install --prefix . vue-touch@1.1.0",
+      "__hash": "d4993da8dcc024e88f6c4aa53d9979f83e4d5ae9"
+    }
+  ]
+}

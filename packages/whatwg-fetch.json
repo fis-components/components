@@ -34,7 +34,8 @@
   ],
   "tags": [
     {
-      "version": "0.9.0",
+      "version": "0.8.2",
+      "build": "rm package.json && npm install --prefix . whatwg-fetch@0.8.2",
       "repos": "https://github.com/github/fetch",
       "dependencies": [],
       "mapping": [
@@ -67,14 +68,50 @@
           "release": false
         }
       ],
-      "__hash": "c93cf345c1b4fd8fc549f6b7fde3d4f0e506c2d1"
+      "__hash": "51018abddd6651d1b793a56c5811074a57d930b5"
+    },
+    {
+      "repos": "https://github.com/github/fetch",
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/whatwg-fetch\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/whatwg-fetch\\/(LICENSE)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/whatwg-fetch\\/(fetch\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "version": "0.9.0",
+      "dependencies": [],
+      "__hash": "1921d0d9fad6d9c1db7f618b1a4175dba1c8b2aa"
     },
     {
       "build": "rm package.json && npm install --prefix . whatwg-fetch@0.10.1",
       "description": "This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to uphold this code. [code-of-conduct]: http://todogroup.org/opencodeofconduct/#fetch/opensource@github.com",
       "version": "0.10.1",
       "dependencies": [],
-      "__hash": "29b307a31bab41ac5212f8a6fc0d45eabaaf42fe"
+      "__hash": "5410f9322ef771a71ce80234640e6e1ee35a4769"
     }
   ]
 }

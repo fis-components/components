@@ -62,6 +62,7 @@ sync:
     - react-router
     - react-motion
     - react-dnd@2.1.2
+    - react-dnd-text-dragpreview
     - lodash.mergewith
     - lodash.find
     - lodash.range
@@ -91,11 +92,18 @@ sync:
     - scroll-behavior
     - parsleyjs
     - sortablejs
-    - vue@latest
-    - vuex@latest
     - vue-router
+    - vue-resource@0.9.3
+    - vue-select
     - antd
     - react
     - react-dom
-    
-   
+    - vue-validator
+    - countup.js@latest
+    - echarts
+    - vue-async-data
+    - vue@latest
+    - vue-sortable
+    - react-fetch
+    - vuex@latest
+    - vue-touch

@@ -42,13 +42,56 @@
       "__hash": "f2a33ad29cc6aa9383c39082ca6e80dc3ad59fae"
     },
     {
+      "main": "index",
+      "dependencies": [
+        "zrender@^3.0.7"
+      ],
+      "umd2commonjs": null,
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
       "version": "3.1.6",
       "build": "rm package.json && npm install --prefix . echarts@3.1.6",
       "description": "A powerful charting and visualization library for browser",
       "tag": "master",
       "reposType": "npm",
+      "__hash": "e7d4750c69eb8b9ebda8552917e5957952565b7e"
+    },
+    {
+      "version": "3.2.0",
+      "build": "rm package.json && npm install --prefix . echarts@3.2.0",
+      "description": "A powerful charting and visualization library for browser",
+      "tag": "master",
+      "reposType": "npm",
       "dependencies": [
-        "zrender@^3.0.7"
+        "zrender@^3.1.1"
       ],
       "mapping": [
         {
@@ -80,9 +123,95 @@
           "release": false
         }
       ],
-      "main": "index",
+      "main": "index.js",
       "umd2commonjs": null,
-      "__hash": "e7d4750c69eb8b9ebda8552917e5957952565b7e"
+      "__hash": "d4413e4682751013546b43ec8624f3cb514edb8f"
+    },
+    {
+      "version": "3.2.1",
+      "build": "rm package.json && npm install --prefix . echarts@3.2.1",
+      "description": "A powerful charting and visualization library for browser",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "zrender@^3.1.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index.js",
+      "umd2commonjs": null,
+      "__hash": "c25f520421faefb966b1406fca0698b2ba5ffc46"
+    },
+    {
+      "version": "3.2.2",
+      "build": "rm package.json && npm install --prefix . echarts@3.2.2",
+      "description": "A powerful charting and visualization library for browser",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [
+        "zrender@^3.1.1"
+      ],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/(index\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/node_modules\\/echarts\\/lib\\/(.*)$",
+          "release": "lib/$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "main": "index.js",
+      "umd2commonjs": null,
+      "__hash": "71c4232486e51899f89bff05d739f797b202f155"
     }
   ]
 }

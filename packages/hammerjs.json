@@ -19,7 +19,112 @@
   "tags": [
     {
       "version": "2.0.4",
-      "__hash": "b0f3c2a1e59b66352df518dec1b42b68e944456d"
+      "__hash": "ab1d6056f86362b67639bf239856798a899539e9"
+    },
+    {
+      "version": "2.0.6",
+      "build": "rm package.json && npm install --prefix . hammerjs@2.0.6",
+      "description": "A javascript library for multi-touch gestures",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/hammerjs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/hammerjs\\/(hammer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "cd68be7474c3e52cf68fbbdcb4e62721217249b5"
+    },
+    {
+      "version": "2.0.7",
+      "build": "rm package.json && npm install --prefix . hammerjs@2.0.7",
+      "description": "A javascript library for multi-touch gestures",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/hammerjs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/hammerjs\\/(hammer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "bf3f8773056057c8f64f0d8e2aaf29ef7106700c"
+    },
+    {
+      "version": "2.0.8",
+      "build": "rm package.json && npm install --prefix . hammerjs@2.0.8",
+      "description": "A javascript library for multi-touch gestures",
+      "tag": "master",
+      "reposType": "npm",
+      "dependencies": [],
+      "mapping": [
+        {
+          "reg": "\\bmin\\b|__tests__|gulpfile\\.js|webpack\\.config\\.js|gruntfile\\.js|test\\.js",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/hammerjs\\/(?:test|dist\\/cdn|lib\\/node)\\/",
+          "release": false
+        },
+        {
+          "reg": "^\\/node_modules\\/hammerjs\\/(hammer\\.js)$",
+          "release": "$1"
+        },
+        {
+          "reg": "^\\/README\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "^\\/LICENSE\\.md$",
+          "release": "$&"
+        },
+        {
+          "reg": "\\.*",
+          "release": false
+        }
+      ],
+      "__hash": "a8e969b0e6ffd6563aaac97d5c41e6c9d6f0ed14"
     }
   ]
 }
