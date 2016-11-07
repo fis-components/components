@@ -91,6 +91,7 @@ sync:
     - scroll-behavior
     - parsleyjs
     - sortablejs
+    - vue@latest
     - vuex@latest
     - vue-router
     - antd
