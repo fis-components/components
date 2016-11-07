@@ -51,7 +51,6 @@ sync:
     - reflux
     - react-dropzone-component
     - lib-flexible@latest
-    - vuex@latest
     - fit-timeago
     - jquery-ui@1.11.4
     - react-anything-sortable
@@ -92,7 +91,7 @@ sync:
     - scroll-behavior
     - parsleyjs
     - sortablejs
-    - vue
+    - vuex@latest
     - vue-router
     - antd
     - react
