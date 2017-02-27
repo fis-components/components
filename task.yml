@@ -92,8 +92,8 @@ sync:
     - scroll-behavior
     - parsleyjs
     - sortablejs
-    - vue-router
     - vue-resource@0.9.3
+    - vue-router
     - vue-select
     - antd
     - react
