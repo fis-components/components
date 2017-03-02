@@ -96,8 +96,8 @@ sync:
     - vue-resource@0.9.3
     - vue-select
     - antd
-    - react
-    - react-dom
+    - react@latest
+    - react-dom@latest
     - vue-validator
     - countup.js@latest
     - echarts
