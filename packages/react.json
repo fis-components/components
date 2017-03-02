@@ -138,19 +138,23 @@
       "__hash": "9f8621d2e0fe9a526a71be238db9f58eb21bb0e8"
     },
     {
-      "version": "15.0.3-alpha.2",
       "build": "rm package.json && npm install --prefix . react@15.0.3-alpha.2",
+      "version": "15.0.3-alpha.2",
       "__hash": "45ed39ab82be7ea0a4d52f609730bfd93c788f8e"
     },
     {
-      "version": "15.1.0-alpha.1",
       "build": "rm package.json && npm install --prefix . react@15.1.0-alpha.1",
+      "version": "15.1.0-alpha.1",
       "__hash": "6231f5cb1c99ca665d0cc02f66b07aade96f0c3d"
     },
     {
-      "version": "15.1.0",
       "build": "rm package.json && npm install --prefix . react@15.1.0",
+      "version": "15.1.0",
       "__hash": "f689514608ed10f94fe2ed15710218d64a0a56c8"
+    },
+    {
+      "version": "15.4.2",
+      "build": "rm package.json && npm install --prefix . react@15.4.2"
     }
   ]
 }
