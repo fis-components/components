@@ -1,0 +1,29 @@
+language: php
+php:
+- '5.6'
+script:
+- node ./sync.js sync
+- node ./tools/checktask.js
+# env:
+#   global:
+#   - secure: a9kINH5eZ/xVQe8gQwy4dOGnVTkEBe9Tkzx28/mHrFTFGU5hyzfKrMRmXLPTiyuvSHcNy1t3IOfldhzT0luBb68fZdxUtQ4jR6wFLvpiG20cX8nUV6wX7Zmk8Ozt81ZRvlYESSvWdqM6PYWU+t6TOVtt2cQUUn+6F/JWMTPWAK0=
+install:
+# - npm install -g npm
+- npm install
+after_success:
+# - git config --global user.email "fansekey@gmail.com"
+# - git config --global user.name "xiangshouding"
+# - git remote set-url origin https://github.com/fis-components/components.git
+# - git config credential.helper "store --file=.git/credential"
+# - echo "https://${GH_TOKEN}:@github.com" > .git/credential
+# - git checkout master
+# - date "+%Y-%m-%d %H:%M:%S" > time.txt
+# - git add time.txt
+# - git commit -am '[CI ....]'
+# - git push origin master
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - master
