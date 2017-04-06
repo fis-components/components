@@ -107,3 +107,4 @@ sync:
     - react-fetch
     - vuex@latest
     - vue-touch
+    - zepto
