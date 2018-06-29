@@ -108,3 +108,4 @@ sync:
     - vuex@latest
     - vue-touch
     - zepto
+    - siema
