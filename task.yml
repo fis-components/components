@@ -103,9 +103,9 @@ sync:
     - echarts
     - vue-async-data
     - vue@latest
+    - vuex@latest
     - vue-sortable
     - react-fetch
-    - vuex@latest
     - vue-touch
     - zepto
     - siema
