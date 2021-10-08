@@ -39,7 +39,7 @@ sync:
     - react-json-pretty@latest
     - react-css-modules@latest
     - flux@latest
-    - zrender@3.0.1
+    - zrender@1.1.2
     - react-toastr@latest
     - react-notification-system@latest
     - storejs
